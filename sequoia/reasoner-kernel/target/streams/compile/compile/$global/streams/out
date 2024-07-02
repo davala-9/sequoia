@@ -1,5 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-kernel/src/main/scala/com/sequoiareasoner/kernel/context/ContextRunnable.scala:66:7: match may not be exhaustive.[0m
-[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: BinaryCGFPush(_), CertainGroundFactPush(_, _), EndNonHornPhase(), EqualityCGFPush(_), MiniSuccPush(_, _), RevealCore(), UnaryCGFPush(_)[0m
-[0m[[0m[33mwarn[0m] [0m[0m      message match {[0m
-[0m[[0m[33mwarn[0m] [0m[0m      ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-kernel/src/main/scala/com/sequoiareasoner/kernel/context/ContextStructureManager.scala:238:19: value waitForFinish is not a member of com.sequoiareasoner.kernel.context.ActorExecutionService[0m
+[0m[[0m[31merror[0m] [0m[0m  contextExecutor.waitForFinish()[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

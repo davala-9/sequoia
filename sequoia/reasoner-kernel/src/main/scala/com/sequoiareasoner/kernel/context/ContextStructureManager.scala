@@ -235,7 +235,7 @@ final class ContextStructureManager(ontology: DLOntology,
   /** Saturate every concept, starting with the Horn phase */
   val saturationJobs: List[(ContextRunnable, Runnable)] = cs.toList.map(c => (c, c.saturateAndPush()))
   saturationJobs.foreach(x => contextExecutor.executeWithPartition(x._2, x._1))
-  // contextExecutor.waitForFinish()
+  waitForFinish()
   
   println("saturation jobs done")
 
@@ -248,9 +248,7 @@ final class ContextStructureManager(ontology: DLOntology,
   )
   nonHornJobs.foreach(x => contextExecutor.executeWithPartition(x._2, x._1))
   
-  // contextExecutor.waitForFinish()
   waitForFinish()
-  // while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
   println("non horn jobs done")
   println("Number of contexts created: " + contexts.size)
 
