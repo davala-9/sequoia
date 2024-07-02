@@ -2040,7 +2040,7 @@
 [0m[[0m[0minfo[0m] [0m[0mStrategy 'deduplicate' was applied to 1999 files (Run the task at debug level to see details)[0m
 [0m[[0m[33mwarn[0m] [0m[0mStrategy 'discard' was applied to 23 files[0m
 [0m[[0m[33mwarn[0m] [0m[0mStrategy 'filterDistinctLines' was applied to 6 files[0m
-[0m[[0m[0minfo[0m] [0m[0mSHA-1: f3eae49c2e46ad12d28df1e1bcf71b07ef7d5d11[0m
+[0m[[0m[0minfo[0m] [0m[0mSHA-1: b960cd7ed34c1ec75874be120ecf361327505a93[0m
 [0m[[0m[0minfo[0m] [0m[0mPackaging /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-owl-api/target/scala-2.12/Sequoia-OWL-API-fat-jar.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	META-INF/services/org.openrdf.rio.RDFParserFactory[0m
@@ -5269,6 +5269,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-owl-api/target/streams/$global/assemblyOption/$global/streams/assembly/e806c7032587d2101d4751c2831e3df9a31e095d_dir/com/sequoiareasoner/kernel/context/EqualityOptimizationDisabled$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com/sequoiareasoner/kernel/context/EqualityOptimizationDisabled.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-owl-api/target/streams/$global/assemblyOption/$global/streams/assembly/e806c7032587d2101d4751c2831e3df9a31e095d_dir/com/sequoiareasoner/kernel/context/EqualityOptimizationDisabled.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/sequoiareasoner/kernel/context/ExecutionServiceActor$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-owl-api/target/streams/$global/assemblyOption/$global/streams/assembly/e806c7032587d2101d4751c2831e3df9a31e095d_dir/com/sequoiareasoner/kernel/context/ExecutionServiceActor$$anonfun$receive$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com/sequoiareasoner/kernel/context/ExecutionServiceActor.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-owl-api/target/streams/$global/assemblyOption/$global/streams/assembly/e806c7032587d2101d4751c2831e3df9a31e095d_dir/com/sequoiareasoner/kernel/context/ExecutionServiceActor.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com/sequoiareasoner/kernel/context/ExpansionStrategies$.class[0m

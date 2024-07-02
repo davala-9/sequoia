@@ -13,6 +13,7 @@ import com.sequoiareasoner.kernel.context.ClausePusher._
 import com.sequoiareasoner.kernel.context.inferenceRule._
 
 import java.util.concurrent.Callable
+import java.util.concurrent.atomic.AtomicInteger
 
 class ContextRunnable(
     val state: ContextState,
@@ -20,6 +21,8 @@ class ContextRunnable(
     val isEqualityReasoningEnabled: Boolean,
     val order: ContextLiteralOrdering,
     val contextStructureManager: ContextStructureManager) {
+    var active = false
+
     /** Step 1: apply the Core rule */
     if (state.core.exists( p => ontology.isNothing(p) )) {
       state.processCandidateConclusion(ContextClause(ArrayBuilders.emptyPredicateArray, ArrayBuilders.emptyLiteralArray)(order), inferenceRule.Core)
@@ -49,8 +52,12 @@ class ContextRunnable(
     }
 
     /** Step 3: perform all remaining inferences */
-    def saturateAndPush(): Runnable = () => {
-      Context.saturateAndPush(state, ontology, isEqualityReasoningEnabled, order, contextStructureManager, this, state.hornPhaseActive)
+    def saturateAndPush(): Runnable = {
+      active = true
+      () => {
+        Context.saturateAndPush(state, ontology, isEqualityReasoningEnabled, order, contextStructureManager, this, state.hornPhaseActive)
+        active = false
+      }
     }
 
 
@@ -246,5 +253,6 @@ class ContextRunnable(
           }
         }
       }
+    active = false
     }
 }
