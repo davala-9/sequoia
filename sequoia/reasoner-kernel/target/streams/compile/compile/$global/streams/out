@@ -1,23 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-kernel/src/main/scala/com/sequoiareasoner/kernel/context/ContextRunnable.scala:59:7: match may not be exhaustive.[0m
-[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: BinaryCGFPush(_), CertainGroundFactPush(_, _), EndNonHornPhase(), EqualityCGFPush(_), MiniSuccPush(_, _), RevealCore(), UnaryCGFPush(_)[0m
-[0m[[0m[33mwarn[0m] [0m[0m      message match {[0m
-[0m[[0m[33mwarn[0m] [0m[0m      ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-kernel/src/main/scala/com/sequoiareasoner/kernel/context/ContextState.scala:458:37: match may not be exhaustive.[0m
-[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: ABox[0m
-[0m[[0m[33mwarn[0m] [0m[0m      val isNotRedundant: Boolean = inferenceRuleType match {[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                    ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-kernel/src/main/scala/com/sequoiareasoner/kernel/index/NeighborPredClauseIndex.scala:109:24: match may not be exhaustive.[0m
-[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: Role(_, PredVariable, ArtificialIndividual(_)), Role(_, PredVariable, CentralVariable)[0m
-[0m[[0m[33mwarn[0m] [0m[0m    cforeach (newBody) {[0m
-[0m[[0m[33mwarn[0m] [0m[0m                       ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-kernel/src/main/scala/com/sequoiareasoner/kernel/index/NeighborPredClauseIndex.scala:157:5: match may not be exhaustive.[0m
-[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: Concept(_, CentralVariable), Concept(_, NeighbourVariable(_)), Concept(_, PredVariable), Equality(_, _), Inequality(_, _)[0m
-[0m[[0m[33mwarn[0m] [0m[0m    p match {[0m
-[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-kernel/src/main/scala/com/sequoiareasoner/kernel/structural/STClauseToOntologyClauseTransformer.scala:145:53: match may not be exhaustive.[0m
-[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: ArtificialIndividual(_), FunctionalTerm(_), OriginalIndividual(_), PredVariable[0m
-[0m[[0m[33mwarn[0m] [0m[0m    for ((v, conjunction) <- conjunctionsToHoist) { v match {[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                                    ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mthere were two unchecked warnings; re-run with -unchecked for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mthere were 39 inliner warnings; re-run enabling -opt-warnings for details, or try -help[0m
-[0m[[0m[33mwarn[0m] [0m[0m7 warnings found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-kernel/src/main/scala/com/sequoiareasoner/kernel/context/ContextThreadPool.scala:55:42: value onComplete is not a member of Unit[0m
+[0m[[0m[31merror[0m] [0m[0m        actorRef.tell(command, actorRef).onComplete(_ => active.decrementAndGet())[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

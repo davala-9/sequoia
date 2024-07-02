@@ -66,7 +66,7 @@ final class ContextStructureManager(ontology: DLOntology,
   private[this] val contextExecutor = new ActorExecutionService()
   def messageContext(context: ContextRunnable, message: InterContextMessage): Unit = {
     val task: Runnable = () => { context.reSaturateUponMessage(message) }
-    contextExecutor.executeWithPartition(task, context.state.core.toString)
+    contextExecutor.executeWithPartition(task, context.state.core.toString.replaceAll("[^a-zA-Z]", ""))
   }
 
   /** This map provides, for each nominal context O(x), the set of (other) contexts that mention o */
@@ -149,7 +149,7 @@ final class ContextStructureManager(ontology: DLOntology,
       val ordering = ContextLiteralOrdering(Set[Int]())
       val createNewContext: Callable[ContextRunnable] = buildContext(Set[Int](), core, rootContext = false, contextIndex, ordering, hornPhaseActive)
       val context: ContextRunnable = contextExecutor.submit(createNewContext).get
-      contextExecutor.submit(context.saturateAndPush())
+      contextExecutor.executeWithPartition(context.saturateAndPush(), context.state.core.toString.replaceAll("[^a-zA-Z]", ""))
       context
     })
   }
@@ -166,7 +166,7 @@ final class ContextStructureManager(ontology: DLOntology,
       val ordering = ContextLiteralOrdering(Set[Int]())
       val createNewContext: Callable[ContextRunnable] = buildContext(Set[Int](), core, rootContext = true, contextIndex, ordering, hornPhaseActive)
       val context: ContextRunnable = contextExecutor.submit(createNewContext).get
-      contextExecutor.submit(context.saturateAndPush())
+      contextExecutor.executeWithPartition(context.saturateAndPush(), context.state.core.toString.replaceAll("[^a-zA-Z]", ""))
       context
     })
   }
@@ -217,19 +217,32 @@ final class ContextStructureManager(ontology: DLOntology,
   val cs = contextExecutor.invokeAll(contextCreationJobs.asJava).asScala.map(x => x.get())
   for (c <- cs) contexts.put(c.state.core, c)
   println("creation jobs done")
-
+  println("abcd!$%R".replaceAll("[^a-zA-Z]", ""))
+  println("2")
   /** Saturate every concept, starting with the Horn phase */
-  val saturationJobs = cs.map(c => c.saturateAndPush())
-  contextExecutor.invokeAll(saturationJobs.asJava)
-  while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
+  val saturationJobs: List[(String, Runnable)] = cs.toList.map(c => 
+    (c.state.core.toString.replaceAll("[^a-zA-Z]", ""), c.saturateAndPush()))
+  saturationJobs.foreach(x => contextExecutor.executeWithPartition(x._2, x._1))
+  println("all invoked")
+  while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {
+    println("Active threads: " + contextExecutor.getActiveThreadCount())
+    println("contextExecutor.isQuiescent(): " + contextExecutor.isQuiescent())
+  }
+  
+  contextExecutor.waitForFinish()
+  
   println("saturation jobs done")
+  Thread.sleep(5000)
 
   /** Non-Horn phase */
   hornPhaseActive = false
-  val nonHornJobs = getAllContexts.toList.map(c =>
-    (() => c.reSaturateUponMessage(StartNonHornPhase())): java.util.concurrent.Callable[Unit]
+  val nonHornJobs: List[(String, Runnable)] = getAllContexts.toList.map(c =>
+    (c.state.core.toString.replaceAll("[^a-zA-Z]", ""),
+    (() => c.reSaturateUponMessage(StartNonHornPhase())): Runnable)
   )
-  contextExecutor.invokeAll(nonHornJobs.asJava)
+  nonHornJobs.foreach(x => contextExecutor.executeWithPartition(x._2, x._1))
+  
+  contextExecutor.waitForFinish()
   while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
   println("non horn jobs done")
   println("Number of contexts created: " + contexts.size)

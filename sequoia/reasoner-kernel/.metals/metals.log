@@ -3564,3 +3564,39 @@ WARNING: Unmatched cancel notification for request id 62
 Jul 01, 2024 2:43:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 143
 2024.07.01 14:43:43 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.1s
+2024.07.01 17:03:40 INFO  Shutting down server
+2024.07.01 17:03:40 INFO  shutting down Metals
+2024.07.01 17:03:40 INFO  Shut down connection with build server.
+2024.07.01 17:03:40 INFO  BSP server: Jul 01, 2024 5:03:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+2024.07.01 17:03:40 INFO  BSP server: WARNING: Notification threw an exception: {
+2024.07.01 17:03:40 INFO  BSP server:   "jsonrpc": "2.0",
+2024.07.01 17:03:40 INFO  BSP server:   "method": "build/exit",
+2024.07.01 17:03:40 INFO  BSP server:   "params": null
+2024.07.01 17:03:40 INFO  BSP server: }
+2024.07.01 17:03:40 INFO  BSP server: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+2024.07.01 17:03:40 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+2024.07.01 17:03:40 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+2024.07.01 17:03:40 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+2024.07.01 17:03:40 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+2024.07.01 17:03:40 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+2024.07.01 17:03:40 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+2024.07.01 17:03:40 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+2024.07.01 17:03:40 INFO  BSP server: 	at java.base@17.0.6/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+2024.07.01 17:03:40 INFO  BSP server: 	at java.base@17.0.6/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+2024.07.01 17:03:40 INFO  BSP server: 	at java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+2024.07.01 17:03:40 INFO  BSP server: 	at java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+2024.07.01 17:03:40 INFO  BSP server: 	at java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+2024.07.01 17:03:40 INFO  BSP server: 	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:775)
+2024.07.01 17:03:40 INFO  BSP server: 	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:203)
+2024.07.01 17:03:40 INFO  BSP server: Caused by: java.lang.reflect.InvocationTargetException
+2024.07.01 17:03:40 INFO  BSP server: 	at java.base@17.0.6/java.lang.reflect.Method.invoke(Method.java:568)
+2024.07.01 17:03:40 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+2024.07.01 17:03:40 INFO  BSP server: 	... 13 more
+2024.07.01 17:03:40 INFO  BSP server: Caused by: java.lang.RuntimeException: BSP server not initialized yet
+2024.07.01 17:03:40 INFO  BSP server: 	at scala.sys.package$.error(package.scala:27)
+2024.07.01 17:03:40 INFO  BSP server: 	at scala.build.bsp.BloopSession$Reference.get(BloopSession.scala:70)
+2024.07.01 17:03:40 INFO  BSP server: 	at scala.build.bsp.BspImpl.$anonfun$11(BspImpl.scala:477)
+2024.07.01 17:03:40 INFO  BSP server: 	at scala.build.bsp.BuildServerProxy.onBuildExit(BuildServerProxy.scala:29)
+2024.07.01 17:03:40 INFO  BSP server: 	... 15 more
+2024.07.01 17:03:40 INFO  BSP server: 
+2024.07.01 17:03:40 INFO  Exiting server

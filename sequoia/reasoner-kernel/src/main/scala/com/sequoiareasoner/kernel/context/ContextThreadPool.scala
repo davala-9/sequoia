@@ -4,6 +4,9 @@ import akka.actor.ActorRef
 import akka.actor.ActorSystem
 import akka.actor.Props
 import akka.actor.UntypedActor
+import akka.pattern.gracefulStop
+
+import scala.concurrent.duration.FiniteDuration
 
 import java.util.Collections
 import java.util.List
@@ -13,6 +16,7 @@ import java.util.concurrent.ExecutorService
 import java.util.concurrent.TimeUnit
 import java.util.function.Function
 import java.util.concurrent.ForkJoinPool
+import java.util.concurrent.atomic.AtomicInteger
 
 
 // class ActorDemo {
@@ -43,14 +47,25 @@ import java.util.concurrent.ForkJoinPool
 class ActorExecutionService extends ForkJoinPool {
     val actorSystem: ActorSystem = ActorSystem.create("context-actor-system")
     val actors: ConcurrentHashMap[String,ActorRef] = new ConcurrentHashMap()
+    val active: AtomicInteger = new AtomicInteger(0)
 
     def executeWithPartition(command: Runnable, partitionKey: String): Unit = {
+        active.incrementAndGet()
         val actorRef: ActorRef = actors.computeIfAbsent(partitionKey, createNewActor(_))
-        actorRef.tell(command, actorRef)
+        actorRef.tell(
+            (() => { command.run(); active.decrementAndGet() }): Runnable, 
+            actorRef)
     }
 
     private def createNewActor(partitionKey: String): ActorRef = {
         return actorSystem.actorOf(Props.create(classOf[ExecutionServiceActor]), partitionKey)
+    }
+
+    def waitForFinish() = {
+        while (active.get() > 0) {
+            println(active.get())
+            Thread.sleep(100)
+        }
     }
 
 
@@ -85,9 +100,9 @@ class ActorExecutionService extends ForkJoinPool {
     // }
 }
 
- class ExecutionServiceActor extends UntypedActor {
-    def onReceive(message: Any): Unit = message match {
-        case runnable: Runnable => runnable.run()
-        case _ => throw new Exception(message.toString())
-    }
+class ExecutionServiceActor extends UntypedActor {
+   def onReceive(message: Any): Unit = message match {
+       case runnable: Runnable => runnable.run()
+       case _ => throw new Exception(message.toString())
+   }
 }
