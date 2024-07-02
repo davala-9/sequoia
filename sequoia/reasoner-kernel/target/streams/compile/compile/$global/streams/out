@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-kernel/src/main/scala/com/sequoiareasoner/kernel/context/ContextStructureManager.scala:238:19: value waitForFinish is not a member of com.sequoiareasoner.kernel.context.ActorExecutionService[0m
-[0m[[0m[31merror[0m] [0m[0m  contextExecutor.waitForFinish()[0m
-[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-kernel/src/main/scala/com/sequoiareasoner/kernel/context/ContextStructureManager.scala:240:5: return outside method definition[0m
+[0m[[0m[31merror[0m] [0m[0m    return (() => v.run()): Callable[Unit][0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
