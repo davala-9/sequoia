@@ -204,9 +204,10 @@ final class ContextStructureManager(ontology: DLOntology,
 
   beginTime = System.currentTimeMillis
   
-  /** Create jobs to create a context for each target concept, then run those jobs */
   implicit val theOntology = ontology
-
+  
+  /** Create jobs to create a context for each target concept, then run those jobs */
+  println("Creating initial contexts...")
   val contextCreationJobs: Set[Callable[ContextRunnable]] = targetConcepts.map(concept => {
     val core: ImmutableSet[Predicate] = ImmutableSet(Concept(IRI(concept),CentralVariable))
     /** Creates the context index, which is a special case since these contexts are query contexts. */
@@ -216,49 +217,32 @@ final class ContextStructureManager(ontology: DLOntology,
   })
   val cs = contextExecutor.invokeAll(contextCreationJobs.asJava).asScala.map(x => x.get())
   for (c <- cs) contexts.put(c.state.core, c)
-  println("creation jobs done")
 
-  def allInactive = contexts.values.forall(c => !c.active.get())
+  /** Define function to wait for saturation jobs to finish */
+  def awaitSaturation = {
+    while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
+    while (!contexts.values.forall(c => !c.active.get())) { // If any context is active set it to inactive to ensure no saturation jobs are blocked
+      getAllContexts.foreach(c => c.setInactive())
+      while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
+    }
+  }
 
   /** Saturate every concept, starting with the Horn phase */
+  println("Saturating contexts (Horn phase)...")
   val saturationJobs = cs.map(c => (c.saturateAndPush(), c))
   saturationJobs.foreach(x => contextExecutor.execute(x._1, x._2))
-  while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
-  while (!allInactive) {
-    getAllContexts.foreach(c => c.setInactive())
-    while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
-  }
-  println("saturation jobs done")
+  awaitSaturation
 
   /** Non-Horn phase */
+  println("Saturating contexts (non-Horn phase)...")
   hornPhaseActive = false
   val nonHornJobs: List[(Callable[Unit], ContextRunnable)] = getAllContexts.toList.map(c => {
     val r: Callable[Unit] = () => c.reSaturateUponMessage(StartNonHornPhase())
     (r, c)
   })
   nonHornJobs.foreach(x => contextExecutor.execute(x._1, x._2))
-  while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
-  while (!allInactive) {
-    getAllContexts.foreach(c => c.setInactive())
-    while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
-  }
-  // for (c <- getAllContexts) {
-  //   println("cq" + c.queue.size() + c.active.get)
-  //   c.setInactive()
-  //   // while (c.queue.size() > 0) {
-  //   //   contextExecutor.submitUnit(c.queue.poll())
-  //   //   println("cq--" + c.queue.size() + c.active.get)
-  //   // }
-  // }
-  // while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
-  // for (c <- getAllContexts) {
-  //     if (c.queue.size() > 0) {
-  //       println("cq-" + c.queue.size())
-  //     }
-  //   }
+  awaitSaturation
 
-
-  println("non horn jobs done")
 
 }
 

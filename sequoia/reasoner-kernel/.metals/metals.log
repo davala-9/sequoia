@@ -770,3 +770,143 @@ WARNING: Unmatched cancel notification for request id 8575
 2024.07.03 11:41:06 WARN  Using indexes to guess the definition of Callable
 2024.07.03 11:41:09 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
 2024.07.03 11:41:10 INFO  time: compiled reasoner-kernel_f4dd477a3a in 1.61s
+2024.07.03 14:05:55 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:05:58 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.71s
+2024.07.03 14:06:09 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:06:11 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.38s
+2024.07.03 14:08:34 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:08:37 INFO  time: compiled reasoner-kernel_f4dd477a3a in 3.15s
+2024.07.03 14:08:37 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:08:41 INFO  time: compiled reasoner-kernel_f4dd477a3a in 3.16s
+2024.07.03 14:11:06 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:11:09 INFO  time: compiled reasoner-kernel_f4dd477a3a in 3.79s
+2024.07.03 14:11:29 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:11:31 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.44s
+2024.07.03 14:14:07 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:14:10 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.46s
+2024.07.03 14:16:24 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:16:27 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:16:27 INFO  time: compiled reasoner-kernel_f4dd477a3a in 32ms
+2024.07.03 14:16:38 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:16:40 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2s
+2024.07.03 14:17:59 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:18:02 INFO  time: compiled reasoner-kernel_f4dd477a3a in 3.29s
+2024.07.03 14:18:02 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:18:06 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.97s
+2024.07.03 14:18:16 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:18:19 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.42s
+2024.07.03 14:19:34 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:19:37 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.81s
+2024.07.03 14:26:21 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:26:21 INFO  Deduplicating compilation of reasoner-kernel_f4dd477a3a from bsp client 'scala-cli 1.3.2' (since 13h 53m 49.805s)
+2024.07.03 14:26:21 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:26:24 INFO  time: compiled reasoner-kernel_f4dd477a3a in 3.56s
+2024.07.03 14:26:24 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 14:26:28 INFO  time: compiled reasoner-kernel_f4dd477a3a in 3.37s
+2024.07.03 15:01:47 WARN  Using indexes to guess the definition of allInactive
+2024.07.03 15:01:47 WARN  Using indexes to guess the definition of contextExecutor
+Jul 03, 2024 3:01:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9700
+2024.07.03 15:02:34 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 15:02:37 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.81s
+2024.07.03 15:02:49 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 15:02:51 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.09s
+2024.07.03 15:02:55 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 15:02:57 INFO  time: compiled reasoner-kernel_f4dd477a3a in 1.74s
+2024.07.03 15:06:49 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 15:06:51 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.46s
+2024.07.03 15:07:17 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 15:07:20 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.2s
+2024.07.03 15:07:25 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 15:07:27 INFO  time: compiled reasoner-kernel_f4dd477a3a in 1.94s
+2024.07.03 15:07:51 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 15:07:52 INFO  time: compiled reasoner-kernel_f4dd477a3a in 1.63s
+2024.07.03 15:08:20 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 15:08:21 INFO  time: compiled reasoner-kernel_f4dd477a3a in 1.64s
+2024.07.03 15:09:27 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 15:09:29 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.44s
+2024.07.03 15:10:03 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 15:10:05 WARN  Using indexes to guess the definition of processCandidateConclusion
+2024.07.03 15:10:05 WARN  Using indexes to guess the definition of processCandidateConclusion
+2024.07.03 15:10:06 INFO  time: compiled reasoner-kernel_f4dd477a3a in 3.2s
+2024.07.03 15:10:06 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 15:10:09 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.28s
+2024.07.03 15:11:06 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 15:11:09 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.32s
+2024.07.03 15:11:19 ERROR Failed to tokenize input for semantic tokens for /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-kernel/src/main/scala/com/sequoiareasoner/kernel/context/ContextStructureManager.scala
+scala.meta.tokenizers.TokenizeException: <input>:221: error: unclosed comment
+  /**
+  ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:32)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:28)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:28)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:32)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:61)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:76)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:300)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:201)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:912)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:322)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:22)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:13)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:545)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.07.03 15:11:19 ERROR Failed to tokenize input for semantic tokens for /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-kernel/src/main/scala/com/sequoiareasoner/kernel/context/ContextStructureManager.scala
+scala.meta.tokenizers.TokenizeException: <input>:221: error: unclosed comment
+  /** 
+  ^
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:26)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:32)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError(Reporter.scala:28)
+	at scala.meta.internal.tokenizers.Reporter.incompleteInputError$(Reporter.scala:28)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.incompleteInputError(Reporter.scala:32)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipNestedComments(LegacyScanner.scala:61)
+	at scala.meta.internal.tokenizers.LegacyScanner.skipToCommentEnd(LegacyScanner.scala:76)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:300)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:201)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:912)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:322)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:22)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:13)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:545)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.07.03 15:11:37 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 15:11:39 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.04s
+Exception in thread "pool-7-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:244)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024.07.03 15:11:41 WARN  Using indexes to guess the definition of awaitAllJobs
+2024.07.03 15:11:43 WARN  Using indexes to guess the definition of awaitAllJobs
+2024.07.03 15:11:47 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 15:11:49 INFO  time: compiled reasoner-kernel_f4dd477a3a in 1.94s
+Jul 03, 2024 3:12:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10515
+2024.07.03 15:12:34 INFO  compiling reasoner-kernel_f4dd477a3a (71 scala sources)
+2024.07.03 15:12:37 INFO  time: compiled reasoner-kernel_f4dd477a3a in 2.38s
