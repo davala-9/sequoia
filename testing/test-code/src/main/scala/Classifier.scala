@@ -122,7 +122,7 @@ object Classifier {
       val time: Option[Int] = harnessOutputTime(lastline)
       val message : String = harnessOutputMessage(lastline)
       val contextCount: Int = harnessOutputContexCount(lastline)
-      if (harnessOutputSuccess(lastline)) return new TestResult(success = "[SUCCESS]", hash = hash.getOrElse("---").toString , time = time.getOrElse("---").toString , message = message, contextCount = 0)
+      if (harnessOutputSuccess(lastline)) return new TestResult(success = "[SUCCESS]", hash = hash.getOrElse("---").toString , time = time.getOrElse("---").toString , message = message, contextCount = contextCount)
       else return new TestResult(success = "[FAIL]", message = message)
     }
     // This level should not be reached, and it indicates a bug.
