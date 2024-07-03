@@ -22,8 +22,13 @@ class ContextRunnable(
     val isEqualityReasoningEnabled: Boolean,
     val order: ContextLiteralOrdering,
     val contextStructureManager: ContextStructureManager) {
-    val active: AtomicBoolean = new AtomicBoolean(true)
+    val active: AtomicBoolean = new AtomicBoolean(false)
     val queue: LinkedTransferQueue[Callable[Unit]] = new LinkedTransferQueue[Callable[Unit]]()
+
+    def setInactive(): Unit = this.synchronized {
+        active.set(false)
+        contextStructureManager.contextExecutor.pullFromQueue(this)
+    }
 
     /** Step 1: apply the Core rule */
     if (state.core.exists( p => ontology.isNothing(p) )) {
@@ -52,8 +57,6 @@ class ContextRunnable(
           Seq.empty[ContextClause], ContextClause(ArrayBuilders.emptyPredicateArray, head)(order)) // DEBUG
       }
     }
-
-    active.set(false)
 
     /** Step 3: perform all remaining inferences */
     def saturateAndPush(): Callable[Unit] = () => {

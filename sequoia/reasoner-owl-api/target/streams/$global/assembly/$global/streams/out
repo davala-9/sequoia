@@ -2037,7 +2037,7 @@
 [0m[[0m[0minfo[0m] [0m[0mStrategy 'deduplicate' was applied to 1999 files (Run the task at debug level to see details)[0m
 [0m[[0m[33mwarn[0m] [0m[0mStrategy 'discard' was applied to 23 files[0m
 [0m[[0m[33mwarn[0m] [0m[0mStrategy 'filterDistinctLines' was applied to 6 files[0m
-[0m[[0m[0minfo[0m] [0m[0mSHA-1: 7de664b59ceaee3486040c6293525a0beddd28bd[0m
+[0m[[0m[0minfo[0m] [0m[0mSHA-1: e846b73b302f234f9a39dc3e4c183ae4ffc03a5d[0m
 [0m[[0m[0minfo[0m] [0m[0mPackaging /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-owl-api/target/scala-2.12/Sequoia-OWL-API-fat-jar.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	META-INF/services/org.openrdf.rio.RDFParserFactory[0m

@@ -21,26 +21,30 @@ class ContextAwareForkJoinPool {
         pool.submit(task)
     }
 
+    def submitUnit(task: Callable[Unit]): Future[Unit] = {
+        pool.submit(task)
+    }
+
     def invokeAll(tasks: Set[Callable[ContextRunnable]]): java.util.List[Future[ContextRunnable]] = {
         pool.invokeAll(tasks)
     }
 
-    def pullFromQueue(context: ContextRunnable): Future[Unit] = {
+    def pullFromQueue(context: ContextRunnable): Future[Unit] = context.queue.synchronized {
         if (!context.queue.isEmpty) {
-            pool.submit(context.queue.poll())
+            execute(context.queue.poll(), context)
         } else return null
     }
 
     def execute(task: Callable[Unit], context: ContextRunnable): Future[Unit] = {
         if (context.active.compareAndSet(false, true)) { // if context is not active, set it to active and submit the task to pool
-            // val c: Callable[Unit] = () => {
-            //     task.run()
-            //     context.active.set(false)
-            //     pullFromQueue(context)
-            // }
-            val r = pool.submit(task)
-            pullFromQueue(context)
-            r
+            val c: Callable[Unit] = () => {
+                task.call()
+                context.setInactive()
+            }
+            pool.submit(c)
+            // val r = pool.submit(task)
+            // pullFromQueue(context)
+            // r
         } else { // if context is already active, queue the task to the context
             context.queue.put(task)
             if (context.active.compareAndSet(false, true)) { // if context is not active, set it to active and submit the task to pool

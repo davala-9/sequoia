@@ -63,7 +63,7 @@ final class ContextStructureManager(ontology: DLOntology,
   /** This map provides, for each set of predicates, a channel to the context that has that set as its core */
   private[this] val contexts = new mutable.AnyRefMap[ImmutableSet[Predicate], ContextRunnable]
   // private[this] val contextExecutor = new ForkJoinPool() // Defaults to number of processors -1
-  private[this] val contextExecutor = new ContextAwareForkJoinPool()
+  val contextExecutor = new ContextAwareForkJoinPool()
   def messageContext(context: ContextRunnable, message: InterContextMessage): Unit = {
     val task: Callable[Unit] = () => { context.reSaturateUponMessage(message) }
     contextExecutor.execute(task, context)
@@ -224,6 +224,10 @@ final class ContextStructureManager(ontology: DLOntology,
   val saturationJobs = cs.map(c => (c.saturateAndPush(), c))
   saturationJobs.foreach(x => contextExecutor.execute(x._1, x._2))
   while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
+  while (!allInactive) {
+    getAllContexts.foreach(c => c.setInactive())
+    while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
+  }
   println("saturation jobs done")
 
   /** Non-Horn phase */
@@ -234,6 +238,26 @@ final class ContextStructureManager(ontology: DLOntology,
   })
   nonHornJobs.foreach(x => contextExecutor.execute(x._1, x._2))
   while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
+  while (!allInactive) {
+    getAllContexts.foreach(c => c.setInactive())
+    while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
+  }
+  // for (c <- getAllContexts) {
+  //   println("cq" + c.queue.size() + c.active.get)
+  //   c.setInactive()
+  //   // while (c.queue.size() > 0) {
+  //   //   contextExecutor.submitUnit(c.queue.poll())
+  //   //   println("cq--" + c.queue.size() + c.active.get)
+  //   // }
+  // }
+  // while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
+  // for (c <- getAllContexts) {
+  //     if (c.queue.size() > 0) {
+  //       println("cq-" + c.queue.size())
+  //     }
+  //   }
+
+
   println("non horn jobs done")
 
 }
