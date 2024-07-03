@@ -169,6 +169,7 @@ class Reasoner(config: ReasonerConfiguration,
     _isTaxonomyPrecomputed = true
     result
   }
+  def getmanager = contextStructureForTaxonomies
   private[this] var _isTaxonomyPrecomputed = false
   def isTaxonomyPrecomputed: Boolean = _isTaxonomyPrecomputed
 
