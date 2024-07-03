@@ -12,6 +12,8 @@ import com.sequoiareasoner.kernel.context.RuleSaturator._
 import com.sequoiareasoner.kernel.context.ClausePusher._
 import com.sequoiareasoner.kernel.context.inferenceRule._
 
+import java.util.concurrent.atomic.AtomicBoolean
+import java.util.concurrent.LinkedTransferQueue
 import java.util.concurrent.Callable
 
 class ContextRunnable(
@@ -20,6 +22,9 @@ class ContextRunnable(
     val isEqualityReasoningEnabled: Boolean,
     val order: ContextLiteralOrdering,
     val contextStructureManager: ContextStructureManager) {
+    val active: AtomicBoolean = new AtomicBoolean(true)
+    val queue: LinkedTransferQueue[Callable[Unit]] = new LinkedTransferQueue[Callable[Unit]]()
+
     /** Step 1: apply the Core rule */
     if (state.core.exists( p => ontology.isNothing(p) )) {
       state.processCandidateConclusion(ContextClause(ArrayBuilders.emptyPredicateArray, ArrayBuilders.emptyLiteralArray)(order), inferenceRule.Core)
@@ -47,6 +52,8 @@ class ContextRunnable(
           Seq.empty[ContextClause], ContextClause(ArrayBuilders.emptyPredicateArray, head)(order)) // DEBUG
       }
     }
+
+    active.set(false)
 
     /** Step 3: perform all remaining inferences */
     def saturateAndPush(): Callable[Unit] = () => {

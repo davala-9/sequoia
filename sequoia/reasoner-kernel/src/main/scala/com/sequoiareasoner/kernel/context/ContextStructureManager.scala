@@ -62,10 +62,11 @@ final class ContextStructureManager(ontology: DLOntology,
 
   /** This map provides, for each set of predicates, a channel to the context that has that set as its core */
   private[this] val contexts = new mutable.AnyRefMap[ImmutableSet[Predicate], ContextRunnable]
-  private[this] val contextExecutor = new ForkJoinPool() // Defaults to number of processors -1
+  // private[this] val contextExecutor = new ForkJoinPool() // Defaults to number of processors -1
+  private[this] val contextExecutor = new ContextAwareForkJoinPool()
   def messageContext(context: ContextRunnable, message: InterContextMessage): Unit = {
-    val task: java.util.concurrent.Callable[Unit] = () => { context.reSaturateUponMessage(message) }
-    contextExecutor.submit(task)
+    val task: Callable[Unit] = () => { context.reSaturateUponMessage(message) }
+    contextExecutor.execute(task, context)
   }
 
   /** This map provides, for each nominal context O(x), the set of (other) contexts that mention o */
@@ -148,7 +149,7 @@ final class ContextStructureManager(ontology: DLOntology,
       val ordering = ContextLiteralOrdering(Set[Int]())
       val createNewContext: Callable[ContextRunnable] = buildContext(Set[Int](), core, rootContext = false, contextIndex, ordering, hornPhaseActive)
       val context: ContextRunnable = contextExecutor.submit(createNewContext).get
-      contextExecutor.submit(context.saturateAndPush())
+      contextExecutor.execute(context.saturateAndPush(), context)
       context
     })
   }
@@ -165,7 +166,7 @@ final class ContextStructureManager(ontology: DLOntology,
       val ordering = ContextLiteralOrdering(Set[Int]())
       val createNewContext: Callable[ContextRunnable] = buildContext(Set[Int](), core, rootContext = true, contextIndex, ordering, hornPhaseActive)
       val context: ContextRunnable = contextExecutor.submit(createNewContext).get
-      contextExecutor.submit(context.saturateAndPush())
+      contextExecutor.execute(context.saturateAndPush(), context)
       context
     })
   }
@@ -217,18 +218,21 @@ final class ContextStructureManager(ontology: DLOntology,
   for (c <- cs) contexts.put(c.state.core, c)
   println("creation jobs done")
 
+  def allInactive = contexts.values.forall(c => !c.active.get())
+
   /** Saturate every concept, starting with the Horn phase */
-  val saturationJobs = cs.map(c => c.saturateAndPush())
-  contextExecutor.invokeAll(saturationJobs.asJava)
+  val saturationJobs = cs.map(c => (c.saturateAndPush(), c))
+  saturationJobs.foreach(x => contextExecutor.execute(x._1, x._2))
   while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
   println("saturation jobs done")
 
   /** Non-Horn phase */
   hornPhaseActive = false
-  val nonHornJobs = getAllContexts.toList.map(c =>
-    (() => c.reSaturateUponMessage(StartNonHornPhase())): java.util.concurrent.Callable[Unit]
-  )
-  contextExecutor.invokeAll(nonHornJobs.asJava)
+  val nonHornJobs: List[(Callable[Unit], ContextRunnable)] = getAllContexts.toList.map(c => {
+    val r: Callable[Unit] = () => c.reSaturateUponMessage(StartNonHornPhase())
+    (r, c)
+  })
+  nonHornJobs.foreach(x => contextExecutor.execute(x._1, x._2))
   while (!contextExecutor.isQuiescent() || contextExecutor.getActiveThreadCount() > 0) {}
   println("non horn jobs done")
 
