@@ -1,3 +1,5 @@
+# Generic analysis script that can be used for any set of results to create a few quick plots
+
 import matplotlib.pyplot as plt
 import numpy as np
 

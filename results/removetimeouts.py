@@ -1,3 +1,6 @@
+# Read timeouts.txt - a file containing the 5 digit string forms of tests that timed out using the original reasoner
+# Copy all tests that did not time out to a new directory to create a smaller test set for quicker testing
+
 import matplotlib.pyplot as plt
 import numpy as np
 
