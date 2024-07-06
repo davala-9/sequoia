@@ -13,8 +13,7 @@ with open('ContextCountResults.txt', 'r') as f:
         contextCount[problem_number] = int(parts[6]) # Note: if the test timed out, the context count is 0. We will ignore these results in charts
 
 # -------------------
-# Plot scatter graph of speedup (v0 time / ExecutorNoAkka time) (y-axis) vs number of contexts created (x-axis)
-# On same axis, plot speedup (v0 time / MultiQueueExecutor time) (y-axis) vs number of contexts created (x-axis)
+# Get time taken for each test from 'v0-ExecutorNoAkka-MultiQueueExecutor-32core-results.txt'
 # -------------------
 v0results = {}
 executorNoAkkaResults = {}
@@ -37,14 +36,63 @@ with open('v0-ExecutorNoAkka-MultiQueueExecutor-32core-results.txt', 'r') as f:
             print("Error: unknown result")
             quit()
 
-print(v0results)
-print()
-print(executorNoAkkaResults)
-print()
-print(multiQueueExecutorResults)
+noZeroes = {k: v for k, v in contextCount.items() if v != 0} # Filter out tests that timed out during the context count test (context count = 0)
 
+# -------------------
+# Plot scatter graph of speedup (v0 time / ExecutorNoAkka time) (y-axis) vs number of contexts created (x-axis)
+# On same axis, plot speedup (v0 time / MultiQueueExecutor time) (y-axis) vs number of contexts created (x-axis)
+# -------------------
+executorNoAkkaSpeedup = np.array([[int(noZeroes[k]), v0results[k] / executorNoAkkaResults[k]] for k in noZeroes])
+multiQueueExecutorSpeedup = np.array([[int(noZeroes[k]), v0results[k] / multiQueueExecutorResults[k]] for k in noZeroes])
+
+plt.scatter(executorNoAkkaSpeedup[:,0], executorNoAkkaSpeedup[:,1], label="ExecutorNoAkka", color='b')
+plt.scatter(multiQueueExecutorSpeedup[:,0], multiQueueExecutorSpeedup[:,1], label="MultiQueueExecutor", color='r')
+
+# lobf for ExecutorNoAkka
+z = np.polyfit(np.log(executorNoAkkaSpeedup[:,0]), np.log(executorNoAkkaSpeedup[:,1]), 1)
+f = np.poly1d(z)
+xnew = np.linspace(min(executorNoAkkaSpeedup[:,0]), max(executorNoAkkaSpeedup[:,0]), 50)
+plt.plot(xnew, np.exp(f(np.log(xnew))), 'b--')
+# lobf for MultiQueueExecutor
+z = np.polyfit(np.log(multiQueueExecutorSpeedup[:,0]), np.log(multiQueueExecutorSpeedup[:,1]), 1)
+f = np.poly1d(z)
+xnew = np.linspace(min(multiQueueExecutorSpeedup[:,0]), max(multiQueueExecutorSpeedup[:,0]), 50)
+plt.plot(xnew, np.exp(f(np.log(xnew))), 'r--')
+
+plt.xscale('log')
+plt.yscale('log')
+plt.xlabel('Number of contexts created')
+plt.ylabel('Speedup (v0 time / new implementation time)')
+plt.legend()
+plt.title('Speedup vs Number of contexts created')
+plt.show()
+ 
+# -------------------
+# Plot scatter graph of speedup (ExecutorNoAkka-1core time / ExecutorNoAkka time) (y-axis) vs number of contexts created (x-axis)
+# On same axis, plot speedup (MultiQueueExecutor-1core time / MultiQueueExecutor time) (y-axis) vs number of contexts created (x-axis)
+# -------------------
+
+# TODO : !!! get results for this and plot graphs
+plt.plot([0],[0])
+plt.show()
 
 
 # -------------------
 # As a different graph, plot context count vs time taken for ExecutorNoAkka, MultiQueueExecutor, and v0
 # -------------------
+executorNoAkkaTimeTaken = np.array([[int(noZeroes[k]), executorNoAkkaResults[k]] for k in noZeroes])
+multiQueueExecutorTimeTaken = np.array([[int(noZeroes[k]), multiQueueExecutorResults[k]] for k in noZeroes])
+v0TimeTaken = np.array([[int(noZeroes[k]), v0results[k]] for k in noZeroes])
+
+plt.scatter(v0TimeTaken[:,0], v0TimeTaken[:,1], label="v0", color='g')
+plt.scatter(executorNoAkkaTimeTaken[:,0], executorNoAkkaTimeTaken[:,1], label="ExecutorNoAkka", color='b')
+plt.scatter(multiQueueExecutorTimeTaken[:,0], multiQueueExecutorTimeTaken[:,1], label="MultiQueueExecutor", color='r')
+plt.scatter([0], [0], label="TIMEOUT", color='k')
+
+plt.xscale('log')
+plt.yscale('log')
+plt.xlabel('Number of contexts created')
+plt.ylabel('Time taken (ms)')
+plt.legend()
+plt.title('Time taken vs Number of contexts created')
+plt.show()
