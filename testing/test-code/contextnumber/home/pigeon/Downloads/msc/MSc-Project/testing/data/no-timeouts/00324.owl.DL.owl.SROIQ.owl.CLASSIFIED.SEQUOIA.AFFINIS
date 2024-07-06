@@ -1,0 +1,103 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+Declaration(Class(<http://www.w3.org/2002/12/cal/ical#DomainOf_rrule>))
+Declaration(Class(<http://www.w3.org/2002/12/cal/ical#List_of_Float>))
+Declaration(Class(<http://www.w3.org/2002/12/cal/ical#Valarm>))
+Declaration(Class(<http://www.w3.org/2002/12/cal/ical#Value_CAL-ADDRESS>))
+Declaration(Class(<http://www.w3.org/2002/12/cal/ical#Value_DATE>))
+Declaration(Class(<http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME>))
+Declaration(Class(<http://www.w3.org/2002/12/cal/ical#Value_DURATION>))
+Declaration(Class(<http://www.w3.org/2002/12/cal/ical#Value_PERIOD>))
+Declaration(Class(<http://www.w3.org/2002/12/cal/ical#Value_RECUR>))
+Declaration(Class(<http://www.w3.org/2002/12/cal/ical#Vevent>))
+Declaration(Class(<http://www.w3.org/2002/12/cal/ical#Vfreebusy>))
+Declaration(Class(<http://www.w3.org/2002/12/cal/ical#Vjournal>))
+Declaration(Class(<http://www.w3.org/2002/12/cal/ical#Vtimezone>))
+Declaration(Class(<http://www.w3.org/2002/12/cal/ical#Vtodo>))
+############################
+#   Classes
+############################
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+# Class: <http://www.w3.org/2002/12/cal/ical#DomainOf_rrule> (<http://www.w3.org/2002/12/cal/ical#DomainOf_rrule>)
+
+SubClassOf(<http://www.w3.org/2002/12/cal/ical#DomainOf_rrule> owl:Thing)
+
+# Class: <http://www.w3.org/2002/12/cal/ical#List_of_Float> (<http://www.w3.org/2002/12/cal/ical#List_of_Float>)
+
+SubClassOf(<http://www.w3.org/2002/12/cal/ical#List_of_Float> owl:Thing)
+
+# Class: <http://www.w3.org/2002/12/cal/ical#Valarm> (<http://www.w3.org/2002/12/cal/ical#Valarm>)
+
+SubClassOf(<http://www.w3.org/2002/12/cal/ical#Valarm> owl:Thing)
+
+# Class: <http://www.w3.org/2002/12/cal/ical#Value_CAL-ADDRESS> (<http://www.w3.org/2002/12/cal/ical#Value_CAL-ADDRESS>)
+
+SubClassOf(<http://www.w3.org/2002/12/cal/ical#Value_CAL-ADDRESS> owl:Thing)
+
+# Class: <http://www.w3.org/2002/12/cal/ical#Value_DATE> (<http://www.w3.org/2002/12/cal/ical#Value_DATE>)
+
+SubClassOf(<http://www.w3.org/2002/12/cal/ical#Value_DATE> owl:Thing)
+
+# Class: <http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME> (<http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME>)
+
+SubClassOf(<http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME> owl:Thing)
+
+# Class: <http://www.w3.org/2002/12/cal/ical#Value_DURATION> (<http://www.w3.org/2002/12/cal/ical#Value_DURATION>)
+
+SubClassOf(<http://www.w3.org/2002/12/cal/ical#Value_DURATION> owl:Thing)
+
+# Class: <http://www.w3.org/2002/12/cal/ical#Value_PERIOD> (<http://www.w3.org/2002/12/cal/ical#Value_PERIOD>)
+
+SubClassOf(<http://www.w3.org/2002/12/cal/ical#Value_PERIOD> owl:Thing)
+
+# Class: <http://www.w3.org/2002/12/cal/ical#Value_RECUR> (<http://www.w3.org/2002/12/cal/ical#Value_RECUR>)
+
+SubClassOf(<http://www.w3.org/2002/12/cal/ical#Value_RECUR> owl:Thing)
+
+# Class: <http://www.w3.org/2002/12/cal/ical#Vevent> (<http://www.w3.org/2002/12/cal/ical#Vevent>)
+
+SubClassOf(<http://www.w3.org/2002/12/cal/ical#Vevent> owl:Thing)
+
+# Class: <http://www.w3.org/2002/12/cal/ical#Vfreebusy> (<http://www.w3.org/2002/12/cal/ical#Vfreebusy>)
+
+SubClassOf(<http://www.w3.org/2002/12/cal/ical#Vfreebusy> owl:Thing)
+
+# Class: <http://www.w3.org/2002/12/cal/ical#Vjournal> (<http://www.w3.org/2002/12/cal/ical#Vjournal>)
+
+SubClassOf(<http://www.w3.org/2002/12/cal/ical#Vjournal> owl:Thing)
+
+# Class: <http://www.w3.org/2002/12/cal/ical#Vtimezone> (<http://www.w3.org/2002/12/cal/ical#Vtimezone>)
+
+SubClassOf(<http://www.w3.org/2002/12/cal/ical#Vtimezone> owl:Thing)
+
+# Class: <http://www.w3.org/2002/12/cal/ical#Vtodo> (<http://www.w3.org/2002/12/cal/ical#Vtodo>)
+
+SubClassOf(<http://www.w3.org/2002/12/cal/ical#Vtodo> owl:Thing)
+
+
+)

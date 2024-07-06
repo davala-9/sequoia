@@ -1,0 +1,97 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.org/net/ns/ex#Example>))
+Declaration(Class(<http://www.kanzaki.com/ns/whois#Education>))
+Declaration(Class(<http://www.kanzaki.com/ns/whois#Job>))
+Declaration(Class(<http://www.kanzaki.com/ns/whois#Period>))
+Declaration(Class(<http://www.kanzaki.com/ns/whois#Place>))
+Declaration(Class(<http://www.kanzaki.com/ns/whois#Stage>))
+Declaration(Class(rdfs:Resource))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#Address>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Person>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Education>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Job>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Period>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Stage>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/net/ns/ex#Example> (<http://purl.org/net/ns/ex#Example>)
+
+SubClassOf(<http://purl.org/net/ns/ex#Example> owl:Thing)
+
+# Class: <http://www.kanzaki.com/ns/whois#Education> (<http://www.kanzaki.com/ns/whois#Education>)
+
+SubClassOf(<http://www.kanzaki.com/ns/whois#Education> <http://www.kanzaki.com/ns/whois#Stage>)
+SubClassOf(<http://www.kanzaki.com/ns/whois#Education> <http://xmlns.com/wordnet/1.6/Education>)
+
+# Class: <http://www.kanzaki.com/ns/whois#Job> (<http://www.kanzaki.com/ns/whois#Job>)
+
+SubClassOf(<http://www.kanzaki.com/ns/whois#Job> <http://www.kanzaki.com/ns/whois#Stage>)
+SubClassOf(<http://www.kanzaki.com/ns/whois#Job> <http://xmlns.com/wordnet/1.6/Job>)
+
+# Class: <http://www.kanzaki.com/ns/whois#Period> (<http://www.kanzaki.com/ns/whois#Period>)
+
+SubClassOf(<http://www.kanzaki.com/ns/whois#Period> <http://xmlns.com/wordnet/1.6/Period>)
+
+# Class: <http://www.kanzaki.com/ns/whois#Place> (<http://www.kanzaki.com/ns/whois#Place>)
+
+SubClassOf(<http://www.kanzaki.com/ns/whois#Place> <http://www.w3.org/2000/10/swap/pim/contact#Address>)
+SubClassOf(<http://www.kanzaki.com/ns/whois#Place> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>)
+
+# Class: <http://www.kanzaki.com/ns/whois#Stage> (<http://www.kanzaki.com/ns/whois#Stage>)
+
+SubClassOf(<http://www.kanzaki.com/ns/whois#Stage> <http://www.kanzaki.com/ns/whois#Period>)
+SubClassOf(<http://www.kanzaki.com/ns/whois#Stage> <http://xmlns.com/wordnet/1.6/Stage>)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#Address> (<http://www.w3.org/2000/10/swap/pim/contact#Address>)
+
+SubClassOf(<http://www.w3.org/2000/10/swap/pim/contact#Address> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> (<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>)
+
+SubClassOf(<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Person> (<http://xmlns.com/foaf/0.1/Person>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Person> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Education> (<http://xmlns.com/wordnet/1.6/Education>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Education> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Job> (<http://xmlns.com/wordnet/1.6/Job>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Job> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Period> (<http://xmlns.com/wordnet/1.6/Period>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Period> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Stage> (<http://xmlns.com/wordnet/1.6/Stage>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Stage> owl:Thing)
+
+
+)

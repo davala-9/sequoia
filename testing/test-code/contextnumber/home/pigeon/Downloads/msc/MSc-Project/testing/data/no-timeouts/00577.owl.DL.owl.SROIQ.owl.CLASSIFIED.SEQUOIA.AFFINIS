@@ -1,0 +1,118 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0000090>))
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0000100>))
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0000200>))
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0000300>))
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0000400>))
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0000500>))
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0000600>))
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0000700>))
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0000800>))
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0000900>))
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0001000>))
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0001100>))
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0001200>))
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0001300>))
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0001400>))
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0001500>))
+Declaration(Class(<http://purl.org/obo/owl/PD_ST#PD_ST_0001600>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#DbXref>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Definition>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Synonym>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0000090> (<http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0000090> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0000100> (<http://purl.org/obo/owl/PD_ST#PD_ST_0000100>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0000100> <http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0000200> (<http://purl.org/obo/owl/PD_ST#PD_ST_0000200>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0000200> <http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0000300> (<http://purl.org/obo/owl/PD_ST#PD_ST_0000300>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0000300> <http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0000400> (<http://purl.org/obo/owl/PD_ST#PD_ST_0000400>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0000400> <http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0000500> (<http://purl.org/obo/owl/PD_ST#PD_ST_0000500>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0000500> <http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0000600> (<http://purl.org/obo/owl/PD_ST#PD_ST_0000600>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0000600> <http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0000700> (<http://purl.org/obo/owl/PD_ST#PD_ST_0000700>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0000700> <http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0000800> (<http://purl.org/obo/owl/PD_ST#PD_ST_0000800>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0000800> <http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0000900> (<http://purl.org/obo/owl/PD_ST#PD_ST_0000900>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0000900> <http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0001000> (<http://purl.org/obo/owl/PD_ST#PD_ST_0001000>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0001000> <http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0001100> (<http://purl.org/obo/owl/PD_ST#PD_ST_0001100>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0001100> <http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0001200> (<http://purl.org/obo/owl/PD_ST#PD_ST_0001200>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0001200> <http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0001300> (<http://purl.org/obo/owl/PD_ST#PD_ST_0001300>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0001300> <http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0001400> (<http://purl.org/obo/owl/PD_ST#PD_ST_0001400>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0001400> <http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0001500> (<http://purl.org/obo/owl/PD_ST#PD_ST_0001500>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0001500> <http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+# Class: <http://purl.org/obo/owl/PD_ST#PD_ST_0001600> (<http://purl.org/obo/owl/PD_ST#PD_ST_0001600>)
+
+SubClassOf(<http://purl.org/obo/owl/PD_ST#PD_ST_0001600> <http://purl.org/obo/owl/PD_ST#PD_ST_0000090>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#DbXref> (<http://www.geneontology.org/formats/oboInOwl#DbXref>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#DbXref> owl:Thing)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Definition> (<http://www.geneontology.org/formats/oboInOwl#Definition>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Definition> owl:Thing)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Synonym> (<http://www.geneontology.org/formats/oboInOwl#Synonym>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Synonym> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

@@ -1,0 +1,304 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Allpurpose>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Antecedent>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#BaseOntology>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Branch>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Child>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Complement>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Conditional>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#ConflictResolution>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Consequent>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Continous>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Crisp>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Cylindrical>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Defuzzification>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Discrete>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Fuzzification>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyInference>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyMembershipFn>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyNumber>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyOperation>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRelation>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRule>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzySet>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyTerm>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyVariable>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Guassian>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Hedges>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Inductivefuzzy>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Max>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MetaImport>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MetaInfo>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Min>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MinMax>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Node>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Operation>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Possibility>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Product>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Projection>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Qualified>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Sigmoid>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Similar>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Standard>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Sugeno>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Sum>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tconorm>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tnorm>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tree>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#TruthType>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Unqualified>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#UserDefined>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#parent>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#trapazoidal>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#triangular>))
+Declaration(Class(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#yager>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+Declaration(Class(owl:auxiliarDataRangeClass5))
+############################
+#   Classes
+############################
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Allpurpose> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Allpurpose>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Allpurpose> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Hedges>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Antecedent> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Antecedent>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Antecedent> owl:Thing)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#BaseOntology> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#BaseOntology>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#BaseOntology> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MetaInfo>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Branch> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Branch>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Branch> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tree>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Child> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Child>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Child> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Node>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Complement> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Complement>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Complement> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRule>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Conditional> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Conditional>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Conditional> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MinMax>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#ConflictResolution> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#ConflictResolution>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#ConflictResolution> owl:Thing)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Consequent> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Consequent>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Consequent> owl:Thing)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Continous> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Continous>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Continous> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyMembershipFn>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Crisp> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Crisp>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Crisp> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyMembershipFn>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Cylindrical> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Cylindrical>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Cylindrical> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRelation>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Defuzzification> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Defuzzification>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Defuzzification> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyOperation>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Discrete> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Discrete>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Discrete> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyMembershipFn>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Fuzzification> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Fuzzification>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Fuzzification> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyOperation>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyInference> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyInference>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyInference> owl:Thing)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyMembershipFn> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyMembershipFn>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyMembershipFn> owl:Thing)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyNumber> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyNumber>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyNumber> owl:Thing)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyOperation> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyOperation>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyOperation> owl:Thing)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRelation> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRelation>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRelation> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyOperation>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRule> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRule>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRule> owl:Thing)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzySet> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzySet>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzySet> owl:Thing)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyTerm> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyTerm>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyTerm> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzySet>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyVariable> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyVariable>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyVariable> owl:Thing)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Guassian> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Guassian>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Guassian> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Continous>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Hedges> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Hedges>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Hedges> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyOperation>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Inductivefuzzy> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Inductivefuzzy>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Inductivefuzzy> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyInference>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Max> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Max>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Max> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tconorm>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MetaImport> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MetaImport>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MetaImport> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MetaInfo>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MetaInfo> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MetaInfo>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MetaInfo> owl:Thing)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Min> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Min>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Min> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tnorm>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MinMax> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MinMax>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#MinMax> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyInference>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Node> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Node>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Node> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Inductivefuzzy>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Operation> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Operation>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Operation> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyOperation>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Possibility> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Possibility>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Possibility> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Hedges>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Product> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Product>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Product> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tnorm>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Projection> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Projection>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Projection> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRelation>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Qualified> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Qualified>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Qualified> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Conditional>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Sigmoid> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Sigmoid>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Sigmoid> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Guassian>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Similar> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Similar>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Similar> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRelation>)
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Similar> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Hedges>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Standard> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Standard>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Standard> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Complement>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Sugeno> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Sugeno>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Sugeno> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Complement>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Sum> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Sum>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Sum> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tconorm>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tconorm> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tconorm>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tconorm> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRule>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tnorm> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tnorm>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tnorm> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#FuzzyRule>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tree> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tree>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Tree> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Inductivefuzzy>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#TruthType> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#TruthType>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#TruthType> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Hedges>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Unqualified> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Unqualified>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Unqualified> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Conditional>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#UserDefined> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#UserDefined>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#UserDefined> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Continous>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#parent> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#parent>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#parent> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Node>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#trapazoidal> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#trapazoidal>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#trapazoidal> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Continous>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#triangular> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#triangular>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#triangular> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#trapazoidal>)
+
+# Class: <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#yager> (<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#yager>)
+
+SubClassOf(<http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#yager> <http://www.site.uottawa.ca/~mkhedr/Ontologies/Fuzzy#Complement>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass5 (owl:auxiliarDataRangeClass5)
+
+SubClassOf(owl:auxiliarDataRangeClass5 owl:Thing)
+
+
+)

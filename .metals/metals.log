@@ -447,3 +447,14 @@ WARNING: Unmatched cancel notification for request id 330
 2024.07.03 17:27:22 INFO  no build target found for /home/pigeon/Downloads/msc/MSc-Project/testing/test-code/src/main/scala/Classifier.scala. Using presentation compiler with project's scala-library version: 2.13.12
 2024.07.03 17:27:25 INFO  no build target found for /home/pigeon/Downloads/msc/MSc-Project/testing/test-code/src/main/scala/Classifier.scala. Using presentation compiler with project's scala-library version: 2.13.12
 2024.07.03 17:40:44 INFO  no build target found for /home/pigeon/Downloads/msc/MSc-Project/testing/test-code/src/main/scala/Classifier.scala. Using presentation compiler with project's scala-library version: 2.13.12
+2024.07.06 11:53:18 INFO  Started: Metals version 1.3.2 in folders '/home/pigeon/Downloads/msc/MSc-Project' for client Visual Studio Code 1.91.0.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@5b36e1d4]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@207fb054]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@5b36e1d4]
+2024.07.06 11:53:18 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.07.06 11:53:19 INFO  no build target found for /home/pigeon/Downloads/msc/MSc-Project/testing/test-code/src/main/scala/Classifier.scala. Using presentation compiler with project's scala-library version: 2.13.12
+2024.07.06 11:53:20 INFO  no build target found for /home/pigeon/Downloads/msc/MSc-Project/testing/test-code/src/main/scala/Classifier.scala. Using presentation compiler with project's scala-library version: 2.13.12
+Jul 06, 2024 11:53:22 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace

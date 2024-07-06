@@ -1,0 +1,645 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.org/net/ns/ex#Example>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Alto>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Artist>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Baritone>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Bass>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#BassClarinettist>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Bassoonist>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#CelestaPlayer>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Cellist>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Chamber_Music>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Choral_Music>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Choreographer>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Chorus>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Clarinettist>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Composer>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Concert>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Concerto>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Conductor>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Contrabassist>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#ContrafagottoPlayer>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Director>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#EnglishHornPlayer>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Ensemble>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Flutist>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Harpist>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Hornist>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Movement>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#MusicDirector>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#MusicalGroup>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Musical_Event>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Musical_Unit>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Musician>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Oboist>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Oeuvre>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Opera>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Opera_Performance>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Orchestra>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Orchestral_Work>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Overture>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Percussionist>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Pianist>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#PiccoloPlayer>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Player>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Recital>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Religious_Music>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Singer>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Soprano>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#StringQuartetEnsemble>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#String_Quartette>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Suite>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Symphonic_Poem>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Symphony>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Tenor>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Timpanist>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Trombonist>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Trumpeter>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#TubaPlayer>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Venue>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Violinist>))
+Declaration(Class(<http://www.kanzaki.com/ns/music#Violist>))
+Declaration(Class(rdf:Seq))
+Declaration(Class(rdfs:Resource))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Agent>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Group>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Person>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Alto>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Baritone>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Bass-6>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Bassoonist>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Cellist>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Chamber_Music>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Choreographer>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Chorus-2>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Clarinettist>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Concert>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Concerto>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Conductor>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Director-3>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Director-4>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Ensemble>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Event>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Flutist>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Harpist>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Hornist>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Movement>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Music_Director>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Musical_Composition>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Musical_Instrument>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Musician>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Musician-2>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Oboist>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Oeuvre>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Opera>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Orchestra>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Overture>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Percussionist>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Pianist>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Player-2>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Quartette-4>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Recital-2>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Religious_Music>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Singer>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Soprano>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/String_Quartet>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Suite>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Symphonic_Poem>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Symphony>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Tenor>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Theatrical_Performance>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Timpanist>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Trombonist>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Trumpeter>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Venue>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Violinist>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Violist>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/net/ns/ex#Example> (<http://purl.org/net/ns/ex#Example>)
+
+SubClassOf(<http://purl.org/net/ns/ex#Example> owl:Thing)
+
+# Class: <http://www.kanzaki.com/ns/music#Alto> (<http://www.kanzaki.com/ns/music#Alto>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Alto> <http://www.kanzaki.com/ns/music#Singer>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Alto> <http://xmlns.com/wordnet/1.6/Alto>)
+
+# Class: <http://www.kanzaki.com/ns/music#Artist> (<http://www.kanzaki.com/ns/music#Artist>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Artist> <http://xmlns.com/foaf/0.1/Agent>)
+
+# Class: <http://www.kanzaki.com/ns/music#Baritone> (<http://www.kanzaki.com/ns/music#Baritone>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Baritone> <http://www.kanzaki.com/ns/music#Singer>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Baritone> <http://xmlns.com/wordnet/1.6/Baritone>)
+
+# Class: <http://www.kanzaki.com/ns/music#Bass> (<http://www.kanzaki.com/ns/music#Bass>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Bass> <http://www.kanzaki.com/ns/music#Singer>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Bass> <http://xmlns.com/wordnet/1.6/Bass-6>)
+
+# Class: <http://www.kanzaki.com/ns/music#BassClarinettist> (<http://www.kanzaki.com/ns/music#BassClarinettist>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#BassClarinettist> <http://www.kanzaki.com/ns/music#Clarinettist>)
+
+# Class: <http://www.kanzaki.com/ns/music#Bassoonist> (<http://www.kanzaki.com/ns/music#Bassoonist>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Bassoonist> <http://www.kanzaki.com/ns/music#Player>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Bassoonist> <http://xmlns.com/wordnet/1.6/Bassoonist>)
+
+# Class: <http://www.kanzaki.com/ns/music#CelestaPlayer> (<http://www.kanzaki.com/ns/music#CelestaPlayer>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#CelestaPlayer> <http://www.kanzaki.com/ns/music#Player>)
+
+# Class: <http://www.kanzaki.com/ns/music#Cellist> (<http://www.kanzaki.com/ns/music#Cellist>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Cellist> <http://www.kanzaki.com/ns/music#Player>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Cellist> <http://xmlns.com/wordnet/1.6/Cellist>)
+
+# Class: <http://www.kanzaki.com/ns/music#Chamber_Music> (<http://www.kanzaki.com/ns/music#Chamber_Music>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Chamber_Music> <http://www.kanzaki.com/ns/music#Oeuvre>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Chamber_Music> <http://xmlns.com/wordnet/1.6/Chamber_Music>)
+
+# Class: <http://www.kanzaki.com/ns/music#Choral_Music> (<http://www.kanzaki.com/ns/music#Choral_Music>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Choral_Music> <http://www.kanzaki.com/ns/music#Oeuvre>)
+
+# Class: <http://www.kanzaki.com/ns/music#Choreographer> (<http://www.kanzaki.com/ns/music#Choreographer>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Choreographer> <http://www.kanzaki.com/ns/music#Director>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Choreographer> <http://xmlns.com/wordnet/1.6/Choreographer>)
+
+# Class: <http://www.kanzaki.com/ns/music#Chorus> (<http://www.kanzaki.com/ns/music#Chorus>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Chorus> <http://www.kanzaki.com/ns/music#MusicalGroup>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Chorus> <http://xmlns.com/wordnet/1.6/Chorus-2>)
+
+# Class: <http://www.kanzaki.com/ns/music#Clarinettist> (<http://www.kanzaki.com/ns/music#Clarinettist>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Clarinettist> <http://www.kanzaki.com/ns/music#Player>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Clarinettist> <http://xmlns.com/wordnet/1.6/Clarinettist>)
+
+# Class: <http://www.kanzaki.com/ns/music#Composer> (<http://www.kanzaki.com/ns/music#Composer>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Composer> <http://www.kanzaki.com/ns/music#Artist>)
+
+# Class: <http://www.kanzaki.com/ns/music#Concert> (<http://www.kanzaki.com/ns/music#Concert>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Concert> <http://www.kanzaki.com/ns/music#Musical_Event>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Concert> <http://xmlns.com/wordnet/1.6/Concert>)
+
+# Class: <http://www.kanzaki.com/ns/music#Concerto> (<http://www.kanzaki.com/ns/music#Concerto>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Concerto> <http://www.kanzaki.com/ns/music#Orchestral_Work>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Concerto> <http://xmlns.com/wordnet/1.6/Concerto>)
+
+# Class: <http://www.kanzaki.com/ns/music#Conductor> (<http://www.kanzaki.com/ns/music#Conductor>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Conductor> <http://www.kanzaki.com/ns/music#Director>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Conductor> <http://www.kanzaki.com/ns/music#Musician>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Conductor> <http://xmlns.com/wordnet/1.6/Conductor>)
+
+# Class: <http://www.kanzaki.com/ns/music#Contrabassist> (<http://www.kanzaki.com/ns/music#Contrabassist>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Contrabassist> <http://www.kanzaki.com/ns/music#Player>)
+
+# Class: <http://www.kanzaki.com/ns/music#ContrafagottoPlayer> (<http://www.kanzaki.com/ns/music#ContrafagottoPlayer>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#ContrafagottoPlayer> <http://www.kanzaki.com/ns/music#Bassoonist>)
+
+# Class: <http://www.kanzaki.com/ns/music#Director> (<http://www.kanzaki.com/ns/music#Director>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Director> <http://www.kanzaki.com/ns/music#Artist>)
+
+# Class: <http://www.kanzaki.com/ns/music#EnglishHornPlayer> (<http://www.kanzaki.com/ns/music#EnglishHornPlayer>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#EnglishHornPlayer> <http://www.kanzaki.com/ns/music#Oboist>)
+
+# Class: <http://www.kanzaki.com/ns/music#Ensemble> (<http://www.kanzaki.com/ns/music#Ensemble>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Ensemble> <http://www.kanzaki.com/ns/music#MusicalGroup>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Ensemble> <http://xmlns.com/wordnet/1.6/Ensemble>)
+
+# Class: <http://www.kanzaki.com/ns/music#Flutist> (<http://www.kanzaki.com/ns/music#Flutist>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Flutist> <http://www.kanzaki.com/ns/music#Player>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Flutist> <http://xmlns.com/wordnet/1.6/Flutist>)
+
+# Class: <http://www.kanzaki.com/ns/music#Harpist> (<http://www.kanzaki.com/ns/music#Harpist>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Harpist> <http://www.kanzaki.com/ns/music#Player>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Harpist> <http://xmlns.com/wordnet/1.6/Harpist>)
+
+# Class: <http://www.kanzaki.com/ns/music#Hornist> (<http://www.kanzaki.com/ns/music#Hornist>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Hornist> <http://www.kanzaki.com/ns/music#Player>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Hornist> <http://xmlns.com/wordnet/1.6/Hornist>)
+
+# Class: <http://www.kanzaki.com/ns/music#Movement> (<http://www.kanzaki.com/ns/music#Movement>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Movement> <http://www.kanzaki.com/ns/music#Musical_Unit>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Movement> <http://xmlns.com/wordnet/1.6/Movement>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Movement> <http://xmlns.com/wordnet/1.6/Musical_Composition>)
+
+# Class: <http://www.kanzaki.com/ns/music#MusicDirector> (<http://www.kanzaki.com/ns/music#MusicDirector>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#MusicDirector> <http://www.kanzaki.com/ns/music#Director>)
+SubClassOf(<http://www.kanzaki.com/ns/music#MusicDirector> <http://www.kanzaki.com/ns/music#Musician>)
+SubClassOf(<http://www.kanzaki.com/ns/music#MusicDirector> <http://xmlns.com/wordnet/1.6/Music_Director>)
+
+# Class: <http://www.kanzaki.com/ns/music#MusicalGroup> (<http://www.kanzaki.com/ns/music#MusicalGroup>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#MusicalGroup> <http://www.kanzaki.com/ns/music#Artist>)
+SubClassOf(<http://www.kanzaki.com/ns/music#MusicalGroup> <http://xmlns.com/foaf/0.1/Group>)
+
+# Class: <http://www.kanzaki.com/ns/music#Musical_Event> (<http://www.kanzaki.com/ns/music#Musical_Event>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Musical_Event> <http://xmlns.com/wordnet/1.6/Event>)
+
+# Class: <http://www.kanzaki.com/ns/music#Musical_Unit> (<http://www.kanzaki.com/ns/music#Musical_Unit>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Musical_Unit> owl:Thing)
+
+# Class: <http://www.kanzaki.com/ns/music#Musician> (<http://www.kanzaki.com/ns/music#Musician>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Musician> <http://www.kanzaki.com/ns/music#Artist>)
+
+# Class: <http://www.kanzaki.com/ns/music#Oboist> (<http://www.kanzaki.com/ns/music#Oboist>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Oboist> <http://www.kanzaki.com/ns/music#Player>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Oboist> <http://xmlns.com/wordnet/1.6/Oboist>)
+
+# Class: <http://www.kanzaki.com/ns/music#Oeuvre> (<http://www.kanzaki.com/ns/music#Oeuvre>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Oeuvre> <http://www.kanzaki.com/ns/music#Musical_Unit>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Oeuvre> <http://xmlns.com/wordnet/1.6/Musical_Composition>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Oeuvre> <http://xmlns.com/wordnet/1.6/Oeuvre>)
+
+# Class: <http://www.kanzaki.com/ns/music#Opera> (<http://www.kanzaki.com/ns/music#Opera>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Opera> <http://www.kanzaki.com/ns/music#Oeuvre>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Opera> <http://xmlns.com/wordnet/1.6/Opera>)
+
+# Class: <http://www.kanzaki.com/ns/music#Opera_Performance> (<http://www.kanzaki.com/ns/music#Opera_Performance>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Opera_Performance> <http://www.kanzaki.com/ns/music#Musical_Event>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Opera_Performance> <http://xmlns.com/wordnet/1.6/Theatrical_Performance>)
+
+# Class: <http://www.kanzaki.com/ns/music#Orchestra> (<http://www.kanzaki.com/ns/music#Orchestra>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Orchestra> <http://www.kanzaki.com/ns/music#MusicalGroup>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Orchestra> <http://xmlns.com/wordnet/1.6/Orchestra>)
+
+# Class: <http://www.kanzaki.com/ns/music#Orchestral_Work> (<http://www.kanzaki.com/ns/music#Orchestral_Work>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Orchestral_Work> <http://www.kanzaki.com/ns/music#Oeuvre>)
+
+# Class: <http://www.kanzaki.com/ns/music#Overture> (<http://www.kanzaki.com/ns/music#Overture>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Overture> <http://www.kanzaki.com/ns/music#Orchestral_Work>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Overture> <http://xmlns.com/wordnet/1.6/Overture>)
+
+# Class: <http://www.kanzaki.com/ns/music#Percussionist> (<http://www.kanzaki.com/ns/music#Percussionist>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Percussionist> <http://www.kanzaki.com/ns/music#Player>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Percussionist> <http://xmlns.com/wordnet/1.6/Percussionist>)
+
+# Class: <http://www.kanzaki.com/ns/music#Pianist> (<http://www.kanzaki.com/ns/music#Pianist>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Pianist> <http://www.kanzaki.com/ns/music#Player>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Pianist> <http://xmlns.com/wordnet/1.6/Pianist>)
+
+# Class: <http://www.kanzaki.com/ns/music#PiccoloPlayer> (<http://www.kanzaki.com/ns/music#PiccoloPlayer>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#PiccoloPlayer> <http://www.kanzaki.com/ns/music#Flutist>)
+
+# Class: <http://www.kanzaki.com/ns/music#Player> (<http://www.kanzaki.com/ns/music#Player>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Player> <http://www.kanzaki.com/ns/music#Musician>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Player> <http://xmlns.com/wordnet/1.6/Player-2>)
+
+# Class: <http://www.kanzaki.com/ns/music#Recital> (<http://www.kanzaki.com/ns/music#Recital>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Recital> <http://www.kanzaki.com/ns/music#Musical_Event>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Recital> <http://xmlns.com/wordnet/1.6/Recital-2>)
+
+# Class: <http://www.kanzaki.com/ns/music#Religious_Music> (<http://www.kanzaki.com/ns/music#Religious_Music>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Religious_Music> <http://www.kanzaki.com/ns/music#Oeuvre>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Religious_Music> <http://xmlns.com/wordnet/1.6/Religious_Music>)
+
+# Class: <http://www.kanzaki.com/ns/music#Singer> (<http://www.kanzaki.com/ns/music#Singer>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Singer> <http://www.kanzaki.com/ns/music#Musician>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Singer> <http://xmlns.com/wordnet/1.6/Singer>)
+
+# Class: <http://www.kanzaki.com/ns/music#Soprano> (<http://www.kanzaki.com/ns/music#Soprano>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Soprano> <http://www.kanzaki.com/ns/music#Singer>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Soprano> <http://xmlns.com/wordnet/1.6/Soprano>)
+
+# Class: <http://www.kanzaki.com/ns/music#StringQuartetEnsemble> (<http://www.kanzaki.com/ns/music#StringQuartetEnsemble>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#StringQuartetEnsemble> <http://www.kanzaki.com/ns/music#MusicalGroup>)
+SubClassOf(<http://www.kanzaki.com/ns/music#StringQuartetEnsemble> <http://xmlns.com/wordnet/1.6/String_Quartet>)
+
+# Class: <http://www.kanzaki.com/ns/music#String_Quartette> (<http://www.kanzaki.com/ns/music#String_Quartette>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#String_Quartette> <http://www.kanzaki.com/ns/music#Oeuvre>)
+SubClassOf(<http://www.kanzaki.com/ns/music#String_Quartette> <http://xmlns.com/wordnet/1.6/Quartette-4>)
+
+# Class: <http://www.kanzaki.com/ns/music#Suite> (<http://www.kanzaki.com/ns/music#Suite>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Suite> <http://www.kanzaki.com/ns/music#Oeuvre>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Suite> <http://xmlns.com/wordnet/1.6/Suite>)
+
+# Class: <http://www.kanzaki.com/ns/music#Symphonic_Poem> (<http://www.kanzaki.com/ns/music#Symphonic_Poem>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Symphonic_Poem> <http://www.kanzaki.com/ns/music#Orchestral_Work>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Symphonic_Poem> <http://xmlns.com/wordnet/1.6/Symphonic_Poem>)
+
+# Class: <http://www.kanzaki.com/ns/music#Symphony> (<http://www.kanzaki.com/ns/music#Symphony>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Symphony> <http://www.kanzaki.com/ns/music#Orchestral_Work>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Symphony> <http://xmlns.com/wordnet/1.6/Symphony>)
+
+# Class: <http://www.kanzaki.com/ns/music#Tenor> (<http://www.kanzaki.com/ns/music#Tenor>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Tenor> <http://www.kanzaki.com/ns/music#Singer>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Tenor> <http://xmlns.com/wordnet/1.6/Tenor>)
+
+# Class: <http://www.kanzaki.com/ns/music#Timpanist> (<http://www.kanzaki.com/ns/music#Timpanist>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Timpanist> <http://www.kanzaki.com/ns/music#Player>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Timpanist> <http://xmlns.com/wordnet/1.6/Timpanist>)
+
+# Class: <http://www.kanzaki.com/ns/music#Trombonist> (<http://www.kanzaki.com/ns/music#Trombonist>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Trombonist> <http://www.kanzaki.com/ns/music#Player>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Trombonist> <http://xmlns.com/wordnet/1.6/Trombonist>)
+
+# Class: <http://www.kanzaki.com/ns/music#Trumpeter> (<http://www.kanzaki.com/ns/music#Trumpeter>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Trumpeter> <http://www.kanzaki.com/ns/music#Player>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Trumpeter> <http://xmlns.com/wordnet/1.6/Trumpeter>)
+
+# Class: <http://www.kanzaki.com/ns/music#TubaPlayer> (<http://www.kanzaki.com/ns/music#TubaPlayer>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#TubaPlayer> <http://www.kanzaki.com/ns/music#Player>)
+
+# Class: <http://www.kanzaki.com/ns/music#Venue> (<http://www.kanzaki.com/ns/music#Venue>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Venue> <http://xmlns.com/wordnet/1.6/Venue>)
+
+# Class: <http://www.kanzaki.com/ns/music#Violinist> (<http://www.kanzaki.com/ns/music#Violinist>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Violinist> <http://www.kanzaki.com/ns/music#Player>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Violinist> <http://xmlns.com/wordnet/1.6/Violinist>)
+
+# Class: <http://www.kanzaki.com/ns/music#Violist> (<http://www.kanzaki.com/ns/music#Violist>)
+
+SubClassOf(<http://www.kanzaki.com/ns/music#Violist> <http://www.kanzaki.com/ns/music#Player>)
+SubClassOf(<http://www.kanzaki.com/ns/music#Violist> <http://xmlns.com/wordnet/1.6/Violist>)
+
+# Class: rdf:Seq (rdf:Seq)
+
+SubClassOf(rdf:Seq owl:Thing)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Agent> (<http://xmlns.com/foaf/0.1/Agent>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Agent> owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Group> (<http://xmlns.com/foaf/0.1/Group>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Group> owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Person> (<http://xmlns.com/foaf/0.1/Person>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Person> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Alto> (<http://xmlns.com/wordnet/1.6/Alto>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Alto> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Baritone> (<http://xmlns.com/wordnet/1.6/Baritone>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Baritone> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Bass-6> (<http://xmlns.com/wordnet/1.6/Bass-6>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Bass-6> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Bassoonist> (<http://xmlns.com/wordnet/1.6/Bassoonist>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Bassoonist> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Cellist> (<http://xmlns.com/wordnet/1.6/Cellist>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Cellist> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Chamber_Music> (<http://xmlns.com/wordnet/1.6/Chamber_Music>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Chamber_Music> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Choreographer> (<http://xmlns.com/wordnet/1.6/Choreographer>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Choreographer> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Chorus-2> (<http://xmlns.com/wordnet/1.6/Chorus-2>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Chorus-2> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Clarinettist> (<http://xmlns.com/wordnet/1.6/Clarinettist>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Clarinettist> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Concert> (<http://xmlns.com/wordnet/1.6/Concert>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Concert> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Concerto> (<http://xmlns.com/wordnet/1.6/Concerto>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Concerto> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Conductor> (<http://xmlns.com/wordnet/1.6/Conductor>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Conductor> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Director-3> (<http://xmlns.com/wordnet/1.6/Director-3>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Director-3> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Director-4> (<http://xmlns.com/wordnet/1.6/Director-4>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Director-4> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Ensemble> (<http://xmlns.com/wordnet/1.6/Ensemble>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Ensemble> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Event> (<http://xmlns.com/wordnet/1.6/Event>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Event> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Flutist> (<http://xmlns.com/wordnet/1.6/Flutist>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Flutist> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Harpist> (<http://xmlns.com/wordnet/1.6/Harpist>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Harpist> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Hornist> (<http://xmlns.com/wordnet/1.6/Hornist>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Hornist> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Movement> (<http://xmlns.com/wordnet/1.6/Movement>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Movement> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Music_Director> (<http://xmlns.com/wordnet/1.6/Music_Director>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Music_Director> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Musical_Composition> (<http://xmlns.com/wordnet/1.6/Musical_Composition>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Musical_Composition> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Musical_Instrument> (<http://xmlns.com/wordnet/1.6/Musical_Instrument>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Musical_Instrument> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Musician> (<http://xmlns.com/wordnet/1.6/Musician>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Musician> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Musician-2> (<http://xmlns.com/wordnet/1.6/Musician-2>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Musician-2> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Oboist> (<http://xmlns.com/wordnet/1.6/Oboist>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Oboist> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Oeuvre> (<http://xmlns.com/wordnet/1.6/Oeuvre>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Oeuvre> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Opera> (<http://xmlns.com/wordnet/1.6/Opera>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Opera> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Orchestra> (<http://xmlns.com/wordnet/1.6/Orchestra>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Orchestra> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Overture> (<http://xmlns.com/wordnet/1.6/Overture>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Overture> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Percussionist> (<http://xmlns.com/wordnet/1.6/Percussionist>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Percussionist> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Pianist> (<http://xmlns.com/wordnet/1.6/Pianist>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Pianist> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Player-2> (<http://xmlns.com/wordnet/1.6/Player-2>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Player-2> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Quartette-4> (<http://xmlns.com/wordnet/1.6/Quartette-4>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Quartette-4> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Recital-2> (<http://xmlns.com/wordnet/1.6/Recital-2>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Recital-2> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Religious_Music> (<http://xmlns.com/wordnet/1.6/Religious_Music>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Religious_Music> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Singer> (<http://xmlns.com/wordnet/1.6/Singer>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Singer> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Soprano> (<http://xmlns.com/wordnet/1.6/Soprano>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Soprano> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/String_Quartet> (<http://xmlns.com/wordnet/1.6/String_Quartet>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/String_Quartet> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Suite> (<http://xmlns.com/wordnet/1.6/Suite>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Suite> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Symphonic_Poem> (<http://xmlns.com/wordnet/1.6/Symphonic_Poem>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Symphonic_Poem> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Symphony> (<http://xmlns.com/wordnet/1.6/Symphony>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Symphony> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Tenor> (<http://xmlns.com/wordnet/1.6/Tenor>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Tenor> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Theatrical_Performance> (<http://xmlns.com/wordnet/1.6/Theatrical_Performance>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Theatrical_Performance> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Timpanist> (<http://xmlns.com/wordnet/1.6/Timpanist>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Timpanist> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Trombonist> (<http://xmlns.com/wordnet/1.6/Trombonist>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Trombonist> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Trumpeter> (<http://xmlns.com/wordnet/1.6/Trumpeter>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Trumpeter> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Venue> (<http://xmlns.com/wordnet/1.6/Venue>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Venue> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Violinist> (<http://xmlns.com/wordnet/1.6/Violinist>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Violinist> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Violist> (<http://xmlns.com/wordnet/1.6/Violist>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Violist> owl:Thing)
+
+
+)

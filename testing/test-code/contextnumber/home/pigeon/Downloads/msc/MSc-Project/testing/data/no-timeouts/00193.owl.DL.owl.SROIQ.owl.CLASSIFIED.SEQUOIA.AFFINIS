@@ -1,0 +1,280 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error1>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#And>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Atomic_formula>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Atomic_formula_bag>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Binder>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Connective_formula>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Constant>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Constant_bag>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Exists>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Forall>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Formula>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Function>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Function_skeleton>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Functional_term>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Implies>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Literal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Not>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Or>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Predicate>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Prop>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term_Bag>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term_bag>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term_seq>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Var>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Var_bag>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Var_seq>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Class>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Datatype>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#DatatypeProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#List>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Nothing>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#ObjectProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Ontology>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Property>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Restriction>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#TransitiveProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#UniqueProperty>))
+Declaration(Class(rdf:Bag))
+Declaration(Class(rdf:Property))
+Declaration(Class(rdf:Seq))
+Declaration(Class(rdfs:Class))
+Declaration(Class(rdfs:Container))
+Declaration(Class(rdfs:ContainerMembershipProperty))
+Declaration(Class(rdfs:Datatype))
+Declaration(Class(rdfs:Literal))
+Declaration(Class(rdfs:Resource))
+Declaration(Class(<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>))
+Declaration(Class(owl:Class))
+Declaration(Class(owl:ObjectProperty))
+Declaration(Class(owl:Restriction))
+############################
+#   Classes
+############################
+
+# Class: <http://org.semanticweb.owlapi/error#Error1> (<http://org.semanticweb.owlapi/error#Error1>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error1> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#And> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#And>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#And> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Connective_formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Atomic_formula> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Atomic_formula>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Atomic_formula> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Atomic_formula_bag> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Atomic_formula_bag>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Atomic_formula_bag> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term_Bag>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Binder> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Binder>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Binder> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Connective_formula> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Connective_formula>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Connective_formula> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Constant> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Constant>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Constant> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Constant_bag> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Constant_bag>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Constant_bag> rdf:Bag)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Exists> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Exists>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Exists> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Binder>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Forall> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Forall>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Forall> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Binder>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Formula> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Formula>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Formula> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Function> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Function>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Function> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Function_skeleton> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Function_skeleton>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Function_skeleton> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Functional_term>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Functional_term> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Functional_term>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Functional_term> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Implies> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Implies>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Implies> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Connective_formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Literal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Literal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Literal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Not> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Not>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Not> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Connective_formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Or> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Or>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Or> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Connective_formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Predicate> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Predicate>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Predicate> <http://org.semanticweb.owlapi/error#Error1>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Predicate> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Function>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Prop> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Prop>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Prop> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term_Bag> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term_Bag>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term_Bag> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term_bag> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term_bag>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term_bag> rdf:Bag)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term_seq> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term_seq>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term_seq> <http://www.daml.org/2001/03/daml+oil#List>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Var> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Var>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Var> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Term>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Var_bag> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Var_bag>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Var_bag> rdf:Bag)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Var_seq> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Var_seq>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00193.owl#Var_seq> <http://www.daml.org/2001/03/daml+oil#List>)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Class> (<http://www.daml.org/2001/03/daml+oil#Class>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Class> rdfs:Class)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Datatype> (<http://www.daml.org/2001/03/daml+oil#Datatype>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Datatype> rdfs:Class)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#DatatypeProperty> (<http://www.daml.org/2001/03/daml+oil#DatatypeProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#DatatypeProperty> rdf:Property)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#List> (<http://www.daml.org/2001/03/daml+oil#List>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#List> rdf:Seq)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Nothing> (<http://www.daml.org/2001/03/daml+oil#Nothing>)
+
+EquivalentClasses(<http://www.daml.org/2001/03/daml+oil#Nothing> owl:Nothing)
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Nothing> owl:Nothing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#ObjectProperty> (<http://www.daml.org/2001/03/daml+oil#ObjectProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#ObjectProperty> rdf:Property)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Ontology> (<http://www.daml.org/2001/03/daml+oil#Ontology>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Ontology> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Property> (<http://www.daml.org/2001/03/daml+oil#Property>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Property> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Restriction> (<http://www.daml.org/2001/03/daml+oil#Restriction>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Restriction> owl:Class)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#TransitiveProperty> (<http://www.daml.org/2001/03/daml+oil#TransitiveProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#TransitiveProperty> owl:ObjectProperty)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#UnambiguousProperty> (<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty> owl:ObjectProperty)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#UniqueProperty> (<http://www.daml.org/2001/03/daml+oil#UniqueProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UniqueProperty> rdf:Property)
+
+# Class: rdf:Bag (rdf:Bag)
+
+SubClassOf(rdf:Bag owl:Thing)
+
+# Class: rdf:Property (rdf:Property)
+
+SubClassOf(rdf:Property owl:Thing)
+
+# Class: rdf:Seq (rdf:Seq)
+
+SubClassOf(rdf:Seq owl:Thing)
+
+# Class: rdfs:Class (rdfs:Class)
+
+SubClassOf(rdfs:Class rdfs:Resource)
+
+# Class: rdfs:Container (rdfs:Container)
+
+SubClassOf(rdfs:Container rdfs:Resource)
+
+# Class: rdfs:ContainerMembershipProperty (rdfs:ContainerMembershipProperty)
+
+SubClassOf(rdfs:ContainerMembershipProperty rdf:Property)
+
+# Class: rdfs:Datatype (rdfs:Datatype)
+
+SubClassOf(rdfs:Datatype rdfs:Class)
+
+# Class: rdfs:Literal (rdfs:Literal)
+
+SubClassOf(rdfs:Literal rdfs:Resource)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger> (<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>)
+
+SubClassOf(<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger> owl:Thing)
+
+# Class: owl:Class (owl:Class)
+
+SubClassOf(owl:Class owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:ObjectProperty (owl:ObjectProperty)
+
+SubClassOf(owl:ObjectProperty owl:Thing)
+
+# Class: owl:Restriction (owl:Restriction)
+
+SubClassOf(owl:Restriction owl:Thing)
+
+
+)

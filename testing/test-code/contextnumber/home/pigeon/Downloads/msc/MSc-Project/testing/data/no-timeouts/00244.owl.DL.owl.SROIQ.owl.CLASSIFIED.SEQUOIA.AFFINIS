@@ -1,0 +1,58 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Academic_Mission>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Industrial_Mission>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Ontology>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Property>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Research_Deliverables>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Sex>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#UnanbiguousProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#UniqueProperty>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Academic_Mission> (<http://www.daml.org/2001/03/daml+oil#Academic_Mission>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Academic_Mission> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Industrial_Mission> (<http://www.daml.org/2001/03/daml+oil#Industrial_Mission>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Industrial_Mission> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Ontology> (<http://www.daml.org/2001/03/daml+oil#Ontology>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Ontology> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Property> (<http://www.daml.org/2001/03/daml+oil#Property>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Property> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Research_Deliverables> (<http://www.daml.org/2001/03/daml+oil#Research_Deliverables>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Research_Deliverables> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Sex> (<http://www.daml.org/2001/03/daml+oil#Sex>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Sex> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#UnanbiguousProperty> (<http://www.daml.org/2001/03/daml+oil#UnanbiguousProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UnanbiguousProperty> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#UniqueProperty> (<http://www.daml.org/2001/03/daml+oil#UniqueProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UniqueProperty> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

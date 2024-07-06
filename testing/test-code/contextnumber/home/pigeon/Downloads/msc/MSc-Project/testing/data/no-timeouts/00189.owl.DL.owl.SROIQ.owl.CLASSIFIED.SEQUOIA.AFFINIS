@@ -1,0 +1,68 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#Race>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#eliteRunner>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#fee>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#registrationDiscount>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#runner>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#runnerClass>))
+Declaration(Class(<http://www.cs.umd.edu/~golbeck/daml/running.daml#amenity>))
+Declaration(Class(<http://www.cs.umd.edu/~golbeck/daml/running.daml#runnerClass>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Ontology>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Property>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#Race> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#Race>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#Race> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#eliteRunner> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#eliteRunner>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#eliteRunner> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#runner>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#fee> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#fee>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#fee> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#registrationDiscount> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#registrationDiscount>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#registrationDiscount> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#runner> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#runner>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#runner> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#runnerClass> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#runnerClass>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00189.owl#runnerClass> owl:Thing)
+
+# Class: <http://www.cs.umd.edu/~golbeck/daml/running.daml#amenity> (<http://www.cs.umd.edu/~golbeck/daml/running.daml#amenity>)
+
+SubClassOf(<http://www.cs.umd.edu/~golbeck/daml/running.daml#amenity> owl:Thing)
+
+# Class: <http://www.cs.umd.edu/~golbeck/daml/running.daml#runnerClass> (<http://www.cs.umd.edu/~golbeck/daml/running.daml#runnerClass>)
+
+SubClassOf(<http://www.cs.umd.edu/~golbeck/daml/running.daml#runnerClass> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Ontology> (<http://www.daml.org/2001/03/daml+oil#Ontology>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Ontology> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Property> (<http://www.daml.org/2001/03/daml+oil#Property>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Property> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

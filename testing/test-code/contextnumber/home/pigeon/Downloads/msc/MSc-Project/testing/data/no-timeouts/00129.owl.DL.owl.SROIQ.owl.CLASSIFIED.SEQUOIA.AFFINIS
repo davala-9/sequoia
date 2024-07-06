@@ -1,0 +1,83 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.org/net/bloggercode/BloggerQuotient>))
+Declaration(Class(<http://purl.org/net/bloggercode/ClosetQuotient>))
+Declaration(Class(<http://purl.org/net/bloggercode/DomainQuotient>))
+Declaration(Class(<http://purl.org/net/bloggercode/ExhibitionismQuotient>))
+Declaration(Class(<http://purl.org/net/bloggercode/FrequencyQuotient>))
+Declaration(Class(<http://purl.org/net/bloggercode/ImmediacyQuotient>))
+Declaration(Class(<http://purl.org/net/bloggercode/LemmingQuotient>))
+Declaration(Class(<http://purl.org/net/bloggercode/LinkSlutQuotient>))
+Declaration(Class(<http://purl.org/net/bloggercode/OriginalityQuotient>))
+Declaration(Class(<http://purl.org/net/bloggercode/SexQuotient>))
+Declaration(Class(<http://purl.org/net/bloggercode/StatsQuotient>))
+Declaration(Class(<http://purl.org/net/bloggercode/TechnicalQuotient>))
+Declaration(Class(<http://purl.org/net/bloggercode/UsualSuspectsQuotient>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/net/bloggercode/BloggerQuotient> (<http://purl.org/net/bloggercode/BloggerQuotient>)
+
+SubClassOf(<http://purl.org/net/bloggercode/BloggerQuotient> owl:Thing)
+
+# Class: <http://purl.org/net/bloggercode/ClosetQuotient> (<http://purl.org/net/bloggercode/ClosetQuotient>)
+
+SubClassOf(<http://purl.org/net/bloggercode/ClosetQuotient> owl:Thing)
+
+# Class: <http://purl.org/net/bloggercode/DomainQuotient> (<http://purl.org/net/bloggercode/DomainQuotient>)
+
+SubClassOf(<http://purl.org/net/bloggercode/DomainQuotient> owl:Thing)
+
+# Class: <http://purl.org/net/bloggercode/ExhibitionismQuotient> (<http://purl.org/net/bloggercode/ExhibitionismQuotient>)
+
+SubClassOf(<http://purl.org/net/bloggercode/ExhibitionismQuotient> owl:Thing)
+
+# Class: <http://purl.org/net/bloggercode/FrequencyQuotient> (<http://purl.org/net/bloggercode/FrequencyQuotient>)
+
+SubClassOf(<http://purl.org/net/bloggercode/FrequencyQuotient> owl:Thing)
+
+# Class: <http://purl.org/net/bloggercode/ImmediacyQuotient> (<http://purl.org/net/bloggercode/ImmediacyQuotient>)
+
+SubClassOf(<http://purl.org/net/bloggercode/ImmediacyQuotient> owl:Thing)
+
+# Class: <http://purl.org/net/bloggercode/LemmingQuotient> (<http://purl.org/net/bloggercode/LemmingQuotient>)
+
+SubClassOf(<http://purl.org/net/bloggercode/LemmingQuotient> owl:Thing)
+
+# Class: <http://purl.org/net/bloggercode/LinkSlutQuotient> (<http://purl.org/net/bloggercode/LinkSlutQuotient>)
+
+SubClassOf(<http://purl.org/net/bloggercode/LinkSlutQuotient> owl:Thing)
+
+# Class: <http://purl.org/net/bloggercode/OriginalityQuotient> (<http://purl.org/net/bloggercode/OriginalityQuotient>)
+
+SubClassOf(<http://purl.org/net/bloggercode/OriginalityQuotient> owl:Thing)
+
+# Class: <http://purl.org/net/bloggercode/SexQuotient> (<http://purl.org/net/bloggercode/SexQuotient>)
+
+SubClassOf(<http://purl.org/net/bloggercode/SexQuotient> owl:Thing)
+
+# Class: <http://purl.org/net/bloggercode/StatsQuotient> (<http://purl.org/net/bloggercode/StatsQuotient>)
+
+SubClassOf(<http://purl.org/net/bloggercode/StatsQuotient> owl:Thing)
+
+# Class: <http://purl.org/net/bloggercode/TechnicalQuotient> (<http://purl.org/net/bloggercode/TechnicalQuotient>)
+
+SubClassOf(<http://purl.org/net/bloggercode/TechnicalQuotient> owl:Thing)
+
+# Class: <http://purl.org/net/bloggercode/UsualSuspectsQuotient> (<http://purl.org/net/bloggercode/UsualSuspectsQuotient>)
+
+SubClassOf(<http://purl.org/net/bloggercode/UsualSuspectsQuotient> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

@@ -1,0 +1,204 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MilitaryService>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SecurityUnit>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicalAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#MilitaryOrganization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeInteger>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#PoliceOrganization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#RationalNumber>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SexAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeDuration>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#AirDefenseOrganization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#AirForce>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#BillionUSDollar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#BorderPatrol>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#BorderSecurityForce>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#CoastGuard>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#DepartmentOfDefense>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MarineCorps>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitaryForce>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitaryReserveForce>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitaryUnitStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitiaIrregularForce>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MillionUSDollar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#NationalGuard>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#NationalPolice>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#NavalAirForce>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#PresidentialProtectionUnit>))
+############################
+#   Classes
+############################
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MilitaryService> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MilitaryService>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MilitaryService> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SecurityUnit> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SecurityUnit>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SecurityUnit> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicalAttribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicalAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicalAttribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent> (<http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure> (<http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization> (<http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#MilitaryOrganization> (<http://reliant.teknowledge.com/DAML/SUMO.owl#MilitaryOrganization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#MilitaryOrganization> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitaryForce>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeInteger> (<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeInteger>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeInteger> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#PoliceOrganization> (<http://reliant.teknowledge.com/DAML/SUMO.owl#PoliceOrganization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#PoliceOrganization> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#RationalNumber> (<http://reliant.teknowledge.com/DAML/SUMO.owl#RationalNumber>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#RationalNumber> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SexAttribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SexAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SexAttribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TimeDuration> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeDuration>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeDuration> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure> (<http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#AirDefenseOrganization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#AirDefenseOrganization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#AirDefenseOrganization> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#AirForce> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#AirForce>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#AirForce> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MilitaryService>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#BillionUSDollar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#BillionUSDollar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#BillionUSDollar> <http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#BorderPatrol> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#BorderPatrol>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#BorderPatrol> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SecurityUnit>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#BorderPatrol> <http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#BorderSecurityForce> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#BorderSecurityForce>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#BorderSecurityForce> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SecurityUnit>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#BorderSecurityForce> <http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#CoastGuard> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#CoastGuard>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#CoastGuard> <http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#CoastGuard> <http://reliant.teknowledge.com/DAML/SUMO.owl#PoliceOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#DepartmentOfDefense> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#DepartmentOfDefense>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#DepartmentOfDefense> <http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#DepartmentOfDefense> <http://reliant.teknowledge.com/DAML/SUMO.owl#MilitaryOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MarineCorps> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MarineCorps>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MarineCorps> <http://reliant.teknowledge.com/DAML/SUMO.owl#MilitaryOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitaryForce> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitaryForce>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitaryForce> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitaryReserveForce> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitaryReserveForce>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitaryReserveForce> <http://reliant.teknowledge.com/DAML/SUMO.owl#MilitaryOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitaryUnitStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitaryUnitStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitaryUnitStatus> <http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitiaIrregularForce> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitiaIrregularForce>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitiaIrregularForce> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MilitaryForce>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MillionUSDollar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MillionUSDollar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#MillionUSDollar> <http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#NationalGuard> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#NationalGuard>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#NationalGuard> <http://reliant.teknowledge.com/DAML/SUMO.owl#MilitaryOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#NationalPolice> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#NationalPolice>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#NationalPolice> <http://reliant.teknowledge.com/DAML/SUMO.owl#MilitaryOrganization>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#NationalPolice> <http://reliant.teknowledge.com/DAML/SUMO.owl#PoliceOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#NavalAirForce> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#NavalAirForce>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#NavalAirForce> <http://reliant.teknowledge.com/DAML/SUMO.owl#MilitaryOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#PresidentialProtectionUnit> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#PresidentialProtectionUnit>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#PresidentialProtectionUnit> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SecurityUnit>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00145.owl#PresidentialProtectionUnit> <http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

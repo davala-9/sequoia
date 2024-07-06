@@ -1,0 +1,88 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#AssociatedState>))
+Declaration(Class(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country>))
+Declaration(Class(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#FullyDependentTerritory>))
+Declaration(Class(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#ISO3166DefinedCountry>))
+Declaration(Class(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependenceDisputedState>))
+Declaration(Class(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependentState>))
+Declaration(Class(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#OccupiedTerritory>))
+Declaration(Class(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#UnclaimableTerritory>))
+Declaration(Class(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#VirtualTerritory>))
+Declaration(Class(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#VirtuallyAnnexedTerritory>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+Declaration(Class(owl:auxiliarDataRangeClass5))
+############################
+#   Classes
+############################
+
+# Class: <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#AssociatedState> (<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#AssociatedState>)
+
+SubClassOf(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#AssociatedState> <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country>)
+
+# Class: <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country> (<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country>)
+
+SubClassOf(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country> owl:Thing)
+
+# Class: <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#FullyDependentTerritory> (<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#FullyDependentTerritory>)
+
+SubClassOf(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#FullyDependentTerritory> <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country>)
+
+# Class: <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#ISO3166DefinedCountry> (<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#ISO3166DefinedCountry>)
+
+SubClassOf(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#ISO3166DefinedCountry> owl:Thing)
+
+# Class: <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependenceDisputedState> (<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependenceDisputedState>)
+
+SubClassOf(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependenceDisputedState> <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country>)
+
+# Class: <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependentState> (<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependentState>)
+
+SubClassOf(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#IndependentState> <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country>)
+
+# Class: <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#OccupiedTerritory> (<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#OccupiedTerritory>)
+
+SubClassOf(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#OccupiedTerritory> <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country>)
+
+# Class: <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#UnclaimableTerritory> (<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#UnclaimableTerritory>)
+
+SubClassOf(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#UnclaimableTerritory> <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country>)
+
+# Class: <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#VirtualTerritory> (<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#VirtualTerritory>)
+
+SubClassOf(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#VirtualTerritory> <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country>)
+
+# Class: <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#VirtuallyAnnexedTerritory> (<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#VirtuallyAnnexedTerritory>)
+
+SubClassOf(<http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#VirtuallyAnnexedTerritory> <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries#Country>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass5 (owl:auxiliarDataRangeClass5)
+
+SubClassOf(owl:auxiliarDataRangeClass5 owl:Thing)
+
+
+)

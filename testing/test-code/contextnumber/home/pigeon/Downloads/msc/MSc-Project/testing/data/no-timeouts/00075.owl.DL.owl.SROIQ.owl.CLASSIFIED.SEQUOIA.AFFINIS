@@ -1,0 +1,803 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsoluteFutureTense>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsolutePastTense>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsoluteRelativeTense>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsoluteTense>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Abstract>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Adposition>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Animate>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Article>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AspectValue>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Attribute>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#BoundRoot>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#BoundStem>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#CaseValue>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Character>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Class>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Clause>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Clitic>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ClosedFeature>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ClosedMorphoSyntacticFeature>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ClosedSpecification>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexFeature>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexLexicalUnit>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexMorphoSyntacticFeature>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexOrthWord>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexSpecification>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Compound>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Connective>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ContentBearingObject>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#CoordinatingConnective>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#DerivationalUnit>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Determiner>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#DirectionalCase>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#DynamicityAspect>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Enclitic>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Entity>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#EvaluativeValue>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Feature>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureConstraint>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureSpecification>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureStructure>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureSystem>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureValue>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureValueAssociation>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FreeRoot>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FreeStem>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#GenderValue>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#GrammaticalCase>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#InflectionalUnit>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#InternalAttribute>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#LexicalUnit>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#LinguisticUnit>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#List>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MainClause>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ModalityValue>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticFeatureValue>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticUnit>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Nominal>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NominalParticle>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NonGrammaticalCase>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NonSpatialCase>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Noun>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NumberValue>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Numeral>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Object>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthAffix>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthCircumfix>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthCompound>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthInfix>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthPart>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthPhrase>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthPrefix>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthRoot>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthStem>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthSuffix>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthWord>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthographicExpression>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthographicTranscription>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PartOfSpeechValue>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Particle>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PersonValue>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PersonalPronoun>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhaseAspect>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhonemicTranscription>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhoneticTranscription>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhraseUnit>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Physical>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PolarityValue>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PositionalCase>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ProForm>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Process>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Proclitic>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Pronoun>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Quantifier>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#QuantitativeAspect>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Relation>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#RelativeTense>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#RelevanceAspect>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SelfConnectedObject>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Set>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SetOrClass>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SimpleOrthPart>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SimpleOrthWord>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SizeValue>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SpatialCase>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SublexicalUnit>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SubordinateClause>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SubordinatingConnective>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SymbolicString>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#TenseValue>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Term>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Transcription>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Transliteration>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#UnderlyingFormTranscription>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Verb>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ViewPointAspect>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#WrittenExpression>))
+Declaration(Class(<http://www.emeld.org/gold.owl#AbsoluteFutureTense>))
+Declaration(Class(<http://www.emeld.org/gold.owl#AbsolutePastTense>))
+Declaration(Class(<http://www.emeld.org/gold.owl#AbsoluteRelativeTense>))
+Declaration(Class(<http://www.emeld.org/gold.owl#AbsoluteTense>))
+Declaration(Class(<http://www.emeld.org/gold.owl#Adposition>))
+Declaration(Class(<http://www.emeld.org/gold.owl#Animate>))
+Declaration(Class(<http://www.emeld.org/gold.owl#Article>))
+Declaration(Class(<http://www.emeld.org/gold.owl#ClosedMorphoSyntacticFeature>))
+Declaration(Class(<http://www.emeld.org/gold.owl#ComplexMorphoSyntacticFeature>))
+Declaration(Class(<http://www.emeld.org/gold.owl#CoordinatingConnective>))
+Declaration(Class(<http://www.emeld.org/gold.owl#Determiner>))
+Declaration(Class(<http://www.emeld.org/gold.owl#DirectionalCase>))
+Declaration(Class(<http://www.emeld.org/gold.owl#DynamicityAspect>))
+Declaration(Class(<http://www.emeld.org/gold.owl#EvaluativeValue>))
+Declaration(Class(<http://www.emeld.org/gold.owl#GenderValue>))
+Declaration(Class(<http://www.emeld.org/gold.owl#GrammaticalCase>))
+Declaration(Class(<http://www.emeld.org/gold.owl#ModalityValue>))
+Declaration(Class(<http://www.emeld.org/gold.owl#Nominal>))
+Declaration(Class(<http://www.emeld.org/gold.owl#NominalParticle>))
+Declaration(Class(<http://www.emeld.org/gold.owl#NonSpatialCase>))
+Declaration(Class(<http://www.emeld.org/gold.owl#Noun>))
+Declaration(Class(<http://www.emeld.org/gold.owl#NumberValue>))
+Declaration(Class(<http://www.emeld.org/gold.owl#Numeral>))
+Declaration(Class(<http://www.emeld.org/gold.owl#PartOfSpeechValue>))
+Declaration(Class(<http://www.emeld.org/gold.owl#Particle>))
+Declaration(Class(<http://www.emeld.org/gold.owl#PersonValue>))
+Declaration(Class(<http://www.emeld.org/gold.owl#PersonalPronoun>))
+Declaration(Class(<http://www.emeld.org/gold.owl#PhaseAspect>))
+Declaration(Class(<http://www.emeld.org/gold.owl#PolarityValue>))
+Declaration(Class(<http://www.emeld.org/gold.owl#PositionalCase>))
+Declaration(Class(<http://www.emeld.org/gold.owl#ProForm>))
+Declaration(Class(<http://www.emeld.org/gold.owl#Pronoun>))
+Declaration(Class(<http://www.emeld.org/gold.owl#QuantitativeAspect>))
+Declaration(Class(<http://www.emeld.org/gold.owl#RelativeTense>))
+Declaration(Class(<http://www.emeld.org/gold.owl#RelevanceAspect>))
+Declaration(Class(<http://www.emeld.org/gold.owl#SizeValue>))
+Declaration(Class(<http://www.emeld.org/gold.owl#SubordinatingConnective>))
+Declaration(Class(<http://www.emeld.org/gold.owl#Verb>))
+Declaration(Class(<http://www.emeld.org/gold.owl#ViewPointAspect>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+############################
+#   Classes
+############################
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsoluteFutureTense> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsoluteFutureTense>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsoluteFutureTense> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsoluteTense>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsolutePastTense> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsolutePastTense>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsolutePastTense> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsoluteTense>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsoluteRelativeTense> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsoluteRelativeTense>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsoluteRelativeTense> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#TenseValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsoluteTense> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsoluteTense>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AbsoluteTense> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#TenseValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Abstract> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Abstract>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Abstract> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Entity>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Adposition> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Adposition>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Adposition> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PartOfSpeechValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Animate> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Animate>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Animate> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#GenderValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Article> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Article>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Article> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Determiner>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AspectValue> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AspectValue>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AspectValue> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticFeatureValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Attribute> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Attribute>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Attribute> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Abstract>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#BoundRoot> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#BoundRoot>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#BoundRoot> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SublexicalUnit>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#BoundStem> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#BoundStem>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#BoundStem> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SublexicalUnit>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#CaseValue> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#CaseValue>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#CaseValue> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticFeatureValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Character> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Character>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Character> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#WrittenExpression>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Class> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Class>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Class> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SetOrClass>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Clause> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Clause>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Clause> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhraseUnit>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Clitic> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Clitic>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Clitic> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SublexicalUnit>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ClosedFeature> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ClosedFeature>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ClosedFeature> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Feature>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ClosedMorphoSyntacticFeature> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ClosedMorphoSyntacticFeature>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ClosedMorphoSyntacticFeature> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ClosedFeature>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ClosedSpecification> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ClosedSpecification>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ClosedSpecification> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureSpecification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexFeature> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexFeature>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexFeature> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Feature>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexLexicalUnit> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexLexicalUnit>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexLexicalUnit> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#LexicalUnit>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexMorphoSyntacticFeature> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexMorphoSyntacticFeature>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexMorphoSyntacticFeature> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ClosedFeature>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexOrthWord> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexOrthWord>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexOrthWord> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthWord>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexSpecification> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexSpecification>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexSpecification> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureSpecification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Compound> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Compound>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Compound> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexLexicalUnit>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Connective> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Connective>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Connective> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PartOfSpeechValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ContentBearingObject> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ContentBearingObject>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ContentBearingObject> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SelfConnectedObject>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#CoordinatingConnective> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#CoordinatingConnective>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#CoordinatingConnective> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Connective>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#DerivationalUnit> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#DerivationalUnit>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#DerivationalUnit> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SublexicalUnit>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Determiner> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Determiner>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Determiner> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PartOfSpeechValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#DirectionalCase> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#DirectionalCase>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#DirectionalCase> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SpatialCase>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#DynamicityAspect> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#DynamicityAspect>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#DynamicityAspect> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AspectValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Enclitic> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Enclitic>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Enclitic> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Clitic>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Entity> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Entity>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Entity> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#EvaluativeValue> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#EvaluativeValue>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#EvaluativeValue> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticFeatureValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Feature> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Feature>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Feature> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#InternalAttribute>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureConstraint> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureConstraint>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureConstraint> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#List>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureSpecification> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureSpecification>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureSpecification> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#List>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureStructure> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureStructure>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureStructure> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Set>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureSystem> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureSystem>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureSystem> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#List>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureValue> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureValue>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureValue> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Abstract>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureValueAssociation> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureValueAssociation>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureValueAssociation> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#List>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FreeRoot> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FreeRoot>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FreeRoot> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#LexicalUnit>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FreeStem> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FreeStem>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FreeStem> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexLexicalUnit>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#GenderValue> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#GenderValue>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#GenderValue> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticFeatureValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#GrammaticalCase> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#GrammaticalCase>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#GrammaticalCase> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#CaseValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#InflectionalUnit> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#InflectionalUnit>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#InflectionalUnit> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SublexicalUnit>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#InternalAttribute> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#InternalAttribute>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#InternalAttribute> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Attribute>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#LexicalUnit> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#LexicalUnit>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#LexicalUnit> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticUnit>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#LinguisticUnit> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#LinguisticUnit>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#LinguisticUnit> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Abstract>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#List> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#List>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#List> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Relation>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MainClause> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MainClause>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MainClause> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Clause>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ModalityValue> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ModalityValue>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ModalityValue> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticFeatureValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticFeatureValue> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticFeatureValue>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticFeatureValue> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#FeatureValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticUnit> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticUnit>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticUnit> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#LinguisticUnit>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Nominal> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Nominal>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Nominal> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Noun>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NominalParticle> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NominalParticle>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NominalParticle> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Particle>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NonGrammaticalCase> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NonGrammaticalCase>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NonGrammaticalCase> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#CaseValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NonSpatialCase> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NonSpatialCase>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NonSpatialCase> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NonGrammaticalCase>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Noun> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Noun>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Noun> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PartOfSpeechValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NumberValue> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NumberValue>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NumberValue> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticFeatureValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Numeral> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Numeral>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Numeral> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Quantifier>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Object> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Object>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Object> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Physical>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthAffix> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthAffix>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthAffix> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthPart>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthCircumfix> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthCircumfix>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthCircumfix> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthAffix>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthCompound> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthCompound>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthCompound> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ComplexOrthWord>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthInfix> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthInfix>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthInfix> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthAffix>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthPart> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthPart>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthPart> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthographicExpression>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthPhrase> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthPhrase>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthPhrase> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthographicExpression>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthPrefix> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthPrefix>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthPrefix> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthAffix>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthRoot> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthRoot>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthRoot> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthPart>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthStem> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthStem>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthStem> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthPart>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthSuffix> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthSuffix>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthSuffix> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthAffix>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthWord> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthWord>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthWord> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthographicExpression>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthographicExpression> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthographicExpression>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthographicExpression> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SymbolicString>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthographicTranscription> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthographicTranscription>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthographicTranscription> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Transcription>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PartOfSpeechValue> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PartOfSpeechValue>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PartOfSpeechValue> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticFeatureValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Particle> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Particle>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Particle> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PartOfSpeechValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PersonValue> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PersonValue>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PersonValue> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticFeatureValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PersonalPronoun> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PersonalPronoun>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PersonalPronoun> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Pronoun>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhaseAspect> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhaseAspect>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhaseAspect> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AspectValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhonemicTranscription> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhonemicTranscription>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhonemicTranscription> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Transcription>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhoneticTranscription> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhoneticTranscription>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhoneticTranscription> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Transcription>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhraseUnit> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhraseUnit>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PhraseUnit> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticUnit>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Physical> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Physical>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Physical> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Entity>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PolarityValue> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PolarityValue>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PolarityValue> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticFeatureValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PositionalCase> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PositionalCase>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PositionalCase> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SpatialCase>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ProForm> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ProForm>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ProForm> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PartOfSpeechValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Process> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Process>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Process> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Physical>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Proclitic> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Proclitic>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Proclitic> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Clitic>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Pronoun> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Pronoun>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Pronoun> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ProForm>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Quantifier> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Quantifier>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Quantifier> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Determiner>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#QuantitativeAspect> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#QuantitativeAspect>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#QuantitativeAspect> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AspectValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Relation> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Relation>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Relation> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Abstract>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#RelativeTense> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#RelativeTense>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#RelativeTense> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#TenseValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#RelevanceAspect> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#RelevanceAspect>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#RelevanceAspect> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AspectValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SelfConnectedObject> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SelfConnectedObject>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SelfConnectedObject> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Object>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Set> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Set>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Set> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SetOrClass>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SetOrClass> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SetOrClass>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SetOrClass> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Abstract>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SimpleOrthPart> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SimpleOrthPart>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SimpleOrthPart> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthPart>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SimpleOrthWord> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SimpleOrthWord>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SimpleOrthWord> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#OrthWord>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SizeValue> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SizeValue>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SizeValue> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticFeatureValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SpatialCase> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SpatialCase>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SpatialCase> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#NonGrammaticalCase>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SublexicalUnit> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SublexicalUnit>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SublexicalUnit> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticUnit>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SubordinateClause> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SubordinateClause>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SubordinateClause> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Clause>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SubordinatingConnective> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SubordinatingConnective>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SubordinatingConnective> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Connective>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SymbolicString> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SymbolicString>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SymbolicString> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#WrittenExpression>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#TenseValue> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#TenseValue>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#TenseValue> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#MorphoSyntacticFeatureValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Term> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Term>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Term> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SymbolicString>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Transcription> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Transcription>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Transcription> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#SymbolicString>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Transliteration> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Transliteration>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Transliteration> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Transcription>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#UnderlyingFormTranscription> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#UnderlyingFormTranscription>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#UnderlyingFormTranscription> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Transcription>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Verb> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Verb>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#Verb> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#PartOfSpeechValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ViewPointAspect> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ViewPointAspect>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ViewPointAspect> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#AspectValue>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#WrittenExpression> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#WrittenExpression>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#WrittenExpression> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___emeld.org_gold%23.txt#ContentBearingObject>)
+
+# Class: <http://www.emeld.org/gold.owl#AbsoluteFutureTense> (<http://www.emeld.org/gold.owl#AbsoluteFutureTense>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#AbsoluteFutureTense> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#AbsolutePastTense> (<http://www.emeld.org/gold.owl#AbsolutePastTense>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#AbsolutePastTense> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#AbsoluteRelativeTense> (<http://www.emeld.org/gold.owl#AbsoluteRelativeTense>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#AbsoluteRelativeTense> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#AbsoluteTense> (<http://www.emeld.org/gold.owl#AbsoluteTense>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#AbsoluteTense> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#Adposition> (<http://www.emeld.org/gold.owl#Adposition>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#Adposition> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#Animate> (<http://www.emeld.org/gold.owl#Animate>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#Animate> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#Article> (<http://www.emeld.org/gold.owl#Article>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#Article> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#ClosedMorphoSyntacticFeature> (<http://www.emeld.org/gold.owl#ClosedMorphoSyntacticFeature>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#ClosedMorphoSyntacticFeature> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#ComplexMorphoSyntacticFeature> (<http://www.emeld.org/gold.owl#ComplexMorphoSyntacticFeature>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#ComplexMorphoSyntacticFeature> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#CoordinatingConnective> (<http://www.emeld.org/gold.owl#CoordinatingConnective>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#CoordinatingConnective> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#Determiner> (<http://www.emeld.org/gold.owl#Determiner>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#Determiner> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#DirectionalCase> (<http://www.emeld.org/gold.owl#DirectionalCase>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#DirectionalCase> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#DynamicityAspect> (<http://www.emeld.org/gold.owl#DynamicityAspect>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#DynamicityAspect> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#EvaluativeValue> (<http://www.emeld.org/gold.owl#EvaluativeValue>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#EvaluativeValue> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#GenderValue> (<http://www.emeld.org/gold.owl#GenderValue>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#GenderValue> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#GrammaticalCase> (<http://www.emeld.org/gold.owl#GrammaticalCase>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#GrammaticalCase> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#ModalityValue> (<http://www.emeld.org/gold.owl#ModalityValue>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#ModalityValue> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#Nominal> (<http://www.emeld.org/gold.owl#Nominal>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#Nominal> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#NominalParticle> (<http://www.emeld.org/gold.owl#NominalParticle>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#NominalParticle> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#NonSpatialCase> (<http://www.emeld.org/gold.owl#NonSpatialCase>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#NonSpatialCase> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#Noun> (<http://www.emeld.org/gold.owl#Noun>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#Noun> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#NumberValue> (<http://www.emeld.org/gold.owl#NumberValue>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#NumberValue> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#Numeral> (<http://www.emeld.org/gold.owl#Numeral>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#Numeral> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#PartOfSpeechValue> (<http://www.emeld.org/gold.owl#PartOfSpeechValue>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#PartOfSpeechValue> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#Particle> (<http://www.emeld.org/gold.owl#Particle>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#Particle> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#PersonValue> (<http://www.emeld.org/gold.owl#PersonValue>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#PersonValue> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#PersonalPronoun> (<http://www.emeld.org/gold.owl#PersonalPronoun>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#PersonalPronoun> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#PhaseAspect> (<http://www.emeld.org/gold.owl#PhaseAspect>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#PhaseAspect> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#PolarityValue> (<http://www.emeld.org/gold.owl#PolarityValue>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#PolarityValue> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#PositionalCase> (<http://www.emeld.org/gold.owl#PositionalCase>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#PositionalCase> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#ProForm> (<http://www.emeld.org/gold.owl#ProForm>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#ProForm> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#Pronoun> (<http://www.emeld.org/gold.owl#Pronoun>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#Pronoun> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#QuantitativeAspect> (<http://www.emeld.org/gold.owl#QuantitativeAspect>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#QuantitativeAspect> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#RelativeTense> (<http://www.emeld.org/gold.owl#RelativeTense>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#RelativeTense> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#RelevanceAspect> (<http://www.emeld.org/gold.owl#RelevanceAspect>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#RelevanceAspect> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#SizeValue> (<http://www.emeld.org/gold.owl#SizeValue>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#SizeValue> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#SubordinatingConnective> (<http://www.emeld.org/gold.owl#SubordinatingConnective>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#SubordinatingConnective> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#Verb> (<http://www.emeld.org/gold.owl#Verb>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#Verb> owl:Thing)
+
+# Class: <http://www.emeld.org/gold.owl#ViewPointAspect> (<http://www.emeld.org/gold.owl#ViewPointAspect>)
+
+SubClassOf(<http://www.emeld.org/gold.owl#ViewPointAspect> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+
+)

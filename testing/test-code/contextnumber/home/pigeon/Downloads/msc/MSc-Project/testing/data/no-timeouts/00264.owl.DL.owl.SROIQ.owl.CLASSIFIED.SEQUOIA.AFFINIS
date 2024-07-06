@@ -1,0 +1,38 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_rightsv1p2%23.txt#CopyrightAndOtherRestrictions>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_rightsv1p2%23.txt#Cost>))
+Declaration(Class(<http://www.imsproject.org/rdf/imsmd_rightsv1p2#CopyrightAndOtherRestrictions>))
+Declaration(Class(<http://www.imsproject.org/rdf/imsmd_rightsv1p2#Cost>))
+############################
+#   Classes
+############################
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_rightsv1p2%23.txt#CopyrightAndOtherRestrictions> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_rightsv1p2%23.txt#CopyrightAndOtherRestrictions>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_rightsv1p2%23.txt#CopyrightAndOtherRestrictions> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_rightsv1p2%23.txt#Cost> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_rightsv1p2%23.txt#Cost>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_rightsv1p2%23.txt#Cost> owl:Thing)
+
+# Class: <http://www.imsproject.org/rdf/imsmd_rightsv1p2#CopyrightAndOtherRestrictions> (<http://www.imsproject.org/rdf/imsmd_rightsv1p2#CopyrightAndOtherRestrictions>)
+
+SubClassOf(<http://www.imsproject.org/rdf/imsmd_rightsv1p2#CopyrightAndOtherRestrictions> owl:Thing)
+
+# Class: <http://www.imsproject.org/rdf/imsmd_rightsv1p2#Cost> (<http://www.imsproject.org/rdf/imsmd_rightsv1p2#Cost>)
+
+SubClassOf(<http://www.imsproject.org/rdf/imsmd_rightsv1p2#Cost> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

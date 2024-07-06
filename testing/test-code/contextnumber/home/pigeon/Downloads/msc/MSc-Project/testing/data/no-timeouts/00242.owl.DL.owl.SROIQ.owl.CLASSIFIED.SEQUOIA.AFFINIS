@@ -1,0 +1,58 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.daml.org/tools/tools-ont#Group>))
+Declaration(Class(<http://www.daml.org/tools/tools-ont#Person>))
+Declaration(Class(<http://www.daml.org/tools/tools-ont#Project>))
+Declaration(Class(<http://www.daml.org/tools/tools-ont#Tool>))
+Declaration(Class(<http://www.daml.org/tools/tools-ont#User>))
+Declaration(Class(xsd:uriReference))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+############################
+#   Classes
+############################
+
+# Class: <http://www.daml.org/tools/tools-ont#Group> (<http://www.daml.org/tools/tools-ont#Group>)
+
+SubClassOf(<http://www.daml.org/tools/tools-ont#Group> <http://www.daml.org/tools/tools-ont#User>)
+
+# Class: <http://www.daml.org/tools/tools-ont#Person> (<http://www.daml.org/tools/tools-ont#Person>)
+
+SubClassOf(<http://www.daml.org/tools/tools-ont#Person> <http://www.daml.org/tools/tools-ont#User>)
+
+# Class: <http://www.daml.org/tools/tools-ont#Project> (<http://www.daml.org/tools/tools-ont#Project>)
+
+SubClassOf(<http://www.daml.org/tools/tools-ont#Project> owl:Thing)
+
+# Class: <http://www.daml.org/tools/tools-ont#Tool> (<http://www.daml.org/tools/tools-ont#Tool>)
+
+SubClassOf(<http://www.daml.org/tools/tools-ont#Tool> owl:Thing)
+
+# Class: <http://www.daml.org/tools/tools-ont#User> (<http://www.daml.org/tools/tools-ont#User>)
+
+SubClassOf(<http://www.daml.org/tools/tools-ont#User> owl:Thing)
+
+# Class: xsd:uriReference (xsd:uriReference)
+
+SubClassOf(xsd:uriReference owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+
+)

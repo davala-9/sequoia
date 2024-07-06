@@ -1,0 +1,28 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.oclc.org/gem/gemtype/GEMType>))
+Declaration(Class(<http://purl.org/gem/qualifiers/GemType>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.oclc.org/gem/gemtype/GEMType> (<http://purl.oclc.org/gem/gemtype/GEMType>)
+
+SubClassOf(<http://purl.oclc.org/gem/gemtype/GEMType> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/GemType> (<http://purl.org/gem/qualifiers/GemType>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/GemType> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

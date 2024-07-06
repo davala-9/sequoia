@@ -1,0 +1,73 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(rdf:Alt))
+Declaration(Class(rdf:Bag))
+Declaration(Class(rdf:List))
+Declaration(Class(rdf:Property))
+Declaration(Class(rdf:Seq))
+Declaration(Class(rdf:Statement))
+Declaration(Class(rdf:XMLLiteral))
+Declaration(Class(rdfs:Class))
+Declaration(Class(rdfs:Container))
+Declaration(Class(rdfs:Literal))
+Declaration(Class(rdfs:Resource))
+############################
+#   Classes
+############################
+
+# Class: rdf:Alt (rdf:Alt)
+
+SubClassOf(rdf:Alt rdfs:Container)
+
+# Class: rdf:Bag (rdf:Bag)
+
+SubClassOf(rdf:Bag rdfs:Container)
+
+# Class: rdf:List (rdf:List)
+
+SubClassOf(rdf:List rdfs:Resource)
+
+# Class: rdf:Property (rdf:Property)
+
+SubClassOf(rdf:Property rdfs:Resource)
+
+# Class: rdf:Seq (rdf:Seq)
+
+SubClassOf(rdf:Seq rdfs:Container)
+
+# Class: rdf:Statement (rdf:Statement)
+
+SubClassOf(rdf:Statement rdfs:Resource)
+
+# Class: rdf:XMLLiteral (rdf:XMLLiteral)
+
+SubClassOf(rdf:XMLLiteral rdfs:Literal)
+
+# Class: rdfs:Class (rdfs:Class)
+
+SubClassOf(rdfs:Class owl:Thing)
+
+# Class: rdfs:Container (rdfs:Container)
+
+SubClassOf(rdfs:Container owl:Thing)
+
+# Class: rdfs:Literal (rdfs:Literal)
+
+SubClassOf(rdfs:Literal owl:Thing)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

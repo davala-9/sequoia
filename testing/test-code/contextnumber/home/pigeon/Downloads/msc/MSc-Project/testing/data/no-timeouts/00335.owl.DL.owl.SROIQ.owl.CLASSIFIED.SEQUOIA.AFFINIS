@@ -1,0 +1,98 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(rdf:List))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#State>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Audit_Guard>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Domain>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Obligation>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Permission>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Permission_Guard>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Person_or_Organization>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy_Description>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy_Guard>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Identifier>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Action>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Capability>))
+############################
+#   Classes
+############################
+
+# Class: rdf:List (rdf:List)
+
+SubClassOf(rdf:List owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#State> (<http://www.w3.org/2004/02/wsa/Extensions.owl#State>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#State> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Audit_Guard> (<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Audit_Guard>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Audit_Guard> <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy_Guard>)
+
+# Class: <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Domain> (<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Domain>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Domain> rdf:List)
+
+# Class: <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Obligation> (<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Obligation>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Obligation> <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy>)
+
+# Class: <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Permission> (<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Permission>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Permission> <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy>)
+
+# Class: <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Permission_Guard> (<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Permission_Guard>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Permission_Guard> <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy_Guard>)
+
+# Class: <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Person_or_Organization> (<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Person_or_Organization>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Person_or_Organization> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy> (<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy_Description> (<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy_Description>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy_Description> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy_Guard> (<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy_Guard>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy_Guard> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ResourceModel.owl#Identifier> (<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Identifier>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Identifier> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource> (<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Action> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Action>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Action> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Capability> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Capability>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Capability> owl:Thing)
+
+
+)

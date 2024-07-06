@@ -1,0 +1,38 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.daml.org/2000/10/daml-ont#Class>))
+Declaration(Class(<http://www.daml.org/2000/10/daml-ont#Ontology>))
+Declaration(Class(<http://www.daml.org/2000/10/daml-ont#Property>))
+Declaration(Class(<http://www.daml.org/2000/10/daml-ont#UnambiguousProperty>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.daml.org/2000/10/daml-ont#Class> (<http://www.daml.org/2000/10/daml-ont#Class>)
+
+SubClassOf(<http://www.daml.org/2000/10/daml-ont#Class> owl:Thing)
+
+# Class: <http://www.daml.org/2000/10/daml-ont#Ontology> (<http://www.daml.org/2000/10/daml-ont#Ontology>)
+
+SubClassOf(<http://www.daml.org/2000/10/daml-ont#Ontology> owl:Thing)
+
+# Class: <http://www.daml.org/2000/10/daml-ont#Property> (<http://www.daml.org/2000/10/daml-ont#Property>)
+
+SubClassOf(<http://www.daml.org/2000/10/daml-ont#Property> owl:Thing)
+
+# Class: <http://www.daml.org/2000/10/daml-ont#UnambiguousProperty> (<http://www.daml.org/2000/10/daml-ont#UnambiguousProperty>)
+
+SubClassOf(<http://www.daml.org/2000/10/daml-ont#UnambiguousProperty> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

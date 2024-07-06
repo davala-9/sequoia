@@ -1,0 +1,205 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0001000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0001001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0010000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000540>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ENVO_0002036>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0016020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0030424>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0030425>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0042734>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0042995>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0043005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0044456>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0044464>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0045202>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0045211>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000078>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000102>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000225>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000409>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#DbXref>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Definition>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Subset>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Synonym>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#SynonymType>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (<http://purl.obolibrary.org/obo/BFO_0000001>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000001> owl:Thing)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000002> (<http://purl.obolibrary.org/obo/BFO_0000002>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000003> (<http://purl.obolibrary.org/obo/BFO_0000003>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000003> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000004> (<http://purl.obolibrary.org/obo/BFO_0000004>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000007> (<http://purl.obolibrary.org/obo/BFO_0000007>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000007> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (<http://purl.obolibrary.org/obo/BFO_0000040>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/CARO_0000003> (<http://purl.obolibrary.org/obo/CARO_0000003>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000003> <http://purl.obolibrary.org/obo/CARO_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/CARO_0000006> (<http://purl.obolibrary.org/obo/CARO_0000006>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000006> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/CARO_0000014> (<http://purl.obolibrary.org/obo/CARO_0000014>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000014> <http://purl.obolibrary.org/obo/CARO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/CARO_0001000> (<http://purl.obolibrary.org/obo/CARO_0001000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/CARO_0001000> <http://purl.obolibrary.org/obo/CARO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/CARO_0001001> (<http://purl.obolibrary.org/obo/CARO_0001001>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/CARO_0001001> <http://purl.obolibrary.org/obo/CARO_0001000>)
+
+# Class: <http://purl.obolibrary.org/obo/CARO_0010000> (<http://purl.obolibrary.org/obo/CARO_0010000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/CARO_0010000> <http://purl.obolibrary.org/obo/CARO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/CL_0000000> (<http://purl.obolibrary.org/obo/CL_0000000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/CL_0000000> <http://purl.obolibrary.org/obo/CARO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/CL_0000540> (<http://purl.obolibrary.org/obo/CL_0000540>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/CL_0000540> <http://purl.obolibrary.org/obo/CL_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/ENVO_0002036> (<http://purl.obolibrary.org/obo/ENVO_0002036>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/ENVO_0002036> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0016020> (<http://purl.obolibrary.org/obo/GO_0016020>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0016020> <http://purl.obolibrary.org/obo/GO_0044464>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0030424> (<http://purl.obolibrary.org/obo/GO_0030424>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0030424> <http://purl.obolibrary.org/obo/GO_0043005>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0030425> (<http://purl.obolibrary.org/obo/GO_0030425>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0030425> <http://purl.obolibrary.org/obo/GO_0043005>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0042734> (<http://purl.obolibrary.org/obo/GO_0042734>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0042734> <http://purl.obolibrary.org/obo/GO_0016020>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0042734> <http://purl.obolibrary.org/obo/GO_0044456>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0042995> (<http://purl.obolibrary.org/obo/GO_0042995>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0042995> <http://purl.obolibrary.org/obo/GO_0044464>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0043005> (<http://purl.obolibrary.org/obo/GO_0043005>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0043005> <http://purl.obolibrary.org/obo/GO_0042995>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0044456> (<http://purl.obolibrary.org/obo/GO_0044456>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0044456> <http://purl.obolibrary.org/obo/CARO_0000014>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0044464> (<http://purl.obolibrary.org/obo/GO_0044464>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0044464> <http://purl.obolibrary.org/obo/CARO_0000014>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0045202> (<http://purl.obolibrary.org/obo/GO_0045202>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0045202> <http://purl.obolibrary.org/obo/CARO_0000014>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0045211> (<http://purl.obolibrary.org/obo/GO_0045211>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0045211> <http://purl.obolibrary.org/obo/GO_0016020>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0045211> <http://purl.obolibrary.org/obo/GO_0044456>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (<http://purl.obolibrary.org/obo/IAO_0000027>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000027> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (<http://purl.obolibrary.org/obo/IAO_0000030>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000078> (<http://purl.obolibrary.org/obo/IAO_0000078>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000102> (<http://purl.obolibrary.org/obo/IAO_0000102>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000102> <http://purl.obolibrary.org/obo/IAO_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000225> (<http://purl.obolibrary.org/obo/IAO_0000225>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000225> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000409> (<http://purl.obolibrary.org/obo/IAO_0000409>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000409> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#DbXref> (<http://www.geneontology.org/formats/oboInOwl#DbXref>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Definition> (<http://www.geneontology.org/formats/oboInOwl#Definition>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Subset> (<http://www.geneontology.org/formats/oboInOwl#Subset>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Subset> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Synonym> (<http://www.geneontology.org/formats/oboInOwl#Synonym>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#SynonymType> (<http://www.geneontology.org/formats/oboInOwl#SynonymType>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#SynonymType> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> (<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

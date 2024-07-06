@@ -1,0 +1,139 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#Artist>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#Country>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#Dancer>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#Landscape>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#Material>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#Medium>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#Museum>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#Painting>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#Portrait>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#_anon0>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#_anon13>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#_anon14>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#_anon15>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#_anon16>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#_anon17>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#_anon18>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#_anon19>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#_anon5>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#_anon6>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#_anon7>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/artontology.daml#_anon8>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Empty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#List>))
+############################
+#   Classes
+############################
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#Artist> (<http://mr.teknowledge.com/DAML/artontology.daml#Artist>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#Artist> <http://mr.teknowledge.com/DAML/artontology.daml#_anon18>)
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#Artist> <http://mr.teknowledge.com/DAML/artontology.daml#_anon19>)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#Country> (<http://mr.teknowledge.com/DAML/artontology.daml#Country>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#Country> <http://mr.teknowledge.com/DAML/artontology.daml#_anon7>)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#Dancer> (<http://mr.teknowledge.com/DAML/artontology.daml#Dancer>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#Dancer> <http://mr.teknowledge.com/DAML/artontology.daml#Painting>)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#Landscape> (<http://mr.teknowledge.com/DAML/artontology.daml#Landscape>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#Landscape> <http://mr.teknowledge.com/DAML/artontology.daml#Painting>)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#Material> (<http://mr.teknowledge.com/DAML/artontology.daml#Material>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#Material> <http://mr.teknowledge.com/DAML/artontology.daml#_anon8>)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#Medium> (<http://mr.teknowledge.com/DAML/artontology.daml#Medium>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#Medium> <http://mr.teknowledge.com/DAML/artontology.daml#_anon0>)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#Museum> (<http://mr.teknowledge.com/DAML/artontology.daml#Museum>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#Museum> <http://mr.teknowledge.com/DAML/artontology.daml#_anon5>)
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#Museum> <http://mr.teknowledge.com/DAML/artontology.daml#_anon6>)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#Painting> (<http://mr.teknowledge.com/DAML/artontology.daml#Painting>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#Painting> <http://mr.teknowledge.com/DAML/artontology.daml#_anon13>)
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#Painting> <http://mr.teknowledge.com/DAML/artontology.daml#_anon14>)
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#Painting> <http://mr.teknowledge.com/DAML/artontology.daml#_anon15>)
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#Painting> <http://mr.teknowledge.com/DAML/artontology.daml#_anon16>)
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#Painting> <http://mr.teknowledge.com/DAML/artontology.daml#_anon17>)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#Portrait> (<http://mr.teknowledge.com/DAML/artontology.daml#Portrait>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#Portrait> <http://mr.teknowledge.com/DAML/artontology.daml#Painting>)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#_anon0> (<http://mr.teknowledge.com/DAML/artontology.daml#_anon0>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#_anon0> owl:Thing)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#_anon13> (<http://mr.teknowledge.com/DAML/artontology.daml#_anon13>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#_anon13> owl:Thing)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#_anon14> (<http://mr.teknowledge.com/DAML/artontology.daml#_anon14>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#_anon14> owl:Thing)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#_anon15> (<http://mr.teknowledge.com/DAML/artontology.daml#_anon15>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#_anon15> owl:Thing)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#_anon16> (<http://mr.teknowledge.com/DAML/artontology.daml#_anon16>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#_anon16> owl:Thing)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#_anon17> (<http://mr.teknowledge.com/DAML/artontology.daml#_anon17>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#_anon17> owl:Thing)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#_anon18> (<http://mr.teknowledge.com/DAML/artontology.daml#_anon18>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#_anon18> owl:Thing)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#_anon19> (<http://mr.teknowledge.com/DAML/artontology.daml#_anon19>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#_anon19> owl:Thing)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#_anon5> (<http://mr.teknowledge.com/DAML/artontology.daml#_anon5>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#_anon5> owl:Thing)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#_anon6> (<http://mr.teknowledge.com/DAML/artontology.daml#_anon6>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#_anon6> owl:Thing)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#_anon7> (<http://mr.teknowledge.com/DAML/artontology.daml#_anon7>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#_anon7> owl:Thing)
+
+# Class: <http://mr.teknowledge.com/DAML/artontology.daml#_anon8> (<http://mr.teknowledge.com/DAML/artontology.daml#_anon8>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/artontology.daml#_anon8> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Empty> (<http://www.daml.org/2001/03/daml+oil#Empty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Empty> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#List> (<http://www.daml.org/2001/03/daml+oil#List>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#List> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

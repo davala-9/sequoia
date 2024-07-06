@@ -1,0 +1,93 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.daml.org/2001/10/agenda/agenda-ont#AgendaItem>))
+Declaration(Class(<http://www.daml.org/2001/10/agenda/agenda-ont#Block>))
+Declaration(Class(<http://www.daml.org/2001/10/agenda/agenda-ont#Break>))
+Declaration(Class(<http://www.daml.org/2001/10/agenda/agenda-ont#Day>))
+Declaration(Class(<http://www.daml.org/2001/10/agenda/agenda-ont#Meeting>))
+Declaration(Class(<http://www.daml.org/2001/10/agenda/agenda-ont#SimpleAgendaItem>))
+Declaration(Class(<http://www.daml.org/2001/10/agenda/agenda-ont#Speaker>))
+Declaration(Class(<http://www.daml.org/2001/10/agenda/agenda-ont#Talk>))
+Declaration(Class(rdf:List))
+Declaration(Class(xsd:timeDuration))
+Declaration(Class(xsd:uriReference))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+Declaration(Class(owl:auxiliarDataRangeClass5))
+############################
+#   Classes
+############################
+
+# Class: <http://www.daml.org/2001/10/agenda/agenda-ont#AgendaItem> (<http://www.daml.org/2001/10/agenda/agenda-ont#AgendaItem>)
+
+SubClassOf(<http://www.daml.org/2001/10/agenda/agenda-ont#AgendaItem> owl:Thing)
+
+# Class: <http://www.daml.org/2001/10/agenda/agenda-ont#Block> (<http://www.daml.org/2001/10/agenda/agenda-ont#Block>)
+
+SubClassOf(<http://www.daml.org/2001/10/agenda/agenda-ont#Block> <http://www.daml.org/2001/10/agenda/agenda-ont#AgendaItem>)
+
+# Class: <http://www.daml.org/2001/10/agenda/agenda-ont#Break> (<http://www.daml.org/2001/10/agenda/agenda-ont#Break>)
+
+SubClassOf(<http://www.daml.org/2001/10/agenda/agenda-ont#Break> <http://www.daml.org/2001/10/agenda/agenda-ont#SimpleAgendaItem>)
+
+# Class: <http://www.daml.org/2001/10/agenda/agenda-ont#Day> (<http://www.daml.org/2001/10/agenda/agenda-ont#Day>)
+
+SubClassOf(<http://www.daml.org/2001/10/agenda/agenda-ont#Day> <http://www.daml.org/2001/10/agenda/agenda-ont#Block>)
+
+# Class: <http://www.daml.org/2001/10/agenda/agenda-ont#Meeting> (<http://www.daml.org/2001/10/agenda/agenda-ont#Meeting>)
+
+SubClassOf(<http://www.daml.org/2001/10/agenda/agenda-ont#Meeting> owl:Thing)
+
+# Class: <http://www.daml.org/2001/10/agenda/agenda-ont#SimpleAgendaItem> (<http://www.daml.org/2001/10/agenda/agenda-ont#SimpleAgendaItem>)
+
+SubClassOf(<http://www.daml.org/2001/10/agenda/agenda-ont#SimpleAgendaItem> <http://www.daml.org/2001/10/agenda/agenda-ont#AgendaItem>)
+
+# Class: <http://www.daml.org/2001/10/agenda/agenda-ont#Speaker> (<http://www.daml.org/2001/10/agenda/agenda-ont#Speaker>)
+
+SubClassOf(<http://www.daml.org/2001/10/agenda/agenda-ont#Speaker> owl:Thing)
+
+# Class: <http://www.daml.org/2001/10/agenda/agenda-ont#Talk> (<http://www.daml.org/2001/10/agenda/agenda-ont#Talk>)
+
+SubClassOf(<http://www.daml.org/2001/10/agenda/agenda-ont#Talk> <http://www.daml.org/2001/10/agenda/agenda-ont#SimpleAgendaItem>)
+
+# Class: rdf:List (rdf:List)
+
+SubClassOf(rdf:List owl:Thing)
+
+# Class: xsd:timeDuration (xsd:timeDuration)
+
+SubClassOf(xsd:timeDuration owl:Thing)
+
+# Class: xsd:uriReference (xsd:uriReference)
+
+SubClassOf(xsd:uriReference owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass5 (owl:auxiliarDataRangeClass5)
+
+SubClassOf(owl:auxiliarDataRangeClass5 owl:Thing)
+
+
+)

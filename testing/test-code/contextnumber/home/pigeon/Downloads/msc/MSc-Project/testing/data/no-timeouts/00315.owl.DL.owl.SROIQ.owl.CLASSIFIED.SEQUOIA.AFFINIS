@@ -1,0 +1,53 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#Group>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#Identity>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#Principle>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#ResourceAccessRule>))
+Declaration(Class(<http://www.ontoknowledge.org/oil/rdf-schema/2000/11/10-oil-standard#TransitiveProperty>))
+Declaration(Class(rdfs:Resource))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+############################
+#   Classes
+############################
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#Group> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#Group>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#Group> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#Identity>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#Identity> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#Identity>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#Identity> rdfs:Resource)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#Principle> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#Principle>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#Principle> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#Identity>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#ResourceAccessRule> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#ResourceAccessRule>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2001_02_acls_ns%23.txt#ResourceAccessRule> owl:Thing)
+
+# Class: <http://www.ontoknowledge.org/oil/rdf-schema/2000/11/10-oil-standard#TransitiveProperty> (<http://www.ontoknowledge.org/oil/rdf-schema/2000/11/10-oil-standard#TransitiveProperty>)
+
+SubClassOf(<http://www.ontoknowledge.org/oil/rdf-schema/2000/11/10-oil-standard#TransitiveProperty> owl:Thing)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+
+)

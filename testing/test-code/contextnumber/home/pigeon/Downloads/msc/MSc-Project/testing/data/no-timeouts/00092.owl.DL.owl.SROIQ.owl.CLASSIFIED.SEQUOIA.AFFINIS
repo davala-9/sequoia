@@ -1,0 +1,131 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://nulllogicone.net/schema.rdfs#Code>))
+Declaration(Class(<http://nulllogicone.net/schema.rdfs#Egal>))
+Declaration(Class(<http://nulllogicone.net/schema.rdfs#Fit>))
+Declaration(Class(<http://nulllogicone.net/schema.rdfs#Get>))
+Declaration(Class(<http://nulllogicone.net/schema.rdfs#ILOs>))
+Declaration(Class(<http://nulllogicone.net/schema.rdfs#Muss>))
+Declaration(Class(<http://nulllogicone.net/schema.rdfs#Nicht>))
+Declaration(Class(<http://nulllogicone.net/schema.rdfs#OLIs>))
+Declaration(Class(<http://nulllogicone.net/schema.rdfs#PostIt>))
+Declaration(Class(<http://nulllogicone.net/schema.rdfs#Sollte>))
+Declaration(Class(owl:auxiliarDataRangeClass10))
+Declaration(Class(owl:auxiliarDataRangeClass11))
+Declaration(Class(owl:auxiliarDataRangeClass12))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+Declaration(Class(owl:auxiliarDataRangeClass5))
+Declaration(Class(owl:auxiliarDataRangeClass6))
+Declaration(Class(owl:auxiliarDataRangeClass7))
+Declaration(Class(owl:auxiliarDataRangeClass8))
+Declaration(Class(owl:auxiliarDataRangeClass9))
+############################
+#   Classes
+############################
+
+# Class: <http://nulllogicone.net/schema.rdfs#Code> (<http://nulllogicone.net/schema.rdfs#Code>)
+
+SubClassOf(<http://nulllogicone.net/schema.rdfs#Code> owl:Thing)
+
+# Class: <http://nulllogicone.net/schema.rdfs#Egal> (<http://nulllogicone.net/schema.rdfs#Egal>)
+
+SubClassOf(<http://nulllogicone.net/schema.rdfs#Egal> <http://nulllogicone.net/schema.rdfs#Fit>)
+SubClassOf(<http://nulllogicone.net/schema.rdfs#Egal> <http://nulllogicone.net/schema.rdfs#Get>)
+
+# Class: <http://nulllogicone.net/schema.rdfs#Fit> (<http://nulllogicone.net/schema.rdfs#Fit>)
+
+SubClassOf(<http://nulllogicone.net/schema.rdfs#Fit> owl:Thing)
+
+# Class: <http://nulllogicone.net/schema.rdfs#Get> (<http://nulllogicone.net/schema.rdfs#Get>)
+
+SubClassOf(<http://nulllogicone.net/schema.rdfs#Get> owl:Thing)
+
+# Class: <http://nulllogicone.net/schema.rdfs#ILOs> (<http://nulllogicone.net/schema.rdfs#ILOs>)
+
+SubClassOf(<http://nulllogicone.net/schema.rdfs#ILOs> owl:Thing)
+
+# Class: <http://nulllogicone.net/schema.rdfs#Muss> (<http://nulllogicone.net/schema.rdfs#Muss>)
+
+SubClassOf(<http://nulllogicone.net/schema.rdfs#Muss> <http://nulllogicone.net/schema.rdfs#Fit>)
+SubClassOf(<http://nulllogicone.net/schema.rdfs#Muss> <http://nulllogicone.net/schema.rdfs#Get>)
+SubClassOf(<http://nulllogicone.net/schema.rdfs#Muss> <http://nulllogicone.net/schema.rdfs#ILOs>)
+SubClassOf(<http://nulllogicone.net/schema.rdfs#Muss> <http://nulllogicone.net/schema.rdfs#OLIs>)
+
+# Class: <http://nulllogicone.net/schema.rdfs#Nicht> (<http://nulllogicone.net/schema.rdfs#Nicht>)
+
+SubClassOf(<http://nulllogicone.net/schema.rdfs#Nicht> <http://nulllogicone.net/schema.rdfs#ILOs>)
+SubClassOf(<http://nulllogicone.net/schema.rdfs#Nicht> <http://nulllogicone.net/schema.rdfs#OLIs>)
+
+# Class: <http://nulllogicone.net/schema.rdfs#OLIs> (<http://nulllogicone.net/schema.rdfs#OLIs>)
+
+SubClassOf(<http://nulllogicone.net/schema.rdfs#OLIs> owl:Thing)
+
+# Class: <http://nulllogicone.net/schema.rdfs#PostIt> (<http://nulllogicone.net/schema.rdfs#PostIt>)
+
+SubClassOf(<http://nulllogicone.net/schema.rdfs#PostIt> owl:Thing)
+
+# Class: <http://nulllogicone.net/schema.rdfs#Sollte> (<http://nulllogicone.net/schema.rdfs#Sollte>)
+
+SubClassOf(<http://nulllogicone.net/schema.rdfs#Sollte> <http://nulllogicone.net/schema.rdfs#Fit>)
+SubClassOf(<http://nulllogicone.net/schema.rdfs#Sollte> <http://nulllogicone.net/schema.rdfs#Get>)
+SubClassOf(<http://nulllogicone.net/schema.rdfs#Sollte> <http://nulllogicone.net/schema.rdfs#ILOs>)
+SubClassOf(<http://nulllogicone.net/schema.rdfs#Sollte> <http://nulllogicone.net/schema.rdfs#OLIs>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass10 (owl:auxiliarDataRangeClass10)
+
+SubClassOf(owl:auxiliarDataRangeClass10 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass11 (owl:auxiliarDataRangeClass11)
+
+SubClassOf(owl:auxiliarDataRangeClass11 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass12 (owl:auxiliarDataRangeClass12)
+
+SubClassOf(owl:auxiliarDataRangeClass12 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass5 (owl:auxiliarDataRangeClass5)
+
+SubClassOf(owl:auxiliarDataRangeClass5 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass6 (owl:auxiliarDataRangeClass6)
+
+SubClassOf(owl:auxiliarDataRangeClass6 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass7 (owl:auxiliarDataRangeClass7)
+
+SubClassOf(owl:auxiliarDataRangeClass7 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass8 (owl:auxiliarDataRangeClass8)
+
+SubClassOf(owl:auxiliarDataRangeClass8 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass9 (owl:auxiliarDataRangeClass9)
+
+SubClassOf(owl:auxiliarDataRangeClass9 owl:Thing)
+
+
+)

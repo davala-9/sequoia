@@ -1,0 +1,1804 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Geography.owl#Bauxite>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Geography.owl#IronOre>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Geography.owl#Petroleum>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Geography.owl#PreciousGemstone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Geography.owl#SemipreciousGemstone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Geography.owl#Timber>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Government.owl#IndependentState>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Automobile>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Avocado>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Beef>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Cement>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CerealGrain>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Chicken>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ChickenMeat>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Concrete>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ControlledSubstance>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DateFruit>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Detergent>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DieselFuel>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Donkey>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#EconomicAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#EconomicSystemAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Exporting>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fodder>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Furniture>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Gasoline>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Goat>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Grass>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Honey>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Horse>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#IndustryAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#KilowattHour>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Milk>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Narcotic>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Opium>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Pig>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sheep>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Steel>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sugar>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wine>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Agent>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#AnatomicalStructure>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Beverage>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Bird>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BodyCovering>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#ChangeOfPossession>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Clothing>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Device>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#EuroDollar>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Fabric>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#FinancialTransaction>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Fish>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#FloweringPlant>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#FruitOrVegetable>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#FunctionQuantity>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#HoofedMammal>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#IrreflexiveRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Machine>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Mammal>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Meat>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Mixture>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Nation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeRealNumber>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Object>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#OrganicObject>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#PhysicalQuantity>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Plant>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Process>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Product>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#RealNumber>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Relation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#ReproductiveBody>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Reptile>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Seed>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Substance>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TernaryPredicate>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AfghanAfghani>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AgriculturalProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Alfalfa>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AlmondNut>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Aloes>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Alumina>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AluminumMetal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalAgriculturalProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalSkin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Apple>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Asphalt>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BalsaWood>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Banana>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BarleyGrain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Bean>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Berry>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BeverageProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BlackPepper>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Breadfruit>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BritishPound>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cabbage>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Camel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CanadianDollar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cannabis>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CapitalGood>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cardamom>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Carrot>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CashewNut>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cassava>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cattle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cauliflower>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Caviar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CerealGrass>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cheese>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ChemicalProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Chrysanthemum>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cinnamon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CitrusFruit>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ClothesDrier>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ClothesWashingMachine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Clove>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Clover>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Coca>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cocaine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cocoa>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CocoaBean>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Coconut>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CoffeeBean>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ConsumerGood>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CookingOven>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CookingRange>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CopperOre>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Copra>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Corn>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CottonFiber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CowPea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Crayfish>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CropProduction>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cucumber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CutFlower>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#DairyProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Deer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Dishwasher>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Duck>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#DurableGood>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EconomicDevelopmentLevel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EconomicSector>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleNut>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleTuber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Eggplant>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ElectricalPowerGeneration>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Electricity>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fertilizer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FinancialSectorAttribute>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FishProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FishRoe>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FlaxFiber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FoodEgg>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FoodFish>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FoodProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Footwear>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ForageCrop>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ForestProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Freezer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FrenchFranc>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fruit>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Gemstone>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GermanMark>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Ginger>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Goose>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Grape>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GreenPepper>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Groundnut>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GuernseyCattle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GumArabic>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HandicraftProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HandwovenCarpet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Hardwood>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HempFiber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HotWaterHeater>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IMFDevelopmentLevel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IndustrialRawMaterial>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IndustrialSupply>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IndustryAttribute>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IronMetal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ItalianLire>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#JapaneseYen>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Jewelry>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#JuteFiber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#KentiaPalmSeed>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Khat>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LambMeat>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lambskin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeadMetal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeadOre>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeadProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Leaf>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeafyGreenVegetable>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Legume>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lemon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lentil>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lime>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Livestock>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lumber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MacademiaNut>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Mace>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MachineTool>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Machinery>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MaizeGrain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MajorAppliance>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Mango>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ManufacturedProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MeatOfLandAnimal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Melon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MetalProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MilletGrain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MiningProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MotorOil>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MulberryLeaf>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Mutton>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#NaturalRubber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#NickelOre>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#NorfolkIslandPineSeed>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Nut>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Nutmeg>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OatGrain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Oilseed>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Okoume>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OldTajikSomoni>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Olive>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OliveOil>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OpiumPoppy>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OpiumPoppyFarming>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Orchid>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OrnamentalFish>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PPPBasedEconomicValuation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PackagedBeverageProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PackagedFoodProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PaddyRice>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PalmKernel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PalmOil>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PalmOilNut>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Papaw>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Papaya>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PassionFruit>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Peanut>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pearl>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PecanNut>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pelt>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PerfumeEssence>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PetroleumLubricant>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PetroleumProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PharmaceuticalProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PhosphoricAcid>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pineapple>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Plantain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Plastic>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pork>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PotatoTuber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Poultry>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PowerGeneration>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ProductPackage>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pyrethrum>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Quinine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ReadyMixConcrete>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RefinedPetroleumProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Refrigerator>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Reindeer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RiceGrain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RootStarch>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RootVegetable>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RyeGrain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Salmon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Seafood>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SenepolCattle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sesame>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SheaNut>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sheepskin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Shellfish>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Shrimp>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SisalFiber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Soap>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sorghum>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SorghumGrain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Soya>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Soybean>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Spice>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SpicePepper>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Squash>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SugarBeet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SugarCane>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sunflower>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SunflowerSeed>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SweetPepper>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SweetPotatoTuber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TajikSomoni>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TaroTuber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TeaLeaf>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TeaPlantAerialPart>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TextileProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Tobacco>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Tomato>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TropicalFruit>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Turkey>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TurkeyMeat>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Turnip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Turtle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#UNEconomicDevelopmentLevel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vanilla>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Veal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#VegetableOil>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Walnut>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WaterBuffalo>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WaterBuffaloMeat>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Watermelon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WearableItem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WheatGrain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WineGrape>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WoodProduct>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WoolFiber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WorldBankGNIPerCapitaLevel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#YamTuber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#YlangYlang>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ZincOre>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ZincProduct>))
+############################
+#   Classes
+############################
+
+# Class: <http://reliant.teknowledge.com/DAML/Geography.owl#Bauxite> (<http://reliant.teknowledge.com/DAML/Geography.owl#Bauxite>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Geography.owl#Bauxite> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mixture>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Geography.owl#Bauxite> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MiningProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Geography.owl#IronOre> (<http://reliant.teknowledge.com/DAML/Geography.owl#IronOre>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Geography.owl#IronOre> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Geography.owl#IronOre> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MiningProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Geography.owl#Petroleum> (<http://reliant.teknowledge.com/DAML/Geography.owl#Petroleum>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Geography.owl#Petroleum> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PetroleumProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Geography.owl#PreciousGemstone> (<http://reliant.teknowledge.com/DAML/Geography.owl#PreciousGemstone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Geography.owl#PreciousGemstone> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Gemstone>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Geography.owl#PreciousGemstone> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MiningProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Geography.owl#SemipreciousGemstone> (<http://reliant.teknowledge.com/DAML/Geography.owl#SemipreciousGemstone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Geography.owl#SemipreciousGemstone> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Gemstone>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Geography.owl#SemipreciousGemstone> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MiningProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Geography.owl#Timber> (<http://reliant.teknowledge.com/DAML/Geography.owl#Timber>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Geography.owl#Timber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ForestProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Government.owl#IndependentState> (<http://reliant.teknowledge.com/DAML/Government.owl#IndependentState>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Government.owl#IndependentState> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Automobile> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Automobile>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Automobile> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#DurableGood>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Avocado> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Avocado>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Avocado> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TropicalFruit>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Beef> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Beef>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Beef> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MeatOfLandAnimal>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Cement> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Cement>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Cement> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Cement> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ManufacturedProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CerealGrain> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CerealGrain>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CerealGrain> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CerealGrain> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Chicken> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Chicken>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Chicken> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Poultry>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ChickenMeat> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ChickenMeat>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ChickenMeat> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MeatOfLandAnimal>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Concrete> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Concrete>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Concrete> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mixture>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Concrete> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ManufacturedProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ControlledSubstance> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ControlledSubstance>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ControlledSubstance> <http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DateFruit> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DateFruit>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DateFruit> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TropicalFruit>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Detergent> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Detergent>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Detergent> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DieselFuel> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DieselFuel>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DieselFuel> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RefinedPetroleumProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Donkey> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Donkey>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Donkey> <http://reliant.teknowledge.com/DAML/SUMO.owl#HoofedMammal>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#EconomicAttribute> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#EconomicAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#EconomicAttribute> <http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#EconomicSystemAttribute> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#EconomicSystemAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#EconomicSystemAttribute> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#EconomicAttribute>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Exporting> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Exporting>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Exporting> <http://reliant.teknowledge.com/DAML/SUMO.owl#ChangeOfPossession>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Exporting> <http://reliant.teknowledge.com/DAML/SUMO.owl#FinancialTransaction>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fodder> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fodder>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fodder> <http://reliant.teknowledge.com/DAML/SUMO.owl#OrganicObject>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Furniture> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Furniture>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Furniture> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#DurableGood>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Gasoline> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Gasoline>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Gasoline> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RefinedPetroleumProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Goat> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Goat>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Goat> <http://reliant.teknowledge.com/DAML/SUMO.owl#HoofedMammal>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Grass> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Grass>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Grass> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Honey> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Honey>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Honey> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalAgriculturalProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Horse> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Horse>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Horse> <http://reliant.teknowledge.com/DAML/SUMO.owl#HoofedMammal>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#IndustryAttribute> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#IndustryAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#IndustryAttribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#KilowattHour> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#KilowattHour>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#KilowattHour> <http://reliant.teknowledge.com/DAML/SUMO.owl#FunctionQuantity>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Milk> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Milk>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Milk> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#DairyProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Narcotic> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Narcotic>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Narcotic> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ControlledSubstance>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Opium> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Opium>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Opium> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Narcotic>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Opium> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Pig> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Pig>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Pig> <http://reliant.teknowledge.com/DAML/SUMO.owl#HoofedMammal>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sheep> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sheep>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sheep> <http://reliant.teknowledge.com/DAML/SUMO.owl#HoofedMammal>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Steel> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Steel>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Steel> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MetalProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sugar> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sugar>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sugar> <http://reliant.teknowledge.com/DAML/SUMO.owl#Substance>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sugar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wine> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wine>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wine> <http://reliant.teknowledge.com/DAML/SUMO.owl#Beverage>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wine> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Agent> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Agent>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Agent> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#AnatomicalStructure> (<http://reliant.teknowledge.com/DAML/SUMO.owl#AnatomicalStructure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#AnatomicalStructure> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Beverage> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Beverage>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Beverage> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Bird> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Bird>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Bird> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BodyCovering> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BodyCovering>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BodyCovering> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#ChangeOfPossession> (<http://reliant.teknowledge.com/DAML/SUMO.owl#ChangeOfPossession>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#ChangeOfPossession> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Clothing> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Clothing>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Clothing> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WearableItem>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance> (<http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure> (<http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Device> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Device> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#EuroDollar> (<http://reliant.teknowledge.com/DAML/SUMO.owl#EuroDollar>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#EuroDollar> <http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Fabric> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Fabric>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Fabric> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TextileProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#FinancialTransaction> (<http://reliant.teknowledge.com/DAML/SUMO.owl#FinancialTransaction>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#FinancialTransaction> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Fish> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Fish>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Fish> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#FloweringPlant> (<http://reliant.teknowledge.com/DAML/SUMO.owl#FloweringPlant>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#FloweringPlant> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#FruitOrVegetable> (<http://reliant.teknowledge.com/DAML/SUMO.owl#FruitOrVegetable>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#FruitOrVegetable> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#FunctionQuantity> (<http://reliant.teknowledge.com/DAML/SUMO.owl#FunctionQuantity>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#FunctionQuantity> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#HoofedMammal> (<http://reliant.teknowledge.com/DAML/SUMO.owl#HoofedMammal>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#HoofedMammal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Livestock>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess> (<http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#IrreflexiveRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#IrreflexiveRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#IrreflexiveRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Machine> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Machine>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Machine> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Machinery>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Mammal> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Mammal>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Mammal> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Meat> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Meat>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Meat> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalAgriculturalProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Mixture> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Mixture>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Mixture> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Nation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Nation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Nation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeRealNumber> (<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeRealNumber>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeRealNumber> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Object> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Object> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#OrganicObject> (<http://reliant.teknowledge.com/DAML/SUMO.owl#OrganicObject>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#OrganicObject> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#PhysicalQuantity> (<http://reliant.teknowledge.com/DAML/SUMO.owl#PhysicalQuantity>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#PhysicalQuantity> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Plant> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Plant>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Plant> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Process> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Process>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Process> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Product> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Product>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Product> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#RealNumber> (<http://reliant.teknowledge.com/DAML/SUMO.owl#RealNumber>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#RealNumber> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Relation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Relation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Relation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#ReproductiveBody> (<http://reliant.teknowledge.com/DAML/SUMO.owl#ReproductiveBody>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#ReproductiveBody> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Reptile> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Reptile>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Reptile> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Seed> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Seed>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Seed> <http://reliant.teknowledge.com/DAML/SUMO.owl#FruitOrVegetable>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Substance> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Substance>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Substance> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TernaryPredicate> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TernaryPredicate>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TernaryPredicate> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction> (<http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure> (<http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AfghanAfghani> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AfghanAfghani>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AfghanAfghani> <http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AgriculturalProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AgriculturalProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AgriculturalProduct> <http://reliant.teknowledge.com/DAML/SUMO.owl#OrganicObject>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AgriculturalProduct> <http://reliant.teknowledge.com/DAML/SUMO.owl#Product>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Alfalfa> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Alfalfa>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Alfalfa> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fodder>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Alfalfa> <http://reliant.teknowledge.com/DAML/SUMO.owl#Plant>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Alfalfa> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AlmondNut> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AlmondNut>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AlmondNut> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleNut>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Aloes> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Aloes>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Aloes> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Alumina> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Alumina>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Alumina> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AluminumMetal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AluminumMetal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AluminumMetal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MetalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalAgriculturalProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalAgriculturalProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalAgriculturalProduct> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalSkin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalSkin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalSkin> <http://reliant.teknowledge.com/DAML/SUMO.owl#BodyCovering>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Apple> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Apple>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Apple> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fruit>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Apple> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Asphalt> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Asphalt>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Asphalt> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RefinedPetroleumProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BalsaWood> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BalsaWood>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BalsaWood> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WoodProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Banana> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Banana>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Banana> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TropicalFruit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BarleyGrain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BarleyGrain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BarleyGrain> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CerealGrain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Bean> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Bean>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Bean> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Legume>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Berry> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Berry>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Berry> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fruit>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Berry> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BeverageProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BeverageProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BeverageProduct> <http://reliant.teknowledge.com/DAML/SUMO.owl#Product>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BlackPepper> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BlackPepper>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BlackPepper> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Spice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Breadfruit> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Breadfruit>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Breadfruit> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TropicalFruit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BritishPound> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BritishPound>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#BritishPound> <http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cabbage> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cabbage>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cabbage> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cabbage> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Camel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Camel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Camel> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mammal>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Camel> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Livestock>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CanadianDollar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CanadianDollar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CanadianDollar> <http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cannabis> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cannabis>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cannabis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CapitalGood> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CapitalGood>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CapitalGood> <http://reliant.teknowledge.com/DAML/SUMO.owl#Product>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cardamom> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cardamom>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cardamom> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Spice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Carrot> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Carrot>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Carrot> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Carrot> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RootVegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CashewNut> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CashewNut>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CashewNut> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleNut>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cassava> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cassava>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cassava> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cassava> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RootVegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cattle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cattle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cattle> <http://reliant.teknowledge.com/DAML/SUMO.owl#HoofedMammal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cauliflower> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cauliflower>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cauliflower> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cauliflower> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Caviar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Caviar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Caviar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FishRoe>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CerealGrass> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CerealGrass>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CerealGrass> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Grass>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cheese> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cheese>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cheese> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#DairyProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ChemicalProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ChemicalProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ChemicalProduct> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ChemicalProduct> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ManufacturedProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Chrysanthemum> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Chrysanthemum>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Chrysanthemum> <http://reliant.teknowledge.com/DAML/SUMO.owl#FloweringPlant>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Chrysanthemum> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cinnamon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cinnamon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cinnamon> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Spice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CitrusFruit> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CitrusFruit>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CitrusFruit> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fruit>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CitrusFruit> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ClothesDrier> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ClothesDrier>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ClothesDrier> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MajorAppliance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ClothesWashingMachine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ClothesWashingMachine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ClothesWashingMachine> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MajorAppliance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Clove> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Clove>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Clove> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Spice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Clover> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Clover>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Clover> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fodder>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Clover> <http://reliant.teknowledge.com/DAML/SUMO.owl#Plant>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Clover> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Coca> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Coca>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Coca> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cocaine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cocaine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cocaine> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Narcotic>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cocaine> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cocoa> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cocoa>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cocoa> <http://reliant.teknowledge.com/DAML/SUMO.owl#FruitOrVegetable>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cocoa> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CocoaBean> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CocoaBean>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CocoaBean> <http://reliant.teknowledge.com/DAML/SUMO.owl#FruitOrVegetable>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CocoaBean> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Coconut> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Coconut>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Coconut> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TropicalFruit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CoffeeBean> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CoffeeBean>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CoffeeBean> <http://reliant.teknowledge.com/DAML/SUMO.owl#FruitOrVegetable>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CoffeeBean> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ConsumerGood> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ConsumerGood>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ConsumerGood> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ManufacturedProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CookingOven> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CookingOven>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CookingOven> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MajorAppliance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CookingRange> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CookingRange>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CookingRange> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MajorAppliance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CopperOre> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CopperOre>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CopperOre> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CopperOre> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MiningProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Copra> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Copra>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Copra> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Corn> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Corn>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Corn> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Corn> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CottonFiber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CottonFiber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CottonFiber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CowPea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CowPea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CowPea> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Legume>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Crayfish> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Crayfish>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Crayfish> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Shellfish>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CropProduction> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CropProduction>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CropProduction> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cucumber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cucumber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cucumber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cucumber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CutFlower> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CutFlower>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CutFlower> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#DairyProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#DairyProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#DairyProduct> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Deer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Deer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Deer> <http://reliant.teknowledge.com/DAML/SUMO.owl#HoofedMammal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Dishwasher> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Dishwasher>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Dishwasher> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MajorAppliance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Duck> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Duck>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Duck> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Poultry>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#DurableGood> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#DurableGood>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#DurableGood> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ManufacturedProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EconomicDevelopmentLevel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EconomicDevelopmentLevel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EconomicDevelopmentLevel> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#EconomicAttribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EconomicSector> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EconomicSector>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EconomicSector> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IndustryAttribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleNut> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleNut>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleNut> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleTuber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleTuber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleTuber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RootVegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Eggplant> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Eggplant>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Eggplant> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Eggplant> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ElectricalPowerGeneration> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ElectricalPowerGeneration>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ElectricalPowerGeneration> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PowerGeneration>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Electricity> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Electricity>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Electricity> <http://reliant.teknowledge.com/DAML/SUMO.owl#Substance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fertilizer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fertilizer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fertilizer> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mixture>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fertilizer> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ChemicalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FinancialSectorAttribute> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FinancialSectorAttribute>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FinancialSectorAttribute> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#EconomicAttribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FishProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FishProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FishProduct> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FishRoe> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FishRoe>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FishRoe> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FishProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FlaxFiber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FlaxFiber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FlaxFiber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FoodEgg> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FoodEgg>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FoodEgg> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FoodFish> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FoodFish>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FoodFish> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Seafood>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FoodProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FoodProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FoodProduct> <http://reliant.teknowledge.com/DAML/SUMO.owl#Product>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Footwear> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Footwear>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Footwear> <http://reliant.teknowledge.com/DAML/SUMO.owl#Clothing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ForageCrop> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ForageCrop>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ForageCrop> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fodder>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ForageCrop> <http://reliant.teknowledge.com/DAML/SUMO.owl#Plant>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ForageCrop> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ForestProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ForestProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ForestProduct> <http://reliant.teknowledge.com/DAML/SUMO.owl#Product>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Freezer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Freezer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Freezer> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MajorAppliance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FrenchFranc> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FrenchFranc>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FrenchFranc> <http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fruit> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fruit>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fruit> <http://reliant.teknowledge.com/DAML/SUMO.owl#FruitOrVegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Gemstone> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Gemstone>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Gemstone> <http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GermanMark> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GermanMark>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GermanMark> <http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Ginger> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Ginger>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Ginger> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Spice>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Ginger> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Goose> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Goose>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Goose> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Poultry>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Grape> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Grape>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Grape> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fruit>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Grape> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GreenPepper> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GreenPepper>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GreenPepper> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GreenPepper> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce> <http://reliant.teknowledge.com/DAML/SUMO.owl#FruitOrVegetable>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Groundnut> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Groundnut>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Groundnut> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleTuber>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Groundnut> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GuernseyCattle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GuernseyCattle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GuernseyCattle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cattle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GumArabic> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GumArabic>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GumArabic> <http://reliant.teknowledge.com/DAML/SUMO.owl#Substance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GumArabic> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HandicraftProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HandicraftProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HandicraftProduct> <http://reliant.teknowledge.com/DAML/SUMO.owl#Product>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HandwovenCarpet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HandwovenCarpet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HandwovenCarpet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HandicraftProduct>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HandwovenCarpet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TextileProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Hardwood> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Hardwood>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Hardwood> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WoodProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HempFiber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HempFiber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HempFiber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HotWaterHeater> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HotWaterHeater>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#HotWaterHeater> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MajorAppliance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IMFDevelopmentLevel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IMFDevelopmentLevel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IMFDevelopmentLevel> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EconomicDevelopmentLevel>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IndustrialRawMaterial> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IndustrialRawMaterial>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IndustrialRawMaterial> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CapitalGood>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IndustrialSupply> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IndustrialSupply>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IndustrialSupply> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CapitalGood>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IndustrialSupply> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ManufacturedProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IndustryAttribute> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IndustryAttribute>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IndustryAttribute> <http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IronMetal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IronMetal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IronMetal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MetalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ItalianLire> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ItalianLire>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ItalianLire> <http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#JapaneseYen> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#JapaneseYen>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#JapaneseYen> <http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Jewelry> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Jewelry>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Jewelry> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WearableItem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#JuteFiber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#JuteFiber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#JuteFiber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#KentiaPalmSeed> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#KentiaPalmSeed>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#KentiaPalmSeed> <http://reliant.teknowledge.com/DAML/SUMO.owl#Seed>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#KentiaPalmSeed> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Khat> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Khat>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Khat> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LambMeat> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LambMeat>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LambMeat> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MeatOfLandAnimal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lambskin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lambskin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lambskin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pelt>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeadMetal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeadMetal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeadMetal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MetalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeadOre> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeadOre>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeadOre> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeadOre> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MiningProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeadProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeadProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeadProduct> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeadMetal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Leaf> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Leaf>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Leaf> <http://reliant.teknowledge.com/DAML/SUMO.owl#AnatomicalStructure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeafyGreenVegetable> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeafyGreenVegetable>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeafyGreenVegetable> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#LeafyGreenVegetable> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Legume> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Legume>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Legume> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Legume> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lemon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lemon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lemon> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CitrusFruit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lentil> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lentil>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lentil> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Legume>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lime> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lime>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lime> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CitrusFruit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Livestock> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Livestock>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Livestock> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lumber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lumber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lumber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#DurableGood>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Lumber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ForestProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MacademiaNut> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MacademiaNut>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MacademiaNut> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleNut>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Mace> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Mace>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Mace> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Spice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MachineTool> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MachineTool>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MachineTool> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Machinery>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Machinery> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Machinery>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Machinery> <http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Machinery> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#DurableGood>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Machinery> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#IndustrialSupply>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MaizeGrain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MaizeGrain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MaizeGrain> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CerealGrain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MajorAppliance> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MajorAppliance>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MajorAppliance> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MajorAppliance> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#DurableGood>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Mango> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Mango>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Mango> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TropicalFruit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ManufacturedProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ManufacturedProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ManufacturedProduct> <http://reliant.teknowledge.com/DAML/SUMO.owl#Product>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MeatOfLandAnimal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MeatOfLandAnimal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MeatOfLandAnimal> <http://reliant.teknowledge.com/DAML/SUMO.owl#Meat>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Melon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Melon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Melon> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fruit>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Melon> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MetalProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MetalProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MetalProduct> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#DurableGood>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MilletGrain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MilletGrain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MilletGrain> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CerealGrain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MiningProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MiningProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MiningProduct> <http://reliant.teknowledge.com/DAML/SUMO.owl#Product>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MotorOil> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MotorOil>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MotorOil> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PetroleumLubricant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MulberryLeaf> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MulberryLeaf>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MulberryLeaf> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fodder>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MulberryLeaf> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Leaf>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MulberryLeaf> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Mutton> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Mutton>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Mutton> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MeatOfLandAnimal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#NaturalRubber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#NaturalRubber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#NaturalRubber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#NickelOre> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#NickelOre>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#NickelOre> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#NickelOre> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MiningProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#NorfolkIslandPineSeed> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#NorfolkIslandPineSeed>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#NorfolkIslandPineSeed> <http://reliant.teknowledge.com/DAML/SUMO.owl#Seed>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#NorfolkIslandPineSeed> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Nut> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Nut>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Nut> <http://reliant.teknowledge.com/DAML/SUMO.owl#ReproductiveBody>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Nut> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Nutmeg> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Nutmeg>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Nutmeg> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Spice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OatGrain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OatGrain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OatGrain> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CerealGrain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Oilseed> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Oilseed>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Oilseed> <http://reliant.teknowledge.com/DAML/SUMO.owl#Seed>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Oilseed> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Okoume> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Okoume>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Okoume> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Hardwood>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OldTajikSomoni> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OldTajikSomoni>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OldTajikSomoni> <http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Olive> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Olive>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Olive> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fruit>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Olive> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OliveOil> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OliveOil>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OliveOil> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#VegetableOil>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OpiumPoppy> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OpiumPoppy>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OpiumPoppy> <http://reliant.teknowledge.com/DAML/SUMO.owl#FloweringPlant>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OpiumPoppy> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OpiumPoppyFarming> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OpiumPoppyFarming>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OpiumPoppyFarming> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CropProduction>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Orchid> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Orchid>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Orchid> <http://reliant.teknowledge.com/DAML/SUMO.owl#FloweringPlant>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Orchid> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OrnamentalFish> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OrnamentalFish>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OrnamentalFish> <http://reliant.teknowledge.com/DAML/SUMO.owl#Fish>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#OrnamentalFish> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PPPBasedEconomicValuation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PPPBasedEconomicValuation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PPPBasedEconomicValuation> <http://reliant.teknowledge.com/DAML/SUMO.owl#Relation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PackagedBeverageProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PackagedBeverageProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PackagedBeverageProduct> <http://reliant.teknowledge.com/DAML/SUMO.owl#Product>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PackagedFoodProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PackagedFoodProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PackagedFoodProduct> <http://reliant.teknowledge.com/DAML/SUMO.owl#Product>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PaddyRice> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PaddyRice>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PaddyRice> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CerealGrass>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PalmKernel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PalmKernel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PalmKernel> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PalmOil> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PalmOil>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PalmOil> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#VegetableOil>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PalmOilNut> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PalmOilNut>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PalmOilNut> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Nut>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Papaw> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Papaw>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Papaw> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TropicalFruit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Papaya> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Papaya>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Papaya> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TropicalFruit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PassionFruit> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PassionFruit>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PassionFruit> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TropicalFruit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pea> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Legume>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Peanut> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Peanut>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Peanut> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleNut>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pearl> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pearl>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pearl> <http://reliant.teknowledge.com/DAML/Geography.owl#SemipreciousGemstone>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PecanNut> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PecanNut>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PecanNut> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleNut>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pelt> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pelt>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pelt> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalAgriculturalProduct>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pelt> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalSkin>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PerfumeEssence> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PerfumeEssence>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PerfumeEssence> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PetroleumLubricant> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PetroleumLubricant>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PetroleumLubricant> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RefinedPetroleumProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PetroleumProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PetroleumProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PetroleumProduct> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PetroleumProduct> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MiningProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PharmaceuticalProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PharmaceuticalProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PharmaceuticalProduct> <http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PharmaceuticalProduct> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ChemicalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PhosphoricAcid> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PhosphoricAcid>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PhosphoricAcid> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pineapple> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pineapple>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pineapple> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TropicalFruit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Plantain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Plantain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Plantain> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TropicalFruit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Plastic> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Plastic>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Plastic> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ManufacturedProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pork> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pork>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pork> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MeatOfLandAnimal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PotatoTuber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PotatoTuber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PotatoTuber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleTuber>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PotatoTuber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Poultry> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Poultry>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Poultry> <http://reliant.teknowledge.com/DAML/SUMO.owl#Bird>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Poultry> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Livestock>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PowerGeneration> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PowerGeneration>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PowerGeneration> <http://reliant.teknowledge.com/DAML/SUMO.owl#Process>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ProductPackage> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ProductPackage>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ProductPackage> <http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pyrethrum> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pyrethrum>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pyrethrum> <http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pyrethrum> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Quinine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Quinine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Quinine> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ReadyMixConcrete> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ReadyMixConcrete>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ReadyMixConcrete> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Concrete>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RefinedPetroleumProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RefinedPetroleumProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RefinedPetroleumProduct> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PetroleumProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Refrigerator> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Refrigerator>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Refrigerator> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MajorAppliance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Reindeer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Reindeer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Reindeer> <http://reliant.teknowledge.com/DAML/SUMO.owl#HoofedMammal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RiceGrain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RiceGrain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RiceGrain> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CerealGrain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RootStarch> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RootStarch>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RootStarch> <http://reliant.teknowledge.com/DAML/SUMO.owl#FruitOrVegetable>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RootStarch> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RootVegetable> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RootVegetable>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RootVegetable> <http://reliant.teknowledge.com/DAML/SUMO.owl#FruitOrVegetable>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RootVegetable> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RyeGrain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RyeGrain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RyeGrain> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CerealGrain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Salmon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Salmon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Salmon> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#FoodFish>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Seafood> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Seafood>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Seafood> <http://reliant.teknowledge.com/DAML/SUMO.owl#Meat>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SenepolCattle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SenepolCattle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SenepolCattle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Cattle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sesame> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sesame>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sesame> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SheaNut> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SheaNut>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SheaNut> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleNut>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sheepskin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sheepskin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sheepskin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Pelt>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Shellfish> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Shellfish>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Shellfish> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Seafood>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Shrimp> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Shrimp>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Shrimp> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Shellfish>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SisalFiber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SisalFiber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SisalFiber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Soap> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Soap>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Soap> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Detergent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sorghum> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sorghum>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sorghum> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#CerealGrass>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SorghumGrain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SorghumGrain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SorghumGrain> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CerealGrain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Soya> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Soya>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Soya> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Soybean> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Soybean>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Soybean> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Bean>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Spice> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Spice>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Spice> <http://reliant.teknowledge.com/DAML/SUMO.owl#FruitOrVegetable>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Spice> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SpicePepper> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SpicePepper>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SpicePepper> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Spice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Squash> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Squash>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Squash> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Squash> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SugarBeet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SugarBeet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SugarBeet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SugarCane> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SugarCane>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SugarCane> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SugarCane> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sunflower> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sunflower>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sunflower> <http://reliant.teknowledge.com/DAML/SUMO.owl#FloweringPlant>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Sunflower> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SunflowerSeed> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SunflowerSeed>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SunflowerSeed> <http://reliant.teknowledge.com/DAML/SUMO.owl#Seed>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SunflowerSeed> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SweetPepper> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SweetPepper>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SweetPepper> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SweetPepper> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SweetPotatoTuber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SweetPotatoTuber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SweetPotatoTuber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleTuber>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#SweetPotatoTuber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TajikSomoni> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TajikSomoni>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TajikSomoni> <http://reliant.teknowledge.com/DAML/SUMO.owl#CurrencyMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TaroTuber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TaroTuber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TaroTuber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleTuber>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TaroTuber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TeaLeaf> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TeaLeaf>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TeaLeaf> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TeaPlantAerialPart>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TeaPlantAerialPart> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TeaPlantAerialPart>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TeaPlantAerialPart> <http://reliant.teknowledge.com/DAML/SUMO.owl#FruitOrVegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TextileProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TextileProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TextileProduct> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ManufacturedProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Tobacco> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Tobacco>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Tobacco> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Tomato> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Tomato>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Tomato> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fruit>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Tomato> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TropicalFruit> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TropicalFruit>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TropicalFruit> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Fruit>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TropicalFruit> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Turkey> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Turkey>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Turkey> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Poultry>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TurkeyMeat> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TurkeyMeat>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#TurkeyMeat> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MeatOfLandAnimal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Turnip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Turnip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Turnip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Turnip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#RootVegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Turtle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Turtle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Turtle> <http://reliant.teknowledge.com/DAML/SUMO.owl#Reptile>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Turtle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Livestock>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#UNEconomicDevelopmentLevel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#UNEconomicDevelopmentLevel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#UNEconomicDevelopmentLevel> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EconomicDevelopmentLevel>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vanilla> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vanilla>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vanilla> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Spice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Veal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Veal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Veal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MeatOfLandAnimal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Vegetable> <http://reliant.teknowledge.com/DAML/SUMO.owl#FruitOrVegetable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#VegetableOil> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#VegetableOil>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#VegetableOil> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Walnut> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Walnut>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Walnut> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleNut>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WaterBuffalo> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WaterBuffalo>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WaterBuffalo> <http://reliant.teknowledge.com/DAML/SUMO.owl#HoofedMammal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WaterBuffaloMeat> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WaterBuffaloMeat>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WaterBuffaloMeat> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MeatOfLandAnimal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Watermelon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Watermelon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Watermelon> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#Melon>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WearableItem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WearableItem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WearableItem> <http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WheatGrain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WheatGrain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WheatGrain> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CerealGrain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WineGrape> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WineGrape>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WineGrape> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PlantAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WoodProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WoodProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WoodProduct> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ForestProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WoolFiber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WoolFiber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WoolFiber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#AnimalAgriculturalProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WorldBankGNIPerCapitaLevel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WorldBankGNIPerCapitaLevel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#WorldBankGNIPerCapitaLevel> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EconomicDevelopmentLevel>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#YamTuber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#YamTuber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#YamTuber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#EdibleTuber>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#YamTuber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#GroceryProduce>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#YlangYlang> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#YlangYlang>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#YlangYlang> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#PerfumeEssence>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ZincOre> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ZincOre>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ZincOre> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ZincOre> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MiningProduct>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ZincProduct> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ZincProduct>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#ZincProduct> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00140.owl#MetalProduct>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

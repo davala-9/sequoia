@@ -1,0 +1,118 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#Person>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/project.owl#Project>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/publication.owl#Article>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/publication.owl#Book>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/publication.owl#InBook>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/publication.owl#InCollection>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/publication.owl#InProceedings>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/publication.owl#MastersThesis>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/publication.owl#Misc>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/publication.owl#PhdThesis>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/publication.owl#Proceedings>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/publication.owl#Publication>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/publication.owl#Resource>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/publication.owl#SoftCopy>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/publication.owl#TechReport>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+Declaration(Class(owl:auxiliarDataRangeClass5))
+Declaration(Class(owl:auxiliarDataRangeClass6))
+############################
+#   Classes
+############################
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#Person> (<http://ebiquity.umbc.edu/ontology/person.owl#Person>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#Person> owl:Thing)
+
+# Class: <http://ebiquity.umbc.edu/ontology/project.owl#Project> (<http://ebiquity.umbc.edu/ontology/project.owl#Project>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/project.owl#Project> owl:Thing)
+
+# Class: <http://ebiquity.umbc.edu/ontology/publication.owl#Article> (<http://ebiquity.umbc.edu/ontology/publication.owl#Article>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/publication.owl#Article> <http://ebiquity.umbc.edu/ontology/publication.owl#Publication>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/publication.owl#Book> (<http://ebiquity.umbc.edu/ontology/publication.owl#Book>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/publication.owl#Book> <http://ebiquity.umbc.edu/ontology/publication.owl#Publication>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/publication.owl#InBook> (<http://ebiquity.umbc.edu/ontology/publication.owl#InBook>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/publication.owl#InBook> <http://ebiquity.umbc.edu/ontology/publication.owl#Publication>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/publication.owl#InCollection> (<http://ebiquity.umbc.edu/ontology/publication.owl#InCollection>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/publication.owl#InCollection> <http://ebiquity.umbc.edu/ontology/publication.owl#Publication>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/publication.owl#InProceedings> (<http://ebiquity.umbc.edu/ontology/publication.owl#InProceedings>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/publication.owl#InProceedings> <http://ebiquity.umbc.edu/ontology/publication.owl#Publication>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/publication.owl#MastersThesis> (<http://ebiquity.umbc.edu/ontology/publication.owl#MastersThesis>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/publication.owl#MastersThesis> <http://ebiquity.umbc.edu/ontology/publication.owl#Publication>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/publication.owl#Misc> (<http://ebiquity.umbc.edu/ontology/publication.owl#Misc>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/publication.owl#Misc> <http://ebiquity.umbc.edu/ontology/publication.owl#Publication>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/publication.owl#PhdThesis> (<http://ebiquity.umbc.edu/ontology/publication.owl#PhdThesis>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/publication.owl#PhdThesis> <http://ebiquity.umbc.edu/ontology/publication.owl#Publication>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/publication.owl#Proceedings> (<http://ebiquity.umbc.edu/ontology/publication.owl#Proceedings>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/publication.owl#Proceedings> <http://ebiquity.umbc.edu/ontology/publication.owl#Publication>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/publication.owl#Publication> (<http://ebiquity.umbc.edu/ontology/publication.owl#Publication>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/publication.owl#Publication> <http://ebiquity.umbc.edu/ontology/publication.owl#Resource>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/publication.owl#Resource> (<http://ebiquity.umbc.edu/ontology/publication.owl#Resource>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/publication.owl#Resource> owl:Thing)
+
+# Class: <http://ebiquity.umbc.edu/ontology/publication.owl#SoftCopy> (<http://ebiquity.umbc.edu/ontology/publication.owl#SoftCopy>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/publication.owl#SoftCopy> <http://ebiquity.umbc.edu/ontology/publication.owl#Resource>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/publication.owl#TechReport> (<http://ebiquity.umbc.edu/ontology/publication.owl#TechReport>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/publication.owl#TechReport> <http://ebiquity.umbc.edu/ontology/publication.owl#Publication>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass5 (owl:auxiliarDataRangeClass5)
+
+SubClassOf(owl:auxiliarDataRangeClass5 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass6 (owl:auxiliarDataRangeClass6)
+
+SubClassOf(owl:auxiliarDataRangeClass6 owl:Thing)
+
+
+)

@@ -1,0 +1,118 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://gemstar.ischool.washington.edu/schema/2001/04/11/NISO-Z3919#NISO-Z3919>))
+Declaration(Class(<http://purl.org/dc/terms/SubjectScheme>))
+Declaration(Class(<http://purl.org/dc/terms/TypeScheme>))
+Declaration(Class(<http://purl.org/gem/qualifiers/AudienceBeneficiaryScheme>))
+Declaration(Class(<http://purl.org/gem/qualifiers/AudienceLevelScheme>))
+Declaration(Class(<http://purl.org/gem/qualifiers/AudienceMediatorScheme>))
+Declaration(Class(<http://purl.org/gem/qualifiers/CatalogingScheme>))
+Declaration(Class(<http://purl.org/gem/qualifiers/ContributorScheme>))
+Declaration(Class(<http://purl.org/gem/qualifiers/CreatorScheme>))
+Declaration(Class(<http://purl.org/gem/qualifiers/GEMpriceCode>))
+Declaration(Class(<http://purl.org/gem/qualifiers/PedagogyAssessmentScheme>))
+Declaration(Class(<http://purl.org/gem/qualifiers/PedagogyGroupingScheme>))
+Declaration(Class(<http://purl.org/gem/qualifiers/PedagogyTeachingScheme>))
+Declaration(Class(<http://purl.org/gem/qualifiers/PriceCodeScheme>))
+Declaration(Class(<http://purl.org/gem/qualifiers/PublicIDScheme>))
+Declaration(Class(<http://purl.org/gem/qualifiers/PublisherScheme>))
+Declaration(Class(<http://purl.org/gem/qualifiers/RightsScheme>))
+Declaration(Class(<http://purl.org/gem/qualifiers/SIDScheme>))
+Declaration(Class(<http://purl.org/gem/qualifiers/StandardsScheme>))
+Declaration(Class(<http://www.fcii.arizona.edu/dlearn/gem/southwestThesaurus>))
+############################
+#   Classes
+############################
+
+# Class: <http://gemstar.ischool.washington.edu/schema/2001/04/11/NISO-Z3919#NISO-Z3919> (<http://gemstar.ischool.washington.edu/schema/2001/04/11/NISO-Z3919#NISO-Z3919>)
+
+SubClassOf(<http://gemstar.ischool.washington.edu/schema/2001/04/11/NISO-Z3919#NISO-Z3919> owl:Thing)
+
+# Class: <http://purl.org/dc/terms/SubjectScheme> (<http://purl.org/dc/terms/SubjectScheme>)
+
+SubClassOf(<http://purl.org/dc/terms/SubjectScheme> owl:Thing)
+
+# Class: <http://purl.org/dc/terms/TypeScheme> (<http://purl.org/dc/terms/TypeScheme>)
+
+SubClassOf(<http://purl.org/dc/terms/TypeScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/AudienceBeneficiaryScheme> (<http://purl.org/gem/qualifiers/AudienceBeneficiaryScheme>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/AudienceBeneficiaryScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/AudienceLevelScheme> (<http://purl.org/gem/qualifiers/AudienceLevelScheme>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/AudienceLevelScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/AudienceMediatorScheme> (<http://purl.org/gem/qualifiers/AudienceMediatorScheme>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/AudienceMediatorScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/CatalogingScheme> (<http://purl.org/gem/qualifiers/CatalogingScheme>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/CatalogingScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/ContributorScheme> (<http://purl.org/gem/qualifiers/ContributorScheme>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/ContributorScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/CreatorScheme> (<http://purl.org/gem/qualifiers/CreatorScheme>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/CreatorScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/GEMpriceCode> (<http://purl.org/gem/qualifiers/GEMpriceCode>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/GEMpriceCode> <http://purl.org/gem/qualifiers/PriceCodeScheme>)
+
+# Class: <http://purl.org/gem/qualifiers/PedagogyAssessmentScheme> (<http://purl.org/gem/qualifiers/PedagogyAssessmentScheme>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/PedagogyAssessmentScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/PedagogyGroupingScheme> (<http://purl.org/gem/qualifiers/PedagogyGroupingScheme>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/PedagogyGroupingScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/PedagogyTeachingScheme> (<http://purl.org/gem/qualifiers/PedagogyTeachingScheme>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/PedagogyTeachingScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/PriceCodeScheme> (<http://purl.org/gem/qualifiers/PriceCodeScheme>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/PriceCodeScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/PublicIDScheme> (<http://purl.org/gem/qualifiers/PublicIDScheme>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/PublicIDScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/PublisherScheme> (<http://purl.org/gem/qualifiers/PublisherScheme>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/PublisherScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/RightsScheme> (<http://purl.org/gem/qualifiers/RightsScheme>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/RightsScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/SIDScheme> (<http://purl.org/gem/qualifiers/SIDScheme>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/SIDScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/StandardsScheme> (<http://purl.org/gem/qualifiers/StandardsScheme>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/StandardsScheme> owl:Thing)
+
+# Class: <http://www.fcii.arizona.edu/dlearn/gem/southwestThesaurus> (<http://www.fcii.arizona.edu/dlearn/gem/southwestThesaurus>)
+
+SubClassOf(<http://www.fcii.arizona.edu/dlearn/gem/southwestThesaurus> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

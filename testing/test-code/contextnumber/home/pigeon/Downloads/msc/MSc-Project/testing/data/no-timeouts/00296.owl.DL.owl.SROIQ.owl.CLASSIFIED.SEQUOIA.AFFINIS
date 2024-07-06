@@ -1,0 +1,128 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Attendee>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Chair>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Committee>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#CommitteeMember>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Conference>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Group>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#KeynoteSpeaker>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#KeynoteTalk>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Location>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Organization>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Panel>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presentation>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presenter>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#SocialEvent>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Workshop>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Organization>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Person>))
+############################
+#   Classes
+############################
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Attendee> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Attendee>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Attendee> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Attendee> <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Chair> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Chair>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Chair> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Chair> <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Committee> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Committee>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Committee> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Group>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#CommitteeMember> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#CommitteeMember>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#CommitteeMember> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#CommitteeMember> <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Conference> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Conference>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Conference> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Group> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Group>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Group> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#KeynoteSpeaker> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#KeynoteSpeaker>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#KeynoteSpeaker> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presenter>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#KeynoteTalk> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#KeynoteTalk>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#KeynoteTalk> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presentation>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Location> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Location>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Location> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Organization> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Organization>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Organization> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Group>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Organization> <http://xmlns.com/foaf/0.1/Organization>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Panel> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Panel>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Panel> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Group>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person>)
+
+EquivalentClasses(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person> <http://xmlns.com/foaf/0.1/Person>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Person> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presentation> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presentation>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presentation> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presenter> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presenter>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Presenter> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Attendee>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#SocialEvent> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#SocialEvent>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#SocialEvent> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Workshop> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Workshop>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Workshop> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_~golbeck_web_www04photo.owl%23.txt#Event>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Organization> (<http://xmlns.com/foaf/0.1/Organization>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Organization> owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Person> (<http://xmlns.com/foaf/0.1/Person>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Person> owl:Thing)
+
+
+)

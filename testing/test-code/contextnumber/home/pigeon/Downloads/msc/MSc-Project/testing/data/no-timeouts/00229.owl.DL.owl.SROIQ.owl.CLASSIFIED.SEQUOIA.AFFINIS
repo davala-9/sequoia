@@ -1,0 +1,93 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.daml.org/2002/05/mcda/mcda-ont#Action>))
+Declaration(Class(<http://www.daml.org/2002/05/mcda/mcda-ont#ActionableObject>))
+Declaration(Class(<http://www.daml.org/2002/05/mcda/mcda-ont#Alternative>))
+Declaration(Class(<http://www.daml.org/2002/05/mcda/mcda-ont#Analysis>))
+Declaration(Class(<http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject>))
+Declaration(Class(<http://www.daml.org/2002/05/mcda/mcda-ont#ObjectifiableObject>))
+Declaration(Class(<http://www.daml.org/2002/05/mcda/mcda-ont#Objective>))
+Declaration(Class(<http://www.daml.org/2002/05/mcda/mcda-ont#RankedObject>))
+Declaration(Class(<http://www.daml.org/2002/05/mcda/mcda-ont#SupportedObjective>))
+Declaration(Class(rdf:List))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+Declaration(Class(owl:auxiliarDataRangeClass5))
+Declaration(Class(owl:auxiliarDataRangeClass6))
+############################
+#   Classes
+############################
+
+# Class: <http://www.daml.org/2002/05/mcda/mcda-ont#Action> (<http://www.daml.org/2002/05/mcda/mcda-ont#Action>)
+
+SubClassOf(<http://www.daml.org/2002/05/mcda/mcda-ont#Action> <http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject>)
+
+# Class: <http://www.daml.org/2002/05/mcda/mcda-ont#ActionableObject> (<http://www.daml.org/2002/05/mcda/mcda-ont#ActionableObject>)
+
+SubClassOf(<http://www.daml.org/2002/05/mcda/mcda-ont#ActionableObject> <http://www.daml.org/2002/05/mcda/mcda-ont#RankedObject>)
+
+# Class: <http://www.daml.org/2002/05/mcda/mcda-ont#Alternative> (<http://www.daml.org/2002/05/mcda/mcda-ont#Alternative>)
+
+SubClassOf(<http://www.daml.org/2002/05/mcda/mcda-ont#Alternative> <http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject>)
+
+# Class: <http://www.daml.org/2002/05/mcda/mcda-ont#Analysis> (<http://www.daml.org/2002/05/mcda/mcda-ont#Analysis>)
+
+SubClassOf(<http://www.daml.org/2002/05/mcda/mcda-ont#Analysis> <http://www.daml.org/2002/05/mcda/mcda-ont#ObjectifiableObject>)
+
+# Class: <http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject> (<http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject>)
+
+SubClassOf(<http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject> owl:Thing)
+
+# Class: <http://www.daml.org/2002/05/mcda/mcda-ont#ObjectifiableObject> (<http://www.daml.org/2002/05/mcda/mcda-ont#ObjectifiableObject>)
+
+SubClassOf(<http://www.daml.org/2002/05/mcda/mcda-ont#ObjectifiableObject> <http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject>)
+
+# Class: <http://www.daml.org/2002/05/mcda/mcda-ont#Objective> (<http://www.daml.org/2002/05/mcda/mcda-ont#Objective>)
+
+SubClassOf(<http://www.daml.org/2002/05/mcda/mcda-ont#Objective> <http://www.daml.org/2002/05/mcda/mcda-ont#RankedObject>)
+
+# Class: <http://www.daml.org/2002/05/mcda/mcda-ont#RankedObject> (<http://www.daml.org/2002/05/mcda/mcda-ont#RankedObject>)
+
+SubClassOf(<http://www.daml.org/2002/05/mcda/mcda-ont#RankedObject> <http://www.daml.org/2002/05/mcda/mcda-ont#MCDAObject>)
+
+# Class: <http://www.daml.org/2002/05/mcda/mcda-ont#SupportedObjective> (<http://www.daml.org/2002/05/mcda/mcda-ont#SupportedObjective>)
+
+SubClassOf(<http://www.daml.org/2002/05/mcda/mcda-ont#SupportedObjective> <http://www.daml.org/2002/05/mcda/mcda-ont#ObjectifiableObject>)
+
+# Class: rdf:List (rdf:List)
+
+SubClassOf(rdf:List owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass5 (owl:auxiliarDataRangeClass5)
+
+SubClassOf(owl:auxiliarDataRangeClass5 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass6 (owl:auxiliarDataRangeClass6)
+
+SubClassOf(owl:auxiliarDataRangeClass6 owl:Thing)
+
+
+)
