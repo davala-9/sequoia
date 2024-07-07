@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.stats import norm
 
 # -------------------
 # Get time taken for each test from 'v0-ExecutorNoAkka-MultiQueueExecutor-32core-results.txt'
@@ -27,14 +28,20 @@ with open('v0-ExecutorNoAkka-MultiQueueExecutor-32core-results.txt', 'r') as f:
 
 
 # -------------------
-# Plot scatter graph of time taken (v0)
-# Plot scatter graph of time taken (ExecutorNoAkka)
-# Plot scatter graph of time taken (MultiQueueExecutor)
+# Plot histogram of time taken (v0)
+# Plot histogram of time taken (ExecutorNoAkka)
+# Plot histogram of time taken (MultiQueueExecutor)
 # -------------------
 
-# TODO: !!! plot this
+plt.hist([np.clip(list(v0results.values()), 0, 600_000), np.clip(list(executorNoAkkaResults.values()), 0, 600_000), np.clip(list(multiQueueExecutorResults.values()), 0, 600_000)],
+         bins=[i for i in range(0, 600_001, 10_000)],
+         label=["v0", "ExecutorNoAkka", "MultiQueueExecutor"],
+         color=['b', 'orange', 'g'])
 
-plt.plot([0],[0])
+plt.xlabel('Time taken (ms)')
+plt.ylabel('Frequency')
+plt.legend()
+plt.title('Histogram of time taken for each model')
 plt.show()
 
 
@@ -54,7 +61,7 @@ def plotDifferences(old_results, noakka, multi, title, minn, maxx, step):
         problem_number: old_results[problem_number] - multi[problem_number]
         for problem_number in old_results
     }
-    difs_bins = [i for i in range(minn, maxx, step)]
+    difs_bins = [i for i in range(minn-1, maxx+1, step)]
     plt.hist([np.clip(list(differences1.values()),difs_bins[0], difs_bins[-1]), np.clip(list(differences2.values()), difs_bins[0], difs_bins[-1])],
              bins=difs_bins,
              label=["ExecutorNoAkka", "MultiQueueExecutor"])
@@ -99,7 +106,7 @@ def plotMults(old_results, noakka, multi, title, minn, maxx, num_bins):
         problem_number: old_results[problem_number] / multi[problem_number]
         for problem_number in old_results
     }
-    difs_bins = [i for i in np.linspace(minn, maxx, num_bins)]
+    difs_bins = [i for i in np.linspace(minn-1, maxx+1, num_bins)]
     plt.hist([np.clip(list(mults1.values()),difs_bins[0], difs_bins[-1]), np.clip(list(mults2.values()), difs_bins[0], difs_bins[-1])],
              bins=difs_bins,
              label=["ExecutorNoAkka", "MultiQueueExecutor"])
