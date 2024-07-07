@@ -43,58 +43,90 @@ plt.show()
 # Plot histogram bell-curve of speedup (v0 time - ExecutorNoAkka time)
 # Plot histogram bell-curve of speedup (v0 time - MultiQueueExecutor time)
 # -------------------
-differencesExecutorNoAkka = {
-    problem_number: v0results[problem_number] - executorNoAkkaResults[problem_number]
-    for problem_number in executorNoAkkaResults
-}
-differencesMultiQueueExecutor = {
-    problem_number: v0results[problem_number] - multiQueueExecutorResults[problem_number]
-    for problem_number in multiQueueExecutorResults
-}
-difs_bins = [i for i in range(-10_000, 100_000, 1000)]
-plt.hist([np.clip(list(differencesExecutorNoAkka.values()), difs_bins[0], difs_bins[-1]), np.clip(list(differencesMultiQueueExecutor.values()), difs_bins[0], difs_bins[-1])],
-         bins=difs_bins,
-         label=["ExecutorNoAkka", "MultiQueueExecutor"])
-plt.xlabel('New time - old time (ms)')
-plt.ylabel('Frequency')
-plt.legend()
-plt.title('Absolute speedup histogram')
-plt.show()
+EASY_TIME = 1000
+MEDIUM_TIME = 10_000
+def plotDifferences(old_results, noakka, multi, title, minn, maxx, step):
+    differences1 = {
+        problem_number: old_results[problem_number] - noakka[problem_number]
+        for problem_number in old_results
+    }
+    differences2 = {
+        problem_number: old_results[problem_number] - multi[problem_number]
+        for problem_number in old_results
+    }
+    difs_bins = [i for i in range(minn, maxx, step)]
+    plt.hist([np.clip(list(differences1.values()),difs_bins[0], difs_bins[-1]), np.clip(list(differences2.values()), difs_bins[0], difs_bins[-1])],
+             bins=difs_bins,
+             label=["ExecutorNoAkka", "MultiQueueExecutor"])
+    plt.xlabel('New implementation time - v0 time (ms)')
+    plt.ylabel('Frequency')
+    plt.legend()
+    plt.title(title)
+    plt.show()
+
+plotDifferences({k: v for k,v in v0results.items() if v < EASY_TIME},
+                executorNoAkkaResults,
+                multiQueueExecutorResults,
+                'Time difference histogram (easy problems)',
+                -1_000,
+                1_000,
+                100)
+plotDifferences({k: v for k,v in v0results.items() if v >= EASY_TIME and v < MEDIUM_TIME},
+                executorNoAkkaResults,
+                multiQueueExecutorResults,
+                'Time difference histogram (medium problems)',
+                -10_000,
+                10_000,
+                1_000)
+plotDifferences({k: v for k,v in v0results.items() if v >= MEDIUM_TIME},
+                executorNoAkkaResults,
+                multiQueueExecutorResults,
+                'Time difference histogram (hard problems)',
+                -100_000,
+                100_000,
+                10_000)
 
 # -------------------
-# On the same chart, plot histogram bell-curve of speedup (v0 time - MultiQueueExecutor time)
+# Plot histogram bell-curve of speedup (v0 time / MultiQueueExecutor time)
+# Plot histogram bell-curve of speedup (v0 time / ExecutorNoAkka time)
 # -------------------
-multsExecutorNoAkka = {
-    problem_number: v0results[problem_number] / executorNoAkkaResults[problem_number]
-    for problem_number in executorNoAkkaResults
-}
-multsMultiQueueExecutor = {
-    problem_number: v0results[problem_number] / multiQueueExecutorResults[problem_number]
-    for problem_number in multiQueueExecutorResults
-}
+def plotMults(old_results, noakka, multi, title, minn, maxx, num_bins):
+    mults1 = {
+        problem_number: old_results[problem_number] / noakka[problem_number]
+        for problem_number in old_results
+    }
+    mults2 = {
+        problem_number: old_results[problem_number] / multi[problem_number]
+        for problem_number in old_results
+    }
+    difs_bins = [i for i in np.linspace(minn, maxx, num_bins)]
+    plt.hist([np.clip(list(mults1.values()),difs_bins[0], difs_bins[-1]), np.clip(list(mults2.values()), difs_bins[0], difs_bins[-1])],
+             bins=difs_bins,
+             label=["ExecutorNoAkka", "MultiQueueExecutor"])
+    plt.xlabel('New implementation time / v0 time')
+    plt.ylabel('Frequency')
+    plt.legend()
+    plt.title(title)
+    plt.show()
 
-# TODO: !!! plot this
-
-plt.plot([0],[0])
-plt.show()
-
-# Plot the multiples distribution
-# mult_bins = [i/10 for i in range(0, 50)]
-# plt.hist(np.clip(list(mults.values()), mult_bins[0], mult_bins[-1]), bins=mult_bins)
-# plt.xlabel('Old time / new time (ms)')
-# plt.ylabel('Frequency')
-# plt.show()
-# plt.hist(np.clip(list(differencesMultiQueueExecutor.values()), difs_bins[0], difs_bins[-1]), bins=difs_bins, label="MultiQueueExecutor", alpha=0.5)
-# plt.xlabel('New time - old time (ms)')
-# plt.ylabel('Frequency')
-
-
-
-
-# -------------------
-# Plot histogram bell-curve of speedup (v0 time - ExecutorNoAkka time)
-# -------------------
-
-# -------------------
-# On same chart, plot histogram bell-curve of speedup (v0 time - MultiQueueExecutor time)
-# -------------------
+plotMults({k: v for k,v in v0results.items() if v < EASY_TIME},
+          executorNoAkkaResults,
+          multiQueueExecutorResults,
+          'Speedup histogram (easy problems)',
+          0,
+          5,
+          21)
+plotMults({k: v for k,v in v0results.items() if v >= EASY_TIME and v < MEDIUM_TIME},
+          executorNoAkkaResults,
+          multiQueueExecutorResults,
+          'Speedup histogram (medium problems)',
+          0,
+          5,
+          21)
+plotMults({k: v for k,v in v0results.items() if v >= MEDIUM_TIME},
+          executorNoAkkaResults,
+          multiQueueExecutorResults,
+          'Speedup histogram (hard problems)',
+          0,
+          5,
+          21)
