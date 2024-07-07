@@ -17,7 +17,8 @@ object ClausePusher {
     * special kind of clauses, the PredClauses. The second part of the Pred rule will index them, and the third part will
     * resolve context clauses with these PredClauses. */
   private[context] def pushPredClausesDerivedInLastRound(state: ContextState,
-                                                         contextStructureManager: ContextStructureManager): Unit = {
+                                                         contextStructureManager: ContextStructureManager,
+                                                         sender: ContextRunnable): Unit = {
     while (state.predClausesOnLastRound.nonEmpty) {
       val clause: ContextClause = state.predClausesOnLastRound.removeFirst
       // if (state.isSelectedCore()) System.out.println("Pushing back: " + clause) //DEBUG
@@ -36,7 +37,7 @@ object ClausePusher {
         for ((incomingEdge: ContextRunnable, edgeLabel: Term) <- state.getRelevantContextStructurePredecessors(clause.body)) {
      //      if (state.isSelectedCore()) System.out.println("...along edge labelled: " + edgeLabel) //DEBUG
           /** Push the clause to each node; the core of the current context is added for debug purposes; the edgeLabel so that the predecessor knows who sent this message */
-          contextStructureManager.messageContext(incomingEdge, PredPush(edgeLabel, state.core, IndexedSequence(clause)))
+          contextStructureManager.messageContext(incomingEdge, PredPush(edgeLabel, state.core, IndexedSequence(clause)), sender)
         }
       }
 
@@ -50,7 +51,8 @@ object ClausePusher {
                                              contextChannel: ContextRunnable,
                                              edgeLabel: Term,
                                              predicate: Predicate,
-                                             parentCore: ImmutableSet[Predicate] = ImmutableSet.empty ): Unit = {
+                                             sender: ContextRunnable,
+                                             parentCore: ImmutableSet[Predicate] = ImmutableSet.empty): Unit = {
     //TODO: Add check that predecessor context contains all relevant predicates for each pred clause, including the new one.
     /** If the new predicate is part of the core, all clauses should be considered; otherwise, only those clauses
       * that contain such predicate in the body. */
@@ -69,7 +71,7 @@ object ClausePusher {
       //if (state.isSelectedCore2() && state.isSelectedPredicate(predicate) && state.isSelectedCore(parentCore)) {
       //  for (cl <- predClauses) if (state.isSelectedClause(cl)) System.out.println("[Physiological] Clause " + cl + "can be back-propagated to context with core " + parentCore + " connected through " + edgeLabel)
       // }
-      contextStructureManager.messageContext(contextChannel, PredPush(edgeLabel, state.core, predClauses))
+      contextStructureManager.messageContext(contextChannel, PredPush(edgeLabel, state.core, predClauses), sender)
     }
   }
 
@@ -78,7 +80,8 @@ object ClausePusher {
   private[context] def pushSuccClausesDerivedInLastRound(state: ContextState,
                                                       ontology: DLOntology,
                                                       contextStructureManager: ContextStructureManager,
-                                                      contextChannel: ContextRunnable): Unit = {
+                                                      contextChannel: ContextRunnable,
+                                                      sender: ContextRunnable): Unit = {
     state.succTriggers.forEachNewTrigger { p =>
      // if (state.isSelectedCore() && state.isSelectedPredicate(p)) System.out.println("[CheyneStokes] Predicate " + p + " triggered Succ!")
       val t = p.maximalTerms._1
@@ -110,7 +113,7 @@ object ClausePusher {
           contextStructureManager.getSuccessor(K1)
         })
       // TODO: Undo the addition of the core to the SuccPush message
-      contextStructureManager.messageContext(edge, SuccPush(contextChannel, t, pSigma, state.core))
+      contextStructureManager.messageContext(edge, SuccPush(contextChannel, t, pSigma, state.core), sender)
     }
   }
 
@@ -128,7 +131,8 @@ object ClausePusher {
   private[context] def pushRootSuccClausesDerivedInLastRound(state: ContextState,
                                                           ontology: DLOntology,
                                                           contextStructureManager: ContextStructureManager,
-                                                          contextChannel: ContextRunnable): Unit = {
+                                                          contextChannel: ContextRunnable,
+                                                          sender: ContextRunnable): Unit = {
     /* Delaying pushing of RootSucc clauses helps ?? */
     state.rootSuccTriggers.forEachNewTrigger { p => {
       /** Each new root succ predicate can be propagated to as many nominal contexts as nominals appear on it */
@@ -147,7 +151,7 @@ object ClausePusher {
         state.getSuccessorOrElseUpdate(v, {
           contextStructureManager.getNominalContext(v)
         })
-      contextStructureManager.messageContext(edge, SuccPush(contextChannel, v, pSigma, state.core))
+      contextStructureManager.messageContext(edge, SuccPush(contextChannel, v, pSigma, state.core), sender)
       nominals._2.foreach(x => {
         val sigma = new ForwardsInterContextMapping(x,comesFromNominalCore)
         val pSigma = p.applySubstitution(sigma)
@@ -155,7 +159,7 @@ object ClausePusher {
           state.getSuccessorOrElseUpdate(x, {
             contextStructureManager.getNominalContext(x)
           })
-        contextStructureManager.messageContext(edge, SuccPush(contextChannel, x, pSigma, state.core))
+        contextStructureManager.messageContext(edge, SuccPush(contextChannel, x, pSigma, state.core), sender)
       })
       /**THIS SHOULD probably be a push of its own */
       /** This will not activate for derived certain facts; which is good. */
@@ -165,7 +169,7 @@ object ClausePusher {
             // if (state.isSelectedCore()) System.out.println("Propagating predicate: " + p + " to a successor")
        //     println("Propagating predicate: " + p + " to a successor from ")
        //     for (a <- state.core) println(a + " ")
-            contextStructureManager.messageContext(newEdge, PossibleGroundFactPush(contextChannel, v, p))
+            contextStructureManager.messageContext(newEdge, PossibleGroundFactPush(contextChannel, v, p), sender)
           }
         case _ =>
       }
@@ -184,7 +188,8 @@ object ClausePusher {
   //TODO: the context of o that also cannot be regenerated include y in the body, or are relevant only to propagate to a predecessor of
   //TODO: the nominal node, and as such they are not relevant for the case when a query atom context collapses into a nominal.
   private[context] def pushQueryClausesDerivedInLastRound(state: NominalContextState,
-                                                       contextStructureManager: ContextStructureManager): Unit = {
+                                                       contextStructureManager: ContextStructureManager,
+                                                       sender: ContextRunnable): Unit = {
     if (!state.isNominalContext) return
     val nominal: Constant = Term(IRI.nominalConceptUid2NominalIriStringName(state.core.toSeq.head.iri.uid))
     while (state.queryClausesOnLastRound.nonEmpty) {
@@ -194,12 +199,12 @@ object ClausePusher {
       /** If the body is empty, we must pass it to all predecessors via a core labelled edge */
       if (clause.body.isEmpty) {
         for (incomingEdge <- state.getAllRootPredecessors()) {
-          contextStructureManager.messageContext(incomingEdge, QueryPush(nominal, IndexedSequence(clause)))
+          contextStructureManager.messageContext(incomingEdge, QueryPush(nominal, IndexedSequence(clause)), sender)
         }
       } else {
         for (predicate <- clause.body) {
           state.getRootPredecessor(predicate).foreach { incomingEdge =>
-            contextStructureManager.messageContext(incomingEdge, QueryPush(nominal, IndexedSequence(clause)))
+            contextStructureManager.messageContext(incomingEdge, QueryPush(nominal, IndexedSequence(clause)), sender)
           }
         }
       }
@@ -209,7 +214,8 @@ object ClausePusher {
   private[context] def pushWorkedOffQueryClauses(state: NominalContextState,
                                               contextStructureManager: ContextStructureManager,
                                               contextChannel: ContextRunnable,
-                                              edgeLabel: Predicate): Unit = {
+                                              edgeLabel: Predicate,
+                                              sender: ContextRunnable): Unit = {
     /** Clauses that are relevant are those that contain the edge label (the core of the root context) in the body, and those with empty body */
     val relevantClauses: IndexedSequence[ContextClause] = state.workedOffClauses.bodyPredicateLookupQueryClausesIncludingEmptyBody(edgeLabel)
 
@@ -218,7 +224,7 @@ object ClausePusher {
       //if (state.isSelectedCore2() && state.isSelectedPredicate(predicate) && state.isSelectedCore(parentCore)) {
       //  for (cl <- predClauses) if (state.isSelectedClause(cl)) System.out.println("[Physiological] Clause " + cl + "can be back-propagated to context with core " + parentCore + " connected through " + edgeLabel)
       // }
-      contextStructureManager.messageContext(contextChannel, QueryPush(nominal, relevantClauses))
+      contextStructureManager.messageContext(contextChannel, QueryPush(nominal, relevantClauses), sender)
     }
   }
 
@@ -227,7 +233,8 @@ object ClausePusher {
   private[context] def pushRootCollapsesDerivedInLastRound(state: ContextState,
                                                            ontology: DLOntology,
                                                            contextStructureManager: ContextStructureManager,
-                                                           contextChannel: ContextRunnable): Unit = {
+                                                           contextChannel: ContextRunnable,
+                                                           sender: ContextRunnable): Unit = {
     state.rootEqualities.forEachNewTrigger { eq =>
       val nominal: Constant = eq match {
         case Equality(CentralVariable, b: Constant) => b
@@ -239,7 +246,7 @@ object ClausePusher {
           contextStructureManager.getNominalContext(nominal)
         })
       val core: Predicate = state.core.toSeq.head
-      contextStructureManager.messageContext(edge, CollPush(contextChannel, core))
+      contextStructureManager.messageContext(edge, CollPush(contextChannel, core), sender)
     }
     //This below is no longer necessary, because we propagate already all certain clauses to relevant contexts //
 //    /** If the equality is certain and we propagate from a nominal context, it must be propagated as a certain fact top -> A */
@@ -259,7 +266,7 @@ object ClausePusher {
 //    }
   }
 
-  private[context] def pushInconsistentOntologyMessage(state: ContextState, manager: ContextStructureManager): Unit = {
+  private[context] def pushInconsistentOntologyMessage(state: ContextState, manager: ContextStructureManager, sender: ContextRunnable): Unit = {
     if (state.inconsistencyIsGuaranteed()) manager.flagOntologyAsInconsistent()
   }
 
@@ -288,44 +295,44 @@ object ClausePusher {
 
   //TODO: Unify treatment of CFGs exchange between nominal contexts.
   /** Note: this is only triggered in nominal contexts */
-  private[context] def pushCertainGroundClausesDerivedInLastRound(state: NominalContextState, manager:ContextStructureManager, ontology: DLOntology): Unit = {
+  private[context] def pushCertainGroundClausesDerivedInLastRound(state: NominalContextState, manager:ContextStructureManager, ontology: DLOntology, sender: ContextRunnable): Unit = {
     val nominal: Constant = Term(IRI.nominalConceptUid2NominalIriStringName(state.getCoreConcept.iri.uid))
     while (state.certainGroundClausesOnLastRound.unprocessedNonEmpty) {
       val unprocessedCGC: ContextClause = state.certainGroundClausesOnLastRound.nextUnprocessed
       val newHead = transform(unprocessedCGC.head,nominal,ontology,state.getCoreConcept.iri)
       /** Send to all relevant contexts that mention this nominal */
       state.constantPredecessors.foreach { edge =>
-        manager.messageContext(edge, CGCPush(ContextClause(unprocessedCGC.body, newHead)(state.ordering),state.core))
+        manager.messageContext(edge, CGCPush(ContextClause(unprocessedCGC.body, newHead)(state.ordering),state.core), sender)
       }
     }
   }
 
   /** Note: this is also only triggered in nominal contexts */
   private[context] def pushWorkedOffCertainGroundClauses(state: NominalContextState, manager:ContextStructureManager,
-                                                         targetContext: ContextRunnable, ontology: DLOntology): Unit = {
+                                                         targetContext: ContextRunnable, ontology: DLOntology, sender: ContextRunnable): Unit = {
     val nominal: Constant = Term(IRI.nominalConceptUid2NominalIriStringName(state.getCoreConcept.iri.uid))
     for (clause <- state.workedOffCertainGroundClauses) {
       val newHead = transform(clause.head,nominal,ontology,state.getCoreConcept.iri)
       /** Send to all relevant contexts that mention this nominal */
-        manager.messageContext(targetContext, CGCPush(ContextClause(clause.body, newHead)(state.ordering),state.core))
+        manager.messageContext(targetContext, CGCPush(ContextClause(clause.body, newHead)(state.ordering),state.core), sender)
     }
   }
 
  /** This sends a request to a nominal context saying ``I introduced a new constant corresponding to yours; please give
    * me all function-free certain ground clauses */
   private[context] def pushRequestAllCGCsForConstantsIntroducedInLastRound(state: ContextState, manager: ContextStructureManager,
-                                              contextChannel: ContextRunnable) {
+                                              contextChannel: ContextRunnable, sender: ContextRunnable) {
     val constantsIntroducedInLastRound = state.getAndClearIntroducedConstantsOnLastRound
     for (constant <- constantsIntroducedInLastRound) {
      // if (state.isSelectedCore()) println("Requesting all CGCs in context with core " + state.core + " for constant " + constant)
-      manager.messageContext(manager.getNominalContext(constant), ConstantMentionedPush(contextChannel))
+      manager.messageContext(manager.getNominalContext(constant), ConstantMentionedPush(contextChannel), sender)
       /** To ensure that every nominal context O contains all CGCs that mention `o`, if such CGC is mentioned in another
         * (nominal) context, we propagate it to O. */
       state match {
         case nomState: NominalContextState => {
      //     if (state.isSelectedCore()) println("Also pushing constant exchange message to the same core")
           val coreConstant = nomState.getCoreConstant
-          manager.messageContext(manager.getNominalContext(constant), ConstantExchange(contextChannel,coreConstant))
+          manager.messageContext(manager.getNominalContext(constant), ConstantExchange(contextChannel,coreConstant), sender)
         }
         case _ =>
       }

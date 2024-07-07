@@ -15,6 +15,7 @@ import com.sequoiareasoner.kernel.context.inferenceRule._
 import java.util.concurrent.atomic.AtomicBoolean
 import java.util.concurrent.LinkedTransferQueue
 import java.util.concurrent.Callable
+import java.util.concurrent.atomic.AtomicInteger
 
 class ContextRunnable(
     val state: ContextState,
@@ -24,6 +25,10 @@ class ContextRunnable(
     val contextStructureManager: ContextStructureManager) {
     val active: AtomicBoolean = new AtomicBoolean(false)
     val queue: LinkedTransferQueue[Callable[Unit]] = new LinkedTransferQueue[Callable[Unit]]()
+
+    // TODO: !!! Note that the following values are only used for logging and can be removed
+    val msgsFromOtherContexts: AtomicInteger = new AtomicInteger(0)
+    val msgsFromSelf: AtomicInteger = new AtomicInteger(0)
 
     def setInactive(): Unit = this.synchronized {
         active.set(false)
@@ -124,7 +129,7 @@ class ContextRunnable(
                */
             // if (state.isSelectedCore2() && state.isSelectedPredicate(predicate) && state.isSelectedCore(parentCore))
             //  System.out.println("[Physiological] Attempting to push worked off pred clauses to context with core" + parentCore + " across edge " + edgeLabel + "containing predicate " + predicate)
-            pushWorkedOffPredClauses(state, contextStructureManager, contextChannel, edgeLabel, predicate, parentCore)
+            pushWorkedOffPredClauses(state, contextStructureManager, contextChannel, edgeLabel, predicate, this, parentCore)
           }
           if (fired || hasUnblocked) {
             Context.saturateAndPush(state, ontology, isEqualityReasoningEnabled, order, contextStructureManager, this, state.hornPhaseActive)
@@ -181,7 +186,7 @@ class ContextRunnable(
               if (clauseAdded && state.isSelectedCore()) DerivationObserver.allSuccFired(state.core,
                 ContextClause(Array(transformedPredicate), Array(transformedPredicate))(order))
               if (!clauseAdded) {
-                pushWorkedOffPredClauses(state, contextStructureManager, contextChannel, edgeLabel, transformedPredicate)
+                pushWorkedOffPredClauses(state, contextStructureManager, contextChannel, edgeLabel, transformedPredicate, this)
               }
               if (clauseAdded || hasUnblocked) {
                 Context.saturateAndPush(state, ontology, isEqualityReasoningEnabled, order, contextStructureManager,
@@ -205,7 +210,7 @@ class ContextRunnable(
                 Context.saturateAndPush(state, ontology, isEqualityReasoningEnabled, order, contextStructureManager, this, state.hornPhaseActive)
               } else {
               /** If no clause is added, we need to see if we can propagate anything back, except if certain fact, which does not propagate */
-                pushWorkedOffQueryClauses(nomState, contextStructureManager, contextChannel, edgeLabel)
+                pushWorkedOffQueryClauses(nomState, contextStructureManager, contextChannel, edgeLabel, this)
               }
             }
             case _ =>
@@ -234,7 +239,7 @@ class ContextRunnable(
           state match {
             case nomState: NominalContextState => {
               nomState.constantPredecessors.add(originContext)
-              pushWorkedOffCertainGroundClauses(nomState,contextStructureManager,originContext,ontology)
+              pushWorkedOffCertainGroundClauses(nomState,contextStructureManager,originContext,ontology,this)
             }
             case _ =>
           }
@@ -250,7 +255,7 @@ class ContextRunnable(
             case nomState: NominalContextState if nomState.getCoreConstant.id == coreConstant.id =>
             case _ => {
               if (state.addConstantToMentionedConstantSet(coreConstant)) {
-                contextStructureManager.messageContext(originContext, ConstantMentionedPush(this))
+                contextStructureManager.messageContext(originContext, ConstantMentionedPush(this), this)
               }
             }
           }

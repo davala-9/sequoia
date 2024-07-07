@@ -64,7 +64,9 @@ final class ContextStructureManager(ontology: DLOntology,
   private[this] val contexts = new mutable.AnyRefMap[ImmutableSet[Predicate], ContextRunnable]
   // private[this] val contextExecutor = new ForkJoinPool() // Defaults to number of processors -1
   val contextExecutor = new ContextAwareForkJoinPool()
-  def messageContext(context: ContextRunnable, message: InterContextMessage): Unit = {
+  def messageContext(context: ContextRunnable, message: InterContextMessage, sender: ContextRunnable): Unit = {
+    if (context == sender) context.msgsFromSelf.incrementAndGet()
+    else context.msgsFromOtherContexts.incrementAndGet()
     val task: Callable[Unit] = () => { context.reSaturateUponMessage(message) }
     contextExecutor.execute(task, context)
   }
@@ -242,6 +244,15 @@ final class ContextStructureManager(ontology: DLOntology,
   })
   nonHornJobs.foreach(x => contextExecutor.execute(x._1, x._2))
   awaitSaturation
+
+  var i = 0
+  var j = 0
+  getAllContexts.foreach(c => { 
+    i += c.msgsFromSelf.get()
+    j += c.msgsFromOtherContexts.get()
+  })
+  println(s"Total messages from self: $i")
+  println(s"Total messages from other contexts: $j")
 
 
 }

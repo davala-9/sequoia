@@ -160,19 +160,19 @@ object Context {
     // if (ontology.havocTriggered) contextStructureManager.interrupt
     /** Push certain ground clauses to all relevant contexts */
     state match {
-      case nomState: NominalContextState => pushCertainGroundClausesDerivedInLastRound(nomState, contextStructureManager, ontology)
+      case nomState: NominalContextState => pushCertainGroundClausesDerivedInLastRound(nomState, contextStructureManager, ontology, incoming)
       case _ =>
     }
-    pushInconsistentOntologyMessage(state,contextStructureManager)
-    pushPredClausesDerivedInLastRound(state, contextStructureManager)
+    pushInconsistentOntologyMessage(state,contextStructureManager, incoming)
+    pushPredClausesDerivedInLastRound(state, contextStructureManager, incoming)
     state match {
-      case nomState: NominalContextState => pushQueryClausesDerivedInLastRound(nomState, contextStructureManager)
+      case nomState: NominalContextState => pushQueryClausesDerivedInLastRound(nomState, contextStructureManager, incoming)
       case _ =>
     }
-    pushSuccClausesDerivedInLastRound(state, ontology, contextStructureManager, incoming)
-    pushRootSuccClausesDerivedInLastRound(state, ontology, contextStructureManager, incoming)
-    if (state.isRootContext) pushRootCollapsesDerivedInLastRound(state,ontology,contextStructureManager,incoming)
-    pushRequestAllCGCsForConstantsIntroducedInLastRound(state,contextStructureManager,incoming)
+    pushSuccClausesDerivedInLastRound(state, ontology, contextStructureManager, incoming, incoming)
+    pushRootSuccClausesDerivedInLastRound(state, ontology, contextStructureManager, incoming, incoming)
+    if (state.isRootContext) pushRootCollapsesDerivedInLastRound(state,ontology,contextStructureManager,incoming,incoming)
+    pushRequestAllCGCsForConstantsIntroducedInLastRound(state,contextStructureManager,incoming,incoming)
   }
 
 }
