@@ -48,15 +48,15 @@ multiQueueExecutorSpeedup = np.array([[int(noZeroes[k]), v0results[k] / multiQue
 plt.scatter(executorNoAkkaSpeedup[:,0], executorNoAkkaSpeedup[:,1], label="ExecutorNoAkka", color='b')
 plt.scatter(multiQueueExecutorSpeedup[:,0], multiQueueExecutorSpeedup[:,1], label="MultiQueueExecutor", color='r')
 
-# lobf for ExecutorNoAkka
+# Lines of best fit
+xnew = np.linspace(min(executorNoAkkaSpeedup[:,0]), max(executorNoAkkaSpeedup[:,0]), 50)
+# - ExecutorNoAkka
 z = np.polyfit(np.log(executorNoAkkaSpeedup[:,0]), np.log(executorNoAkkaSpeedup[:,1]), 1)
 f = np.poly1d(z)
-xnew = np.linspace(min(executorNoAkkaSpeedup[:,0]), max(executorNoAkkaSpeedup[:,0]), 50)
 plt.plot(xnew, np.exp(f(np.log(xnew))), 'b--')
-# lobf for MultiQueueExecutor
+# - MultiQueueExecutor
 z = np.polyfit(np.log(multiQueueExecutorSpeedup[:,0]), np.log(multiQueueExecutorSpeedup[:,1]), 1)
 f = np.poly1d(z)
-xnew = np.linspace(min(multiQueueExecutorSpeedup[:,0]), max(multiQueueExecutorSpeedup[:,0]), 50)
 plt.plot(xnew, np.exp(f(np.log(xnew))), 'r--')
 
 plt.xscale('log')
@@ -64,7 +64,7 @@ plt.yscale('log')
 plt.xlabel('Number of contexts created')
 plt.ylabel('Speedup (v0 time / new implementation time)')
 plt.legend()
-plt.title('Speedup vs Number of contexts created')
+plt.title('Speedup vs Number of contexts created (32 cores)')
 plt.show()
  
 # -------------------
@@ -87,12 +87,11 @@ v0TimeTaken = np.array([[int(noZeroes[k]), v0results[k]] for k in noZeroes])
 plt.scatter(v0TimeTaken[:,0], v0TimeTaken[:,1], label="v0", color='g')
 plt.scatter(executorNoAkkaTimeTaken[:,0], executorNoAkkaTimeTaken[:,1], label="ExecutorNoAkka", color='b')
 plt.scatter(multiQueueExecutorTimeTaken[:,0], multiQueueExecutorTimeTaken[:,1], label="MultiQueueExecutor", color='r')
-plt.scatter([0], [0], label="TIMEOUT", color='k')
 
 plt.xscale('log')
 plt.yscale('log')
 plt.xlabel('Number of contexts created')
 plt.ylabel('Time taken (ms)')
 plt.legend()
-plt.title('Time taken vs Number of contexts created')
+plt.title('Time taken vs Number of contexts created (32 cores)')
 plt.show()
