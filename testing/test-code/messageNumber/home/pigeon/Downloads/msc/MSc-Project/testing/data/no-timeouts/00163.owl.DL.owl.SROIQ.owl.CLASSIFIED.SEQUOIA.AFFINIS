@@ -1,0 +1,119 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/units.owl#BaseUnit>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/units.owl#ComplexUnit>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/units.owl#Prefix>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/units.owl#UnitDerivedByRaisingToPower>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/units.owl#UnitDerivedByScaling>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/units.owl#UnitDerivedByShifting>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#BaseUnit>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#BaseUnitOrUnitDerivedtWithoutChangingOfDimension>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#ComplexUnit>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#DerivedUnit>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Prefix>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#PrefixOrUnit>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#SimpleUnit>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Unit>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByRaisingToPower>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByScaling>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByShifting>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedWithoutChangingOfDimension>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+############################
+#   Classes
+############################
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/units.owl#BaseUnit> (<http://sweet.jpl.nasa.gov/ontology/units.owl#BaseUnit>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/units.owl#BaseUnit> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/units.owl#ComplexUnit> (<http://sweet.jpl.nasa.gov/ontology/units.owl#ComplexUnit>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/units.owl#ComplexUnit> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/units.owl#Prefix> (<http://sweet.jpl.nasa.gov/ontology/units.owl#Prefix>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/units.owl#Prefix> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/units.owl#UnitDerivedByRaisingToPower> (<http://sweet.jpl.nasa.gov/ontology/units.owl#UnitDerivedByRaisingToPower>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/units.owl#UnitDerivedByRaisingToPower> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/units.owl#UnitDerivedByScaling> (<http://sweet.jpl.nasa.gov/ontology/units.owl#UnitDerivedByScaling>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/units.owl#UnitDerivedByScaling> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/units.owl#UnitDerivedByShifting> (<http://sweet.jpl.nasa.gov/ontology/units.owl#UnitDerivedByShifting>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/units.owl#UnitDerivedByShifting> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#BaseUnit> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#BaseUnit>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#BaseUnit> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#BaseUnitOrUnitDerivedtWithoutChangingOfDimension>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#BaseUnitOrUnitDerivedtWithoutChangingOfDimension> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#BaseUnitOrUnitDerivedtWithoutChangingOfDimension>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#BaseUnitOrUnitDerivedtWithoutChangingOfDimension> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Unit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#ComplexUnit> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#ComplexUnit>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#ComplexUnit> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#DerivedUnit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#DerivedUnit> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#DerivedUnit>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#DerivedUnit> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Unit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Prefix> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Prefix>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Prefix> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#PrefixOrUnit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#PrefixOrUnit> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#PrefixOrUnit>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#PrefixOrUnit> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#SimpleUnit> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#SimpleUnit>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#SimpleUnit> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#DerivedUnit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Unit> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Unit>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#Unit> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#PrefixOrUnit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByRaisingToPower> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByRaisingToPower>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByRaisingToPower> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#SimpleUnit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByScaling> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByScaling>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByScaling> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedWithoutChangingOfDimension>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByShifting> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByShifting>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedByShifting> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedWithoutChangingOfDimension>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedWithoutChangingOfDimension> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedWithoutChangingOfDimension>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedWithoutChangingOfDimension> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#BaseUnitOrUnitDerivedtWithoutChangingOfDimension>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#UnitDerivedWithoutChangingOfDimension> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00163.owl#SimpleUnit>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+
+)

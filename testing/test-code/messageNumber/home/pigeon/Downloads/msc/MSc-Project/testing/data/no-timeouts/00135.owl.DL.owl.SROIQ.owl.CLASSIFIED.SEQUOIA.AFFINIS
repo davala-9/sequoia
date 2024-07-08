@@ -1,0 +1,58 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://rdfs.org/sioc/ns#Forum>))
+Declaration(Class(<http://rdfs.org/sioc/ns#Post>))
+Declaration(Class(<http://rdfs.org/sioc/ns#Role>))
+Declaration(Class(<http://rdfs.org/sioc/ns#Site>))
+Declaration(Class(<http://rdfs.org/sioc/ns#User>))
+Declaration(Class(<http://rdfs.org/sioc/ns#Usergroup>))
+Declaration(Class(rdfs:Resource))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+############################
+#   Classes
+############################
+
+# Class: <http://rdfs.org/sioc/ns#Forum> (<http://rdfs.org/sioc/ns#Forum>)
+
+SubClassOf(<http://rdfs.org/sioc/ns#Forum> rdfs:Resource)
+
+# Class: <http://rdfs.org/sioc/ns#Post> (<http://rdfs.org/sioc/ns#Post>)
+
+SubClassOf(<http://rdfs.org/sioc/ns#Post> rdfs:Resource)
+
+# Class: <http://rdfs.org/sioc/ns#Role> (<http://rdfs.org/sioc/ns#Role>)
+
+SubClassOf(<http://rdfs.org/sioc/ns#Role> rdfs:Resource)
+
+# Class: <http://rdfs.org/sioc/ns#Site> (<http://rdfs.org/sioc/ns#Site>)
+
+SubClassOf(<http://rdfs.org/sioc/ns#Site> rdfs:Resource)
+
+# Class: <http://rdfs.org/sioc/ns#User> (<http://rdfs.org/sioc/ns#User>)
+
+SubClassOf(<http://rdfs.org/sioc/ns#User> rdfs:Resource)
+
+# Class: <http://rdfs.org/sioc/ns#Usergroup> (<http://rdfs.org/sioc/ns#Usergroup>)
+
+SubClassOf(<http://rdfs.org/sioc/ns#Usergroup> rdfs:Resource)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+
+)

@@ -1,0 +1,118 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.mindswap.org/2003/owl/mindswap#Affiliate>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/mindswap#Alumni>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/mindswap#EmailAddress>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/mindswap#Faculty>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/mindswap#GraduateStudent>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/mindswap#MindswapFunder>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/mindswap#Programmer>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/mindswap#Researcher>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/mindswap#Staff>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/mindswap#Student>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/mindswap#Swapper>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/mindswap#UndergraduateStudent>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/mindswap#Visitor>))
+Declaration(Class(<http://www.mindswap.org/2004/owl/funding#Funder>))
+Declaration(Class(<http://www.mindswap.org/2004/owl/funding#Organization>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Agent>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Document>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Image>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Organization>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Person>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.mindswap.org/2003/owl/mindswap#Affiliate> (<http://www.mindswap.org/2003/owl/mindswap#Affiliate>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/mindswap#Affiliate> <http://www.mindswap.org/2003/owl/mindswap#Swapper>)
+
+# Class: <http://www.mindswap.org/2003/owl/mindswap#Alumni> (<http://www.mindswap.org/2003/owl/mindswap#Alumni>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/mindswap#Alumni> <http://www.mindswap.org/2003/owl/mindswap#Swapper>)
+
+# Class: <http://www.mindswap.org/2003/owl/mindswap#EmailAddress> (<http://www.mindswap.org/2003/owl/mindswap#EmailAddress>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/mindswap#EmailAddress> owl:Thing)
+
+# Class: <http://www.mindswap.org/2003/owl/mindswap#Faculty> (<http://www.mindswap.org/2003/owl/mindswap#Faculty>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/mindswap#Faculty> <http://www.mindswap.org/2003/owl/mindswap#Swapper>)
+
+# Class: <http://www.mindswap.org/2003/owl/mindswap#GraduateStudent> (<http://www.mindswap.org/2003/owl/mindswap#GraduateStudent>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/mindswap#GraduateStudent> <http://www.mindswap.org/2003/owl/mindswap#Student>)
+
+# Class: <http://www.mindswap.org/2003/owl/mindswap#MindswapFunder> (<http://www.mindswap.org/2003/owl/mindswap#MindswapFunder>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/mindswap#MindswapFunder> <http://www.mindswap.org/2004/owl/funding#Funder>)
+
+# Class: <http://www.mindswap.org/2003/owl/mindswap#Programmer> (<http://www.mindswap.org/2003/owl/mindswap#Programmer>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/mindswap#Programmer> <http://www.mindswap.org/2003/owl/mindswap#Staff>)
+
+# Class: <http://www.mindswap.org/2003/owl/mindswap#Researcher> (<http://www.mindswap.org/2003/owl/mindswap#Researcher>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/mindswap#Researcher> <http://www.mindswap.org/2003/owl/mindswap#Staff>)
+
+# Class: <http://www.mindswap.org/2003/owl/mindswap#Staff> (<http://www.mindswap.org/2003/owl/mindswap#Staff>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/mindswap#Staff> <http://www.mindswap.org/2003/owl/mindswap#Swapper>)
+
+# Class: <http://www.mindswap.org/2003/owl/mindswap#Student> (<http://www.mindswap.org/2003/owl/mindswap#Student>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/mindswap#Student> <http://www.mindswap.org/2003/owl/mindswap#Swapper>)
+
+# Class: <http://www.mindswap.org/2003/owl/mindswap#Swapper> (<http://www.mindswap.org/2003/owl/mindswap#Swapper>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/mindswap#Swapper> <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: <http://www.mindswap.org/2003/owl/mindswap#UndergraduateStudent> (<http://www.mindswap.org/2003/owl/mindswap#UndergraduateStudent>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/mindswap#UndergraduateStudent> <http://www.mindswap.org/2003/owl/mindswap#Student>)
+
+# Class: <http://www.mindswap.org/2003/owl/mindswap#Visitor> (<http://www.mindswap.org/2003/owl/mindswap#Visitor>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/mindswap#Visitor> <http://www.mindswap.org/2003/owl/mindswap#Swapper>)
+
+# Class: <http://www.mindswap.org/2004/owl/funding#Funder> (<http://www.mindswap.org/2004/owl/funding#Funder>)
+
+SubClassOf(<http://www.mindswap.org/2004/owl/funding#Funder> owl:Thing)
+
+# Class: <http://www.mindswap.org/2004/owl/funding#Organization> (<http://www.mindswap.org/2004/owl/funding#Organization>)
+
+SubClassOf(<http://www.mindswap.org/2004/owl/funding#Organization> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: <http://xmlns.com/foaf/0.1/Agent> (<http://xmlns.com/foaf/0.1/Agent>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Agent> owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Document> (<http://xmlns.com/foaf/0.1/Document>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Document> owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Image> (<http://xmlns.com/foaf/0.1/Image>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Image> owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Organization> (<http://xmlns.com/foaf/0.1/Organization>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Organization> owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Person> (<http://xmlns.com/foaf/0.1/Person>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Person> owl:Thing)
+
+
+)

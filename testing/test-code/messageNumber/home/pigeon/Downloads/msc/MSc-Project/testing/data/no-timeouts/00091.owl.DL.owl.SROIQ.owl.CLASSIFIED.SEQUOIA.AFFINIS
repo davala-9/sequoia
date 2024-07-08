@@ -1,0 +1,49 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://my.opera.com/community/xmlns/2006/gallery#Gallery>))
+Declaration(Class(<http://my.opera.com/community/xmlns/2006/gallery#OrderedGallery>))
+Declaration(Class(rdf:Seq))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Document>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Image>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Gallery-3>))
+############################
+#   Classes
+############################
+
+# Class: <http://my.opera.com/community/xmlns/2006/gallery#Gallery> (<http://my.opera.com/community/xmlns/2006/gallery#Gallery>)
+
+SubClassOf(<http://my.opera.com/community/xmlns/2006/gallery#Gallery> <http://xmlns.com/foaf/0.1/Document>)
+SubClassOf(<http://my.opera.com/community/xmlns/2006/gallery#Gallery> <http://xmlns.com/wordnet/1.6/Gallery-3>)
+
+# Class: <http://my.opera.com/community/xmlns/2006/gallery#OrderedGallery> (<http://my.opera.com/community/xmlns/2006/gallery#OrderedGallery>)
+
+SubClassOf(<http://my.opera.com/community/xmlns/2006/gallery#OrderedGallery> <http://my.opera.com/community/xmlns/2006/gallery#Gallery>)
+
+# Class: rdf:Seq (rdf:Seq)
+
+SubClassOf(rdf:Seq owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: <http://xmlns.com/foaf/0.1/Document> (<http://xmlns.com/foaf/0.1/Document>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Document> owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Image> (<http://xmlns.com/foaf/0.1/Image>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Image> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Gallery-3> (<http://xmlns.com/wordnet/1.6/Gallery-3>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Gallery-3> owl:Thing)
+
+
+)

@@ -1,0 +1,63 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.daml.org/2001/10/cvslog/cvslog-ont#Add>))
+Declaration(Class(<http://www.daml.org/2001/10/cvslog/cvslog-ont#Event>))
+Declaration(Class(<http://www.daml.org/2001/10/cvslog/cvslog-ont#File>))
+Declaration(Class(<http://www.daml.org/2001/10/cvslog/cvslog-ont#Modify>))
+Declaration(Class(<http://www.daml.org/2001/10/cvslog/cvslog-ont#Module>))
+Declaration(Class(<http://www.daml.org/2001/10/cvslog/cvslog-ont#User>))
+Declaration(Class(xsd:timeInstant))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+############################
+#   Classes
+############################
+
+# Class: <http://www.daml.org/2001/10/cvslog/cvslog-ont#Add> (<http://www.daml.org/2001/10/cvslog/cvslog-ont#Add>)
+
+SubClassOf(<http://www.daml.org/2001/10/cvslog/cvslog-ont#Add> <http://www.daml.org/2001/10/cvslog/cvslog-ont#Event>)
+
+# Class: <http://www.daml.org/2001/10/cvslog/cvslog-ont#Event> (<http://www.daml.org/2001/10/cvslog/cvslog-ont#Event>)
+
+SubClassOf(<http://www.daml.org/2001/10/cvslog/cvslog-ont#Event> owl:Thing)
+
+# Class: <http://www.daml.org/2001/10/cvslog/cvslog-ont#File> (<http://www.daml.org/2001/10/cvslog/cvslog-ont#File>)
+
+SubClassOf(<http://www.daml.org/2001/10/cvslog/cvslog-ont#File> owl:Thing)
+
+# Class: <http://www.daml.org/2001/10/cvslog/cvslog-ont#Modify> (<http://www.daml.org/2001/10/cvslog/cvslog-ont#Modify>)
+
+SubClassOf(<http://www.daml.org/2001/10/cvslog/cvslog-ont#Modify> <http://www.daml.org/2001/10/cvslog/cvslog-ont#Event>)
+
+# Class: <http://www.daml.org/2001/10/cvslog/cvslog-ont#Module> (<http://www.daml.org/2001/10/cvslog/cvslog-ont#Module>)
+
+SubClassOf(<http://www.daml.org/2001/10/cvslog/cvslog-ont#Module> owl:Thing)
+
+# Class: <http://www.daml.org/2001/10/cvslog/cvslog-ont#User> (<http://www.daml.org/2001/10/cvslog/cvslog-ont#User>)
+
+SubClassOf(<http://www.daml.org/2001/10/cvslog/cvslog-ont#User> owl:Thing)
+
+# Class: xsd:timeInstant (xsd:timeInstant)
+
+SubClassOf(xsd:timeInstant owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+
+)

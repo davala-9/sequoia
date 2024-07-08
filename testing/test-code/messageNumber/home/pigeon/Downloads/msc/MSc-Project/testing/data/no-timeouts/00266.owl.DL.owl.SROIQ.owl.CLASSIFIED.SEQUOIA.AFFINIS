@@ -1,0 +1,88 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Amaya>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Any>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#BrowserRequirement>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#MacOS>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#MicrosoftInternetExplorer>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Multi-OS>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#NetscapeCommunicator>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#None>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Opera>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#OperatingSystemRequirement>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#PC-DOS>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#TechnologyRequirement>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Unix>))
+Declaration(Class(<http://dublincore.org/2000/03/13/dcq#FormatScheme>))
+############################
+#   Classes
+############################
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Amaya> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Amaya>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Amaya> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#BrowserRequirement>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Any> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Any>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Any> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#BrowserRequirement>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#BrowserRequirement> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#BrowserRequirement>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#BrowserRequirement> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#TechnologyRequirement>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#MacOS> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#MacOS>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#MacOS> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#OperatingSystemRequirement>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#MicrosoftInternetExplorer> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#MicrosoftInternetExplorer>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#MicrosoftInternetExplorer> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#BrowserRequirement>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Multi-OS> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Multi-OS>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Multi-OS> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#OperatingSystemRequirement>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#NetscapeCommunicator> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#NetscapeCommunicator>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#NetscapeCommunicator> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#BrowserRequirement>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#None> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#None>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#None> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#OperatingSystemRequirement>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Opera> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Opera>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Opera> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#BrowserRequirement>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#OperatingSystemRequirement> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#OperatingSystemRequirement>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#OperatingSystemRequirement> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#TechnologyRequirement>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#PC-DOS> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#PC-DOS>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#PC-DOS> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#OperatingSystemRequirement>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#TechnologyRequirement> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#TechnologyRequirement>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#TechnologyRequirement> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Unix> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Unix>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#Unix> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_technicalv1p2%23.txt#OperatingSystemRequirement>)
+
+# Class: <http://dublincore.org/2000/03/13/dcq#FormatScheme> (<http://dublincore.org/2000/03/13/dcq#FormatScheme>)
+
+SubClassOf(<http://dublincore.org/2000/03/13/dcq#FormatScheme> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

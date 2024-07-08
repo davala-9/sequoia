@@ -1,0 +1,59 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error1>))
+Declaration(Class(<http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAEmployee>))
+Declaration(Class(<http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAOffice>))
+Declaration(Class(<http://www.daml.org/projects/integration/projects-20010811#Agency>))
+Declaration(Class(<http://www.daml.org/projects/integration/projects-20010811#Employee>))
+Declaration(Class(<http://www.daml.org/projects/integration/projects-20010811#Organization>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+############################
+#   Classes
+############################
+
+# Class: <http://org.semanticweb.owlapi/error#Error1> (<http://org.semanticweb.owlapi/error#Error1>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error1> owl:Thing)
+
+# Class: <http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAEmployee> (<http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAEmployee>)
+
+SubClassOf(<http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAEmployee> <http://org.semanticweb.owlapi/error#Error1>)
+SubClassOf(<http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAEmployee> <http://www.daml.org/projects/integration/projects-20010811#Employee>)
+
+# Class: <http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAOffice> (<http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAOffice>)
+
+SubClassOf(<http://www.daml.org/2002/03/darpadir/darpadir-ont#DARPAOffice> <http://www.daml.org/projects/integration/projects-20010811#Organization>)
+
+# Class: <http://www.daml.org/projects/integration/projects-20010811#Agency> (<http://www.daml.org/projects/integration/projects-20010811#Agency>)
+
+SubClassOf(<http://www.daml.org/projects/integration/projects-20010811#Agency> owl:Thing)
+
+# Class: <http://www.daml.org/projects/integration/projects-20010811#Employee> (<http://www.daml.org/projects/integration/projects-20010811#Employee>)
+
+SubClassOf(<http://www.daml.org/projects/integration/projects-20010811#Employee> owl:Thing)
+
+# Class: <http://www.daml.org/projects/integration/projects-20010811#Organization> (<http://www.daml.org/projects/integration/projects-20010811#Organization>)
+
+SubClassOf(<http://www.daml.org/projects/integration/projects-20010811#Organization> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+
+)

@@ -1,0 +1,160 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Event>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#ListOfPersons>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#MultiplePresenterTalk>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#OnePresenterTalk>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Person>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Talk>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error1>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error10>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error11>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error12>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error13>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error14>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error2>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error3>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error4>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error5>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error6>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error7>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error8>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error9>))
+Declaration(Class(rdf:List))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#Person>))
+Declaration(Class(<http://www.w3.org/2001/04/roadmap/org#Activity>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(<http://www.w3.org/2002/12/cal/ical#Vevent>))
+############################
+#   Classes
+############################
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Event> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Event>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Event> <http://org.semanticweb.owlapi/error#Error10>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Event> <http://org.semanticweb.owlapi/error#Error11>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Event> <http://org.semanticweb.owlapi/error#Error12>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Event> <http://org.semanticweb.owlapi/error#Error8>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Event> <http://org.semanticweb.owlapi/error#Error9>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Event> <http://www.w3.org/2002/12/cal/ical#Vevent>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#ListOfPersons> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#ListOfPersons>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#ListOfPersons> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#MultiplePresenterTalk> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#MultiplePresenterTalk>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#MultiplePresenterTalk> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#OnePresenterTalk> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#OnePresenterTalk>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#OnePresenterTalk> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Person> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Person>)
+
+EquivalentClasses(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Person> <http://www.w3.org/2000/10/swap/pim/contact#Person>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Person> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Talk> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Talk>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Talk> <http://org.semanticweb.owlapi/error#Error2>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Talk> <http://org.semanticweb.owlapi/error#Error3>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Talk> <http://org.semanticweb.owlapi/error#Error4>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Talk> <http://org.semanticweb.owlapi/error#Error5>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Talk> <http://org.semanticweb.owlapi/error#Error6>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#Talk> <http://org.semanticweb.owlapi/error#Error7>)
+
+# Class: <http://org.semanticweb.owlapi/error#Error1> (<http://org.semanticweb.owlapi/error#Error1>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error1> rdf:List)
+
+# Class: <http://org.semanticweb.owlapi/error#Error10> (<http://org.semanticweb.owlapi/error#Error10>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error10> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error11> (<http://org.semanticweb.owlapi/error#Error11>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error11> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error12> (<http://org.semanticweb.owlapi/error#Error12>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error12> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error13> (<http://org.semanticweb.owlapi/error#Error13>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error13> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#OnePresenterTalk>)
+
+# Class: <http://org.semanticweb.owlapi/error#Error14> (<http://org.semanticweb.owlapi/error#Error14>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error14> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#ListOfPersons>)
+SubClassOf(<http://org.semanticweb.owlapi/error#Error14> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.w3.org_2004_08_Presentations.owl%23.txt#MultiplePresenterTalk>)
+
+# Class: <http://org.semanticweb.owlapi/error#Error2> (<http://org.semanticweb.owlapi/error#Error2>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error2> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error3> (<http://org.semanticweb.owlapi/error#Error3>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error3> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error4> (<http://org.semanticweb.owlapi/error#Error4>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error4> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error5> (<http://org.semanticweb.owlapi/error#Error5>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error5> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error6> (<http://org.semanticweb.owlapi/error#Error6>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error6> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error7> (<http://org.semanticweb.owlapi/error#Error7>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error7> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error8> (<http://org.semanticweb.owlapi/error#Error8>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error8> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error9> (<http://org.semanticweb.owlapi/error#Error9>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error9> owl:Thing)
+
+# Class: rdf:List (rdf:List)
+
+SubClassOf(rdf:List owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#Person> (<http://www.w3.org/2000/10/swap/pim/contact#Person>)
+
+SubClassOf(<http://www.w3.org/2000/10/swap/pim/contact#Person> owl:Thing)
+
+# Class: <http://www.w3.org/2001/04/roadmap/org#Activity> (<http://www.w3.org/2001/04/roadmap/org#Activity>)
+
+SubClassOf(<http://www.w3.org/2001/04/roadmap/org#Activity> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: <http://www.w3.org/2002/12/cal/ical#Vevent> (<http://www.w3.org/2002/12/cal/ical#Vevent>)
+
+SubClassOf(<http://www.w3.org/2002/12/cal/ical#Vevent> owl:Thing)
+
+
+)

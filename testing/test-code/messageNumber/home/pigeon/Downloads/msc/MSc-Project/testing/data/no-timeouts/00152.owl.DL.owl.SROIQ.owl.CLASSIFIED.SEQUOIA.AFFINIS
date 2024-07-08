@@ -1,0 +1,28 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://swc.projects.semwebcentral.org/owl/gforge-ont#Category>))
+Declaration(Class(<http://swc.projects.semwebcentral.org/owl/gforge-ont#Site>))
+############################
+#   Classes
+############################
+
+# Class: <http://swc.projects.semwebcentral.org/owl/gforge-ont#Category> (<http://swc.projects.semwebcentral.org/owl/gforge-ont#Category>)
+
+SubClassOf(<http://swc.projects.semwebcentral.org/owl/gforge-ont#Category> owl:Thing)
+
+# Class: <http://swc.projects.semwebcentral.org/owl/gforge-ont#Site> (<http://swc.projects.semwebcentral.org/owl/gforge-ont#Site>)
+
+SubClassOf(<http://swc.projects.semwebcentral.org/owl/gforge-ont#Site> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

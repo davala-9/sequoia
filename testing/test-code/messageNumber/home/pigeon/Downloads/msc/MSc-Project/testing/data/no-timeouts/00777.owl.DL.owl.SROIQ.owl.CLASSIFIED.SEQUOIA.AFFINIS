@@ -1,0 +1,313 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Above65>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Account>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#AfterTransaction>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#AgeValue>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Below18>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#CashCredit>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#CashWithdrawal>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#CentralBohemia>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Classic>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Client>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#CollectionAnotherBank>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Credit>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#CreditCard>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#CreditCardWithdrawal>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#DebtRunningLoan>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#EastBohemia>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#FemaleSex>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Finished>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#ForStatementPayment>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#From18To25>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#From25To35>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#From35To50>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#From50To65>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Gold>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#HouseholdPayment>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#InsurrancePayment>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#InterestsCredited>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Junior>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Leasing>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Loan>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#LoanPayment>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#LoanStatusValue>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#MaleSex>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Man>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Monthly>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#NoProblemsFinishedLoan>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#NorthBohemia>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#NorthMoravia>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#NotPaidFinishedLoan>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#OKRunningLoan>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#OKStatus>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#OldAgePension>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Payment>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#PermanentOrder>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Prague>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#ProblemStatus>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Region>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#RemittanceAnotherBank>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Running>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#SanctionInterestCashWithdrawal>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#SexValue>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#SouthBohemia>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#SouthMoravia>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#StatementIssuanceFrequencyValue>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Transaction>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Weekly>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#WestBohemia>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Withdrawal>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Woman>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Above65> (<http://www.owl-ontologies.com/unnamed.owl#Above65>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Above65> <http://www.owl-ontologies.com/unnamed.owl#AgeValue>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Account> (<http://www.owl-ontologies.com/unnamed.owl#Account>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Account> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#AfterTransaction> (<http://www.owl-ontologies.com/unnamed.owl#AfterTransaction>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#AfterTransaction> <http://www.owl-ontologies.com/unnamed.owl#StatementIssuanceFrequencyValue>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#AgeValue> (<http://www.owl-ontologies.com/unnamed.owl#AgeValue>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#AgeValue> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Below18> (<http://www.owl-ontologies.com/unnamed.owl#Below18>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Below18> <http://www.owl-ontologies.com/unnamed.owl#AgeValue>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#CashCredit> (<http://www.owl-ontologies.com/unnamed.owl#CashCredit>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#CashCredit> <http://www.owl-ontologies.com/unnamed.owl#Credit>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#CashWithdrawal> (<http://www.owl-ontologies.com/unnamed.owl#CashWithdrawal>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#CashWithdrawal> <http://www.owl-ontologies.com/unnamed.owl#Withdrawal>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#CentralBohemia> (<http://www.owl-ontologies.com/unnamed.owl#CentralBohemia>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#CentralBohemia> <http://www.owl-ontologies.com/unnamed.owl#Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Classic> (<http://www.owl-ontologies.com/unnamed.owl#Classic>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Classic> <http://www.owl-ontologies.com/unnamed.owl#CreditCard>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Client> (<http://www.owl-ontologies.com/unnamed.owl#Client>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Client> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#CollectionAnotherBank> (<http://www.owl-ontologies.com/unnamed.owl#CollectionAnotherBank>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#CollectionAnotherBank> <http://www.owl-ontologies.com/unnamed.owl#Credit>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Credit> (<http://www.owl-ontologies.com/unnamed.owl#Credit>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Credit> <http://www.owl-ontologies.com/unnamed.owl#Transaction>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#CreditCard> (<http://www.owl-ontologies.com/unnamed.owl#CreditCard>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#CreditCard> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#CreditCardWithdrawal> (<http://www.owl-ontologies.com/unnamed.owl#CreditCardWithdrawal>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#CreditCardWithdrawal> <http://www.owl-ontologies.com/unnamed.owl#Withdrawal>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#DebtRunningLoan> (<http://www.owl-ontologies.com/unnamed.owl#DebtRunningLoan>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#DebtRunningLoan> <http://www.owl-ontologies.com/unnamed.owl#Running>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#EastBohemia> (<http://www.owl-ontologies.com/unnamed.owl#EastBohemia>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#EastBohemia> <http://www.owl-ontologies.com/unnamed.owl#Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#FemaleSex> (<http://www.owl-ontologies.com/unnamed.owl#FemaleSex>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#FemaleSex> <http://www.owl-ontologies.com/unnamed.owl#SexValue>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Finished> (<http://www.owl-ontologies.com/unnamed.owl#Finished>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Finished> <http://www.owl-ontologies.com/unnamed.owl#Loan>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#ForStatementPayment> (<http://www.owl-ontologies.com/unnamed.owl#ForStatementPayment>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#ForStatementPayment> <http://www.owl-ontologies.com/unnamed.owl#Payment>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#From18To25> (<http://www.owl-ontologies.com/unnamed.owl#From18To25>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#From18To25> <http://www.owl-ontologies.com/unnamed.owl#AgeValue>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#From25To35> (<http://www.owl-ontologies.com/unnamed.owl#From25To35>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#From25To35> <http://www.owl-ontologies.com/unnamed.owl#AgeValue>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#From35To50> (<http://www.owl-ontologies.com/unnamed.owl#From35To50>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#From35To50> <http://www.owl-ontologies.com/unnamed.owl#AgeValue>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#From50To65> (<http://www.owl-ontologies.com/unnamed.owl#From50To65>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#From50To65> <http://www.owl-ontologies.com/unnamed.owl#AgeValue>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Gold> (<http://www.owl-ontologies.com/unnamed.owl#Gold>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Gold> <http://www.owl-ontologies.com/unnamed.owl#CreditCard>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#HouseholdPayment> (<http://www.owl-ontologies.com/unnamed.owl#HouseholdPayment>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#HouseholdPayment> <http://www.owl-ontologies.com/unnamed.owl#Payment>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#InsurrancePayment> (<http://www.owl-ontologies.com/unnamed.owl#InsurrancePayment>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#InsurrancePayment> <http://www.owl-ontologies.com/unnamed.owl#Payment>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#InterestsCredited> (<http://www.owl-ontologies.com/unnamed.owl#InterestsCredited>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#InterestsCredited> <http://www.owl-ontologies.com/unnamed.owl#Credit>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Junior> (<http://www.owl-ontologies.com/unnamed.owl#Junior>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Junior> <http://www.owl-ontologies.com/unnamed.owl#CreditCard>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Leasing> (<http://www.owl-ontologies.com/unnamed.owl#Leasing>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Leasing> <http://www.owl-ontologies.com/unnamed.owl#Payment>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Loan> (<http://www.owl-ontologies.com/unnamed.owl#Loan>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Loan> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#LoanPayment> (<http://www.owl-ontologies.com/unnamed.owl#LoanPayment>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#LoanPayment> <http://www.owl-ontologies.com/unnamed.owl#Payment>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#LoanStatusValue> (<http://www.owl-ontologies.com/unnamed.owl#LoanStatusValue>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#LoanStatusValue> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#MaleSex> (<http://www.owl-ontologies.com/unnamed.owl#MaleSex>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#MaleSex> <http://www.owl-ontologies.com/unnamed.owl#SexValue>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Man> (<http://www.owl-ontologies.com/unnamed.owl#Man>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Man> <http://www.owl-ontologies.com/unnamed.owl#Client>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Monthly> (<http://www.owl-ontologies.com/unnamed.owl#Monthly>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Monthly> <http://www.owl-ontologies.com/unnamed.owl#StatementIssuanceFrequencyValue>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#NoProblemsFinishedLoan> (<http://www.owl-ontologies.com/unnamed.owl#NoProblemsFinishedLoan>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#NoProblemsFinishedLoan> <http://www.owl-ontologies.com/unnamed.owl#Finished>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#NorthBohemia> (<http://www.owl-ontologies.com/unnamed.owl#NorthBohemia>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#NorthBohemia> <http://www.owl-ontologies.com/unnamed.owl#Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#NorthMoravia> (<http://www.owl-ontologies.com/unnamed.owl#NorthMoravia>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#NorthMoravia> <http://www.owl-ontologies.com/unnamed.owl#Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#NotPaidFinishedLoan> (<http://www.owl-ontologies.com/unnamed.owl#NotPaidFinishedLoan>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#NotPaidFinishedLoan> <http://www.owl-ontologies.com/unnamed.owl#Finished>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#OKRunningLoan> (<http://www.owl-ontologies.com/unnamed.owl#OKRunningLoan>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#OKRunningLoan> <http://www.owl-ontologies.com/unnamed.owl#Running>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#OKStatus> (<http://www.owl-ontologies.com/unnamed.owl#OKStatus>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#OKStatus> <http://www.owl-ontologies.com/unnamed.owl#LoanStatusValue>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#OldAgePension> (<http://www.owl-ontologies.com/unnamed.owl#OldAgePension>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#OldAgePension> <http://www.owl-ontologies.com/unnamed.owl#CollectionAnotherBank>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Payment> (<http://www.owl-ontologies.com/unnamed.owl#Payment>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Payment> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#PermanentOrder> (<http://www.owl-ontologies.com/unnamed.owl#PermanentOrder>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#PermanentOrder> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Prague> (<http://www.owl-ontologies.com/unnamed.owl#Prague>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Prague> <http://www.owl-ontologies.com/unnamed.owl#Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#ProblemStatus> (<http://www.owl-ontologies.com/unnamed.owl#ProblemStatus>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#ProblemStatus> <http://www.owl-ontologies.com/unnamed.owl#LoanStatusValue>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Region> (<http://www.owl-ontologies.com/unnamed.owl#Region>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Region> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#RemittanceAnotherBank> (<http://www.owl-ontologies.com/unnamed.owl#RemittanceAnotherBank>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#RemittanceAnotherBank> <http://www.owl-ontologies.com/unnamed.owl#Withdrawal>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Running> (<http://www.owl-ontologies.com/unnamed.owl#Running>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Running> <http://www.owl-ontologies.com/unnamed.owl#Loan>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#SanctionInterestCashWithdrawal> (<http://www.owl-ontologies.com/unnamed.owl#SanctionInterestCashWithdrawal>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#SanctionInterestCashWithdrawal> <http://www.owl-ontologies.com/unnamed.owl#CashWithdrawal>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#SexValue> (<http://www.owl-ontologies.com/unnamed.owl#SexValue>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#SexValue> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#SouthBohemia> (<http://www.owl-ontologies.com/unnamed.owl#SouthBohemia>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#SouthBohemia> <http://www.owl-ontologies.com/unnamed.owl#Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#SouthMoravia> (<http://www.owl-ontologies.com/unnamed.owl#SouthMoravia>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#SouthMoravia> <http://www.owl-ontologies.com/unnamed.owl#Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#StatementIssuanceFrequencyValue> (<http://www.owl-ontologies.com/unnamed.owl#StatementIssuanceFrequencyValue>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#StatementIssuanceFrequencyValue> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Transaction> (<http://www.owl-ontologies.com/unnamed.owl#Transaction>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Transaction> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Weekly> (<http://www.owl-ontologies.com/unnamed.owl#Weekly>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Weekly> <http://www.owl-ontologies.com/unnamed.owl#StatementIssuanceFrequencyValue>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#WestBohemia> (<http://www.owl-ontologies.com/unnamed.owl#WestBohemia>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#WestBohemia> <http://www.owl-ontologies.com/unnamed.owl#Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Withdrawal> (<http://www.owl-ontologies.com/unnamed.owl#Withdrawal>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Withdrawal> <http://www.owl-ontologies.com/unnamed.owl#Transaction>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Woman> (<http://www.owl-ontologies.com/unnamed.owl#Woman>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Woman> <http://www.owl-ontologies.com/unnamed.owl#Client>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

@@ -1,0 +1,349 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error1>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error10>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error11>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error2>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error3>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error4>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error5>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error6>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error7>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error8>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error9>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Administrative_Region>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Administrative_Subdivision>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Area>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Autonomous_Community>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Autonomous_Municipality>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Autonomous_Region>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Building>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Canton>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Capital_City>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Capital_Municipality>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Capital_Territory>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#City>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Constitutional_Province>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#County>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Department>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#District>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Division>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Economic_Prefecture>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Emirate>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Federal_Dependencies>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Federal_District>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Federal_Status_City>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Federal_Territory>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Governorate>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Independent_Town>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Intendancy>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Linestring>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#MultiLinestring>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#MultiPoint>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#MultiPolygon>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Municipality>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#National_District>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#National_Territory>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Pakistan-administered>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Parish>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Point>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Polygon>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Prefecture>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Province>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Region>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Republic>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialDescription>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Special_City>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Special_District>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Special_Municipality>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Special_Region>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#State>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Territory>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Town>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Union_Territory>))
+Declaration(Class(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Zone>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+############################
+#   Classes
+############################
+
+# Class: <http://org.semanticweb.owlapi/error#Error1> (<http://org.semanticweb.owlapi/error#Error1>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error1> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://org.semanticweb.owlapi/error#Error10> (<http://org.semanticweb.owlapi/error#Error10>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error10> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error11> (<http://org.semanticweb.owlapi/error#Error11>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error11> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error2> (<http://org.semanticweb.owlapi/error#Error2>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error2> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://org.semanticweb.owlapi/error#Error3> (<http://org.semanticweb.owlapi/error#Error3>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error3> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error4> (<http://org.semanticweb.owlapi/error#Error4>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error4> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://org.semanticweb.owlapi/error#Error5> (<http://org.semanticweb.owlapi/error#Error5>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error5> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error6> (<http://org.semanticweb.owlapi/error#Error6>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error6> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error7> (<http://org.semanticweb.owlapi/error#Error7>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error7> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://org.semanticweb.owlapi/error#Error8> (<http://org.semanticweb.owlapi/error#Error8>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error8> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error9> (<http://org.semanticweb.owlapi/error#Error9>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error9> owl:Thing)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Administrative_Region> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Administrative_Region>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Administrative_Region> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Administrative_Subdivision> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Administrative_Subdivision>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Administrative_Subdivision> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Area> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Area>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Area> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Autonomous_Community> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Autonomous_Community>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Autonomous_Community> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Autonomous_Municipality> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Autonomous_Municipality>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Autonomous_Municipality> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Autonomous_Region> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Autonomous_Region>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Autonomous_Region> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Building> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Building>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Building> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Canton> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Canton>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Canton> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Capital_City> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Capital_City>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Capital_City> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Capital_Municipality> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Capital_Municipality>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Capital_Municipality> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Capital_Territory> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Capital_Territory>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Capital_Territory> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#City> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#City>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#City> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Constitutional_Province> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Constitutional_Province>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Constitutional_Province> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#County> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#County>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#County> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Department> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Department>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Department> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#District> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#District>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#District> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Division> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Division>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Division> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Economic_Prefecture> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Economic_Prefecture>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Economic_Prefecture> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Emirate> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Emirate>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Emirate> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Federal_Dependencies> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Federal_Dependencies>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Federal_Dependencies> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Federal_District> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Federal_District>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Federal_District> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Federal_Status_City> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Federal_Status_City>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Federal_Status_City> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Federal_Territory> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Federal_Territory>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Federal_Territory> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Governorate> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Governorate>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Governorate> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Independent_Town> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Independent_Town>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Independent_Town> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Intendancy> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Intendancy>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Intendancy> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Linestring> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Linestring>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Linestring> <http://org.semanticweb.owlapi/error#Error8>)
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Linestring> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialDescription>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#MultiLinestring> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#MultiLinestring>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#MultiLinestring> <http://org.semanticweb.owlapi/error#Error11>)
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#MultiLinestring> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialDescription>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#MultiPoint> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#MultiPoint>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#MultiPoint> <http://org.semanticweb.owlapi/error#Error6>)
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#MultiPoint> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialDescription>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#MultiPolygon> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#MultiPolygon>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#MultiPolygon> <http://org.semanticweb.owlapi/error#Error3>)
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#MultiPolygon> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialDescription>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Municipality> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Municipality>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Municipality> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#National_District> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#National_District>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#National_District> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#National_Territory> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#National_Territory>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#National_Territory> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Pakistan-administered> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Pakistan-administered>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Pakistan-administered> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Parish> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Parish>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Parish> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Point> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Point>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Point> <http://org.semanticweb.owlapi/error#Error10>)
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Point> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialDescription>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Polygon> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Polygon>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Polygon> <http://org.semanticweb.owlapi/error#Error5>)
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Polygon> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialDescription>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Prefecture> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Prefecture>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Prefecture> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Province> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Province>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Province> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Region> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Region>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Region> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Republic> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Republic>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Republic> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialDescription> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialDescription>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialDescription> <http://org.semanticweb.owlapi/error#Error9>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#SpatialThing> owl:Thing)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Special_City> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Special_City>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Special_City> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Special_District> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Special_District>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Special_District> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Special_Municipality> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Special_Municipality>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Special_Municipality> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Special_Region> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Special_Region>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Special_Region> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#State> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#State>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#State> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Territory> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Territory>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Territory> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Town> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Town>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Town> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Union_Territory> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Union_Territory>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Union_Territory> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Zone> (<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Zone>)
+
+SubClassOf(<http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#Zone> <http://www.mindswap.org/2003/owl/geo/geoFeatures20040307.owl#GeographicFeature>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+
+)

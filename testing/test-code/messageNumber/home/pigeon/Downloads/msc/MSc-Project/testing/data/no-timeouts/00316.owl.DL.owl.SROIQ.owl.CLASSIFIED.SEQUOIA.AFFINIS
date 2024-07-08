@@ -1,0 +1,256 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00316.owl#Literal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00316.owl#genid29>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#UniqueProperty>))
+Declaration(Class(rdf:Property))
+Declaration(Class(rdf:Statement))
+Declaration(Class(rdfs:Resource))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#Assertion>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#Assertor>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#ConfidenceLevel>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#ContactInfo>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#DateRange>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#Email>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#Evaluation>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#Exclusion>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#ExpectedResult>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#Id>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#Operator>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#Person>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#Platform>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#RepairInfo>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#ResultProperty>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#TestCase>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#TestCriteria>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#TestId>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#TestMode>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#TestPlatform>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#TestSubject>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#TestSuite>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#Tool>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#UserAgent>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#ValidityState>))
+Declaration(Class(<http://www.w3.org/2001/03/earl/0.95#WebContent>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00316.owl#Literal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00316.owl#Literal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00316.owl#Literal> rdf:Statement)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00316.owl#Literal> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00316.owl#Literal> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00316.owl#Literal> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00316.owl#Literal> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00316.owl#genid29> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00316.owl#genid29>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00316.owl#genid29> rdf:Statement)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00316.owl#genid29> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00316.owl#genid29> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00316.owl#genid29> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00316.owl#genid29> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#UniqueProperty> (<http://www.daml.org/2001/03/daml+oil#UniqueProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UniqueProperty> rdf:Statement)
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UniqueProperty> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UniqueProperty> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UniqueProperty> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UniqueProperty> owl:Thing)
+
+# Class: rdf:Property (rdf:Property)
+
+SubClassOf(rdf:Property rdf:Statement)
+SubClassOf(rdf:Property <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(rdf:Property <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(rdf:Property <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(rdf:Property owl:Thing)
+
+# Class: rdf:Statement (rdf:Statement)
+
+EquivalentClasses(rdf:Statement <http://www.w3.org/2001/03/earl/0.95#Assertion> <http://www.w3.org/2001/03/earl/0.95#DateRange> <http://www.w3.org/2001/03/earl/0.95#Evaluation> owl:Thing)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource rdf:Statement)
+SubClassOf(rdfs:Resource <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(rdfs:Resource <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(rdfs:Resource <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#Assertor> (<http://www.w3.org/2001/03/earl/0.95#Assertor>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Assertor> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Assertor> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Assertor> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Assertor> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Assertor> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#ConfidenceLevel> (<http://www.w3.org/2001/03/earl/0.95#ConfidenceLevel>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ConfidenceLevel> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ConfidenceLevel> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ConfidenceLevel> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ConfidenceLevel> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ConfidenceLevel> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#ContactInfo> (<http://www.w3.org/2001/03/earl/0.95#ContactInfo>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ContactInfo> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ContactInfo> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ContactInfo> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ContactInfo> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ContactInfo> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#Email> (<http://www.w3.org/2001/03/earl/0.95#Email>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Email> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Email> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Email> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Email> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Email> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#Exclusion> (<http://www.w3.org/2001/03/earl/0.95#Exclusion>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Exclusion> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Exclusion> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Exclusion> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Exclusion> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Exclusion> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#ExpectedResult> (<http://www.w3.org/2001/03/earl/0.95#ExpectedResult>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ExpectedResult> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ExpectedResult> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ExpectedResult> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ExpectedResult> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ExpectedResult> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#Id> (<http://www.w3.org/2001/03/earl/0.95#Id>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Id> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Id> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Id> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Id> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Id> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#Operator> (<http://www.w3.org/2001/03/earl/0.95#Operator>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Operator> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Operator> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Operator> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Operator> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Operator> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#Person> (<http://www.w3.org/2001/03/earl/0.95#Person>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Person> <http://www.w3.org/2001/03/earl/0.95#Assertor>)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#Platform> (<http://www.w3.org/2001/03/earl/0.95#Platform>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Platform> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Platform> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Platform> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Platform> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Platform> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#RepairInfo> (<http://www.w3.org/2001/03/earl/0.95#RepairInfo>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#RepairInfo> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#RepairInfo> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#RepairInfo> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#RepairInfo> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#RepairInfo> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#ResultProperty> (<http://www.w3.org/2001/03/earl/0.95#ResultProperty>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ResultProperty> rdf:Property)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ResultProperty> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ResultProperty> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ResultProperty> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ResultProperty> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ResultProperty> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#TestCase> (<http://www.w3.org/2001/03/earl/0.95#TestCase>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestCase> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestCase> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestCase> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestCase> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestCase> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#TestCriteria> (<http://www.w3.org/2001/03/earl/0.95#TestCriteria>)
+
+EquivalentClasses(<http://www.w3.org/2001/03/earl/0.95#TestCriteria> owl:Nothing)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestCriteria> owl:Nothing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#TestId> (<http://www.w3.org/2001/03/earl/0.95#TestId>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestId> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestId> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestId> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestId> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestId> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#TestMode> (<http://www.w3.org/2001/03/earl/0.95#TestMode>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestMode> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestMode> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestMode> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestMode> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestMode> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#TestPlatform> (<http://www.w3.org/2001/03/earl/0.95#TestPlatform>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestPlatform> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestPlatform> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestPlatform> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestPlatform> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestPlatform> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#TestSubject> (<http://www.w3.org/2001/03/earl/0.95#TestSubject>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestSubject> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestSubject> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestSubject> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestSubject> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestSubject> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#TestSuite> (<http://www.w3.org/2001/03/earl/0.95#TestSuite>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestSuite> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestSuite> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestSuite> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestSuite> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#TestSuite> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#Tool> (<http://www.w3.org/2001/03/earl/0.95#Tool>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#Tool> <http://www.w3.org/2001/03/earl/0.95#TestSubject>)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#UserAgent> (<http://www.w3.org/2001/03/earl/0.95#UserAgent>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#UserAgent> <http://www.w3.org/2001/03/earl/0.95#TestSubject>)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#ValidityState> (<http://www.w3.org/2001/03/earl/0.95#ValidityState>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ValidityState> rdf:Statement)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ValidityState> <http://www.w3.org/2001/03/earl/0.95#Assertion>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ValidityState> <http://www.w3.org/2001/03/earl/0.95#DateRange>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ValidityState> <http://www.w3.org/2001/03/earl/0.95#Evaluation>)
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#ValidityState> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03/earl/0.95#WebContent> (<http://www.w3.org/2001/03/earl/0.95#WebContent>)
+
+SubClassOf(<http://www.w3.org/2001/03/earl/0.95#WebContent> <http://www.w3.org/2001/03/earl/0.95#TestSubject>)
+
+
+)

@@ -1,0 +1,73 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#Capability_Semantics>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#ChoreographyDescriptionLanguage>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#Language>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#Message_Semantics>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#NetworkAddress>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#PolicyDescriptionLanguage>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#Semantics>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceDescriptionLanguage>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceSemanticsDescriptionLanguage>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#URI>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Transport>))
+############################
+#   Classes
+############################
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#Capability_Semantics> (<http://www.w3.org/2004/02/wsa/Extensions.owl#Capability_Semantics>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#Capability_Semantics> <http://www.w3.org/2004/02/wsa/Extensions.owl#Semantics>)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#ChoreographyDescriptionLanguage> (<http://www.w3.org/2004/02/wsa/Extensions.owl#ChoreographyDescriptionLanguage>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#ChoreographyDescriptionLanguage> <http://www.w3.org/2004/02/wsa/Extensions.owl#Language>)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#Language> (<http://www.w3.org/2004/02/wsa/Extensions.owl#Language>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#Language> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#Message_Semantics> (<http://www.w3.org/2004/02/wsa/Extensions.owl#Message_Semantics>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#Message_Semantics> <http://www.w3.org/2004/02/wsa/Extensions.owl#Semantics>)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#NetworkAddress> (<http://www.w3.org/2004/02/wsa/Extensions.owl#NetworkAddress>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#NetworkAddress> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#PolicyDescriptionLanguage> (<http://www.w3.org/2004/02/wsa/Extensions.owl#PolicyDescriptionLanguage>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#PolicyDescriptionLanguage> <http://www.w3.org/2004/02/wsa/Extensions.owl#Language>)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#Semantics> (<http://www.w3.org/2004/02/wsa/Extensions.owl#Semantics>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#Semantics> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceDescriptionLanguage> (<http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceDescriptionLanguage>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceDescriptionLanguage> <http://www.w3.org/2004/02/wsa/Extensions.owl#Language>)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceSemanticsDescriptionLanguage> (<http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceSemanticsDescriptionLanguage>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceSemanticsDescriptionLanguage> <http://www.w3.org/2004/02/wsa/Extensions.owl#Language>)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#URI> (<http://www.w3.org/2004/02/wsa/Extensions.owl#URI>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#URI> <http://www.w3.org/2004/02/wsa/Extensions.owl#NetworkAddress>)
+
+# Class: <http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Transport> (<http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Transport>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/MessageModel.owl#Message_Transport> owl:Thing)
+
+
+)

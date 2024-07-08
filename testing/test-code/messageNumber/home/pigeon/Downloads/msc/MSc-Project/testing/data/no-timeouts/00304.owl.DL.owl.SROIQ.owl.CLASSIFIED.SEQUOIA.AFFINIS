@@ -1,0 +1,228 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#AbilityAndProficiency.700011>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#BasicUserDimensions.700002>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Believe.700022>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#BiometricalSensorData.720030>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Characteristics.700013>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Computerskills.700121>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#ContactInformation.700008>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#ContextInformation.720000>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Demographics.700010>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#DomainDependentData.700004>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#EmotionalState.700014>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#EysencksThreeFactorPENModel.700054>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#FiveBasicEmotions.700015>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#FiveFactorModel.700056>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Goal.700029>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Interest.700020>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#InterfacePreferences.700041>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Knowledge.700021>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Layout.700042>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Location.700120>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#LowLevelSensorData.720020>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#MentalState.700017>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Modality.700043>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Motion.700018>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#MyersBriggsTypeInventory.700052>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#PeachMuseumsGuide.700122>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Person.110003>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Personality.700012>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#PhysicalEnvironment.720002>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#PhysicalVoiceCharacteristics.700117>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#PhysiologicalState.700016>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Plan.700027>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Preference.700023>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#PrivacyPreferences.700040>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Prosody.700119>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Regularity.700025>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#Role.700019>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#SocialEnvironment.720004>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#SpeakingStyle.700118>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#SpeechParameters.700116>))
+Declaration(Class(<http://u2m.org/2003/02/UserModelOntology.rdf#TypingBehaviour.720031>))
+Declaration(Class(<http://www.daml.org/2000/10/daml-ont#Class>))
+############################
+#   Classes
+############################
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#AbilityAndProficiency.700011> (<http://u2m.org/2003/02/UserModelOntology.rdf#AbilityAndProficiency.700011>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#AbilityAndProficiency.700011> <http://u2m.org/2003/02/UserModelOntology.rdf#BasicUserDimensions.700002>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#BasicUserDimensions.700002> (<http://u2m.org/2003/02/UserModelOntology.rdf#BasicUserDimensions.700002>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#BasicUserDimensions.700002> owl:Thing)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Believe.700022> (<http://u2m.org/2003/02/UserModelOntology.rdf#Believe.700022>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Believe.700022> <http://u2m.org/2003/02/UserModelOntology.rdf#DomainDependentData.700004>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#BiometricalSensorData.720030> (<http://u2m.org/2003/02/UserModelOntology.rdf#BiometricalSensorData.720030>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#BiometricalSensorData.720030> <http://u2m.org/2003/02/UserModelOntology.rdf#LowLevelSensorData.720020>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Characteristics.700013> (<http://u2m.org/2003/02/UserModelOntology.rdf#Characteristics.700013>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Characteristics.700013> <http://u2m.org/2003/02/UserModelOntology.rdf#BasicUserDimensions.700002>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Computerskills.700121> (<http://u2m.org/2003/02/UserModelOntology.rdf#Computerskills.700121>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Computerskills.700121> <http://u2m.org/2003/02/UserModelOntology.rdf#Knowledge.700021>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#ContactInformation.700008> (<http://u2m.org/2003/02/UserModelOntology.rdf#ContactInformation.700008>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#ContactInformation.700008> <http://u2m.org/2003/02/UserModelOntology.rdf#BasicUserDimensions.700002>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#ContextInformation.720000> (<http://u2m.org/2003/02/UserModelOntology.rdf#ContextInformation.720000>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#ContextInformation.720000> owl:Thing)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Demographics.700010> (<http://u2m.org/2003/02/UserModelOntology.rdf#Demographics.700010>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Demographics.700010> <http://u2m.org/2003/02/UserModelOntology.rdf#BasicUserDimensions.700002>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#DomainDependentData.700004> (<http://u2m.org/2003/02/UserModelOntology.rdf#DomainDependentData.700004>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#DomainDependentData.700004> owl:Thing)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#EmotionalState.700014> (<http://u2m.org/2003/02/UserModelOntology.rdf#EmotionalState.700014>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#EmotionalState.700014> <http://u2m.org/2003/02/UserModelOntology.rdf#BasicUserDimensions.700002>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#EysencksThreeFactorPENModel.700054> (<http://u2m.org/2003/02/UserModelOntology.rdf#EysencksThreeFactorPENModel.700054>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#EysencksThreeFactorPENModel.700054> <http://u2m.org/2003/02/UserModelOntology.rdf#Personality.700012>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#FiveBasicEmotions.700015> (<http://u2m.org/2003/02/UserModelOntology.rdf#FiveBasicEmotions.700015>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#FiveBasicEmotions.700015> <http://u2m.org/2003/02/UserModelOntology.rdf#EmotionalState.700014>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#FiveFactorModel.700056> (<http://u2m.org/2003/02/UserModelOntology.rdf#FiveFactorModel.700056>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#FiveFactorModel.700056> <http://u2m.org/2003/02/UserModelOntology.rdf#Personality.700012>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Goal.700029> (<http://u2m.org/2003/02/UserModelOntology.rdf#Goal.700029>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Goal.700029> <http://u2m.org/2003/02/UserModelOntology.rdf#DomainDependentData.700004>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Interest.700020> (<http://u2m.org/2003/02/UserModelOntology.rdf#Interest.700020>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Interest.700020> <http://u2m.org/2003/02/UserModelOntology.rdf#DomainDependentData.700004>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#InterfacePreferences.700041> (<http://u2m.org/2003/02/UserModelOntology.rdf#InterfacePreferences.700041>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#InterfacePreferences.700041> <http://u2m.org/2003/02/UserModelOntology.rdf#Preference.700023>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Knowledge.700021> (<http://u2m.org/2003/02/UserModelOntology.rdf#Knowledge.700021>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Knowledge.700021> <http://u2m.org/2003/02/UserModelOntology.rdf#DomainDependentData.700004>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Layout.700042> (<http://u2m.org/2003/02/UserModelOntology.rdf#Layout.700042>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Layout.700042> <http://u2m.org/2003/02/UserModelOntology.rdf#InterfacePreferences.700041>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Location.700120> (<http://u2m.org/2003/02/UserModelOntology.rdf#Location.700120>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Location.700120> <http://u2m.org/2003/02/UserModelOntology.rdf#ContextInformation.720000>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#LowLevelSensorData.720020> (<http://u2m.org/2003/02/UserModelOntology.rdf#LowLevelSensorData.720020>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#LowLevelSensorData.720020> owl:Thing)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#MentalState.700017> (<http://u2m.org/2003/02/UserModelOntology.rdf#MentalState.700017>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#MentalState.700017> <http://u2m.org/2003/02/UserModelOntology.rdf#BasicUserDimensions.700002>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Modality.700043> (<http://u2m.org/2003/02/UserModelOntology.rdf#Modality.700043>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Modality.700043> <http://u2m.org/2003/02/UserModelOntology.rdf#InterfacePreferences.700041>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Motion.700018> (<http://u2m.org/2003/02/UserModelOntology.rdf#Motion.700018>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Motion.700018> <http://u2m.org/2003/02/UserModelOntology.rdf#BasicUserDimensions.700002>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#MyersBriggsTypeInventory.700052> (<http://u2m.org/2003/02/UserModelOntology.rdf#MyersBriggsTypeInventory.700052>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#MyersBriggsTypeInventory.700052> <http://u2m.org/2003/02/UserModelOntology.rdf#Personality.700012>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#PeachMuseumsGuide.700122> (<http://u2m.org/2003/02/UserModelOntology.rdf#PeachMuseumsGuide.700122>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#PeachMuseumsGuide.700122> <http://u2m.org/2003/02/UserModelOntology.rdf#Preference.700023>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Person.110003> (<http://u2m.org/2003/02/UserModelOntology.rdf#Person.110003>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Person.110003> owl:Thing)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Personality.700012> (<http://u2m.org/2003/02/UserModelOntology.rdf#Personality.700012>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Personality.700012> <http://u2m.org/2003/02/UserModelOntology.rdf#BasicUserDimensions.700002>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#PhysicalEnvironment.720002> (<http://u2m.org/2003/02/UserModelOntology.rdf#PhysicalEnvironment.720002>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#PhysicalEnvironment.720002> <http://u2m.org/2003/02/UserModelOntology.rdf#ContextInformation.720000>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#PhysicalVoiceCharacteristics.700117> (<http://u2m.org/2003/02/UserModelOntology.rdf#PhysicalVoiceCharacteristics.700117>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#PhysicalVoiceCharacteristics.700117> <http://u2m.org/2003/02/UserModelOntology.rdf#SpeechParameters.700116>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#PhysiologicalState.700016> (<http://u2m.org/2003/02/UserModelOntology.rdf#PhysiologicalState.700016>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#PhysiologicalState.700016> <http://u2m.org/2003/02/UserModelOntology.rdf#BasicUserDimensions.700002>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Plan.700027> (<http://u2m.org/2003/02/UserModelOntology.rdf#Plan.700027>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Plan.700027> <http://u2m.org/2003/02/UserModelOntology.rdf#DomainDependentData.700004>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Preference.700023> (<http://u2m.org/2003/02/UserModelOntology.rdf#Preference.700023>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Preference.700023> <http://u2m.org/2003/02/UserModelOntology.rdf#DomainDependentData.700004>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#PrivacyPreferences.700040> (<http://u2m.org/2003/02/UserModelOntology.rdf#PrivacyPreferences.700040>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#PrivacyPreferences.700040> <http://u2m.org/2003/02/UserModelOntology.rdf#Preference.700023>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Prosody.700119> (<http://u2m.org/2003/02/UserModelOntology.rdf#Prosody.700119>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Prosody.700119> <http://u2m.org/2003/02/UserModelOntology.rdf#SpeechParameters.700116>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Regularity.700025> (<http://u2m.org/2003/02/UserModelOntology.rdf#Regularity.700025>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Regularity.700025> <http://u2m.org/2003/02/UserModelOntology.rdf#DomainDependentData.700004>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#Role.700019> (<http://u2m.org/2003/02/UserModelOntology.rdf#Role.700019>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#Role.700019> <http://u2m.org/2003/02/UserModelOntology.rdf#BasicUserDimensions.700002>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#SocialEnvironment.720004> (<http://u2m.org/2003/02/UserModelOntology.rdf#SocialEnvironment.720004>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#SocialEnvironment.720004> <http://u2m.org/2003/02/UserModelOntology.rdf#ContextInformation.720000>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#SpeakingStyle.700118> (<http://u2m.org/2003/02/UserModelOntology.rdf#SpeakingStyle.700118>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#SpeakingStyle.700118> <http://u2m.org/2003/02/UserModelOntology.rdf#SpeechParameters.700116>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#SpeechParameters.700116> (<http://u2m.org/2003/02/UserModelOntology.rdf#SpeechParameters.700116>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#SpeechParameters.700116> <http://u2m.org/2003/02/UserModelOntology.rdf#LowLevelSensorData.720020>)
+
+# Class: <http://u2m.org/2003/02/UserModelOntology.rdf#TypingBehaviour.720031> (<http://u2m.org/2003/02/UserModelOntology.rdf#TypingBehaviour.720031>)
+
+SubClassOf(<http://u2m.org/2003/02/UserModelOntology.rdf#TypingBehaviour.720031> <http://u2m.org/2003/02/UserModelOntology.rdf#LowLevelSensorData.720020>)
+
+# Class: <http://www.daml.org/2000/10/daml-ont#Class> (<http://www.daml.org/2000/10/daml-ont#Class>)
+
+SubClassOf(<http://www.daml.org/2000/10/daml-ont#Class> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

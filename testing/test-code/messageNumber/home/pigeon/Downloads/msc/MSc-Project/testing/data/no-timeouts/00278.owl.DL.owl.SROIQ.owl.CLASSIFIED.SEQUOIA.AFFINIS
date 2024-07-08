@@ -1,0 +1,63 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00278.owl#Chimaera-Export-Enable>))
+Declaration(Class(<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Author>))
+Declaration(Class(<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Educational-Organization>))
+Declaration(Class(<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Event>))
+Declaration(Class(<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Person>))
+Declaration(Class(<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Proceedings>))
+Declaration(Class(<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Research-Project>))
+Declaration(Class(<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Task>))
+Declaration(Class(<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Time-Point>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00278.owl#Chimaera-Export-Enable> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00278.owl#Chimaera-Export-Enable>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00278.owl#Chimaera-Export-Enable> owl:Thing)
+
+# Class: <http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Author> (<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Author>)
+
+SubClassOf(<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Author> owl:Thing)
+
+# Class: <http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Educational-Organization> (<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Educational-Organization>)
+
+SubClassOf(<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Educational-Organization> owl:Thing)
+
+# Class: <http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Event> (<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Event>)
+
+SubClassOf(<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Event> owl:Thing)
+
+# Class: <http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Person> (<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Person>)
+
+SubClassOf(<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Person> owl:Thing)
+
+# Class: <http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Proceedings> (<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Proceedings>)
+
+SubClassOf(<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Proceedings> owl:Thing)
+
+# Class: <http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Research-Project> (<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Research-Project>)
+
+SubClassOf(<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Research-Project> owl:Thing)
+
+# Class: <http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Task> (<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Task>)
+
+SubClassOf(<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Task> owl:Thing)
+
+# Class: <http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Time-Point> (<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Time-Point>)
+
+SubClassOf(<http://www.ksl.stanford.edu/projects/DAML/ksl-daml-desc.daml#Time-Point> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

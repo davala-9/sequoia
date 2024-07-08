@@ -1,0 +1,449 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Agent>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Attribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#City>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Collection>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Election>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Entity>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Government>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Group>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Integer>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#IrreflexiveRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#JudicialOrganization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Nation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeInteger>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#OrganizationalProcess>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Physical>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#PoliticalOrganization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Position>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SetOrClass>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SocialRole>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymmetricRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TernaryPredicate>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeDuration>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimePosition>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TransitiveRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Voting>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#AppealsCourt>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#AreaOfConcern>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#BritishCrownColony>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Constitution>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ConstitutionDocument>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ConstitutionalCourt>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Consulate>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ConsulateGeneral>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#DependencyOrSpecialSovereigntyArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#DiplomaticOrganization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ElectoralCollegeElection>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Embassy>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#FixedHoliday>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ForeignServicePosition>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#FormOfGovernment>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#GeneralElection>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#GovernmentCabinet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Holiday>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#IndependenceHoliday>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#IndependentState>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#InformationCooperation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#InternationalOrganization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#IslamicLawCourt>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#JusticeIssues>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#LegalSystemAttribute>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#LegislativeChamber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#LegislativeOrganization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#MemberStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#MoveableHoliday>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#NationalGovernment>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#NongovernmentalOrganization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#OrganizationOfNations>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#OverseasArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Parliament>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ParliamentaryTerritory>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PoliticalCoalition>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PoliticalParty>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PoliticalPressureGroup>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PopularElection>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#RegionalLaw>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#RestrictedSuffrage>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#SelfGoverningTerritory>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#SuffrageLaw>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#SupremeCourt>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#TransnationalIssue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#UnincorporatedUnitedStatesTerritory>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#VoterAgeRequirement>))
+############################
+#   Classes
+############################
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Agent> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Agent>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Agent> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Attribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Attribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Attribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#City> (<http://reliant.teknowledge.com/DAML/SUMO.owl#City>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#City> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent> (<http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Collection> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Collection>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Collection> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject> (<http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Election> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Election>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Election> <http://reliant.teknowledge.com/DAML/SUMO.owl#OrganizationalProcess>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Entity> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Entity>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Entity> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Government> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Government>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Government> <http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization> (<http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Group> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Group>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Group> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Integer> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Integer>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Integer> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess> (<http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#IrreflexiveRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#IrreflexiveRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#IrreflexiveRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#JudicialOrganization> (<http://reliant.teknowledge.com/DAML/SUMO.owl#JudicialOrganization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#JudicialOrganization> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Nation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Nation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Nation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeInteger> (<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeInteger>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeInteger> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#OrganizationalProcess> (<http://reliant.teknowledge.com/DAML/SUMO.owl#OrganizationalProcess>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#OrganizationalProcess> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Physical> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Physical>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Physical> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#PoliticalOrganization> (<http://reliant.teknowledge.com/DAML/SUMO.owl#PoliticalOrganization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#PoliticalOrganization> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Position> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Position>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Position> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SetOrClass> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SetOrClass>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SetOrClass> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SocialRole> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SocialRole>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SocialRole> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SymmetricRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SymmetricRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymmetricRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TernaryPredicate> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TernaryPredicate>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TernaryPredicate> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TimeDuration> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeDuration>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeDuration> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TimePosition> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TimePosition>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimePosition> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TransitiveRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TransitiveRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TransitiveRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction> (<http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Voting> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Voting>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Voting> <http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#AppealsCourt> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#AppealsCourt>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#AppealsCourt> <http://reliant.teknowledge.com/DAML/SUMO.owl#JudicialOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#AreaOfConcern> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#AreaOfConcern>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#AreaOfConcern> <http://reliant.teknowledge.com/DAML/SUMO.owl#Attribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#BritishCrownColony> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#BritishCrownColony>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#BritishCrownColony> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#OverseasArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Constitution> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Constitution>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Constitution> <http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ConstitutionDocument> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ConstitutionDocument>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ConstitutionDocument> <http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ConstitutionalCourt> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ConstitutionalCourt>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ConstitutionalCourt> <http://reliant.teknowledge.com/DAML/SUMO.owl#JudicialOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Consulate> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Consulate>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Consulate> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#DiplomaticOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ConsulateGeneral> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ConsulateGeneral>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ConsulateGeneral> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#DiplomaticOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#DependencyOrSpecialSovereigntyArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#DependencyOrSpecialSovereigntyArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#DependencyOrSpecialSovereigntyArea> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#DiplomaticOrganization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#DiplomaticOrganization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#DiplomaticOrganization> <http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ElectoralCollegeElection> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ElectoralCollegeElection>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ElectoralCollegeElection> <http://reliant.teknowledge.com/DAML/SUMO.owl#Election>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Embassy> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Embassy>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Embassy> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#DiplomaticOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#FixedHoliday> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#FixedHoliday>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#FixedHoliday> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Holiday>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ForeignServicePosition> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ForeignServicePosition>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ForeignServicePosition> <http://reliant.teknowledge.com/DAML/SUMO.owl#Position>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#FormOfGovernment> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#FormOfGovernment>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#FormOfGovernment> <http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#GeneralElection> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#GeneralElection>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#GeneralElection> <http://reliant.teknowledge.com/DAML/SUMO.owl#Election>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#GovernmentCabinet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#GovernmentCabinet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#GovernmentCabinet> <http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Holiday> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Holiday>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Holiday> <http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#IndependenceHoliday> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#IndependenceHoliday>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#IndependenceHoliday> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Holiday>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#IndependentState> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#IndependentState>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#IndependentState> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#IndependentState> <http://reliant.teknowledge.com/DAML/SUMO.owl#Nation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#InformationCooperation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#InformationCooperation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#InformationCooperation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#InternationalOrganization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#InternationalOrganization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#InternationalOrganization> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#IslamicLawCourt> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#IslamicLawCourt>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#IslamicLawCourt> <http://reliant.teknowledge.com/DAML/SUMO.owl#JudicialOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#JusticeIssues> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#JusticeIssues>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#JusticeIssues> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#LegalSystemAttribute> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#LegalSystemAttribute>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#LegalSystemAttribute> <http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#LegislativeChamber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#LegislativeChamber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#LegislativeChamber> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#LegislativeOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#LegislativeOrganization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#LegislativeOrganization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#LegislativeOrganization> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#MemberStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#MemberStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#MemberStatus> <http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#MoveableHoliday> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#MoveableHoliday>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#MoveableHoliday> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Holiday>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#NationalGovernment> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#NationalGovernment>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#NationalGovernment> <http://reliant.teknowledge.com/DAML/SUMO.owl#Government>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#NongovernmentalOrganization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#NongovernmentalOrganization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#NongovernmentalOrganization> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#OrganizationOfNations> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#OrganizationOfNations>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#OrganizationOfNations> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#InternationalOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#OverseasArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#OverseasArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#OverseasArea> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#DependencyOrSpecialSovereigntyArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Parliament> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Parliament>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#Parliament> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#LegislativeOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ParliamentaryTerritory> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ParliamentaryTerritory>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#ParliamentaryTerritory> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PoliticalCoalition> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PoliticalCoalition>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PoliticalCoalition> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PoliticalParty>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PoliticalParty> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PoliticalParty>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PoliticalParty> <http://reliant.teknowledge.com/DAML/SUMO.owl#PoliticalOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PoliticalPressureGroup> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PoliticalPressureGroup>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PoliticalPressureGroup> <http://reliant.teknowledge.com/DAML/SUMO.owl#PoliticalOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PopularElection> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PopularElection>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#PopularElection> <http://reliant.teknowledge.com/DAML/SUMO.owl#Election>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#RegionalLaw> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#RegionalLaw>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#RegionalLaw> <http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#RestrictedSuffrage> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#RestrictedSuffrage>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#RestrictedSuffrage> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#SuffrageLaw>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#SelfGoverningTerritory> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#SelfGoverningTerritory>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#SelfGoverningTerritory> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#SuffrageLaw> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#SuffrageLaw>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#SuffrageLaw> <http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#SupremeCourt> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#SupremeCourt>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#SupremeCourt> <http://reliant.teknowledge.com/DAML/SUMO.owl#JudicialOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#TransnationalIssue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#TransnationalIssue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#TransnationalIssue> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#AreaOfConcern>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#UnincorporatedUnitedStatesTerritory> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#UnincorporatedUnitedStatesTerritory>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#UnincorporatedUnitedStatesTerritory> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#OverseasArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#VoterAgeRequirement> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#VoterAgeRequirement>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#VoterAgeRequirement> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00143.owl#SuffrageLaw>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

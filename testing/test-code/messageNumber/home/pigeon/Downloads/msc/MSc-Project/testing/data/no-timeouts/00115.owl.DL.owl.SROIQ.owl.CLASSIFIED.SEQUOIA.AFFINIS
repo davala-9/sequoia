@@ -1,0 +1,509 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Abduction>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AcademicStaff>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Activity>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AdministrativeStaff>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AnomalyDetection>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AnomalyRepairAndKnowledgeRevision>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Article>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ArticleInBook>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AutomatedCodeGenerationFromSpecification>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AutomatedPSMGeneration>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Book>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#CaseBaseReasoning>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ComputerSupport>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Conference>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ConferencePaper>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#CooperativeKnowledgeAcquisition>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#DataMining>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Department>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#DevelopmentProject>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Editor>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ElicitationTool>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Employee>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Enterprise>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#EvaluationOfKA>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Event>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ExecutableSpecificationLanguages>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Formalisms>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Guideline>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ImplementationEnvironment>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Institute>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#InternetTool>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Journal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#JournalArticle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAMethodologies>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAMethodology>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAThroughMachineLearning>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KnowledgeBasedRefinement>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KnowledgeDiscoveryInDatasets>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KnowledgeElicitation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KnowledgeManagement>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#LearningApprenticeSystems>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Lecturer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Meeting>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Methodologies>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Methodology>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ModelingLanguage>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#NLParser>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Object>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#OnlinePublication>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Ontologies>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Ontology>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#OntologyLibrary>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Organization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSM>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMLibrary>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMevaluation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMlibraries>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMnotations>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMs>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PaperLibrary>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Person>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PhDStudent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Product>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Project>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Publication>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ReinforcementLearning>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchGroup>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchProject>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchTopic>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Researcher>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Reuse>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Secretary>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SoftwareApplications>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SoftwareProject>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SoftwareReuse>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecialIssueEvent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecialIssuePublication>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationLanguage>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationLanguages>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationMethodology>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationOfControlKnowledge>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Student>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SupportToolsForFormalMethods>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Sysiphus_III_Experiment>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#TechnicalReport>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#TechnicalStaff>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#TheoreticalFoundations>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#TransformationTool>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#University>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#V_And_V_Of_MAS>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Validation_And_Verification>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Validator>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Verifier>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#WebMediatedPSMSelection>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Workshop>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#WorkshopPaper>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+############################
+#   Classes
+############################
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Abduction> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Abduction>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Abduction> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAThroughMachineLearning>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AcademicStaff> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AcademicStaff>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AcademicStaff> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Employee>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Activity> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Activity>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Activity> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Event>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AdministrativeStaff> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AdministrativeStaff>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AdministrativeStaff> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Employee>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AnomalyDetection> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AnomalyDetection>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AnomalyDetection> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Validation_And_Verification>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AnomalyRepairAndKnowledgeRevision> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AnomalyRepairAndKnowledgeRevision>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AnomalyRepairAndKnowledgeRevision> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Validation_And_Verification>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Article> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Article>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Article> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Publication>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ArticleInBook> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ArticleInBook>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ArticleInBook> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Article>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AutomatedCodeGenerationFromSpecification> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AutomatedCodeGenerationFromSpecification>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AutomatedCodeGenerationFromSpecification> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationLanguages>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AutomatedPSMGeneration> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AutomatedPSMGeneration>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AutomatedPSMGeneration> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMs>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Book> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Book>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Book> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Publication>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#CaseBaseReasoning> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#CaseBaseReasoning>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#CaseBaseReasoning> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAThroughMachineLearning>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ComputerSupport> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ComputerSupport>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ComputerSupport> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Product>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Conference> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Conference>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Conference> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Event>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ConferencePaper> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ConferencePaper>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ConferencePaper> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Article>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#CooperativeKnowledgeAcquisition> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#CooperativeKnowledgeAcquisition>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#CooperativeKnowledgeAcquisition> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAThroughMachineLearning>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#DataMining> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#DataMining>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#DataMining> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAThroughMachineLearning>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Department> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Department>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Department> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#DevelopmentProject> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#DevelopmentProject>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#DevelopmentProject> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Project>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Editor> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Editor>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Editor> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ComputerSupport>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ElicitationTool> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ElicitationTool>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ElicitationTool> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ComputerSupport>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Employee> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Employee>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Employee> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Person>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Enterprise> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Enterprise>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Enterprise> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#EvaluationOfKA> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#EvaluationOfKA>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#EvaluationOfKA> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchTopic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Event> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Event>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Event> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ExecutableSpecificationLanguages> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ExecutableSpecificationLanguages>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ExecutableSpecificationLanguages> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationLanguages>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Formalisms> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Formalisms>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Formalisms> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Validation_And_Verification>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Guideline> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Guideline>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Guideline> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAMethodology>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ImplementationEnvironment> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ImplementationEnvironment>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ImplementationEnvironment> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ComputerSupport>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Institute> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Institute>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Institute> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#InternetTool> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#InternetTool>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#InternetTool> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ComputerSupport>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Journal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Journal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Journal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Publication>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#JournalArticle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#JournalArticle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#JournalArticle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Article>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAMethodologies> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAMethodologies>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAMethodologies> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchTopic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAMethodology> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAMethodology>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAMethodology> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Product>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAThroughMachineLearning> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAThroughMachineLearning>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAThroughMachineLearning> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchTopic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KnowledgeBasedRefinement> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KnowledgeBasedRefinement>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KnowledgeBasedRefinement> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAThroughMachineLearning>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KnowledgeDiscoveryInDatasets> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KnowledgeDiscoveryInDatasets>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KnowledgeDiscoveryInDatasets> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAThroughMachineLearning>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KnowledgeElicitation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KnowledgeElicitation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KnowledgeElicitation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchTopic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KnowledgeManagement> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KnowledgeManagement>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KnowledgeManagement> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchTopic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#LearningApprenticeSystems> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#LearningApprenticeSystems>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#LearningApprenticeSystems> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAThroughMachineLearning>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Lecturer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Lecturer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Lecturer> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AcademicStaff>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Meeting> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Meeting>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Meeting> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Event>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Methodologies> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Methodologies>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Methodologies> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Ontologies>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Methodology> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Methodology>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Methodology> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Validation_And_Verification>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ModelingLanguage> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ModelingLanguage>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ModelingLanguage> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAMethodology>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#NLParser> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#NLParser>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#NLParser> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ComputerSupport>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Object> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Object>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Object> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#OnlinePublication> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#OnlinePublication>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#OnlinePublication> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Publication>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Ontologies> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Ontologies>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Ontologies> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Reuse>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Ontology> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Ontology>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Ontology> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAMethodology>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#OntologyLibrary> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#OntologyLibrary>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#OntologyLibrary> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ComputerSupport>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Organization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Organization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Organization> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSM> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSM>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSM> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAMethodology>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMLibrary> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMLibrary>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMLibrary> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ComputerSupport>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMevaluation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMevaluation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMevaluation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMs>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMlibraries> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMlibraries>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMlibraries> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMs>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMnotations> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMnotations>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMnotations> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMs>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMs> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMs>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMs> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Reuse>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PaperLibrary> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PaperLibrary>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PaperLibrary> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAMethodology>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Person> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Person>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Person> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PhDStudent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PhDStudent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PhDStudent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Researcher>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PhDStudent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Student>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Product> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Product>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Product> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Project> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Project>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Project> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Publication> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Publication>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Publication> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ReinforcementLearning> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ReinforcementLearning>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ReinforcementLearning> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAThroughMachineLearning>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchGroup> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchGroup>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchGroup> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchProject> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchProject>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchProject> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Project>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchTopic> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchTopic>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchTopic> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Researcher> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Researcher>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Researcher> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AcademicStaff>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Reuse> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Reuse>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Reuse> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchTopic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Secretary> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Secretary>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Secretary> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AdministrativeStaff>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SoftwareApplications> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SoftwareApplications>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SoftwareApplications> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Ontologies>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SoftwareProject> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SoftwareProject>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SoftwareProject> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#DevelopmentProject>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SoftwareReuse> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SoftwareReuse>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SoftwareReuse> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Reuse>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecialIssueEvent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecialIssueEvent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecialIssueEvent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Event>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecialIssuePublication> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecialIssuePublication>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecialIssuePublication> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Journal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationLanguage> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationLanguage>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationLanguage> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#KAMethodology>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationLanguages> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationLanguages>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationLanguages> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchTopic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationMethodology> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationMethodology>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationMethodology> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationLanguages>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationOfControlKnowledge> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationOfControlKnowledge>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationOfControlKnowledge> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationLanguages>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Student> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Student>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Student> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Person>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SupportToolsForFormalMethods> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SupportToolsForFormalMethods>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SupportToolsForFormalMethods> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#SpecificationLanguages>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Sysiphus_III_Experiment> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Sysiphus_III_Experiment>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Sysiphus_III_Experiment> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMs>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#TechnicalReport> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#TechnicalReport>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#TechnicalReport> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Article>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#TechnicalStaff> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#TechnicalStaff>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#TechnicalStaff> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#AdministrativeStaff>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#TheoreticalFoundations> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#TheoreticalFoundations>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#TheoreticalFoundations> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Ontologies>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#TransformationTool> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#TransformationTool>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#TransformationTool> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ComputerSupport>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#University> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#University>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#University> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#V_And_V_Of_MAS> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#V_And_V_Of_MAS>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#V_And_V_Of_MAS> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Validation_And_Verification>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Validation_And_Verification> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Validation_And_Verification>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Validation_And_Verification> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ResearchTopic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Validator> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Validator>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Validator> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ComputerSupport>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Verifier> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Verifier>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Verifier> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#ComputerSupport>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#WebMediatedPSMSelection> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#WebMediatedPSMSelection>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#WebMediatedPSMSelection> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#PSMs>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Workshop> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Workshop>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Workshop> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Event>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#WorkshopPaper> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#WorkshopPaper>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#WorkshopPaper> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00115.owl#Article>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+
+)

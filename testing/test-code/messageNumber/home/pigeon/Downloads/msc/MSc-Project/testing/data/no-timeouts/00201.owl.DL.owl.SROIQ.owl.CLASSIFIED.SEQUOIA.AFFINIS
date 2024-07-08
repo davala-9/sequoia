@@ -1,0 +1,73 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.daml.org/2001/01/gedcom/gedcom#Birth>))
+Declaration(Class(<http://www.daml.org/2001/01/gedcom/gedcom#Death>))
+Declaration(Class(<http://www.daml.org/2001/01/gedcom/gedcom#Divorce>))
+Declaration(Class(<http://www.daml.org/2001/01/gedcom/gedcom#Event>))
+Declaration(Class(<http://www.daml.org/2001/01/gedcom/gedcom#Family>))
+Declaration(Class(<http://www.daml.org/2001/01/gedcom/gedcom#FamilyEvent>))
+Declaration(Class(<http://www.daml.org/2001/01/gedcom/gedcom#Individual>))
+Declaration(Class(<http://www.daml.org/2001/01/gedcom/gedcom#IndividualEvent>))
+Declaration(Class(<http://www.daml.org/2001/01/gedcom/gedcom#Marriage>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+############################
+#   Classes
+############################
+
+# Class: <http://www.daml.org/2001/01/gedcom/gedcom#Birth> (<http://www.daml.org/2001/01/gedcom/gedcom#Birth>)
+
+SubClassOf(<http://www.daml.org/2001/01/gedcom/gedcom#Birth> <http://www.daml.org/2001/01/gedcom/gedcom#IndividualEvent>)
+
+# Class: <http://www.daml.org/2001/01/gedcom/gedcom#Death> (<http://www.daml.org/2001/01/gedcom/gedcom#Death>)
+
+SubClassOf(<http://www.daml.org/2001/01/gedcom/gedcom#Death> <http://www.daml.org/2001/01/gedcom/gedcom#IndividualEvent>)
+
+# Class: <http://www.daml.org/2001/01/gedcom/gedcom#Divorce> (<http://www.daml.org/2001/01/gedcom/gedcom#Divorce>)
+
+SubClassOf(<http://www.daml.org/2001/01/gedcom/gedcom#Divorce> <http://www.daml.org/2001/01/gedcom/gedcom#FamilyEvent>)
+
+# Class: <http://www.daml.org/2001/01/gedcom/gedcom#Event> (<http://www.daml.org/2001/01/gedcom/gedcom#Event>)
+
+SubClassOf(<http://www.daml.org/2001/01/gedcom/gedcom#Event> owl:Thing)
+
+# Class: <http://www.daml.org/2001/01/gedcom/gedcom#Family> (<http://www.daml.org/2001/01/gedcom/gedcom#Family>)
+
+SubClassOf(<http://www.daml.org/2001/01/gedcom/gedcom#Family> owl:Thing)
+
+# Class: <http://www.daml.org/2001/01/gedcom/gedcom#FamilyEvent> (<http://www.daml.org/2001/01/gedcom/gedcom#FamilyEvent>)
+
+SubClassOf(<http://www.daml.org/2001/01/gedcom/gedcom#FamilyEvent> <http://www.daml.org/2001/01/gedcom/gedcom#Event>)
+
+# Class: <http://www.daml.org/2001/01/gedcom/gedcom#Individual> (<http://www.daml.org/2001/01/gedcom/gedcom#Individual>)
+
+SubClassOf(<http://www.daml.org/2001/01/gedcom/gedcom#Individual> owl:Thing)
+
+# Class: <http://www.daml.org/2001/01/gedcom/gedcom#IndividualEvent> (<http://www.daml.org/2001/01/gedcom/gedcom#IndividualEvent>)
+
+SubClassOf(<http://www.daml.org/2001/01/gedcom/gedcom#IndividualEvent> <http://www.daml.org/2001/01/gedcom/gedcom#Event>)
+
+# Class: <http://www.daml.org/2001/01/gedcom/gedcom#Marriage> (<http://www.daml.org/2001/01/gedcom/gedcom#Marriage>)
+
+SubClassOf(<http://www.daml.org/2001/01/gedcom/gedcom#Marriage> <http://www.daml.org/2001/01/gedcom/gedcom#FamilyEvent>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+
+)

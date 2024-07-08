@@ -1,0 +1,43 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#PersonProjectAssociation>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#Person>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/project.owl#Project>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+############################
+#   Classes
+############################
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#PersonProjectAssociation> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#PersonProjectAssociation>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___ebiquity.umbc.edu_ontology_association.owl%23.txt#PersonProjectAssociation> owl:Thing)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#Person> (<http://ebiquity.umbc.edu/ontology/person.owl#Person>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#Person> owl:Thing)
+
+# Class: <http://ebiquity.umbc.edu/ontology/project.owl#Project> (<http://ebiquity.umbc.edu/ontology/project.owl#Project>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/project.owl#Project> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+
+)

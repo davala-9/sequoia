@@ -1,0 +1,448 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#cc>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#geocode>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#icaoCode>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#installationTypeCode>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#latitude>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#longitude>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#planCode>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Adminstration>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#AirForceStation>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#AirLandingArea>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#AirNationalGuardStation>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#AirStation>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#AirTerminal>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Airfield>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Airport>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#AmmunitionStorage>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Annex>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#ArmyInstallation>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Bay>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Canal>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Cape>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Channel>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#City>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#CivilAirPatrol>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Classification>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Clinic>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#CoastGuardInstallation>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#CommandOperations>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Communication>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Country>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#DefenseFuelSupportPoint>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Depot>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Dispensary>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Dock>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#FamilyHousing>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#GeographicArea>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#GeographicLocation>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#GeographicalArea>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Gulf>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Hospital>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#HousingCivilianFacility>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#InternationalAirport>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Island>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#JointUseAirport>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Lake>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Location>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Maintenance>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#MarineBarracks>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#MarineCorpsCamp>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#MarineGroundInstallation>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#MedicalFacility>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryAirport>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryInstallation>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Missile>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Navaid>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#NavalActivity>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#NavalBase>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#NavyInstallation>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Ocean>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#OperatingArea>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#OtherInstallation>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#POLRetailDistributionStation>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Passage>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Port>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#RadarInstallation>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#RadarReceiver>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#RadioRelay>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#RailroadJunction>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Recreation>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#ReserveTrainingCenter>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#RuralPopulatedArea>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#School>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Sea>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#SeaArea>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Service>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#State>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Status>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Storage>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Strait>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#SupplyArea>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#Training>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#WaterArea>))
+Declaration(Class(<http://www.daml.org/2001/02/geofile/geofile-ont#WeatherStation>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+############################
+#   Classes
+############################
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-dt.xsd#cc> (<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#cc>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#cc> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-dt.xsd#geocode> (<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#geocode>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#geocode> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-dt.xsd#icaoCode> (<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#icaoCode>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#icaoCode> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-dt.xsd#installationTypeCode> (<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#installationTypeCode>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#installationTypeCode> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-dt.xsd#latitude> (<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#latitude>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#latitude> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-dt.xsd#longitude> (<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#longitude>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#longitude> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-dt.xsd#planCode> (<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#planCode>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-dt.xsd#planCode> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Adminstration> (<http://www.daml.org/2001/02/geofile/geofile-ont#Adminstration>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Adminstration> <http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#AirForceStation> (<http://www.daml.org/2001/02/geofile/geofile-ont#AirForceStation>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#AirForceStation> <http://www.daml.org/2001/02/geofile/geofile-ont#AirLandingArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#AirLandingArea> (<http://www.daml.org/2001/02/geofile/geofile-ont#AirLandingArea>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#AirLandingArea> <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicLocation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#AirNationalGuardStation> (<http://www.daml.org/2001/02/geofile/geofile-ont#AirNationalGuardStation>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#AirNationalGuardStation> <http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryInstallation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#AirStation> (<http://www.daml.org/2001/02/geofile/geofile-ont#AirStation>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#AirStation> <http://www.daml.org/2001/02/geofile/geofile-ont#AirLandingArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#AirTerminal> (<http://www.daml.org/2001/02/geofile/geofile-ont#AirTerminal>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#AirTerminal> <http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Airfield> (<http://www.daml.org/2001/02/geofile/geofile-ont#Airfield>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Airfield> <http://www.daml.org/2001/02/geofile/geofile-ont#AirLandingArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Airport> (<http://www.daml.org/2001/02/geofile/geofile-ont#Airport>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Airport> <http://www.daml.org/2001/02/geofile/geofile-ont#AirLandingArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#AmmunitionStorage> (<http://www.daml.org/2001/02/geofile/geofile-ont#AmmunitionStorage>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#AmmunitionStorage> <http://www.daml.org/2001/02/geofile/geofile-ont#SupplyArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Annex> (<http://www.daml.org/2001/02/geofile/geofile-ont#Annex>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Annex> <http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#ArmyInstallation> (<http://www.daml.org/2001/02/geofile/geofile-ont#ArmyInstallation>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#ArmyInstallation> <http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryInstallation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Bay> (<http://www.daml.org/2001/02/geofile/geofile-ont#Bay>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Bay> <http://www.daml.org/2001/02/geofile/geofile-ont#SeaArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Canal> (<http://www.daml.org/2001/02/geofile/geofile-ont#Canal>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Canal> <http://www.daml.org/2001/02/geofile/geofile-ont#SeaArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Cape> (<http://www.daml.org/2001/02/geofile/geofile-ont#Cape>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Cape> <http://www.daml.org/2001/02/geofile/geofile-ont#SeaArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Channel> (<http://www.daml.org/2001/02/geofile/geofile-ont#Channel>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Channel> <http://www.daml.org/2001/02/geofile/geofile-ont#SeaArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#City> (<http://www.daml.org/2001/02/geofile/geofile-ont#City>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#City> <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicalArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#CivilAirPatrol> (<http://www.daml.org/2001/02/geofile/geofile-ont#CivilAirPatrol>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#CivilAirPatrol> <http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryInstallation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Classification> (<http://www.daml.org/2001/02/geofile/geofile-ont#Classification>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Classification> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Clinic> (<http://www.daml.org/2001/02/geofile/geofile-ont#Clinic>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Clinic> <http://www.daml.org/2001/02/geofile/geofile-ont#MedicalFacility>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#CoastGuardInstallation> (<http://www.daml.org/2001/02/geofile/geofile-ont#CoastGuardInstallation>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#CoastGuardInstallation> <http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryInstallation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#CommandOperations> (<http://www.daml.org/2001/02/geofile/geofile-ont#CommandOperations>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#CommandOperations> <http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryInstallation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Communication> (<http://www.daml.org/2001/02/geofile/geofile-ont#Communication>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Communication> <http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Country> (<http://www.daml.org/2001/02/geofile/geofile-ont#Country>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Country> <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#DefenseFuelSupportPoint> (<http://www.daml.org/2001/02/geofile/geofile-ont#DefenseFuelSupportPoint>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#DefenseFuelSupportPoint> <http://www.daml.org/2001/02/geofile/geofile-ont#SupplyArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Depot> (<http://www.daml.org/2001/02/geofile/geofile-ont#Depot>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Depot> <http://www.daml.org/2001/02/geofile/geofile-ont#SupplyArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Dispensary> (<http://www.daml.org/2001/02/geofile/geofile-ont#Dispensary>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Dispensary> <http://www.daml.org/2001/02/geofile/geofile-ont#MedicalFacility>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Dock> (<http://www.daml.org/2001/02/geofile/geofile-ont#Dock>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Dock> <http://www.daml.org/2001/02/geofile/geofile-ont#SeaArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#FamilyHousing> (<http://www.daml.org/2001/02/geofile/geofile-ont#FamilyHousing>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#FamilyHousing> <http://www.daml.org/2001/02/geofile/geofile-ont#HousingCivilianFacility>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicArea> (<http://www.daml.org/2001/02/geofile/geofile-ont#GeographicArea>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#GeographicArea> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicLocation> (<http://www.daml.org/2001/02/geofile/geofile-ont#GeographicLocation>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#GeographicLocation> <http://www.daml.org/2001/02/geofile/geofile-ont#Location>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicalArea> (<http://www.daml.org/2001/02/geofile/geofile-ont#GeographicalArea>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#GeographicalArea> <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicLocation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Gulf> (<http://www.daml.org/2001/02/geofile/geofile-ont#Gulf>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Gulf> <http://www.daml.org/2001/02/geofile/geofile-ont#SeaArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Hospital> (<http://www.daml.org/2001/02/geofile/geofile-ont#Hospital>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Hospital> <http://www.daml.org/2001/02/geofile/geofile-ont#MedicalFacility>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#HousingCivilianFacility> (<http://www.daml.org/2001/02/geofile/geofile-ont#HousingCivilianFacility>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#HousingCivilianFacility> <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicLocation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure> (<http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure> <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicLocation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#InternationalAirport> (<http://www.daml.org/2001/02/geofile/geofile-ont#InternationalAirport>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#InternationalAirport> <http://www.daml.org/2001/02/geofile/geofile-ont#AirLandingArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Island> (<http://www.daml.org/2001/02/geofile/geofile-ont#Island>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Island> <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicalArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#JointUseAirport> (<http://www.daml.org/2001/02/geofile/geofile-ont#JointUseAirport>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#JointUseAirport> <http://www.daml.org/2001/02/geofile/geofile-ont#AirLandingArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Lake> (<http://www.daml.org/2001/02/geofile/geofile-ont#Lake>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Lake> <http://www.daml.org/2001/02/geofile/geofile-ont#SeaArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Location> (<http://www.daml.org/2001/02/geofile/geofile-ont#Location>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Location> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Maintenance> (<http://www.daml.org/2001/02/geofile/geofile-ont#Maintenance>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Maintenance> <http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#MarineBarracks> (<http://www.daml.org/2001/02/geofile/geofile-ont#MarineBarracks>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#MarineBarracks> <http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryInstallation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#MarineCorpsCamp> (<http://www.daml.org/2001/02/geofile/geofile-ont#MarineCorpsCamp>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#MarineCorpsCamp> <http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryInstallation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#MarineGroundInstallation> (<http://www.daml.org/2001/02/geofile/geofile-ont#MarineGroundInstallation>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#MarineGroundInstallation> <http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryInstallation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#MedicalFacility> (<http://www.daml.org/2001/02/geofile/geofile-ont#MedicalFacility>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#MedicalFacility> <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicLocation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryAirport> (<http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryAirport>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryAirport> <http://www.daml.org/2001/02/geofile/geofile-ont#AirLandingArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryInstallation> (<http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryInstallation>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryInstallation> <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicLocation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Missile> (<http://www.daml.org/2001/02/geofile/geofile-ont#Missile>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Missile> <http://www.daml.org/2001/02/geofile/geofile-ont#OtherInstallation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Navaid> (<http://www.daml.org/2001/02/geofile/geofile-ont#Navaid>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Navaid> <http://www.daml.org/2001/02/geofile/geofile-ont#OtherInstallation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#NavalActivity> (<http://www.daml.org/2001/02/geofile/geofile-ont#NavalActivity>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#NavalActivity> <http://www.daml.org/2001/02/geofile/geofile-ont#OtherInstallation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#NavalBase> (<http://www.daml.org/2001/02/geofile/geofile-ont#NavalBase>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#NavalBase> <http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryInstallation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#NavyInstallation> (<http://www.daml.org/2001/02/geofile/geofile-ont#NavyInstallation>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#NavyInstallation> <http://www.daml.org/2001/02/geofile/geofile-ont#MilitaryInstallation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Ocean> (<http://www.daml.org/2001/02/geofile/geofile-ont#Ocean>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Ocean> <http://www.daml.org/2001/02/geofile/geofile-ont#SeaArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#OperatingArea> (<http://www.daml.org/2001/02/geofile/geofile-ont#OperatingArea>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#OperatingArea> <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicalArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#OtherInstallation> (<http://www.daml.org/2001/02/geofile/geofile-ont#OtherInstallation>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#OtherInstallation> <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicLocation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#POLRetailDistributionStation> (<http://www.daml.org/2001/02/geofile/geofile-ont#POLRetailDistributionStation>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#POLRetailDistributionStation> <http://www.daml.org/2001/02/geofile/geofile-ont#SupplyArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Passage> (<http://www.daml.org/2001/02/geofile/geofile-ont#Passage>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Passage> <http://www.daml.org/2001/02/geofile/geofile-ont#SeaArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Port> (<http://www.daml.org/2001/02/geofile/geofile-ont#Port>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Port> <http://www.daml.org/2001/02/geofile/geofile-ont#SeaArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#RadarInstallation> (<http://www.daml.org/2001/02/geofile/geofile-ont#RadarInstallation>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#RadarInstallation> <http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#RadarReceiver> (<http://www.daml.org/2001/02/geofile/geofile-ont#RadarReceiver>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#RadarReceiver> <http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#RadioRelay> (<http://www.daml.org/2001/02/geofile/geofile-ont#RadioRelay>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#RadioRelay> <http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#RailroadJunction> (<http://www.daml.org/2001/02/geofile/geofile-ont#RailroadJunction>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#RailroadJunction> <http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Recreation> (<http://www.daml.org/2001/02/geofile/geofile-ont#Recreation>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Recreation> <http://www.daml.org/2001/02/geofile/geofile-ont#HousingCivilianFacility>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#ReserveTrainingCenter> (<http://www.daml.org/2001/02/geofile/geofile-ont#ReserveTrainingCenter>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#ReserveTrainingCenter> <http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#RuralPopulatedArea> (<http://www.daml.org/2001/02/geofile/geofile-ont#RuralPopulatedArea>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#RuralPopulatedArea> <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicalArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#School> (<http://www.daml.org/2001/02/geofile/geofile-ont#School>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#School> <http://www.daml.org/2001/02/geofile/geofile-ont#HousingCivilianFacility>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Sea> (<http://www.daml.org/2001/02/geofile/geofile-ont#Sea>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Sea> <http://www.daml.org/2001/02/geofile/geofile-ont#SeaArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#SeaArea> (<http://www.daml.org/2001/02/geofile/geofile-ont#SeaArea>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#SeaArea> <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicLocation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Service> (<http://www.daml.org/2001/02/geofile/geofile-ont#Service>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Service> <http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#State> (<http://www.daml.org/2001/02/geofile/geofile-ont#State>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#State> <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Status> (<http://www.daml.org/2001/02/geofile/geofile-ont#Status>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Status> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Storage> (<http://www.daml.org/2001/02/geofile/geofile-ont#Storage>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Storage> <http://www.daml.org/2001/02/geofile/geofile-ont#SupplyArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Strait> (<http://www.daml.org/2001/02/geofile/geofile-ont#Strait>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Strait> <http://www.daml.org/2001/02/geofile/geofile-ont#SeaArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#SupplyArea> (<http://www.daml.org/2001/02/geofile/geofile-ont#SupplyArea>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#SupplyArea> <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicLocation>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#Training> (<http://www.daml.org/2001/02/geofile/geofile-ont#Training>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#Training> <http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#WaterArea> (<http://www.daml.org/2001/02/geofile/geofile-ont#WaterArea>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#WaterArea> <http://www.daml.org/2001/02/geofile/geofile-ont#GeographicArea>)
+
+# Class: <http://www.daml.org/2001/02/geofile/geofile-ont#WeatherStation> (<http://www.daml.org/2001/02/geofile/geofile-ont#WeatherStation>)
+
+SubClassOf(<http://www.daml.org/2001/02/geofile/geofile-ont#WeatherStation> <http://www.daml.org/2001/02/geofile/geofile-ont#Infrastructure>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+
+)

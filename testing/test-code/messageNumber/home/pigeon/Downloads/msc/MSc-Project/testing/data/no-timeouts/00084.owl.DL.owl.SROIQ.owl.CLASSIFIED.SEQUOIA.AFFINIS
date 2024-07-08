@@ -1,0 +1,43 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon1>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon2>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/Imaging.daml#Document>))
+Declaration(Class(<http://mr.teknowledge.com/DAML/Imaging.daml#ImageOccurence>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Ontology>))
+############################
+#   Classes
+############################
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon1> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon1>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon1> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon2> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon2>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon2> owl:Thing)
+
+# Class: <http://mr.teknowledge.com/DAML/Imaging.daml#Document> (<http://mr.teknowledge.com/DAML/Imaging.daml#Document>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/Imaging.daml#Document> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon1>)
+
+# Class: <http://mr.teknowledge.com/DAML/Imaging.daml#ImageOccurence> (<http://mr.teknowledge.com/DAML/Imaging.daml#ImageOccurence>)
+
+SubClassOf(<http://mr.teknowledge.com/DAML/Imaging.daml#ImageOccurence> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon2>)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Ontology> (<http://www.daml.org/2001/03/daml+oil#Ontology>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Ontology> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

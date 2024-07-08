@@ -1,0 +1,84 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error1>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error2>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error3>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Loop>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System>))
+Declaration(Class(<http://www.cyc.com/2003/04/01/cyc#SubwayStation>))
+Declaration(Class(<http://www.daml.org/2001/10/html/airport-ont#Airport>))
+Declaration(Class(<http://www.daml.org/2003/02/fips55/location-ont#Location>))
+Declaration(Class(rdf:List))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+############################
+#   Classes
+############################
+
+# Class: <http://org.semanticweb.owlapi/error#Error1> (<http://org.semanticweb.owlapi/error#Error1>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error1> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error2> (<http://org.semanticweb.owlapi/error#Error2>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error2> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error3> (<http://org.semanticweb.owlapi/error#Error3>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error3> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line> <http://org.semanticweb.owlapi/error#Error2>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Loop> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Loop>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Loop> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Line>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station>)
+
+EquivalentClasses(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station> <http://www.cyc.com/2003/04/01/cyc#SubwayStation>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#Station> <http://org.semanticweb.owlapi/error#Error1>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00238.owl#System> <http://org.semanticweb.owlapi/error#Error3>)
+
+# Class: <http://www.cyc.com/2003/04/01/cyc#SubwayStation> (<http://www.cyc.com/2003/04/01/cyc#SubwayStation>)
+
+SubClassOf(<http://www.cyc.com/2003/04/01/cyc#SubwayStation> <http://org.semanticweb.owlapi/error#Error1>)
+
+# Class: <http://www.daml.org/2001/10/html/airport-ont#Airport> (<http://www.daml.org/2001/10/html/airport-ont#Airport>)
+
+SubClassOf(<http://www.daml.org/2001/10/html/airport-ont#Airport> owl:Thing)
+
+# Class: <http://www.daml.org/2003/02/fips55/location-ont#Location> (<http://www.daml.org/2003/02/fips55/location-ont#Location>)
+
+SubClassOf(<http://www.daml.org/2003/02/fips55/location-ont#Location> owl:Thing)
+
+# Class: rdf:List (rdf:List)
+
+SubClassOf(rdf:List owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+
+)

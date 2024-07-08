@@ -1,0 +1,93 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://sf.us.agentcities.net/ontologies/address.daml#Address>))
+Declaration(Class(<http://sf.us.agentcities.net/ontologies/calendar.daml#DayOfWeek>))
+Declaration(Class(<http://sf.us.agentcities.net/ontologies/calendar.daml#Time>))
+Declaration(Class(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/beer#Beer>))
+Declaration(Class(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/beer#Brewery>))
+Declaration(Class(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>))
+Declaration(Class(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#FreeHouse>))
+Declaration(Class(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#LiveEntertainmentRegularity>))
+Declaration(Class(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#OpeningPeriod>))
+Declaration(Class(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#Proprietor>))
+Declaration(Class(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#PublicHouse>))
+Declaration(Class(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#TimePeriod>))
+Declaration(Class(<http://www.w3.org/2000/10/XMLSchema#anyURI>))
+Declaration(Class(<http://www.w3.org/2000/10/XMLSchema#boolean>))
+Declaration(Class(<http://www.w3.org/2000/10/XMLSchema#string>))
+############################
+#   Classes
+############################
+
+# Class: <http://sf.us.agentcities.net/ontologies/address.daml#Address> (<http://sf.us.agentcities.net/ontologies/address.daml#Address>)
+
+SubClassOf(<http://sf.us.agentcities.net/ontologies/address.daml#Address> owl:Thing)
+
+# Class: <http://sf.us.agentcities.net/ontologies/calendar.daml#DayOfWeek> (<http://sf.us.agentcities.net/ontologies/calendar.daml#DayOfWeek>)
+
+SubClassOf(<http://sf.us.agentcities.net/ontologies/calendar.daml#DayOfWeek> owl:Thing)
+
+# Class: <http://sf.us.agentcities.net/ontologies/calendar.daml#Time> (<http://sf.us.agentcities.net/ontologies/calendar.daml#Time>)
+
+SubClassOf(<http://sf.us.agentcities.net/ontologies/calendar.daml#Time> owl:Thing)
+
+# Class: <http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/beer#Beer> (<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/beer#Beer>)
+
+SubClassOf(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/beer#Beer> owl:Thing)
+
+# Class: <http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/beer#Brewery> (<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/beer#Brewery>)
+
+SubClassOf(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/beer#Brewery> owl:Thing)
+
+# Class: <http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub> (<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>)
+
+SubClassOf(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub> owl:Thing)
+
+# Class: <http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#FreeHouse> (<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#FreeHouse>)
+
+SubClassOf(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#FreeHouse> <http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>)
+
+# Class: <http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#LiveEntertainmentRegularity> (<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#LiveEntertainmentRegularity>)
+
+SubClassOf(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#LiveEntertainmentRegularity> owl:Thing)
+
+# Class: <http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#OpeningPeriod> (<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#OpeningPeriod>)
+
+SubClassOf(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#OpeningPeriod> owl:Thing)
+
+# Class: <http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#Proprietor> (<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#Proprietor>)
+
+SubClassOf(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#Proprietor> owl:Thing)
+
+# Class: <http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#PublicHouse> (<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#PublicHouse>)
+
+SubClassOf(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#PublicHouse> <http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#EnglishPub>)
+
+# Class: <http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#TimePeriod> (<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#TimePeriod>)
+
+SubClassOf(<http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/pubs#TimePeriod> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/XMLSchema#anyURI> (<http://www.w3.org/2000/10/XMLSchema#anyURI>)
+
+SubClassOf(<http://www.w3.org/2000/10/XMLSchema#anyURI> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/XMLSchema#boolean> (<http://www.w3.org/2000/10/XMLSchema#boolean>)
+
+SubClassOf(<http://www.w3.org/2000/10/XMLSchema#boolean> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/XMLSchema#string> (<http://www.w3.org/2000/10/XMLSchema#string>)
+
+SubClassOf(<http://www.w3.org/2000/10/XMLSchema#string> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

@@ -1,0 +1,454 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Algae>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Amoebae>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Amphibian>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Anemone>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Arachnid>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Arthropod>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Bacteria>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Bird>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#BlueGreenAlgae>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Canopy>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Centipede>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Chlorophyll>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Ciliate>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Coccolithophore>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Conifer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Coral>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Crop>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Crown>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Crustacean>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Dairy>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#DeciduousVegetation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Diatom>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#DominantSpecies>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Echinoderm>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#EvergreenVegetation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#ExoticSpecies>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#ExoticVegetation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Fern>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Fish>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Flagellate>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Flatworm>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#FloweringPlant>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Foraminifer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Fungi>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#FungiTaxonomy>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Human>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#IndigenousSpecies>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#IndigenousVegetation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Insect>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Invertebrate>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Jellyfish>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Leaf>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Lichen>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Litter>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Liverwort>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Livestock>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#LivingThing>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Macroalgae>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Macrophyte>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mammal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineAnimal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineBird>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineInvertebrate>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineMammal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineMicrobiota>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarinePlant>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Microalgae>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Microbiota>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Microphyte>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Millipede>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mold>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mollusk>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Moss>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mushroom>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Nutrient>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Phytoplankton>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plankton>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Pollen>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Poultry>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Protist>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Radiolarian>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Reptile>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Roundworm>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#SegmentedWorm>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#SlimeMold>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Sponge>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Sporozoan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#TreeRing>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#VegetationCover>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#VegetationSpecies>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vertebrate>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Yeast>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Zooplankton>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Algae> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Algae>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Algae> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Amoebae> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Amoebae>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Amoebae> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Amphibian> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Amphibian>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Amphibian> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Anemone> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Anemone>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Anemone> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#LivingThing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Arachnid> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Arachnid>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Arachnid> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Arthropod> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Arthropod>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Arthropod> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Bacteria> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Bacteria>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Bacteria> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Bird> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Bird>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Bird> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#BlueGreenAlgae> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#BlueGreenAlgae>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#BlueGreenAlgae> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Canopy> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Canopy>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Canopy> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Centipede> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Centipede>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Centipede> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Chlorophyll> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Chlorophyll>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Chlorophyll> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Microbiota>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Ciliate> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Ciliate>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Ciliate> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Coccolithophore> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Coccolithophore>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Coccolithophore> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Conifer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Conifer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Conifer> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Coral> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Coral>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Coral> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Crop> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Crop>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Crop> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Crown> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Crown>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Crown> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Crustacean> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Crustacean>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Crustacean> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Dairy> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Dairy>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Dairy> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#DeciduousVegetation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#DeciduousVegetation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#DeciduousVegetation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Diatom> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Diatom>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Diatom> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#DominantSpecies> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#DominantSpecies>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#DominantSpecies> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Echinoderm> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Echinoderm>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Echinoderm> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#EvergreenVegetation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#EvergreenVegetation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#EvergreenVegetation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#ExoticSpecies> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#ExoticSpecies>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#ExoticSpecies> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#ExoticVegetation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#ExoticVegetation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#ExoticVegetation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Fern> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Fern>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Fern> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Fish> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Fish>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Fish> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Fish> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineAnimal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Flagellate> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Flagellate>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Flagellate> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Flatworm> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Flatworm>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Flatworm> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#FloweringPlant> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#FloweringPlant>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#FloweringPlant> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Foraminifer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Foraminifer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Foraminifer> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Fungi> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Fungi>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Fungi> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#FungiTaxonomy> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#FungiTaxonomy>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#FungiTaxonomy> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Fungi>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Human> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Human>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Human> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mammal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#IndigenousSpecies> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#IndigenousSpecies>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#IndigenousSpecies> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#IndigenousVegetation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#IndigenousVegetation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#IndigenousVegetation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Insect> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Insect>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Insect> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Invertebrate> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Invertebrate>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Invertebrate> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Jellyfish> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Jellyfish>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Jellyfish> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineAnimal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Leaf> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Leaf>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Leaf> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Lichen> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Lichen>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Lichen> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Litter> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Litter>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Litter> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Liverwort> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Liverwort>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Liverwort> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Livestock> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Livestock>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Livestock> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#LivingThing> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#LivingThing>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#LivingThing> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Macroalgae> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Macroalgae>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Macroalgae> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Macrophyte> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Macrophyte>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Macrophyte> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mammal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mammal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mammal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineAnimal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineAnimal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineAnimal> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineBird> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineBird>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineBird> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineAnimal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineInvertebrate> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineInvertebrate>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineInvertebrate> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineAnimal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineMammal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineMammal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineMammal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineAnimal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineMicrobiota> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineMicrobiota>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarineMicrobiota> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarinePlant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarinePlant> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarinePlant>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MarinePlant> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Microalgae> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Microalgae>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Microalgae> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Microbiota> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Microbiota>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Microbiota> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Microbiota>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Microphyte> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Microphyte>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Microphyte> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Millipede> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Millipede>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Millipede> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mold> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mold>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mold> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#FungiTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mollusk> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mollusk>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mollusk> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Moss> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Moss>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Moss> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mushroom> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mushroom>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Mushroom> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#FungiTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Nutrient> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Nutrient>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Nutrient> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Phytoplankton> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Phytoplankton>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Phytoplankton> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plankton> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plankton>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plankton> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#LivingThing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Pollen> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Pollen>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Pollen> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Poultry> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Poultry>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Poultry> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Protist> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Protist>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Protist> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Radiolarian> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Radiolarian>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Radiolarian> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#MicrobiotaTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Reptile> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Reptile>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Reptile> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Roundworm> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Roundworm>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Roundworm> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#SegmentedWorm> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#SegmentedWorm>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#SegmentedWorm> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#SlimeMold> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#SlimeMold>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#SlimeMold> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#FungiTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Sponge> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Sponge>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Sponge> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Sporozoan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Sporozoan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Sporozoan> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#FungiTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#TreeRing> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#TreeRing>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#TreeRing> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Plant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#VegetationCover> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#VegetationCover>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#VegetationCover> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#VegetationSpecies> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#VegetationSpecies>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#VegetationSpecies> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vertebrate> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vertebrate>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Vertebrate> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Yeast> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Yeast>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Yeast> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#FungiTaxonomy>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Zooplankton> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Zooplankton>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Zooplankton> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00155.owl#Animal>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

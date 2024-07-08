@@ -1,0 +1,513 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Action>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ActionIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Actor>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Adult>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Adventure>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Animation>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AnimationCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Apperance>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ArtDepartmentIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ArtDepartmentPerson>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ArtDirectionIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ArtDirector>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AssistantDirectionIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AssistantDirector>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AudioCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AwardsandNominated>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CameraequipmentCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CastIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CastingBy>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CastingCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Cinematographer>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CinematographyIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Comedy>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Composer>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ComputerequipmentCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CostumeCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CostumeDesigner>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CostumesIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Crime>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DecorationIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Decorator>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DesignIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DialoguerecordingCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DigitalcompositingCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DirectionIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Director>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DistributionCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Documentary>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Drama>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#EditingIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Editor>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ElectronicInkandPaintCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Family>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Fantasy>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Film-Noir>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#FireprotectionCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#FundingCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#GripequipmentCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Guest>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#HairstylistCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Horror>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#LightingCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MakeupIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MakeupPerson>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Musical>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MusicandSoundeffectsCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MusicrecordingCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Mystery>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Post_productionservicesCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Producer>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionDesigner>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionManager>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionManagmentIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#PublicationCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Role>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Romance>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SafetyCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SalesrepresentationCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Sci-Fi>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Short>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundPerson>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundandEditingCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundrecordingCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SpecialEffectsCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SpecialEffectsIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SpecialEffectsPerson>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SponsorsCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Stunt>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Thriller>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#TitlesandopticalsCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Videopost_productionCompany>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#VisualEffectsIn>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#VisualEffectsPerson>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#War>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Western>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Writer>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#WrittenWorkIn>))
+Declaration(Class(rdfs:Resource))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+############################
+#   Classes
+############################
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Action> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Action>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Action> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ActionIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ActionIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ActionIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Actor> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Actor>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Actor> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Adult> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Adult>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Adult> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Adventure> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Adventure>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Adventure> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Animation> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Animation>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Animation> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AnimationCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AnimationCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AnimationCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Apperance> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Apperance>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Apperance> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ArtDepartmentIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ArtDepartmentIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ArtDepartmentIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ArtDepartmentPerson> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ArtDepartmentPerson>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ArtDepartmentPerson> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ArtDirectionIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ArtDirectionIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ArtDirectionIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ArtDirector> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ArtDirector>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ArtDirector> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AssistantDirectionIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AssistantDirectionIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AssistantDirectionIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AssistantDirector> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AssistantDirector>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AssistantDirector> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AudioCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AudioCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AudioCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AwardsandNominated> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AwardsandNominated>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#AwardsandNominated> rdfs:Resource)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CameraequipmentCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CameraequipmentCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CameraequipmentCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CastIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CastIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CastIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CastingBy> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CastingBy>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CastingBy> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CastingCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CastingCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CastingCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Cinematographer> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Cinematographer>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Cinematographer> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CinematographyIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CinematographyIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CinematographyIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Comedy> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Comedy>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Comedy> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company> rdfs:Resource)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Composer> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Composer>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Composer> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ComputerequipmentCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ComputerequipmentCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ComputerequipmentCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CostumeCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CostumeCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CostumeCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CostumeDesigner> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CostumeDesigner>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CostumeDesigner> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CostumesIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CostumesIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#CostumesIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Crime> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Crime>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Crime> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DecorationIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DecorationIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DecorationIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Decorator> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Decorator>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Decorator> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DesignIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DesignIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DesignIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DialoguerecordingCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DialoguerecordingCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DialoguerecordingCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DigitalcompositingCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DigitalcompositingCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DigitalcompositingCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DirectionIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DirectionIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DirectionIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Director> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Director>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Director> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DistributionCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DistributionCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#DistributionCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Documentary> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Documentary>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Documentary> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Drama> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Drama>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Drama> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#EditingIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#EditingIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#EditingIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Editor> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Editor>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Editor> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ElectronicInkandPaintCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ElectronicInkandPaintCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ElectronicInkandPaintCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Family> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Family>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Family> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Fantasy> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Fantasy>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Fantasy> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Film-Noir> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Film-Noir>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Film-Noir> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#FireprotectionCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#FireprotectionCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#FireprotectionCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#FundingCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#FundingCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#FundingCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#GripequipmentCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#GripequipmentCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#GripequipmentCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Guest> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Guest>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Guest> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Actor>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#HairstylistCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#HairstylistCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#HairstylistCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Horror> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Horror>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Horror> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#LightingCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#LightingCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#LightingCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MakeupIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MakeupIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MakeupIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MakeupPerson> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MakeupPerson>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MakeupPerson> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie> rdfs:Resource)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson> rdfs:Resource)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Musical> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Musical>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Musical> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MusicandSoundeffectsCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MusicandSoundeffectsCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MusicandSoundeffectsCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MusicrecordingCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MusicrecordingCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MusicrecordingCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Mystery> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Mystery>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Mystery> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Post_productionservicesCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Post_productionservicesCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Post_productionservicesCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Producer> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Producer>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Producer> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionDesigner> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionDesigner>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionDesigner> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionManager> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionManager>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionManager> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionManagmentIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionManagmentIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#ProductionManagmentIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#PublicationCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#PublicationCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#PublicationCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification> rdfs:Resource)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Role> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Role>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Role> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Romance> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Romance>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Romance> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SafetyCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SafetyCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SafetyCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SalesrepresentationCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SalesrepresentationCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SalesrepresentationCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Sci-Fi> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Sci-Fi>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Sci-Fi> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Short> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Short>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Short> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundPerson> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundPerson>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundPerson> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundandEditingCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundandEditingCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundandEditingCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundrecordingCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundrecordingCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SoundrecordingCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SpecialEffectsCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SpecialEffectsCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SpecialEffectsCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SpecialEffectsIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SpecialEffectsIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SpecialEffectsIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SpecialEffectsPerson> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SpecialEffectsPerson>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SpecialEffectsPerson> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SponsorsCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SponsorsCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#SponsorsCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Stunt> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Stunt>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Stunt> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Thriller> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Thriller>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Thriller> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#TitlesandopticalsCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#TitlesandopticalsCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#TitlesandopticalsCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Videopost_productionCompany> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Videopost_productionCompany>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Videopost_productionCompany> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Company>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#VisualEffectsIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#VisualEffectsIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#VisualEffectsIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#VisualEffectsPerson> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#VisualEffectsPerson>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#VisualEffectsPerson> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#War> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#War>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#War> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Western> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Western>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Western> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Movie>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Writer> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Writer>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Writer> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#MoviePerson>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#WrittenWorkIn> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#WrittenWorkIn>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#WrittenWorkIn> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___139.91.183.30_9090_RDF_VRP_Examples_moviedatabase.rdf%23.txt#Qualification>)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+
+)

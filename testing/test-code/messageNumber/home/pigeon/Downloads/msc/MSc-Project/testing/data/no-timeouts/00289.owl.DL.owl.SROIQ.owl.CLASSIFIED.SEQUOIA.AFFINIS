@@ -1,0 +1,189 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#LactoVegetarian>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#LactoVegetarianFood>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Meat>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Ovo-LactoVegetarian>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoLactoVegetarianFood>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoVegetarian>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoVegetarianFood>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegan>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VeganFood>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegetarian>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VegetarianFood>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error1>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error10>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error11>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error2>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error3>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error4>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error5>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error6>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error7>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error8>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error9>))
+Declaration(Class(<http://www.isi.edu/webscripter/person.o.daml#Person>))
+Declaration(Class(<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Dairy>))
+Declaration(Class(<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Dairy-products-and-eggs>))
+Declaration(Class(<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Eggs>))
+Declaration(Class(<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Food-Beverage-and-Tobacco-Products>))
+Declaration(Class(<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Meat>))
+Declaration(Class(<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Seafood>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Person>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/#Person>))
+############################
+#   Classes
+############################
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#LactoVegetarian> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#LactoVegetarian>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#LactoVegetarian> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Ovo-LactoVegetarian>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#LactoVegetarianFood> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#LactoVegetarianFood>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#LactoVegetarianFood> <http://org.semanticweb.owlapi/error#Error2>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#LactoVegetarianFood> <http://org.semanticweb.owlapi/error#Error5>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#LactoVegetarianFood> <http://org.semanticweb.owlapi/error#Error8>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#LactoVegetarianFood> <http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Food-Beverage-and-Tobacco-Products>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Meat> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Meat>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Meat> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Ovo-LactoVegetarian> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Ovo-LactoVegetarian>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Ovo-LactoVegetarian> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegetarian>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoLactoVegetarianFood> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoLactoVegetarianFood>)
+
+EquivalentClasses(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoLactoVegetarianFood> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VegetarianFood>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoLactoVegetarianFood> <http://org.semanticweb.owlapi/error#Error6>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoVegetarian> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoVegetarian>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoVegetarian> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Ovo-LactoVegetarian>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoVegetarianFood> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoVegetarianFood>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoVegetarianFood> <http://org.semanticweb.owlapi/error#Error2>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoVegetarianFood> <http://org.semanticweb.owlapi/error#Error5>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoVegetarianFood> <http://org.semanticweb.owlapi/error#Error8>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#OvoVegetarianFood> <http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Food-Beverage-and-Tobacco-Products>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegan> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegan>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegan> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegetarian>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VeganFood> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VeganFood>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VeganFood> <http://org.semanticweb.owlapi/error#Error2>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VeganFood> <http://org.semanticweb.owlapi/error#Error5>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VeganFood> <http://org.semanticweb.owlapi/error#Error8>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VeganFood> <http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Food-Beverage-and-Tobacco-Products>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegetarian> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegetarian>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegetarian> <http://www.isi.edu/webscripter/person.o.daml#Person>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegetarian> <http://xmlns.com/foaf/0.1/Person>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Vegetarian> <http://xmlns.com/foaf/0.1/#Person>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VegetarianFood> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VegetarianFood>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#VegetarianFood> <http://org.semanticweb.owlapi/error#Error6>)
+
+# Class: <http://org.semanticweb.owlapi/error#Error1> (<http://org.semanticweb.owlapi/error#Error1>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error1> <http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Eggs>)
+
+# Class: <http://org.semanticweb.owlapi/error#Error10> (<http://org.semanticweb.owlapi/error#Error10>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error10> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Meat>)
+
+# Class: <http://org.semanticweb.owlapi/error#Error11> (<http://org.semanticweb.owlapi/error#Error11>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error11> <http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Dairy>)
+
+# Class: <http://org.semanticweb.owlapi/error#Error2> (<http://org.semanticweb.owlapi/error#Error2>)
+
+EquivalentClasses(<http://org.semanticweb.owlapi/error#Error2> <http://org.semanticweb.owlapi/error#Error5> <http://org.semanticweb.owlapi/error#Error8> <http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Food-Beverage-and-Tobacco-Products>)
+SubClassOf(<http://org.semanticweb.owlapi/error#Error2> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error3> (<http://org.semanticweb.owlapi/error#Error3>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error3> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Meat>)
+
+# Class: <http://org.semanticweb.owlapi/error#Error4> (<http://org.semanticweb.owlapi/error#Error4>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error4> <http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Dairy-products-and-eggs>)
+
+# Class: <http://org.semanticweb.owlapi/error#Error5> (<http://org.semanticweb.owlapi/error#Error5>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error5> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error6> (<http://org.semanticweb.owlapi/error#Error6>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error6> <http://org.semanticweb.owlapi/error#Error2>)
+SubClassOf(<http://org.semanticweb.owlapi/error#Error6> <http://org.semanticweb.owlapi/error#Error5>)
+SubClassOf(<http://org.semanticweb.owlapi/error#Error6> <http://org.semanticweb.owlapi/error#Error8>)
+SubClassOf(<http://org.semanticweb.owlapi/error#Error6> <http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Food-Beverage-and-Tobacco-Products>)
+
+# Class: <http://org.semanticweb.owlapi/error#Error7> (<http://org.semanticweb.owlapi/error#Error7>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error7> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Meat>)
+
+# Class: <http://org.semanticweb.owlapi/error#Error8> (<http://org.semanticweb.owlapi/error#Error8>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error8> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error9> (<http://org.semanticweb.owlapi/error#Error9>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error9> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Meat>)
+
+# Class: <http://www.isi.edu/webscripter/person.o.daml#Person> (<http://www.isi.edu/webscripter/person.o.daml#Person>)
+
+SubClassOf(<http://www.isi.edu/webscripter/person.o.daml#Person> owl:Thing)
+
+# Class: <http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Dairy> (<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Dairy>)
+
+SubClassOf(<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Dairy> owl:Thing)
+
+# Class: <http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Dairy-products-and-eggs> (<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Dairy-products-and-eggs>)
+
+SubClassOf(<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Dairy-products-and-eggs> owl:Thing)
+
+# Class: <http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Eggs> (<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Eggs>)
+
+SubClassOf(<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Eggs> owl:Thing)
+
+# Class: <http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Food-Beverage-and-Tobacco-Products> (<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Food-Beverage-and-Tobacco-Products>)
+
+SubClassOf(<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Food-Beverage-and-Tobacco-Products> owl:Thing)
+
+# Class: <http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Meat> (<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Meat>)
+
+SubClassOf(<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Meat> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Meat>)
+
+# Class: <http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Seafood> (<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Seafood>)
+
+SubClassOf(<http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml#Seafood> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.mindswap.org_2003_vegetarian.owl%23.txt#Meat>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: <http://xmlns.com/foaf/0.1/Person> (<http://xmlns.com/foaf/0.1/Person>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Person> owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/#Person> (<http://xmlns.com/foaf/0.1/#Person>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/#Person> owl:Thing)
+
+
+)

@@ -1,0 +1,414 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#AggregateEvent>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#AllStarGame>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#AtBat>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Award>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Ball>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Base>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Bunt>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#ChampionshipSeries>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#City>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Coach>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Contract>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Country>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#CyYoung>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Division>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Double>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#DoublePlay>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#DraftPick>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Employee>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#EmploymentEvent>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Error>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Event>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#ExhibitionGame>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#FieldingEvent>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Fire>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Fly>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Foul>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Game>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#GameEvent>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Hire>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Hit>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#HitByPitch>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#HomeRun>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Infielder>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Inning>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#League>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#LineupEvent>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Location>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#MVP>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Manager>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Out>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Outfielder>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Owner>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Person>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Pitch>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#PitchingEvent>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Player>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#PopUp>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Position>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#PostSeasonGame>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#RBI>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#RainDelay>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#RainedOut>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Relief>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Run>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#RunningEvent>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Sacrifice>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Season>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Series>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Single>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Stadium>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Start>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#State>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#StolenBase>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Strike>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#StrikeOut>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Swing>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Tagged>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Team>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#TeamEvent>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Trade>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Triple>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#TriplePlay>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#Walk>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#WildPitch>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#WorldSeries>))
+Declaration(Class(<http://www.daml.org/2001/08/baseball/baseball-ont#WorldSeriesGame>))
+Declaration(Class(xsd:string))
+############################
+#   Classes
+############################
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#AggregateEvent> (<http://www.daml.org/2001/08/baseball/baseball-ont#AggregateEvent>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#AggregateEvent> <http://www.daml.org/2001/08/baseball/baseball-ont#Event>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#AllStarGame> (<http://www.daml.org/2001/08/baseball/baseball-ont#AllStarGame>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#AllStarGame> <http://www.daml.org/2001/08/baseball/baseball-ont#Game>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#AtBat> (<http://www.daml.org/2001/08/baseball/baseball-ont#AtBat>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#AtBat> <http://www.daml.org/2001/08/baseball/baseball-ont#AggregateEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Award> (<http://www.daml.org/2001/08/baseball/baseball-ont#Award>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Award> <http://www.daml.org/2001/08/baseball/baseball-ont#Event>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Ball> (<http://www.daml.org/2001/08/baseball/baseball-ont#Ball>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Ball> <http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Base> (<http://www.daml.org/2001/08/baseball/baseball-ont#Base>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Base> owl:Thing)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent> (<http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent> <http://www.daml.org/2001/08/baseball/baseball-ont#Event>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Bunt> (<http://www.daml.org/2001/08/baseball/baseball-ont#Bunt>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Bunt> <http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#ChampionshipSeries> (<http://www.daml.org/2001/08/baseball/baseball-ont#ChampionshipSeries>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#ChampionshipSeries> <http://www.daml.org/2001/08/baseball/baseball-ont#Series>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#City> (<http://www.daml.org/2001/08/baseball/baseball-ont#City>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#City> <http://www.daml.org/2001/08/baseball/baseball-ont#Location>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Coach> (<http://www.daml.org/2001/08/baseball/baseball-ont#Coach>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Coach> <http://www.daml.org/2001/08/baseball/baseball-ont#Employee>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Contract> (<http://www.daml.org/2001/08/baseball/baseball-ont#Contract>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Contract> owl:Thing)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Country> (<http://www.daml.org/2001/08/baseball/baseball-ont#Country>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Country> <http://www.daml.org/2001/08/baseball/baseball-ont#Location>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#CyYoung> (<http://www.daml.org/2001/08/baseball/baseball-ont#CyYoung>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#CyYoung> <http://www.daml.org/2001/08/baseball/baseball-ont#Award>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Division> (<http://www.daml.org/2001/08/baseball/baseball-ont#Division>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Division> owl:Thing)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Double> (<http://www.daml.org/2001/08/baseball/baseball-ont#Double>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Double> <http://www.daml.org/2001/08/baseball/baseball-ont#Hit>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#DoublePlay> (<http://www.daml.org/2001/08/baseball/baseball-ont#DoublePlay>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#DoublePlay> <http://www.daml.org/2001/08/baseball/baseball-ont#Out>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#DraftPick> (<http://www.daml.org/2001/08/baseball/baseball-ont#DraftPick>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#DraftPick> <http://www.daml.org/2001/08/baseball/baseball-ont#Hire>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Employee> (<http://www.daml.org/2001/08/baseball/baseball-ont#Employee>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Employee> owl:Thing)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#EmploymentEvent> (<http://www.daml.org/2001/08/baseball/baseball-ont#EmploymentEvent>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#EmploymentEvent> <http://www.daml.org/2001/08/baseball/baseball-ont#TeamEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Error> (<http://www.daml.org/2001/08/baseball/baseball-ont#Error>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Error> <http://www.daml.org/2001/08/baseball/baseball-ont#FieldingEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Event> (<http://www.daml.org/2001/08/baseball/baseball-ont#Event>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Event> owl:Thing)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#ExhibitionGame> (<http://www.daml.org/2001/08/baseball/baseball-ont#ExhibitionGame>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#ExhibitionGame> <http://www.daml.org/2001/08/baseball/baseball-ont#Game>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#FieldingEvent> (<http://www.daml.org/2001/08/baseball/baseball-ont#FieldingEvent>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#FieldingEvent> <http://www.daml.org/2001/08/baseball/baseball-ont#Event>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Fire> (<http://www.daml.org/2001/08/baseball/baseball-ont#Fire>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Fire> <http://www.daml.org/2001/08/baseball/baseball-ont#EmploymentEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Fly> (<http://www.daml.org/2001/08/baseball/baseball-ont#Fly>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Fly> <http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>)
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Fly> <http://www.daml.org/2001/08/baseball/baseball-ont#Out>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Foul> (<http://www.daml.org/2001/08/baseball/baseball-ont#Foul>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Foul> <http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Game> (<http://www.daml.org/2001/08/baseball/baseball-ont#Game>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Game> <http://www.daml.org/2001/08/baseball/baseball-ont#AggregateEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#GameEvent> (<http://www.daml.org/2001/08/baseball/baseball-ont#GameEvent>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#GameEvent> <http://www.daml.org/2001/08/baseball/baseball-ont#Event>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Hire> (<http://www.daml.org/2001/08/baseball/baseball-ont#Hire>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Hire> <http://www.daml.org/2001/08/baseball/baseball-ont#EmploymentEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Hit> (<http://www.daml.org/2001/08/baseball/baseball-ont#Hit>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Hit> <http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#HitByPitch> (<http://www.daml.org/2001/08/baseball/baseball-ont#HitByPitch>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#HitByPitch> <http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#HomeRun> (<http://www.daml.org/2001/08/baseball/baseball-ont#HomeRun>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#HomeRun> <http://www.daml.org/2001/08/baseball/baseball-ont#Hit>)
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#HomeRun> <http://www.daml.org/2001/08/baseball/baseball-ont#Run>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Infielder> (<http://www.daml.org/2001/08/baseball/baseball-ont#Infielder>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Infielder> <http://www.daml.org/2001/08/baseball/baseball-ont#Position>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Inning> (<http://www.daml.org/2001/08/baseball/baseball-ont#Inning>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Inning> <http://www.daml.org/2001/08/baseball/baseball-ont#AggregateEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#League> (<http://www.daml.org/2001/08/baseball/baseball-ont#League>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#League> owl:Thing)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#LineupEvent> (<http://www.daml.org/2001/08/baseball/baseball-ont#LineupEvent>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#LineupEvent> <http://www.daml.org/2001/08/baseball/baseball-ont#GameEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Location> (<http://www.daml.org/2001/08/baseball/baseball-ont#Location>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Location> owl:Thing)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#MVP> (<http://www.daml.org/2001/08/baseball/baseball-ont#MVP>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#MVP> <http://www.daml.org/2001/08/baseball/baseball-ont#Award>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Manager> (<http://www.daml.org/2001/08/baseball/baseball-ont#Manager>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Manager> <http://www.daml.org/2001/08/baseball/baseball-ont#Employee>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Out> (<http://www.daml.org/2001/08/baseball/baseball-ont#Out>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Out> <http://www.daml.org/2001/08/baseball/baseball-ont#Event>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Outfielder> (<http://www.daml.org/2001/08/baseball/baseball-ont#Outfielder>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Outfielder> <http://www.daml.org/2001/08/baseball/baseball-ont#Position>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Owner> (<http://www.daml.org/2001/08/baseball/baseball-ont#Owner>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Owner> owl:Thing)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Person> (<http://www.daml.org/2001/08/baseball/baseball-ont#Person>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Person> owl:Thing)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Pitch> (<http://www.daml.org/2001/08/baseball/baseball-ont#Pitch>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Pitch> <http://www.daml.org/2001/08/baseball/baseball-ont#PitchingEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#PitchingEvent> (<http://www.daml.org/2001/08/baseball/baseball-ont#PitchingEvent>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#PitchingEvent> <http://www.daml.org/2001/08/baseball/baseball-ont#Event>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Player> (<http://www.daml.org/2001/08/baseball/baseball-ont#Player>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Player> <http://www.daml.org/2001/08/baseball/baseball-ont#Employee>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#PopUp> (<http://www.daml.org/2001/08/baseball/baseball-ont#PopUp>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#PopUp> <http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>)
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#PopUp> <http://www.daml.org/2001/08/baseball/baseball-ont#Out>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Position> (<http://www.daml.org/2001/08/baseball/baseball-ont#Position>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Position> owl:Thing)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#PostSeasonGame> (<http://www.daml.org/2001/08/baseball/baseball-ont#PostSeasonGame>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#PostSeasonGame> <http://www.daml.org/2001/08/baseball/baseball-ont#Game>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#RBI> (<http://www.daml.org/2001/08/baseball/baseball-ont#RBI>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#RBI> <http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#RainDelay> (<http://www.daml.org/2001/08/baseball/baseball-ont#RainDelay>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#RainDelay> <http://www.daml.org/2001/08/baseball/baseball-ont#GameEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#RainedOut> (<http://www.daml.org/2001/08/baseball/baseball-ont#RainedOut>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#RainedOut> <http://www.daml.org/2001/08/baseball/baseball-ont#GameEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Relief> (<http://www.daml.org/2001/08/baseball/baseball-ont#Relief>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Relief> <http://www.daml.org/2001/08/baseball/baseball-ont#LineupEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Run> (<http://www.daml.org/2001/08/baseball/baseball-ont#Run>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Run> <http://www.daml.org/2001/08/baseball/baseball-ont#RunningEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#RunningEvent> (<http://www.daml.org/2001/08/baseball/baseball-ont#RunningEvent>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#RunningEvent> <http://www.daml.org/2001/08/baseball/baseball-ont#Event>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Sacrifice> (<http://www.daml.org/2001/08/baseball/baseball-ont#Sacrifice>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Sacrifice> <http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>)
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Sacrifice> <http://www.daml.org/2001/08/baseball/baseball-ont#Out>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Season> (<http://www.daml.org/2001/08/baseball/baseball-ont#Season>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Season> owl:Thing)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Series> (<http://www.daml.org/2001/08/baseball/baseball-ont#Series>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Series> owl:Thing)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Single> (<http://www.daml.org/2001/08/baseball/baseball-ont#Single>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Single> <http://www.daml.org/2001/08/baseball/baseball-ont#Hit>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Stadium> (<http://www.daml.org/2001/08/baseball/baseball-ont#Stadium>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Stadium> owl:Thing)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Start> (<http://www.daml.org/2001/08/baseball/baseball-ont#Start>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Start> <http://www.daml.org/2001/08/baseball/baseball-ont#LineupEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#State> (<http://www.daml.org/2001/08/baseball/baseball-ont#State>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#State> <http://www.daml.org/2001/08/baseball/baseball-ont#Location>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#StolenBase> (<http://www.daml.org/2001/08/baseball/baseball-ont#StolenBase>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#StolenBase> <http://www.daml.org/2001/08/baseball/baseball-ont#RunningEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Strike> (<http://www.daml.org/2001/08/baseball/baseball-ont#Strike>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Strike> <http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#StrikeOut> (<http://www.daml.org/2001/08/baseball/baseball-ont#StrikeOut>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#StrikeOut> <http://www.daml.org/2001/08/baseball/baseball-ont#Out>)
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#StrikeOut> <http://www.daml.org/2001/08/baseball/baseball-ont#Strike>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Swing> (<http://www.daml.org/2001/08/baseball/baseball-ont#Swing>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Swing> <http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Tagged> (<http://www.daml.org/2001/08/baseball/baseball-ont#Tagged>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Tagged> <http://www.daml.org/2001/08/baseball/baseball-ont#Out>)
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Tagged> <http://www.daml.org/2001/08/baseball/baseball-ont#RunningEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Team> (<http://www.daml.org/2001/08/baseball/baseball-ont#Team>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Team> owl:Thing)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#TeamEvent> (<http://www.daml.org/2001/08/baseball/baseball-ont#TeamEvent>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#TeamEvent> <http://www.daml.org/2001/08/baseball/baseball-ont#Event>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Trade> (<http://www.daml.org/2001/08/baseball/baseball-ont#Trade>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Trade> <http://www.daml.org/2001/08/baseball/baseball-ont#EmploymentEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Triple> (<http://www.daml.org/2001/08/baseball/baseball-ont#Triple>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Triple> <http://www.daml.org/2001/08/baseball/baseball-ont#Hit>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#TriplePlay> (<http://www.daml.org/2001/08/baseball/baseball-ont#TriplePlay>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#TriplePlay> <http://www.daml.org/2001/08/baseball/baseball-ont#Out>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#Walk> (<http://www.daml.org/2001/08/baseball/baseball-ont#Walk>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#Walk> <http://www.daml.org/2001/08/baseball/baseball-ont#BattingEvent>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#WildPitch> (<http://www.daml.org/2001/08/baseball/baseball-ont#WildPitch>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#WildPitch> <http://www.daml.org/2001/08/baseball/baseball-ont#Pitch>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#WorldSeries> (<http://www.daml.org/2001/08/baseball/baseball-ont#WorldSeries>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#WorldSeries> <http://www.daml.org/2001/08/baseball/baseball-ont#Series>)
+
+# Class: <http://www.daml.org/2001/08/baseball/baseball-ont#WorldSeriesGame> (<http://www.daml.org/2001/08/baseball/baseball-ont#WorldSeriesGame>)
+
+SubClassOf(<http://www.daml.org/2001/08/baseball/baseball-ont#WorldSeriesGame> <http://www.daml.org/2001/08/baseball/baseball-ont#PostSeasonGame>)
+
+# Class: xsd:string (xsd:string)
+
+SubClassOf(xsd:string owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)
