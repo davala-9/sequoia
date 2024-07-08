@@ -245,14 +245,17 @@ final class ContextStructureManager(ontology: DLOntology,
   nonHornJobs.foreach(x => contextExecutor.execute(x._1, x._2))
   awaitSaturation
 
-  var i = 0
-  var j = 0
-  getAllContexts.foreach(c => { 
-    i += c.msgsFromSelf.get()
-    j += c.msgsFromOtherContexts.get()
-  })
-  println(s"Total messages from self: $i")
-  println(s"Total messages from other contexts: $j")
+  def getMessageCounts: (Int, Int) = {
+    var i = 0
+    var j = 0
+    getAllContexts.foreach(c => { 
+      i += c.msgsFromSelf.get()
+      j += c.msgsFromOtherContexts.get()
+    })
+    println(s"Total messages from self: $i")
+    println(s"Total messages from other contexts: $j")
+    (i,j)
+  }
 
 
 }

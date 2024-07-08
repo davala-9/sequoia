@@ -122,7 +122,15 @@ object Classifier {
       val time: Option[Int] = harnessOutputTime(lastline)
       val message : String = harnessOutputMessage(lastline)
       val contextCount: Int = harnessOutputContexCount(lastline)
-      if (harnessOutputSuccess(lastline)) return new TestResult(success = "[SUCCESS]", hash = hash.getOrElse("---").toString , time = time.getOrElse("---").toString , message = message, contextCount = contextCount)
+      val (selfMessages, otherMessages) = harnessOutputMessageCount(lastline) 
+      if (harnessOutputSuccess(lastline)) return new TestResult(
+        success = "[SUCCESS]",
+        hash = hash.getOrElse("---").toString,
+        time = time.getOrElse("---").toString,
+        message = message,
+        contextCount = contextCount,
+        selfMessages = selfMessages,
+        otherMessages = otherMessages)
       else return new TestResult(success = "[FAIL]", message = message)
     }
     // This level should not be reached, and it indicates a bug.
@@ -246,6 +254,16 @@ def harnessOutputHash(line: String): Option[Int] = {
       (line.substring(line.indexOfSlice("<contextCount>") + 14, line.indexOfSlice("</contextCount>"))).toInt
     } catch {
       case _: Throwable => 0
+    }
+  }
+
+  def harnessOutputMessageCount(line: String): (Int, Int) = {
+    try {
+      val selfMessages = (line.substring(line.indexOfSlice("<selfMessages>") + 14, line.indexOfSlice("</selfMessages>"))).toInt
+      val otherMessages = (line.substring(line.indexOfSlice("<otherMessages>") + 15, line.indexOfSlice("</otherMessages>"))).toInt
+      (selfMessages, otherMessages)
+    } catch {
+      case _: Throwable => (0, 0)
     }
   }
 
