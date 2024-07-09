@@ -5,6 +5,7 @@ import numpy as np
 # Get time taken for each test from 'v0-ExecutorNoAkka-MultiQueueExecutor-32core-results.txt'
 # -------------------
 v0results = {}
+extraMultiq = {}
 with open('v0-ExecutorNoAkka-MultiQueueExecutor-32core-results.txt', 'r') as f:
     lines = f.readlines()
     for line in lines:
@@ -15,6 +16,8 @@ with open('v0-ExecutorNoAkka-MultiQueueExecutor-32core-results.txt', 'r') as f:
 
         if "OLD" in parts[1]:
             v0results[problem_number] = time
+        elif "FUNKY" in parts[1]:
+            extraMultiq[problem_number] = time
         else: continue
 
 # ------------------
@@ -179,15 +182,25 @@ plotMults(v0results,
           'Histogram of v0 time / MultiQueueExecutor time for nominal vs non-nominal tests (normalised)',
           0, 5, 21,
           norm=True)
+# # -------------------
+# # Plot v0 time / multiQueue1core time for 32-core for expressivity as histogram
+# # -------------------
+# expressivities = list(set(expressivity.values()))
+# plotMults(v0results,
+#           [{k: multiQueue32coreResults[k] for k in v0results if expressivity[k] == e and k in multiQueue32coreResults} for e in expressivities],
+#           expressivities,
+#           'Histogram of v0 time / MultiQueueExecutor time for each expressivity (normalised)',
+#           0, 5, 21,
+#           norm=True)
+
+# ## TODO: !!! fix above chart to give more reasonable shape (maybe group some expressivities together)
+
 # -------------------
-# Plot v0 time / multiQueue1core time for 32-core for expressivity as histogram
+# Plot median v0 time / multiQueue1core time for 32-core for each expressivity as bar chart
 # -------------------
 expressivities = list(set(expressivity.values()))
-plotMults(v0results,
-          [{k: multiQueue32coreResults[k] for k in v0results if expressivity[k] == e and k in multiQueue32coreResults} for e in expressivities],
-          expressivities,
-          'Histogram of v0 time / MultiQueueExecutor time for each expressivity (normalised)',
-          0, 5, 21,
-          norm=True)
-
-## TODO: !!! fix above chart to give more reasonable shape (maybe group some expressivities together)
+medians = np.array([[e, float(np.median([v0results[k] / extraMultiq[k] for k in extraMultiq if expressivity[k] == e]))] for e in expressivities])
+print(medians)
+plt.bar(medians[:,0], [float(x) for x in medians[:,1]])
+plt.xticks(rotation=90)
+plt.show()
