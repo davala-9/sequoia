@@ -44,10 +44,6 @@ with open('v0-ExecutorNoAkka-MultiQueueExecutor-32core-results.txt', 'r') as f:
 # Get the time taken for each test from 'MultiQueueExecutor-core-results.txt'
 # ------------------
 multiQueue1coreResults = {}
-multiQueue2coreResults = {}
-multiQueue4coreResults = {}
-multiQueue8coreResults = {}
-multiQueue16coreResults = {}
 multiQueue32coreResults = {}
 with open('MultiQueueExecutor-core-results.txt', 'r') as f:
     lines = f.readlines()
@@ -60,19 +56,10 @@ with open('MultiQueueExecutor-core-results.txt', 'r') as f:
 
         if "1core" in parts[1]:
             multiQueue1coreResults[problem_number] = time
-        elif "2core" in parts[1]:
-            multiQueue2coreResults[problem_number] = time
-        elif "4core" in parts[1]:
-            multiQueue4coreResults[problem_number] = time
-        elif "8core" in parts[1]:
-            multiQueue8coreResults[problem_number] = time
-        elif "16core" in parts[1]:
-            multiQueue16coreResults[problem_number] = time
         elif "Unbounded" in parts[1]:
             multiQueue32coreResults[problem_number] = time
         else:
-            print("Error: unknown result")
-            quit()
+            continue
 
 # Filter out tests that timed out during the context count test (context count = 0)
 noZeroesSelf = {k: v for k, v in selfMessageCount.items() if v != 0 and otherMessageCount[k] != 0}

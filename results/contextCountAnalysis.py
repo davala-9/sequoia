@@ -39,6 +39,25 @@ with open('v0-ExecutorNoAkka-MultiQueueExecutor-32core-results.txt', 'r') as f:
 noZeroes = {k: v for k, v in contextCount.items() if v != 0} # Filter out tests that timed out during the context count test (context count = 0)
 
 # -------------------
+# Get the time taken for each test from 'MultiQueueExecutor-core-results.txt'
+# -------------------
+multiQueue1coreResults = {}
+multiQueue32coreResults = {}
+with open('MultiQueueExecutor-core-results.txt', 'r') as f:
+    lines = f.readlines()
+    for line in lines:
+        parts = line.split(",")
+        problem_number = parts[0][85:89]
+        if 'FAIL' in line: continue
+        elif 'TIMEOUT' in line: time = 600_000
+        else: time = int(parts[4])
+
+        if "1core" in parts[1]:
+            multiQueue1coreResults[problem_number] = time
+        elif "Unbounded" in parts[1]:
+            multiQueue32coreResults[problem_number] = time
+
+# -------------------
 # Plot scatter graph of speedup (v0 time / ExecutorNoAkka time) (y-axis) vs number of contexts created (x-axis)
 # On same axis, plot speedup (v0 time / MultiQueueExecutor time) (y-axis) vs number of contexts created (x-axis)
 # -------------------
@@ -71,9 +90,16 @@ plt.show()
 # Plot scatter graph of speedup (ExecutorNoAkka-1core time / ExecutorNoAkka time) (y-axis) vs number of contexts created (x-axis)
 # On same axis, plot speedup (MultiQueueExecutor-1core time / MultiQueueExecutor time) (y-axis) vs number of contexts created (x-axis)
 # -------------------
+multiQueue1coreSpeedup = np.array([[int(noZeroes[k]), multiQueue1coreResults[k] / multiQueue32coreResults[k]] for k in noZeroes])
 
-# TODO : !!! get results for this and plot graphs
-plt.plot([0],[0])
+plt.scatter(multiQueue1coreSpeedup[:,0], multiQueue1coreSpeedup[:,1], label="MultiQueueExecutor", color='r')
+
+plt.xscale('log')
+plt.yscale('log')
+plt.xlabel('Number of contexts created')
+plt.ylabel('Speedup (1core time / 32core time)')
+plt.legend()
+plt.title('Speedup vs Number of contexts created (32 cores)')
 plt.show()
 
 
