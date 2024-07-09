@@ -40,11 +40,45 @@ with open('v0-ExecutorNoAkka-MultiQueueExecutor-32core-results.txt', 'r') as f:
             print("Error: unknown result")
             quit()
 
+# ------------------
+# Get the time taken for each test from 'MultiQueueExecutor-core-results.txt'
+# ------------------
+multiQueue1coreResults = {}
+multiQueue2coreResults = {}
+multiQueue4coreResults = {}
+multiQueue8coreResults = {}
+multiQueue16coreResults = {}
+multiQueue32coreResults = {}
+with open('MultiQueueExecutor-core-results.txt', 'r') as f:
+    lines = f.readlines()
+    for line in lines:
+        parts = line.split(",")
+        problem_number = parts[0][85:89]
+        if 'FAIL' in line: continue
+        elif 'TIMEOUT' in line: time = 600_000
+        else: time = int(parts[4])
+
+        if "1core" in parts[1]:
+            multiQueue1coreResults[problem_number] = time
+        elif "2core" in parts[1]:
+            multiQueue2coreResults[problem_number] = time
+        elif "4core" in parts[1]:
+            multiQueue4coreResults[problem_number] = time
+        elif "8core" in parts[1]:
+            multiQueue8coreResults[problem_number] = time
+        elif "16core" in parts[1]:
+            multiQueue16coreResults[problem_number] = time
+        elif "Unbounded" in parts[1]:
+            multiQueue32coreResults[problem_number] = time
+        else:
+            print("Error: unknown result")
+            quit()
+
 # Filter out tests that timed out during the context count test (context count = 0)
 noZeroesSelf = {k: v for k, v in selfMessageCount.items() if v != 0 and otherMessageCount[k] != 0}
 noZeroesOther = {k: v for k, v in otherMessageCount.items() if v != 0 and selfMessageCount[k] != 0}
 
-def plot_speedup(executorNoAkka, multiQueueExecutor, title, xlabel, ylabel, lobf=True, log=True):
+def plot_speedup(executorNoAkka, multiQueueExecutor, title, xlabel, ylabel, log=True, lobf=True):
     plt.scatter(executorNoAkka[:,0], executorNoAkka[:,1], label="ExecutorNoAkka", color='b')
     plt.scatter(multiQueueExecutor[:,0], multiQueueExecutor[:,1], label="MultiQueueExecutor", color='r')
 
@@ -52,16 +86,16 @@ def plot_speedup(executorNoAkka, multiQueueExecutor, title, xlabel, ylabel, lobf
         # Lines of best fit
         xnew = np.linspace(min(executorNoAkka[:,0]), max(executorNoAkka[:,0]), 50)
         # - ExecutorNoAkka
-        z = np.polyfit(np.log(executorNoAkka[:,0]), np.log(executorNoAkka[:,1]), 1)
+        z = np.polyfit(np.log(executorNoAkka[:,0]), executorNoAkka[:,1], 1)
         f = np.poly1d(z)
-        plt.plot(xnew, np.exp(f(np.log(xnew))), 'b--')
+        plt.plot(xnew, f(np.log(xnew)), 'b--')
         # - MultiQueueExecutor
-        z = np.polyfit(np.log(multiQueueExecutor[:,0]), np.log(multiQueueExecutor[:,1]), 1)
+        z = np.polyfit(np.log(multiQueueExecutor[:,0]), multiQueueExecutor[:,1], 1)
         f = np.poly1d(z)
-        plt.plot(xnew, np.exp(f(np.log(xnew))), 'r--')
+        plt.plot(xnew, f(np.log(xnew)), 'r--')
+        
         plt.xscale('log')
-        plt.yscale('log')
-    else:
+    elif lobf:
         # Lines of best fit
         xnew = np.linspace(min(executorNoAkka[:,0]), max(executorNoAkka[:,0]), 50)
         # - ExecutorNoAkka
@@ -73,6 +107,17 @@ def plot_speedup(executorNoAkka, multiQueueExecutor, title, xlabel, ylabel, lobf
         f = np.poly1d(z)
         plt.plot(xnew, f(xnew), 'r--')
     
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.legend()
+    plt.title(title)
+    plt.show()
+
+def plot_speedup_single(data, title, xlabel, ylabel):
+    plt.scatter(data[:,0], data[:,1], label="MultiQueueExecutor", color='r')
+    
+    plt.xscale('log')
+
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.legend()
@@ -97,10 +142,12 @@ plot_speedup(executorNoAkkaSpeedup,
 # Plot scatter graph of speedup (ExecutorNoAkka-1core time / ExecutorNoAkka time) (y-axis) vs number of self-messages (x-axis)
 # On same axis, plot speedup (MultiQueueExecutor-1core time / MultiQueueExecutor time) (y-axis) vs number of self-messages (x-axis)
 # -------------------
+multiQueue1coreSpeedup = np.array([[int(noZeroesSelf[k]), multiQueue1coreResults[k] / multiQueue32coreResults[k]] for k in noZeroesSelf])
+plot_speedup_single(multiQueue1coreSpeedup,
+                    "Speedup vs Number of self-messages",
+                    "Number of self-messages",
+                    "Speedup (MultiQueueExecutor-32core time / MultiQueueExecutor-1core time)")
 
-# TODO : !!! get results for this graph and plot it
-plt.plot([0], [0])
-plt.show()
 
 # -------------------
 # Plot scatter graph of speedup (v0 time / ExecutorNoAkka time) (y-axis) vs number of other-messages (x-axis)
@@ -119,15 +166,19 @@ plot_speedup(executorNoAkkaSpeedupOther,
 # Plot scatter graph of speedup (ExecutorNoAkka-1core time / ExecutorNoAkka time) (y-axis) vs number of other-messages (x-axis)
 # On same axis, plot speedup (MultiQueueExecutor-1core time / MultiQueueExecutor time) (y-axis) vs number of other-messages (x-axis)
 # -------------------
+multiQueue1coreSpeedupOther = np.array([[int(noZeroesOther[k]), multiQueue1coreResults[k] / multiQueue32coreResults[k]] for k in noZeroesOther])
+plot_speedup_single(multiQueue1coreSpeedupOther,
+                    "Speedup vs Number of other-messages",
+                    "Number of other-messages",
+                    "Speedup (MultiQueueExecutor-32core time / MultiQueueExecutor-1core time)")
 
-# TODO : !!! get results for this graph and plot it
-plt.plot([0], [0])
-plt.show()
 
 # -------------------
 # Plot scatter graph of speedup (v0 time / ExecutorNoAkka time) (y-axis) vs number of other-messages / self-messages (x-axis)
 # On same axis, plot speedup (v0 time / MultiQueueExecutor time) (y-axis) vs number of other-messages / self-messages (x-axis)
 # -------------------
+# We filter out tests where the ratio of other-messages to self-messages is greater than 1 since these are outliers
+# We filter to only include tests where the new implementation time is greater than 3000ms since those are the ones we care about speeding up most
 executorNoAkkaSpeedupRatio = np.array([[int(noZeroesOther[k]) / float(noZeroesSelf[k]), v0results[k] / executorNoAkkaResults[k]] for k in noZeroesOther if executorNoAkkaResults[k] >= 3000 and int(noZeroesOther[k]) / float(noZeroesSelf[k]) <= 1])
 multiQueueExecutorSpeedupRatio = np.array([[int(noZeroesOther[k]) / float(noZeroesSelf[k]), v0results[k] / multiQueueExecutorResults[k]] for k in noZeroesOther if multiQueueExecutorResults[k] >= 3000 and int(noZeroesOther[k]) / float(noZeroesSelf[k]) <= 1])
 plot_speedup(executorNoAkkaSpeedupRatio,
@@ -135,10 +186,15 @@ plot_speedup(executorNoAkkaSpeedupRatio,
              "Speedup vs ratio other-messages : self-messages",
              "Ratio other-messages : self-messages",
              "Speedup (v0 time / new implementation time)",
-             lobf=True,
-             log=False)
+             log=False,
+             lobf=False)
 
 # -------------------
 # Plot scatter graph of speedup (ExecutorNoAkka-1core time / ExecutorNoAkka time) (y-axis) vs number of other-messages / self-messages (x-axis)
 # On same axis, plot speedup (MultiQueueExecutor-1core time / MultiQueueExecutor time) (y-axis) vs number of other-messages / self-messages (x-axis)
 # -------------------
+multiQueue1coreSpeedupRatio = np.array([[int(noZeroesOther[k]) / float(noZeroesSelf[k]), multiQueue1coreResults[k] / multiQueue32coreResults[k]] for k in noZeroesOther if multiQueue32coreResults[k] >= 3000 and int(noZeroesOther[k]) / float(noZeroesSelf[k]) <= 1])
+plot_speedup_single(multiQueue1coreSpeedupRatio,
+                    "Speedup vs ratio other-messages : self-messages",
+                    "Ratio other-messages : self-messages",
+                    "Speedup (MultiQueueExecutor-32core time / MultiQueueExecutor-1core time)")
