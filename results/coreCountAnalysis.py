@@ -74,8 +74,8 @@ diffsEasy32 = [v0results[problem_number] - multiQueue32coreResults[problem_numbe
 
 plt.boxplot([diffsEasy32])
 plt.xlabel(f'median={np.round(np.median(diffsEasy32), 2)}')
-plt.ylabel('v0 time - 1core MultiQueueExecutor time (ms)')
-plt.title('Easy tests (<100ms): time difference between v0 and 1core MultiQueueExecutor')
+plt.ylabel('v0 time - 32core MultiQueueExecutor time (ms)')
+plt.title('Easy tests (<100ms): time difference between v0 and 32core MultiQueueExecutor')
 plt.axhline(0, color='black', linestyle='--')
 plt.show()
 
@@ -198,9 +198,9 @@ plotMults(v0results,
 # -------------------
 # Plot median v0 time / multiQueue1core time for 32-core for each expressivity as bar chart
 # -------------------
-expressivities = list(set(expressivity.values()))
+expressivities = sorted(list(set(expressivity.values()))) 
 medians = np.array([[e, float(np.median([v0results[k] / extraMultiq[k] for k in extraMultiq if expressivity[k] == e]))] for e in expressivities])
-print(medians)
+# print(medians)
 plt.bar(medians[:,0], [float(x) for x in medians[:,1]])
 plt.xticks(rotation=90)
 plt.show()
