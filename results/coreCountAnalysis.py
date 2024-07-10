@@ -204,3 +204,14 @@ medians = np.array([[e, float(np.median([v0results[k] / extraMultiq[k] for k in 
 plt.bar(medians[:,0], [float(x) for x in medians[:,1]])
 plt.xticks(rotation=90)
 plt.show()
+
+# -------------------
+# Plot v0 time / multiQueue32core time against v0 time for each test as scatter chart
+# -------------------
+speedups = np.array([[v0results[k], v0results[k] / multiQueue32coreResults[k]] for k in multiQueue32coreResults])
+plt.scatter(speedups[:,0], speedups[:,1])
+plt.xlabel('v0 time (ms)')
+plt.ylabel('v0 time / 32core MultiQueueExecutor time')
+plt.title('v0 time / 32core MultiQueueExecutor time for each test')
+plt.xscale('log')
+plt.show()
