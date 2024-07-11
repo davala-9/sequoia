@@ -215,3 +215,11 @@ plt.ylabel('v0 time / 32core MultiQueueExecutor time')
 plt.title('v0 time / 32core MultiQueueExecutor time for each test')
 plt.xscale('log')
 plt.show()
+
+# Print ordered speedups so best and worst hard-tests can be examined
+ordered_speedups = sorted([[k, v0results[k] / multiQueue32coreResults[k]] for k in multiQueue32coreResults if v0results[k] > 10_000], key=lambda x: x[1])
+print(ordered_speedups)
+# 00786 is only slow because of a single bad test run
+# Some are timeouts - can only have speedup of 1.0
+# 00008 - 4core and 2core have a >1.0 speedup but 32core has <1.0 speedup (probably either due to other processes running / bad test)
+# either way, 00008 is not particularly parallelisable
