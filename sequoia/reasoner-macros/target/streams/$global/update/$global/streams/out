@@ -1,4 +1,4 @@
-[0m[[0m[0minfo[0m] [0m[0mUpdating {file:/home/pigeon/Downloads/msc/MSc-Project/sequoia/}macros...[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating {file:/home/pigeon/parallel-sequoia/sequoia/}macros...[0m
 [0m[[0m[0mdebug[0m] [0m[0m:: resolving dependencies :: com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha[0m
 [0m[[0m[0mdebug[0m] [0m[0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool][0m
 [0m[[0m[0mdebug[0m] [0m[0m	validate = true[0m
@@ -945,26 +945,26 @@
 [0m[[0m[0mdebug[0m] [0m[0mignoring unhandled DependencyDescriptorMediator: class sbt.internal.librarymanagement.IvyScalaUtil$OverrideScalaMediator[0m
 [0m[[0m[0mdebug[0m] [0m[0m	resolved ivy file produced in cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m:: downloading artifacts ::[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.4!scala-compiler.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalatest#scalatest_2.12;3.0.4!scalatest_2.12.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.4!scala-reflect.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.5!scala-xml_2.12.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalactic#scalactic_2.12;3.0.4!scalactic_2.12.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.5!jline.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.4!scala-library.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4!scala-parser-combinators_2.12.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 63ms :: artifacts dl 2ms[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha compile produced in /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-compile.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha runtime produced in /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-runtime.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha test produced in /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-test.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha provided produced in /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-provided.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha optional produced in /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-optional.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha compile-internal produced in /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-compile-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha runtime-internal produced in /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-runtime-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha test-internal produced in /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-test-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha plugin produced in /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-plugin.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha pom produced in /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-pom.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha scala-tool produced in /home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-scala-tool.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	resolve done (63ms resolve - 2ms download)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.4!scala-library.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalatest#scalatest_2.12;3.0.4!scalatest_2.12.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scalactic#scalactic_2.12;3.0.4!scalactic_2.12.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.4!scala-reflect.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.4!scala-compiler.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.5!jline.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.5!scala-xml_2.12.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 67ms :: artifacts dl 5ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha compile produced in /home/pigeon/parallel-sequoia/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-compile.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha runtime produced in /home/pigeon/parallel-sequoia/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-runtime.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha test produced in /home/pigeon/parallel-sequoia/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-test.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha provided produced in /home/pigeon/parallel-sequoia/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-provided.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha optional produced in /home/pigeon/parallel-sequoia/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-optional.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha compile-internal produced in /home/pigeon/parallel-sequoia/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-compile-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha runtime-internal produced in /home/pigeon/parallel-sequoia/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-runtime-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha test-internal produced in /home/pigeon/parallel-sequoia/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-test-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha plugin produced in /home/pigeon/parallel-sequoia/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-plugin.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha pom produced in /home/pigeon/parallel-sequoia/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-pom.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for com.sequoiareasoner#sequoia-macros_2.12;0.6.1-alpha scala-tool produced in /home/pigeon/parallel-sequoia/sequoia/reasoner-macros/target/scala-2.12/resolution-cache/reports/com.sequoiareasoner-sequoia-macros_2.12-scala-tool.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resolve done (67ms resolve - 5ms download)[0m
 [0m[[0m[0minfo[0m] [0m[0mDone updating.[0m

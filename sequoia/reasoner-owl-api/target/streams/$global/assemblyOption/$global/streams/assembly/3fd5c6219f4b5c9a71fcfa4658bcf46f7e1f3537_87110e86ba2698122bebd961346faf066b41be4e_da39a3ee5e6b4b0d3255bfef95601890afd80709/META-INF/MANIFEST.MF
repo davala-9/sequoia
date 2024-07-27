@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Specification-Title: zio-internal-macros
+Specification-Version: 2.1.1
+Specification-Vendor: dev.zio
+Implementation-Title: zio-internal-macros
+Implementation-Version: 2.1.1
+Implementation-Vendor: dev.zio
+Implementation-Vendor-Id: dev.zio
+Implementation-URL: https://zio.dev
+Main-Class: zio.internal.TerminalRendering
+Automatic-Module-Name: dev.zio.zio.internal.macros
+

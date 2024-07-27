@@ -1,4 +1,4 @@
-[0m[[0m[0minfo[0m] [0m[0mUpdating {file:/home/pigeon/Downloads/msc/MSc-Project/testing/harnesses-code/sequoia-chinensis/}sequoia-chinensis...[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating {file:/home/pigeon/parallel-sequoia/testing/harnesses-code/sequoia-chinensis/}sequoia-chinensis...[0m
 [0m[[0m[0mdebug[0m] [0m[0m:: resolving dependencies :: org.davala#sequoia-chinensis-harness_2.12;0.1.0[0m
 [0m[[0m[0mdebug[0m] [0m[0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool][0m
 [0m[[0m[0mdebug[0m] [0m[0m	validate = true[0m
@@ -252,22 +252,22 @@
 [0m[[0m[0mdebug[0m] [0m[0mignoring unhandled DependencyDescriptorMediator: class sbt.internal.librarymanagement.IvyScalaUtil$OverrideScalaMediator[0m
 [0m[[0m[0mdebug[0m] [0m[0m	resolved ivy file produced in cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m:: downloading artifacts ::[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.4!scala-compiler.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.4!scala-reflect.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.5!jline.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.4!scala-compiler.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.4!scala-library.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 35ms :: artifacts dl 1ms[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 compile produced in /home/pigeon/Downloads/msc/MSc-Project/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-compile.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 runtime produced in /home/pigeon/Downloads/msc/MSc-Project/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-runtime.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 test produced in /home/pigeon/Downloads/msc/MSc-Project/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-test.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 provided produced in /home/pigeon/Downloads/msc/MSc-Project/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-provided.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 optional produced in /home/pigeon/Downloads/msc/MSc-Project/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-optional.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 compile-internal produced in /home/pigeon/Downloads/msc/MSc-Project/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-compile-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 runtime-internal produced in /home/pigeon/Downloads/msc/MSc-Project/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-runtime-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 test-internal produced in /home/pigeon/Downloads/msc/MSc-Project/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-test-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 plugin produced in /home/pigeon/Downloads/msc/MSc-Project/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-plugin.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 pom produced in /home/pigeon/Downloads/msc/MSc-Project/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-pom.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 scala-tool produced in /home/pigeon/Downloads/msc/MSc-Project/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-scala-tool.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	resolve done (35ms resolve - 1ms download)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.5!jline.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 57ms :: artifacts dl 5ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 compile produced in /home/pigeon/parallel-sequoia/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-compile.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 runtime produced in /home/pigeon/parallel-sequoia/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-runtime.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 test produced in /home/pigeon/parallel-sequoia/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-test.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 provided produced in /home/pigeon/parallel-sequoia/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-provided.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 optional produced in /home/pigeon/parallel-sequoia/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-optional.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 compile-internal produced in /home/pigeon/parallel-sequoia/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-compile-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 runtime-internal produced in /home/pigeon/parallel-sequoia/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-runtime-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 test-internal produced in /home/pigeon/parallel-sequoia/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-test-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 plugin produced in /home/pigeon/parallel-sequoia/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-plugin.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 pom produced in /home/pigeon/parallel-sequoia/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-pom.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for org.davala#sequoia-chinensis-harness_2.12;0.1.0 scala-tool produced in /home/pigeon/parallel-sequoia/testing/harnesses-code/sequoia-chinensis/target/scala-2.12/resolution-cache/reports/org.davala-sequoia-chinensis-harness_2.12-scala-tool.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resolve done (57ms resolve - 5ms download)[0m
 [0m[[0m[0minfo[0m] [0m[0mDone updating.[0m

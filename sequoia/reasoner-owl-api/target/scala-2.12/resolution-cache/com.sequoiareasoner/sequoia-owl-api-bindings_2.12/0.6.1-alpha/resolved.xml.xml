@@ -4,7 +4,7 @@
 		module="sequoia-owl-api-bindings_2.12"
 		revision="0.6.1-alpha"
 		status="integration"
-		publication="20240703011314"
+		publication="20240724223744"
 	>
 		<description>
 		Sequoia OWL API Bindings

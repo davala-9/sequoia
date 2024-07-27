@@ -1,0 +1,22 @@
+[0m[[0m[0mdebug[0m] [0m[0mAdded to classpath at runtime: /home/pigeon/parallel-sequoia/sequoia/reasoner-kernel/target/scala-2.12/classes[0m
+[0m[[0m[0mdebug[0m] [0m[0mAdded to classpath at runtime: /home/pigeon/.ivy2/cache/com.typesafe.akka/akka-actor-typed_2.12/jars/akka-actor-typed_2.12-2.8.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mAdded to classpath at runtime: /home/pigeon/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.36.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mAdded to classpath at runtime: /home/pigeon/.sbt/boot/scala-2.12.4/lib/scala-library.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mAdded to classpath at runtime: /home/pigeon/parallel-sequoia/sequoia/reasoner-kernel/lib/cso-runtime_2.12-0.1-SNAPSHOT-coro.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mAdded to classpath at runtime: /home/pigeon/parallel-sequoia/sequoia/reasoner-kernel/lib/owlapi-distribution-4.5.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mAdded to classpath at runtime: /home/pigeon/.ivy2/cache/com.typesafe/config/bundles/config-1.4.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mAdded to classpath at runtime: /home/pigeon/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mAdded to classpath at runtime: /home/pigeon/.sbt/boot/scala-2.12.4/lib/scala-reflect.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mAdded to classpath at runtime: /home/pigeon/parallel-sequoia/sequoia/reasoner-kernel/lib/cso-fibers_2.12-0.1-SNAPSHOT.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mAdded to classpath at runtime: /home/pigeon/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/jars/akka-actor_2.12-2.8.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mAdded to classpath at runtime: /home/pigeon/parallel-sequoia/sequoia/reasoner-kernel/lib/jautomata-core-2.0-SNAPSHOT.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mAdded to classpath at runtime: /home/pigeon/parallel-sequoia/sequoia/reasoner-macros/target/scala-2.12/classes[0m
+[0m[[0m[0mdebug[0m] [0m[0mAdded to classpath at runtime: /home/pigeon/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/jars/akka-slf4j_2.12-2.8.5.jar[0m
+[0m[[0m[0minfo[0m] [0m[0mComputing the call graph...[0m
+[0m[[0m[0minfo[0m] [0m[0mDetermining reachability of pausable methods...[0m
+[0m[[0m[0minfo[0m] [0m[0mMarking pausable methods...[0m
+[0m[[0m[0minfo[0m] [0m[0mTransforming classes...[0m
+[0m[[0m[0minfo[0m] [0m[0mVerifying bytecode...[0m
+[0m[[0m[0minfo[0m] [0m[0mOutputting transformed classes...[0m
+[0m[[0m[0minfo[0m] [0m[0mOutputting unchanged classes...[0m
+[0m[[0m[0minfo[0m] [0m[0mBytecode transformation phase complete.[0m
