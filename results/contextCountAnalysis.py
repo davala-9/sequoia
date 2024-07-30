@@ -90,16 +90,16 @@ plt.show()
 # Plot scatter graph of speedup (ExecutorNoAkka-1core time / ExecutorNoAkka time) (y-axis) vs number of contexts created (x-axis)
 # On same axis, plot speedup (MultiQueueExecutor-1core time / MultiQueueExecutor time) (y-axis) vs number of contexts created (x-axis)
 # -------------------
-multiQueue1coreSpeedup = np.array([[int(noZeroes[k]), multiQueue1coreResults[k] / multiQueue32coreResults[k]] for k in noZeroes])
+multiQueue1coreSpeedup = np.array([[int(noZeroes[k]), v0results[k] / multiQueue32coreResults[k]] for k in noZeroes])
 
 plt.scatter(multiQueue1coreSpeedup[:,0], multiQueue1coreSpeedup[:,1], label="MultiQueueExecutor", color='r')
 
 plt.xscale('log')
 plt.yscale('log')
 plt.xlabel('Number of contexts created')
-plt.ylabel('Speedup (1core time / 32core time)')
-plt.legend()
-plt.title('Speedup vs Number of contexts created (32 cores)')
+plt.ylabel('Speedup (CSO time / MultiQueueExecutor time)')
+# plt.legend()
+plt.title('Scatter graph of speedup vs context-count (32 cores)')
 plt.show()
 
 
@@ -110,8 +110,8 @@ executorNoAkkaTimeTaken = np.array([[int(noZeroes[k]), executorNoAkkaResults[k]]
 multiQueueExecutorTimeTaken = np.array([[int(noZeroes[k]), multiQueueExecutorResults[k]] for k in noZeroes])
 v0TimeTaken = np.array([[int(noZeroes[k]), v0results[k]] for k in noZeroes])
 
-plt.scatter(v0TimeTaken[:,0], v0TimeTaken[:,1], label="v0", color='g')
-plt.scatter(executorNoAkkaTimeTaken[:,0], executorNoAkkaTimeTaken[:,1], label="ExecutorNoAkka", color='b')
+plt.scatter(v0TimeTaken[:,0], v0TimeTaken[:,1], label="CSO", color='g')
+plt.scatter(executorNoAkkaTimeTaken[:,0], executorNoAkkaTimeTaken[:,1], label="SingleQueueExecutor", color='b')
 plt.scatter(multiQueueExecutorTimeTaken[:,0], multiQueueExecutorTimeTaken[:,1], label="MultiQueueExecutor", color='r')
 
 plt.xscale('log')
@@ -119,5 +119,5 @@ plt.yscale('log')
 plt.xlabel('Number of contexts created')
 plt.ylabel('Time taken (ms)')
 plt.legend()
-plt.title('Time taken vs Number of contexts created (32 cores)')
+plt.title('Scatter graph of time taken vs context-count (32 cores)')
 plt.show()

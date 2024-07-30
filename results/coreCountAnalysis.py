@@ -60,10 +60,11 @@ with open('MultiQueueExecutor-core-results.txt', 'r') as f:
 EASY_TIME = 100
 diffsEasy1 = [v0results[problem_number] - multiQueue1coreResults[problem_number] for problem_number in multiQueue1coreResults if v0results[problem_number] < EASY_TIME]
 
-plt.boxplot([diffsEasy1])
-plt.xlabel(f'median={np.round(np.median(diffsEasy1), 2)}')
-plt.ylabel('v0 time - 1core MultiQueueExecutor time (ms)')
-plt.title('Easy tests (<100ms): time difference between v0 and 1core MultiQueueExecutor')
+plt.hist([diffsEasy1], bins=30)
+print(f'median={np.round(np.median(diffsEasy1), 2)}')
+plt.xlabel('CSO time - 1core MultiQueueExecutor time (ms)')
+plt.ylabel('Frequency')
+plt.title('Time difference histogram (very easy problems, <100ms)')
 plt.axhline(0, color='black', linestyle='--')
 plt.show()
 
@@ -72,10 +73,11 @@ plt.show()
 # -------------------
 diffsEasy32 = [v0results[problem_number] - multiQueue32coreResults[problem_number] for problem_number in multiQueue32coreResults if v0results[problem_number] < EASY_TIME]
 
-plt.boxplot([diffsEasy32])
-plt.xlabel(f'median={np.round(np.median(diffsEasy32), 2)}')
-plt.ylabel('v0 time - 32core MultiQueueExecutor time (ms)')
-plt.title('Easy tests (<100ms): time difference between v0 and 32core MultiQueueExecutor')
+plt.hist([diffsEasy32], bins=30)
+print(f'median={np.round(np.median(diffsEasy32), 2)}')
+plt.xlabel('CSO time - 32core MultiQueueExecutor time (ms)')
+plt.ylabel('Frequency')
+plt.title('Time difference histogram (very easy problems, <100ms)')
 plt.axhline(0, color='black', linestyle='--')
 plt.show()
 
@@ -84,20 +86,21 @@ plt.show()
 # -------------------
 EASY_RANGE = [0,1000]
 MEDIUM_RANGE = [1000, 10_000]
-HARD_RANGE = [10_000, 600_000]
+HARD_RANGE = [10_000, 599_999]
 def range_speedup(range, xlabel, ylabel, title):
     speedups = [[1, v0results[k] / multiQueue1coreResults[k]] for k in multiQueue1coreResults if range[0] < v0results[k] <= range[1]]
     speedups += [[2, v0results[k] / multiQueue2coreResults[k]] for k in multiQueue2coreResults if range[0] < v0results[k] <= range[1]]
     speedups += [[4, v0results[k] / multiQueue4coreResults[k]] for k in multiQueue4coreResults if range[0] < v0results[k] <= range[1]]
     speedups += [[8, v0results[k] / multiQueue8coreResults[k]] for k in multiQueue8coreResults if range[0] < v0results[k] <= range[1]]
     speedups += [[16, v0results[k] / multiQueue16coreResults[k]] for k in multiQueue16coreResults if range[0] < v0results[k] <= range[1]]
-    speedups += [[32, v0results[k] / multiQueue32coreResults[k]] for k in multiQueue32coreResults if range[0] < v0results[k] <= range[1]]
+    # speedups += [[32, v0results[k] / multiQueue32coreResults[k]] for k in multiQueue32coreResults if range[0] < v0results[k] <= range[1]]
     speedups = np.array(speedups)
 
     plt.scatter(speedups[:,0], speedups[:,1])
     xnew = np.linspace(min(speedups[:,0]), max(speedups[:,0]), 50)
     z = np.polyfit(np.log(speedups[:,0]), speedups[:,1], 1)
     f = np.poly1d(z)
+    print(f"y = {z[0]}*log(x) + {z[1]}")
     plt.plot(xnew, f(np.log(xnew)), 'r--')
     plt.xscale('log')
 
@@ -106,9 +109,10 @@ def range_speedup(range, xlabel, ylabel, title):
     plt.title(title)
     plt.show()
 
-range_speedup(EASY_RANGE, 'Core count', 'v0 time / MultiQueueExecutor time', 'Easy tests (<1000ms): v0 time / MultiQueueExecutor time for each core-count')
-range_speedup(MEDIUM_RANGE, 'Core count', 'v0 time / MultiQueueExecutor time', 'Medium tests (1000-10000ms): v0 time / MultiQueueExecutor time for each core-count')
-range_speedup(HARD_RANGE, 'Core count', 'v0 time / MultiQueueExecutor time', 'Hard tests (>10000ms): v0 time / MultiQueueExecutor time for each core-count')
+
+range_speedup(EASY_RANGE, 'Core count', 'CSO time / MultiQueueExecutor time', 'CSO time / MultiQueueExecutor (easy problems)')
+range_speedup(MEDIUM_RANGE, 'Core count', 'CSO time / MultiQueueExecutor time', 'CSO time / MultiQueueExecutor (medium problems)')
+range_speedup(HARD_RANGE, 'Core count', 'CSO time / MultiQueueExecutor time', 'CSO time / MultiQueueExecutor (hard problems)')
 
 # -------------------
 # Get information about each test from 'ProblemInformation.txt'
@@ -131,26 +135,33 @@ with open('ProblemInformation.txt', 'r') as f:
 # -------------------
 # Plot v0 time / multiQueue1core time for each core-count for easy tests as multi-histogram
 # -------------------
-def plotMults(old_results, datas, labels, title, minn, maxx, num_bins, norm=False):
-    mults = [{
-        problem_number: old_results[problem_number] / data[problem_number]
-        for problem_number in data
-    } for data in datas]
+def plotMults(old_results, datas, labels, title, minn, maxx, num_bins, norm=False, color=None, hard=None):
+    if hard:
+        mults = [{
+            problem_number: old_results[problem_number] / data[problem_number]
+            for problem_number in data if HARD_RANGE[0] < old_results[problem_number] <= HARD_RANGE[1]
+        } for data in datas]
+    else:
+        mults = [{
+            problem_number: old_results[problem_number] / data[problem_number]
+            for problem_number in data
+        } for data in datas]
     difs_bins = [i for i in np.linspace(minn-1, maxx+1, num_bins)]
     plt.hist([np.clip(list(mult.values()),difs_bins[0], difs_bins[-1]) for mult in mults],
              bins=difs_bins,
              label=labels,
+             color=color,
              density=norm)
-    plt.xlabel('New implementation time / v0 time')
+    plt.xlabel('CSO time / New implementation time')
     plt.ylabel('Frequency')
     plt.legend()
     plt.title(title)
     plt.show()
 
-plotMults(v0results, [multiQueue1coreResults, multiQueue16coreResults, multiQueue32coreResults],
-          ['1core', '16core', '32core'],
-          'Histogram of v0 time / MultiQueueExecutor time for each core-count',
-          0, 5, 21)
+plotMults(v0results, [multiQueue1coreResults, multiQueue2coreResults, multiQueue4coreResults, multiQueue8coreResults, multiQueue16coreResults, multiQueue32coreResults],
+          ['1core', '2core', '4core', '8core', '16core', '32core'],
+          'Speedup histogram per core-count (hard problems)',
+          0, 5, 11, color=['blue', 'purple', 'green', 'brown', 'orange', 'red'], hard=True)
 
 # -------------------
 # Plot v0 time / multiQueue1core time for 32-core for empty vs non-empty tests as histogram
@@ -159,7 +170,7 @@ plotMults(v0results,
           [{k: multiQueue32coreResults[k] for k in v0results if empty[k] and k in multiQueue32coreResults},
             {k: multiQueue32coreResults[k] for k in v0results if not empty[k] and k in multiQueue32coreResults}],
           ['Empty', 'Non-empty'],
-          'Histogram of v0 time / MultiQueueExecutor time for empty vs non-empty tests (normalised)',
+          'Histogram of CSO time / MultiQueueExecutor time for empty vs non-empty tests (normalised)',
           0, 5, 21,
           norm=True)
 # -------------------
@@ -169,7 +180,7 @@ plotMults(v0results,
           [{k: multiQueue32coreResults[k] for k in v0results if horn[k] and k in multiQueue32coreResults},
             {k: multiQueue32coreResults[k] for k in v0results if not horn[k] and k in multiQueue32coreResults}],
           ['Horn', 'Non-horn'],
-          'Histogram of v0 time / MultiQueueExecutor time for horn vs non-horn tests (normalised)',
+          'Histogram of CSO time / MultiQueueExecutor time for horn vs non-horn tests (normalised)',
           0, 5, 21,
           norm=True)
 # -------------------
@@ -179,7 +190,7 @@ plotMults(v0results,
           [{k: multiQueue32coreResults[k] for k in v0results if nominals[k] and k in multiQueue32coreResults},
             {k: multiQueue32coreResults[k] for k in v0results if not nominals[k] and k in multiQueue32coreResults}],
           ['Nominal', 'Non-nominal'],
-          'Histogram of v0 time / MultiQueueExecutor time for nominal vs non-nominal tests (normalised)',
+          'Histogram of CSO time / MultiQueueExecutor time for nominal vs non-nominal tests (normalised)',
           0, 5, 21,
           norm=True)
 # # -------------------
@@ -208,17 +219,24 @@ plt.show()
 # -------------------
 # Plot v0 time / multiQueue32core time against v0 time for each test as scatter chart
 # -------------------
-speedups = np.array([[v0results[k], v0results[k] / multiQueue32coreResults[k]] for k in multiQueue32coreResults])
-plt.scatter(speedups[:,0], speedups[:,1])
-plt.xlabel('v0 time (ms)')
-plt.ylabel('v0 time / 32core MultiQueueExecutor time')
-plt.title('v0 time / 32core MultiQueueExecutor time for each test')
+speedups = np.array([[v0results[k], v0results[k] / extraMultiq[k]] for k in extraMultiq if v0results[k] < 600_000])
+# lobf
+xnew = np.linspace(min(speedups[:,0]), max(speedups[:,0]), 50)
+z = np.polyfit(np.log(speedups[:,0]), np.log(speedups[:,1]), 1)
+f = np.poly1d(z)
+print(f"y = {z[0]}*x + {z[1]}")
+plt.plot(xnew, np.exp(f(np.log(xnew))), 'r--')
+plt.scatter(speedups[:,0], speedups[:,1], label='extra')
+plt.xlabel('CSO time (ms)')
+plt.ylabel('CSO time / 32core MultiQueueExecutor time')
+plt.title('Speedup vs CSO time scatter graph')
 plt.xscale('log')
+plt.yscale('log')
 plt.show()
 
 # Print ordered speedups so best and worst hard-tests can be examined
 ordered_speedups = sorted([[k, v0results[k] / multiQueue32coreResults[k]] for k in multiQueue32coreResults if v0results[k] > 10_000], key=lambda x: x[1])
-print(ordered_speedups)
+# print(ordered_speedups)
 # 00786 is only slow because of a single bad test run
 # Some are timeouts - can only have speedup of 1.0
 # 00008 - 4core and 2core have a >1.0 speedup but 32core has <1.0 speedup (probably either due to other processes running / bad test)
