@@ -135,7 +135,7 @@ with open('ProblemInformation.txt', 'r') as f:
 # -------------------
 # Plot v0 time / multiQueue1core time for each core-count for easy tests as multi-histogram
 # -------------------
-def plotMults(old_results, datas, labels, title, minn, maxx, num_bins, norm=False, color=None, hard=None):
+def plotMults(old_results, datas, labels, title, minn, maxx, num_bins, norm=False, color=None, hard=False):
     if hard:
         mults = [{
             problem_number: old_results[problem_number] / data[problem_number]
@@ -152,7 +152,7 @@ def plotMults(old_results, datas, labels, title, minn, maxx, num_bins, norm=Fals
              label=labels,
              color=color,
              density=norm)
-    plt.xlabel('CSO time / New implementation time')
+    plt.xlabel('CSO time / MultiQueueExecutor time')
     plt.ylabel('Frequency')
     plt.legend()
     plt.title(title)
@@ -163,42 +163,56 @@ plotMults(v0results, [multiQueue1coreResults, multiQueue2coreResults, multiQueue
           'Speedup histogram per core-count (hard problems)',
           0, 5, 11, color=['blue', 'purple', 'green', 'brown', 'orange', 'red'], hard=True)
 
+nozerov0results = {k: v0results[k] for k in v0results if v0results[k] < 600_000}
+nozeromultiQueue32coreResults = {k: multiQueue32coreResults[k] for k in multiQueue32coreResults if k in v0results and v0results[k] < 600_000}
+
 # -------------------
 # Plot v0 time / multiQueue1core time for 32-core for empty vs non-empty tests as histogram
 # -------------------
-plotMults(v0results,
-          [{k: multiQueue32coreResults[k] for k in v0results if empty[k] and k in multiQueue32coreResults},
-            {k: multiQueue32coreResults[k] for k in v0results if not empty[k] and k in multiQueue32coreResults}],
+plotMults(nozerov0results,
+          [{k: nozeromultiQueue32coreResults[k] for k in nozerov0results if empty[k] and k in nozeromultiQueue32coreResults},
+            {k: nozeromultiQueue32coreResults[k] for k in nozerov0results if not empty[k] and k in nozeromultiQueue32coreResults}],
           ['Empty', 'Non-empty'],
-          'Histogram of CSO time / MultiQueueExecutor time for empty vs non-empty tests (normalised)',
+          'Speedup histogram for empty vs non-empty (normalised)',
           0, 5, 21,
           norm=True)
+print(f"Empty average speedup: {np.mean([nozerov0results[k] / nozeromultiQueue32coreResults[k] for k in nozeromultiQueue32coreResults if empty[k]])}")
+print(f"Non-empty average speedup: {np.mean([nozerov0results[k] / nozeromultiQueue32coreResults[k] for k in nozeromultiQueue32coreResults if not empty[k]])}")
+
 # -------------------
 # Plot v0 time / multiQueue1core time for 32-core for horn vs non-horn tests as histogram
 # -------------------
-plotMults(v0results,
-          [{k: multiQueue32coreResults[k] for k in v0results if horn[k] and k in multiQueue32coreResults},
-            {k: multiQueue32coreResults[k] for k in v0results if not horn[k] and k in multiQueue32coreResults}],
+plotMults(nozerov0results,
+          [{k: nozeromultiQueue32coreResults[k] for k in nozerov0results if horn[k] and k in nozeromultiQueue32coreResults and nozerov0results[k] <= 599_999},
+            {k: nozeromultiQueue32coreResults[k] for k in nozerov0results if not horn[k] and k in nozeromultiQueue32coreResults and nozerov0results[k] <= 599_999}],
           ['Horn', 'Non-horn'],
-          'Histogram of CSO time / MultiQueueExecutor time for horn vs non-horn tests (normalised)',
+          'Speedup histogram for horn vs non-horn (normalised)',
           0, 5, 21,
           norm=True)
+print(f"Horn average speedup: {np.mean([nozerov0results[k] / nozeromultiQueue32coreResults[k] for k in nozeromultiQueue32coreResults if horn[k]])}")
+print(f"Non-horn average speedup: {np.mean([nozerov0results[k] / nozeromultiQueue32coreResults[k] for k in nozeromultiQueue32coreResults if not horn[k]])}")
+
+print(f"Average hard Horn speedup: {np.mean([nozerov0results[k] / nozeromultiQueue32coreResults[k] for k in nozeromultiQueue32coreResults if horn[k] and nozerov0results[k] > 10_000])}")
+print(f"Average hard Non-horn speedup: {np.mean([nozerov0results[k] / nozeromultiQueue32coreResults[k] for k in nozeromultiQueue32coreResults if not horn[k] and nozerov0results[k] > 10_000])}")
+
 # -------------------
 # Plot v0 time / multiQueue1core time for 32-core for nominal vs non-nominal tests as histogram
 # -------------------
-plotMults(v0results,
-          [{k: multiQueue32coreResults[k] for k in v0results if nominals[k] and k in multiQueue32coreResults},
-            {k: multiQueue32coreResults[k] for k in v0results if not nominals[k] and k in multiQueue32coreResults}],
+plotMults(nozerov0results,
+          [{k: nozeromultiQueue32coreResults[k] for k in nozerov0results if nominals[k] and k in nozeromultiQueue32coreResults},
+            {k: nozeromultiQueue32coreResults[k] for k in nozerov0results if not nominals[k] and k in nozeromultiQueue32coreResults}],
           ['Nominal', 'Non-nominal'],
-          'Histogram of CSO time / MultiQueueExecutor time for nominal vs non-nominal tests (normalised)',
+          'Speedup histogram for nominal vs non-nominal (normalised)',
           0, 5, 21,
           norm=True)
+print(f"Nominal average speedup: {np.mean([nozerov0results[k] / nozeromultiQueue32coreResults[k] for k in nozeromultiQueue32coreResults if nominals[k]])}")
+print(f"Non-nominal average speedup: {np.mean([nozerov0results[k] / nozeromultiQueue32coreResults[k] for k in nozeromultiQueue32coreResults if not nominals[k]])}")
 # # -------------------
 # # Plot v0 time / multiQueue1core time for 32-core for expressivity as histogram
 # # -------------------
 # expressivities = list(set(expressivity.values()))
-# plotMults(v0results,
-#           [{k: multiQueue32coreResults[k] for k in v0results if expressivity[k] == e and k in multiQueue32coreResults} for e in expressivities],
+# plotMults(nozerov0results,
+#           [{k: nozeromultiQueue32coreResults[k] for k in nozerov0results if expressivity[k] == e and k in nozeromultiQueue32coreResults} for e in expressivities],
 #           expressivities,
 #           'Histogram of v0 time / MultiQueueExecutor time for each expressivity (normalised)',
 #           0, 5, 21,
@@ -210,7 +224,7 @@ plotMults(v0results,
 # Plot median v0 time / multiQueue1core time for 32-core for each expressivity as bar chart
 # -------------------
 expressivities = sorted(list(set(expressivity.values()))) 
-medians = np.array([[e, float(np.median([v0results[k] / extraMultiq[k] for k in extraMultiq if expressivity[k] == e]))] for e in expressivities])
+medians = np.array([[e, float(np.median([nozerov0results[k] / nozeromultiQueue32coreResults[k] for k in nozeromultiQueue32coreResults if expressivity[k] == e]))] for e in expressivities])
 # print(medians)
 plt.bar(medians[:,0], [float(x) for x in medians[:,1]])
 plt.xticks(rotation=90)
