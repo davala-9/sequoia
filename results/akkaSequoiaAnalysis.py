@@ -20,7 +20,6 @@ with open('AkkaSequoiaResults.txt', 'r') as f:
     for line in lines:
         parts = line.split(",")
         problem_number = parts[0][74:78]
-        print(parts)
         if 'TIMEOUT' in line: time = 600_000
         elif 'SUCCESS' in line: time = int(parts[4])
         else: continue
@@ -30,7 +29,6 @@ with open('AkkaSequoiaResults.txt', 'r') as f:
         elif "OLD" in parts[1]:
             olds[problem_number] = time
 
-print(min(olds.values()))
 
 mults = { problem_number: akkaResults[problem_number] / executorNoAkkaResults[problem_number] for problem_number in akkaResults }
 # bins = [i for i in range(-10_000, 50_000, 1000)]
@@ -44,6 +42,8 @@ plt.show()
 print(max(mults.values()))
 print(max(akkaResults.values()))
 print(len(akkaResults))
+x = { problem_number: olds[problem_number] / akkaResults[problem_number] for problem_number in akkaResults }
+print(f"Median akka speedup vs cso: {np.median(list(x.values()))}")
 
 
 multsOld = { problem_number: olds[problem_number] / executorNoAkkaResults[problem_number] for problem_number in akkaResults }
@@ -65,13 +65,13 @@ with open('v0-ExecutorNoAkka-MultiQueueExecutor-32core-results.txt', 'r') as f:
         if 'OLD' in line: hashes[problem_number] = h
         elif 'EXECUTORnoakkasequoia' in line: hashesNew[problem_number] = h
 
-print("----")
-for problem_number in hashes:
-    if hashes[problem_number] != hashesNew[problem_number]:
-        print(problem_number)
-        print(hashes[problem_number])
-        print(hashesNew[problem_number])
-        print()
-print("----")
-print(len(hashes))
-print(len(hashesNew))
+# print("----")
+# for problem_number in hashes:
+#     if hashes[problem_number] != hashesNew[problem_number]:
+#         print(problem_number)
+#         print(hashes[problem_number])
+#         print(hashesNew[problem_number])
+#         print()
+# print("----")
+# print(len(hashes))
+# print(len(hashesNew))
