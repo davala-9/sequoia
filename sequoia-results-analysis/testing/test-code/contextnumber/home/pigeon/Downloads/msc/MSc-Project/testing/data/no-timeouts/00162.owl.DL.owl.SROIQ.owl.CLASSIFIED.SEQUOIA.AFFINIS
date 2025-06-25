@@ -1,0 +1,68 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#ActiveRegion>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Chromosphere>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Corona>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#CoronaHole>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Filament>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Photosphere>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Prominence>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#StellarInterior>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#SunRealm>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Sunspot>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#ActiveRegion> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#ActiveRegion>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#ActiveRegion> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#SunRealm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Chromosphere> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Chromosphere>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Chromosphere> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#SunRealm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Corona> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Corona>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Corona> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#SunRealm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#CoronaHole> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#CoronaHole>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#CoronaHole> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#SunRealm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Filament> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Filament>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Filament> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#SunRealm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Photosphere> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Photosphere>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Photosphere> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#SunRealm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Prominence> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Prominence>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Prominence> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#SunRealm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#StellarInterior> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#StellarInterior>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#StellarInterior> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#SunRealm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#SunRealm> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#SunRealm>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#SunRealm> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Sunspot> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Sunspot>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#Sunspot> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00162.owl#SunRealm>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

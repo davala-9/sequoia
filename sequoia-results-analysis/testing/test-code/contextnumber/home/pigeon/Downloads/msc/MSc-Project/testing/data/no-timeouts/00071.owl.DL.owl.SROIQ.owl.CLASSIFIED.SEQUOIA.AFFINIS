@@ -1,0 +1,48 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/photo.owl#Photo>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+Declaration(Class(owl:auxiliarDataRangeClass5))
+Declaration(Class(owl:auxiliarDataRangeClass6))
+############################
+#   Classes
+############################
+
+# Class: <http://ebiquity.umbc.edu/ontology/photo.owl#Photo> (<http://ebiquity.umbc.edu/ontology/photo.owl#Photo>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/photo.owl#Photo> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass5 (owl:auxiliarDataRangeClass5)
+
+SubClassOf(owl:auxiliarDataRangeClass5 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass6 (owl:auxiliarDataRangeClass6)
+
+SubClassOf(owl:auxiliarDataRangeClass6 owl:Thing)
+
+
+)

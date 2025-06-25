@@ -1,0 +1,189 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Goal_State>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Provider_Entity>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Requester_Entity>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Service>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#Capability_Semantics>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#ChoreographyDescriptionLanguage>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#Computational_Resource>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#Message_Semantics>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceDescriptionLanguage>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceSemanticsDescriptionLanguage>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/Extensions.owl#State>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/MessageModel.owl#Message>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Person_or_Organization>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Identifier>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Action>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Capability>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Choreography>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Goal_State>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#ProcessingAction>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Provider_Agent>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Provider_Entity>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Requester_Agent>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Requester_Entity>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#SendingAction>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Description>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Interface>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Intermediary>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Role>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Semantics>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Task>))
+############################
+#   Classes
+############################
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: <http://www.w3.org/2004/02/wsa/Goal_State> (<http://www.w3.org/2004/02/wsa/Goal_State>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Goal_State> <http://www.w3.org/2004/02/wsa/Extensions.owl#State>)
+
+# Class: <http://www.w3.org/2004/02/wsa/Provider_Entity> (<http://www.w3.org/2004/02/wsa/Provider_Entity>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Provider_Entity> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/Requester_Entity> (<http://www.w3.org/2004/02/wsa/Requester_Entity>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Requester_Entity> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/Service> (<http://www.w3.org/2004/02/wsa/Service>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Service> <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service>)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#Capability_Semantics> (<http://www.w3.org/2004/02/wsa/Extensions.owl#Capability_Semantics>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#Capability_Semantics> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#ChoreographyDescriptionLanguage> (<http://www.w3.org/2004/02/wsa/Extensions.owl#ChoreographyDescriptionLanguage>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#ChoreographyDescriptionLanguage> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#Computational_Resource> (<http://www.w3.org/2004/02/wsa/Extensions.owl#Computational_Resource>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#Computational_Resource> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#Message_Semantics> (<http://www.w3.org/2004/02/wsa/Extensions.owl#Message_Semantics>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#Message_Semantics> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceDescriptionLanguage> (<http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceDescriptionLanguage>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceDescriptionLanguage> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceSemanticsDescriptionLanguage> (<http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceSemanticsDescriptionLanguage>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#ServiceSemanticsDescriptionLanguage> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/Extensions.owl#State> (<http://www.w3.org/2004/02/wsa/Extensions.owl#State>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/Extensions.owl#State> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/MessageModel.owl#Message> (<http://www.w3.org/2004/02/wsa/MessageModel.owl#Message>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/MessageModel.owl#Message> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Person_or_Organization> (<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Person_or_Organization>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Person_or_Organization> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy> (<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ResourceModel.owl#Identifier> (<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Identifier>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Identifier> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource> (<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Action> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Action>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Action> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent> <http://www.w3.org/2004/02/wsa/Extensions.owl#Computational_Resource>)
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent> <http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource>)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Capability> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Capability>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Capability> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Choreography> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Choreography>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Choreography> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Goal_State> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Goal_State>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Goal_State> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#ProcessingAction> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#ProcessingAction>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#ProcessingAction> <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Action>)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Provider_Agent> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Provider_Agent>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Provider_Agent> <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent>)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Provider_Entity> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Provider_Entity>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Provider_Entity> <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Person_or_Organization>)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Requester_Agent> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Requester_Agent>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Requester_Agent> <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent>)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Requester_Entity> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Requester_Entity>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Requester_Entity> <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Person_or_Organization>)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#SendingAction> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#SendingAction>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#SendingAction> <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Action>)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service> <http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource>)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Description> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Description>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Description> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Interface> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Interface>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Interface> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Intermediary> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Intermediary>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Intermediary> <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service>)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Role> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Role>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Role> <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Task>)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Semantics> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Semantics>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Semantics> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Task> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Task>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service_Task> <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Action>)
+
+
+)

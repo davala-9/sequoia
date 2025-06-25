@@ -1,0 +1,33 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://sw.deri.org/2005/04/wikipedia/index.rdf#Article>))
+Declaration(Class(<http://sw.deri.org/2005/04/wikipedia/wikiont.owl#Category>))
+Declaration(Class(<http://sw.deri.org/2005/04/wikipedia/wikiont.owl#Stub>))
+############################
+#   Classes
+############################
+
+# Class: <http://sw.deri.org/2005/04/wikipedia/index.rdf#Article> (<http://sw.deri.org/2005/04/wikipedia/index.rdf#Article>)
+
+SubClassOf(<http://sw.deri.org/2005/04/wikipedia/index.rdf#Article> owl:Thing)
+
+# Class: <http://sw.deri.org/2005/04/wikipedia/wikiont.owl#Category> (<http://sw.deri.org/2005/04/wikipedia/wikiont.owl#Category>)
+
+SubClassOf(<http://sw.deri.org/2005/04/wikipedia/wikiont.owl#Category> <http://sw.deri.org/2005/04/wikipedia/index.rdf#Article>)
+
+# Class: <http://sw.deri.org/2005/04/wikipedia/wikiont.owl#Stub> (<http://sw.deri.org/2005/04/wikipedia/wikiont.owl#Stub>)
+
+SubClassOf(<http://sw.deri.org/2005/04/wikipedia/wikiont.owl#Stub> <http://sw.deri.org/2005/04/wikipedia/index.rdf#Article>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

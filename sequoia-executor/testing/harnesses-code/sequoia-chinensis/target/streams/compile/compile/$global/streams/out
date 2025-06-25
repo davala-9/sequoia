@@ -1,0 +1,5 @@
+[0m[[0m[31merror[0m] [0m[0m/home/pigeon/Downloads/msc/MSc-Project/testing/harnesses-code/sequoia-chinensis/src/main/scala/sequoiaChinensis.scala:130:46: not enough arguments for method entry: (entryName: String, success: Boolean, time: String, hash: String, errmsg: String, contextCount: Int)String.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter contextCount.[0m
+[0m[[0m[31merror[0m] [0m[0m      case None => results = results :+ entry(basicTest,false,"","","Input file " + inputFileName + " not found.")[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

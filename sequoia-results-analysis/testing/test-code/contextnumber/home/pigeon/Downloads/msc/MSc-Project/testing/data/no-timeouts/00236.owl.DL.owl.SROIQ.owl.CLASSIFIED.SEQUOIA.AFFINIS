@@ -1,0 +1,73 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error1>))
+Declaration(Class(<http://www.daml.org/2003/01/movienight/movienight-ont#AudioSystem>))
+Declaration(Class(<http://www.daml.org/2003/01/movienight/movienight-ont#Member>))
+Declaration(Class(<http://www.daml.org/2003/01/movienight/movienight-ont#Movie>))
+Declaration(Class(<http://www.daml.org/2003/01/movienight/movienight-ont#MovieNight>))
+Declaration(Class(<http://www.daml.org/2003/01/movienight/movienight-ont#NominatedMovie>))
+Declaration(Class(<http://www.daml.org/2003/01/movienight/movienight-ont#Television>))
+Declaration(Class(xsd:uriReference))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+############################
+#   Classes
+############################
+
+# Class: <http://org.semanticweb.owlapi/error#Error1> (<http://org.semanticweb.owlapi/error#Error1>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error1> owl:Thing)
+
+# Class: <http://www.daml.org/2003/01/movienight/movienight-ont#AudioSystem> (<http://www.daml.org/2003/01/movienight/movienight-ont#AudioSystem>)
+
+SubClassOf(<http://www.daml.org/2003/01/movienight/movienight-ont#AudioSystem> owl:Thing)
+
+# Class: <http://www.daml.org/2003/01/movienight/movienight-ont#Member> (<http://www.daml.org/2003/01/movienight/movienight-ont#Member>)
+
+SubClassOf(<http://www.daml.org/2003/01/movienight/movienight-ont#Member> owl:Thing)
+
+# Class: <http://www.daml.org/2003/01/movienight/movienight-ont#Movie> (<http://www.daml.org/2003/01/movienight/movienight-ont#Movie>)
+
+SubClassOf(<http://www.daml.org/2003/01/movienight/movienight-ont#Movie> owl:Thing)
+
+# Class: <http://www.daml.org/2003/01/movienight/movienight-ont#MovieNight> (<http://www.daml.org/2003/01/movienight/movienight-ont#MovieNight>)
+
+SubClassOf(<http://www.daml.org/2003/01/movienight/movienight-ont#MovieNight> <http://org.semanticweb.owlapi/error#Error1>)
+
+# Class: <http://www.daml.org/2003/01/movienight/movienight-ont#NominatedMovie> (<http://www.daml.org/2003/01/movienight/movienight-ont#NominatedMovie>)
+
+SubClassOf(<http://www.daml.org/2003/01/movienight/movienight-ont#NominatedMovie> <http://www.daml.org/2003/01/movienight/movienight-ont#Movie>)
+
+# Class: <http://www.daml.org/2003/01/movienight/movienight-ont#Television> (<http://www.daml.org/2003/01/movienight/movienight-ont#Television>)
+
+SubClassOf(<http://www.daml.org/2003/01/movienight/movienight-ont#Television> owl:Thing)
+
+# Class: xsd:uriReference (xsd:uriReference)
+
+SubClassOf(xsd:uriReference owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+
+)

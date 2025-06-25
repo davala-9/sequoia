@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: cso-fibers
+Implementation-Version: 0.1-SNAPSHOT
+Specification-Vendor: io.cso
+Specification-Title: cso-fibers
+Implementation-Vendor-Id: io.cso
+Specification-Version: 0.1-SNAPSHOT
+Implementation-Vendor: io.cso
+

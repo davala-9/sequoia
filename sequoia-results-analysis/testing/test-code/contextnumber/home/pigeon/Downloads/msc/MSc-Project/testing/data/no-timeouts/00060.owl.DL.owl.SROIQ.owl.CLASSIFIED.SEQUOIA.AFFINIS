@@ -1,0 +1,78 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://daml.umbc.edu/ontologies/ittalks/address#Address>))
+Declaration(Class(<http://daml.umbc.edu/ontologies/ittalks/event#Event>))
+Declaration(Class(<http://daml.umbc.edu/ontologies/ittalks/event#Instant>))
+Declaration(Class(<http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent>))
+Declaration(Class(<http://daml.umbc.edu/ontologies/ittalks/event#Place>))
+Declaration(Class(<http://daml.umbc.edu/ontologies/ittalks/person#Person>))
+Declaration(Class(<http://daml.umbc.edu/ontologies/ittalks/talk#Speaker>))
+Declaration(Class(<http://daml.umbc.edu/ontologies/ittalks/talk#Talk>))
+Declaration(Class(<http://daml.umbc.edu/ontologies/ittalks/topic#Topic>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+############################
+#   Classes
+############################
+
+# Class: <http://daml.umbc.edu/ontologies/ittalks/address#Address> (<http://daml.umbc.edu/ontologies/ittalks/address#Address>)
+
+SubClassOf(<http://daml.umbc.edu/ontologies/ittalks/address#Address> owl:Thing)
+
+# Class: <http://daml.umbc.edu/ontologies/ittalks/event#Event> (<http://daml.umbc.edu/ontologies/ittalks/event#Event>)
+
+SubClassOf(<http://daml.umbc.edu/ontologies/ittalks/event#Event> owl:Thing)
+
+# Class: <http://daml.umbc.edu/ontologies/ittalks/event#Instant> (<http://daml.umbc.edu/ontologies/ittalks/event#Instant>)
+
+SubClassOf(<http://daml.umbc.edu/ontologies/ittalks/event#Instant> owl:Thing)
+
+# Class: <http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent> (<http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent>)
+
+SubClassOf(<http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent> <http://daml.umbc.edu/ontologies/ittalks/event#Event>)
+
+# Class: <http://daml.umbc.edu/ontologies/ittalks/event#Place> (<http://daml.umbc.edu/ontologies/ittalks/event#Place>)
+
+SubClassOf(<http://daml.umbc.edu/ontologies/ittalks/event#Place> owl:Thing)
+
+# Class: <http://daml.umbc.edu/ontologies/ittalks/person#Person> (<http://daml.umbc.edu/ontologies/ittalks/person#Person>)
+
+SubClassOf(<http://daml.umbc.edu/ontologies/ittalks/person#Person> owl:Thing)
+
+# Class: <http://daml.umbc.edu/ontologies/ittalks/talk#Speaker> (<http://daml.umbc.edu/ontologies/ittalks/talk#Speaker>)
+
+SubClassOf(<http://daml.umbc.edu/ontologies/ittalks/talk#Speaker> <http://daml.umbc.edu/ontologies/ittalks/person#Person>)
+
+# Class: <http://daml.umbc.edu/ontologies/ittalks/talk#Talk> (<http://daml.umbc.edu/ontologies/ittalks/talk#Talk>)
+
+SubClassOf(<http://daml.umbc.edu/ontologies/ittalks/talk#Talk> <http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent>)
+
+# Class: <http://daml.umbc.edu/ontologies/ittalks/topic#Topic> (<http://daml.umbc.edu/ontologies/ittalks/topic#Topic>)
+
+SubClassOf(<http://daml.umbc.edu/ontologies/ittalks/topic#Topic> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+
+)

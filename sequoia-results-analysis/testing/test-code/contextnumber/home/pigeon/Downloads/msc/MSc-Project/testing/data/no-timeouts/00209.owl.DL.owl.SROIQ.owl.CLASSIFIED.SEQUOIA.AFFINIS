@@ -1,0 +1,113 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error1>))
+Declaration(Class(<http://www.daml.org/2001/06/itinerary/icao#Airline>))
+Declaration(Class(<http://www.daml.org/2001/06/itinerary/itinerary-ont#Aircraft>))
+Declaration(Class(<http://www.daml.org/2001/06/itinerary/itinerary-ont#Class>))
+Declaration(Class(<http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight>))
+Declaration(Class(<http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation>))
+Declaration(Class(<http://www.daml.org/2001/06/itinerary/itinerary-ont#Itinerary>))
+Declaration(Class(<http://www.daml.org/2001/06/itinerary/itinerary-ont#Meal>))
+Declaration(Class(<http://www.daml.org/2001/06/itinerary/itinerary-ont#RecordLocatorNumber>))
+Declaration(Class(<http://www.daml.org/2001/06/itinerary/itinerary-ont#RentalCar>))
+Declaration(Class(<http://www.daml.ri.cmu.edu/ont/AirportCodes.daml#AirportCode>))
+Declaration(Class(xsd:timeDuration))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+Declaration(Class(owl:auxiliarDataRangeClass5))
+Declaration(Class(owl:auxiliarDataRangeClass6))
+Declaration(Class(owl:auxiliarDataRangeClass7))
+Declaration(Class(owl:auxiliarDataRangeClass8))
+############################
+#   Classes
+############################
+
+# Class: <http://org.semanticweb.owlapi/error#Error1> (<http://org.semanticweb.owlapi/error#Error1>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error1> owl:Thing)
+
+# Class: <http://www.daml.org/2001/06/itinerary/icao#Airline> (<http://www.daml.org/2001/06/itinerary/icao#Airline>)
+
+SubClassOf(<http://www.daml.org/2001/06/itinerary/icao#Airline> owl:Thing)
+
+# Class: <http://www.daml.org/2001/06/itinerary/itinerary-ont#Aircraft> (<http://www.daml.org/2001/06/itinerary/itinerary-ont#Aircraft>)
+
+SubClassOf(<http://www.daml.org/2001/06/itinerary/itinerary-ont#Aircraft> owl:Thing)
+
+# Class: <http://www.daml.org/2001/06/itinerary/itinerary-ont#Class> (<http://www.daml.org/2001/06/itinerary/itinerary-ont#Class>)
+
+SubClassOf(<http://www.daml.org/2001/06/itinerary/itinerary-ont#Class> owl:Thing)
+
+# Class: <http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight> (<http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight>)
+
+SubClassOf(<http://www.daml.org/2001/06/itinerary/itinerary-ont#Flight> <http://org.semanticweb.owlapi/error#Error1>)
+
+# Class: <http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation> (<http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation>)
+
+SubClassOf(<http://www.daml.org/2001/06/itinerary/itinerary-ont#HotelReservation> owl:Thing)
+
+# Class: <http://www.daml.org/2001/06/itinerary/itinerary-ont#Itinerary> (<http://www.daml.org/2001/06/itinerary/itinerary-ont#Itinerary>)
+
+SubClassOf(<http://www.daml.org/2001/06/itinerary/itinerary-ont#Itinerary> owl:Thing)
+
+# Class: <http://www.daml.org/2001/06/itinerary/itinerary-ont#Meal> (<http://www.daml.org/2001/06/itinerary/itinerary-ont#Meal>)
+
+SubClassOf(<http://www.daml.org/2001/06/itinerary/itinerary-ont#Meal> owl:Thing)
+
+# Class: <http://www.daml.org/2001/06/itinerary/itinerary-ont#RecordLocatorNumber> (<http://www.daml.org/2001/06/itinerary/itinerary-ont#RecordLocatorNumber>)
+
+SubClassOf(<http://www.daml.org/2001/06/itinerary/itinerary-ont#RecordLocatorNumber> owl:Thing)
+
+# Class: <http://www.daml.org/2001/06/itinerary/itinerary-ont#RentalCar> (<http://www.daml.org/2001/06/itinerary/itinerary-ont#RentalCar>)
+
+SubClassOf(<http://www.daml.org/2001/06/itinerary/itinerary-ont#RentalCar> owl:Thing)
+
+# Class: <http://www.daml.ri.cmu.edu/ont/AirportCodes.daml#AirportCode> (<http://www.daml.ri.cmu.edu/ont/AirportCodes.daml#AirportCode>)
+
+SubClassOf(<http://www.daml.ri.cmu.edu/ont/AirportCodes.daml#AirportCode> owl:Thing)
+
+# Class: xsd:timeDuration (xsd:timeDuration)
+
+SubClassOf(xsd:timeDuration owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass5 (owl:auxiliarDataRangeClass5)
+
+SubClassOf(owl:auxiliarDataRangeClass5 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass6 (owl:auxiliarDataRangeClass6)
+
+SubClassOf(owl:auxiliarDataRangeClass6 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass7 (owl:auxiliarDataRangeClass7)
+
+SubClassOf(owl:auxiliarDataRangeClass7 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass8 (owl:auxiliarDataRangeClass8)
+
+SubClassOf(owl:auxiliarDataRangeClass8 owl:Thing)
+
+
+)

@@ -1,0 +1,203 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#abstract>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#abstract-quality>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#abstract-region>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#accomplishment>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#achievement>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#amount-of-matter>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#arbitrary-sum>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#dependent-place>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#endurant>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#event>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#feature>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#non-physical-endurant>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#non-physical-object>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#particular>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#perdurant>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-endurant>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-object>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-quality>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-region>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#process>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#proposition>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#quale>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#quality>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#quality-space>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#region>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#relevant-part>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#set>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#space-region>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#spatial-location_q>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#spatio-temporal-particular>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#spatio-temporal-region>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#state>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#stative>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#temporal-location_q>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#temporal-quality>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#temporal-region>))
+Declaration(Class(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#time-interval>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#abstract> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#abstract>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#abstract> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#particular>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#abstract-quality> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#abstract-quality>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#abstract-quality> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#quality>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#abstract-region> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#abstract-region>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#abstract-region> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#region>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#accomplishment> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#accomplishment>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#accomplishment> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#event>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#achievement> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#achievement>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#achievement> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#event>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#amount-of-matter> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#amount-of-matter>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#amount-of-matter> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-endurant>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#arbitrary-sum> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#arbitrary-sum>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#arbitrary-sum> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#endurant>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#dependent-place> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#dependent-place>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#dependent-place> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#feature>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#endurant> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#endurant>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#endurant> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#spatio-temporal-particular>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#event> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#event>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#event> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#perdurant>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#feature> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#feature>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#feature> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-endurant>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#non-physical-endurant> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#non-physical-endurant>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#non-physical-endurant> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#endurant>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#non-physical-object> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#non-physical-object>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#non-physical-object> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#non-physical-endurant>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#particular> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#particular>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#particular> owl:Thing)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#perdurant> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#perdurant>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#perdurant> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#spatio-temporal-particular>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-endurant> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-endurant>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-endurant> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#endurant>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-object> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-object>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-object> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-endurant>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-quality> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-quality>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-quality> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#quality>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-region> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-region>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-region> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#region>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#process> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#process>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#process> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#stative>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#proposition> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#proposition>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#proposition> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#abstract>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#quale> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#quale>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#quale> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#region>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#quality> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#quality>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#quality> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#spatio-temporal-particular>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#quality-space> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#quality-space>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#quality-space> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#region>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#region> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#region>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#region> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#abstract>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#relevant-part> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#relevant-part>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#relevant-part> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#feature>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#set> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#set>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#set> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#abstract>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#space-region> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#space-region>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#space-region> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-region>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#spatial-location_q> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#spatial-location_q>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#spatial-location_q> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#physical-quality>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#spatio-temporal-particular> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#spatio-temporal-particular>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#spatio-temporal-particular> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#particular>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#spatio-temporal-region> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#spatio-temporal-region>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#spatio-temporal-region> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#space-region>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#state> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#state>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#state> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#stative>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#stative> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#stative>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#stative> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#perdurant>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#temporal-location_q> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#temporal-location_q>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#temporal-location_q> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#temporal-quality>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#temporal-quality> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#temporal-quality>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#temporal-quality> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#quality>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#temporal-region> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#temporal-region>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#temporal-region> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#region>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DOLCE-Lite#time-interval> (<http://www.loa-cnr.it/ontologies/DOLCE-Lite#time-interval>)
+
+SubClassOf(<http://www.loa-cnr.it/ontologies/DOLCE-Lite#time-interval> <http://www.loa-cnr.it/ontologies/DOLCE-Lite#temporal-region>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

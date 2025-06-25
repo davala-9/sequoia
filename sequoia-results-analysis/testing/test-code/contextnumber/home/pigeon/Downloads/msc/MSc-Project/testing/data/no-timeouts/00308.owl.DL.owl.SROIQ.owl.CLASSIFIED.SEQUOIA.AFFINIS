@@ -1,0 +1,58 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.w3.org/2000/10/annotation-ns#Annotation>))
+Declaration(Class(<http://www.w3.org/2000/10/annotationType#Advice>))
+Declaration(Class(<http://www.w3.org/2000/10/annotationType#Change>))
+Declaration(Class(<http://www.w3.org/2000/10/annotationType#Comment>))
+Declaration(Class(<http://www.w3.org/2000/10/annotationType#Example>))
+Declaration(Class(<http://www.w3.org/2000/10/annotationType#Explanation>))
+Declaration(Class(<http://www.w3.org/2000/10/annotationType#Question>))
+Declaration(Class(<http://www.w3.org/2000/10/annotationType#SeeAlso>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.w3.org/2000/10/annotation-ns#Annotation> (<http://www.w3.org/2000/10/annotation-ns#Annotation>)
+
+SubClassOf(<http://www.w3.org/2000/10/annotation-ns#Annotation> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/annotationType#Advice> (<http://www.w3.org/2000/10/annotationType#Advice>)
+
+SubClassOf(<http://www.w3.org/2000/10/annotationType#Advice> <http://www.w3.org/2000/10/annotation-ns#Annotation>)
+
+# Class: <http://www.w3.org/2000/10/annotationType#Change> (<http://www.w3.org/2000/10/annotationType#Change>)
+
+SubClassOf(<http://www.w3.org/2000/10/annotationType#Change> <http://www.w3.org/2000/10/annotation-ns#Annotation>)
+
+# Class: <http://www.w3.org/2000/10/annotationType#Comment> (<http://www.w3.org/2000/10/annotationType#Comment>)
+
+SubClassOf(<http://www.w3.org/2000/10/annotationType#Comment> <http://www.w3.org/2000/10/annotation-ns#Annotation>)
+
+# Class: <http://www.w3.org/2000/10/annotationType#Example> (<http://www.w3.org/2000/10/annotationType#Example>)
+
+SubClassOf(<http://www.w3.org/2000/10/annotationType#Example> <http://www.w3.org/2000/10/annotation-ns#Annotation>)
+
+# Class: <http://www.w3.org/2000/10/annotationType#Explanation> (<http://www.w3.org/2000/10/annotationType#Explanation>)
+
+SubClassOf(<http://www.w3.org/2000/10/annotationType#Explanation> <http://www.w3.org/2000/10/annotation-ns#Annotation>)
+
+# Class: <http://www.w3.org/2000/10/annotationType#Question> (<http://www.w3.org/2000/10/annotationType#Question>)
+
+SubClassOf(<http://www.w3.org/2000/10/annotationType#Question> <http://www.w3.org/2000/10/annotation-ns#Annotation>)
+
+# Class: <http://www.w3.org/2000/10/annotationType#SeeAlso> (<http://www.w3.org/2000/10/annotationType#SeeAlso>)
+
+SubClassOf(<http://www.w3.org/2000/10/annotationType#SeeAlso> <http://www.w3.org/2000/10/annotation-ns#Annotation>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

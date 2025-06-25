@@ -1,0 +1,208 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Communications>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Production>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Transportation>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#AgriculturalProductionFacility>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Antenna>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Building>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Buoy>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#CommunicationEquipment>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#CommunicationFacility>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Computer>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Dome>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#DopplerRadar>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Electricity>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#ElectricityEquipment>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Equipment>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Facility>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Farm>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Fishery>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#IndustrialProduct>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Infrastructure>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Instrument>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Internet>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#MeteorologicalFacility>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Meteostation>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Mine>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#MiningFacility>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#NavigationEquipment>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Phone_mainline>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Phone_mobile>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#PowerTransmissionFacility>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Product>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#ProductionFacility>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Radar>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Satellite>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Sensor>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Structure>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#TransportationEquipment>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#TransportationFacility>))
+############################
+#   Classes
+############################
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Communications> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Communications>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Communications> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Production> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Production>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Production> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Transportation> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Transportation>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Transportation> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#AgriculturalProductionFacility> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#AgriculturalProductionFacility>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#AgriculturalProductionFacility> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#ProductionFacility>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Antenna> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Antenna>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Antenna> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#CommunicationEquipment>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Building> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Building>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Building> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Structure>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Buoy> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Buoy>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Buoy> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#NavigationEquipment>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#CommunicationEquipment> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#CommunicationEquipment>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#CommunicationEquipment> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Equipment>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#CommunicationFacility> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#CommunicationFacility>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#CommunicationFacility> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Facility>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Computer> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Computer>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Computer> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Equipment>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Dome> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Dome>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Dome> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Equipment>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#DopplerRadar> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#DopplerRadar>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#DopplerRadar> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Radar>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Electricity> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Electricity>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Electricity> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#IndustrialProduct>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#ElectricityEquipment> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#ElectricityEquipment>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#ElectricityEquipment> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Equipment>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Equipment> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Equipment>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Equipment> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Infrastructure>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Facility> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Facility>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Facility> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Infrastructure>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Farm> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Farm>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Farm> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#AgriculturalProductionFacility>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Fishery> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Fishery>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Fishery> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#AgriculturalProductionFacility>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#IndustrialProduct> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#IndustrialProduct>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#IndustrialProduct> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Product>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Infrastructure> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Infrastructure>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Infrastructure> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Instrument> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Instrument>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Instrument> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Equipment>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Internet> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Internet>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Internet> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#CommunicationFacility>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#MeteorologicalFacility> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#MeteorologicalFacility>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#MeteorologicalFacility> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Facility>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Meteostation> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Meteostation>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Meteostation> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#MeteorologicalFacility>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Mine> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Mine>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Mine> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#MiningFacility>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#MiningFacility> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#MiningFacility>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#MiningFacility> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Facility>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#NavigationEquipment> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#NavigationEquipment>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#NavigationEquipment> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Equipment>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Phone_mainline> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Phone_mainline>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Phone_mainline> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#CommunicationEquipment>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Phone_mobile> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Phone_mobile>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Phone_mobile> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#CommunicationEquipment>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#PowerTransmissionFacility> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#PowerTransmissionFacility>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#PowerTransmissionFacility> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#TransportationFacility>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Product> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Product>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Product> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#ProductionFacility> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#ProductionFacility>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#ProductionFacility> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Facility>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Radar> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Radar>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Radar> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Equipment>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Satellite> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Satellite>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Satellite> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Equipment>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Sensor> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Sensor>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Sensor> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Instrument>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Structure> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Structure>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Structure> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Facility>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#TransportationEquipment> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#TransportationEquipment>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#TransportationEquipment> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Equipment>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#TransportationFacility> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#TransportationFacility>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#TransportationFacility> <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Facility>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

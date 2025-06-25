@@ -1,0 +1,234 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AdministrativeStaff>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Article>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AssistantProfessor>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AssociateProfessor>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Book>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Chair>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ClericalStaff>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#College>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ConferencePaper>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Dean>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Department>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Director>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#FullProfessor>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#GraduateCourse>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#GraduateStudent>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Institute>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#JournalArticle>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Lecturer>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Manual>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#PostDoc>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Program>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Research>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchAssistant>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchGroup>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Schedule>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Software>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Specification>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#SystemsStaff>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#TeachingAssistant>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#TechnicalReport>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#UndergraduateStudent>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#University>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#UnofficialPublication>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#VisitingProfessor>))
+Declaration(Class(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Work>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AdministrativeStaff> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AdministrativeStaff>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AdministrativeStaff> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Article> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Article>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Article> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AssistantProfessor> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AssistantProfessor>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AssistantProfessor> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AssociateProfessor> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AssociateProfessor>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AssociateProfessor> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Book> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Book>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Book> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Chair> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Chair>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Chair> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ClericalStaff> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ClericalStaff>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ClericalStaff> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AdministrativeStaff>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#College> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#College>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#College> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ConferencePaper> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ConferencePaper>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ConferencePaper> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Article>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Work>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Dean> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Dean>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Dean> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Department> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Department>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Department> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Director> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Director>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Director> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#FullProfessor> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#FullProfessor>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#FullProfessor> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#GraduateCourse> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#GraduateCourse>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#GraduateCourse> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Course>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#GraduateStudent> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#GraduateStudent>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#GraduateStudent> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Institute> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Institute>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Institute> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#JournalArticle> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#JournalArticle>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#JournalArticle> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Article>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Lecturer> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Lecturer>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Lecturer> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Manual> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Manual>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Manual> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization> owl:Thing)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person> owl:Thing)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#PostDoc> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#PostDoc>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#PostDoc> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Program> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Program>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Program> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication> owl:Thing)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Research> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Research>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Research> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Work>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchAssistant> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchAssistant>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchAssistant> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee>)
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchAssistant> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchGroup> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchGroup>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchGroup> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Schedule> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Schedule>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Schedule> owl:Thing)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Software> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Software>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Software> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Specification> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Specification>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Specification> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#SystemsStaff> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#SystemsStaff>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#SystemsStaff> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AdministrativeStaff>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#TeachingAssistant> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#TeachingAssistant>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#TeachingAssistant> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#TechnicalReport> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#TechnicalReport>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#TechnicalReport> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Article>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#UndergraduateStudent> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#UndergraduateStudent>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#UndergraduateStudent> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#University> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#University>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#University> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Organization>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#UnofficialPublication> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#UnofficialPublication>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#UnofficialPublication> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Publication>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#VisitingProfessor> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#VisitingProfessor>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#VisitingProfessor> <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor>)
+
+# Class: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Work> (<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Work>)
+
+SubClassOf(<http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Work> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

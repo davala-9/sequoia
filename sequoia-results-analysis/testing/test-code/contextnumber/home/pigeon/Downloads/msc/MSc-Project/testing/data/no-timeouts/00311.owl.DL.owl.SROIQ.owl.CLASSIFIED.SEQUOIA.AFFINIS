@@ -1,0 +1,83 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(rdfs:Property))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#Address>))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#ContactLocation>))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#Date>))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#LanguageCode>))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#Mailbox>))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#Person>))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#SocialEntity>))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#_EmailAddress>))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#_SubjectToChange>))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#_URI>))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#postalCode>))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#zip>))
+############################
+#   Classes
+############################
+
+# Class: rdfs:Property (rdfs:Property)
+
+SubClassOf(rdfs:Property owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#Address> (<http://www.w3.org/2000/10/swap/pim/contact#Address>)
+
+SubClassOf(<http://www.w3.org/2000/10/swap/pim/contact#Address> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#ContactLocation> (<http://www.w3.org/2000/10/swap/pim/contact#ContactLocation>)
+
+SubClassOf(<http://www.w3.org/2000/10/swap/pim/contact#ContactLocation> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#Date> (<http://www.w3.org/2000/10/swap/pim/contact#Date>)
+
+SubClassOf(<http://www.w3.org/2000/10/swap/pim/contact#Date> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#LanguageCode> (<http://www.w3.org/2000/10/swap/pim/contact#LanguageCode>)
+
+SubClassOf(<http://www.w3.org/2000/10/swap/pim/contact#LanguageCode> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#Mailbox> (<http://www.w3.org/2000/10/swap/pim/contact#Mailbox>)
+
+SubClassOf(<http://www.w3.org/2000/10/swap/pim/contact#Mailbox> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#Person> (<http://www.w3.org/2000/10/swap/pim/contact#Person>)
+
+SubClassOf(<http://www.w3.org/2000/10/swap/pim/contact#Person> <http://www.w3.org/2000/10/swap/pim/contact#SocialEntity>)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#SocialEntity> (<http://www.w3.org/2000/10/swap/pim/contact#SocialEntity>)
+
+SubClassOf(<http://www.w3.org/2000/10/swap/pim/contact#SocialEntity> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#_EmailAddress> (<http://www.w3.org/2000/10/swap/pim/contact#_EmailAddress>)
+
+SubClassOf(<http://www.w3.org/2000/10/swap/pim/contact#_EmailAddress> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#_SubjectToChange> (<http://www.w3.org/2000/10/swap/pim/contact#_SubjectToChange>)
+
+SubClassOf(<http://www.w3.org/2000/10/swap/pim/contact#_SubjectToChange> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#_URI> (<http://www.w3.org/2000/10/swap/pim/contact#_URI>)
+
+SubClassOf(<http://www.w3.org/2000/10/swap/pim/contact#_URI> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#postalCode> (<http://www.w3.org/2000/10/swap/pim/contact#postalCode>)
+
+SubClassOf(<http://www.w3.org/2000/10/swap/pim/contact#postalCode> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#zip> (<http://www.w3.org/2000/10/swap/pim/contact#zip>)
+
+SubClassOf(<http://www.w3.org/2000/10/swap/pim/contact#zip> <http://www.w3.org/2000/10/swap/pim/contact#postalCode>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

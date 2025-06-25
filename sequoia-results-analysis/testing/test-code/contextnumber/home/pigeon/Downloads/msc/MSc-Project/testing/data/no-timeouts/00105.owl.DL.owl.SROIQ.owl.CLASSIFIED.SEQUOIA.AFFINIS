@@ -1,0 +1,53 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/agent#Action>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/agent#ActionEffect>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/agent#Agent>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/agent#Fact>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/agent#StateCondition>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/agent#TargetObject>))
+Declaration(Class(rdf:Statement))
+############################
+#   Classes
+############################
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/agent#Action> (<http://pervasive.semanticweb.org/ont/2004/01/agent#Action>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/agent#Action> owl:Thing)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/agent#ActionEffect> (<http://pervasive.semanticweb.org/ont/2004/01/agent#ActionEffect>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/agent#ActionEffect> owl:Thing)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/agent#Agent> (<http://pervasive.semanticweb.org/ont/2004/01/agent#Agent>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/agent#Agent> owl:Thing)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/agent#Fact> (<http://pervasive.semanticweb.org/ont/2004/01/agent#Fact>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/agent#Fact> rdf:Statement)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/agent#StateCondition> (<http://pervasive.semanticweb.org/ont/2004/01/agent#StateCondition>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/agent#StateCondition> owl:Thing)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/agent#TargetObject> (<http://pervasive.semanticweb.org/ont/2004/01/agent#TargetObject>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/agent#TargetObject> owl:Thing)
+
+# Class: rdf:Statement (rdf:Statement)
+
+SubClassOf(rdf:Statement owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

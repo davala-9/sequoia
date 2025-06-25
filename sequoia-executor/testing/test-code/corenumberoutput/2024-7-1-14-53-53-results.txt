@@ -1,0 +1,17 @@
+
+/home/pigeon/Downloads/msc/MSc-Project/testing/data/oxfordcorpus-fixed-dl-SROIQ/00001.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/sequoia-chinensis-harness-assembly-0.1.0.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+/home/pigeon/Downloads/msc/MSc-Project/testing/data/oxfordcorpus-fixed-dl-SROIQ/00002.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/sequoia-chinensis-harness-assembly-0.1.0.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+/home/pigeon/Downloads/msc/MSc-Project/testing/data/oxfordcorpus-fixed-dl-SROIQ/00003.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/sequoia-chinensis-harness-assembly-0.1.0.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+/home/pigeon/Downloads/msc/MSc-Project/testing/data/oxfordcorpus-fixed-dl-SROIQ/00004.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/sequoia-chinensis-harness-assembly-0.1.0.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+/home/pigeon/Downloads/msc/MSc-Project/testing/data/oxfordcorpus-fixed-dl-SROIQ/00005.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/sequoia-chinensis-harness-assembly-0.1.0.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+/home/pigeon/Downloads/msc/MSc-Project/testing/data/oxfordcorpus-fixed-dl-SROIQ/00006.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/sequoia-chinensis-harness-assembly-0.1.0.jar,[SUCCESS] , --- , 349 ,  , 1119
+/home/pigeon/Downloads/msc/MSc-Project/testing/data/oxfordcorpus-fixed-dl-SROIQ/00007.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/sequoia-chinensis-harness-assembly-0.1.0.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+/home/pigeon/Downloads/msc/MSc-Project/testing/data/oxfordcorpus-fixed-dl-SROIQ/00008.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/sequoia-chinensis-harness-assembly-0.1.0.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+/home/pigeon/Downloads/msc/MSc-Project/testing/data/oxfordcorpus-fixed-dl-SROIQ/00009.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/sequoia-chinensis-harness-assembly-0.1.0.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+/home/pigeon/Downloads/msc/MSc-Project/testing/data/oxfordcorpus-fixed-dl-SROIQ/00010.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/sequoia-chinensis-harness-assembly-0.1.0.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+/home/pigeon/Downloads/msc/MSc-Project/testing/data/oxfordcorpus-fixed-dl-SROIQ/00011.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/sequoia-chinensis-harness-assembly-0.1.0.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+/home/pigeon/Downloads/msc/MSc-Project/testing/data/oxfordcorpus-fixed-dl-SROIQ/00012.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/sequoia-chinensis-harness-assembly-0.1.0.jar,[SUCCESS] , --- , 340 ,  , 95
+/home/pigeon/Downloads/msc/MSc-Project/testing/data/oxfordcorpus-fixed-dl-SROIQ/00013.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/sequoia-chinensis-harness-assembly-0.1.0.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+/home/pigeon/Downloads/msc/MSc-Project/testing/data/oxfordcorpus-fixed-dl-SROIQ/00014.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/sequoia-chinensis-harness-assembly-0.1.0.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+/home/pigeon/Downloads/msc/MSc-Project/testing/data/oxfordcorpus-fixed-dl-SROIQ/00015.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/sequoia-chinensis-harness-assembly-0.1.0.jar,[SUCCESS] , --- , 376 ,  , 38
+/home/pigeon/Downloads/msc/MSc-Project/testing/data/oxfordcorpus-fixed-dl-SROIQ/00016.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/sequoia-chinensis-harness-assembly-0.1.0.jar,[SUCCESS] , --- , TIMEOUT ,  , 0

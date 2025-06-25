@@ -1,0 +1,249 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#bioSource>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#biochemicalReaction>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#catalysis>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#chemicalStructure>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#complex>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#complexAssembly>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#confidence>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#control>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#conversion>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#dataSource>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#deltaGprimeO>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#dna>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#entity>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#evidence>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#experimentalForm>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#externalReferenceUtilityClass>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#interaction>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#kPrime>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#modulation>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#openControlledVocabulary>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#pathway>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#pathwayStep>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#physicalEntity>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#physicalEntityParticipant>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#physicalInteraction>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#protein>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#publicationXref>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#relationshipXref>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#rna>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#sequenceFeature>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#sequenceInterval>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#sequenceLocation>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#sequenceParticipant>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#sequenceSite>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#smallMolecule>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#transport>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#transportWithBiochemicalReaction>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#unificationXref>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#utilityClass>))
+Declaration(Class(<http://www.biopax.org/release/biopax-level2.owl#xref>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+Declaration(Class(owl:auxiliarDataRangeClass5))
+Declaration(Class(owl:auxiliarDataRangeClass6))
+Declaration(Class(owl:auxiliarDataRangeClass7))
+############################
+#   Classes
+############################
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#bioSource> (<http://www.biopax.org/release/biopax-level2.owl#bioSource>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#bioSource> <http://www.biopax.org/release/biopax-level2.owl#externalReferenceUtilityClass>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#biochemicalReaction> (<http://www.biopax.org/release/biopax-level2.owl#biochemicalReaction>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#biochemicalReaction> <http://www.biopax.org/release/biopax-level2.owl#conversion>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#catalysis> (<http://www.biopax.org/release/biopax-level2.owl#catalysis>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#catalysis> <http://www.biopax.org/release/biopax-level2.owl#control>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#chemicalStructure> (<http://www.biopax.org/release/biopax-level2.owl#chemicalStructure>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#chemicalStructure> <http://www.biopax.org/release/biopax-level2.owl#utilityClass>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#complex> (<http://www.biopax.org/release/biopax-level2.owl#complex>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#complex> <http://www.biopax.org/release/biopax-level2.owl#physicalEntity>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#complexAssembly> (<http://www.biopax.org/release/biopax-level2.owl#complexAssembly>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#complexAssembly> <http://www.biopax.org/release/biopax-level2.owl#conversion>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#confidence> (<http://www.biopax.org/release/biopax-level2.owl#confidence>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#confidence> <http://www.biopax.org/release/biopax-level2.owl#utilityClass>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#control> (<http://www.biopax.org/release/biopax-level2.owl#control>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#control> <http://www.biopax.org/release/biopax-level2.owl#physicalInteraction>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#conversion> (<http://www.biopax.org/release/biopax-level2.owl#conversion>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#conversion> <http://www.biopax.org/release/biopax-level2.owl#physicalInteraction>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#dataSource> (<http://www.biopax.org/release/biopax-level2.owl#dataSource>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#dataSource> <http://www.biopax.org/release/biopax-level2.owl#externalReferenceUtilityClass>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#deltaGprimeO> (<http://www.biopax.org/release/biopax-level2.owl#deltaGprimeO>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#deltaGprimeO> <http://www.biopax.org/release/biopax-level2.owl#utilityClass>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#dna> (<http://www.biopax.org/release/biopax-level2.owl#dna>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#dna> <http://www.biopax.org/release/biopax-level2.owl#physicalEntity>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#entity> (<http://www.biopax.org/release/biopax-level2.owl#entity>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#entity> owl:Thing)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#evidence> (<http://www.biopax.org/release/biopax-level2.owl#evidence>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#evidence> <http://www.biopax.org/release/biopax-level2.owl#utilityClass>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#experimentalForm> (<http://www.biopax.org/release/biopax-level2.owl#experimentalForm>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#experimentalForm> <http://www.biopax.org/release/biopax-level2.owl#utilityClass>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#externalReferenceUtilityClass> (<http://www.biopax.org/release/biopax-level2.owl#externalReferenceUtilityClass>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#externalReferenceUtilityClass> <http://www.biopax.org/release/biopax-level2.owl#utilityClass>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#interaction> (<http://www.biopax.org/release/biopax-level2.owl#interaction>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#interaction> <http://www.biopax.org/release/biopax-level2.owl#entity>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#kPrime> (<http://www.biopax.org/release/biopax-level2.owl#kPrime>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#kPrime> <http://www.biopax.org/release/biopax-level2.owl#utilityClass>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#modulation> (<http://www.biopax.org/release/biopax-level2.owl#modulation>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#modulation> <http://www.biopax.org/release/biopax-level2.owl#control>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#openControlledVocabulary> (<http://www.biopax.org/release/biopax-level2.owl#openControlledVocabulary>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#openControlledVocabulary> <http://www.biopax.org/release/biopax-level2.owl#externalReferenceUtilityClass>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#pathway> (<http://www.biopax.org/release/biopax-level2.owl#pathway>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#pathway> <http://www.biopax.org/release/biopax-level2.owl#entity>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#pathwayStep> (<http://www.biopax.org/release/biopax-level2.owl#pathwayStep>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#pathwayStep> <http://www.biopax.org/release/biopax-level2.owl#utilityClass>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#physicalEntity> (<http://www.biopax.org/release/biopax-level2.owl#physicalEntity>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#physicalEntity> <http://www.biopax.org/release/biopax-level2.owl#entity>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#physicalEntityParticipant> (<http://www.biopax.org/release/biopax-level2.owl#physicalEntityParticipant>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#physicalEntityParticipant> <http://www.biopax.org/release/biopax-level2.owl#utilityClass>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#physicalInteraction> (<http://www.biopax.org/release/biopax-level2.owl#physicalInteraction>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#physicalInteraction> <http://www.biopax.org/release/biopax-level2.owl#interaction>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#protein> (<http://www.biopax.org/release/biopax-level2.owl#protein>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#protein> <http://www.biopax.org/release/biopax-level2.owl#physicalEntity>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#publicationXref> (<http://www.biopax.org/release/biopax-level2.owl#publicationXref>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#publicationXref> <http://www.biopax.org/release/biopax-level2.owl#xref>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#relationshipXref> (<http://www.biopax.org/release/biopax-level2.owl#relationshipXref>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#relationshipXref> <http://www.biopax.org/release/biopax-level2.owl#xref>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#rna> (<http://www.biopax.org/release/biopax-level2.owl#rna>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#rna> <http://www.biopax.org/release/biopax-level2.owl#physicalEntity>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#sequenceFeature> (<http://www.biopax.org/release/biopax-level2.owl#sequenceFeature>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#sequenceFeature> <http://www.biopax.org/release/biopax-level2.owl#utilityClass>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#sequenceInterval> (<http://www.biopax.org/release/biopax-level2.owl#sequenceInterval>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#sequenceInterval> <http://www.biopax.org/release/biopax-level2.owl#sequenceLocation>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#sequenceLocation> (<http://www.biopax.org/release/biopax-level2.owl#sequenceLocation>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#sequenceLocation> <http://www.biopax.org/release/biopax-level2.owl#utilityClass>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#sequenceParticipant> (<http://www.biopax.org/release/biopax-level2.owl#sequenceParticipant>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#sequenceParticipant> <http://www.biopax.org/release/biopax-level2.owl#physicalEntityParticipant>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#sequenceSite> (<http://www.biopax.org/release/biopax-level2.owl#sequenceSite>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#sequenceSite> <http://www.biopax.org/release/biopax-level2.owl#sequenceLocation>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#smallMolecule> (<http://www.biopax.org/release/biopax-level2.owl#smallMolecule>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#smallMolecule> <http://www.biopax.org/release/biopax-level2.owl#physicalEntity>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#transport> (<http://www.biopax.org/release/biopax-level2.owl#transport>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#transport> <http://www.biopax.org/release/biopax-level2.owl#conversion>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#transportWithBiochemicalReaction> (<http://www.biopax.org/release/biopax-level2.owl#transportWithBiochemicalReaction>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#transportWithBiochemicalReaction> <http://www.biopax.org/release/biopax-level2.owl#biochemicalReaction>)
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#transportWithBiochemicalReaction> <http://www.biopax.org/release/biopax-level2.owl#transport>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#unificationXref> (<http://www.biopax.org/release/biopax-level2.owl#unificationXref>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#unificationXref> <http://www.biopax.org/release/biopax-level2.owl#xref>)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#utilityClass> (<http://www.biopax.org/release/biopax-level2.owl#utilityClass>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#utilityClass> owl:Thing)
+
+# Class: <http://www.biopax.org/release/biopax-level2.owl#xref> (<http://www.biopax.org/release/biopax-level2.owl#xref>)
+
+SubClassOf(<http://www.biopax.org/release/biopax-level2.owl#xref> <http://www.biopax.org/release/biopax-level2.owl#externalReferenceUtilityClass>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass5 (owl:auxiliarDataRangeClass5)
+
+SubClassOf(owl:auxiliarDataRangeClass5 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass6 (owl:auxiliarDataRangeClass6)
+
+SubClassOf(owl:auxiliarDataRangeClass6 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass7 (owl:auxiliarDataRangeClass7)
+
+SubClassOf(owl:auxiliarDataRangeClass7 owl:Thing)
+
+
+)

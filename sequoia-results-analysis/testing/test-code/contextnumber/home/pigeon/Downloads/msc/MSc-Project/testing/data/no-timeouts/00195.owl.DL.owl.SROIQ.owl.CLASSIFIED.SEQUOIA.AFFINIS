@@ -1,0 +1,486 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<drs:Atomic_formula>))
+Declaration(Class(<drs:Connective_formula>))
+Declaration(Class(<drs:Formula>))
+Declaration(Class(<drs:Function>))
+Declaration(Class(<drs:Literal>))
+Declaration(Class(<drs:Term>))
+Declaration(Class(<drs:Type>))
+Declaration(Class(<drs:Var>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error1>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Action-label_name>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Atomic_formula_bag>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Change>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Choice>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Constrained>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Domain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Expression>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Extended_domain_seq>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Float>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Fluent-test>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Foreach>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Forsome>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Function>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Function_bag>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#In-context>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Integer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Number>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Object>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#ObjectTerm>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Object_bag>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Parallel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Param>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Param_seq>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Physob>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Predicate>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Predicate_bag>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Require-key_bag>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Series>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#String>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Type_seq>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Value>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#When>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#?u>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#And>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Atomic_formula>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Atomic_formula_bag>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Binder>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Connective_formula>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Constant>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Constant_bag>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Exists>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Forall>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Formula>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Function>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Function_skeleton>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Functional_term>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Implies>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Literal>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Not>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Or>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Predicate>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Prop>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term_Bag>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term_bag>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term_seq>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Var>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Var_bag>))
+Declaration(Class(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Var_seq>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Class>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Datatype>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#DatatypeProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#List>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Nothing>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#ObjectProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Ontology>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Property>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Restriction>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#TransitiveProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#UniqueProperty>))
+Declaration(Class(rdf:Bag))
+Declaration(Class(rdf:Property))
+Declaration(Class(rdf:Seq))
+Declaration(Class(rdfs:Class))
+Declaration(Class(rdfs:Container))
+Declaration(Class(rdfs:ContainerMembershipProperty))
+Declaration(Class(rdfs:Datatype))
+Declaration(Class(rdfs:Literal))
+Declaration(Class(rdfs:Resource))
+Declaration(Class(<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>))
+Declaration(Class(owl:Class))
+Declaration(Class(owl:ObjectProperty))
+Declaration(Class(owl:Restriction))
+############################
+#   Classes
+############################
+
+# Class: <drs:Atomic_formula> (<drs:Atomic_formula>)
+
+SubClassOf(<drs:Atomic_formula> owl:Thing)
+
+# Class: <drs:Connective_formula> (<drs:Connective_formula>)
+
+SubClassOf(<drs:Connective_formula> owl:Thing)
+
+# Class: <drs:Formula> (<drs:Formula>)
+
+SubClassOf(<drs:Formula> owl:Thing)
+
+# Class: <drs:Function> (<drs:Function>)
+
+SubClassOf(<drs:Function> owl:Thing)
+
+# Class: <drs:Literal> (<drs:Literal>)
+
+SubClassOf(<drs:Literal> owl:Thing)
+
+# Class: <drs:Term> (<drs:Term>)
+
+SubClassOf(<drs:Term> owl:Thing)
+
+# Class: <drs:Type> (<drs:Type>)
+
+SubClassOf(<drs:Type> owl:Thing)
+
+# Class: <drs:Var> (<drs:Var>)
+
+SubClassOf(<drs:Var> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error1> (<http://org.semanticweb.owlapi/error#Error1>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error1> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Action-label_name> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Action-label_name>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Action-label_name> <drs:Literal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Atomic_formula_bag> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Atomic_formula_bag>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Atomic_formula_bag> rdf:Bag)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Change> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Change>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Change> <drs:Connective_formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Choice> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Choice>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Choice> <drs:Connective_formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Constrained> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Constrained>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Constrained> <drs:Connective_formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Domain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Domain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Domain> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Expression> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Expression>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Expression> <drs:Formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Extended_domain_seq> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Extended_domain_seq>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Extended_domain_seq> <http://www.daml.org/2001/03/daml+oil#List>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Float> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Float>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Float> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Number>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Fluent-test> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Fluent-test>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Fluent-test> <drs:Formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Foreach> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Foreach>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Foreach> <drs:Connective_formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Forsome> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Forsome>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Forsome> <drs:Connective_formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Function> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Function>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Function> <drs:Function>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Function_bag> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Function_bag>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Function_bag> rdf:Bag)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#In-context> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#In-context>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#In-context> <drs:Connective_formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Integer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Integer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Integer> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Number>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Number> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Number>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Number> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Object> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Object>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Object> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#ObjectTerm> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#ObjectTerm>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#ObjectTerm> <drs:Term>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Object_bag> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Object_bag>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Object_bag> rdf:Bag)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Parallel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Parallel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Parallel> <drs:Connective_formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Param> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Param>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Param> <drs:Var>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Param_seq> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Param_seq>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Param_seq> <http://www.daml.org/2001/03/daml+oil#List>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Physob> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Physob>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Physob> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Predicate> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Predicate>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Predicate> <drs:Function>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Predicate> <http://org.semanticweb.owlapi/error#Error1>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Predicate_bag> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Predicate_bag>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Predicate_bag> rdf:Bag)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Require-key_bag> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Require-key_bag>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Require-key_bag> rdf:Bag)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Series> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Series>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Series> <drs:Connective_formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#String> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#String>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#String> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Type_seq> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Type_seq>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Type_seq> <http://www.daml.org/2001/03/daml+oil#List>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Value> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Value>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Value> <drs:Var>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#When> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#When>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#When> <drs:Connective_formula>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#?u> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#?u>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#?u> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00195.owl#Object>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#And> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#And>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#And> <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Connective_formula>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Atomic_formula> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Atomic_formula>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Atomic_formula> owl:Thing)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Atomic_formula_bag> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Atomic_formula_bag>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Atomic_formula_bag> <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term_Bag>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Binder> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Binder>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Binder> <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Formula>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Connective_formula> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Connective_formula>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Connective_formula> <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Formula>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Constant> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Constant>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Constant> owl:Thing)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Constant_bag> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Constant_bag>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Constant_bag> rdf:Bag)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Exists> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Exists>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Exists> <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Binder>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Forall> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Forall>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Forall> <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Binder>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Formula> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Formula>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Formula> <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Function> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Function>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Function> owl:Thing)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Function_skeleton> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Function_skeleton>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Function_skeleton> <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Functional_term>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Functional_term> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Functional_term>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Functional_term> <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Implies> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Implies>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Implies> <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Connective_formula>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Literal> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Literal>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Literal> <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Not> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Not>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Not> <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Connective_formula>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Or> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Or>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Or> <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Connective_formula>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Predicate> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Predicate>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Predicate> <http://org.semanticweb.owlapi/error#Error1>)
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Predicate> <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Function>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Prop> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Prop>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Prop> owl:Thing)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term> owl:Thing)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term_Bag> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term_Bag>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term_Bag> owl:Thing)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term_bag> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term_bag>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term_bag> rdf:Bag)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term_seq> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term_seq>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term_seq> <http://www.daml.org/2001/03/daml+oil#List>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Var> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Var>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Var> <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Term>)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Var_bag> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Var_bag>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Var_bag> rdf:Bag)
+
+# Class: <http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Var_seq> (<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Var_seq>)
+
+SubClassOf(<http://www.cs.yale.edu/~dvm/daml/drsonto.daml#Var_seq> <http://www.daml.org/2001/03/daml+oil#List>)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Class> (<http://www.daml.org/2001/03/daml+oil#Class>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Class> rdfs:Class)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Datatype> (<http://www.daml.org/2001/03/daml+oil#Datatype>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Datatype> rdfs:Class)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#DatatypeProperty> (<http://www.daml.org/2001/03/daml+oil#DatatypeProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#DatatypeProperty> rdf:Property)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#List> (<http://www.daml.org/2001/03/daml+oil#List>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#List> rdf:Seq)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Nothing> (<http://www.daml.org/2001/03/daml+oil#Nothing>)
+
+EquivalentClasses(<http://www.daml.org/2001/03/daml+oil#Nothing> owl:Nothing)
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Nothing> owl:Nothing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#ObjectProperty> (<http://www.daml.org/2001/03/daml+oil#ObjectProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#ObjectProperty> rdf:Property)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Ontology> (<http://www.daml.org/2001/03/daml+oil#Ontology>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Ontology> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Property> (<http://www.daml.org/2001/03/daml+oil#Property>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Property> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Restriction> (<http://www.daml.org/2001/03/daml+oil#Restriction>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Restriction> owl:Class)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#TransitiveProperty> (<http://www.daml.org/2001/03/daml+oil#TransitiveProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#TransitiveProperty> owl:ObjectProperty)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#UnambiguousProperty> (<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty> owl:ObjectProperty)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#UniqueProperty> (<http://www.daml.org/2001/03/daml+oil#UniqueProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UniqueProperty> rdf:Property)
+
+# Class: rdf:Bag (rdf:Bag)
+
+SubClassOf(rdf:Bag owl:Thing)
+
+# Class: rdf:Property (rdf:Property)
+
+SubClassOf(rdf:Property owl:Thing)
+
+# Class: rdf:Seq (rdf:Seq)
+
+SubClassOf(rdf:Seq owl:Thing)
+
+# Class: rdfs:Class (rdfs:Class)
+
+SubClassOf(rdfs:Class rdfs:Resource)
+
+# Class: rdfs:Container (rdfs:Container)
+
+SubClassOf(rdfs:Container rdfs:Resource)
+
+# Class: rdfs:ContainerMembershipProperty (rdfs:ContainerMembershipProperty)
+
+SubClassOf(rdfs:ContainerMembershipProperty rdf:Property)
+
+# Class: rdfs:Datatype (rdfs:Datatype)
+
+SubClassOf(rdfs:Datatype rdfs:Class)
+
+# Class: rdfs:Literal (rdfs:Literal)
+
+SubClassOf(rdfs:Literal rdfs:Resource)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger> (<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>)
+
+SubClassOf(<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger> owl:Thing)
+
+# Class: owl:Class (owl:Class)
+
+SubClassOf(owl:Class owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:ObjectProperty (owl:ObjectProperty)
+
+SubClassOf(owl:ObjectProperty owl:Thing)
+
+# Class: owl:Restriction (owl:Restriction)
+
+SubClassOf(owl:Restriction owl:Thing)
+
+
+)

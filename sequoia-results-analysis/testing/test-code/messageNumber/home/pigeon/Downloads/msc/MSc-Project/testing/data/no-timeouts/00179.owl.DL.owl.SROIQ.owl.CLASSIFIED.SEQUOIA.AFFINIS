@@ -1,0 +1,88 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<daml:Literal>))
+Declaration(Class(<daml:Thing>))
+Declaration(Class(<http://daml.umbc.edu/acldamlcontent#Ontology>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Action>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Answeragent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#If>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Proposition>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Reply>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Rule>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#RuleQuery>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Ruleml>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Statement>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#True_Or_False>))
+Declaration(Class(<rdfs:Literal>))
+############################
+#   Classes
+############################
+
+# Class: <daml:Literal> (<daml:Literal>)
+
+SubClassOf(<daml:Literal> owl:Thing)
+
+# Class: <daml:Thing> (<daml:Thing>)
+
+SubClassOf(<daml:Thing> owl:Thing)
+
+# Class: <http://daml.umbc.edu/acldamlcontent#Ontology> (<http://daml.umbc.edu/acldamlcontent#Ontology>)
+
+SubClassOf(<http://daml.umbc.edu/acldamlcontent#Ontology> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Action> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Action>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Action> <daml:Thing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Answeragent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Answeragent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Answeragent> <daml:Thing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#If> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#If>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#If> <daml:Thing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Proposition> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Proposition>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Proposition> <daml:Thing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Reply> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Reply>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Reply> <daml:Thing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Rule> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Rule>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Rule> <daml:Thing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#RuleQuery> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#RuleQuery>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#RuleQuery> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Rule>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Ruleml> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Ruleml>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Ruleml> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Rule>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Statement> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Statement>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#Statement> <daml:Thing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#True_Or_False> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#True_Or_False>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00179.owl#True_Or_False> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: <rdfs:Literal> (<rdfs:Literal>)
+
+SubClassOf(<rdfs:Literal> owl:Thing)
+
+
+)

@@ -1,0 +1,601 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000078>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000102>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000225>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000409>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_117570>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_117571>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_207598>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2759>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_314146>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_314293>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_314295>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_32523>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_32524>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_32525>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_33154>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_33208>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_33213>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_33316>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_33511>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_376913>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_40674>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_6072>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7711>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7742>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7776>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_8287>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_89593>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9347>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9443>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9526>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9604>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9605>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000245>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0100026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000028>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000029>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000032>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000033>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000035>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000036>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000037>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#DbXref>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Definition>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Subset>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Synonym>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#SynonymType>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1#Entity>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#Continuant>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#Disposition>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#Function>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#Object>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#ObjectBoundary>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#Quality>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#Role>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#Site>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#FiatProcessPart>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#Occurrent>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#Process>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#ProcessAggregate>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#ProcessBoundary>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#ProcessualContext>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#ScatteredSpatiotemporalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#ScatteredTemporalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInstant>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInterval>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#TemporalInstant>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#TemporalInterval>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#TemporalRegion>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (<http://purl.obolibrary.org/obo/IAO_0000027>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000027> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (<http://purl.obolibrary.org/obo/IAO_0000030>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000078> (<http://purl.obolibrary.org/obo/IAO_0000078>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000102> (<http://purl.obolibrary.org/obo/IAO_0000102>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000102> <http://purl.obolibrary.org/obo/IAO_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000225> (<http://purl.obolibrary.org/obo/IAO_0000225>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000225> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000409> (<http://purl.obolibrary.org/obo/IAO_0000409>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000409> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_117570> (<http://purl.obolibrary.org/obo/NCBITaxon_117570>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_117570> <http://purl.obolibrary.org/obo/NCBITaxon_7776>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_117571> (<http://purl.obolibrary.org/obo/NCBITaxon_117571>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_117571> <http://purl.obolibrary.org/obo/NCBITaxon_117570>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_207598> (<http://purl.obolibrary.org/obo/NCBITaxon_207598>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_207598> <http://purl.obolibrary.org/obo/NCBITaxon_9604>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2759> (<http://purl.obolibrary.org/obo/NCBITaxon_2759>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2759> <http://purl.obolibrary.org/obo/OBI_0100026>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_314146> (<http://purl.obolibrary.org/obo/NCBITaxon_314146>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_314146> <http://purl.obolibrary.org/obo/NCBITaxon_9347>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_314293> (<http://purl.obolibrary.org/obo/NCBITaxon_314293>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_314293> <http://purl.obolibrary.org/obo/NCBITaxon_376913>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_314295> (<http://purl.obolibrary.org/obo/NCBITaxon_314295>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_314295> <http://purl.obolibrary.org/obo/NCBITaxon_9526>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_32523> (<http://purl.obolibrary.org/obo/NCBITaxon_32523>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_32523> <http://purl.obolibrary.org/obo/NCBITaxon_8287>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_32524> (<http://purl.obolibrary.org/obo/NCBITaxon_32524>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_32524> <http://purl.obolibrary.org/obo/NCBITaxon_32523>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_32525> (<http://purl.obolibrary.org/obo/NCBITaxon_32525>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_32525> <http://purl.obolibrary.org/obo/NCBITaxon_40674>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_33154> (<http://purl.obolibrary.org/obo/NCBITaxon_33154>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_33154> <http://purl.obolibrary.org/obo/NCBITaxon_2759>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_33208> (<http://purl.obolibrary.org/obo/NCBITaxon_33208>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_33208> <http://purl.obolibrary.org/obo/NCBITaxon_33154>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_33213> (<http://purl.obolibrary.org/obo/NCBITaxon_33213>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_33213> <http://purl.obolibrary.org/obo/NCBITaxon_6072>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_33316> (<http://purl.obolibrary.org/obo/NCBITaxon_33316>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_33316> <http://purl.obolibrary.org/obo/NCBITaxon_33213>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_33511> (<http://purl.obolibrary.org/obo/NCBITaxon_33511>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_33511> <http://purl.obolibrary.org/obo/NCBITaxon_33316>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_376913> (<http://purl.obolibrary.org/obo/NCBITaxon_376913>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_376913> <http://purl.obolibrary.org/obo/NCBITaxon_9443>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_40674> (<http://purl.obolibrary.org/obo/NCBITaxon_40674>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_40674> <http://purl.obolibrary.org/obo/NCBITaxon_32524>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_6072> (<http://purl.obolibrary.org/obo/NCBITaxon_6072>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_6072> <http://purl.obolibrary.org/obo/NCBITaxon_33208>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_7711> (<http://purl.obolibrary.org/obo/NCBITaxon_7711>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_7711> <http://purl.obolibrary.org/obo/NCBITaxon_33511>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_7742> (<http://purl.obolibrary.org/obo/NCBITaxon_7742>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_7742> <http://purl.obolibrary.org/obo/NCBITaxon_89593>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_7776> (<http://purl.obolibrary.org/obo/NCBITaxon_7776>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_7776> <http://purl.obolibrary.org/obo/NCBITaxon_7742>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_8287> (<http://purl.obolibrary.org/obo/NCBITaxon_8287>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_8287> <http://purl.obolibrary.org/obo/NCBITaxon_117571>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_89593> (<http://purl.obolibrary.org/obo/NCBITaxon_89593>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_89593> <http://purl.obolibrary.org/obo/NCBITaxon_7711>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9347> (<http://purl.obolibrary.org/obo/NCBITaxon_9347>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9347> <http://purl.obolibrary.org/obo/NCBITaxon_32525>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9443> (<http://purl.obolibrary.org/obo/NCBITaxon_9443>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9443> <http://purl.obolibrary.org/obo/NCBITaxon_314146>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9526> (<http://purl.obolibrary.org/obo/NCBITaxon_9526>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9526> <http://purl.obolibrary.org/obo/NCBITaxon_314293>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9604> (<http://purl.obolibrary.org/obo/NCBITaxon_9604>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9604> <http://purl.obolibrary.org/obo/NCBITaxon_314295>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9605> (<http://purl.obolibrary.org/obo/NCBITaxon_9605>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9605> <http://purl.obolibrary.org/obo/NCBITaxon_207598>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (<http://purl.obolibrary.org/obo/NCBITaxon_9606>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/NCBITaxon_9605>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000245> (<http://purl.obolibrary.org/obo/OBI_0000245>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000245> <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0100026> (<http://purl.obolibrary.org/obo/OBI_0100026>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0100026> <http://www.ifomis.org/bfo/1.1/snap#Object>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000001> (<http://purl.obolibrary.org/obo/OMRSE_00000001>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000001> <http://purl.obolibrary.org/obo/OMRSE_00000026>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000002> (<http://purl.obolibrary.org/obo/OMRSE_00000002>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000002> <http://purl.obolibrary.org/obo/OMRSE_00000024>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000003> (<http://purl.obolibrary.org/obo/OMRSE_00000003>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000003> <http://purl.obolibrary.org/obo/OMRSE_00000002>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000004> (<http://purl.obolibrary.org/obo/OMRSE_00000004>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000004> <http://purl.obolibrary.org/obo/OMRSE_00000002>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000005> (<http://purl.obolibrary.org/obo/OMRSE_00000005>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000005> <http://purl.obolibrary.org/obo/OMRSE_00000004>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000006> (<http://purl.obolibrary.org/obo/OMRSE_00000006>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000006> <http://purl.obolibrary.org/obo/OMRSE_00000002>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000007> (<http://purl.obolibrary.org/obo/OMRSE_00000007>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000007> <http://purl.obolibrary.org/obo/OMRSE_00000024>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000008> (<http://purl.obolibrary.org/obo/OMRSE_00000008>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000008> <http://purl.obolibrary.org/obo/OMRSE_00000007>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000009> (<http://purl.obolibrary.org/obo/OMRSE_00000009>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000009> <http://purl.obolibrary.org/obo/OMRSE_00000007>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000010> (<http://purl.obolibrary.org/obo/OMRSE_00000010>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000010> <http://purl.obolibrary.org/obo/OMRSE_00000024>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000011> (<http://purl.obolibrary.org/obo/OMRSE_00000011>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000011> <http://purl.obolibrary.org/obo/OMRSE_00000010>)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000011> <http://purl.obolibrary.org/obo/OMRSE_00000026>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000012> (<http://purl.obolibrary.org/obo/OMRSE_00000012>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000012> <http://purl.obolibrary.org/obo/OMRSE_00000010>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000013> (<http://purl.obolibrary.org/obo/OMRSE_00000013>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000013> <http://purl.obolibrary.org/obo/OMRSE_00000012>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000014> (<http://purl.obolibrary.org/obo/OMRSE_00000014>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000014> <http://purl.obolibrary.org/obo/OMRSE_00000012>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000015> (<http://purl.obolibrary.org/obo/OMRSE_00000015>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000015> <http://purl.obolibrary.org/obo/OMRSE_00000027>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000016> (<http://purl.obolibrary.org/obo/OMRSE_00000016>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000016> <http://purl.obolibrary.org/obo/OMRSE_00000001>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000017> (<http://purl.obolibrary.org/obo/OMRSE_00000017>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000017> <http://purl.obolibrary.org/obo/OMRSE_00000015>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000018> (<http://purl.obolibrary.org/obo/OMRSE_00000018>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000018> <http://purl.obolibrary.org/obo/OMRSE_00000012>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000019> (<http://purl.obolibrary.org/obo/OMRSE_00000019>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000019> <http://purl.obolibrary.org/obo/OMRSE_00000015>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000022> (<http://purl.obolibrary.org/obo/OMRSE_00000022>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000022> <http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000023> (<http://purl.obolibrary.org/obo/OMRSE_00000023>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000023> <http://purl.obolibrary.org/obo/OMRSE_00000022>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000024> (<http://purl.obolibrary.org/obo/OMRSE_00000024>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000024> <http://www.ifomis.org/bfo/1.1/snap#Role>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000025> (<http://purl.obolibrary.org/obo/OMRSE_00000025>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000025> <http://purl.obolibrary.org/obo/OMRSE_00000024>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000026> (<http://purl.obolibrary.org/obo/OMRSE_00000026>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000026> <http://purl.obolibrary.org/obo/OMRSE_00000024>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000027> (<http://purl.obolibrary.org/obo/OMRSE_00000027>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000027> <http://purl.obolibrary.org/obo/OMRSE_00000025>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000028> (<http://purl.obolibrary.org/obo/OMRSE_00000028>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000028> <http://purl.obolibrary.org/obo/OBI_0000245>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000029> (<http://purl.obolibrary.org/obo/OMRSE_00000029>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000029> <http://purl.obolibrary.org/obo/OMRSE_00000028>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000030> (<http://purl.obolibrary.org/obo/OMRSE_00000030>)
+
+EquivalentClasses(<http://purl.obolibrary.org/obo/OMRSE_00000030> <http://purl.obolibrary.org/obo/OMRSE_00000031>)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000030> <http://purl.obolibrary.org/obo/OMRSE_00000028>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000031> (<http://purl.obolibrary.org/obo/OMRSE_00000031>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000031> <http://purl.obolibrary.org/obo/OMRSE_00000028>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000032> (<http://purl.obolibrary.org/obo/OMRSE_00000032>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000032> <http://purl.obolibrary.org/obo/OMRSE_00000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000032> <http://purl.obolibrary.org/obo/OMRSE_00000031>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000033> (<http://purl.obolibrary.org/obo/OMRSE_00000033>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000033> <http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000034> (<http://purl.obolibrary.org/obo/OMRSE_00000034>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000034> <http://purl.obolibrary.org/obo/OMRSE_00000035>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000035> (<http://purl.obolibrary.org/obo/OMRSE_00000035>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000035> <http://purl.obolibrary.org/obo/OMRSE_00000033>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000036> (<http://purl.obolibrary.org/obo/OMRSE_00000036>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000036> <http://purl.obolibrary.org/obo/OMRSE_00000037>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000037> (<http://purl.obolibrary.org/obo/OMRSE_00000037>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000037> <http://purl.obolibrary.org/obo/OMRSE_00000035>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#DbXref> (<http://www.geneontology.org/formats/oboInOwl#DbXref>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Definition> (<http://www.geneontology.org/formats/oboInOwl#Definition>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Subset> (<http://www.geneontology.org/formats/oboInOwl#Subset>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Subset> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Synonym> (<http://www.geneontology.org/formats/oboInOwl#Synonym>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#SynonymType> (<http://www.geneontology.org/formats/oboInOwl#SynonymType>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#SynonymType> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.ifomis.org/bfo/1.1#Entity> (<http://www.ifomis.org/bfo/1.1#Entity>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1#Entity> owl:Thing)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#Continuant> (<http://www.ifomis.org/bfo/1.1/snap#Continuant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.ifomis.org/bfo/1.1#Entity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> (<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.ifomis.org/bfo/1.1/snap#Continuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#Disposition> (<http://www.ifomis.org/bfo/1.1/snap#Disposition>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#Disposition> <http://www.ifomis.org/bfo/1.1/snap#RealizableEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart> (<http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart> <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#Function> (<http://www.ifomis.org/bfo/1.1/snap#Function>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#Function> <http://www.ifomis.org/bfo/1.1/snap#RealizableEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> (<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> <http://www.ifomis.org/bfo/1.1/snap#DependentContinuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant> (<http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant> <http://www.ifomis.org/bfo/1.1/snap#Continuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> (<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> <http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#Object> (<http://www.ifomis.org/bfo/1.1/snap#Object>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#Object> <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate> (<http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate> <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#ObjectBoundary> (<http://www.ifomis.org/bfo/1.1/snap#ObjectBoundary>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#ObjectBoundary> <http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion> (<http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion> <http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#Quality> (<http://www.ifomis.org/bfo/1.1/snap#Quality>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#Quality> <http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> (<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> <http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#Role> (<http://www.ifomis.org/bfo/1.1/snap#Role>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#Role> <http://www.ifomis.org/bfo/1.1/snap#RealizableEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#Site> (<http://www.ifomis.org/bfo/1.1/snap#Site>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#Site> <http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#SpatialRegion> (<http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#SpatialRegion> <http://www.ifomis.org/bfo/1.1/snap#Continuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> (<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> <http://www.ifomis.org/bfo/1.1/snap#DependentContinuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion> (<http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion> <http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion> (<http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion> <http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion> (<http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion> <http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion> (<http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion> <http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion> (<http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion> <http://www.ifomis.org/bfo/1.1/span#TemporalRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#FiatProcessPart> (<http://www.ifomis.org/bfo/1.1/span#FiatProcessPart>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#FiatProcessPart> <http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#Occurrent> (<http://www.ifomis.org/bfo/1.1/span#Occurrent>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#Occurrent> <http://www.ifomis.org/bfo/1.1#Entity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#Process> (<http://www.ifomis.org/bfo/1.1/span#Process>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#Process> <http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#ProcessAggregate> (<http://www.ifomis.org/bfo/1.1/span#ProcessAggregate>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#ProcessAggregate> <http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#ProcessBoundary> (<http://www.ifomis.org/bfo/1.1/span#ProcessBoundary>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#ProcessBoundary> <http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#ProcessualContext> (<http://www.ifomis.org/bfo/1.1/span#ProcessualContext>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#ProcessualContext> <http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#ProcessualEntity> (<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity> <http://www.ifomis.org/bfo/1.1/span#Occurrent>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#ScatteredSpatiotemporalRegion> (<http://www.ifomis.org/bfo/1.1/span#ScatteredSpatiotemporalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#ScatteredSpatiotemporalRegion> <http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#ScatteredTemporalRegion> (<http://www.ifomis.org/bfo/1.1/span#ScatteredTemporalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#ScatteredTemporalRegion> <http://www.ifomis.org/bfo/1.1/span#TemporalRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInstant> (<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInstant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInstant> <http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInterval> (<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInterval>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInterval> <http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion> (<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion> <http://www.ifomis.org/bfo/1.1/span#Occurrent>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#TemporalInstant> (<http://www.ifomis.org/bfo/1.1/span#TemporalInstant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#TemporalInstant> <http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#TemporalInterval> (<http://www.ifomis.org/bfo/1.1/span#TemporalInterval>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#TemporalInterval> <http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#TemporalRegion> (<http://www.ifomis.org/bfo/1.1/span#TemporalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#TemporalRegion> <http://www.ifomis.org/bfo/1.1/span#Occurrent>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

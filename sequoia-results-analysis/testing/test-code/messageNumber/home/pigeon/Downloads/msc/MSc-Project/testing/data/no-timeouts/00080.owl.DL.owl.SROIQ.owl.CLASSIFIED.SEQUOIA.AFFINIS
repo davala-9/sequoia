@@ -1,0 +1,48 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#AccountingUnit>))
+Declaration(Class(<http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#CatalogingUnit>))
+Declaration(Class(<http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#HydrologicUnit>))
+Declaration(Class(<http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#Region>))
+Declaration(Class(<http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#SubRegion>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+############################
+#   Classes
+############################
+
+# Class: <http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#AccountingUnit> (<http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#AccountingUnit>)
+
+SubClassOf(<http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#AccountingUnit> <http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#HydrologicUnit>)
+
+# Class: <http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#CatalogingUnit> (<http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#CatalogingUnit>)
+
+SubClassOf(<http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#CatalogingUnit> <http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#HydrologicUnit>)
+
+# Class: <http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#HydrologicUnit> (<http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#HydrologicUnit>)
+
+SubClassOf(<http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#HydrologicUnit> owl:Thing)
+
+# Class: <http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#Region> (<http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#Region>)
+
+SubClassOf(<http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#Region> <http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#HydrologicUnit>)
+
+# Class: <http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#SubRegion> (<http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#SubRegion>)
+
+SubClassOf(<http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#SubRegion> <http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu#HydrologicUnit>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+
+)

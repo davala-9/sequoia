@@ -1,0 +1,98 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.org/obo/owl/CARO#CARO_0000000>))
+Declaration(Class(<http://purl.org/obo/owl/CARO#CARO_0000004>))
+Declaration(Class(<http://purl.org/obo/owl/CARO#CARO_0000007>))
+Declaration(Class(<http://purl.org/obo/owl/CARO#CARO_0000011>))
+Declaration(Class(<http://purl.org/obo/owl/CARO#CARO_0000012>))
+Declaration(Class(<http://purl.org/obo/owl/CARO#CARO_0000013>))
+Declaration(Class(<http://purl.org/obo/owl/CARO#CARO_0000014>))
+Declaration(Class(<http://purl.org/obo/owl/CARO#CARO_0000032>))
+Declaration(Class(<http://purl.org/obo/owl/CARO#CARO_0000041>))
+Declaration(Class(<http://purl.org/obo/owl/CARO#CARO_0000054>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#DbXref>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.0/snap#FiatObjectPart>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.0/snap#IndependentContinuant>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.0/snap#Object>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.0/snap#ObjectAggregate>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.0/snap#Site>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/obo/owl/CARO#CARO_0000000> (<http://purl.org/obo/owl/CARO#CARO_0000000>)
+
+SubClassOf(<http://purl.org/obo/owl/CARO#CARO_0000000> <http://www.ifomis.org/bfo/1.0/snap#IndependentContinuant>)
+
+# Class: <http://purl.org/obo/owl/CARO#CARO_0000004> (<http://purl.org/obo/owl/CARO#CARO_0000004>)
+
+SubClassOf(<http://purl.org/obo/owl/CARO#CARO_0000004> <http://www.ifomis.org/bfo/1.0/snap#FiatObjectPart>)
+
+# Class: <http://purl.org/obo/owl/CARO#CARO_0000007> (<http://purl.org/obo/owl/CARO#CARO_0000007>)
+
+SubClassOf(<http://purl.org/obo/owl/CARO#CARO_0000007> <http://www.ifomis.org/bfo/1.0/snap#Site>)
+
+# Class: <http://purl.org/obo/owl/CARO#CARO_0000011> (<http://purl.org/obo/owl/CARO#CARO_0000011>)
+
+SubClassOf(<http://purl.org/obo/owl/CARO#CARO_0000011> <http://www.ifomis.org/bfo/1.0/snap#ObjectAggregate>)
+
+# Class: <http://purl.org/obo/owl/CARO#CARO_0000012> (<http://purl.org/obo/owl/CARO#CARO_0000012>)
+
+SubClassOf(<http://purl.org/obo/owl/CARO#CARO_0000012> <http://www.ifomis.org/bfo/1.0/snap#Object>)
+
+# Class: <http://purl.org/obo/owl/CARO#CARO_0000013> (<http://purl.org/obo/owl/CARO#CARO_0000013>)
+
+SubClassOf(<http://purl.org/obo/owl/CARO#CARO_0000013> <http://www.ifomis.org/bfo/1.0/snap#Object>)
+
+# Class: <http://purl.org/obo/owl/CARO#CARO_0000014> (<http://purl.org/obo/owl/CARO#CARO_0000014>)
+
+SubClassOf(<http://purl.org/obo/owl/CARO#CARO_0000014> <http://www.ifomis.org/bfo/1.0/snap#Object>)
+
+# Class: <http://purl.org/obo/owl/CARO#CARO_0000032> (<http://purl.org/obo/owl/CARO#CARO_0000032>)
+
+SubClassOf(<http://purl.org/obo/owl/CARO#CARO_0000032> <http://www.ifomis.org/bfo/1.0/snap#FiatObjectPart>)
+
+# Class: <http://purl.org/obo/owl/CARO#CARO_0000041> (<http://purl.org/obo/owl/CARO#CARO_0000041>)
+
+SubClassOf(<http://purl.org/obo/owl/CARO#CARO_0000041> <http://www.ifomis.org/bfo/1.0/snap#ObjectAggregate>)
+
+# Class: <http://purl.org/obo/owl/CARO#CARO_0000054> (<http://purl.org/obo/owl/CARO#CARO_0000054>)
+
+SubClassOf(<http://purl.org/obo/owl/CARO#CARO_0000054> <http://www.ifomis.org/bfo/1.0/snap#ObjectAggregate>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#DbXref> (<http://www.geneontology.org/formats/oboInOwl#DbXref>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#DbXref> owl:Thing)
+
+# Class: <http://www.ifomis.org/bfo/1.0/snap#FiatObjectPart> (<http://www.ifomis.org/bfo/1.0/snap#FiatObjectPart>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.0/snap#FiatObjectPart> owl:Thing)
+
+# Class: <http://www.ifomis.org/bfo/1.0/snap#IndependentContinuant> (<http://www.ifomis.org/bfo/1.0/snap#IndependentContinuant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.0/snap#IndependentContinuant> owl:Thing)
+
+# Class: <http://www.ifomis.org/bfo/1.0/snap#Object> (<http://www.ifomis.org/bfo/1.0/snap#Object>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.0/snap#Object> owl:Thing)
+
+# Class: <http://www.ifomis.org/bfo/1.0/snap#ObjectAggregate> (<http://www.ifomis.org/bfo/1.0/snap#ObjectAggregate>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.0/snap#ObjectAggregate> owl:Thing)
+
+# Class: <http://www.ifomis.org/bfo/1.0/snap#Site> (<http://www.ifomis.org/bfo/1.0/snap#Site>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.0/snap#Site> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

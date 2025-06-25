@@ -1,0 +1,313 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ale>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Association>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Award>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Barley>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Beer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Bitter>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Black>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Bock>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#BottomFermentedBeer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Brewery>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#BrownAle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Caramel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Carapils>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Cascade>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Chinook>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Chocolate>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#DryStout>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Festival>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Galena>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Grain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hallertau>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hops>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#ImperialStout>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#IndiaPaleAle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ingredient>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#KentGoldings>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Lager>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Malt>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Microbrewery>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Mild>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#MountHood>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Munich>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Organization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Pale>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#PaleAle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Perle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Pilsner>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Porter>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Region>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Saaz>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#ScotchAle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Stout>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#SweetStout>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Tettnang>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#TopFermentedBeer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Town>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Water>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Wheat>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#White>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Willamette>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Yeast>))
+Declaration(Class(<http://www.purl.org/net/ontology/beer#Ale>))
+Declaration(Class(<http://www.purl.org/net/ontology/beer#Bock>))
+Declaration(Class(<http://www.purl.org/net/ontology/beer#Brewery>))
+Declaration(Class(<http://www.purl.org/net/ontology/beer#Lager>))
+Declaration(Class(<http://www.purl.org/net/ontology/beer#Pilsner>))
+Declaration(Class(<http://www.purl.org/net/ontology/beer#Town>))
+Declaration(Class(<http://www.purl.org/net/ontology/beer#White>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+############################
+#   Classes
+############################
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ale> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ale>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ale> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#TopFermentedBeer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Association> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Association>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Association> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Award> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Award>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Award> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Barley> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Barley>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Barley> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Grain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Beer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Beer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Beer> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Bitter> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Bitter>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Bitter> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ale>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Black> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Black>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Black> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Malt>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Bock> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Bock>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Bock> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#BottomFermentedBeer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#BottomFermentedBeer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#BottomFermentedBeer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#BottomFermentedBeer> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Beer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Brewery> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Brewery>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Brewery> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#BrownAle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#BrownAle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#BrownAle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ale>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Caramel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Caramel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Caramel> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Malt>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Carapils> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Carapils>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Carapils> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Malt>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Cascade> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Cascade>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Cascade> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hops>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Chinook> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Chinook>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Chinook> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hops>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Chocolate> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Chocolate>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Chocolate> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Malt>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#DryStout> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#DryStout>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#DryStout> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Stout>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Festival> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Festival>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Festival> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Galena> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Galena>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Galena> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hops>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Grain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Grain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Grain> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ingredient>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hallertau> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hallertau>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hallertau> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hops>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hops> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hops>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hops> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ingredient>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#ImperialStout> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#ImperialStout>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#ImperialStout> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Stout>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#IndiaPaleAle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#IndiaPaleAle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#IndiaPaleAle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ale>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ingredient> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ingredient>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ingredient> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#KentGoldings> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#KentGoldings>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#KentGoldings> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hops>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Lager> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Lager>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Lager> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#BottomFermentedBeer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Malt> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Malt>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Malt> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ingredient>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Microbrewery> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Microbrewery>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Microbrewery> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Brewery>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Mild> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Mild>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Mild> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ale>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#MountHood> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#MountHood>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#MountHood> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hops>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Munich> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Munich>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Munich> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Malt>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Organization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Organization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Organization> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Pale> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Pale>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Pale> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Malt>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#PaleAle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#PaleAle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#PaleAle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ale>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Perle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Perle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Perle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hops>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Pilsner> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Pilsner>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Pilsner> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#BottomFermentedBeer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Porter> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Porter>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Porter> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#TopFermentedBeer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Region> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Region>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Region> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Saaz> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Saaz>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Saaz> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hops>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#ScotchAle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#ScotchAle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#ScotchAle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ale>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Stout> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Stout>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Stout> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Porter>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#SweetStout> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#SweetStout>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#SweetStout> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Stout>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Tettnang> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Tettnang>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Tettnang> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hops>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#TopFermentedBeer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#TopFermentedBeer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#TopFermentedBeer> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Beer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Town> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Town>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Town> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Region>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Water> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Water>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Water> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ingredient>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Wheat> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Wheat>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Wheat> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Grain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#White> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#White>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#White> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#TopFermentedBeer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Willamette> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Willamette>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Willamette> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Hops>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Yeast> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Yeast>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Yeast> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00297.owl#Ingredient>)
+
+# Class: <http://www.purl.org/net/ontology/beer#Ale> (<http://www.purl.org/net/ontology/beer#Ale>)
+
+SubClassOf(<http://www.purl.org/net/ontology/beer#Ale> owl:Thing)
+
+# Class: <http://www.purl.org/net/ontology/beer#Bock> (<http://www.purl.org/net/ontology/beer#Bock>)
+
+SubClassOf(<http://www.purl.org/net/ontology/beer#Bock> owl:Thing)
+
+# Class: <http://www.purl.org/net/ontology/beer#Brewery> (<http://www.purl.org/net/ontology/beer#Brewery>)
+
+SubClassOf(<http://www.purl.org/net/ontology/beer#Brewery> owl:Thing)
+
+# Class: <http://www.purl.org/net/ontology/beer#Lager> (<http://www.purl.org/net/ontology/beer#Lager>)
+
+SubClassOf(<http://www.purl.org/net/ontology/beer#Lager> owl:Thing)
+
+# Class: <http://www.purl.org/net/ontology/beer#Pilsner> (<http://www.purl.org/net/ontology/beer#Pilsner>)
+
+SubClassOf(<http://www.purl.org/net/ontology/beer#Pilsner> owl:Thing)
+
+# Class: <http://www.purl.org/net/ontology/beer#Town> (<http://www.purl.org/net/ontology/beer#Town>)
+
+SubClassOf(<http://www.purl.org/net/ontology/beer#Town> owl:Thing)
+
+# Class: <http://www.purl.org/net/ontology/beer#White> (<http://www.purl.org/net/ontology/beer#White>)
+
+SubClassOf(<http://www.purl.org/net/ontology/beer#White> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+
+)

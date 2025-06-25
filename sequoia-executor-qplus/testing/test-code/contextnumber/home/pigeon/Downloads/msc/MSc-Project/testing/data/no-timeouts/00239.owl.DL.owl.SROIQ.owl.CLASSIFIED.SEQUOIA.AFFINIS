@@ -1,0 +1,243 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Ontology>))
+Declaration(Class(<http://www.daml.org/2001/09/countries/country-ont#Country>))
+Declaration(Class(<http://www.daml.org/2001/09/countries/fips-10-4-ont#Country>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#AdministrativeDivision>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#AgeBreakdown>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#AgricultureProduct>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#AirportBreakdown>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#Border>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#Breakdown>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#CapitalCity>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#Commodity>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#CommodityPercent>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#CountBreakdown>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#CountryPercent>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#ElevationExtreme>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#EnvironmentalAgreement>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#EthnicGroup>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#EthnicGroupPercent>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#GovernmentType>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#Industry>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#InternationalOrganization>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#Language>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#LanguagePercent>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#LatLon>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#NaturalResource>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#Occupation>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#OccupationPercent>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#PercentBreakdown>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#PipelineDistance>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#PipelineType>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#Port>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#RadioBand>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#RadioBandBreakdown>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#Religion>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#ReligionPercent>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#SexRatioBreakdown>))
+Declaration(Class(<http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject>))
+Declaration(Class(<http://www.w3.org/2000/10/XMLSchema#string>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+Declaration(Class(owl:auxiliarDataRangeClass5))
+Declaration(Class(owl:auxiliarDataRangeClass6))
+Declaration(Class(owl:auxiliarDataRangeClass7))
+Declaration(Class(owl:auxiliarDataRangeClass8))
+############################
+#   Classes
+############################
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Ontology> (<http://www.daml.org/2001/03/daml+oil#Ontology>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Ontology> owl:Thing)
+
+# Class: <http://www.daml.org/2001/09/countries/country-ont#Country> (<http://www.daml.org/2001/09/countries/country-ont#Country>)
+
+SubClassOf(<http://www.daml.org/2001/09/countries/country-ont#Country> owl:Thing)
+
+# Class: <http://www.daml.org/2001/09/countries/fips-10-4-ont#Country> (<http://www.daml.org/2001/09/countries/fips-10-4-ont#Country>)
+
+SubClassOf(<http://www.daml.org/2001/09/countries/fips-10-4-ont#Country> <http://www.daml.org/2001/09/countries/country-ont#Country>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#AdministrativeDivision> (<http://www.daml.org/2003/09/factbook/factbook-ont#AdministrativeDivision>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#AdministrativeDivision> owl:Thing)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#AgeBreakdown> (<http://www.daml.org/2003/09/factbook/factbook-ont#AgeBreakdown>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#AgeBreakdown> <http://www.daml.org/2003/09/factbook/factbook-ont#Breakdown>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#AgricultureProduct> (<http://www.daml.org/2003/09/factbook/factbook-ont#AgricultureProduct>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#AgricultureProduct> <http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#AirportBreakdown> (<http://www.daml.org/2003/09/factbook/factbook-ont#AirportBreakdown>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#AirportBreakdown> <http://www.daml.org/2003/09/factbook/factbook-ont#CountBreakdown>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#Border> (<http://www.daml.org/2003/09/factbook/factbook-ont#Border>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#Border> owl:Thing)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#Breakdown> (<http://www.daml.org/2003/09/factbook/factbook-ont#Breakdown>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#Breakdown> owl:Thing)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#CapitalCity> (<http://www.daml.org/2003/09/factbook/factbook-ont#CapitalCity>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#CapitalCity> owl:Thing)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#Commodity> (<http://www.daml.org/2003/09/factbook/factbook-ont#Commodity>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#Commodity> <http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#CommodityPercent> (<http://www.daml.org/2003/09/factbook/factbook-ont#CommodityPercent>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#CommodityPercent> <http://www.daml.org/2003/09/factbook/factbook-ont#PercentBreakdown>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#CountBreakdown> (<http://www.daml.org/2003/09/factbook/factbook-ont#CountBreakdown>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#CountBreakdown> <http://www.daml.org/2003/09/factbook/factbook-ont#Breakdown>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#CountryPercent> (<http://www.daml.org/2003/09/factbook/factbook-ont#CountryPercent>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#CountryPercent> <http://www.daml.org/2003/09/factbook/factbook-ont#PercentBreakdown>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#ElevationExtreme> (<http://www.daml.org/2003/09/factbook/factbook-ont#ElevationExtreme>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#ElevationExtreme> owl:Thing)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#EnvironmentalAgreement> (<http://www.daml.org/2003/09/factbook/factbook-ont#EnvironmentalAgreement>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#EnvironmentalAgreement> <http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#EthnicGroup> (<http://www.daml.org/2003/09/factbook/factbook-ont#EthnicGroup>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#EthnicGroup> <http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#EthnicGroupPercent> (<http://www.daml.org/2003/09/factbook/factbook-ont#EthnicGroupPercent>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#EthnicGroupPercent> <http://www.daml.org/2003/09/factbook/factbook-ont#PercentBreakdown>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#GovernmentType> (<http://www.daml.org/2003/09/factbook/factbook-ont#GovernmentType>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#GovernmentType> <http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#Industry> (<http://www.daml.org/2003/09/factbook/factbook-ont#Industry>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#Industry> <http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#InternationalOrganization> (<http://www.daml.org/2003/09/factbook/factbook-ont#InternationalOrganization>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#InternationalOrganization> <http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#Language> (<http://www.daml.org/2003/09/factbook/factbook-ont#Language>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#Language> <http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#LanguagePercent> (<http://www.daml.org/2003/09/factbook/factbook-ont#LanguagePercent>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#LanguagePercent> <http://www.daml.org/2003/09/factbook/factbook-ont#PercentBreakdown>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#LatLon> (<http://www.daml.org/2003/09/factbook/factbook-ont#LatLon>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#LatLon> owl:Thing)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#NaturalResource> (<http://www.daml.org/2003/09/factbook/factbook-ont#NaturalResource>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#NaturalResource> <http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#Occupation> (<http://www.daml.org/2003/09/factbook/factbook-ont#Occupation>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#Occupation> <http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#OccupationPercent> (<http://www.daml.org/2003/09/factbook/factbook-ont#OccupationPercent>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#OccupationPercent> <http://www.daml.org/2003/09/factbook/factbook-ont#PercentBreakdown>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#PercentBreakdown> (<http://www.daml.org/2003/09/factbook/factbook-ont#PercentBreakdown>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#PercentBreakdown> <http://www.daml.org/2003/09/factbook/factbook-ont#Breakdown>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#PipelineDistance> (<http://www.daml.org/2003/09/factbook/factbook-ont#PipelineDistance>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#PipelineDistance> owl:Thing)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#PipelineType> (<http://www.daml.org/2003/09/factbook/factbook-ont#PipelineType>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#PipelineType> <http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#Port> (<http://www.daml.org/2003/09/factbook/factbook-ont#Port>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#Port> owl:Thing)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#RadioBand> (<http://www.daml.org/2003/09/factbook/factbook-ont#RadioBand>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#RadioBand> <http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#RadioBandBreakdown> (<http://www.daml.org/2003/09/factbook/factbook-ont#RadioBandBreakdown>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#RadioBandBreakdown> <http://www.daml.org/2003/09/factbook/factbook-ont#CountBreakdown>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#Religion> (<http://www.daml.org/2003/09/factbook/factbook-ont#Religion>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#Religion> <http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#ReligionPercent> (<http://www.daml.org/2003/09/factbook/factbook-ont#ReligionPercent>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#ReligionPercent> <http://www.daml.org/2003/09/factbook/factbook-ont#PercentBreakdown>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#SexRatioBreakdown> (<http://www.daml.org/2003/09/factbook/factbook-ont#SexRatioBreakdown>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#SexRatioBreakdown> <http://www.daml.org/2003/09/factbook/factbook-ont#AgeBreakdown>)
+
+# Class: <http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject> (<http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject>)
+
+SubClassOf(<http://www.daml.org/2003/09/factbook/factbook-ont#SharedObject> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/XMLSchema#string> (<http://www.w3.org/2000/10/XMLSchema#string>)
+
+SubClassOf(<http://www.w3.org/2000/10/XMLSchema#string> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass5 (owl:auxiliarDataRangeClass5)
+
+SubClassOf(owl:auxiliarDataRangeClass5 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass6 (owl:auxiliarDataRangeClass6)
+
+SubClassOf(owl:auxiliarDataRangeClass6 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass7 (owl:auxiliarDataRangeClass7)
+
+SubClassOf(owl:auxiliarDataRangeClass7 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass8 (owl:auxiliarDataRangeClass8)
+
+SubClassOf(owl:auxiliarDataRangeClass8 owl:Thing)
+
+
+)

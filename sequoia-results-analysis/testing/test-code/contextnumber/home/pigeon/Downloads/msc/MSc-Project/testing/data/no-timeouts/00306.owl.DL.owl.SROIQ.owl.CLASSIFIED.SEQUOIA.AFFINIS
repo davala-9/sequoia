@@ -1,0 +1,53 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(rdf:Property))
+Declaration(Class(rdfs:Class))
+Declaration(Class(rdfs:Container))
+Declaration(Class(rdfs:ContainerMembershipProperty))
+Declaration(Class(rdfs:Datatype))
+Declaration(Class(rdfs:Literal))
+Declaration(Class(rdfs:Resource))
+############################
+#   Classes
+############################
+
+# Class: rdf:Property (rdf:Property)
+
+SubClassOf(rdf:Property owl:Thing)
+
+# Class: rdfs:Class (rdfs:Class)
+
+SubClassOf(rdfs:Class rdfs:Resource)
+
+# Class: rdfs:Container (rdfs:Container)
+
+SubClassOf(rdfs:Container rdfs:Resource)
+
+# Class: rdfs:ContainerMembershipProperty (rdfs:ContainerMembershipProperty)
+
+SubClassOf(rdfs:ContainerMembershipProperty rdf:Property)
+
+# Class: rdfs:Datatype (rdfs:Datatype)
+
+SubClassOf(rdfs:Datatype rdfs:Class)
+
+# Class: rdfs:Literal (rdfs:Literal)
+
+SubClassOf(rdfs:Literal rdfs:Resource)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

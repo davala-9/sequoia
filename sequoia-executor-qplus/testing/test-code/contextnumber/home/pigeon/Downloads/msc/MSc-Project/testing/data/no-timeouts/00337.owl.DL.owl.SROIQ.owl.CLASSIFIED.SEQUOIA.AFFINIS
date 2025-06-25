@@ -1,0 +1,73 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(xsd:uriReference))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Person_or_Organization>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Discovery>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Discovery_Service>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Identifier>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Representation>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource_Description>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent>))
+Declaration(Class(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service>))
+############################
+#   Classes
+############################
+
+# Class: xsd:uriReference (xsd:uriReference)
+
+SubClassOf(xsd:uriReference owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Person_or_Organization> (<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Person_or_Organization>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Person_or_Organization> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy> (<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/PolicyModel.owl#Policy> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ResourceModel.owl#Discovery> (<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Discovery>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Discovery> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ResourceModel.owl#Discovery_Service> (<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Discovery_Service>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Discovery_Service> <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service>)
+
+# Class: <http://www.w3.org/2004/02/wsa/ResourceModel.owl#Identifier> (<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Identifier>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Identifier> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ResourceModel.owl#Representation> (<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Representation>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Representation> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource> (<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource_Description> (<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource_Description>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ResourceModel.owl#Resource_Description> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Agent> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service> (<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service>)
+
+SubClassOf(<http://www.w3.org/2004/02/wsa/ServiceModel.owl#Service> owl:Thing)
+
+
+)

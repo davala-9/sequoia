@@ -1,0 +1,48 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.daml.org/2002/10/units/units-ont#Constant>))
+Declaration(Class(<http://www.daml.org/2002/10/units/units-ont#Factor>))
+Declaration(Class(<http://www.daml.org/2002/10/units/units-ont#Prefix>))
+Declaration(Class(<http://www.daml.org/2002/10/units/units-ont#PrimitiveUnit>))
+Declaration(Class(<http://www.daml.org/2002/10/units/units-ont#Unit>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+############################
+#   Classes
+############################
+
+# Class: <http://www.daml.org/2002/10/units/units-ont#Constant> (<http://www.daml.org/2002/10/units/units-ont#Constant>)
+
+SubClassOf(<http://www.daml.org/2002/10/units/units-ont#Constant> <http://www.daml.org/2002/10/units/units-ont#Factor>)
+
+# Class: <http://www.daml.org/2002/10/units/units-ont#Factor> (<http://www.daml.org/2002/10/units/units-ont#Factor>)
+
+SubClassOf(<http://www.daml.org/2002/10/units/units-ont#Factor> owl:Thing)
+
+# Class: <http://www.daml.org/2002/10/units/units-ont#Prefix> (<http://www.daml.org/2002/10/units/units-ont#Prefix>)
+
+SubClassOf(<http://www.daml.org/2002/10/units/units-ont#Prefix> owl:Thing)
+
+# Class: <http://www.daml.org/2002/10/units/units-ont#PrimitiveUnit> (<http://www.daml.org/2002/10/units/units-ont#PrimitiveUnit>)
+
+SubClassOf(<http://www.daml.org/2002/10/units/units-ont#PrimitiveUnit> <http://www.daml.org/2002/10/units/units-ont#Unit>)
+
+# Class: <http://www.daml.org/2002/10/units/units-ont#Unit> (<http://www.daml.org/2002/10/units/units-ont#Unit>)
+
+SubClassOf(<http://www.daml.org/2002/10/units/units-ont#Unit> <http://www.daml.org/2002/10/units/units-ont#Factor>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+
+)

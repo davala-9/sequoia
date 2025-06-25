@@ -1,0 +1,38 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.daml.org/services/owl-s/1.1/Service.owl#Service>))
+Declaration(Class(<http://www.daml.org/services/owl-s/1.1/Service.owl#ServiceGrounding>))
+Declaration(Class(<http://www.daml.org/services/owl-s/1.1/Service.owl#ServiceModel>))
+Declaration(Class(<http://www.daml.org/services/owl-s/1.1/Service.owl#ServiceProfile>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.daml.org/services/owl-s/1.1/Service.owl#Service> (<http://www.daml.org/services/owl-s/1.1/Service.owl#Service>)
+
+SubClassOf(<http://www.daml.org/services/owl-s/1.1/Service.owl#Service> owl:Thing)
+
+# Class: <http://www.daml.org/services/owl-s/1.1/Service.owl#ServiceGrounding> (<http://www.daml.org/services/owl-s/1.1/Service.owl#ServiceGrounding>)
+
+SubClassOf(<http://www.daml.org/services/owl-s/1.1/Service.owl#ServiceGrounding> owl:Thing)
+
+# Class: <http://www.daml.org/services/owl-s/1.1/Service.owl#ServiceModel> (<http://www.daml.org/services/owl-s/1.1/Service.owl#ServiceModel>)
+
+SubClassOf(<http://www.daml.org/services/owl-s/1.1/Service.owl#ServiceModel> owl:Thing)
+
+# Class: <http://www.daml.org/services/owl-s/1.1/Service.owl#ServiceProfile> (<http://www.daml.org/services/owl-s/1.1/Service.owl#ServiceProfile>)
+
+SubClassOf(<http://www.daml.org/services/owl-s/1.1/Service.owl#ServiceProfile> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

@@ -1,0 +1,1016 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error1>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error10>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error11>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error12>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error2>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error3>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error4>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error5>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error6>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error7>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error8>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error9>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ANJOU>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#AUSTRALIAN-REGION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BEAUJOLAIS>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BLAND-FISH>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BLAND-FISH-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BORDEAUX>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BORDEAUX-REGION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BOURGOGNE-REGION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BURGUNDY>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-FRANC>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-SAUVIGNON>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-SAUVIGNON-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CALIFORNIAN-REGION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHARDONNAY>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHARDONNAY-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHEESE-NUTS-DESSERT>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHEESE-NUTS-DESSERT-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHENIN-BLANC>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHENIN-BLANC-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHIANTI>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CONSUMABLE-THING>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#COTES-D-OR>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DARK-MEAT-FOWL>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DARK-MEAT-FOWL-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DELICATE-FLAVOR-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DELICATE-OR-MODERATE-FLAVOR-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT-WINE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DELICATE-FLAVOR-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DRY-SUGAR-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-FULL-BODY-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-LIGHT-BODY-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MEDIUM-BODY-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-FLAVOR-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-RED-COLOR-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-STRONG-FLAVOR-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-SWEET-SUGAR-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-WHITE-COLOR-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-OR-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-RIESLING>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-SUGAR-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EARLY-HARVEST>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EATING-GRAPE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EDIBLE-THING>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FISH>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FISH-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FOWL>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRENCH-REGION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRUIT>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRUIT-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FULL-BODY-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GAMAY-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE-SLOT-MAX-CARDINALITY-1-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ICE-WINE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ITALIAN-REGION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ITALIAN-WINE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LATE-HARVEST>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-BODY-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-MEAT-FOWL>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-MEAT-FOWL-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-OR-MEDIUM-BODY-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LOIRE-REGION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MARGAUX>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAL>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAL-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAT>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-BODY-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-OR-FULL-BODY-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDOC>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDOC-REGION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MERITAGE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MERLOT>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MERLOT-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEURSAULT>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-FLAVOR-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MUSCADET>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-BLAND-FISH>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-BLAND-FISH-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-OYSTER-SHELLFISH>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-OYSTER-SHELLFISH-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-RED-MEAT>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-RED-MEAT-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SPICY-RED-MEAT>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SPICY-RED-MEAT-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SWEET-FRUIT>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SWEET-FRUIT-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OFF-DRY-SUGAR-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OTHER-TOMATO-BASED-FOOD>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OTHER-TOMATO-BASED-FOOD-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OYSTER-SHELLFISH>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OYSTER-SHELLFISH-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-HEAVY-CREAM-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-HEAVY-CREAM-SAUCE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-LIGHT-CREAM-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-LIGHT-CREAM-SAUCE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-NON-SPICY-RED-SAUCE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-NON-SPICY-RED-SAUCE-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-RED-SAUCE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-SPICY-RED-SAUCE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-SPICY-RED-SAUCE-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-WHITE-SAUCE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PAUILLAC>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PETITE-SYRAH>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-BLANC>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-BLANC-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-NOIR>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-NOIR-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PORT>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#POTABLE-LIQUID>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-BORDEAUX>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-BURGUNDY>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-COLOR-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-MEAT>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-MEAT-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-TABLE-WINE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-WINE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RIESLING>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ROSE-COLOR-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SANCERRE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SAUTERNE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SAUVIGNON-BLANC>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SAUVIGNON-BLANC-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEAFOOD>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEAFOOD-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEMILLON>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEMILLON-INDIVIDUAL-OR-SAUVIGNON-BLANC-INDIVIDUAL-GRAPE-SLOT-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEMILLON-OR-SAUVIGNON-BLANC>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SHELLFISH>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SHELLFISH-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SPICY-RED-MEAT>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SPICY-RED-MEAT-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ST-EMILION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#STRONG-FLAVOR-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-DESSERT>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-DESSERT-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-FRUIT>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-FRUIT-COURSE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-OR-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-RIESLING>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-SUGAR-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#TOURS>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#US-REGION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-BORDEAUX>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-BURGUNDY>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-COLOR-RESTRICTION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-LOIRE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-NON-SWEET-WINE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-BODY>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-COLOR>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-FLAVOR>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-GRAPE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-PROPERTY>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-REGION>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-SUGAR>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINERY>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ZINFANDEL>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#UniqueProperty>))
+############################
+#   Classes
+############################
+
+# Class: <http://org.semanticweb.owlapi/error#Error1> (<http://org.semanticweb.owlapi/error#Error1>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error1> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error10> (<http://org.semanticweb.owlapi/error#Error10>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error10> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error11> (<http://org.semanticweb.owlapi/error#Error11>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error11> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error12> (<http://org.semanticweb.owlapi/error#Error12>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error12> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error2> (<http://org.semanticweb.owlapi/error#Error2>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error2> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error3> (<http://org.semanticweb.owlapi/error#Error3>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error3> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error4> (<http://org.semanticweb.owlapi/error#Error4>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error4> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error5> (<http://org.semanticweb.owlapi/error#Error5>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error5> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error6> (<http://org.semanticweb.owlapi/error#Error6>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error6> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error7> (<http://org.semanticweb.owlapi/error#Error7>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error7> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error8> (<http://org.semanticweb.owlapi/error#Error8>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error8> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error9> (<http://org.semanticweb.owlapi/error#Error9>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error9> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ANJOU> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ANJOU>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ANJOU> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DELICATE-FLAVOR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ANJOU> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-BODY-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ANJOU> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OFF-DRY-SUGAR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ANJOU> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ROSE-COLOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#AUSTRALIAN-REGION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#AUSTRALIAN-REGION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#AUSTRALIAN-REGION> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-REGION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BEAUJOLAIS> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BEAUJOLAIS>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BEAUJOLAIS> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DELICATE-FLAVOR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BEAUJOLAIS> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-SUGAR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BEAUJOLAIS> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GAMAY-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BEAUJOLAIS> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE-SLOT-MAX-CARDINALITY-1-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BEAUJOLAIS> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-BODY-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BEAUJOLAIS> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-COLOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BLAND-FISH> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BLAND-FISH>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BLAND-FISH> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FISH>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BLAND-FISH-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BLAND-FISH-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BLAND-FISH-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DELICATE-FLAVOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BORDEAUX> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BORDEAUX>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BORDEAUX> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BORDEAUX-REGION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BORDEAUX-REGION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BORDEAUX-REGION> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRENCH-REGION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BOURGOGNE-REGION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BOURGOGNE-REGION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BOURGOGNE-REGION> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRENCH-REGION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BURGUNDY> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BURGUNDY>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BURGUNDY> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-SUGAR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-FRANC> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-FRANC>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-FRANC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-SUGAR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-FRANC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-BODY-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-FRANC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-FLAVOR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-FRANC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-COLOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-SAUVIGNON> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-SAUVIGNON>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-SAUVIGNON> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-SUGAR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-SAUVIGNON> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-OR-FULL-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-SAUVIGNON> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-SAUVIGNON> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-COLOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-SAUVIGNON-INDIVIDUAL-GRAPE-SLOT-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-SAUVIGNON-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-SAUVIGNON-INDIVIDUAL-GRAPE-SLOT-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CALIFORNIAN-REGION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CALIFORNIAN-REGION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CALIFORNIAN-REGION> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#US-REGION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHARDONNAY> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHARDONNAY>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHARDONNAY> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-OR-FULL-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHARDONNAY> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHARDONNAY> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-COLOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHARDONNAY-INDIVIDUAL-GRAPE-SLOT-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHARDONNAY-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHARDONNAY-INDIVIDUAL-GRAPE-SLOT-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHEESE-NUTS-DESSERT> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHEESE-NUTS-DESSERT>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHEESE-NUTS-DESSERT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHEESE-NUTS-DESSERT-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHEESE-NUTS-DESSERT-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHEESE-NUTS-DESSERT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-RED-COLOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHENIN-BLANC> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHENIN-BLANC>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHENIN-BLANC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-OR-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHENIN-BLANC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-OR-FULL-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHENIN-BLANC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-FLAVOR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHENIN-BLANC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-COLOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHENIN-BLANC-INDIVIDUAL-GRAPE-SLOT-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHENIN-BLANC-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHENIN-BLANC-INDIVIDUAL-GRAPE-SLOT-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHIANTI> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHIANTI>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHIANTI> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-SUGAR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHIANTI> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ITALIAN-WINE>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHIANTI> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-OR-MEDIUM-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHIANTI> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-FLAVOR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHIANTI> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-COLOR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHIANTI> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CONSUMABLE-THING> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CONSUMABLE-THING>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CONSUMABLE-THING> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#COTES-D-OR> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#COTES-D-OR>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#COTES-D-OR> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-FLAVOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DARK-MEAT-FOWL> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DARK-MEAT-FOWL>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DARK-MEAT-FOWL> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FOWL>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DARK-MEAT-FOWL-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DARK-MEAT-FOWL-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DARK-MEAT-FOWL-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DELICATE-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DARK-MEAT-FOWL-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DARK-MEAT-FOWL-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-LIGHT-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DARK-MEAT-FOWL-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-RED-COLOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DELICATE-FLAVOR-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DELICATE-FLAVOR-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DELICATE-FLAVOR-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DELICATE-OR-MODERATE-FLAVOR-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DELICATE-OR-MODERATE-FLAVOR-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DELICATE-OR-MODERATE-FLAVOR-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EDIBLE-THING>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-FULL-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-STRONG-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-SWEET-SUGAR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT-WINE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT-WINE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT-WINE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-OR-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT-WINE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DELICATE-FLAVOR-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DELICATE-FLAVOR-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DELICATE-FLAVOR-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DRY-SUGAR-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DRY-SUGAR-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-FULL-BODY-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-FULL-BODY-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-FULL-BODY-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-LIGHT-BODY-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-LIGHT-BODY-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-LIGHT-BODY-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MEDIUM-BODY-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MEDIUM-BODY-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MEDIUM-BODY-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-FLAVOR-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-FLAVOR-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-FLAVOR-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-RED-COLOR-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-RED-COLOR-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-RED-COLOR-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-STRONG-FLAVOR-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-STRONG-FLAVOR-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-STRONG-FLAVOR-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-SWEET-SUGAR-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-SWEET-SUGAR-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-SWEET-SUGAR-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-WHITE-COLOR-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-WHITE-COLOR-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-WHITE-COLOR-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-OR-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-OR-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-OR-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-RIESLING> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-RIESLING>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-RIESLING> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DELICATE-FLAVOR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-RIESLING> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-OR-MEDIUM-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-RIESLING> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-COLOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-SUGAR-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-SUGAR-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-SUGAR-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EARLY-HARVEST> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EARLY-HARVEST>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EARLY-HARVEST> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-OR-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EARLY-HARVEST> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EATING-GRAPE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EATING-GRAPE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EATING-GRAPE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EDIBLE-THING> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EDIBLE-THING>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EDIBLE-THING> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CONSUMABLE-THING>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FISH> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FISH>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FISH> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEAFOOD>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FISH-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FISH-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FISH-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FISH-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MEDIUM-BODY-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FOWL> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FOWL>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FOWL> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EDIBLE-THING>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRENCH-REGION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRENCH-REGION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRENCH-REGION> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-REGION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRUIT> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRUIT>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRUIT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EDIBLE-THING>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRUIT-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRUIT-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRUIT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MEDIUM-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRUIT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-WHITE-COLOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FULL-BODY-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FULL-BODY-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FULL-BODY-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GAMAY-INDIVIDUAL-GRAPE-SLOT-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GAMAY-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GAMAY-INDIVIDUAL-GRAPE-SLOT-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-FRUIT>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE-SLOT-MAX-CARDINALITY-1-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE-SLOT-MAX-CARDINALITY-1-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE-SLOT-MAX-CARDINALITY-1-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ICE-WINE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ICE-WINE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ICE-WINE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-OR-FULL-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ICE-WINE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ITALIAN-REGION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ITALIAN-REGION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ITALIAN-REGION> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-REGION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ITALIAN-WINE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ITALIAN-WINE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ITALIAN-WINE> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LATE-HARVEST> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LATE-HARVEST>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LATE-HARVEST> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LATE-HARVEST> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-SUGAR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LATE-HARVEST> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-BODY-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-BODY-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-BODY-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-MEAT-FOWL> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-MEAT-FOWL>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-MEAT-FOWL> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FOWL>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-MEAT-FOWL-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-MEAT-FOWL-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-MEAT-FOWL-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-MEAT-FOWL-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MEDIUM-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-MEAT-FOWL-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-MEAT-FOWL-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-WHITE-COLOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-OR-MEDIUM-BODY-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-OR-MEDIUM-BODY-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-OR-MEDIUM-BODY-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LOIRE-REGION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LOIRE-REGION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LOIRE-REGION> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRENCH-REGION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MARGAUX> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MARGAUX>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MARGAUX> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DELICATE-FLAVOR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MARGAUX> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE-SLOT-MAX-CARDINALITY-1-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MARGAUX> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MERLOT-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAL> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAL>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAL> <http://org.semanticweb.owlapi/error#Error3>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAL> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CONSUMABLE-THING>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAL-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAL-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAL-COURSE> <http://org.semanticweb.owlapi/error#Error4>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAL-COURSE> <http://org.semanticweb.owlapi/error#Error5>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAL-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CONSUMABLE-THING>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAT> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAT>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EDIBLE-THING>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-BODY-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-BODY-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-BODY-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-OR-FULL-BODY-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-OR-FULL-BODY-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-OR-FULL-BODY-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDOC> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDOC>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDOC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-SUGAR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDOC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-COLOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDOC-REGION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDOC-REGION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDOC-REGION> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BORDEAUX-REGION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MERITAGE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MERITAGE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MERITAGE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-COLOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MERLOT> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MERLOT>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MERLOT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DELICATE-OR-MODERATE-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MERLOT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-SUGAR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MERLOT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-OR-MEDIUM-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MERLOT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-COLOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MERLOT-INDIVIDUAL-GRAPE-SLOT-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MERLOT-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MERLOT-INDIVIDUAL-GRAPE-SLOT-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEURSAULT> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEURSAULT>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEURSAULT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FULL-BODY-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-FLAVOR-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-FLAVOR-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-FLAVOR-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MUSCADET> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MUSCADET>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MUSCADET> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DELICATE-FLAVOR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MUSCADET> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-SUGAR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MUSCADET> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE-SLOT-MAX-CARDINALITY-1-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MUSCADET> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LIGHT-BODY-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MUSCADET> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-BLANC-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-BLAND-FISH> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-BLAND-FISH>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-BLAND-FISH> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FISH>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-BLAND-FISH-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-BLAND-FISH-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-BLAND-FISH-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-FLAVOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-OYSTER-SHELLFISH> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-OYSTER-SHELLFISH>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-OYSTER-SHELLFISH> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SHELLFISH>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-OYSTER-SHELLFISH-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-OYSTER-SHELLFISH-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-OYSTER-SHELLFISH-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-RED-MEAT> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-RED-MEAT>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-RED-MEAT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAT>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-RED-MEAT-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-RED-MEAT-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-RED-MEAT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-RED-MEAT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MEDIUM-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-RED-MEAT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-STRONG-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-RED-MEAT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-WHITE-COLOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SPICY-RED-MEAT> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SPICY-RED-MEAT>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SPICY-RED-MEAT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-MEAT>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SPICY-RED-MEAT-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SPICY-RED-MEAT-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SPICY-RED-MEAT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SPICY-RED-MEAT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MEDIUM-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SPICY-RED-MEAT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SPICY-RED-MEAT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-RED-COLOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SWEET-FRUIT> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SWEET-FRUIT>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SWEET-FRUIT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRUIT>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SWEET-FRUIT-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SWEET-FRUIT-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SWEET-FRUIT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DELICATE-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#NON-SWEET-FRUIT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OFF-DRY-SUGAR-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OFF-DRY-SUGAR-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OFF-DRY-SUGAR-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OTHER-TOMATO-BASED-FOOD> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OTHER-TOMATO-BASED-FOOD>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OTHER-TOMATO-BASED-FOOD> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EDIBLE-THING>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OTHER-TOMATO-BASED-FOOD-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OTHER-TOMATO-BASED-FOOD-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OTHER-TOMATO-BASED-FOOD-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OTHER-TOMATO-BASED-FOOD-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MEDIUM-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OTHER-TOMATO-BASED-FOOD-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OTHER-TOMATO-BASED-FOOD-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-RED-COLOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OYSTER-SHELLFISH> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OYSTER-SHELLFISH>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OYSTER-SHELLFISH> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SHELLFISH>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OYSTER-SHELLFISH-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OYSTER-SHELLFISH-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OYSTER-SHELLFISH-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-SWEET-SUGAR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EDIBLE-THING>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-HEAVY-CREAM-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-HEAVY-CREAM-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-HEAVY-CREAM-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-HEAVY-CREAM-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MEDIUM-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-HEAVY-CREAM-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-HEAVY-CREAM-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-WHITE-COLOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-HEAVY-CREAM-SAUCE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-HEAVY-CREAM-SAUCE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-HEAVY-CREAM-SAUCE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-WHITE-SAUCE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-LIGHT-CREAM-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-LIGHT-CREAM-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-LIGHT-CREAM-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DELICATE-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-LIGHT-CREAM-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-LIGHT-CREAM-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-LIGHT-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-LIGHT-CREAM-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-WHITE-COLOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-LIGHT-CREAM-SAUCE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-LIGHT-CREAM-SAUCE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-LIGHT-CREAM-SAUCE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-WHITE-SAUCE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-NON-SPICY-RED-SAUCE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-NON-SPICY-RED-SAUCE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-NON-SPICY-RED-SAUCE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-RED-SAUCE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-NON-SPICY-RED-SAUCE-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-NON-SPICY-RED-SAUCE-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-NON-SPICY-RED-SAUCE-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-NON-SPICY-RED-SAUCE-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MEDIUM-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-NON-SPICY-RED-SAUCE-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-NON-SPICY-RED-SAUCE-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-RED-COLOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-RED-SAUCE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-RED-SAUCE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-RED-SAUCE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-SPICY-RED-SAUCE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-SPICY-RED-SAUCE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-SPICY-RED-SAUCE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-RED-SAUCE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-SPICY-RED-SAUCE-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-SPICY-RED-SAUCE-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-SPICY-RED-SAUCE-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-SPICY-RED-SAUCE-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-FULL-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-SPICY-RED-SAUCE-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-RED-COLOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-SPICY-RED-SAUCE-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-STRONG-FLAVOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-WHITE-SAUCE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-WHITE-SAUCE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA-WITH-WHITE-SAUCE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PASTA>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PAUILLAC> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PAUILLAC>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PAUILLAC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-SAUVIGNON-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PAUILLAC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FULL-BODY-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PAUILLAC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE-SLOT-MAX-CARDINALITY-1-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PAUILLAC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#STRONG-FLAVOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PETITE-SYRAH> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PETITE-SYRAH>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PETITE-SYRAH> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-SUGAR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PETITE-SYRAH> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-OR-FULL-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PETITE-SYRAH> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PETITE-SYRAH> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-COLOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-BLANC> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-BLANC>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-BLANC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-COLOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-BLANC-INDIVIDUAL-GRAPE-SLOT-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-BLANC-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-BLANC-INDIVIDUAL-GRAPE-SLOT-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-NOIR> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-NOIR>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-NOIR> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-COLOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-NOIR-INDIVIDUAL-GRAPE-SLOT-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-NOIR-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-NOIR-INDIVIDUAL-GRAPE-SLOT-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PORT> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PORT>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PORT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FULL-BODY-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PORT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-WINE>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PORT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#STRONG-FLAVOR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PORT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-SUGAR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PORT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#POTABLE-LIQUID> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#POTABLE-LIQUID>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#POTABLE-LIQUID> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CONSUMABLE-THING>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-BORDEAUX> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-BORDEAUX>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-BORDEAUX> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-BURGUNDY> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-BURGUNDY>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-BURGUNDY> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE-SLOT-MAX-CARDINALITY-1-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-BURGUNDY> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#PINOT-NOIR-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-COLOR-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-COLOR-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-COLOR-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-MEAT> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-MEAT>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-MEAT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEAT>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-MEAT-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-MEAT-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-MEAT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-RED-COLOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-TABLE-WINE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-TABLE-WINE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-TABLE-WINE> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-WINE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-WINE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-WINE> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RIESLING> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RIESLING>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RIESLING> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-COLOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ROSE-COLOR-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ROSE-COLOR-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ROSE-COLOR-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SANCERRE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SANCERRE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SANCERRE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DELICATE-FLAVOR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SANCERRE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE-SLOT-MAX-CARDINALITY-1-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SANCERRE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-BODY-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SANCERRE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#OFF-DRY-SUGAR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SANCERRE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SAUVIGNON-BLANC-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SAUTERNE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SAUTERNE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SAUTERNE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#BORDEAUX>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SAUTERNE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#LATE-HARVEST>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SAUTERNE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-BODY-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SAUTERNE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-COLOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SAUVIGNON-BLANC> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SAUVIGNON-BLANC>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SAUVIGNON-BLANC> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SAUVIGNON-BLANC-INDIVIDUAL-GRAPE-SLOT-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SAUVIGNON-BLANC-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SAUVIGNON-BLANC-INDIVIDUAL-GRAPE-SLOT-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEAFOOD> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEAFOOD>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEAFOOD> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#EDIBLE-THING>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEAFOOD-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEAFOOD-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEAFOOD-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-WHITE-COLOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEMILLON> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEMILLON>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEMILLON> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEMILLON-INDIVIDUAL-OR-SAUVIGNON-BLANC-INDIVIDUAL-GRAPE-SLOT-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEMILLON-INDIVIDUAL-OR-SAUVIGNON-BLANC-INDIVIDUAL-GRAPE-SLOT-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEMILLON-INDIVIDUAL-OR-SAUVIGNON-BLANC-INDIVIDUAL-GRAPE-SLOT-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEMILLON-OR-SAUVIGNON-BLANC> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEMILLON-OR-SAUVIGNON-BLANC>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEMILLON-OR-SAUVIGNON-BLANC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-OR-FULL-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEMILLON-OR-SAUVIGNON-BLANC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEMILLON-INDIVIDUAL-OR-SAUVIGNON-BLANC-INDIVIDUAL-GRAPE-SLOT-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEMILLON-OR-SAUVIGNON-BLANC> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-COLOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SHELLFISH> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SHELLFISH>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SHELLFISH> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEAFOOD>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SHELLFISH-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SHELLFISH-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SHELLFISH-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-FULL-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SHELLFISH-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SPICY-RED-MEAT> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SPICY-RED-MEAT>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SPICY-RED-MEAT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-MEAT>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SPICY-RED-MEAT-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SPICY-RED-MEAT-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SPICY-RED-MEAT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SPICY-RED-MEAT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-FULL-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SPICY-RED-MEAT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SPICY-RED-MEAT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-RED-COLOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ST-EMILION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ST-EMILION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ST-EMILION> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CABERNET-SAUVIGNON-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ST-EMILION> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE-SLOT-MAX-CARDINALITY-1-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ST-EMILION> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-COLOR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ST-EMILION> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#STRONG-FLAVOR-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#STRONG-FLAVOR-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#STRONG-FLAVOR-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#STRONG-FLAVOR-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-DESSERT> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-DESSERT>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-DESSERT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-DESSERT-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-DESSERT-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-DESSERT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-WHITE-COLOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-FRUIT> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-FRUIT>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-FRUIT> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FRUIT>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-FRUIT-COURSE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-FRUIT-COURSE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-FRUIT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-MODERATE-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-FRUIT-COURSE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRINK-HAS-SWEET-SUGAR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-OR-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-OR-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-OR-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-RIESLING> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-RIESLING>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-RIESLING> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DESSERT-WINE>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-RIESLING> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#FULL-BODY-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-RIESLING> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-SUGAR-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-SUGAR-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SWEET-SUGAR-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#TOURS> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#TOURS>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#TOURS> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHENIN-BLANC-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#TOURS> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE-SLOT-MAX-CARDINALITY-1-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#US-REGION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#US-REGION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#US-REGION> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-REGION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-BORDEAUX> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-BORDEAUX>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-BORDEAUX> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#SEMILLON-INDIVIDUAL-OR-SAUVIGNON-BLANC-INDIVIDUAL-GRAPE-SLOT-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-BURGUNDY> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-BURGUNDY>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-BURGUNDY> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#CHARDONNAY-INDIVIDUAL-GRAPE-SLOT-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-BURGUNDY> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE-SLOT-MAX-CARDINALITY-1-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-COLOR-RESTRICTION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-COLOR-RESTRICTION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-COLOR-RESTRICTION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-LOIRE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-LOIRE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-LOIRE> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-NON-SWEET-WINE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-NON-SWEET-WINE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WHITE-NON-SWEET-WINE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-OR-OFF-DRY-SUGAR-TO-CLASS-RESTRICTION>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE> <http://org.semanticweb.owlapi/error#Error10>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE> <http://org.semanticweb.owlapi/error#Error11>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE> <http://org.semanticweb.owlapi/error#Error12>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE> <http://org.semanticweb.owlapi/error#Error6>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE> <http://org.semanticweb.owlapi/error#Error7>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE> <http://org.semanticweb.owlapi/error#Error8>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE> <http://org.semanticweb.owlapi/error#Error9>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#POTABLE-LIQUID>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-BODY> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-BODY>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-BODY> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-PROPERTY>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-COLOR> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-COLOR>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-COLOR> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-PROPERTY>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-FLAVOR> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-FLAVOR>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-FLAVOR> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-PROPERTY>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-GRAPE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-GRAPE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-GRAPE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#GRAPE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-PROPERTY> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-PROPERTY>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-PROPERTY> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-REGION> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-REGION>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-REGION> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-SUGAR> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-SUGAR>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-SUGAR> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINE-PROPERTY>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINERY> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINERY>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#WINERY> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ZINFANDEL> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ZINFANDEL>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ZINFANDEL> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#DRY-SUGAR-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ZINFANDEL> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MEDIUM-OR-FULL-BODY-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ZINFANDEL> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#MODERATE-OR-STRONG-FLAVOR-TO-CLASS-RESTRICTION>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#ZINFANDEL> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00103.owl#RED-COLOR-RESTRICTION>)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#UniqueProperty> (<http://www.daml.org/2001/03/daml+oil#UniqueProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UniqueProperty> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

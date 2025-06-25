@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0m/home/pigeon/Downloads/msc/MSc-Project/sequoia/reasoner-kernel/src/main/scala/com/sequoiareasoner/kernel/context/ContextStructureManager.scala:240:42: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : java.util.concurrent.Callable[Unit][0m
+[0m[[0m[31merror[0m] [0m[0m required: java.util.concurrent.Callable[com.sequoiareasoner.kernel.context.ContextRunnable][0m
+[0m[[0m[31merror[0m] [0m[0m      contextExecutor.submit(c.queue.poll())[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

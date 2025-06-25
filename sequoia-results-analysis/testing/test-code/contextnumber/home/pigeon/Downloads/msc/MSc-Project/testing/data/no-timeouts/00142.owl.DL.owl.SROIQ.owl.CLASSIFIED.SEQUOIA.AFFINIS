@@ -1,0 +1,2247 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Government.owl#AreaOfConcern>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Agriculture>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AirStream>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AridClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Atmosphere>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AtmosphericRegion>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BodyOfWater>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BotanicalTree>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Canyon>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Carbon>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Cave>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Clay>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Coal>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ColdClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ColdDampClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ContinentalClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Dam>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DesertClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Drought>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DryWinterColdClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#EarthTremor>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Earthquake>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Erosion>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Falling>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fishing>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Flooding>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FlowRegion>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Forest>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Grass>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Gulf>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Hailing>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Hemisphere>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#HighTide>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Humus>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Hunting>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ice>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#InchMercury>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Inlet>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandlockedWater>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LowTide>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LowlandArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MediterraneanClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MiddleLatitudeDesertClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MidlatitudeContinentalClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MmMercury>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MonsoonClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Moon>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#NaturalSatellite>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ocean>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#OrganicCompound>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Peninsula>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Petroleum>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Planet>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Planting>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#PolarClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#PolarTypeFClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadiatingInfrared>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadiatingUltraviolet>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Raining>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#River>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Rock>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SaltLake>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sand>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Satellite>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Shrub>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SigningADocument>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SlopedArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Snowing>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Soil>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SolarSystem>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SquareMeter>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Star>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SteppeClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Strait>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SubtropicalDesertClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Swamp>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TemperateClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TemperateSummerDryClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TemperateWinterDryClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TidalProcess>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TropicalClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TundraClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UplandArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WaterWave>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Waterfall>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WeatherFront>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WetTropicalClimateZone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wood>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Agent>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Air>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#AreaMeasure>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#AstronomicalBody>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Attribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#City>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Collection>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Combining>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Combustion>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Committing>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#ConstantQuantity>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Continent>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#DirectionalAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#FloweringPlant>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#FreshWaterArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#FunctionQuantity>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeologicalProcess>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Hole>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Impelling>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#InternalChange>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#IrreflexiveRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Island>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Killing>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#LengthMeasure>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Maintaining>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Mixture>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Motion>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#NonFloweringPlant>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeRealNumber>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Object>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#OrganicObject>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organism>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Physical>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#PhysicalQuantity>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#PhysicalState>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#PlaneAngleMeasure>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Plant>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#PositionalAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Precipitation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Process>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#PureSubstance>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Putting>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Radiating>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#RadiatingLight>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Region>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Removing>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SaltWaterArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#ShoreArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SingleValuedRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Solution>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#StaticWaterArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#StreamWaterArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Substance>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymmetricRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Text>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeDuration>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimePosition>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Transfer>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TransitiveRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Translocation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Water>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Wind>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AcidRainfall>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Acidification>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AerosolParticulate>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Afforestation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Aftershock>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Agreement>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AgriculturalImpactIssue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AirPollution>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AirPollutionIssue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ArableLand>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ArcMinute>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ArcSecond>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ArchipelagicArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Archipelago>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Asbestos>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Atoll>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AvalancheProcess>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Barite>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Basin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Bauxite>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Bay>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BeaufortNumber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BiodiversityAttribute>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BiodiversityIssue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Biome>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BorealForest>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BrownCoal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Butte>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Cape>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CarbonCycle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CarbonDioxideEmission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CaveMatrix>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Channel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ChinookWind>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Chromite>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ClearWeather>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Cliff>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ClimateChangeIssue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CoastalPlain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ColdFront>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ContinentalMargin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ContinentalShelf>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CoralReef>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Cove>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CyclonicStorm>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DDT>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Defoliant>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Deforestation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Delta>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Desert>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Desertification>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DipSlipFault>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Dredging>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DriftnetFishing>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DustStorm>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EarthflowProcess>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Ecosystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Effluent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ElNino>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EndangeredSpecies>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EnvironmentalIssue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Estuary>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ExclusiveFishingZone>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ExtendedFishingZone>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Fathom>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Fire>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Flow>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Fluorite>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ForestFire>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#FreezingRain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Freshwater>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#GeologicalFault>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Ghibli>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Glacier>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Graphite>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#GrassFire>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Grassland>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Gravel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#GreenhouseGas>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Groundwater>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HarmattanWind>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Herbicide>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HighPressureWeatherSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HigherHighTide>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Hill>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Hurricane>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HurricaneSeason>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HydropowerWaterArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Iceberg>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Icing>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IndustrialPollution>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InlandWaterSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InletPassage>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Insecticide>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InternationalAgreement>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InternationalBorder>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IronOre>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IrrigatedLand>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Irrigating>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IrrigationChannel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IslandGroup>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Isthmus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#JetStream>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Jungle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Khamsin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#KnotUnitOfSpeed>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Lake>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LakeRegion>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandSubsidence>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandUseIssue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandlockedArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandslideProcess>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Latitude>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Lichen>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LittoralCurrent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LittoralZone>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Loam>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Longitude>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LossOfHabitatIssue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LowPressureWeatherSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LowerLowTide>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Magnesite>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MarineEnvironmentIssue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeClaimArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeContiguousZone>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeExclusiveEconomicZone>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeShelfArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Mesa>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MetallurgicalPlant>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Mistral>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MixedTideProcess>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Monsoon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Mountain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MountainRange>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#NaturalGas>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#NauticalMile>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#NormalFault>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#NoxiousSubstance>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Oasis>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#OccludedFront>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#OceanCurrent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#OceanTrench>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#OvercastWeather>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Overgrazing>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PHValue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pampa>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pampero>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PartlyCloudyWeather>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PerimeterArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Permafrost>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PermanentCropLand>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pesticide>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PesticidePollution>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Phosphate>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Piedmont>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Plain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Plateau>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PoachingToKill>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pollutant>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PollutionIssue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PollutionProcess>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PotableWater>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Potash>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Prairie>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PreciousGemstone>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PressureMeasure>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pyrite>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RadiatingXRay>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RainForest>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Rapids>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Reef>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Reforestation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Reservoir>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ReservoirLake>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RichterMagnitude>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RipCurrent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RiverBank>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RiverMouth>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RiverSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RockslideProcess>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Salination>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Salt>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sandstorm>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sanitation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Savanna>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SeaIce>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SeabedArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Seacoast>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SemiaridClimateZone>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SemipreciousGemstone>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SewageDisposal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Shoreline>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Silt>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Siltation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sirocco>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SlashAndBurnAgriculture>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sleeting>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Snow>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilDegradation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilErosion>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilQualityIssue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilSalination>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilSolution>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SolidWasteDisposal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sound>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SquareKilometer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#StationaryFront>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Steppe>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Stone>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#StreamWaterConfluence>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#StrikeSlipFault>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SubmergedLandArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SurfaceGroundArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SymmetricAttribute>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Talc>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TemperateHardwoodForest>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TemperateRainForest>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TerrainAttribute>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TerritorialSea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ThrustFault>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Thunderstorm>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TidalBore>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TidalEbb>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TidalFlow>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TidalWave>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Tide>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Timber>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Tornado>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TreatyDocument>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TropicalCyclone>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TropicalRainForest>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Tundra>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Typhoon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#UndergroundArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#UniformPerimeterArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Valley>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VehicularPollution>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Veldt>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicCone>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicEruption>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicGasRelease>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicMountain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Volcano>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanoStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WarmFront>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WasteManagementIssue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterCatchmentDevice>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterCurrent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterInfrastructureIssue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterOnlyArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterOverutilization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterPollution>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterResourceIssue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterSalination>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WatershedDivide>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WeatherSeason>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WeatherSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Windstorm>))
+############################
+#   Classes
+############################
+
+# Class: <http://reliant.teknowledge.com/DAML/Government.owl#AreaOfConcern> (<http://reliant.teknowledge.com/DAML/Government.owl#AreaOfConcern>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Government.owl#AreaOfConcern> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Agriculture> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Agriculture>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Agriculture> <http://reliant.teknowledge.com/DAML/SUMO.owl#Maintaining>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AirStream> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AirStream>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AirStream> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FlowRegion>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AirStream> <http://reliant.teknowledge.com/DAML/SUMO.owl#Air>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AridClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AridClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AridClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Atmosphere> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Atmosphere>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Atmosphere> <http://reliant.teknowledge.com/DAML/SUMO.owl#Region>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AtmosphericRegion> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AtmosphericRegion>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AtmosphericRegion> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BodyOfWater> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BodyOfWater>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BodyOfWater> <http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BodyOfWater> <http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BotanicalTree> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BotanicalTree>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BotanicalTree> <http://reliant.teknowledge.com/DAML/SUMO.owl#FloweringPlant>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Canyon> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Canyon>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Canyon> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Carbon> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Carbon>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Carbon> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Cave> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Cave>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Cave> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Cave> <http://reliant.teknowledge.com/DAML/SUMO.owl#Hole>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Clay> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Clay>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Clay> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Soil>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ClimateZone> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Coal> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Coal>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Coal> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#OrganicCompound>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Coal> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ColdClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ColdClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ColdClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ColdDampClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ColdDampClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ColdDampClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ColdClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ContinentalClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ContinentalClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ContinentalClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TemperateClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Dam> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Dam>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Dam> <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DesertClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DesertClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DesertClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AridClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Drought> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Drought>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Drought> <http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DryWinterColdClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DryWinterColdClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DryWinterColdClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ColdClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#EarthTremor> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#EarthTremor>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#EarthTremor> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeologicalProcess>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Earthquake> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Earthquake>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Earthquake> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeologicalProcess>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Erosion> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Erosion>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Erosion> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeologicalProcess>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Erosion> <http://reliant.teknowledge.com/DAML/SUMO.owl#Removing>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Falling> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Falling>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Falling> <http://reliant.teknowledge.com/DAML/SUMO.owl#Translocation>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fishing> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fishing>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fishing> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Hunting>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Flooding> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Flooding>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Flooding> <http://reliant.teknowledge.com/DAML/SUMO.owl#Motion>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FlowRegion> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FlowRegion>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FlowRegion> <http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Forest> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Forest>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Forest> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Grass> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Grass>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Grass> <http://reliant.teknowledge.com/DAML/SUMO.owl#FloweringPlant>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Gulf> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Gulf>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Gulf> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BodyOfWater>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Gulf> <http://reliant.teknowledge.com/DAML/SUMO.owl#SaltWaterArea>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Hailing> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Hailing>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Hailing> <http://reliant.teknowledge.com/DAML/SUMO.owl#Precipitation>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Hemisphere> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Hemisphere>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Hemisphere> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#HighTide> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#HighTide>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#HighTide> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TidalProcess>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Humus> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Humus>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Humus> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mixture>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Hunting> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Hunting>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Hunting> <http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ice> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ice>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ice> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#InchMercury> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#InchMercury>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#InchMercury> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PressureMeasure>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Inlet> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Inlet>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Inlet> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BodyOfWater>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandlockedWater> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandlockedWater>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandlockedWater> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BodyOfWater>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LowTide> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LowTide>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LowTide> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TidalProcess>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LowlandArea> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LowlandArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LowlandArea> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MediterraneanClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MediterraneanClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MediterraneanClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TemperateClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MiddleLatitudeDesertClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MiddleLatitudeDesertClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MiddleLatitudeDesertClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DesertClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MidlatitudeContinentalClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MidlatitudeContinentalClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MidlatitudeContinentalClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MmMercury> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MmMercury>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MmMercury> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PressureMeasure>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MonsoonClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MonsoonClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MonsoonClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TropicalClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Moon> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Moon>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Moon> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#NaturalSatellite>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#NaturalSatellite> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#NaturalSatellite>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#NaturalSatellite> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Satellite>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ocean> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ocean>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ocean> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BodyOfWater>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ocean> <http://reliant.teknowledge.com/DAML/SUMO.owl#SaltWaterArea>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#OrganicCompound> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#OrganicCompound>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#OrganicCompound> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Peninsula> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Peninsula>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Peninsula> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Petroleum> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Petroleum>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Petroleum> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#OrganicCompound>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Planet> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Planet>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Planet> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#NaturalSatellite>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Planting> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Planting>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Planting> <http://reliant.teknowledge.com/DAML/SUMO.owl#Putting>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#PolarClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#PolarClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#PolarClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#PolarTypeFClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#PolarTypeFClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#PolarTypeFClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#PolarClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadiatingInfrared> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadiatingInfrared>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadiatingInfrared> <http://reliant.teknowledge.com/DAML/SUMO.owl#Radiating>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadiatingUltraviolet> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadiatingUltraviolet>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadiatingUltraviolet> <http://reliant.teknowledge.com/DAML/SUMO.owl#Radiating>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Raining> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Raining>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Raining> <http://reliant.teknowledge.com/DAML/SUMO.owl#Precipitation>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#River> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#River>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#River> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BodyOfWater>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#River> <http://reliant.teknowledge.com/DAML/SUMO.owl#FreshWaterArea>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#River> <http://reliant.teknowledge.com/DAML/SUMO.owl#StreamWaterArea>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Rock> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Rock>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Rock> <http://reliant.teknowledge.com/DAML/SUMO.owl#Substance>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SaltLake> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SaltLake>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SaltLake> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandlockedWater>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SaltLake> <http://reliant.teknowledge.com/DAML/SUMO.owl#SaltWaterArea>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sand> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sand>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sand> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Soil>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Satellite> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Satellite>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Satellite> <http://reliant.teknowledge.com/DAML/SUMO.owl#AstronomicalBody>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sea> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sea> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BodyOfWater>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Sea> <http://reliant.teknowledge.com/DAML/SUMO.owl#SaltWaterArea>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Shrub> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Shrub>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Shrub> <http://reliant.teknowledge.com/DAML/SUMO.owl#FloweringPlant>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SigningADocument> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SigningADocument>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SigningADocument> <http://reliant.teknowledge.com/DAML/SUMO.owl#Committing>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SlopedArea> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SlopedArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SlopedArea> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Snowing> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Snowing>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Snowing> <http://reliant.teknowledge.com/DAML/SUMO.owl#Precipitation>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Soil> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Soil>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Soil> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mixture>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SolarSystem> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SolarSystem>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SolarSystem> <http://reliant.teknowledge.com/DAML/SUMO.owl#Collection>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SquareMeter> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SquareMeter>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SquareMeter> <http://reliant.teknowledge.com/DAML/SUMO.owl#AreaMeasure>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Star> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Star>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Star> <http://reliant.teknowledge.com/DAML/SUMO.owl#AstronomicalBody>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SteppeClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SteppeClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SteppeClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AridClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Strait> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Strait>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Strait> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BodyOfWater>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SubtropicalDesertClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SubtropicalDesertClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SubtropicalDesertClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DesertClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Swamp> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Swamp>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Swamp> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TemperateClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TemperateClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TemperateClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TemperateSummerDryClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TemperateSummerDryClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TemperateSummerDryClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TemperateClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TemperateWinterDryClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TemperateWinterDryClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TemperateWinterDryClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TemperateClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TidalProcess> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TidalProcess>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TidalProcess> <http://reliant.teknowledge.com/DAML/SUMO.owl#InternalChange>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TropicalClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TropicalClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TropicalClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TundraClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TundraClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TundraClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#PolarClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UplandArea> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UplandArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UplandArea> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WaterWave> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WaterWave>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WaterWave> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FlowRegion>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WaterWave> <http://reliant.teknowledge.com/DAML/SUMO.owl#Water>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Waterfall> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Waterfall>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Waterfall> <http://reliant.teknowledge.com/DAML/SUMO.owl#StreamWaterArea>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WeatherFront> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WeatherFront>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WeatherFront> <http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WetTropicalClimateZone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WetTropicalClimateZone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WetTropicalClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TropicalClimateZone>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wood> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wood>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wood> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Agent> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Agent>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Agent> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Air> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Air>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Air> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mixture>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#AreaMeasure> (<http://reliant.teknowledge.com/DAML/SUMO.owl#AreaMeasure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#AreaMeasure> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#AstronomicalBody> (<http://reliant.teknowledge.com/DAML/SUMO.owl#AstronomicalBody>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#AstronomicalBody> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Attribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Attribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Attribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#City> (<http://reliant.teknowledge.com/DAML/SUMO.owl#City>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#City> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Collection> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Collection>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Collection> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Combining> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Combining>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Combining> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Combustion> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Combustion>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Combustion> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Committing> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Committing>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Committing> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance> (<http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#ConstantQuantity> (<http://reliant.teknowledge.com/DAML/SUMO.owl#ConstantQuantity>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#ConstantQuantity> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Continent> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Continent>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Continent> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#DirectionalAttribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#DirectionalAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#DirectionalAttribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#FloweringPlant> (<http://reliant.teknowledge.com/DAML/SUMO.owl#FloweringPlant>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#FloweringPlant> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#FreshWaterArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#FreshWaterArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#FreshWaterArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#FunctionQuantity> (<http://reliant.teknowledge.com/DAML/SUMO.owl#FunctionQuantity>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#FunctionQuantity> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#GeologicalProcess> (<http://reliant.teknowledge.com/DAML/SUMO.owl#GeologicalProcess>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeologicalProcess> <http://reliant.teknowledge.com/DAML/SUMO.owl#InternalChange>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeologicalProcess> <http://reliant.teknowledge.com/DAML/SUMO.owl#Motion>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Hole> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Hole>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Hole> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Impelling> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Impelling>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Impelling> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess> (<http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#InternalChange> (<http://reliant.teknowledge.com/DAML/SUMO.owl#InternalChange>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#InternalChange> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#IrreflexiveRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#IrreflexiveRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#IrreflexiveRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Island> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Island>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Island> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Killing> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Killing>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Killing> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#LengthMeasure> (<http://reliant.teknowledge.com/DAML/SUMO.owl#LengthMeasure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#LengthMeasure> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Maintaining> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Maintaining>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Maintaining> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Mixture> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Mixture>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Mixture> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Motion> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Motion>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Motion> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#NonFloweringPlant> (<http://reliant.teknowledge.com/DAML/SUMO.owl#NonFloweringPlant>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#NonFloweringPlant> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeRealNumber> (<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeRealNumber>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeRealNumber> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Object> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Object> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#OrganicObject> (<http://reliant.teknowledge.com/DAML/SUMO.owl#OrganicObject>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#OrganicObject> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Organism> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Organism>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organism> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Physical> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Physical>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Physical> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#PhysicalQuantity> (<http://reliant.teknowledge.com/DAML/SUMO.owl#PhysicalQuantity>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#PhysicalQuantity> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#PhysicalState> (<http://reliant.teknowledge.com/DAML/SUMO.owl#PhysicalState>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#PhysicalState> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#PlaneAngleMeasure> (<http://reliant.teknowledge.com/DAML/SUMO.owl#PlaneAngleMeasure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#PlaneAngleMeasure> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Plant> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Plant>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Plant> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#PositionalAttribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#PositionalAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#PositionalAttribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Precipitation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Precipitation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Precipitation> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Falling>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Precipitation> <http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Process> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Process>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Process> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#PureSubstance> (<http://reliant.teknowledge.com/DAML/SUMO.owl#PureSubstance>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#PureSubstance> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Putting> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Putting>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Putting> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Radiating> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Radiating>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Radiating> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#RadiatingLight> (<http://reliant.teknowledge.com/DAML/SUMO.owl#RadiatingLight>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#RadiatingLight> <http://reliant.teknowledge.com/DAML/SUMO.owl#Radiating>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Region> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Region>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Region> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Removing> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Removing>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Removing> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SaltWaterArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SaltWaterArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SaltWaterArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#ShoreArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#ShoreArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#ShoreArea> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SingleValuedRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SingleValuedRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SingleValuedRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Solution> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Solution>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Solution> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#StaticWaterArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#StaticWaterArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#StaticWaterArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact> (<http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#StreamWaterArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#StreamWaterArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#StreamWaterArea> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FlowRegion>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Substance> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Substance>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Substance> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SymmetricRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SymmetricRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymmetricRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Text> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Text>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Text> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TimeDuration> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeDuration>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeDuration> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TimePosition> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TimePosition>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimePosition> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Transfer> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Transfer>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Transfer> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TransitiveRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TransitiveRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TransitiveRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Translocation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Translocation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Translocation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction> (<http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure> (<http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Water> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Water>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Water> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess> (<http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess> <http://reliant.teknowledge.com/DAML/SUMO.owl#InternalChange>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Wind> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Wind>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Wind> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AirStream>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AcidRainfall> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AcidRainfall>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AcidRainfall> <http://reliant.teknowledge.com/DAML/SUMO.owl#Process>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Acidification> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Acidification>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Acidification> <http://reliant.teknowledge.com/DAML/SUMO.owl#Process>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AerosolParticulate> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AerosolParticulate>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AerosolParticulate> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pollutant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Afforestation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Afforestation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Afforestation> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Planting>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Aftershock> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Aftershock>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Aftershock> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#EarthTremor>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Agreement> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Agreement>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Agreement> <http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AgriculturalImpactIssue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AgriculturalImpactIssue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AgriculturalImpactIssue> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EnvironmentalIssue>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AirPollution> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AirPollution>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AirPollution> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PollutionProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AirPollutionIssue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AirPollutionIssue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AirPollutionIssue> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ArableLand> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ArableLand>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ArableLand> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ArcMinute> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ArcMinute>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ArcMinute> <http://reliant.teknowledge.com/DAML/SUMO.owl#PlaneAngleMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ArcSecond> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ArcSecond>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ArcSecond> <http://reliant.teknowledge.com/DAML/SUMO.owl#PlaneAngleMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ArchipelagicArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ArchipelagicArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ArchipelagicArea> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Archipelago> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Archipelago>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Archipelago> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Archipelago> <http://reliant.teknowledge.com/DAML/SUMO.owl#Collection>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Asbestos> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Asbestos>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Asbestos> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Asbestos> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pollutant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Atoll> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Atoll>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Atoll> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CoralReef>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Atoll> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IslandGroup>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AvalancheProcess> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AvalancheProcess>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#AvalancheProcess> <http://reliant.teknowledge.com/DAML/SUMO.owl#Impelling>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Barite> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Barite>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Barite> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Barite> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Basin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Basin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Basin> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Bauxite> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Bauxite>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Bauxite> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Bauxite> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Bay> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Bay>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Bay> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Inlet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BeaufortNumber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BeaufortNumber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BeaufortNumber> <http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BiodiversityAttribute> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BiodiversityAttribute>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BiodiversityAttribute> <http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BiodiversityIssue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BiodiversityIssue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BiodiversityIssue> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EnvironmentalIssue>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Biome> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Biome>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Biome> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Ecosystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BorealForest> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BorealForest>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BorealForest> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Forest>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BorealForest> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Biome>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BrownCoal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BrownCoal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#BrownCoal> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Coal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Butte> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Butte>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Butte> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UplandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Cape> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Cape>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Cape> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CarbonCycle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CarbonCycle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CarbonCycle> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeologicalProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CarbonDioxideEmission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CarbonDioxideEmission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CarbonDioxideEmission> <http://reliant.teknowledge.com/DAML/SUMO.owl#Process>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CaveMatrix> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CaveMatrix>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CaveMatrix> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CaveMatrix> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#UndergroundArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Channel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Channel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Channel> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BodyOfWater>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ChinookWind> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ChinookWind>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ChinookWind> <http://reliant.teknowledge.com/DAML/SUMO.owl#Wind>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Chromite> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Chromite>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Chromite> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Chromite> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ClearWeather> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ClearWeather>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ClearWeather> <http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Cliff> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Cliff>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Cliff> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SlopedArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ClimateChangeIssue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ClimateChangeIssue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ClimateChangeIssue> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EnvironmentalIssue>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CoastalPlain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CoastalPlain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CoastalPlain> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Plain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ColdFront> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ColdFront>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ColdFront> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WeatherFront>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ContinentalMargin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ContinentalMargin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ContinentalMargin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SubmergedLandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ContinentalShelf> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ContinentalShelf>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ContinentalShelf> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SubmergedLandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CoralReef> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CoralReef>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CoralReef> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Reef>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Cove> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Cove>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Cove> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Inlet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CyclonicStorm> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CyclonicStorm>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CyclonicStorm> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LowPressureWeatherSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DDT> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DDT>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DDT> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Defoliant> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Defoliant>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Defoliant> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Herbicide>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Deforestation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Deforestation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Deforestation> <http://reliant.teknowledge.com/DAML/SUMO.owl#Removing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Delta> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Delta>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Delta> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Desert> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Desert>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Desert> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Desertification> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Desertification>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Desertification> <http://reliant.teknowledge.com/DAML/SUMO.owl#Process>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DipSlipFault> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DipSlipFault>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DipSlipFault> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#GeologicalFault>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Dredging> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Dredging>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Dredging> <http://reliant.teknowledge.com/DAML/SUMO.owl#Removing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DriftnetFishing> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DriftnetFishing>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DriftnetFishing> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fishing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DustStorm> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DustStorm>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DustStorm> <http://reliant.teknowledge.com/DAML/SUMO.owl#Transfer>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DustStorm> <http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EarthflowProcess> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EarthflowProcess>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EarthflowProcess> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandslideProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Ecosystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Ecosystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Ecosystem> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Effluent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Effluent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Effluent> <http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ElNino> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ElNino>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ElNino> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WeatherSeason>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EndangeredSpecies> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EndangeredSpecies>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EndangeredSpecies> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organism>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EnvironmentalIssue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EnvironmentalIssue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EnvironmentalIssue> <http://reliant.teknowledge.com/DAML/Government.owl#AreaOfConcern>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Estuary> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Estuary>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Estuary> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Inlet>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Estuary> <http://reliant.teknowledge.com/DAML/SUMO.owl#SaltWaterArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ExclusiveFishingZone> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ExclusiveFishingZone>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ExclusiveFishingZone> <http://reliant.teknowledge.com/DAML/SUMO.owl#SaltWaterArea>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ExclusiveFishingZone> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeClaimArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ExtendedFishingZone> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ExtendedFishingZone>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ExtendedFishingZone> <http://reliant.teknowledge.com/DAML/SUMO.owl#SaltWaterArea>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ExtendedFishingZone> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeClaimArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Fathom> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Fathom>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Fathom> <http://reliant.teknowledge.com/DAML/SUMO.owl#LengthMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Fire> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Fire>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Fire> <http://reliant.teknowledge.com/DAML/SUMO.owl#Combustion>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Flow> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Flow>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Flow> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Fluorite> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Fluorite>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Fluorite> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ForestFire> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ForestFire>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ForestFire> <http://reliant.teknowledge.com/DAML/SUMO.owl#Combustion>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#FreezingRain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#FreezingRain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#FreezingRain> <http://reliant.teknowledge.com/DAML/SUMO.owl#Precipitation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Freshwater> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Freshwater>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Freshwater> <http://reliant.teknowledge.com/DAML/SUMO.owl#Water>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#GeologicalFault> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#GeologicalFault>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#GeologicalFault> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Ghibli> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Ghibli>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Ghibli> <http://reliant.teknowledge.com/DAML/SUMO.owl#Wind>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Glacier> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Glacier>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Glacier> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Graphite> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Graphite>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Graphite> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Carbon>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#GrassFire> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#GrassFire>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#GrassFire> <http://reliant.teknowledge.com/DAML/SUMO.owl#Combustion>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Grassland> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Grassland>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Grassland> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Grassland> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Biome>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Gravel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Gravel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Gravel> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Rock>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#GreenhouseGas> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#GreenhouseGas>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#GreenhouseGas> <http://reliant.teknowledge.com/DAML/SUMO.owl#PureSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Groundwater> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Groundwater>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Groundwater> <http://reliant.teknowledge.com/DAML/SUMO.owl#Water>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HarmattanWind> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HarmattanWind>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HarmattanWind> <http://reliant.teknowledge.com/DAML/SUMO.owl#Wind>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Herbicide> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Herbicide>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Herbicide> <http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HighPressureWeatherSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HighPressureWeatherSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HighPressureWeatherSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WeatherSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HigherHighTide> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HigherHighTide>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HigherHighTide> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#HighTide>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Hill> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Hill>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Hill> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UplandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Hurricane> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Hurricane>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Hurricane> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TropicalCyclone>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HurricaneSeason> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HurricaneSeason>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HurricaneSeason> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WeatherSeason>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HydropowerWaterArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HydropowerWaterArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HydropowerWaterArea> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FlowRegion>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#HydropowerWaterArea> <http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Iceberg> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Iceberg>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Iceberg> <http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Iceberg> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SeaIce>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Icing> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Icing>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Icing> <http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IndustrialPollution> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IndustrialPollution>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IndustrialPollution> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PollutionProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InlandWaterSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InlandWaterSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InlandWaterSystem> <http://reliant.teknowledge.com/DAML/SUMO.owl#Collection>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InlandWaterSystem> <http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InletPassage> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InletPassage>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InletPassage> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Inlet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Insecticide> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Insecticide>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Insecticide> <http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InternationalAgreement> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InternationalAgreement>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InternationalAgreement> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Agreement>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InternationalBorder> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InternationalBorder>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#InternationalBorder> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IronOre> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IronOre>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IronOre> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IrrigatedLand> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IrrigatedLand>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IrrigatedLand> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Irrigating> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Irrigating>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Irrigating> <http://reliant.teknowledge.com/DAML/SUMO.owl#Translocation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IrrigationChannel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IrrigationChannel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IrrigationChannel> <http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IslandGroup> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IslandGroup>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IslandGroup> <http://reliant.teknowledge.com/DAML/SUMO.owl#Collection>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#IslandGroup> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Isthmus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Isthmus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Isthmus> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#JetStream> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#JetStream>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#JetStream> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AirStream>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Jungle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Jungle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Jungle> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Jungle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Biome>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Khamsin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Khamsin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Khamsin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Windstorm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#KnotUnitOfSpeed> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#KnotUnitOfSpeed>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#KnotUnitOfSpeed> <http://reliant.teknowledge.com/DAML/SUMO.owl#ConstantQuantity>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Lake> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Lake>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Lake> <http://reliant.teknowledge.com/DAML/SUMO.owl#StaticWaterArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LakeRegion> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LakeRegion>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LakeRegion> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandSubsidence> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandSubsidence>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandSubsidence> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeologicalProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandUseIssue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandUseIssue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandUseIssue> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EnvironmentalIssue>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandlockedArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandlockedArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandlockedArea> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandslideProcess> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandslideProcess>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandslideProcess> <http://reliant.teknowledge.com/DAML/SUMO.owl#Impelling>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Latitude> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Latitude>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Latitude> <http://reliant.teknowledge.com/DAML/SUMO.owl#Region>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Lichen> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Lichen>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Lichen> <http://reliant.teknowledge.com/DAML/SUMO.owl#NonFloweringPlant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LittoralCurrent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LittoralCurrent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LittoralCurrent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterCurrent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LittoralZone> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LittoralZone>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LittoralZone> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Loam> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Loam>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Loam> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Soil>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Longitude> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Longitude>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Longitude> <http://reliant.teknowledge.com/DAML/SUMO.owl#Region>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LossOfHabitatIssue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LossOfHabitatIssue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LossOfHabitatIssue> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LowPressureWeatherSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LowPressureWeatherSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LowPressureWeatherSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WeatherSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LowerLowTide> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LowerLowTide>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LowerLowTide> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LowTide>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Magnesite> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Magnesite>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Magnesite> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MarineEnvironmentIssue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MarineEnvironmentIssue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MarineEnvironmentIssue> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EnvironmentalIssue>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeClaimArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeClaimArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeClaimArea> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeContiguousZone> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeContiguousZone>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeContiguousZone> <http://reliant.teknowledge.com/DAML/SUMO.owl#SaltWaterArea>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeContiguousZone> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeClaimArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeExclusiveEconomicZone> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeExclusiveEconomicZone>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeExclusiveEconomicZone> <http://reliant.teknowledge.com/DAML/SUMO.owl#SaltWaterArea>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeExclusiveEconomicZone> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeClaimArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeShelfArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeShelfArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeShelfArea> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeClaimArea>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeShelfArea> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SubmergedLandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Mesa> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Mesa>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Mesa> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UplandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MetallurgicalPlant> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MetallurgicalPlant>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MetallurgicalPlant> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Mistral> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Mistral>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Mistral> <http://reliant.teknowledge.com/DAML/SUMO.owl#Wind>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MixedTideProcess> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MixedTideProcess>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MixedTideProcess> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TidalProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Monsoon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Monsoon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Monsoon> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WeatherSeason>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Mountain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Mountain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Mountain> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UplandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MountainRange> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MountainRange>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MountainRange> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UplandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#NaturalGas> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#NaturalGas>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#NaturalGas> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#OrganicCompound>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#NauticalMile> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#NauticalMile>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#NauticalMile> <http://reliant.teknowledge.com/DAML/SUMO.owl#LengthMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#NormalFault> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#NormalFault>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#NormalFault> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DipSlipFault>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#NoxiousSubstance> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#NoxiousSubstance>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#NoxiousSubstance> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pollutant>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Oasis> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Oasis>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Oasis> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Oasis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Biome>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#OccludedFront> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#OccludedFront>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#OccludedFront> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WeatherFront>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#OceanCurrent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#OceanCurrent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#OceanCurrent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterCurrent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#OceanTrench> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#OceanTrench>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#OceanTrench> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SubmergedLandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#OvercastWeather> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#OvercastWeather>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#OvercastWeather> <http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Overgrazing> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Overgrazing>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Overgrazing> <http://reliant.teknowledge.com/DAML/SUMO.owl#Process>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PHValue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PHValue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PHValue> <http://reliant.teknowledge.com/DAML/SUMO.owl#ConstantQuantity>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pampa> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pampa>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pampa> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Grassland>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pampa> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Plain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pampero> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pampero>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pampero> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Windstorm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PartlyCloudyWeather> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PartlyCloudyWeather>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PartlyCloudyWeather> <http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PerimeterArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PerimeterArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PerimeterArea> <http://reliant.teknowledge.com/DAML/SUMO.owl#Region>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Permafrost> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Permafrost>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Permafrost> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Soil>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Permafrost> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PermanentCropLand> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PermanentCropLand>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PermanentCropLand> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pesticide> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pesticide>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pesticide> <http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PesticidePollution> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PesticidePollution>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PesticidePollution> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PollutionProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Phosphate> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Phosphate>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Phosphate> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Piedmont> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Piedmont>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Piedmont> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Plain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Plain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Plain> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LowlandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Plateau> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Plateau>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Plateau> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UplandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PoachingToKill> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PoachingToKill>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PoachingToKill> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Hunting>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PoachingToKill> <http://reliant.teknowledge.com/DAML/SUMO.owl#Killing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pollutant> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pollutant>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pollutant> <http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PollutionIssue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PollutionIssue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PollutionIssue> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EnvironmentalIssue>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PollutionProcess> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PollutionProcess>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PollutionProcess> <http://reliant.teknowledge.com/DAML/SUMO.owl#Process>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PotableWater> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PotableWater>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PotableWater> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Freshwater>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Potash> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Potash>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Potash> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Prairie> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Prairie>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Prairie> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Grassland>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Prairie> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Plain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PreciousGemstone> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PreciousGemstone>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PreciousGemstone> <http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PressureMeasure> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PressureMeasure>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PressureMeasure> <http://reliant.teknowledge.com/DAML/SUMO.owl#ConstantQuantity>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pyrite> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pyrite>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pyrite> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Pyrite> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RadiatingXRay> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RadiatingXRay>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RadiatingXRay> <http://reliant.teknowledge.com/DAML/SUMO.owl#Radiating>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RainForest> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RainForest>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RainForest> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Forest>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RainForest> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Biome>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Rapids> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Rapids>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Rapids> <http://reliant.teknowledge.com/DAML/SUMO.owl#StreamWaterArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Reef> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Reef>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Reef> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Reforestation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Reforestation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Reforestation> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Planting>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Reservoir> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Reservoir>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Reservoir> <http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Reservoir> <http://reliant.teknowledge.com/DAML/SUMO.owl#FreshWaterArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ReservoirLake> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ReservoirLake>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ReservoirLake> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Lake>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ReservoirLake> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Reservoir>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RichterMagnitude> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RichterMagnitude>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RichterMagnitude> <http://reliant.teknowledge.com/DAML/SUMO.owl#FunctionQuantity>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RipCurrent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RipCurrent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RipCurrent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LittoralCurrent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RiverBank> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RiverBank>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RiverBank> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RiverBank> <http://reliant.teknowledge.com/DAML/SUMO.owl#ShoreArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RiverMouth> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RiverMouth>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RiverMouth> <http://reliant.teknowledge.com/DAML/SUMO.owl#StreamWaterArea>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RiverMouth> <http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RiverSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RiverSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RiverSystem> <http://reliant.teknowledge.com/DAML/SUMO.owl#Collection>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RiverSystem> <http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RockslideProcess> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RockslideProcess>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RockslideProcess> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LandslideProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Salination> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Salination>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Salination> <http://reliant.teknowledge.com/DAML/SUMO.owl#Combining>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Salt> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Salt>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Salt> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sandstorm> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sandstorm>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sandstorm> <http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sanitation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sanitation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sanitation> <http://reliant.teknowledge.com/DAML/SUMO.owl#Removing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Savanna> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Savanna>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Savanna> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Grassland>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Savanna> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Plain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SeaIce> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SeaIce>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SeaIce> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SeabedArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SeabedArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SeabedArea> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SubmergedLandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Seacoast> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Seacoast>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Seacoast> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Seacoast> <http://reliant.teknowledge.com/DAML/SUMO.owl#ShoreArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SemiaridClimateZone> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SemiaridClimateZone>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SemiaridClimateZone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ClimateZone>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SemipreciousGemstone> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SemipreciousGemstone>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SemipreciousGemstone> <http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SewageDisposal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SewageDisposal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SewageDisposal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sanitation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Shoreline> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Shoreline>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Shoreline> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Silt> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Silt>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Silt> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Soil>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Siltation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Siltation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Siltation> <http://reliant.teknowledge.com/DAML/SUMO.owl#Putting>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sirocco> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sirocco>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sirocco> <http://reliant.teknowledge.com/DAML/SUMO.owl#Wind>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SlashAndBurnAgriculture> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SlashAndBurnAgriculture>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SlashAndBurnAgriculture> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Agriculture>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sleeting> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sleeting>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sleeting> <http://reliant.teknowledge.com/DAML/SUMO.owl#Precipitation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Snow> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Snow>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Snow> <http://reliant.teknowledge.com/DAML/SUMO.owl#Water>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilDegradation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilDegradation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilDegradation> <http://reliant.teknowledge.com/DAML/SUMO.owl#Process>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilErosion> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilErosion>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilErosion> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Erosion>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilQualityIssue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilQualityIssue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilQualityIssue> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EnvironmentalIssue>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilSalination> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilSalination>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilSalination> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Salination>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilSolution> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilSolution>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SoilSolution> <http://reliant.teknowledge.com/DAML/SUMO.owl#Solution>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SolidWasteDisposal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SolidWasteDisposal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SolidWasteDisposal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sanitation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sound> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sound>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Sound> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#BodyOfWater>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SquareKilometer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SquareKilometer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SquareKilometer> <http://reliant.teknowledge.com/DAML/SUMO.owl#AreaMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#StationaryFront> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#StationaryFront>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#StationaryFront> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WeatherFront>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Steppe> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Steppe>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Steppe> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Plain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Stone> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Stone>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Stone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Rock>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#StreamWaterConfluence> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#StreamWaterConfluence>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#StreamWaterConfluence> <http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#StrikeSlipFault> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#StrikeSlipFault>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#StrikeSlipFault> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#GeologicalFault>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SubmergedLandArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SubmergedLandArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SubmergedLandArea> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SurfaceGroundArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SurfaceGroundArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SurfaceGroundArea> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SymmetricAttribute> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SymmetricAttribute>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#SymmetricAttribute> <http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Talc> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Talc>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Talc> <http://reliant.teknowledge.com/DAML/SUMO.owl#Mineral>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TemperateHardwoodForest> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TemperateHardwoodForest>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TemperateHardwoodForest> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Forest>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TemperateHardwoodForest> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Biome>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TemperateRainForest> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TemperateRainForest>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TemperateRainForest> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RainForest>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TemperateRainForest> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TemperateHardwoodForest>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TerrainAttribute> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TerrainAttribute>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TerrainAttribute> <http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TerritorialSea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TerritorialSea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TerritorialSea> <http://reliant.teknowledge.com/DAML/SUMO.owl#SaltWaterArea>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TerritorialSea> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#MaritimeClaimArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ThrustFault> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ThrustFault>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#ThrustFault> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#DipSlipFault>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Thunderstorm> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Thunderstorm>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Thunderstorm> <http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TidalBore> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TidalBore>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TidalBore> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LittoralCurrent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TidalEbb> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TidalEbb>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TidalEbb> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LittoralCurrent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TidalFlow> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TidalFlow>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TidalFlow> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#LittoralCurrent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TidalWave> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TidalWave>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TidalWave> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WaterWave>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Tide> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Tide>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Tide> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FlowRegion>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Tide> <http://reliant.teknowledge.com/DAML/SUMO.owl#SaltWaterArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Timber> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Timber>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Timber> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wood>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Tornado> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Tornado>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Tornado> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Windstorm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TreatyDocument> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TreatyDocument>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TreatyDocument> <http://reliant.teknowledge.com/DAML/SUMO.owl#Text>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TropicalCyclone> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TropicalCyclone>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TropicalCyclone> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#CyclonicStorm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TropicalRainForest> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TropicalRainForest>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TropicalRainForest> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#RainForest>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Tundra> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Tundra>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Tundra> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Biome>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Tundra> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Plain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Typhoon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Typhoon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Typhoon> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#TropicalCyclone>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#UndergroundArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#UndergroundArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#UndergroundArea> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#UniformPerimeterArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#UniformPerimeterArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#UniformPerimeterArea> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PerimeterArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Valley> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Valley>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Valley> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LowlandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VehicularPollution> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VehicularPollution>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VehicularPollution> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PollutionProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Veldt> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Veldt>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Veldt> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Grassland>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Veldt> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Plain>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicCone> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicCone>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicCone> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Hill>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicCone> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Volcano>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicEruption> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicEruption>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicEruption> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeologicalProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicGasRelease> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicGasRelease>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicGasRelease> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicEruption>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicMountain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicMountain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicMountain> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Mountain>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanicMountain> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Volcano>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Volcano> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Volcano>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Volcano> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandForm>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanoStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanoStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#VolcanoStatus> <http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WarmFront> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WarmFront>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WarmFront> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WeatherFront>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WasteManagementIssue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WasteManagementIssue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WasteManagementIssue> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PollutionIssue>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterCatchmentDevice> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterCatchmentDevice>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterCatchmentDevice> <http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterCurrent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterCurrent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterCurrent> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FlowRegion>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterCurrent> <http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterInfrastructureIssue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterInfrastructureIssue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterInfrastructureIssue> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterOnlyArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterOnlyArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterOnlyArea> <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterOverutilization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterOverutilization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterOverutilization> <http://reliant.teknowledge.com/DAML/SUMO.owl#Process>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterPollution> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterPollution>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterPollution> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#PollutionProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterResourceIssue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterResourceIssue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterResourceIssue> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#EnvironmentalIssue>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterSalination> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterSalination>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WaterSalination> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Salination>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WatershedDivide> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WatershedDivide>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WatershedDivide> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UplandArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WeatherSeason> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WeatherSeason>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WeatherSeason> <http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WeatherSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WeatherSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#WeatherSystem> <http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Windstorm> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Windstorm>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Windstorm> <http://reliant.teknowledge.com/DAML/SUMO.owl#WeatherProcess>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00142.owl#Windstorm> <http://reliant.teknowledge.com/DAML/SUMO.owl#Wind>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

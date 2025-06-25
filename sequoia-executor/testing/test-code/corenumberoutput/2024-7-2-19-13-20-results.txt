@@ -1,0 +1,20 @@
+
+../data/oxfordcorpus-fixed-dl-SROIQ/00001.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/OLDsequoia.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+../data/oxfordcorpus-fixed-dl-SROIQ/00001.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/AKKAexecutor.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+../data/oxfordcorpus-fixed-dl-SROIQ/00002.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/OLDsequoia.jar,[SUCCESS] , -1247576680 , 10594 ,  , 0
+../data/oxfordcorpus-fixed-dl-SROIQ/00002.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/AKKAexecutor.jar,[SUCCESS] , -1247576680 , 12458 ,  , 871
+../data/oxfordcorpus-fixed-dl-SROIQ/00003.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/OLDsequoia.jar,[SUCCESS] , 856937829 , 574191 ,  , 0
+../data/oxfordcorpus-fixed-dl-SROIQ/00003.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/AKKAexecutor.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+../data/oxfordcorpus-fixed-dl-SROIQ/00004.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/OLDsequoia.jar,[SUCCESS] , 1585262848 , 2619 ,  , 0
+../data/oxfordcorpus-fixed-dl-SROIQ/00004.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/AKKAexecutor.jar,[SUCCESS] , 1585262848 , 7346 ,  , 1186
+../data/oxfordcorpus-fixed-dl-SROIQ/00005.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/OLDsequoia.jar,[SUCCESS] , 1585262848 , 317685 ,  , 0
+../data/oxfordcorpus-fixed-dl-SROIQ/00005.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/AKKAexecutor.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+../data/oxfordcorpus-fixed-dl-SROIQ/00006.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/OLDsequoia.jar,[SUCCESS] , -547682132 , 223 ,  , 0
+../data/oxfordcorpus-fixed-dl-SROIQ/00006.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/AKKAexecutor.jar,[SUCCESS] , -547682132 , 3357 ,  , 1119
+../data/oxfordcorpus-fixed-dl-SROIQ/00007.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/OLDsequoia.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+../data/oxfordcorpus-fixed-dl-SROIQ/00007.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/AKKAexecutor.jar,[SUCCESS] , --- , TIMEOUT ,  , 0
+../data/oxfordcorpus-fixed-dl-SROIQ/00008.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/OLDsequoia.jar,[SUCCESS] , 1170286582 , 43189 ,  , 0
+../data/oxfordcorpus-fixed-dl-SROIQ/00008.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/AKKAexecutor.jar,[SUCCESS] , 1170286582 , 49858 ,  , 197
+../data/oxfordcorpus-fixed-dl-SROIQ/00009.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/OLDsequoia.jar,[SUCCESS] , 1170286582 , 11732 ,  , 0
+../data/oxfordcorpus-fixed-dl-SROIQ/00009.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/AKKAexecutor.jar,[SUCCESS] , 1170286582 , 25280 ,  , 172
+../data/oxfordcorpus-fixed-dl-SROIQ/00010.owl.DL.owl.SROIQ.owl,./harnesses-for-testing-with/OLDsequoia.jar,[SUCCESS] , --- , TIMEOUT ,  , 0

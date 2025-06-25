@@ -1,0 +1,78 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(rdf:Property))
+Declaration(Class(rdfs:Literal))
+Declaration(Class(rdfs:Resource))
+Declaration(Class(<http://www.w3.org/2002/11/08-ccpp-schema#Attribute>))
+Declaration(Class(<http://www.w3.org/2002/11/08-ccpp-schema#Client-profile>))
+Declaration(Class(<http://www.w3.org/2002/11/08-ccpp-schema#Component>))
+Declaration(Class(<http://www.w3.org/2002/11/08-ccpp-schema#Profile>))
+Declaration(Class(<http://www.w3.org/2002/11/08-ccpp-schema#Property>))
+Declaration(Class(<http://www.w3.org/2002/11/08-ccpp-schema#Structure>))
+Declaration(Class(<http://www.w3.org/2002/11/08-ccpp-schema#integer>))
+Declaration(Class(<http://www.w3.org/2002/11/08-ccpp-schema#rational>))
+Declaration(Class(<http://www.w3.org/2002/11/08-ccpp-schema#string>))
+############################
+#   Classes
+############################
+
+# Class: rdf:Property (rdf:Property)
+
+SubClassOf(rdf:Property owl:Thing)
+
+# Class: rdfs:Literal (rdfs:Literal)
+
+SubClassOf(rdfs:Literal owl:Thing)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: <http://www.w3.org/2002/11/08-ccpp-schema#Attribute> (<http://www.w3.org/2002/11/08-ccpp-schema#Attribute>)
+
+SubClassOf(<http://www.w3.org/2002/11/08-ccpp-schema#Attribute> <http://www.w3.org/2002/11/08-ccpp-schema#Property>)
+
+# Class: <http://www.w3.org/2002/11/08-ccpp-schema#Client-profile> (<http://www.w3.org/2002/11/08-ccpp-schema#Client-profile>)
+
+SubClassOf(<http://www.w3.org/2002/11/08-ccpp-schema#Client-profile> owl:Thing)
+
+# Class: <http://www.w3.org/2002/11/08-ccpp-schema#Component> (<http://www.w3.org/2002/11/08-ccpp-schema#Component>)
+
+SubClassOf(<http://www.w3.org/2002/11/08-ccpp-schema#Component> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/11/08-ccpp-schema#Profile> (<http://www.w3.org/2002/11/08-ccpp-schema#Profile>)
+
+SubClassOf(<http://www.w3.org/2002/11/08-ccpp-schema#Profile> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/11/08-ccpp-schema#Property> (<http://www.w3.org/2002/11/08-ccpp-schema#Property>)
+
+SubClassOf(<http://www.w3.org/2002/11/08-ccpp-schema#Property> rdf:Property)
+
+# Class: <http://www.w3.org/2002/11/08-ccpp-schema#Structure> (<http://www.w3.org/2002/11/08-ccpp-schema#Structure>)
+
+SubClassOf(<http://www.w3.org/2002/11/08-ccpp-schema#Structure> <http://www.w3.org/2002/11/08-ccpp-schema#Property>)
+
+# Class: <http://www.w3.org/2002/11/08-ccpp-schema#integer> (<http://www.w3.org/2002/11/08-ccpp-schema#integer>)
+
+SubClassOf(<http://www.w3.org/2002/11/08-ccpp-schema#integer> rdfs:Literal)
+
+# Class: <http://www.w3.org/2002/11/08-ccpp-schema#rational> (<http://www.w3.org/2002/11/08-ccpp-schema#rational>)
+
+SubClassOf(<http://www.w3.org/2002/11/08-ccpp-schema#rational> rdfs:Literal)
+
+# Class: <http://www.w3.org/2002/11/08-ccpp-schema#string> (<http://www.w3.org/2002/11/08-ccpp-schema#string>)
+
+SubClassOf(<http://www.w3.org/2002/11/08-ccpp-schema#string> rdfs:Literal)
+
+
+)

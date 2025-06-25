@@ -1,0 +1,454 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000001>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000002>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000003>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000004>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000005>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000006>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000007>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000008>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000009>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000010>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000011>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000012>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000013>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000014>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000015>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000016>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000017>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000018>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000019>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000020>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000021>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000022>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000023>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000024>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000025>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000026>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000027>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000028>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000029>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000030>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000031>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000032>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000033>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000034>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000035>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000036>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000037>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000038>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000039>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000040>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000041>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000042>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000043>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000044>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000045>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000046>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000047>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000048>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000049>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000050>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000051>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000052>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000053>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000054>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000055>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000056>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000057>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0000058>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001001>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001002>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001003>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001004>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001005>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001006>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001007>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001008>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001009>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001010>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001011>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001012>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001013>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001014>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001015>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001016>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001017>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001018>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001019>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001020>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001021>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001022>))
+Declaration(Class(<http://purl.org/obo/owl/FAO#FAO_0001023>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#DbXref>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Definition>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Synonym>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000001> (<http://purl.org/obo/owl/FAO#FAO_0000001>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000001> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000002> (<http://purl.org/obo/owl/FAO#FAO_0000002>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000002> <http://purl.org/obo/owl/FAO#FAO_0000001>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000003> (<http://purl.org/obo/owl/FAO#FAO_0000003>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000003> <http://purl.org/obo/owl/FAO#FAO_0000052>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000004> (<http://purl.org/obo/owl/FAO#FAO_0000004>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000004> <http://purl.org/obo/owl/FAO#FAO_0000014>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000005> (<http://purl.org/obo/owl/FAO#FAO_0000005>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000005> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000006> (<http://purl.org/obo/owl/FAO#FAO_0000006>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000006> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000007> (<http://purl.org/obo/owl/FAO#FAO_0000007>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000007> <http://purl.org/obo/owl/FAO#FAO_0000001>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000008> (<http://purl.org/obo/owl/FAO#FAO_0000008>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000008> <http://purl.org/obo/owl/FAO#FAO_0000007>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000009> (<http://purl.org/obo/owl/FAO#FAO_0000009>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000009> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000010> (<http://purl.org/obo/owl/FAO#FAO_0000010>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000010> <http://purl.org/obo/owl/FAO#FAO_0000001>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000011> (<http://purl.org/obo/owl/FAO#FAO_0000011>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000011> <http://purl.org/obo/owl/FAO#FAO_0000001>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000012> (<http://purl.org/obo/owl/FAO#FAO_0000012>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000012> <http://purl.org/obo/owl/FAO#FAO_0000007>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000013> (<http://purl.org/obo/owl/FAO#FAO_0000013>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000013> <http://purl.org/obo/owl/FAO#FAO_0000020>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000014> (<http://purl.org/obo/owl/FAO#FAO_0000014>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000014> <http://purl.org/obo/owl/FAO#FAO_0000052>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000015> (<http://purl.org/obo/owl/FAO#FAO_0000015>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000015> <http://purl.org/obo/owl/FAO#FAO_0000014>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000016> (<http://purl.org/obo/owl/FAO#FAO_0000016>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000016> <http://purl.org/obo/owl/FAO#FAO_0000020>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000017> (<http://purl.org/obo/owl/FAO#FAO_0000017>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000017> <http://purl.org/obo/owl/FAO#FAO_0000019>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000018> (<http://purl.org/obo/owl/FAO#FAO_0000018>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000018> <http://purl.org/obo/owl/FAO#FAO_0000001>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000019> (<http://purl.org/obo/owl/FAO#FAO_0000019>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000019> <http://purl.org/obo/owl/FAO#FAO_0000018>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000020> (<http://purl.org/obo/owl/FAO#FAO_0000020>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000020> <http://purl.org/obo/owl/FAO#FAO_0000017>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000021> (<http://purl.org/obo/owl/FAO#FAO_0000021>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000021> <http://purl.org/obo/owl/FAO#FAO_0000017>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000022> (<http://purl.org/obo/owl/FAO#FAO_0000022>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000022> <http://purl.org/obo/owl/FAO#FAO_0000021>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000023> (<http://purl.org/obo/owl/FAO#FAO_0000023>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000023> <http://purl.org/obo/owl/FAO#FAO_0000019>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000024> (<http://purl.org/obo/owl/FAO#FAO_0000024>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000024> <http://purl.org/obo/owl/FAO#FAO_0000023>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000025> (<http://purl.org/obo/owl/FAO#FAO_0000025>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000025> <http://purl.org/obo/owl/FAO#FAO_0000024>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000026> (<http://purl.org/obo/owl/FAO#FAO_0000026>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000026> <http://purl.org/obo/owl/FAO#FAO_0000021>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000027> (<http://purl.org/obo/owl/FAO#FAO_0000027>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000027> <http://purl.org/obo/owl/FAO#FAO_0000025>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000028> (<http://purl.org/obo/owl/FAO#FAO_0000028>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000028> <http://purl.org/obo/owl/FAO#FAO_0000025>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000029> (<http://purl.org/obo/owl/FAO#FAO_0000029>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000029> <http://purl.org/obo/owl/FAO#FAO_0000025>)
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000029> <http://purl.org/obo/owl/FAO#FAO_0000038>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000030> (<http://purl.org/obo/owl/FAO#FAO_0000030>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000030> <http://purl.org/obo/owl/FAO#FAO_0000029>)
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000030> <http://purl.org/obo/owl/FAO#FAO_0000042>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000031> (<http://purl.org/obo/owl/FAO#FAO_0000031>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000031> <http://purl.org/obo/owl/FAO#FAO_0000029>)
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000031> <http://purl.org/obo/owl/FAO#FAO_0000041>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000032> (<http://purl.org/obo/owl/FAO#FAO_0000032>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000032> <http://purl.org/obo/owl/FAO#FAO_0000018>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000033> (<http://purl.org/obo/owl/FAO#FAO_0000033>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000033> <http://purl.org/obo/owl/FAO#FAO_0000024>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000034> (<http://purl.org/obo/owl/FAO#FAO_0000034>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000034> <http://purl.org/obo/owl/FAO#FAO_0000002>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000035> (<http://purl.org/obo/owl/FAO#FAO_0000035>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000035> <http://purl.org/obo/owl/FAO#FAO_0000033>)
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000035> <http://purl.org/obo/owl/FAO#FAO_0000038>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000036> (<http://purl.org/obo/owl/FAO#FAO_0000036>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000036> <http://purl.org/obo/owl/FAO#FAO_0000035>)
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000036> <http://purl.org/obo/owl/FAO#FAO_0000042>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000037> (<http://purl.org/obo/owl/FAO#FAO_0000037>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000037> <http://purl.org/obo/owl/FAO#FAO_0000035>)
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000037> <http://purl.org/obo/owl/FAO#FAO_0000041>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000038> (<http://purl.org/obo/owl/FAO#FAO_0000038>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000038> <http://purl.org/obo/owl/FAO#FAO_0000024>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000039> (<http://purl.org/obo/owl/FAO#FAO_0000039>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000039> <http://purl.org/obo/owl/FAO#FAO_0000023>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000040> (<http://purl.org/obo/owl/FAO#FAO_0000040>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000040> <http://purl.org/obo/owl/FAO#FAO_0000017>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000041> (<http://purl.org/obo/owl/FAO#FAO_0000041>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000041> <http://purl.org/obo/owl/FAO#FAO_0000038>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000042> (<http://purl.org/obo/owl/FAO#FAO_0000042>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000042> <http://purl.org/obo/owl/FAO#FAO_0000038>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000043> (<http://purl.org/obo/owl/FAO#FAO_0000043>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000043> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000044> (<http://purl.org/obo/owl/FAO#FAO_0000044>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000044> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000045> (<http://purl.org/obo/owl/FAO#FAO_0000045>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000045> <http://purl.org/obo/owl/FAO#FAO_0000044>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000046> (<http://purl.org/obo/owl/FAO#FAO_0000046>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000046> <http://purl.org/obo/owl/FAO#FAO_0000044>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000047> (<http://purl.org/obo/owl/FAO#FAO_0000047>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000047> <http://purl.org/obo/owl/FAO#FAO_0000008>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000048> (<http://purl.org/obo/owl/FAO#FAO_0000048>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000048> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000049> (<http://purl.org/obo/owl/FAO#FAO_0000049>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000049> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000050> (<http://purl.org/obo/owl/FAO#FAO_0000050>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000050> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000051> (<http://purl.org/obo/owl/FAO#FAO_0000051>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000051> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000052> (<http://purl.org/obo/owl/FAO#FAO_0000052>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000052> <http://purl.org/obo/owl/FAO#FAO_0000010>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000053> (<http://purl.org/obo/owl/FAO#FAO_0000053>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000053> <http://purl.org/obo/owl/FAO#FAO_0000052>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000054> (<http://purl.org/obo/owl/FAO#FAO_0000054>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000054> <http://purl.org/obo/owl/FAO#FAO_0000023>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000055> (<http://purl.org/obo/owl/FAO#FAO_0000055>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000055> <http://purl.org/obo/owl/FAO#FAO_0000023>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000056> (<http://purl.org/obo/owl/FAO#FAO_0000056>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000056> <http://purl.org/obo/owl/FAO#FAO_0000010>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000057> (<http://purl.org/obo/owl/FAO#FAO_0000057>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000057> <http://purl.org/obo/owl/FAO#FAO_0000010>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0000058> (<http://purl.org/obo/owl/FAO#FAO_0000058>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0000058> <http://purl.org/obo/owl/FAO#FAO_0000010>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001001> (<http://purl.org/obo/owl/FAO#FAO_0001001>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001001> <http://purl.org/obo/owl/FAO#FAO_0000001>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001002> (<http://purl.org/obo/owl/FAO#FAO_0001002>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001002> <http://purl.org/obo/owl/FAO#FAO_0000001>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001003> (<http://purl.org/obo/owl/FAO#FAO_0001003>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001003> <http://purl.org/obo/owl/FAO#FAO_0001001>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001004> (<http://purl.org/obo/owl/FAO#FAO_0001004>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001004> <http://purl.org/obo/owl/FAO#FAO_0001003>)
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001004> <http://purl.org/obo/owl/FAO#FAO_0001009>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001005> (<http://purl.org/obo/owl/FAO#FAO_0001005>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001005> <http://purl.org/obo/owl/FAO#FAO_0000011>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001006> (<http://purl.org/obo/owl/FAO#FAO_0001006>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001006> <http://purl.org/obo/owl/FAO#FAO_0000011>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001007> (<http://purl.org/obo/owl/FAO#FAO_0001007>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001007> <http://purl.org/obo/owl/FAO#FAO_0000011>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001008> (<http://purl.org/obo/owl/FAO#FAO_0001008>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001008> <http://purl.org/obo/owl/FAO#FAO_0000011>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001009> (<http://purl.org/obo/owl/FAO#FAO_0001009>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001009> <http://purl.org/obo/owl/FAO#FAO_0001001>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001010> (<http://purl.org/obo/owl/FAO#FAO_0001010>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001010> <http://purl.org/obo/owl/FAO#FAO_0001001>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001011> (<http://purl.org/obo/owl/FAO#FAO_0001011>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001011> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001012> (<http://purl.org/obo/owl/FAO#FAO_0001012>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001012> <http://purl.org/obo/owl/FAO#FAO_0001011>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001013> (<http://purl.org/obo/owl/FAO#FAO_0001013>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001013> <http://purl.org/obo/owl/FAO#FAO_0001004>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001014> (<http://purl.org/obo/owl/FAO#FAO_0001014>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001014> <http://purl.org/obo/owl/FAO#FAO_0001003>)
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001014> <http://purl.org/obo/owl/FAO#FAO_0001010>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001015> (<http://purl.org/obo/owl/FAO#FAO_0001015>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001015> <http://purl.org/obo/owl/FAO#FAO_0001012>)
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001015> <http://purl.org/obo/owl/FAO#FAO_0001016>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001016> (<http://purl.org/obo/owl/FAO#FAO_0001016>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001016> <http://purl.org/obo/owl/FAO#FAO_0001011>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001017> (<http://purl.org/obo/owl/FAO#FAO_0001017>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001017> <http://purl.org/obo/owl/FAO#FAO_0001015>)
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001017> <http://purl.org/obo/owl/FAO#FAO_0001019>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001018> (<http://purl.org/obo/owl/FAO#FAO_0001018>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001018> <http://purl.org/obo/owl/FAO#FAO_0001009>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001019> (<http://purl.org/obo/owl/FAO#FAO_0001019>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001019> <http://purl.org/obo/owl/FAO#FAO_0001016>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001020> (<http://purl.org/obo/owl/FAO#FAO_0001020>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001020> <http://purl.org/obo/owl/FAO#FAO_0001012>)
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001020> <http://purl.org/obo/owl/FAO#FAO_0001021>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001021> (<http://purl.org/obo/owl/FAO#FAO_0001021>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001021> <http://purl.org/obo/owl/FAO#FAO_0001011>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001022> (<http://purl.org/obo/owl/FAO#FAO_0001022>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001022> <http://purl.org/obo/owl/FAO#FAO_0000018>)
+
+# Class: <http://purl.org/obo/owl/FAO#FAO_0001023> (<http://purl.org/obo/owl/FAO#FAO_0001023>)
+
+SubClassOf(<http://purl.org/obo/owl/FAO#FAO_0001023> <http://purl.org/obo/owl/FAO#FAO_0001022>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#DbXref> (<http://www.geneontology.org/formats/oboInOwl#DbXref>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#DbXref> owl:Thing)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Definition> (<http://www.geneontology.org/formats/oboInOwl#Definition>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Definition> owl:Thing)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> (<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> owl:Thing)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Synonym> (<http://www.geneontology.org/formats/oboInOwl#Synonym>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Synonym> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

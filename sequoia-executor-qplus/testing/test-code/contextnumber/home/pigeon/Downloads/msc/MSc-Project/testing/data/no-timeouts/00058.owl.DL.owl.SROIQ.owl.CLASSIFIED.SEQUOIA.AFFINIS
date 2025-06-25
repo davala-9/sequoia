@@ -1,0 +1,38 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://daml.umbc.edu/ontologies/ittalks/event#Event>))
+Declaration(Class(<http://daml.umbc.edu/ontologies/ittalks/event#Instant>))
+Declaration(Class(<http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent>))
+Declaration(Class(<http://daml.umbc.edu/ontologies/ittalks/event#Place>))
+############################
+#   Classes
+############################
+
+# Class: <http://daml.umbc.edu/ontologies/ittalks/event#Event> (<http://daml.umbc.edu/ontologies/ittalks/event#Event>)
+
+SubClassOf(<http://daml.umbc.edu/ontologies/ittalks/event#Event> owl:Thing)
+
+# Class: <http://daml.umbc.edu/ontologies/ittalks/event#Instant> (<http://daml.umbc.edu/ontologies/ittalks/event#Instant>)
+
+SubClassOf(<http://daml.umbc.edu/ontologies/ittalks/event#Instant> owl:Thing)
+
+# Class: <http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent> (<http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent>)
+
+SubClassOf(<http://daml.umbc.edu/ontologies/ittalks/event#IntervalEvent> <http://daml.umbc.edu/ontologies/ittalks/event#Event>)
+
+# Class: <http://daml.umbc.edu/ontologies/ittalks/event#Place> (<http://daml.umbc.edu/ontologies/ittalks/event#Place>)
+
+SubClassOf(<http://daml.umbc.edu/ontologies/ittalks/event#Place> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

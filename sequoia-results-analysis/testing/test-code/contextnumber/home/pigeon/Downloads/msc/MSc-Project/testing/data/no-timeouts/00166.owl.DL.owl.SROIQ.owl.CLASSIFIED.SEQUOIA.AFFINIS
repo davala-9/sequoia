@@ -1,0 +1,71 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error1>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error2>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error3>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error4>))
+Declaration(Class(<http://www.ai.sri.com/daml/ontologies/sri-basic/1-0/Time.daml#Instant>))
+Declaration(Class(<http://www.ai.sri.com/daml/ontologies/sri-basic/1-0/Time.daml#TemporalEntity>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00166.owl#Instant>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00166.owl#Interval>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00166.owl#TemporalEntity>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Ontology>))
+############################
+#   Classes
+############################
+
+# Class: <http://org.semanticweb.owlapi/error#Error1> (<http://org.semanticweb.owlapi/error#Error1>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error1> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error2> (<http://org.semanticweb.owlapi/error#Error2>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error2> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error3> (<http://org.semanticweb.owlapi/error#Error3>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error3> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error4> (<http://org.semanticweb.owlapi/error#Error4>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error4> owl:Thing)
+
+# Class: <http://www.ai.sri.com/daml/ontologies/sri-basic/1-0/Time.daml#Instant> (<http://www.ai.sri.com/daml/ontologies/sri-basic/1-0/Time.daml#Instant>)
+
+SubClassOf(<http://www.ai.sri.com/daml/ontologies/sri-basic/1-0/Time.daml#Instant> owl:Thing)
+
+# Class: <http://www.ai.sri.com/daml/ontologies/sri-basic/1-0/Time.daml#TemporalEntity> (<http://www.ai.sri.com/daml/ontologies/sri-basic/1-0/Time.daml#TemporalEntity>)
+
+SubClassOf(<http://www.ai.sri.com/daml/ontologies/sri-basic/1-0/Time.daml#TemporalEntity> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00166.owl#Instant> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00166.owl#Instant>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00166.owl#Instant> <http://www.ai.sri.com/daml/ontologies/sri-basic/1-0/Time.daml#TemporalEntity>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00166.owl#Interval> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00166.owl#Interval>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00166.owl#Interval> <http://org.semanticweb.owlapi/error#Error2>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00166.owl#Interval> <http://org.semanticweb.owlapi/error#Error3>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00166.owl#Interval> <http://org.semanticweb.owlapi/error#Error4>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00166.owl#Interval> <http://www.ai.sri.com/daml/ontologies/sri-basic/1-0/Time.daml#TemporalEntity>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00166.owl#TemporalEntity> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00166.owl#TemporalEntity>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00166.owl#TemporalEntity> <http://org.semanticweb.owlapi/error#Error1>)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Ontology> (<http://www.daml.org/2001/03/daml+oil#Ontology>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Ontology> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

@@ -1,0 +1,228 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#DbXref>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Definition>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Synonym>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1#Entity>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#Continuant>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#Disposition>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#Function>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#Object>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#ObjectBoundary>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#Quality>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#Role>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#Site>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#FiatProcessPart>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#Occurrent>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#Process>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#ProcessAggregate>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#ProcessBoundary>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#ProcessualContext>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#ScatteredSpatiotemporalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#ScatteredTemporalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInstant>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInterval>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#TemporalInstant>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#TemporalInterval>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/span#TemporalRegion>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#DbXref> (<http://www.geneontology.org/formats/oboInOwl#DbXref>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#DbXref> owl:Thing)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Definition> (<http://www.geneontology.org/formats/oboInOwl#Definition>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Definition> owl:Thing)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Synonym> (<http://www.geneontology.org/formats/oboInOwl#Synonym>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Synonym> owl:Thing)
+
+# Class: <http://www.ifomis.org/bfo/1.1#Entity> (<http://www.ifomis.org/bfo/1.1#Entity>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1#Entity> owl:Thing)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#Continuant> (<http://www.ifomis.org/bfo/1.1/snap#Continuant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#Continuant> <http://www.ifomis.org/bfo/1.1#Entity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> (<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#DependentContinuant> <http://www.ifomis.org/bfo/1.1/snap#Continuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#Disposition> (<http://www.ifomis.org/bfo/1.1/snap#Disposition>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#Disposition> <http://www.ifomis.org/bfo/1.1/snap#RealizableEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart> (<http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart> <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#Function> (<http://www.ifomis.org/bfo/1.1/snap#Function>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#Function> <http://www.ifomis.org/bfo/1.1/snap#RealizableEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> (<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> <http://www.ifomis.org/bfo/1.1/snap#DependentContinuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant> (<http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant> <http://www.ifomis.org/bfo/1.1/snap#Continuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> (<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#MaterialEntity> <http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#Object> (<http://www.ifomis.org/bfo/1.1/snap#Object>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#Object> <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate> (<http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate> <http://www.ifomis.org/bfo/1.1/snap#MaterialEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#ObjectBoundary> (<http://www.ifomis.org/bfo/1.1/snap#ObjectBoundary>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#ObjectBoundary> <http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion> (<http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion> <http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#Quality> (<http://www.ifomis.org/bfo/1.1/snap#Quality>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#Quality> <http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> (<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#RealizableEntity> <http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#Role> (<http://www.ifomis.org/bfo/1.1/snap#Role>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#Role> <http://www.ifomis.org/bfo/1.1/snap#RealizableEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#Site> (<http://www.ifomis.org/bfo/1.1/snap#Site>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#Site> <http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#SpatialRegion> (<http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#SpatialRegion> <http://www.ifomis.org/bfo/1.1/snap#Continuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> (<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant> <http://www.ifomis.org/bfo/1.1/snap#DependentContinuant>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion> (<http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion> <http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion> (<http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion> <http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion> (<http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion> <http://www.ifomis.org/bfo/1.1/snap#SpatialRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion> (<http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion> <http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion> (<http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion> <http://www.ifomis.org/bfo/1.1/span#TemporalRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#FiatProcessPart> (<http://www.ifomis.org/bfo/1.1/span#FiatProcessPart>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#FiatProcessPart> <http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#Occurrent> (<http://www.ifomis.org/bfo/1.1/span#Occurrent>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#Occurrent> <http://www.ifomis.org/bfo/1.1#Entity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#Process> (<http://www.ifomis.org/bfo/1.1/span#Process>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#Process> <http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#ProcessAggregate> (<http://www.ifomis.org/bfo/1.1/span#ProcessAggregate>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#ProcessAggregate> <http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#ProcessBoundary> (<http://www.ifomis.org/bfo/1.1/span#ProcessBoundary>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#ProcessBoundary> <http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#ProcessualContext> (<http://www.ifomis.org/bfo/1.1/span#ProcessualContext>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#ProcessualContext> <http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#ProcessualEntity> (<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#ProcessualEntity> <http://www.ifomis.org/bfo/1.1/span#Occurrent>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#ScatteredSpatiotemporalRegion> (<http://www.ifomis.org/bfo/1.1/span#ScatteredSpatiotemporalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#ScatteredSpatiotemporalRegion> <http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#ScatteredTemporalRegion> (<http://www.ifomis.org/bfo/1.1/span#ScatteredTemporalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#ScatteredTemporalRegion> <http://www.ifomis.org/bfo/1.1/span#TemporalRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInstant> (<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInstant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInstant> <http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInterval> (<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInterval>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInterval> <http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion> (<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion> <http://www.ifomis.org/bfo/1.1/span#Occurrent>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#TemporalInstant> (<http://www.ifomis.org/bfo/1.1/span#TemporalInstant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#TemporalInstant> <http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#TemporalInterval> (<http://www.ifomis.org/bfo/1.1/span#TemporalInterval>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#TemporalInterval> <http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/span#TemporalRegion> (<http://www.ifomis.org/bfo/1.1/span#TemporalRegion>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/span#TemporalRegion> <http://www.ifomis.org/bfo/1.1/span#Occurrent>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

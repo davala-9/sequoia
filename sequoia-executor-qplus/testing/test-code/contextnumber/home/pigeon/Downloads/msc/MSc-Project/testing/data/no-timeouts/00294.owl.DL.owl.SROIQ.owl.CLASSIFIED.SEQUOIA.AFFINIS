@@ -1,0 +1,95 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.mindswap.org/~glapizco/simpleABC.owl#Actuality>))
+Declaration(Class(<http://www.mindswap.org/~glapizco/technical.owl#Image>))
+Declaration(Class(<http://www.mindswap.org/~glapizco/technical.owl#ImagePart>))
+Declaration(Class(<http://www.mindswap.org/~glapizco/technical.owl#ImageText>))
+Declaration(Class(<http://www.mindswap.org/~glapizco/technical.owl#Mosaic>))
+Declaration(Class(<http://www.mindswap.org/~glapizco/technical.owl#MovingRegion>))
+Declaration(Class(<http://www.mindswap.org/~glapizco/technical.owl#Multimedia>))
+Declaration(Class(<http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent>))
+Declaration(Class(<http://www.mindswap.org/~glapizco/technical.owl#Segment>))
+Declaration(Class(<http://www.mindswap.org/~glapizco/technical.owl#StillRegion>))
+Declaration(Class(<http://www.mindswap.org/~glapizco/technical.owl#Video>))
+Declaration(Class(<http://www.mindswap.org/~glapizco/technical.owl#VideoFrame>))
+Declaration(Class(<http://www.mindswap.org/~glapizco/technical.owl#VideoSegment>))
+Declaration(Class(<http://www.mindswap.org/~glapizco/technical.owl#VideoText>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Image>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.mindswap.org/~glapizco/simpleABC.owl#Actuality> (<http://www.mindswap.org/~glapizco/simpleABC.owl#Actuality>)
+
+SubClassOf(<http://www.mindswap.org/~glapizco/simpleABC.owl#Actuality> owl:Thing)
+
+# Class: <http://www.mindswap.org/~glapizco/technical.owl#Image> (<http://www.mindswap.org/~glapizco/technical.owl#Image>)
+
+SubClassOf(<http://www.mindswap.org/~glapizco/technical.owl#Image> <http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent>)
+SubClassOf(<http://www.mindswap.org/~glapizco/technical.owl#Image> <http://xmlns.com/foaf/0.1/Image>)
+
+# Class: <http://www.mindswap.org/~glapizco/technical.owl#ImagePart> (<http://www.mindswap.org/~glapizco/technical.owl#ImagePart>)
+
+SubClassOf(<http://www.mindswap.org/~glapizco/technical.owl#ImagePart> <http://www.mindswap.org/~glapizco/technical.owl#Segment>)
+
+# Class: <http://www.mindswap.org/~glapizco/technical.owl#ImageText> (<http://www.mindswap.org/~glapizco/technical.owl#ImageText>)
+
+SubClassOf(<http://www.mindswap.org/~glapizco/technical.owl#ImageText> <http://www.mindswap.org/~glapizco/technical.owl#StillRegion>)
+
+# Class: <http://www.mindswap.org/~glapizco/technical.owl#Mosaic> (<http://www.mindswap.org/~glapizco/technical.owl#Mosaic>)
+
+SubClassOf(<http://www.mindswap.org/~glapizco/technical.owl#Mosaic> <http://www.mindswap.org/~glapizco/technical.owl#StillRegion>)
+
+# Class: <http://www.mindswap.org/~glapizco/technical.owl#MovingRegion> (<http://www.mindswap.org/~glapizco/technical.owl#MovingRegion>)
+
+SubClassOf(<http://www.mindswap.org/~glapizco/technical.owl#MovingRegion> <http://www.mindswap.org/~glapizco/technical.owl#Segment>)
+
+# Class: <http://www.mindswap.org/~glapizco/technical.owl#Multimedia> (<http://www.mindswap.org/~glapizco/technical.owl#Multimedia>)
+
+SubClassOf(<http://www.mindswap.org/~glapizco/technical.owl#Multimedia> <http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent>)
+
+# Class: <http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent> (<http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent>)
+
+SubClassOf(<http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent> <http://www.mindswap.org/~glapizco/simpleABC.owl#Actuality>)
+
+# Class: <http://www.mindswap.org/~glapizco/technical.owl#Segment> (<http://www.mindswap.org/~glapizco/technical.owl#Segment>)
+
+SubClassOf(<http://www.mindswap.org/~glapizco/technical.owl#Segment> <http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent>)
+
+# Class: <http://www.mindswap.org/~glapizco/technical.owl#StillRegion> (<http://www.mindswap.org/~glapizco/technical.owl#StillRegion>)
+
+SubClassOf(<http://www.mindswap.org/~glapizco/technical.owl#StillRegion> <http://www.mindswap.org/~glapizco/technical.owl#Segment>)
+
+# Class: <http://www.mindswap.org/~glapizco/technical.owl#Video> (<http://www.mindswap.org/~glapizco/technical.owl#Video>)
+
+SubClassOf(<http://www.mindswap.org/~glapizco/technical.owl#Video> <http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent>)
+
+# Class: <http://www.mindswap.org/~glapizco/technical.owl#VideoFrame> (<http://www.mindswap.org/~glapizco/technical.owl#VideoFrame>)
+
+SubClassOf(<http://www.mindswap.org/~glapizco/technical.owl#VideoFrame> <http://www.mindswap.org/~glapizco/technical.owl#MultimediaContent>)
+
+# Class: <http://www.mindswap.org/~glapizco/technical.owl#VideoSegment> (<http://www.mindswap.org/~glapizco/technical.owl#VideoSegment>)
+
+SubClassOf(<http://www.mindswap.org/~glapizco/technical.owl#VideoSegment> <http://www.mindswap.org/~glapizco/technical.owl#Segment>)
+SubClassOf(<http://www.mindswap.org/~glapizco/technical.owl#VideoSegment> <http://www.mindswap.org/~glapizco/technical.owl#Video>)
+
+# Class: <http://www.mindswap.org/~glapizco/technical.owl#VideoText> (<http://www.mindswap.org/~glapizco/technical.owl#VideoText>)
+
+SubClassOf(<http://www.mindswap.org/~glapizco/technical.owl#VideoText> <http://www.mindswap.org/~glapizco/technical.owl#MovingRegion>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: <http://xmlns.com/foaf/0.1/Image> (<http://xmlns.com/foaf/0.1/Image>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Image> owl:Thing)
+
+
+)

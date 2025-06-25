@@ -1,0 +1,99 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error1>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error2>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error3>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error4>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#LavoVegetarian>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#LavoVegetarianFood>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Octo-LavoVegetarian>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoLavoVegetarianFood>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoVegetarian>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoVegetarianFood>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#VeganFood>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegetarian>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#VegetarianFood>))
+Declaration(Class(<http://www.isi.edu/webscripter/person.o.daml#Person>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/#Person>))
+############################
+#   Classes
+############################
+
+# Class: <http://org.semanticweb.owlapi/error#Error1> (<http://org.semanticweb.owlapi/error#Error1>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error1> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error2> (<http://org.semanticweb.owlapi/error#Error2>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error2> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error3> (<http://org.semanticweb.owlapi/error#Error3>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error3> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error4> (<http://org.semanticweb.owlapi/error#Error4>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error4> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#LavoVegetarian> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#LavoVegetarian>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#LavoVegetarian> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Octo-LavoVegetarian>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#LavoVegetarianFood> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#LavoVegetarianFood>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#LavoVegetarianFood> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Octo-LavoVegetarian> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Octo-LavoVegetarian>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Octo-LavoVegetarian> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegetarian>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoLavoVegetarianFood> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoLavoVegetarianFood>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoLavoVegetarianFood> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoVegetarian> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoVegetarian>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoVegetarian> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Octo-LavoVegetarian>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoVegetarianFood> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoVegetarianFood>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#OctoVegetarianFood> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegan> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegetarian>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#VeganFood> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#VeganFood>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#VeganFood> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegetarian> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegetarian>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegetarian> <http://www.isi.edu/webscripter/person.o.daml#Person>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#Vegetarian> <http://xmlns.com/foaf/0.1/#Person>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#VegetarianFood> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#VegetarianFood>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00190.owl#VegetarianFood> owl:Thing)
+
+# Class: <http://www.isi.edu/webscripter/person.o.daml#Person> (<http://www.isi.edu/webscripter/person.o.daml#Person>)
+
+SubClassOf(<http://www.isi.edu/webscripter/person.o.daml#Person> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: <http://xmlns.com/foaf/0.1/#Person> (<http://xmlns.com/foaf/0.1/#Person>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/#Person> owl:Thing)
+
+
+)

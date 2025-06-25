@@ -1,0 +1,960 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://frot.org/space/0.1/Space>))
+Declaration(Class(<http://frot.org/space/0.1/connects>))
+Declaration(Class(<http://frot.org/space/0.1/contains>))
+Declaration(Class(<http://frot.org/space/0.1/distance>))
+Declaration(Class(<http://frot.org/space/0.1/name>))
+Declaration(Class(<http://frot.org/space/0.1/near>))
+Declaration(Class(<http://frot.org/space/0.1/type>))
+Declaration(Class(<http://opencyc.sourceforge.net/daml/cyc.daml#Railway>))
+Declaration(Class(<http://opencyc.sourceforge.net/daml/cyc.daml#Subway>))
+Declaration(Class(<http://opencyc.sourceforge.net/daml/cyc.daml#SubwayStation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Abandoned_Airfield>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Administrative_Area>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Administrative_Division>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Agricultural_Facility>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Airfield>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Alcohol_Providing_Outlet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Anchorage>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ancient_Road>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ancient_Site>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Arch>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Area>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bank>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Battlefield>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bay>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Beach>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bog>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bridge>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Building>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cafe>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cairn>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Camp>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Canal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Canalized_Stream>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cape>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Castle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cathedral>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Causeway>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cave>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Channel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Church>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cinema>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Clearing>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cliff>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Coffee_Shop>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Country_House>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cove>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Current>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Deep>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Depression>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Dock>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Docking_Basin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Estate>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Estuary>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Farm>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#First-order_Administrative_Division>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Fishing_Area>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Food_Providing_Outlet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Forest>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Fort>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Gap>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Garden>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Gasfield>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Gorge>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Gulf>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Harbor>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Headland>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Heath>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hill>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hills>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Historical_Site>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hole>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hotel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#House>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Independent_Political_Entity>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Inlet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Island>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Islands>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lagoon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lake>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lakes>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Land-tied_Island>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ledge>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lighthouse>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality_or_Area>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lock>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Marine_Channel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Meadow>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Monument>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Moor>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Mountain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Mountains>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Narrows>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Nature_Reserve>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Naval_Base>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Navigation_Channel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Oilfield>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Overfalls>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Palace>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Parish>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Park>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pass>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Peak>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Peaks>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Peninsula>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pier>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Plain>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Point>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pond>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pool>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Area>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Locality>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Place>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Port>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pub>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Building>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Space>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Transport>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Racetrack>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railroad_Station>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway_Line>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway_Station>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Reach>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Recreational_Venue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Reef>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Region>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Religious_Venue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Reservoir>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Retail_Venue>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ridge>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#River>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Road>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Roadstead>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Rock>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Rocks>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ruin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Sand_Area>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Sea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Second-order_Administrative_Division>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Section_Of_Populated>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Section_Of_Stream>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shoal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shop>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shopping_Centre>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Slope>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Sluice>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Sound>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Space>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spit>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Square>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Strait>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Stream>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Stream_Mouth>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Street>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Supermarket>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Third-order_Administrative_Division>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tidal_Flat>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tower>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Transport_Infrastructure>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Trough>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tube_Line>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tube_Station>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tunnel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Undersea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Upland>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Valley>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Vegetation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Walk>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Waterfall>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Whirlpool>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Marsh(es)>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Promontory(-ies)>))
+Declaration(Class(owl:Property))
+Declaration(Class(<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Connects>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Contains>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Distance>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Name>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Near>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Space>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Type>))
+############################
+#   Classes
+############################
+
+# Class: <http://frot.org/space/0.1/Space> (<http://frot.org/space/0.1/Space>)
+
+SubClassOf(<http://frot.org/space/0.1/Space> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>)
+SubClassOf(<http://frot.org/space/0.1/Space> <http://xmlns.com/wordnet/1.6/Space>)
+
+# Class: <http://frot.org/space/0.1/connects> (<http://frot.org/space/0.1/connects>)
+
+SubClassOf(<http://frot.org/space/0.1/connects> <http://xmlns.com/wordnet/1.6/Connects>)
+
+# Class: <http://frot.org/space/0.1/contains> (<http://frot.org/space/0.1/contains>)
+
+SubClassOf(<http://frot.org/space/0.1/contains> <http://xmlns.com/wordnet/1.6/Contains>)
+
+# Class: <http://frot.org/space/0.1/distance> (<http://frot.org/space/0.1/distance>)
+
+SubClassOf(<http://frot.org/space/0.1/distance> <http://xmlns.com/wordnet/1.6/Distance>)
+
+# Class: <http://frot.org/space/0.1/name> (<http://frot.org/space/0.1/name>)
+
+SubClassOf(<http://frot.org/space/0.1/name> <http://xmlns.com/wordnet/1.6/Name>)
+
+# Class: <http://frot.org/space/0.1/near> (<http://frot.org/space/0.1/near>)
+
+SubClassOf(<http://frot.org/space/0.1/near> <http://xmlns.com/wordnet/1.6/Near>)
+
+# Class: <http://frot.org/space/0.1/type> (<http://frot.org/space/0.1/type>)
+
+SubClassOf(<http://frot.org/space/0.1/type> <http://xmlns.com/wordnet/1.6/Type>)
+
+# Class: <http://opencyc.sourceforge.net/daml/cyc.daml#Railway> (<http://opencyc.sourceforge.net/daml/cyc.daml#Railway>)
+
+EquivalentClasses(<http://opencyc.sourceforge.net/daml/cyc.daml#Railway> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway>)
+SubClassOf(<http://opencyc.sourceforge.net/daml/cyc.daml#Railway> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Transport_Infrastructure>)
+
+# Class: <http://opencyc.sourceforge.net/daml/cyc.daml#Subway> (<http://opencyc.sourceforge.net/daml/cyc.daml#Subway>)
+
+EquivalentClasses(<http://opencyc.sourceforge.net/daml/cyc.daml#Subway> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tube_Line>)
+SubClassOf(<http://opencyc.sourceforge.net/daml/cyc.daml#Subway> <http://opencyc.sourceforge.net/daml/cyc.daml#Railway>)
+SubClassOf(<http://opencyc.sourceforge.net/daml/cyc.daml#Subway> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway>)
+
+# Class: <http://opencyc.sourceforge.net/daml/cyc.daml#SubwayStation> (<http://opencyc.sourceforge.net/daml/cyc.daml#SubwayStation>)
+
+EquivalentClasses(<http://opencyc.sourceforge.net/daml/cyc.daml#SubwayStation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tube_Station>)
+SubClassOf(<http://opencyc.sourceforge.net/daml/cyc.daml#SubwayStation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway_Station>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Abandoned_Airfield> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Abandoned_Airfield>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Abandoned_Airfield> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Administrative_Area> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Administrative_Area>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Administrative_Area> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Space>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Administrative_Division> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Administrative_Division>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Administrative_Division> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Administrative_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Agricultural_Facility> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Agricultural_Facility>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Agricultural_Facility> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Airfield> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Airfield>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Airfield> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Alcohol_Providing_Outlet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Alcohol_Providing_Outlet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Alcohol_Providing_Outlet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Anchorage> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Anchorage>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Anchorage> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ancient_Road> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ancient_Road>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ancient_Road> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Transport_Infrastructure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ancient_Site> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ancient_Site>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ancient_Site> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Arch> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Arch>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Arch> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Area> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Area>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Area> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality_or_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bank> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bank>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bank> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shop>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Battlefield> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Battlefield>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Battlefield> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality_or_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bay> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bay>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bay> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Beach> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Beach>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Beach> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bog> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bog>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bog> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bridge> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bridge>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Bridge> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Building> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Building>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Building> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cafe> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cafe>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cafe> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Food_Providing_Outlet>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cafe> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cairn> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cairn>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cairn> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Camp> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Camp>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Camp> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Canal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Canal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Canal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Canalized_Stream> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Canalized_Stream>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Canalized_Stream> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cape> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cape>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cape> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Castle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Castle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Castle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cathedral> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cathedral>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cathedral> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Religious_Venue>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Causeway> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Causeway>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Causeway> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Transport_Infrastructure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cave> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cave>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cave> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Channel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Channel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Channel> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Church> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Church>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Church> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Religious_Venue>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cinema> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cinema>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cinema> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Recreational_Venue>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Clearing> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Clearing>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Clearing> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality_or_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cliff> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cliff>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cliff> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Coffee_Shop> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Coffee_Shop>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Coffee_Shop> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Country_House> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Country_House>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Country_House> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cove> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cove>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Cove> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Current> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Current>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Current> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Deep> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Deep>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Deep> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Undersea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Depression> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Depression>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Depression> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Dock> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Dock>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Dock> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Docking_Basin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Docking_Basin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Docking_Basin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Estate> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Estate>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Estate> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Estuary> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Estuary>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Estuary> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Farm> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Farm>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Farm> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#First-order_Administrative_Division> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#First-order_Administrative_Division>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#First-order_Administrative_Division> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Administrative_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Fishing_Area> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Fishing_Area>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Fishing_Area> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Food_Providing_Outlet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Food_Providing_Outlet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Food_Providing_Outlet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Forest> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Forest>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Forest> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Fort> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Fort>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Fort> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Gap> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Gap>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Gap> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Garden> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Garden>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Garden> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Gasfield> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Gasfield>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Gasfield> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality_or_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Gorge> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Gorge>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Gorge> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Gulf> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Gulf>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Gulf> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Harbor> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Harbor>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Harbor> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Headland> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Headland>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Headland> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Heath> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Heath>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Heath> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hill> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hill>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hill> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hills> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hills>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hills> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Historical_Site> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Historical_Site>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Historical_Site> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hole> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hole>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hole> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Undersea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hotel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hotel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hotel> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#House> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#House>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#House> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Space>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Space>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Independent_Political_Entity> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Independent_Political_Entity>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Independent_Political_Entity> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Administrative_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Inlet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Inlet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Inlet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Island> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Island>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Island> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality_or_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Islands> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Islands>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Islands> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lagoon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lagoon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lagoon> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lake> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lake>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lake> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lakes> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lakes>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lakes> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Land-tied_Island> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Land-tied_Island>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Land-tied_Island> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ledge> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ledge>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ledge> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Undersea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lighthouse> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lighthouse>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lighthouse> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality_or_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality_or_Area> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality_or_Area>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality_or_Area> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Space>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lock> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lock>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Lock> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Marine_Channel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Marine_Channel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Marine_Channel> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Meadow> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Meadow>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Meadow> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Vegetation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Monument> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Monument>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Monument> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Moor> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Moor>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Moor> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Mountain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Mountain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Mountain> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Mountains> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Mountains>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Mountains> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Narrows> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Narrows>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Narrows> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Nature_Reserve> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Nature_Reserve>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Nature_Reserve> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality_or_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Naval_Base> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Naval_Base>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Naval_Base> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality_or_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Navigation_Channel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Navigation_Channel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Navigation_Channel> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Oilfield> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Oilfield>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Oilfield> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality_or_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Overfalls> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Overfalls>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Overfalls> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Palace> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Palace>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Palace> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Parish> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Parish>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Parish> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Administrative_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Park> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Park>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Park> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Space>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pass> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pass>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pass> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Peak> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Peak>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Peak> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Peaks> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Peaks>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Peaks> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Peninsula> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Peninsula>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Peninsula> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pier> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pier>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pier> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Plain> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Plain>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Plain> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Point> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Point>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Point> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pond> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pond>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pond> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pool> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pool>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pool> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Area> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Area>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Area> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Space>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Locality> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Locality>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Locality> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Place> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Place>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Place> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Administrative_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Port> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Port>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Port> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality_or_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pub> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pub>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Pub> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Building> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Building>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Building> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Space> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Space>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Space> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Locality_or_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Transport> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Transport>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Transport> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Transport_Infrastructure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Racetrack> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Racetrack>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Racetrack> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railroad_Station> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railroad_Station>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railroad_Station> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Transport_Infrastructure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway_Line> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway_Line>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway_Line> <http://opencyc.sourceforge.net/daml/cyc.daml#Railway>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway_Line> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway_Station> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway_Station>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway_Station> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Building>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway_Station> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Transport>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Reach> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Reach>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Reach> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Recreational_Venue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Recreational_Venue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Recreational_Venue> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Reef> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Reef>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Reef> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Region> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Region>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Region> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Religious_Venue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Religious_Venue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Religious_Venue> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Reservoir> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Reservoir>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Reservoir> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Retail_Venue> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Retail_Venue>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Retail_Venue> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Space>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ridge> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ridge>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ridge> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#River> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#River>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#River> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Road> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Road>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Road> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Transport_Infrastructure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Roadstead> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Roadstead>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Roadstead> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Rock> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Rock>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Rock> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Rocks> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Rocks>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Rocks> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ruin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ruin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Ruin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Sand_Area> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Sand_Area>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Sand_Area> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Sea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Sea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Sea> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Second-order_Administrative_Division> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Second-order_Administrative_Division>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Second-order_Administrative_Division> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Administrative_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Section_Of_Populated> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Section_Of_Populated>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Section_Of_Populated> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Section_Of_Stream> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Section_Of_Stream>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Section_Of_Stream> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shoal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shoal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shoal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shop> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shop>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shop> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Building>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shop> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Space>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shopping_Centre> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shopping_Centre>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shopping_Centre> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Food_Providing_Outlet>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shopping_Centre> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Building>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shopping_Centre> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Retail_Venue>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Slope> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Slope>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Slope> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Sluice> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Sluice>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Sluice> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Sound> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Sound>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Sound> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Space> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Space>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Space> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spit> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spit>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spit> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Spot_Feature> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Space>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Square> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Square>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Square> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Public_Space>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Strait> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Strait>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Strait> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Stream> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Stream>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Stream> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Stream_Mouth> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Stream_Mouth>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Stream_Mouth> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Street> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Street>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Street> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Transport_Infrastructure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Supermarket> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Supermarket>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Supermarket> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Shop>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Third-order_Administrative_Division> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Third-order_Administrative_Division>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Third-order_Administrative_Division> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Populated_Area>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tidal_Flat> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tidal_Flat>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tidal_Flat> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tower> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tower>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tower> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Transport_Infrastructure> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Transport_Infrastructure>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Transport_Infrastructure> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Space>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Trough> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Trough>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Trough> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Undersea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tube_Line> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tube_Line>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tube_Line> <http://opencyc.sourceforge.net/daml/cyc.daml#Railway>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tube_Line> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tube_Station> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tube_Station>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tube_Station> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Railway_Station>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tunnel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tunnel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Tunnel> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Transport_Infrastructure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Undersea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Undersea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Undersea> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Space>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Upland> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Upland>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Upland> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Valley> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Valley>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Valley> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Vegetation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Vegetation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Vegetation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Walk> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Walk>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Walk> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Transport_Infrastructure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Waterfall> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Waterfall>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Waterfall> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Whirlpool> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Whirlpool>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Whirlpool> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Marsh(es)> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Marsh(es)>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Marsh(es)> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hydrographic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Promontory(-ies)> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Promontory(-ies)>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Promontory(-ies)> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00076.owl#Hypsographic>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:Property (owl:Property)
+
+SubClassOf(owl:Property owl:Thing)
+
+# Class: <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> (<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>)
+
+SubClassOf(<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Connects> (<http://xmlns.com/wordnet/1.6/Connects>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Connects> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Contains> (<http://xmlns.com/wordnet/1.6/Contains>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Contains> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Distance> (<http://xmlns.com/wordnet/1.6/Distance>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Distance> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Name> (<http://xmlns.com/wordnet/1.6/Name>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Name> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Near> (<http://xmlns.com/wordnet/1.6/Near>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Near> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Space> (<http://xmlns.com/wordnet/1.6/Space>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Space> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Type> (<http://xmlns.com/wordnet/1.6/Type>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Type> owl:Thing)
+
+
+)

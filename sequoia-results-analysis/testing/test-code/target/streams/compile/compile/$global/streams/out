@@ -1,0 +1,11 @@
+[0m[[0m[31merror[0m] [0m[0m/home/pigeon/Downloads/msc/MSc-Project/testing/test-code/src/main/scala/Classifier.scala:132:24: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m required: Int[0m
+[0m[[0m[31merror[0m] [0m[0m        selfMessages = selfMessages,[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pigeon/Downloads/msc/MSc-Project/testing/test-code/src/main/scala/Classifier.scala:133:25: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m required: Int[0m
+[0m[[0m[31merror[0m] [0m[0m        otherMessages = otherMessages)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

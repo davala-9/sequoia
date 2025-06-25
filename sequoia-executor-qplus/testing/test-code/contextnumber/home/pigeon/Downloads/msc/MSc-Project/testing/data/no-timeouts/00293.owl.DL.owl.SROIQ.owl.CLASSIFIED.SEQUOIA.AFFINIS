@@ -1,0 +1,1998 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#AbsolutePoint>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Action>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionAircraftEmployment>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionContext>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEffect>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEvent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEventDetail>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEventStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionFunctionalAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionObjective>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionObjectiveItem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionObjectiveType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionRequiredCapability>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResource>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResourceEmployment>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResourceItem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResourceType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTask>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTaskRuleOfEngagement>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTaskStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTemporalAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#AddressPostal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#AircraftType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Airfield>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#AmmunitionType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Atmosphere>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#BiologicalAgentType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Bridge>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#BridgeType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetail>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetailAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetailAuthorisation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetailItem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetailType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetList>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetListAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetListAuthorisation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Capability>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ChemicalAgentType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CivilianPostType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CloudCover>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ConeVolume>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ConsumableMaterielType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Context>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ContextAssessment>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ContextElement>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ContextObjectItemAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ContextReportingDataAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeature>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureControlFeatureAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureControlFeatureAssociationStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureGeographicFeatureAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureGeographicFeatureAssociationStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Convoy>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CoordinateSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CorridorArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ElectronicEquipmentType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Ellipse>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EngineeringCapability>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EngineeringEquipmentType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EquipmentType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ExecutiveMilitaryOrganisationType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Facility>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityFacilityAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityFacilityAssociationStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityFeatureAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityFeatureAssociationStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FanArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Feature>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FeatureType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FireCapability>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeographicFeature>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeographicFeatureStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeographicFeatureType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeometricVolume>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GovernmentOrganisationType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GroupOrganisationType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Holding>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Icing>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#LandWeaponType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Light>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Line>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#LinePoint>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Location>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MassGrave>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MassGraveContent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Materiel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielMaterielTypeEstablishment>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielTypeEstablishment>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielTypeEstablishmentMaterielTypeDetail>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusCasualBedOccupancy>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusCasualEvacuation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusIntervalCasualGroup>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusIntervalCasualType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusIntervalEvacuation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusPendingSurgery>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MeteorologicFeature>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MilitaryOrganisationType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MilitaryPostType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Minefield>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MiscellaneousEquipmentType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MissionCapability>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MobilityCapability>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NBCEquipmentType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NBCEvent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Network>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NetworkFrequency>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NetworkService>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NetworkServiceAccess>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NuclearAgentType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemAccess>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemActionEffect>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemCapability>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemLocation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectReference>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectTypeActionEffect>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectTypeCapabilityNorm>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrbitArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Organisation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationActionAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationActionTaskRuleOfEngagementStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationControlFeatureAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationControlFeatureAssociationStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationFacilityAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationFacilityAssociationStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationMaterielAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationMaterielAssociationStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationMaterielTypeAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationOrganisationAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationOrganisationAssociationStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationOrganisationTypeEstablishment>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationPersonAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationPersonAssociationStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationTargetEstablishmentMaterielTypeDetail>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationTargetEstablishmentOrganisationTypeDetail>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationTargetEstablishmentPersonTypeDetail>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationTypeEstablishment>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Person>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonIdentificationDocument>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonLanguageSkill>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonMaterielAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonMaterielAssociationStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonPersonAssociation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonPersonAssociationStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Point>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PointReference>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PolyarcArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PolygonArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Precipitation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PrivateSectorOrganisationType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RailcarType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Reference>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RelativePoint>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ReportingData>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ReportingDataAbsoluteTiming>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ReportingDataRelativeTiming>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Request>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RequestAnswer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RequestAnswerElement>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Route>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RuleOfEngagement>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#SphereVolume>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#StorageCapability>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Surface>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#SurfaceVolume>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#SurveillanceCapability>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Target>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#TargetMarking>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#TargetPersonnelProtection>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#TaskFormationType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#TrackArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Unit>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#UnitType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#UxoStatus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#VehicleType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#VerticalDistance>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#VesselType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Visibility>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Wind>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#AbsolutePoint>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Action>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionAircraftEmployment>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionContext>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionEffect>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionEvent>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionEventDetail>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionEventStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionFunctionalAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionObjective>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionObjectiveItem>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionObjectiveType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionRequiredCapability>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionResource>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionResourceEmployment>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionResourceItem>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionResourceType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionTask>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionTaskRuleOfEngagement>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionTaskStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionTemporalAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#AddressPostal>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#AircraftType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Airfield>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#AmmunitionType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Atmosphere>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#BiologicalAgentType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Bridge>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#BridgeType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetail>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetailAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetailAuthorisation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetailItem>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetailType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetList>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetListAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetListAuthorisation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Capability>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ChemicalAgentType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CivilianPostType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CloudCover>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ConeVolume>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ConsumableMaterielType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Context>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ContextAssessment>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ContextElement>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ContextObjectItemAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ContextReportingDataAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeature>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureControlFeatureAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureControlFeatureAssociationStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureGeographicFeatureAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureGeographicFeatureAssociationStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Convoy>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CoordinateSystem>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CorridorArea>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ElectronicEquipmentType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Ellipse>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#EngineeringCapability>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#EngineeringEquipmentType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#EquipmentType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ExecutiveMilitaryOrganisationType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Facility>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityFacilityAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityFacilityAssociationStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityFeatureAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityFeatureAssociationStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FanArea>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Feature>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FeatureType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FireCapability>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GH5Complete>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GeographicFeature>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GeographicFeatureStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GeographicFeatureType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GeometricVolume>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GovernmentOrganisationType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GroupOrganisationType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Holding>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Icing>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#LandWeaponType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Light>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Line>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#LinePoint>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Location>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MassGrave>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MassGraveContent>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Materiel>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielMaterielTypeEstablishment>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielTypeEstablishment>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielTypeEstablishmentMaterielTypeDetail>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusCasualtyBedOccupancy>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusCasualtyEvacuation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusIntervalCasualtyGroup>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusIntervalCasualtyType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusIntervalEvacuation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusPendingSurgery>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MeteorologicFeature>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MilitaryOrganisationType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MilitaryPostType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Minefield>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MiscellaneousEquipmentType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MissionCapability>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MobilityCapability>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NBCEquipmentType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NBCEvent>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Network>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NetworkFrequency>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NetworkService>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NetworkServiceAccess>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NuclearAgentType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItem>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemAccess>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemActionEffect>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemCapability>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemLocation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectReference>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectTypeActionEffect>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectTypeCapabilityNorm>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrbitArea>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Organisation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationActionAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationActionTaskRuleOfEngagementStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationControlFeatureAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationControlFeatureAssociationStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationFacilityAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationFacilityAssociationStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationMaterielAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationMaterielAssociationStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationMaterielTypeAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationOrganisationAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationOrganisationAssociationStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationOrganisationTypeEstablishment>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationPersonAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationPersonAssociationStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationTypeEstablishment>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationTypeEstablishmentMaterielTypeDetail>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationTypeEstablishmentOrganisationTypeDetail>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationTypeEstablishmentPersonTypeDetail>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Person>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonIdentificationDocument>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonIdentificationDocumentTable>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonLanguageSkill>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonMaterielAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonMaterielAssociationStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonPersonAssociation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonPersonAssociationStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Point>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PointReference>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PolyarcArea>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PolygonArea>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Precipitation>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PrivateSectorOrganisationType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#RailcarType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Reference>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#RelativePoint>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ReportingData>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ReportingDataAbsoluteTiming>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ReportingDataRelativeTiming>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Request>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#RequestAnswer>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#RequestAnswerElement>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Route>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#RuleOfEngagement>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#SphereVolume>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#StorageCapability>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Surface>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#SurfaceVolume>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#SurveillanceCapability>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Target>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#TargetMarking>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#TargetPersonnelProtection>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#TaskFormationType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#TrackArea>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Unit>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#UnitType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#UxoStatus>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#VehicleType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#VerticalDistance>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#VesselType>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Visibility>))
+Declaration(Class(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Wind>))
+Declaration(Class(xsd:decimal))
+Declaration(Class(xsd:int))
+Declaration(Class(xsd:long))
+Declaration(Class(xsd:short))
+Declaration(Class(xsd:string))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+############################
+#   Classes
+############################
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#AbsolutePoint> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#AbsolutePoint>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#AbsolutePoint> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Point>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Action> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Action>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Action> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionAircraftEmployment> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionAircraftEmployment>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionAircraftEmployment> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResourceEmployment>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionContext> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionContext>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionContext> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEffect> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEffect>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEffect> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEvent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEvent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEvent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Action>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEventDetail> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEventDetail>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEventDetail> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEventStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEventStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEventStatus> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionFunctionalAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionFunctionalAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionFunctionalAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionObjective> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionObjective>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionObjective> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionObjectiveItem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionObjectiveItem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionObjectiveItem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionObjective>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionObjectiveType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionObjectiveType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionObjectiveType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionObjective>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionRequiredCapability> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionRequiredCapability>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionRequiredCapability> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResource> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResource>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResource> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResourceEmployment> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResourceEmployment>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResourceEmployment> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResourceItem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResourceItem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResourceItem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResource>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResourceType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResourceType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResourceType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionResource>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTask> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTask>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTask> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Action>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTaskRuleOfEngagement> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTaskRuleOfEngagement>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTaskRuleOfEngagement> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTaskStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTaskStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTaskStatus> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTemporalAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTemporalAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTemporalAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#AddressPostal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#AddressPostal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#AddressPostal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemAccess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#AircraftType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#AircraftType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#AircraftType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EquipmentType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Airfield> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Airfield>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Airfield> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Facility>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#AmmunitionType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#AmmunitionType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#AmmunitionType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ConsumableMaterielType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Atmosphere> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Atmosphere>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Atmosphere> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MeteorologicFeature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#BiologicalAgentType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#BiologicalAgentType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#BiologicalAgentType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ConsumableMaterielType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Bridge> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Bridge>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Bridge> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Facility>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#BridgeType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#BridgeType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#BridgeType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetail> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetail>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetail> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetailAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetailAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetailAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetailAuthorisation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetailAuthorisation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetailAuthorisation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetailItem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetailItem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetailItem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetail>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetailType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetailType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetailType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetDetail>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetList> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetList>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetList> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetListAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetListAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetListAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetListAuthorisation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetListAuthorisation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CandidateTargetListAuthorisation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Capability> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Capability>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Capability> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ChemicalAgentType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ChemicalAgentType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ChemicalAgentType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ConsumableMaterielType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CivilianPostType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CivilianPostType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CivilianPostType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CloudCover> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CloudCover>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CloudCover> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MeteorologicFeature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ConeVolume> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ConeVolume>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ConeVolume> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeometricVolume>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ConsumableMaterielType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ConsumableMaterielType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ConsumableMaterielType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Context> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Context>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Context> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ContextAssessment> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ContextAssessment>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ContextAssessment> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ContextElement> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ContextElement>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ContextElement> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ContextObjectItemAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ContextObjectItemAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ContextObjectItemAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ContextReportingDataAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ContextReportingDataAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ContextReportingDataAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeature> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeature>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeature> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureControlFeatureAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureControlFeatureAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureControlFeatureAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureControlFeatureAssociationStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureControlFeatureAssociationStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureControlFeatureAssociationStatus> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureGeographicFeatureAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureGeographicFeatureAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureGeographicFeatureAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureGeographicFeatureAssociationStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureGeographicFeatureAssociationStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureGeographicFeatureAssociationStatus> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureStatus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemStatus>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeatureType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FeatureType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Convoy> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Convoy>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Convoy> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Organisation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CoordinateSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CoordinateSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CoordinateSystem> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CorridorArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CorridorArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CorridorArea> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Surface>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ElectronicEquipmentType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ElectronicEquipmentType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ElectronicEquipmentType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EquipmentType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Ellipse> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Ellipse>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Ellipse> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Surface>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EngineeringCapability> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EngineeringCapability>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EngineeringCapability> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Capability>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EngineeringEquipmentType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EngineeringEquipmentType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EngineeringEquipmentType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EquipmentType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EquipmentType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EquipmentType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EquipmentType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ExecutiveMilitaryOrganisationType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ExecutiveMilitaryOrganisationType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ExecutiveMilitaryOrganisationType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MilitaryOrganisationType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Facility> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Facility>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Facility> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityFacilityAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityFacilityAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityFacilityAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityFacilityAssociationStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityFacilityAssociationStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityFacilityAssociationStatus> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityFeatureAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityFeatureAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityFeatureAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityFeatureAssociationStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityFeatureAssociationStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityFeatureAssociationStatus> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityStatus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemStatus>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FanArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FanArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FanArea> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Surface>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Feature> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Feature>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Feature> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FeatureType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FeatureType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FeatureType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FireCapability> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FireCapability>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FireCapability> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Capability>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeographicFeature> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeographicFeature>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeographicFeature> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeographicFeatureStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeographicFeatureStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeographicFeatureStatus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemStatus>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeographicFeatureType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeographicFeatureType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeographicFeatureType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FeatureType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeometricVolume> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeometricVolume>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeometricVolume> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Location>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GovernmentOrganisationType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GovernmentOrganisationType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GovernmentOrganisationType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GroupOrganisationType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GroupOrganisationType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GroupOrganisationType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Holding> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Holding>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Holding> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Icing> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Icing>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Icing> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MeteorologicFeature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#LandWeaponType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#LandWeaponType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#LandWeaponType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EquipmentType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Light> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Light>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Light> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MeteorologicFeature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Line> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Line>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Line> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Location>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#LinePoint> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#LinePoint>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#LinePoint> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Location> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Location>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Location> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MassGrave> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MassGrave>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MassGrave> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Facility>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MassGraveContent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MassGraveContent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MassGraveContent> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Materiel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Materiel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Materiel> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielMaterielTypeEstablishment> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielMaterielTypeEstablishment>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielMaterielTypeEstablishment> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielStatus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemStatus>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielTypeEstablishment> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielTypeEstablishment>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielTypeEstablishment> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielTypeEstablishmentMaterielTypeDetail> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielTypeEstablishmentMaterielTypeDetail>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielTypeEstablishmentMaterielTypeDetail> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#FacilityStatus>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusCasualBedOccupancy> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusCasualBedOccupancy>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusCasualBedOccupancy> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusCasualEvacuation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusCasualEvacuation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusCasualEvacuation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusIntervalCasualGroup> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusIntervalCasualGroup>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusIntervalCasualGroup> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusIntervalCasualType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusIntervalCasualType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusIntervalCasualType> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusIntervalEvacuation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusIntervalEvacuation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusIntervalEvacuation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusPendingSurgery> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusPendingSurgery>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MedicalFacilityStatusPendingSurgery> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MeteorologicFeature> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MeteorologicFeature>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MeteorologicFeature> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Feature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MilitaryOrganisationType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MilitaryOrganisationType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MilitaryOrganisationType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GovernmentOrganisationType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MilitaryPostType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MilitaryPostType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MilitaryPostType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MilitaryOrganisationType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Minefield> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Minefield>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Minefield> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Facility>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MiscellaneousEquipmentType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MiscellaneousEquipmentType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MiscellaneousEquipmentType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EquipmentType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MissionCapability> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MissionCapability>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MissionCapability> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Capability>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MobilityCapability> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MobilityCapability>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MobilityCapability> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Capability>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NBCEquipmentType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NBCEquipmentType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NBCEquipmentType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EquipmentType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NBCEvent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NBCEvent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NBCEvent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEvent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Network> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Network>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Network> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Facility>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NetworkFrequency> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NetworkFrequency>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NetworkFrequency> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NetworkService> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NetworkService>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NetworkService> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NetworkServiceAccess> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NetworkServiceAccess>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NetworkServiceAccess> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemAccess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NuclearAgentType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NuclearAgentType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#NuclearAgentType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ConsumableMaterielType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItem> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemAccess> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemAccess>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemAccess> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemActionEffect> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemActionEffect>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemActionEffect> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEffect>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemCapability> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemCapability>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemCapability> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemLocation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemLocation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemLocation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemStatus> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemType> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectReference> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectReference>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectReference> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CoordinateSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectType> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectTypeActionEffect> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectTypeActionEffect>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectTypeActionEffect> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionEffect>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectTypeCapabilityNorm> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectTypeCapabilityNorm>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectTypeCapabilityNorm> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrbitArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrbitArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrbitArea> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Surface>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Organisation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Organisation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Organisation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationActionAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationActionAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationActionAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationActionTaskRuleOfEngagementStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationActionTaskRuleOfEngagementStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationActionTaskRuleOfEngagementStatus> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationControlFeatureAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationControlFeatureAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationControlFeatureAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationControlFeatureAssociationStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationControlFeatureAssociationStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationControlFeatureAssociationStatus> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationFacilityAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationFacilityAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationFacilityAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationFacilityAssociationStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationFacilityAssociationStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationFacilityAssociationStatus> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationMaterielAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationMaterielAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationMaterielAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationMaterielAssociationStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationMaterielAssociationStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationMaterielAssociationStatus> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationMaterielTypeAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationMaterielTypeAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationMaterielTypeAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationOrganisationAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationOrganisationAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationOrganisationAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationOrganisationAssociationStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationOrganisationAssociationStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationOrganisationAssociationStatus> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationOrganisationTypeEstablishment> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationOrganisationTypeEstablishment>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationOrganisationTypeEstablishment> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationPersonAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationPersonAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationPersonAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationPersonAssociationStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationPersonAssociationStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationPersonAssociationStatus> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationStatus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemStatus>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationTargetEstablishmentMaterielTypeDetail> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationTargetEstablishmentMaterielTypeDetail>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationTargetEstablishmentMaterielTypeDetail> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationTargetEstablishmentOrganisationTypeDetail> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationTargetEstablishmentOrganisationTypeDetail>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationTargetEstablishmentOrganisationTypeDetail> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationTargetEstablishmentPersonTypeDetail> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationTargetEstablishmentPersonTypeDetail>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationTargetEstablishmentPersonTypeDetail> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationTypeEstablishment> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationTypeEstablishment>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationTypeEstablishment> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Person> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Person>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Person> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonIdentificationDocument> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonIdentificationDocument>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonIdentificationDocument> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonLanguageSkill> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonLanguageSkill>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonLanguageSkill> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonMaterielAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonMaterielAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonMaterielAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonMaterielAssociationStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonMaterielAssociationStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonMaterielAssociationStatus> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonPersonAssociation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonPersonAssociation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonPersonAssociation> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonPersonAssociationStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonPersonAssociationStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonPersonAssociationStatus> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonStatus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectItemStatus>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PersonType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ObjectType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Point> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Point>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Point> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Location>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PointReference> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PointReference>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PointReference> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#CoordinateSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PolyarcArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PolyarcArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PolyarcArea> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Surface>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PolygonArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PolygonArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PolygonArea> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Surface>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Precipitation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Precipitation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Precipitation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MeteorologicFeature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PrivateSectorOrganisationType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PrivateSectorOrganisationType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#PrivateSectorOrganisationType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#OrganisationType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RailcarType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RailcarType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RailcarType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EquipmentType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Reference> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Reference>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Reference> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RelativePoint> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RelativePoint>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RelativePoint> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Point>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ReportingData> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ReportingData>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ReportingData> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ReportingDataAbsoluteTiming> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ReportingDataAbsoluteTiming>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ReportingDataAbsoluteTiming> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ReportingData>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ReportingDataRelativeTiming> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ReportingDataRelativeTiming>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ReportingDataRelativeTiming> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ReportingData>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Request> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Request>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Request> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionTask>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RequestAnswer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RequestAnswer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RequestAnswer> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RequestAnswerElement> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RequestAnswerElement>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RequestAnswerElement> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Route> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Route>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Route> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ControlFeature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RuleOfEngagement> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RuleOfEngagement>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#RuleOfEngagement> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#SphereVolume> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#SphereVolume>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#SphereVolume> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeometricVolume>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#StorageCapability> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#StorageCapability>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#StorageCapability> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Capability>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Surface> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Surface>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Surface> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Location>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#SurfaceVolume> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#SurfaceVolume>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#SurfaceVolume> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#GeometricVolume>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#SurveillanceCapability> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#SurveillanceCapability>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#SurveillanceCapability> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Capability>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Target> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Target>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Target> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#ActionObjectiveItem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#TargetMarking> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#TargetMarking>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#TargetMarking> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#TargetPersonnelProtection> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#TargetPersonnelProtection>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#TargetPersonnelProtection> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#TaskFormationType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#TaskFormationType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#TaskFormationType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MilitaryOrganisationType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#TrackArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#TrackArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#TrackArea> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Surface>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Unit> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Unit>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Unit> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Organisation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#UnitType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#UnitType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#UnitType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MilitaryOrganisationType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#UxoStatus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#UxoStatus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#UxoStatus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MaterielStatus>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#VehicleType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#VehicleType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#VehicleType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EquipmentType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#VerticalDistance> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#VerticalDistance>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#VerticalDistance> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#VesselType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#VesselType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#VesselType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#EquipmentType>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Visibility> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Visibility>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Visibility> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MeteorologicFeature>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Wind> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Wind>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#Wind> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00293.owl#MeteorologicFeature>)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#AbsolutePoint> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#AbsolutePoint>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#AbsolutePoint> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Action> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Action>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Action> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionAircraftEmployment> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionAircraftEmployment>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionAircraftEmployment> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionContext> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionContext>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionContext> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionEffect> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionEffect>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionEffect> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionEvent> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionEvent>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionEvent> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionEventDetail> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionEventDetail>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionEventDetail> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionEventStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionEventStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionEventStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionFunctionalAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionFunctionalAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionFunctionalAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionObjective> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionObjective>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionObjective> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionObjectiveItem> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionObjectiveItem>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionObjectiveItem> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionObjectiveType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionObjectiveType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionObjectiveType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionRequiredCapability> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionRequiredCapability>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionRequiredCapability> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionResource> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionResource>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionResource> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionResourceEmployment> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionResourceEmployment>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionResourceEmployment> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionResourceItem> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionResourceItem>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionResourceItem> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionResourceType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionResourceType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionResourceType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionTask> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionTask>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionTask> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionTaskRuleOfEngagement> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionTaskRuleOfEngagement>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionTaskRuleOfEngagement> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionTaskStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionTaskStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionTaskStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionTemporalAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionTemporalAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ActionTemporalAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#AddressPostal> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#AddressPostal>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#AddressPostal> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#AircraftType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#AircraftType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#AircraftType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Airfield> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Airfield>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Airfield> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#AmmunitionType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#AmmunitionType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#AmmunitionType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Atmosphere> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Atmosphere>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Atmosphere> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#BiologicalAgentType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#BiologicalAgentType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#BiologicalAgentType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Bridge> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Bridge>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Bridge> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#BridgeType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#BridgeType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#BridgeType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetail> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetail>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetail> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetailAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetailAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetailAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetailAuthorisation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetailAuthorisation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetailAuthorisation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetailItem> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetailItem>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetailItem> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetailType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetailType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetDetailType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetList> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetList>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetList> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetListAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetListAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetListAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetListAuthorisation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetListAuthorisation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CandidateTargetListAuthorisation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Capability> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Capability>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Capability> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ChemicalAgentType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ChemicalAgentType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ChemicalAgentType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#CivilianPostType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CivilianPostType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CivilianPostType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#CloudCover> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CloudCover>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CloudCover> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ConeVolume> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ConeVolume>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ConeVolume> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ConsumableMaterielType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ConsumableMaterielType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ConsumableMaterielType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Context> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Context>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Context> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ContextAssessment> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ContextAssessment>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ContextAssessment> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ContextElement> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ContextElement>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ContextElement> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ContextObjectItemAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ContextObjectItemAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ContextObjectItemAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ContextReportingDataAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ContextReportingDataAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ContextReportingDataAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeature> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeature>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeature> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureControlFeatureAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureControlFeatureAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureControlFeatureAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureControlFeatureAssociationStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureControlFeatureAssociationStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureControlFeatureAssociationStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureGeographicFeatureAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureGeographicFeatureAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureGeographicFeatureAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureGeographicFeatureAssociationStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureGeographicFeatureAssociationStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureGeographicFeatureAssociationStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ControlFeatureType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Convoy> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Convoy>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Convoy> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#CoordinateSystem> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CoordinateSystem>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CoordinateSystem> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#CorridorArea> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CorridorArea>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#CorridorArea> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ElectronicEquipmentType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ElectronicEquipmentType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ElectronicEquipmentType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Ellipse> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Ellipse>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Ellipse> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#EngineeringCapability> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#EngineeringCapability>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#EngineeringCapability> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#EngineeringEquipmentType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#EngineeringEquipmentType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#EngineeringEquipmentType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#EquipmentType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#EquipmentType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#EquipmentType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ExecutiveMilitaryOrganisationType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ExecutiveMilitaryOrganisationType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ExecutiveMilitaryOrganisationType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Facility> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Facility>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Facility> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityFacilityAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityFacilityAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityFacilityAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityFacilityAssociationStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityFacilityAssociationStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityFacilityAssociationStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityFeatureAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityFeatureAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityFeatureAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityFeatureAssociationStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityFeatureAssociationStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityFeatureAssociationStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FacilityType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#FanArea> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FanArea>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FanArea> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Feature> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Feature>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Feature> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#FeatureType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FeatureType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FeatureType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#FireCapability> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FireCapability>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#FireCapability> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#GH5Complete> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GH5Complete>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GH5Complete> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#GeographicFeature> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GeographicFeature>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GeographicFeature> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#GeographicFeatureStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GeographicFeatureStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GeographicFeatureStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#GeographicFeatureType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GeographicFeatureType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GeographicFeatureType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#GeometricVolume> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GeometricVolume>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GeometricVolume> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#GovernmentOrganisationType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GovernmentOrganisationType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GovernmentOrganisationType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#GroupOrganisationType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GroupOrganisationType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#GroupOrganisationType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Holding> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Holding>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Holding> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Icing> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Icing>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Icing> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#LandWeaponType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#LandWeaponType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#LandWeaponType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Light> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Light>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Light> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Line> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Line>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Line> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#LinePoint> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#LinePoint>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#LinePoint> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Location> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Location>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Location> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MassGrave> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MassGrave>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MassGrave> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MassGraveContent> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MassGraveContent>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MassGraveContent> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Materiel> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Materiel>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Materiel> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielMaterielTypeEstablishment> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielMaterielTypeEstablishment>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielMaterielTypeEstablishment> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielTypeEstablishment> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielTypeEstablishment>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielTypeEstablishment> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielTypeEstablishmentMaterielTypeDetail> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielTypeEstablishmentMaterielTypeDetail>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MaterielTypeEstablishmentMaterielTypeDetail> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusCasualtyBedOccupancy> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusCasualtyBedOccupancy>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusCasualtyBedOccupancy> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusCasualtyEvacuation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusCasualtyEvacuation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusCasualtyEvacuation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusIntervalCasualtyGroup> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusIntervalCasualtyGroup>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusIntervalCasualtyGroup> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusIntervalCasualtyType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusIntervalCasualtyType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusIntervalCasualtyType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusIntervalEvacuation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusIntervalEvacuation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusIntervalEvacuation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusPendingSurgery> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusPendingSurgery>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MedicalFacilityStatusPendingSurgery> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MeteorologicFeature> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MeteorologicFeature>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MeteorologicFeature> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MilitaryOrganisationType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MilitaryOrganisationType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MilitaryOrganisationType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MilitaryPostType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MilitaryPostType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MilitaryPostType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Minefield> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Minefield>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Minefield> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MiscellaneousEquipmentType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MiscellaneousEquipmentType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MiscellaneousEquipmentType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MissionCapability> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MissionCapability>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MissionCapability> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#MobilityCapability> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MobilityCapability>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#MobilityCapability> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#NBCEquipmentType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NBCEquipmentType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NBCEquipmentType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#NBCEvent> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NBCEvent>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NBCEvent> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Network> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Network>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Network> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#NetworkFrequency> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NetworkFrequency>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NetworkFrequency> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#NetworkService> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NetworkService>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NetworkService> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#NetworkServiceAccess> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NetworkServiceAccess>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NetworkServiceAccess> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#NuclearAgentType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NuclearAgentType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#NuclearAgentType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItem> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItem>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItem> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemAccess> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemAccess>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemAccess> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemActionEffect> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemActionEffect>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemActionEffect> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemCapability> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemCapability>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemCapability> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemLocation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemLocation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemLocation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectItemType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectReference> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectReference>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectReference> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectTypeActionEffect> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectTypeActionEffect>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectTypeActionEffect> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectTypeCapabilityNorm> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectTypeCapabilityNorm>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ObjectTypeCapabilityNorm> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrbitArea> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrbitArea>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrbitArea> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Organisation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Organisation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Organisation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationActionAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationActionAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationActionAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationActionTaskRuleOfEngagementStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationActionTaskRuleOfEngagementStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationActionTaskRuleOfEngagementStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationControlFeatureAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationControlFeatureAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationControlFeatureAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationControlFeatureAssociationStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationControlFeatureAssociationStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationControlFeatureAssociationStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationFacilityAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationFacilityAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationFacilityAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationFacilityAssociationStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationFacilityAssociationStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationFacilityAssociationStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationMaterielAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationMaterielAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationMaterielAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationMaterielAssociationStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationMaterielAssociationStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationMaterielAssociationStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationMaterielTypeAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationMaterielTypeAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationMaterielTypeAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationOrganisationAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationOrganisationAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationOrganisationAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationOrganisationAssociationStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationOrganisationAssociationStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationOrganisationAssociationStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationOrganisationTypeEstablishment> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationOrganisationTypeEstablishment>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationOrganisationTypeEstablishment> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationPersonAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationPersonAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationPersonAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationPersonAssociationStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationPersonAssociationStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationPersonAssociationStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationTypeEstablishment> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationTypeEstablishment>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationTypeEstablishment> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationTypeEstablishmentMaterielTypeDetail> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationTypeEstablishmentMaterielTypeDetail>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationTypeEstablishmentMaterielTypeDetail> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationTypeEstablishmentOrganisationTypeDetail> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationTypeEstablishmentOrganisationTypeDetail>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationTypeEstablishmentOrganisationTypeDetail> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationTypeEstablishmentPersonTypeDetail> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationTypeEstablishmentPersonTypeDetail>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#OrganisationTypeEstablishmentPersonTypeDetail> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Person> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Person>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Person> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonIdentificationDocument> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonIdentificationDocument>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonIdentificationDocument> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonIdentificationDocumentTable> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonIdentificationDocumentTable>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonIdentificationDocumentTable> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonLanguageSkill> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonLanguageSkill>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonLanguageSkill> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonMaterielAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonMaterielAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonMaterielAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonMaterielAssociationStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonMaterielAssociationStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonMaterielAssociationStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonPersonAssociation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonPersonAssociation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonPersonAssociation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonPersonAssociationStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonPersonAssociationStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonPersonAssociationStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PersonType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Point> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Point>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Point> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#PointReference> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PointReference>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PointReference> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#PolyarcArea> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PolyarcArea>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PolyarcArea> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#PolygonArea> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PolygonArea>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PolygonArea> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Precipitation> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Precipitation>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Precipitation> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#PrivateSectorOrganisationType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PrivateSectorOrganisationType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#PrivateSectorOrganisationType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#RailcarType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#RailcarType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#RailcarType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Reference> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Reference>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Reference> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#RelativePoint> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#RelativePoint>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#RelativePoint> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ReportingData> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ReportingData>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ReportingData> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ReportingDataAbsoluteTiming> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ReportingDataAbsoluteTiming>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ReportingDataAbsoluteTiming> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#ReportingDataRelativeTiming> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ReportingDataRelativeTiming>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#ReportingDataRelativeTiming> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Request> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Request>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Request> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#RequestAnswer> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#RequestAnswer>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#RequestAnswer> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#RequestAnswerElement> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#RequestAnswerElement>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#RequestAnswerElement> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Route> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Route>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Route> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#RuleOfEngagement> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#RuleOfEngagement>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#RuleOfEngagement> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#SphereVolume> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#SphereVolume>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#SphereVolume> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#StorageCapability> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#StorageCapability>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#StorageCapability> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Surface> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Surface>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Surface> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#SurfaceVolume> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#SurfaceVolume>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#SurfaceVolume> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#SurveillanceCapability> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#SurveillanceCapability>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#SurveillanceCapability> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Target> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Target>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Target> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#TargetMarking> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#TargetMarking>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#TargetMarking> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#TargetPersonnelProtection> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#TargetPersonnelProtection>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#TargetPersonnelProtection> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#TaskFormationType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#TaskFormationType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#TaskFormationType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#TrackArea> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#TrackArea>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#TrackArea> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Unit> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Unit>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Unit> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#UnitType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#UnitType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#UnitType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#UxoStatus> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#UxoStatus>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#UxoStatus> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#VehicleType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#VehicleType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#VehicleType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#VerticalDistance> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#VerticalDistance>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#VerticalDistance> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#VesselType> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#VesselType>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#VesselType> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Visibility> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Visibility>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Visibility> owl:Thing)
+
+# Class: <http://www.mindswap.org/ontologies/IEDMv1.0.owl#Wind> (<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Wind>)
+
+SubClassOf(<http://www.mindswap.org/ontologies/IEDMv1.0.owl#Wind> owl:Thing)
+
+# Class: xsd:decimal (xsd:decimal)
+
+SubClassOf(xsd:decimal owl:Thing)
+
+# Class: xsd:int (xsd:int)
+
+SubClassOf(xsd:int owl:Thing)
+
+# Class: xsd:long (xsd:long)
+
+SubClassOf(xsd:long owl:Thing)
+
+# Class: xsd:short (xsd:short)
+
+SubClassOf(xsd:short owl:Thing)
+
+# Class: xsd:string (xsd:string)
+
+SubClassOf(xsd:string owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+
+)

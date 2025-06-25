@@ -1,0 +1,133 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Animal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Article>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Author>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Book>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Calendar-Date>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Document>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Educational-Degree>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Educational-Organization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Event>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Integer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Number>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Organism>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Organization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Person>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Place>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Primate>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Proceedings>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Publication>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Research-Project>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#String>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Task>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Time-Point>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Tool>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Animal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Animal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Animal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Organism>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Article> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Article>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Article> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Publication>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Author> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Author>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Author> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Book> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Book>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Book> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Publication>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Calendar-Date> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Calendar-Date>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Calendar-Date> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Document> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Document>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Document> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Educational-Degree> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Educational-Degree>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Educational-Degree> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Educational-Organization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Educational-Organization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Educational-Organization> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Event> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Event>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Event> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Integer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Integer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Integer> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Number> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Number>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Number> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Organism> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Organism>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Organism> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Organization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Organization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Organization> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Person> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Person>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Person> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Organism>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Place> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Place>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Place> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Primate> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Primate>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Primate> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Organism>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Proceedings> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Proceedings>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Proceedings> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Publication>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Publication> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Publication>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Publication> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Document>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Research-Project> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Research-Project>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Research-Project> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#String> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#String>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#String> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Task> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Task>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Task> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Time-Point> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Time-Point>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Time-Point> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Tool> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Tool>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00277.owl#Tool> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

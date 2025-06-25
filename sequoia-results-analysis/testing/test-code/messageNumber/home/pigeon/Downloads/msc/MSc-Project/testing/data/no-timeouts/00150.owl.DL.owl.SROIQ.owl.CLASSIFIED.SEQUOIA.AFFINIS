@@ -1,0 +1,476 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#BinaryPredicate>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#Building>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#Combustion>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#Destruction>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#Device>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#GeographicArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#Government>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#Group>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#Hole>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#Human>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#Integer>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#JoiningAnOrganization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#Killing>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#Month>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#NonNegativeInteger>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#Object>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#OccupationalRole>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#PositiveInteger>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#Process>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#Region>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#SocialRole>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#StationaryArtifact>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#UnilateralGetting>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#ViolentContest>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.daml#Weapon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Arson>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bomb>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bombing>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#BusStop>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#BusinessPerson>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#CarBombing>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#CargoVehicle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Celebrity>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Checkpoint>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#ChemicalAttack>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Civilian>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#CivilianHuman>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Convoy>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Diplomat>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Dissident>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#EducationalFacility>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Embassy>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#EntertainmentBuilding>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Factory>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Garage>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#GovernmentBuilding>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#GovernmentPerson>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#HandGrenade>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#HandgrenadeAttack>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Hijacking>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#HostageTaking>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Hotel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#IncendiaryDeviceAttack>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Infiltration>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Kidnapping>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Knife>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#KnifeAttack>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#LandVehicle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#LetterBombAttack>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Lynching>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Marketplace>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Militant>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#MilitaryOrganization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#MilitaryPerson>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#ModernMilitaryOrganization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Mortar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#MortarAttack>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#NationalGovernment>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#OfficeBuilding>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PeaceKeepingMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PlaceOfWorship>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PoliceFacility>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PolicePerson>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PoliticalFigure>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#ReligiousFigure>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Restaurant>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Road>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Rocket>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#RocketMissileAttack>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Stoning>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Store>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#StoreOwner>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Student>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Subway>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#SuicideBombing>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Tourist>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#TouristSite>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Vandalism>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Vehicle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#VehicleAttack>))
+############################
+#   Classes
+############################
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#BinaryPredicate> (<http://reliant.teknowledge.com/DAML/SUMO.daml#BinaryPredicate>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#BinaryPredicate> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#Building> (<http://reliant.teknowledge.com/DAML/SUMO.daml#Building>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#Building> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#Combustion> (<http://reliant.teknowledge.com/DAML/SUMO.daml#Combustion>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#Combustion> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#Destruction> (<http://reliant.teknowledge.com/DAML/SUMO.daml#Destruction>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#Destruction> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#Device> (<http://reliant.teknowledge.com/DAML/SUMO.daml#Device>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#Device> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#GeographicArea> (<http://reliant.teknowledge.com/DAML/SUMO.daml#GeographicArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#GeographicArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#Government> (<http://reliant.teknowledge.com/DAML/SUMO.daml#Government>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#Government> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#Group> (<http://reliant.teknowledge.com/DAML/SUMO.daml#Group>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#Group> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#Hole> (<http://reliant.teknowledge.com/DAML/SUMO.daml#Hole>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#Hole> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#Human> (<http://reliant.teknowledge.com/DAML/SUMO.daml#Human>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#Human> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#Integer> (<http://reliant.teknowledge.com/DAML/SUMO.daml#Integer>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#Integer> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#JoiningAnOrganization> (<http://reliant.teknowledge.com/DAML/SUMO.daml#JoiningAnOrganization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#JoiningAnOrganization> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#Killing> (<http://reliant.teknowledge.com/DAML/SUMO.daml#Killing>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#Killing> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#Month> (<http://reliant.teknowledge.com/DAML/SUMO.daml#Month>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#Month> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#NonNegativeInteger> (<http://reliant.teknowledge.com/DAML/SUMO.daml#NonNegativeInteger>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#NonNegativeInteger> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#Object> (<http://reliant.teknowledge.com/DAML/SUMO.daml#Object>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#Object> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#OccupationalRole> (<http://reliant.teknowledge.com/DAML/SUMO.daml#OccupationalRole>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#OccupationalRole> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#PositiveInteger> (<http://reliant.teknowledge.com/DAML/SUMO.daml#PositiveInteger>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#PositiveInteger> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#Process> (<http://reliant.teknowledge.com/DAML/SUMO.daml#Process>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#Process> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#Region> (<http://reliant.teknowledge.com/DAML/SUMO.daml#Region>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#Region> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#SocialRole> (<http://reliant.teknowledge.com/DAML/SUMO.daml#SocialRole>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#SocialRole> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#StationaryArtifact> (<http://reliant.teknowledge.com/DAML/SUMO.daml#StationaryArtifact>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#StationaryArtifact> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#UnilateralGetting> (<http://reliant.teknowledge.com/DAML/SUMO.daml#UnilateralGetting>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#UnilateralGetting> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#ViolentContest> (<http://reliant.teknowledge.com/DAML/SUMO.daml#ViolentContest>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#ViolentContest> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.daml#Weapon> (<http://reliant.teknowledge.com/DAML/SUMO.daml#Weapon>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.daml#Weapon> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Arson> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Arson>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Arson> <http://reliant.teknowledge.com/DAML/SUMO.daml#Combustion>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Arson> <http://reliant.teknowledge.com/DAML/SUMO.daml#Destruction>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bomb> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bomb>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bomb> <http://reliant.teknowledge.com/DAML/SUMO.daml#Weapon>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bombing> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bombing>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bombing> <http://reliant.teknowledge.com/DAML/SUMO.daml#Destruction>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Vehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#BusStop> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#BusStop>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#BusStop> <http://reliant.teknowledge.com/DAML/SUMO.daml#GeographicArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#BusinessPerson> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#BusinessPerson>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#BusinessPerson> <http://reliant.teknowledge.com/DAML/SUMO.daml#OccupationalRole>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#CarBombing> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#CarBombing>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#CarBombing> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bombing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#CargoVehicle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#CargoVehicle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#CargoVehicle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Vehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Celebrity> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Celebrity>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Celebrity> <http://reliant.teknowledge.com/DAML/SUMO.daml#Human>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Checkpoint> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Checkpoint>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Checkpoint> <http://reliant.teknowledge.com/DAML/SUMO.daml#GeographicArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#ChemicalAttack> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#ChemicalAttack>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#ChemicalAttack> <http://reliant.teknowledge.com/DAML/SUMO.daml#ViolentContest>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Civilian> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Civilian>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Civilian> <http://reliant.teknowledge.com/DAML/SUMO.daml#OccupationalRole>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#CivilianHuman> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#CivilianHuman>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#CivilianHuman> <http://reliant.teknowledge.com/DAML/SUMO.daml#Human>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Convoy> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Convoy>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Convoy> <http://reliant.teknowledge.com/DAML/SUMO.daml#Group>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Diplomat> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Diplomat>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Diplomat> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#GovernmentPerson>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Dissident> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Dissident>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Dissident> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Civilian>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#EducationalFacility> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#EducationalFacility>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#EducationalFacility> <http://reliant.teknowledge.com/DAML/SUMO.daml#StationaryArtifact>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Embassy> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Embassy>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Embassy> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#GovernmentBuilding>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#EntertainmentBuilding> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#EntertainmentBuilding>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#EntertainmentBuilding> <http://reliant.teknowledge.com/DAML/SUMO.daml#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Factory> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Factory>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Factory> <http://reliant.teknowledge.com/DAML/SUMO.daml#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Garage> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Garage>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Garage> <http://reliant.teknowledge.com/DAML/SUMO.daml#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#GovernmentBuilding> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#GovernmentBuilding>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#GovernmentBuilding> <http://reliant.teknowledge.com/DAML/SUMO.daml#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#GovernmentPerson> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#GovernmentPerson>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#GovernmentPerson> <http://reliant.teknowledge.com/DAML/SUMO.daml#OccupationalRole>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#HandGrenade> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#HandGrenade>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#HandGrenade> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bomb>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#HandgrenadeAttack> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#HandgrenadeAttack>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#HandgrenadeAttack> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bombing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Hijacking> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Hijacking>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Hijacking> <http://reliant.teknowledge.com/DAML/SUMO.daml#UnilateralGetting>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#HostageTaking> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#HostageTaking>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#HostageTaking> <http://reliant.teknowledge.com/DAML/SUMO.daml#UnilateralGetting>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Hotel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Hotel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Hotel> <http://reliant.teknowledge.com/DAML/SUMO.daml#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#IncendiaryDeviceAttack> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#IncendiaryDeviceAttack>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#IncendiaryDeviceAttack> <http://reliant.teknowledge.com/DAML/SUMO.daml#Combustion>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#IncendiaryDeviceAttack> <http://reliant.teknowledge.com/DAML/SUMO.daml#ViolentContest>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Infiltration> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Infiltration>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Infiltration> <http://reliant.teknowledge.com/DAML/SUMO.daml#JoiningAnOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Kidnapping> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Kidnapping>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Kidnapping> <http://reliant.teknowledge.com/DAML/SUMO.daml#UnilateralGetting>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Knife> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Knife>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Knife> <http://reliant.teknowledge.com/DAML/SUMO.daml#Device>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#KnifeAttack> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#KnifeAttack>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#KnifeAttack> <http://reliant.teknowledge.com/DAML/SUMO.daml#ViolentContest>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#LandVehicle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#LandVehicle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#LandVehicle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Vehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#LetterBombAttack> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#LetterBombAttack>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#LetterBombAttack> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bombing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Lynching> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Lynching>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Lynching> <http://reliant.teknowledge.com/DAML/SUMO.daml#Killing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Marketplace> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Marketplace>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Marketplace> <http://reliant.teknowledge.com/DAML/SUMO.daml#GeographicArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Militant> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Militant>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Militant> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Civilian>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#MilitaryOrganization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#MilitaryOrganization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#MilitaryOrganization> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#NationalGovernment>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#MilitaryPerson> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#MilitaryPerson>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#MilitaryPerson> <http://reliant.teknowledge.com/DAML/SUMO.daml#OccupationalRole>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#ModernMilitaryOrganization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#ModernMilitaryOrganization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#ModernMilitaryOrganization> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#MilitaryOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Mortar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Mortar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Mortar> <http://reliant.teknowledge.com/DAML/SUMO.daml#Weapon>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#MortarAttack> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#MortarAttack>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#MortarAttack> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bombing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#NationalGovernment> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#NationalGovernment>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#NationalGovernment> <http://reliant.teknowledge.com/DAML/SUMO.daml#Government>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#OfficeBuilding> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#OfficeBuilding>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#OfficeBuilding> <http://reliant.teknowledge.com/DAML/SUMO.daml#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PeaceKeepingMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PeaceKeepingMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PeaceKeepingMission> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#ModernMilitaryOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PlaceOfWorship> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PlaceOfWorship>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PlaceOfWorship> <http://reliant.teknowledge.com/DAML/SUMO.daml#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PoliceFacility> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PoliceFacility>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PoliceFacility> <http://reliant.teknowledge.com/DAML/SUMO.daml#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PolicePerson> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PolicePerson>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PolicePerson> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#GovernmentPerson>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PoliticalFigure> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PoliticalFigure>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#PoliticalFigure> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Celebrity>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#ReligiousFigure> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#ReligiousFigure>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#ReligiousFigure> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Celebrity>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Restaurant> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Restaurant>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Restaurant> <http://reliant.teknowledge.com/DAML/SUMO.daml#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Road> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Road>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Road> <http://reliant.teknowledge.com/DAML/SUMO.daml#Region>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Rocket> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Rocket>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Rocket> <http://reliant.teknowledge.com/DAML/SUMO.daml#Weapon>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#RocketMissileAttack> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#RocketMissileAttack>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#RocketMissileAttack> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bombing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Stoning> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Stoning>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Stoning> <http://reliant.teknowledge.com/DAML/SUMO.daml#ViolentContest>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Store> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Store>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Store> <http://reliant.teknowledge.com/DAML/SUMO.daml#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#StoreOwner> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#StoreOwner>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#StoreOwner> <http://reliant.teknowledge.com/DAML/SUMO.daml#OccupationalRole>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Student> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Student>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Student> <http://reliant.teknowledge.com/DAML/SUMO.daml#SocialRole>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Subway> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Subway>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Subway> <http://reliant.teknowledge.com/DAML/SUMO.daml#Hole>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#SuicideBombing> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#SuicideBombing>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#SuicideBombing> <http://reliant.teknowledge.com/DAML/SUMO.daml#Killing>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#SuicideBombing> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Bombing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Tourist> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Tourist>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Tourist> <http://reliant.teknowledge.com/DAML/SUMO.daml#SocialRole>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#TouristSite> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#TouristSite>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#TouristSite> <http://reliant.teknowledge.com/DAML/SUMO.daml#GeographicArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Vandalism> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Vandalism>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Vandalism> <http://reliant.teknowledge.com/DAML/SUMO.daml#Destruction>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Vehicle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Vehicle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#Vehicle> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#VehicleAttack> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#VehicleAttack>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00150.owl#VehicleAttack> <http://reliant.teknowledge.com/DAML/SUMO.daml#ViolentContest>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

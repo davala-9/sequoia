@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Specification-Title: izumi-reflect
+Specification-Version: 2.1.0
+Specification-Vendor: dev.zio
+Implementation-Title: izumi-reflect
+Implementation-Version: 2.1.0
+Implementation-Vendor: dev.zio
+Implementation-Vendor-Id: dev.zio
+Implementation-URL: https://zio.dev
+X-Build-Scala: 2.12.15
+X-Version: 2.1.0
+X-Build-JDK: 11.0.14.1
+X-Build-Timestamp: 2022-04-07T23:05:50.641Z[Etc/UTC]
+X-Built-By: runner
+X-Build-SBT: 1.6.2
+

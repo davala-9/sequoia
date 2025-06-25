@@ -1,0 +1,126 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Degree>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#DryEucalyptForest>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Female>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Forest>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Gender>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#GraduateStudent>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Habitat>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Koala>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#KoalaWithPhD>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Male>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Marsupials>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Parent>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Quokka>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Rainforest>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#TasmanianDevil>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#University>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+############################
+#   Classes
+############################
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal> owl:Thing)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Degree> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Degree>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Degree> owl:Thing)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#DryEucalyptForest> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#DryEucalyptForest>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#DryEucalyptForest> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Forest>)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Female> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Female>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Female> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Forest> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Forest>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Forest> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Habitat>)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Gender> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Gender>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Gender> owl:Thing)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#GraduateStudent> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#GraduateStudent>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#GraduateStudent> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student>)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Habitat> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Habitat>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Habitat> owl:Thing)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Koala> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Koala>)
+
+EquivalentClasses(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Koala> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#KoalaWithPhD> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Quokka> owl:Nothing)
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Koala> owl:Nothing)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#KoalaWithPhD> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#KoalaWithPhD>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#KoalaWithPhD> owl:Nothing)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Male> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Male>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Male> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Male>)
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Parent>)
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#MaleStudentWith3Daughters> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student>)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Marsupials> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Marsupials>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Marsupials> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Parent> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Parent>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Parent> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Animal>)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Quokka> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Quokka>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Quokka> owl:Nothing)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Rainforest> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Rainforest>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Rainforest> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Forest>)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Student> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Person>)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#TasmanianDevil> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#TasmanianDevil>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#TasmanianDevil> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Marsupials>)
+
+# Class: <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#University> (<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#University>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#University> <http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#Habitat>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+
+)

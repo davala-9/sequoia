@@ -1,0 +1,73 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.org/obo/owl/PATO#PATO_0000001>))
+Declaration(Class(<http://purl.org/obo/owl/PATO#PATO_0001236>))
+Declaration(Class(<http://purl.org/obo/owl/PATO#PATO_0001238>))
+Declaration(Class(<http://purl.org/obo/owl/PATO#PATO_0001240>))
+Declaration(Class(<http://purl.org/obo/owl/PATO#PATO_0001241>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Definition>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Synonym>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.0#Entity>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.0/snap#Continuant>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.0/snap#Quality>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.0/span#Occurrent>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/obo/owl/PATO#PATO_0000001> (<http://purl.org/obo/owl/PATO#PATO_0000001>)
+
+SubClassOf(<http://purl.org/obo/owl/PATO#PATO_0000001> <http://www.ifomis.org/bfo/1.0/snap#Quality>)
+
+# Class: <http://purl.org/obo/owl/PATO#PATO_0001236> (<http://purl.org/obo/owl/PATO#PATO_0001236>)
+
+SubClassOf(<http://purl.org/obo/owl/PATO#PATO_0001236> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PATO#PATO_0001238> (<http://purl.org/obo/owl/PATO#PATO_0001238>)
+
+SubClassOf(<http://purl.org/obo/owl/PATO#PATO_0001238> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PATO#PATO_0001240> (<http://purl.org/obo/owl/PATO#PATO_0001240>)
+
+SubClassOf(<http://purl.org/obo/owl/PATO#PATO_0001240> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PATO#PATO_0001241> (<http://purl.org/obo/owl/PATO#PATO_0001241>)
+
+SubClassOf(<http://purl.org/obo/owl/PATO#PATO_0001241> owl:Thing)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Definition> (<http://www.geneontology.org/formats/oboInOwl#Definition>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Definition> owl:Thing)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Synonym> (<http://www.geneontology.org/formats/oboInOwl#Synonym>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Synonym> owl:Thing)
+
+# Class: <http://www.ifomis.org/bfo/1.0#Entity> (<http://www.ifomis.org/bfo/1.0#Entity>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.0#Entity> owl:Thing)
+
+# Class: <http://www.ifomis.org/bfo/1.0/snap#Continuant> (<http://www.ifomis.org/bfo/1.0/snap#Continuant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.0/snap#Continuant> owl:Thing)
+
+# Class: <http://www.ifomis.org/bfo/1.0/snap#Quality> (<http://www.ifomis.org/bfo/1.0/snap#Quality>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.0/snap#Quality> owl:Thing)
+
+# Class: <http://www.ifomis.org/bfo/1.0/span#Occurrent> (<http://www.ifomis.org/bfo/1.0/span#Occurrent>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.0/span#Occurrent> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

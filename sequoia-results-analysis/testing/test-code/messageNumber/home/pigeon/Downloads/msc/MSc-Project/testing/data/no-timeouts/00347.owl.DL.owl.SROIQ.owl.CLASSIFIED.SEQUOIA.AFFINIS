@@ -1,0 +1,234 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://a.cx/onto#AdministrativeStaff>))
+Declaration(Class(<http://a.cx/onto#Article>))
+Declaration(Class(<http://a.cx/onto#AssistantProfessor>))
+Declaration(Class(<http://a.cx/onto#AssociateProfessor>))
+Declaration(Class(<http://a.cx/onto#Book>))
+Declaration(Class(<http://a.cx/onto#Chair>))
+Declaration(Class(<http://a.cx/onto#ClericalStaff>))
+Declaration(Class(<http://a.cx/onto#College>))
+Declaration(Class(<http://a.cx/onto#ConferencePaper>))
+Declaration(Class(<http://a.cx/onto#Course>))
+Declaration(Class(<http://a.cx/onto#Dean>))
+Declaration(Class(<http://a.cx/onto#Department>))
+Declaration(Class(<http://a.cx/onto#Director>))
+Declaration(Class(<http://a.cx/onto#Employee>))
+Declaration(Class(<http://a.cx/onto#Faculty>))
+Declaration(Class(<http://a.cx/onto#FullProfessor>))
+Declaration(Class(<http://a.cx/onto#GraduateCourse>))
+Declaration(Class(<http://a.cx/onto#GraduateStudent>))
+Declaration(Class(<http://a.cx/onto#Institute>))
+Declaration(Class(<http://a.cx/onto#JournalArticle>))
+Declaration(Class(<http://a.cx/onto#Lecturer>))
+Declaration(Class(<http://a.cx/onto#Manual>))
+Declaration(Class(<http://a.cx/onto#Organization>))
+Declaration(Class(<http://a.cx/onto#Person>))
+Declaration(Class(<http://a.cx/onto#PostDoc>))
+Declaration(Class(<http://a.cx/onto#Professor>))
+Declaration(Class(<http://a.cx/onto#Program>))
+Declaration(Class(<http://a.cx/onto#Publication>))
+Declaration(Class(<http://a.cx/onto#Research>))
+Declaration(Class(<http://a.cx/onto#ResearchAssistant>))
+Declaration(Class(<http://a.cx/onto#ResearchGroup>))
+Declaration(Class(<http://a.cx/onto#Schedule>))
+Declaration(Class(<http://a.cx/onto#Software>))
+Declaration(Class(<http://a.cx/onto#Specification>))
+Declaration(Class(<http://a.cx/onto#Student>))
+Declaration(Class(<http://a.cx/onto#SystemsStaff>))
+Declaration(Class(<http://a.cx/onto#TeachingAssistant>))
+Declaration(Class(<http://a.cx/onto#TechnicalReport>))
+Declaration(Class(<http://a.cx/onto#UndergraduateStudent>))
+Declaration(Class(<http://a.cx/onto#University>))
+Declaration(Class(<http://a.cx/onto#UnofficialPublication>))
+Declaration(Class(<http://a.cx/onto#VisitingProfessor>))
+Declaration(Class(<http://a.cx/onto#Work>))
+############################
+#   Classes
+############################
+
+# Class: <http://a.cx/onto#AdministrativeStaff> (<http://a.cx/onto#AdministrativeStaff>)
+
+SubClassOf(<http://a.cx/onto#AdministrativeStaff> <http://a.cx/onto#Employee>)
+
+# Class: <http://a.cx/onto#Article> (<http://a.cx/onto#Article>)
+
+SubClassOf(<http://a.cx/onto#Article> <http://a.cx/onto#Publication>)
+
+# Class: <http://a.cx/onto#AssistantProfessor> (<http://a.cx/onto#AssistantProfessor>)
+
+SubClassOf(<http://a.cx/onto#AssistantProfessor> <http://a.cx/onto#Professor>)
+
+# Class: <http://a.cx/onto#AssociateProfessor> (<http://a.cx/onto#AssociateProfessor>)
+
+SubClassOf(<http://a.cx/onto#AssociateProfessor> <http://a.cx/onto#Professor>)
+
+# Class: <http://a.cx/onto#Book> (<http://a.cx/onto#Book>)
+
+SubClassOf(<http://a.cx/onto#Book> <http://a.cx/onto#Publication>)
+
+# Class: <http://a.cx/onto#Chair> (<http://a.cx/onto#Chair>)
+
+SubClassOf(<http://a.cx/onto#Chair> <http://a.cx/onto#Professor>)
+
+# Class: <http://a.cx/onto#ClericalStaff> (<http://a.cx/onto#ClericalStaff>)
+
+SubClassOf(<http://a.cx/onto#ClericalStaff> <http://a.cx/onto#AdministrativeStaff>)
+
+# Class: <http://a.cx/onto#College> (<http://a.cx/onto#College>)
+
+SubClassOf(<http://a.cx/onto#College> <http://a.cx/onto#Organization>)
+
+# Class: <http://a.cx/onto#ConferencePaper> (<http://a.cx/onto#ConferencePaper>)
+
+SubClassOf(<http://a.cx/onto#ConferencePaper> <http://a.cx/onto#Article>)
+
+# Class: <http://a.cx/onto#Course> (<http://a.cx/onto#Course>)
+
+SubClassOf(<http://a.cx/onto#Course> <http://a.cx/onto#Work>)
+
+# Class: <http://a.cx/onto#Dean> (<http://a.cx/onto#Dean>)
+
+SubClassOf(<http://a.cx/onto#Dean> <http://a.cx/onto#Professor>)
+
+# Class: <http://a.cx/onto#Department> (<http://a.cx/onto#Department>)
+
+SubClassOf(<http://a.cx/onto#Department> <http://a.cx/onto#Organization>)
+
+# Class: <http://a.cx/onto#Director> (<http://a.cx/onto#Director>)
+
+SubClassOf(<http://a.cx/onto#Director> <http://a.cx/onto#Employee>)
+
+# Class: <http://a.cx/onto#Employee> (<http://a.cx/onto#Employee>)
+
+SubClassOf(<http://a.cx/onto#Employee> <http://a.cx/onto#Person>)
+
+# Class: <http://a.cx/onto#Faculty> (<http://a.cx/onto#Faculty>)
+
+SubClassOf(<http://a.cx/onto#Faculty> <http://a.cx/onto#Employee>)
+
+# Class: <http://a.cx/onto#FullProfessor> (<http://a.cx/onto#FullProfessor>)
+
+SubClassOf(<http://a.cx/onto#FullProfessor> <http://a.cx/onto#Professor>)
+
+# Class: <http://a.cx/onto#GraduateCourse> (<http://a.cx/onto#GraduateCourse>)
+
+SubClassOf(<http://a.cx/onto#GraduateCourse> <http://a.cx/onto#Course>)
+
+# Class: <http://a.cx/onto#GraduateStudent> (<http://a.cx/onto#GraduateStudent>)
+
+SubClassOf(<http://a.cx/onto#GraduateStudent> <http://a.cx/onto#Student>)
+
+# Class: <http://a.cx/onto#Institute> (<http://a.cx/onto#Institute>)
+
+SubClassOf(<http://a.cx/onto#Institute> <http://a.cx/onto#Organization>)
+
+# Class: <http://a.cx/onto#JournalArticle> (<http://a.cx/onto#JournalArticle>)
+
+SubClassOf(<http://a.cx/onto#JournalArticle> <http://a.cx/onto#Article>)
+
+# Class: <http://a.cx/onto#Lecturer> (<http://a.cx/onto#Lecturer>)
+
+SubClassOf(<http://a.cx/onto#Lecturer> <http://a.cx/onto#Faculty>)
+
+# Class: <http://a.cx/onto#Manual> (<http://a.cx/onto#Manual>)
+
+SubClassOf(<http://a.cx/onto#Manual> <http://a.cx/onto#Publication>)
+
+# Class: <http://a.cx/onto#Organization> (<http://a.cx/onto#Organization>)
+
+SubClassOf(<http://a.cx/onto#Organization> owl:Thing)
+
+# Class: <http://a.cx/onto#Person> (<http://a.cx/onto#Person>)
+
+SubClassOf(<http://a.cx/onto#Person> owl:Thing)
+
+# Class: <http://a.cx/onto#PostDoc> (<http://a.cx/onto#PostDoc>)
+
+SubClassOf(<http://a.cx/onto#PostDoc> <http://a.cx/onto#Faculty>)
+
+# Class: <http://a.cx/onto#Professor> (<http://a.cx/onto#Professor>)
+
+SubClassOf(<http://a.cx/onto#Professor> <http://a.cx/onto#Faculty>)
+
+# Class: <http://a.cx/onto#Program> (<http://a.cx/onto#Program>)
+
+SubClassOf(<http://a.cx/onto#Program> <http://a.cx/onto#Organization>)
+
+# Class: <http://a.cx/onto#Publication> (<http://a.cx/onto#Publication>)
+
+SubClassOf(<http://a.cx/onto#Publication> owl:Thing)
+
+# Class: <http://a.cx/onto#Research> (<http://a.cx/onto#Research>)
+
+SubClassOf(<http://a.cx/onto#Research> <http://a.cx/onto#Work>)
+
+# Class: <http://a.cx/onto#ResearchAssistant> (<http://a.cx/onto#ResearchAssistant>)
+
+SubClassOf(<http://a.cx/onto#ResearchAssistant> <http://a.cx/onto#Employee>)
+SubClassOf(<http://a.cx/onto#ResearchAssistant> <http://a.cx/onto#Student>)
+
+# Class: <http://a.cx/onto#ResearchGroup> (<http://a.cx/onto#ResearchGroup>)
+
+SubClassOf(<http://a.cx/onto#ResearchGroup> <http://a.cx/onto#Organization>)
+
+# Class: <http://a.cx/onto#Schedule> (<http://a.cx/onto#Schedule>)
+
+SubClassOf(<http://a.cx/onto#Schedule> owl:Thing)
+
+# Class: <http://a.cx/onto#Software> (<http://a.cx/onto#Software>)
+
+SubClassOf(<http://a.cx/onto#Software> <http://a.cx/onto#Publication>)
+
+# Class: <http://a.cx/onto#Specification> (<http://a.cx/onto#Specification>)
+
+SubClassOf(<http://a.cx/onto#Specification> <http://a.cx/onto#Publication>)
+
+# Class: <http://a.cx/onto#Student> (<http://a.cx/onto#Student>)
+
+SubClassOf(<http://a.cx/onto#Student> <http://a.cx/onto#Person>)
+
+# Class: <http://a.cx/onto#SystemsStaff> (<http://a.cx/onto#SystemsStaff>)
+
+SubClassOf(<http://a.cx/onto#SystemsStaff> <http://a.cx/onto#AdministrativeStaff>)
+
+# Class: <http://a.cx/onto#TeachingAssistant> (<http://a.cx/onto#TeachingAssistant>)
+
+SubClassOf(<http://a.cx/onto#TeachingAssistant> <http://a.cx/onto#Person>)
+
+# Class: <http://a.cx/onto#TechnicalReport> (<http://a.cx/onto#TechnicalReport>)
+
+SubClassOf(<http://a.cx/onto#TechnicalReport> <http://a.cx/onto#Article>)
+
+# Class: <http://a.cx/onto#UndergraduateStudent> (<http://a.cx/onto#UndergraduateStudent>)
+
+SubClassOf(<http://a.cx/onto#UndergraduateStudent> <http://a.cx/onto#Student>)
+
+# Class: <http://a.cx/onto#University> (<http://a.cx/onto#University>)
+
+SubClassOf(<http://a.cx/onto#University> <http://a.cx/onto#Organization>)
+
+# Class: <http://a.cx/onto#UnofficialPublication> (<http://a.cx/onto#UnofficialPublication>)
+
+SubClassOf(<http://a.cx/onto#UnofficialPublication> <http://a.cx/onto#Publication>)
+
+# Class: <http://a.cx/onto#VisitingProfessor> (<http://a.cx/onto#VisitingProfessor>)
+
+SubClassOf(<http://a.cx/onto#VisitingProfessor> <http://a.cx/onto#Professor>)
+
+# Class: <http://a.cx/onto#Work> (<http://a.cx/onto#Work>)
+
+SubClassOf(<http://a.cx/onto#Work> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

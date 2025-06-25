@@ -1,0 +1,254 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/protege#DIRECTED-BINARY-RELATION>))
+Declaration(Class(<http://protege.stanford.edu/plugins/owl/protege#PAL-CONSTRAINT>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Africa_Region>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Alaska_Region>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Amazon_Region>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Bleaching>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Canada_Region>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Cell>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Cell_by_class>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Cell_by_function>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Cell_by_organism>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Cell_in_vivo>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Cellulose>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Central_America_Region>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Chemical>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Eukaryotic_cell>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Experimentally_modified_cell>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Fiber_tracheid>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Finishing>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#HardWood>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Hemicellulose_lignin>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Linear_polymer_crystalline>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Metal>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Natural_thing>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#North_Eastern_America_Region>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#North_West_America_Region>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Oil_Stain>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Pacific_North_West>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Plant_cell>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Region>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Sealing>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#SoftWood>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#South_Eastern_America_Region>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Southern_California>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Spirit_Stain>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Staining>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Standard_finish>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Tracheary_element>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Tracheid>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#United_States_Region>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Water_Stain>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#West_Coast_Region>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Western_America_Region>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Wood>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#transporting_cell>))
+Declaration(Class(owl:Class))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+############################
+#   Classes
+############################
+
+# Class: <http://protege.stanford.edu/plugins/owl/protege#DIRECTED-BINARY-RELATION> (<http://protege.stanford.edu/plugins/owl/protege#DIRECTED-BINARY-RELATION>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/protege#DIRECTED-BINARY-RELATION> owl:Thing)
+
+# Class: <http://protege.stanford.edu/plugins/owl/protege#PAL-CONSTRAINT> (<http://protege.stanford.edu/plugins/owl/protege#PAL-CONSTRAINT>)
+
+SubClassOf(<http://protege.stanford.edu/plugins/owl/protege#PAL-CONSTRAINT> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Africa_Region> (<http://www.owl-ontologies.com/unnamed.owl#Africa_Region>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Africa_Region> <http://www.owl-ontologies.com/unnamed.owl#Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Alaska_Region> (<http://www.owl-ontologies.com/unnamed.owl#Alaska_Region>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Alaska_Region> <http://www.owl-ontologies.com/unnamed.owl#United_States_Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Amazon_Region> (<http://www.owl-ontologies.com/unnamed.owl#Amazon_Region>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Amazon_Region> <http://www.owl-ontologies.com/unnamed.owl#United_States_Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Bleaching> (<http://www.owl-ontologies.com/unnamed.owl#Bleaching>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Bleaching> <http://www.owl-ontologies.com/unnamed.owl#Finishing>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Canada_Region> (<http://www.owl-ontologies.com/unnamed.owl#Canada_Region>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Canada_Region> <http://www.owl-ontologies.com/unnamed.owl#Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Cell> (<http://www.owl-ontologies.com/unnamed.owl#Cell>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Cell> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Cell_by_class> (<http://www.owl-ontologies.com/unnamed.owl#Cell_by_class>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Cell_by_class> <http://www.owl-ontologies.com/unnamed.owl#Cell_in_vivo>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Cell_by_function> (<http://www.owl-ontologies.com/unnamed.owl#Cell_by_function>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Cell_by_function> <http://www.owl-ontologies.com/unnamed.owl#Cell_by_class>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Cell_by_organism> (<http://www.owl-ontologies.com/unnamed.owl#Cell_by_organism>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Cell_by_organism> <http://www.owl-ontologies.com/unnamed.owl#Cell_in_vivo>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Cell_in_vivo> (<http://www.owl-ontologies.com/unnamed.owl#Cell_in_vivo>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Cell_in_vivo> <http://www.owl-ontologies.com/unnamed.owl#Cell>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Cellulose> (<http://www.owl-ontologies.com/unnamed.owl#Cellulose>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Cellulose> <http://www.owl-ontologies.com/unnamed.owl#Chemical>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Central_America_Region> (<http://www.owl-ontologies.com/unnamed.owl#Central_America_Region>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Central_America_Region> <http://www.owl-ontologies.com/unnamed.owl#United_States_Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Chemical> (<http://www.owl-ontologies.com/unnamed.owl#Chemical>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Chemical> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Eukaryotic_cell> (<http://www.owl-ontologies.com/unnamed.owl#Eukaryotic_cell>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Eukaryotic_cell> <http://www.owl-ontologies.com/unnamed.owl#Cell_by_organism>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Experimentally_modified_cell> (<http://www.owl-ontologies.com/unnamed.owl#Experimentally_modified_cell>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Experimentally_modified_cell> <http://www.owl-ontologies.com/unnamed.owl#Cell>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Fiber_tracheid> (<http://www.owl-ontologies.com/unnamed.owl#Fiber_tracheid>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Fiber_tracheid> <http://www.owl-ontologies.com/unnamed.owl#Tracheary_element>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Finishing> (<http://www.owl-ontologies.com/unnamed.owl#Finishing>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Finishing> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#HardWood> (<http://www.owl-ontologies.com/unnamed.owl#HardWood>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#HardWood> <http://www.owl-ontologies.com/unnamed.owl#Wood>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Hemicellulose_lignin> (<http://www.owl-ontologies.com/unnamed.owl#Hemicellulose_lignin>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Hemicellulose_lignin> <http://www.owl-ontologies.com/unnamed.owl#Chemical>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Linear_polymer_crystalline> (<http://www.owl-ontologies.com/unnamed.owl#Linear_polymer_crystalline>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Linear_polymer_crystalline> <http://www.owl-ontologies.com/unnamed.owl#Chemical>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Metal> (<http://www.owl-ontologies.com/unnamed.owl#Metal>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Metal> <http://www.owl-ontologies.com/unnamed.owl#Natural_thing>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Natural_thing> (<http://www.owl-ontologies.com/unnamed.owl#Natural_thing>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Natural_thing> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#North_Eastern_America_Region> (<http://www.owl-ontologies.com/unnamed.owl#North_Eastern_America_Region>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#North_Eastern_America_Region> <http://www.owl-ontologies.com/unnamed.owl#United_States_Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#North_West_America_Region> (<http://www.owl-ontologies.com/unnamed.owl#North_West_America_Region>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#North_West_America_Region> <http://www.owl-ontologies.com/unnamed.owl#United_States_Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Oil_Stain> (<http://www.owl-ontologies.com/unnamed.owl#Oil_Stain>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Oil_Stain> <http://www.owl-ontologies.com/unnamed.owl#Staining>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Pacific_North_West> (<http://www.owl-ontologies.com/unnamed.owl#Pacific_North_West>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Pacific_North_West> <http://www.owl-ontologies.com/unnamed.owl#United_States_Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Plant_cell> (<http://www.owl-ontologies.com/unnamed.owl#Plant_cell>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Plant_cell> <http://www.owl-ontologies.com/unnamed.owl#Eukaryotic_cell>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Region> (<http://www.owl-ontologies.com/unnamed.owl#Region>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Region> owl:Thing)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Sealing> (<http://www.owl-ontologies.com/unnamed.owl#Sealing>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Sealing> <http://www.owl-ontologies.com/unnamed.owl#Finishing>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#SoftWood> (<http://www.owl-ontologies.com/unnamed.owl#SoftWood>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#SoftWood> <http://www.owl-ontologies.com/unnamed.owl#Wood>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#South_Eastern_America_Region> (<http://www.owl-ontologies.com/unnamed.owl#South_Eastern_America_Region>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#South_Eastern_America_Region> <http://www.owl-ontologies.com/unnamed.owl#United_States_Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Southern_California> (<http://www.owl-ontologies.com/unnamed.owl#Southern_California>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Southern_California> <http://www.owl-ontologies.com/unnamed.owl#United_States_Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Spirit_Stain> (<http://www.owl-ontologies.com/unnamed.owl#Spirit_Stain>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Spirit_Stain> <http://www.owl-ontologies.com/unnamed.owl#Staining>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Staining> (<http://www.owl-ontologies.com/unnamed.owl#Staining>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Staining> <http://www.owl-ontologies.com/unnamed.owl#Finishing>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Standard_finish> (<http://www.owl-ontologies.com/unnamed.owl#Standard_finish>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Standard_finish> <http://www.owl-ontologies.com/unnamed.owl#Finishing>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Tracheary_element> (<http://www.owl-ontologies.com/unnamed.owl#Tracheary_element>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Tracheary_element> <http://www.owl-ontologies.com/unnamed.owl#Plant_cell>)
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Tracheary_element> <http://www.owl-ontologies.com/unnamed.owl#transporting_cell>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Tracheid> (<http://www.owl-ontologies.com/unnamed.owl#Tracheid>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Tracheid> <http://www.owl-ontologies.com/unnamed.owl#Tracheary_element>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#United_States_Region> (<http://www.owl-ontologies.com/unnamed.owl#United_States_Region>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#United_States_Region> <http://www.owl-ontologies.com/unnamed.owl#Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Water_Stain> (<http://www.owl-ontologies.com/unnamed.owl#Water_Stain>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Water_Stain> <http://www.owl-ontologies.com/unnamed.owl#Staining>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#West_Coast_Region> (<http://www.owl-ontologies.com/unnamed.owl#West_Coast_Region>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#West_Coast_Region> <http://www.owl-ontologies.com/unnamed.owl#Africa_Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Western_America_Region> (<http://www.owl-ontologies.com/unnamed.owl#Western_America_Region>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Western_America_Region> <http://www.owl-ontologies.com/unnamed.owl#United_States_Region>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Wood> (<http://www.owl-ontologies.com/unnamed.owl#Wood>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Wood> <http://www.owl-ontologies.com/unnamed.owl#Natural_thing>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#transporting_cell> (<http://www.owl-ontologies.com/unnamed.owl#transporting_cell>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#transporting_cell> <http://www.owl-ontologies.com/unnamed.owl#Cell_by_function>)
+
+# Class: owl:Class (owl:Class)
+
+SubClassOf(owl:Class owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+
+)

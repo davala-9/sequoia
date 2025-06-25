@@ -1,0 +1,514 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Abduction>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#AcademicStaff>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Activity>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#AdministrativeStaff>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#AnomalyDetection>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#AnomalyRepairAndKnowledgeRevision>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Article>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#ArticleInBook>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#AutomatedCodeGenerationFromSpecification>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#AutomatedPSMGeneration>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Book>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#CaseBaseReasoning>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#ComputerSupport>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Conference>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#ConferencePaper>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#CooperativeKnowledgeAcquisition>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#DataMining>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Department>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#DevelopmentProject>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Editor>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#ElicitationTool>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Employee>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Enterprise>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#EvaluationOfKA>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Event>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#ExecutableSpecificationLanguages>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Formalisms>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Guideline>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#ImplementationEnvironment>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Institute>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#InternetTool>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Journal>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#JournalArticle>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#KAMethodologies>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#KAMethodology>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#KAThroughMachineLearning>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#KnowledgeBasedRefinement>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#KnowledgeDiscoveryInDatasets>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#KnowledgeElicitation>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#KnowledgeManagement>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#LearningApprenticeSystems>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Lecturer>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Meeting>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Methodologies>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Methodology>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#ModelingLanguage>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#NLParser>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Object>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#OnlinePublication>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Ontologies>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Ontology>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#OntologyLibrary>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Organization>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#PSM>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#PSMLibrary>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#PSMevaluation>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#PSMlibraries>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#PSMnotations>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#PSMs>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#PaperLibrary>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Person>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#PhDStudent>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Product>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Project>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Publication>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#ReinforcementLearning>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#ResearchGroup>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#ResearchProject>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#ResearchTopic>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Researcher>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Reuse>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Secretary>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#SoftwareApplications>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#SoftwareProject>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#SoftwareReuse>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#SpecialIssueEvent>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#SpecialIssuePublication>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#SpecificationLanguage>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#SpecificationLanguages>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#SpecificationMethodology>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#SpecificationOfControlKnowledge>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Student>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#SupportToolsForFormalMethods>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Sysiphus_III_Experiment>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#TechnicalReport>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#TechnicalStaff>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#TheoreticalFoundations>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#TransformationTool>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#University>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#V_And_V_Of_MAS>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Validation_And_Verification>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Validator>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Verifier>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#WebMediatedPSMSelection>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#Workshop>))
+Declaration(Class(<http://potato.cs.man.ac.uk/ontologies/ka#WorkshopPaper>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Ontology>))
+Declaration(Class(<http://www.w3.org/2000/10/XMLSchema#integer>))
+Declaration(Class(<http://www.w3.org/2000/10/XMLSchema#string>))
+############################
+#   Classes
+############################
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Abduction> (<http://potato.cs.man.ac.uk/ontologies/ka#Abduction>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Abduction> <http://potato.cs.man.ac.uk/ontologies/ka#KAThroughMachineLearning>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#AcademicStaff> (<http://potato.cs.man.ac.uk/ontologies/ka#AcademicStaff>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#AcademicStaff> <http://potato.cs.man.ac.uk/ontologies/ka#Employee>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Activity> (<http://potato.cs.man.ac.uk/ontologies/ka#Activity>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Activity> <http://potato.cs.man.ac.uk/ontologies/ka#Event>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#AdministrativeStaff> (<http://potato.cs.man.ac.uk/ontologies/ka#AdministrativeStaff>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#AdministrativeStaff> <http://potato.cs.man.ac.uk/ontologies/ka#Employee>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#AnomalyDetection> (<http://potato.cs.man.ac.uk/ontologies/ka#AnomalyDetection>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#AnomalyDetection> <http://potato.cs.man.ac.uk/ontologies/ka#Validation_And_Verification>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#AnomalyRepairAndKnowledgeRevision> (<http://potato.cs.man.ac.uk/ontologies/ka#AnomalyRepairAndKnowledgeRevision>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#AnomalyRepairAndKnowledgeRevision> <http://potato.cs.man.ac.uk/ontologies/ka#Validation_And_Verification>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Article> (<http://potato.cs.man.ac.uk/ontologies/ka#Article>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Article> <http://potato.cs.man.ac.uk/ontologies/ka#Publication>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#ArticleInBook> (<http://potato.cs.man.ac.uk/ontologies/ka#ArticleInBook>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#ArticleInBook> <http://potato.cs.man.ac.uk/ontologies/ka#Article>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#AutomatedCodeGenerationFromSpecification> (<http://potato.cs.man.ac.uk/ontologies/ka#AutomatedCodeGenerationFromSpecification>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#AutomatedCodeGenerationFromSpecification> <http://potato.cs.man.ac.uk/ontologies/ka#SpecificationLanguages>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#AutomatedPSMGeneration> (<http://potato.cs.man.ac.uk/ontologies/ka#AutomatedPSMGeneration>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#AutomatedPSMGeneration> <http://potato.cs.man.ac.uk/ontologies/ka#PSMs>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Book> (<http://potato.cs.man.ac.uk/ontologies/ka#Book>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Book> <http://potato.cs.man.ac.uk/ontologies/ka#Publication>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#CaseBaseReasoning> (<http://potato.cs.man.ac.uk/ontologies/ka#CaseBaseReasoning>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#CaseBaseReasoning> <http://potato.cs.man.ac.uk/ontologies/ka#KAThroughMachineLearning>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#ComputerSupport> (<http://potato.cs.man.ac.uk/ontologies/ka#ComputerSupport>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#ComputerSupport> <http://potato.cs.man.ac.uk/ontologies/ka#Product>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Conference> (<http://potato.cs.man.ac.uk/ontologies/ka#Conference>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Conference> <http://potato.cs.man.ac.uk/ontologies/ka#Event>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#ConferencePaper> (<http://potato.cs.man.ac.uk/ontologies/ka#ConferencePaper>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#ConferencePaper> <http://potato.cs.man.ac.uk/ontologies/ka#Article>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#CooperativeKnowledgeAcquisition> (<http://potato.cs.man.ac.uk/ontologies/ka#CooperativeKnowledgeAcquisition>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#CooperativeKnowledgeAcquisition> <http://potato.cs.man.ac.uk/ontologies/ka#KAThroughMachineLearning>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#DataMining> (<http://potato.cs.man.ac.uk/ontologies/ka#DataMining>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#DataMining> <http://potato.cs.man.ac.uk/ontologies/ka#KAThroughMachineLearning>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Department> (<http://potato.cs.man.ac.uk/ontologies/ka#Department>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Department> <http://potato.cs.man.ac.uk/ontologies/ka#Organization>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#DevelopmentProject> (<http://potato.cs.man.ac.uk/ontologies/ka#DevelopmentProject>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#DevelopmentProject> <http://potato.cs.man.ac.uk/ontologies/ka#Project>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Editor> (<http://potato.cs.man.ac.uk/ontologies/ka#Editor>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Editor> <http://potato.cs.man.ac.uk/ontologies/ka#ComputerSupport>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#ElicitationTool> (<http://potato.cs.man.ac.uk/ontologies/ka#ElicitationTool>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#ElicitationTool> <http://potato.cs.man.ac.uk/ontologies/ka#ComputerSupport>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Employee> (<http://potato.cs.man.ac.uk/ontologies/ka#Employee>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Employee> <http://potato.cs.man.ac.uk/ontologies/ka#Person>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Enterprise> (<http://potato.cs.man.ac.uk/ontologies/ka#Enterprise>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Enterprise> <http://potato.cs.man.ac.uk/ontologies/ka#Organization>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#EvaluationOfKA> (<http://potato.cs.man.ac.uk/ontologies/ka#EvaluationOfKA>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#EvaluationOfKA> <http://potato.cs.man.ac.uk/ontologies/ka#ResearchTopic>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Event> (<http://potato.cs.man.ac.uk/ontologies/ka#Event>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Event> <http://potato.cs.man.ac.uk/ontologies/ka#Object>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#ExecutableSpecificationLanguages> (<http://potato.cs.man.ac.uk/ontologies/ka#ExecutableSpecificationLanguages>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#ExecutableSpecificationLanguages> <http://potato.cs.man.ac.uk/ontologies/ka#SpecificationLanguages>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Formalisms> (<http://potato.cs.man.ac.uk/ontologies/ka#Formalisms>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Formalisms> <http://potato.cs.man.ac.uk/ontologies/ka#Validation_And_Verification>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Guideline> (<http://potato.cs.man.ac.uk/ontologies/ka#Guideline>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Guideline> <http://potato.cs.man.ac.uk/ontologies/ka#KAMethodology>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#ImplementationEnvironment> (<http://potato.cs.man.ac.uk/ontologies/ka#ImplementationEnvironment>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#ImplementationEnvironment> <http://potato.cs.man.ac.uk/ontologies/ka#ComputerSupport>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Institute> (<http://potato.cs.man.ac.uk/ontologies/ka#Institute>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Institute> <http://potato.cs.man.ac.uk/ontologies/ka#Organization>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#InternetTool> (<http://potato.cs.man.ac.uk/ontologies/ka#InternetTool>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#InternetTool> <http://potato.cs.man.ac.uk/ontologies/ka#ComputerSupport>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Journal> (<http://potato.cs.man.ac.uk/ontologies/ka#Journal>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Journal> <http://potato.cs.man.ac.uk/ontologies/ka#Publication>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#JournalArticle> (<http://potato.cs.man.ac.uk/ontologies/ka#JournalArticle>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#JournalArticle> <http://potato.cs.man.ac.uk/ontologies/ka#Article>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#KAMethodologies> (<http://potato.cs.man.ac.uk/ontologies/ka#KAMethodologies>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#KAMethodologies> <http://potato.cs.man.ac.uk/ontologies/ka#ResearchTopic>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#KAMethodology> (<http://potato.cs.man.ac.uk/ontologies/ka#KAMethodology>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#KAMethodology> <http://potato.cs.man.ac.uk/ontologies/ka#Product>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#KAThroughMachineLearning> (<http://potato.cs.man.ac.uk/ontologies/ka#KAThroughMachineLearning>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#KAThroughMachineLearning> <http://potato.cs.man.ac.uk/ontologies/ka#ResearchTopic>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#KnowledgeBasedRefinement> (<http://potato.cs.man.ac.uk/ontologies/ka#KnowledgeBasedRefinement>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#KnowledgeBasedRefinement> <http://potato.cs.man.ac.uk/ontologies/ka#KAThroughMachineLearning>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#KnowledgeDiscoveryInDatasets> (<http://potato.cs.man.ac.uk/ontologies/ka#KnowledgeDiscoveryInDatasets>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#KnowledgeDiscoveryInDatasets> <http://potato.cs.man.ac.uk/ontologies/ka#KAThroughMachineLearning>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#KnowledgeElicitation> (<http://potato.cs.man.ac.uk/ontologies/ka#KnowledgeElicitation>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#KnowledgeElicitation> <http://potato.cs.man.ac.uk/ontologies/ka#ResearchTopic>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#KnowledgeManagement> (<http://potato.cs.man.ac.uk/ontologies/ka#KnowledgeManagement>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#KnowledgeManagement> <http://potato.cs.man.ac.uk/ontologies/ka#ResearchTopic>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#LearningApprenticeSystems> (<http://potato.cs.man.ac.uk/ontologies/ka#LearningApprenticeSystems>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#LearningApprenticeSystems> <http://potato.cs.man.ac.uk/ontologies/ka#KAThroughMachineLearning>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Lecturer> (<http://potato.cs.man.ac.uk/ontologies/ka#Lecturer>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Lecturer> <http://potato.cs.man.ac.uk/ontologies/ka#AcademicStaff>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Meeting> (<http://potato.cs.man.ac.uk/ontologies/ka#Meeting>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Meeting> <http://potato.cs.man.ac.uk/ontologies/ka#Event>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Methodologies> (<http://potato.cs.man.ac.uk/ontologies/ka#Methodologies>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Methodologies> <http://potato.cs.man.ac.uk/ontologies/ka#Ontologies>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Methodology> (<http://potato.cs.man.ac.uk/ontologies/ka#Methodology>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Methodology> <http://potato.cs.man.ac.uk/ontologies/ka#Validation_And_Verification>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#ModelingLanguage> (<http://potato.cs.man.ac.uk/ontologies/ka#ModelingLanguage>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#ModelingLanguage> <http://potato.cs.man.ac.uk/ontologies/ka#KAMethodology>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#NLParser> (<http://potato.cs.man.ac.uk/ontologies/ka#NLParser>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#NLParser> <http://potato.cs.man.ac.uk/ontologies/ka#ComputerSupport>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Object> (<http://potato.cs.man.ac.uk/ontologies/ka#Object>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Object> owl:Thing)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#OnlinePublication> (<http://potato.cs.man.ac.uk/ontologies/ka#OnlinePublication>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#OnlinePublication> <http://potato.cs.man.ac.uk/ontologies/ka#Publication>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Ontologies> (<http://potato.cs.man.ac.uk/ontologies/ka#Ontologies>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Ontologies> <http://potato.cs.man.ac.uk/ontologies/ka#Reuse>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Ontology> (<http://potato.cs.man.ac.uk/ontologies/ka#Ontology>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Ontology> <http://potato.cs.man.ac.uk/ontologies/ka#KAMethodology>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#OntologyLibrary> (<http://potato.cs.man.ac.uk/ontologies/ka#OntologyLibrary>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#OntologyLibrary> <http://potato.cs.man.ac.uk/ontologies/ka#ComputerSupport>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Organization> (<http://potato.cs.man.ac.uk/ontologies/ka#Organization>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Organization> <http://potato.cs.man.ac.uk/ontologies/ka#Object>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#PSM> (<http://potato.cs.man.ac.uk/ontologies/ka#PSM>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#PSM> <http://potato.cs.man.ac.uk/ontologies/ka#KAMethodology>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#PSMLibrary> (<http://potato.cs.man.ac.uk/ontologies/ka#PSMLibrary>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#PSMLibrary> <http://potato.cs.man.ac.uk/ontologies/ka#ComputerSupport>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#PSMevaluation> (<http://potato.cs.man.ac.uk/ontologies/ka#PSMevaluation>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#PSMevaluation> <http://potato.cs.man.ac.uk/ontologies/ka#PSMs>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#PSMlibraries> (<http://potato.cs.man.ac.uk/ontologies/ka#PSMlibraries>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#PSMlibraries> <http://potato.cs.man.ac.uk/ontologies/ka#PSMs>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#PSMnotations> (<http://potato.cs.man.ac.uk/ontologies/ka#PSMnotations>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#PSMnotations> <http://potato.cs.man.ac.uk/ontologies/ka#PSMs>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#PSMs> (<http://potato.cs.man.ac.uk/ontologies/ka#PSMs>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#PSMs> <http://potato.cs.man.ac.uk/ontologies/ka#Reuse>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#PaperLibrary> (<http://potato.cs.man.ac.uk/ontologies/ka#PaperLibrary>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#PaperLibrary> <http://potato.cs.man.ac.uk/ontologies/ka#KAMethodology>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Person> (<http://potato.cs.man.ac.uk/ontologies/ka#Person>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Person> <http://potato.cs.man.ac.uk/ontologies/ka#Object>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#PhDStudent> (<http://potato.cs.man.ac.uk/ontologies/ka#PhDStudent>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#PhDStudent> <http://potato.cs.man.ac.uk/ontologies/ka#Researcher>)
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#PhDStudent> <http://potato.cs.man.ac.uk/ontologies/ka#Student>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Product> (<http://potato.cs.man.ac.uk/ontologies/ka#Product>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Product> <http://potato.cs.man.ac.uk/ontologies/ka#Object>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Project> (<http://potato.cs.man.ac.uk/ontologies/ka#Project>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Project> <http://potato.cs.man.ac.uk/ontologies/ka#Object>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Publication> (<http://potato.cs.man.ac.uk/ontologies/ka#Publication>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Publication> <http://potato.cs.man.ac.uk/ontologies/ka#Object>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#ReinforcementLearning> (<http://potato.cs.man.ac.uk/ontologies/ka#ReinforcementLearning>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#ReinforcementLearning> <http://potato.cs.man.ac.uk/ontologies/ka#KAThroughMachineLearning>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#ResearchGroup> (<http://potato.cs.man.ac.uk/ontologies/ka#ResearchGroup>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#ResearchGroup> <http://potato.cs.man.ac.uk/ontologies/ka#Organization>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#ResearchProject> (<http://potato.cs.man.ac.uk/ontologies/ka#ResearchProject>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#ResearchProject> <http://potato.cs.man.ac.uk/ontologies/ka#Project>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#ResearchTopic> (<http://potato.cs.man.ac.uk/ontologies/ka#ResearchTopic>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#ResearchTopic> <http://potato.cs.man.ac.uk/ontologies/ka#Object>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Researcher> (<http://potato.cs.man.ac.uk/ontologies/ka#Researcher>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Researcher> <http://potato.cs.man.ac.uk/ontologies/ka#AcademicStaff>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Reuse> (<http://potato.cs.man.ac.uk/ontologies/ka#Reuse>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Reuse> <http://potato.cs.man.ac.uk/ontologies/ka#ResearchTopic>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Secretary> (<http://potato.cs.man.ac.uk/ontologies/ka#Secretary>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Secretary> <http://potato.cs.man.ac.uk/ontologies/ka#AdministrativeStaff>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#SoftwareApplications> (<http://potato.cs.man.ac.uk/ontologies/ka#SoftwareApplications>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#SoftwareApplications> <http://potato.cs.man.ac.uk/ontologies/ka#Ontologies>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#SoftwareProject> (<http://potato.cs.man.ac.uk/ontologies/ka#SoftwareProject>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#SoftwareProject> <http://potato.cs.man.ac.uk/ontologies/ka#DevelopmentProject>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#SoftwareReuse> (<http://potato.cs.man.ac.uk/ontologies/ka#SoftwareReuse>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#SoftwareReuse> <http://potato.cs.man.ac.uk/ontologies/ka#Reuse>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#SpecialIssueEvent> (<http://potato.cs.man.ac.uk/ontologies/ka#SpecialIssueEvent>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#SpecialIssueEvent> <http://potato.cs.man.ac.uk/ontologies/ka#Event>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#SpecialIssuePublication> (<http://potato.cs.man.ac.uk/ontologies/ka#SpecialIssuePublication>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#SpecialIssuePublication> <http://potato.cs.man.ac.uk/ontologies/ka#Journal>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#SpecificationLanguage> (<http://potato.cs.man.ac.uk/ontologies/ka#SpecificationLanguage>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#SpecificationLanguage> <http://potato.cs.man.ac.uk/ontologies/ka#KAMethodology>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#SpecificationLanguages> (<http://potato.cs.man.ac.uk/ontologies/ka#SpecificationLanguages>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#SpecificationLanguages> <http://potato.cs.man.ac.uk/ontologies/ka#ResearchTopic>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#SpecificationMethodology> (<http://potato.cs.man.ac.uk/ontologies/ka#SpecificationMethodology>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#SpecificationMethodology> <http://potato.cs.man.ac.uk/ontologies/ka#SpecificationLanguages>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#SpecificationOfControlKnowledge> (<http://potato.cs.man.ac.uk/ontologies/ka#SpecificationOfControlKnowledge>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#SpecificationOfControlKnowledge> <http://potato.cs.man.ac.uk/ontologies/ka#SpecificationLanguages>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Student> (<http://potato.cs.man.ac.uk/ontologies/ka#Student>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Student> <http://potato.cs.man.ac.uk/ontologies/ka#Person>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#SupportToolsForFormalMethods> (<http://potato.cs.man.ac.uk/ontologies/ka#SupportToolsForFormalMethods>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#SupportToolsForFormalMethods> <http://potato.cs.man.ac.uk/ontologies/ka#SpecificationLanguages>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Sysiphus_III_Experiment> (<http://potato.cs.man.ac.uk/ontologies/ka#Sysiphus_III_Experiment>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Sysiphus_III_Experiment> <http://potato.cs.man.ac.uk/ontologies/ka#PSMs>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#TechnicalReport> (<http://potato.cs.man.ac.uk/ontologies/ka#TechnicalReport>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#TechnicalReport> <http://potato.cs.man.ac.uk/ontologies/ka#Article>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#TechnicalStaff> (<http://potato.cs.man.ac.uk/ontologies/ka#TechnicalStaff>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#TechnicalStaff> <http://potato.cs.man.ac.uk/ontologies/ka#AdministrativeStaff>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#TheoreticalFoundations> (<http://potato.cs.man.ac.uk/ontologies/ka#TheoreticalFoundations>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#TheoreticalFoundations> <http://potato.cs.man.ac.uk/ontologies/ka#Ontologies>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#TransformationTool> (<http://potato.cs.man.ac.uk/ontologies/ka#TransformationTool>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#TransformationTool> <http://potato.cs.man.ac.uk/ontologies/ka#ComputerSupport>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#University> (<http://potato.cs.man.ac.uk/ontologies/ka#University>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#University> <http://potato.cs.man.ac.uk/ontologies/ka#Organization>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#V_And_V_Of_MAS> (<http://potato.cs.man.ac.uk/ontologies/ka#V_And_V_Of_MAS>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#V_And_V_Of_MAS> <http://potato.cs.man.ac.uk/ontologies/ka#Validation_And_Verification>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Validation_And_Verification> (<http://potato.cs.man.ac.uk/ontologies/ka#Validation_And_Verification>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Validation_And_Verification> <http://potato.cs.man.ac.uk/ontologies/ka#ResearchTopic>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Validator> (<http://potato.cs.man.ac.uk/ontologies/ka#Validator>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Validator> <http://potato.cs.man.ac.uk/ontologies/ka#ComputerSupport>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Verifier> (<http://potato.cs.man.ac.uk/ontologies/ka#Verifier>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Verifier> <http://potato.cs.man.ac.uk/ontologies/ka#ComputerSupport>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#WebMediatedPSMSelection> (<http://potato.cs.man.ac.uk/ontologies/ka#WebMediatedPSMSelection>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#WebMediatedPSMSelection> <http://potato.cs.man.ac.uk/ontologies/ka#PSMs>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#Workshop> (<http://potato.cs.man.ac.uk/ontologies/ka#Workshop>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#Workshop> <http://potato.cs.man.ac.uk/ontologies/ka#Event>)
+
+# Class: <http://potato.cs.man.ac.uk/ontologies/ka#WorkshopPaper> (<http://potato.cs.man.ac.uk/ontologies/ka#WorkshopPaper>)
+
+SubClassOf(<http://potato.cs.man.ac.uk/ontologies/ka#WorkshopPaper> <http://potato.cs.man.ac.uk/ontologies/ka#Article>)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Ontology> (<http://www.daml.org/2001/03/daml+oil#Ontology>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Ontology> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/XMLSchema#integer> (<http://www.w3.org/2000/10/XMLSchema#integer>)
+
+SubClassOf(<http://www.w3.org/2000/10/XMLSchema#integer> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/XMLSchema#string> (<http://www.w3.org/2000/10/XMLSchema#string>)
+
+SubClassOf(<http://www.w3.org/2000/10/XMLSchema#string> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

@@ -1,0 +1,158 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/association.owl#PersonProjectAssociation>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#AdjunctFaculty>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#AffiliatedFaculty>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#Alumnus>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#AssistantProfessor>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#AssociateProfessor>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#BSAlumnus>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#BSStudent>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#Collaborator>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#Faculty>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#GuestSpeaker>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#MSAlumnus>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#MSStudent>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#Person>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#PhDAlumnus>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#PhDStudent>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#PrincipalFaculty>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#PrincipalInvestigator>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#Professor>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#Sponsor>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#Student>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/person.owl#Visitor>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/publication.owl#Publication>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+Declaration(Class(owl:auxiliarDataRangeClass5))
+############################
+#   Classes
+############################
+
+# Class: <http://ebiquity.umbc.edu/ontology/association.owl#PersonProjectAssociation> (<http://ebiquity.umbc.edu/ontology/association.owl#PersonProjectAssociation>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/association.owl#PersonProjectAssociation> owl:Thing)
+
+# Class: <http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation> (<http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/contact.owl#ContactInformation> owl:Thing)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#AdjunctFaculty> (<http://ebiquity.umbc.edu/ontology/person.owl#AdjunctFaculty>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#AdjunctFaculty> <http://ebiquity.umbc.edu/ontology/person.owl#Faculty>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#AffiliatedFaculty> (<http://ebiquity.umbc.edu/ontology/person.owl#AffiliatedFaculty>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#AffiliatedFaculty> <http://ebiquity.umbc.edu/ontology/person.owl#Faculty>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#Alumnus> (<http://ebiquity.umbc.edu/ontology/person.owl#Alumnus>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#Alumnus> <http://ebiquity.umbc.edu/ontology/person.owl#Person>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#AssistantProfessor> (<http://ebiquity.umbc.edu/ontology/person.owl#AssistantProfessor>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#AssistantProfessor> <http://ebiquity.umbc.edu/ontology/person.owl#Faculty>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#AssociateProfessor> (<http://ebiquity.umbc.edu/ontology/person.owl#AssociateProfessor>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#AssociateProfessor> <http://ebiquity.umbc.edu/ontology/person.owl#Faculty>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#BSAlumnus> (<http://ebiquity.umbc.edu/ontology/person.owl#BSAlumnus>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#BSAlumnus> <http://ebiquity.umbc.edu/ontology/person.owl#Alumnus>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#BSStudent> (<http://ebiquity.umbc.edu/ontology/person.owl#BSStudent>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#BSStudent> <http://ebiquity.umbc.edu/ontology/person.owl#Student>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#Collaborator> (<http://ebiquity.umbc.edu/ontology/person.owl#Collaborator>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#Collaborator> <http://ebiquity.umbc.edu/ontology/person.owl#Person>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#Faculty> (<http://ebiquity.umbc.edu/ontology/person.owl#Faculty>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#Faculty> <http://ebiquity.umbc.edu/ontology/person.owl#Person>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#GuestSpeaker> (<http://ebiquity.umbc.edu/ontology/person.owl#GuestSpeaker>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#GuestSpeaker> <http://ebiquity.umbc.edu/ontology/person.owl#Person>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#MSAlumnus> (<http://ebiquity.umbc.edu/ontology/person.owl#MSAlumnus>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#MSAlumnus> <http://ebiquity.umbc.edu/ontology/person.owl#Alumnus>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#MSStudent> (<http://ebiquity.umbc.edu/ontology/person.owl#MSStudent>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#MSStudent> <http://ebiquity.umbc.edu/ontology/person.owl#Student>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#Person> (<http://ebiquity.umbc.edu/ontology/person.owl#Person>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#Person> owl:Thing)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#PhDAlumnus> (<http://ebiquity.umbc.edu/ontology/person.owl#PhDAlumnus>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#PhDAlumnus> <http://ebiquity.umbc.edu/ontology/person.owl#Alumnus>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#PhDStudent> (<http://ebiquity.umbc.edu/ontology/person.owl#PhDStudent>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#PhDStudent> <http://ebiquity.umbc.edu/ontology/person.owl#Student>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#PrincipalFaculty> (<http://ebiquity.umbc.edu/ontology/person.owl#PrincipalFaculty>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#PrincipalFaculty> <http://ebiquity.umbc.edu/ontology/person.owl#Faculty>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#PrincipalInvestigator> (<http://ebiquity.umbc.edu/ontology/person.owl#PrincipalInvestigator>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#PrincipalInvestigator> <http://ebiquity.umbc.edu/ontology/person.owl#Person>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#Professor> (<http://ebiquity.umbc.edu/ontology/person.owl#Professor>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#Professor> <http://ebiquity.umbc.edu/ontology/person.owl#Faculty>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#Sponsor> (<http://ebiquity.umbc.edu/ontology/person.owl#Sponsor>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#Sponsor> <http://ebiquity.umbc.edu/ontology/person.owl#Person>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#Student> (<http://ebiquity.umbc.edu/ontology/person.owl#Student>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#Student> <http://ebiquity.umbc.edu/ontology/person.owl#Person>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/person.owl#Visitor> (<http://ebiquity.umbc.edu/ontology/person.owl#Visitor>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/person.owl#Visitor> <http://ebiquity.umbc.edu/ontology/person.owl#Person>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/publication.owl#Publication> (<http://ebiquity.umbc.edu/ontology/publication.owl#Publication>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/publication.owl#Publication> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass5 (owl:auxiliarDataRangeClass5)
+
+SubClassOf(owl:auxiliarDataRangeClass5 owl:Thing)
+
+
+)

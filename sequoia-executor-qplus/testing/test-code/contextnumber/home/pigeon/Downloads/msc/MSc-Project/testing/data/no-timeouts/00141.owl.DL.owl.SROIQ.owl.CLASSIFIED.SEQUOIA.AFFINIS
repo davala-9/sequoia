@@ -1,0 +1,598 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#PositiveInteger>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#PureSubstance>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TemperatureMeasure>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Actinium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Aluminum>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Americium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Antimony>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Argon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Arsenic>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Astatine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Barium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Berkelium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Beryllium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Bismuth>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Boron>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Bromine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Cadmium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Caesium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Calcium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Californium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Carbon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Cerium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Chlorine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Chromium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Cobalt>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Copper>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Curium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Dysprosium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Einsteinium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Erbium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Europium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Fermium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Fluorine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Francium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Gadolinium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Gallium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Germanium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Gold>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Hafnium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Helium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Holmium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Hydrogen>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Indium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Iodine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Iridium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Iron>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Krypton>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lanthanum>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lawrencium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lead>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lithium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lutetium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Magnesium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Manganese>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Meitnerium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Mendelevium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Mercury>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Molybdenum>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Neodymium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Neon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Neptunium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Nickel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Niobium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Nitrogen>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Nobelium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Osmium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Oxygen>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Palladium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Phosphorus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Platinum>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Plutonium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Polonium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Potassium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Praseodymium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Promethium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Protactinium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Radium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Radon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Rhenium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Rhodium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Rubidium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Ruthenium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Samarium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Scandium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Selenium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Silicon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Silver>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Sodium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Strontium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Sulphur>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Tantalum>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Technetium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Tellurium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Terbium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Thallium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Thorium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Thulium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Tin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Titanium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Tungsten>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnildecium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnilhexium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unniloctium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnilpentium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnilquadium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnilseptium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Uranium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Vanadium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Xenon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Ytterbium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Yttrium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Zinc>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Zirconium>))
+############################
+#   Classes
+############################
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance> (<http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#PositiveInteger> (<http://reliant.teknowledge.com/DAML/SUMO.owl#PositiveInteger>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#PositiveInteger> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#PureSubstance> (<http://reliant.teknowledge.com/DAML/SUMO.owl#PureSubstance>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#PureSubstance> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TemperatureMeasure> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TemperatureMeasure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TemperatureMeasure> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Actinium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Actinium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Actinium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Aluminum> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Aluminum>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Aluminum> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Americium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Americium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Americium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Antimony> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Antimony>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Antimony> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Argon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Argon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Argon> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Arsenic> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Arsenic>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Arsenic> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Astatine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Astatine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Astatine> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Barium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Barium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Barium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Berkelium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Berkelium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Berkelium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Beryllium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Beryllium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Beryllium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Bismuth> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Bismuth>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Bismuth> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Boron> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Boron>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Boron> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Bromine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Bromine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Bromine> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Cadmium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Cadmium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Cadmium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Caesium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Caesium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Caesium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Calcium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Calcium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Calcium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Californium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Californium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Californium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Carbon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Carbon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Carbon> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Cerium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Cerium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Cerium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Chlorine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Chlorine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Chlorine> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Chromium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Chromium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Chromium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Cobalt> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Cobalt>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Cobalt> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Copper> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Copper>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Copper> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Curium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Curium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Curium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Dysprosium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Dysprosium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Dysprosium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Einsteinium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Einsteinium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Einsteinium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Erbium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Erbium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Erbium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Europium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Europium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Europium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Fermium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Fermium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Fermium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Fluorine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Fluorine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Fluorine> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Francium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Francium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Francium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Gadolinium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Gadolinium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Gadolinium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Gallium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Gallium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Gallium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Germanium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Germanium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Germanium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Gold> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Gold>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Gold> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Hafnium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Hafnium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Hafnium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Helium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Helium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Helium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Holmium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Holmium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Holmium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Hydrogen> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Hydrogen>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Hydrogen> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Indium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Indium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Indium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Iodine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Iodine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Iodine> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Iridium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Iridium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Iridium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Iron> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Iron>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Iron> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Krypton> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Krypton>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Krypton> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lanthanum> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lanthanum>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lanthanum> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lawrencium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lawrencium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lawrencium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lead> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lead>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lead> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lithium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lithium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lithium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lutetium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lutetium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Lutetium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Magnesium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Magnesium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Magnesium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Manganese> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Manganese>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Manganese> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Meitnerium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Meitnerium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Meitnerium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Mendelevium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Mendelevium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Mendelevium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Mercury> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Mercury>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Mercury> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Molybdenum> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Molybdenum>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Molybdenum> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Neodymium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Neodymium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Neodymium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Neon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Neon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Neon> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Neptunium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Neptunium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Neptunium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Nickel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Nickel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Nickel> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Niobium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Niobium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Niobium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Nitrogen> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Nitrogen>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Nitrogen> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Nobelium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Nobelium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Nobelium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Osmium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Osmium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Osmium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Oxygen> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Oxygen>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Oxygen> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Palladium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Palladium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Palladium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Phosphorus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Phosphorus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Phosphorus> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Platinum> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Platinum>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Platinum> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Plutonium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Plutonium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Plutonium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Polonium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Polonium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Polonium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Potassium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Potassium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Potassium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Praseodymium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Praseodymium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Praseodymium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Promethium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Promethium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Promethium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Protactinium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Protactinium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Protactinium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Radium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Radium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Radium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Radon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Radon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Radon> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Rhenium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Rhenium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Rhenium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Rhodium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Rhodium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Rhodium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Rubidium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Rubidium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Rubidium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Ruthenium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Ruthenium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Ruthenium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Samarium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Samarium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Samarium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Scandium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Scandium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Scandium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Selenium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Selenium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Selenium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Silicon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Silicon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Silicon> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Silver> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Silver>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Silver> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Sodium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Sodium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Sodium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Strontium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Strontium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Strontium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Sulphur> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Sulphur>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Sulphur> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Tantalum> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Tantalum>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Tantalum> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Technetium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Technetium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Technetium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Tellurium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Tellurium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Tellurium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Terbium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Terbium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Terbium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Thallium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Thallium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Thallium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Thorium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Thorium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Thorium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Thulium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Thulium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Thulium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Tin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Tin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Tin> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Titanium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Titanium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Titanium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Tungsten> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Tungsten>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Tungsten> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnildecium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnildecium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnildecium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnilhexium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnilhexium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnilhexium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unniloctium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unniloctium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unniloctium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnilpentium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnilpentium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnilpentium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnilquadium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnilquadium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnilquadium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnilseptium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnilseptium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Unnilseptium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Uranium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Uranium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Uranium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Vanadium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Vanadium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Vanadium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Xenon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Xenon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Xenon> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Ytterbium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Ytterbium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Ytterbium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Yttrium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Yttrium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Yttrium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Zinc> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Zinc>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Zinc> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Zirconium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Zirconium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00141.owl#Zirconium> <http://reliant.teknowledge.com/DAML/SUMO.owl#ElementalSubstance>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

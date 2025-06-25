@@ -1,0 +1,173 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#ClassDivCode>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#CompatibilityGroup>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#HazardousCargo>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.1>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.2>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.3>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.4>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.5>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.6>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2.1>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2.2>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2.3>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class3>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4.1>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4.2>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4.3>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5.1>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5.2>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6.1>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6.2>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class7>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class8>))
+Declaration(Class(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class9>))
+Declaration(Class(owl:Class))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+############################
+#   Classes
+############################
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#ClassDivCode> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#ClassDivCode>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#ClassDivCode> owl:Class)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#CompatibilityGroup> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#CompatibilityGroup>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#CompatibilityGroup> owl:Thing)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#HazardousCargo> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#HazardousCargo>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#HazardousCargo> owl:Thing)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses> owl:Thing)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.1> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.1>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.1> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.2> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.2>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.2> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.3> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.3>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.3> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.4> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.4>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.4> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.5> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.5>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.5> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.6> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.6>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1.6> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class1>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2.1> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2.1>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2.1> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2.2> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2.2>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2.2> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2.3> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2.3>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2.3> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class2>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class3> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class3>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class3> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4.1> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4.1>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4.1> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4.2> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4.2>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4.2> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4.3> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4.3>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4.3> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class4>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5.1> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5.1>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5.1> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5.2> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5.2>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5.2> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class5>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6.1> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6.1>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6.1> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6.2> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6.2>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6.2> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class6>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class7> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class7>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class7> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class8> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class8>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class8> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses>)
+
+# Class: <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class9> (<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class9>)
+
+SubClassOf(<http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#class9> <http://www.daml.org/2002/10/hazardous/hazardous-cargo-ont#allHazardousClasses>)
+
+# Class: owl:Class (owl:Class)
+
+SubClassOf(owl:Class owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+
+)

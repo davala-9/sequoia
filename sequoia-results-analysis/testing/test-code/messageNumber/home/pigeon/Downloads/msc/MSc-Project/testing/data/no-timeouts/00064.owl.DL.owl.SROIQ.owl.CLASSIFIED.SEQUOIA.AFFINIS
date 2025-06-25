@@ -1,0 +1,53 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Schema>))
+Declaration(Class(<http://dublincore.org/2000/03/13/eor#DataType>))
+Declaration(Class(<http://dublincore.org/2000/03/13/eor#Profile>))
+Declaration(Class(<http://dublincore.org/2000/03/13/eor#Schema>))
+Declaration(Class(<http://dublincore.org/2000/03/13/eor#WebPage>))
+Declaration(Class(<http://purl.org/dc/dcmitype/Text>))
+Declaration(Class(rdfs:Literal))
+############################
+#   Classes
+############################
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Schema> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Schema>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Schema> owl:Thing)
+
+# Class: <http://dublincore.org/2000/03/13/eor#DataType> (<http://dublincore.org/2000/03/13/eor#DataType>)
+
+SubClassOf(<http://dublincore.org/2000/03/13/eor#DataType> rdfs:Literal)
+
+# Class: <http://dublincore.org/2000/03/13/eor#Profile> (<http://dublincore.org/2000/03/13/eor#Profile>)
+
+SubClassOf(<http://dublincore.org/2000/03/13/eor#Profile> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Schema>)
+
+# Class: <http://dublincore.org/2000/03/13/eor#Schema> (<http://dublincore.org/2000/03/13/eor#Schema>)
+
+SubClassOf(<http://dublincore.org/2000/03/13/eor#Schema> <http://purl.org/dc/dcmitype/Text>)
+
+# Class: <http://dublincore.org/2000/03/13/eor#WebPage> (<http://dublincore.org/2000/03/13/eor#WebPage>)
+
+SubClassOf(<http://dublincore.org/2000/03/13/eor#WebPage> <http://purl.org/dc/dcmitype/Text>)
+
+# Class: <http://purl.org/dc/dcmitype/Text> (<http://purl.org/dc/dcmitype/Text>)
+
+SubClassOf(<http://purl.org/dc/dcmitype/Text> owl:Thing)
+
+# Class: rdfs:Literal (rdfs:Literal)
+
+SubClassOf(rdfs:Literal owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

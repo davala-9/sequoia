@@ -1,0 +1,69 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error1>))
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error2>))
+Declaration(Class(<http://www.daml.org/2002/04/classification/classification-ont#Marking>))
+Declaration(Class(<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>))
+Declaration(Class(<http://www.daml.org/2002/11/jbi/jbi-ont#Relation>))
+Declaration(Class(<http://www.daml.org/2002/11/jbi/jbi-ont#Supercedes>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+Declaration(Class(owl:auxiliarDataRangeClass5))
+############################
+#   Classes
+############################
+
+# Class: <http://org.semanticweb.owlapi/error#Error1> (<http://org.semanticweb.owlapi/error#Error1>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error1> owl:Thing)
+
+# Class: <http://org.semanticweb.owlapi/error#Error2> (<http://org.semanticweb.owlapi/error#Error2>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error2> owl:Thing)
+
+# Class: <http://www.daml.org/2002/04/classification/classification-ont#Marking> (<http://www.daml.org/2002/04/classification/classification-ont#Marking>)
+
+SubClassOf(<http://www.daml.org/2002/04/classification/classification-ont#Marking> owl:Thing)
+
+# Class: <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject> (<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>)
+
+SubClassOf(<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject> <http://org.semanticweb.owlapi/error#Error1>)
+SubClassOf(<http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject> <http://org.semanticweb.owlapi/error#Error2>)
+
+# Class: <http://www.daml.org/2002/11/jbi/jbi-ont#Relation> (<http://www.daml.org/2002/11/jbi/jbi-ont#Relation>)
+
+SubClassOf(<http://www.daml.org/2002/11/jbi/jbi-ont#Relation> <http://www.daml.org/2002/11/jbi/jbi-ont#InfoObject>)
+
+# Class: <http://www.daml.org/2002/11/jbi/jbi-ont#Supercedes> (<http://www.daml.org/2002/11/jbi/jbi-ont#Supercedes>)
+
+SubClassOf(<http://www.daml.org/2002/11/jbi/jbi-ont#Supercedes> <http://www.daml.org/2002/11/jbi/jbi-ont#Relation>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass5 (owl:auxiliarDataRangeClass5)
+
+SubClassOf(owl:auxiliarDataRangeClass5 owl:Thing)
+
+
+)

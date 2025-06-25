@@ -1,0 +1,104 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.purl.org/net/ontology/order.owl#Address>))
+Declaration(Class(<http://www.purl.org/net/ontology/order.owl#Agent>))
+Declaration(Class(<http://www.purl.org/net/ontology/order.owl#ItemsCollection>))
+Declaration(Class(<http://www.purl.org/net/ontology/order.owl#Organization>))
+Declaration(Class(<http://www.purl.org/net/ontology/order.owl#Person>))
+Declaration(Class(<http://www.purl.org/net/ontology/order.owl#Personnel>))
+Declaration(Class(<http://www.purl.org/net/ontology/order.owl#PurchaseOrder>))
+Declaration(Class(<http://www.purl.org/net/ontology/order.owl#PurchasedItem>))
+Declaration(Class(<http://www.purl.org/net/ontology/order.owl#Shipper>))
+Declaration(Class(<http://www.purl.org/net/ontology/order.owl#Supplier>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+Declaration(Class(owl:auxiliarDataRangeClass5))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Agent>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Person>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.purl.org/net/ontology/order.owl#Address> (<http://www.purl.org/net/ontology/order.owl#Address>)
+
+SubClassOf(<http://www.purl.org/net/ontology/order.owl#Address> owl:Thing)
+
+# Class: <http://www.purl.org/net/ontology/order.owl#Agent> (<http://www.purl.org/net/ontology/order.owl#Agent>)
+
+EquivalentClasses(<http://www.purl.org/net/ontology/order.owl#Agent> <http://xmlns.com/foaf/0.1/Agent>)
+SubClassOf(<http://www.purl.org/net/ontology/order.owl#Agent> owl:Thing)
+
+# Class: <http://www.purl.org/net/ontology/order.owl#ItemsCollection> (<http://www.purl.org/net/ontology/order.owl#ItemsCollection>)
+
+SubClassOf(<http://www.purl.org/net/ontology/order.owl#ItemsCollection> owl:Thing)
+
+# Class: <http://www.purl.org/net/ontology/order.owl#Organization> (<http://www.purl.org/net/ontology/order.owl#Organization>)
+
+SubClassOf(<http://www.purl.org/net/ontology/order.owl#Organization> <http://www.purl.org/net/ontology/order.owl#Agent>)
+SubClassOf(<http://www.purl.org/net/ontology/order.owl#Organization> <http://xmlns.com/foaf/0.1/Agent>)
+
+# Class: <http://www.purl.org/net/ontology/order.owl#Person> (<http://www.purl.org/net/ontology/order.owl#Person>)
+
+EquivalentClasses(<http://www.purl.org/net/ontology/order.owl#Person> <http://xmlns.com/foaf/0.1/Person>)
+SubClassOf(<http://www.purl.org/net/ontology/order.owl#Person> <http://www.purl.org/net/ontology/order.owl#Agent>)
+SubClassOf(<http://www.purl.org/net/ontology/order.owl#Person> <http://xmlns.com/foaf/0.1/Agent>)
+
+# Class: <http://www.purl.org/net/ontology/order.owl#Personnel> (<http://www.purl.org/net/ontology/order.owl#Personnel>)
+
+SubClassOf(<http://www.purl.org/net/ontology/order.owl#Personnel> <http://www.purl.org/net/ontology/order.owl#Person>)
+SubClassOf(<http://www.purl.org/net/ontology/order.owl#Personnel> <http://xmlns.com/foaf/0.1/Person>)
+
+# Class: <http://www.purl.org/net/ontology/order.owl#PurchaseOrder> (<http://www.purl.org/net/ontology/order.owl#PurchaseOrder>)
+
+SubClassOf(<http://www.purl.org/net/ontology/order.owl#PurchaseOrder> owl:Thing)
+
+# Class: <http://www.purl.org/net/ontology/order.owl#PurchasedItem> (<http://www.purl.org/net/ontology/order.owl#PurchasedItem>)
+
+SubClassOf(<http://www.purl.org/net/ontology/order.owl#PurchasedItem> owl:Thing)
+
+# Class: <http://www.purl.org/net/ontology/order.owl#Shipper> (<http://www.purl.org/net/ontology/order.owl#Shipper>)
+
+SubClassOf(<http://www.purl.org/net/ontology/order.owl#Shipper> <http://www.purl.org/net/ontology/order.owl#Organization>)
+
+# Class: <http://www.purl.org/net/ontology/order.owl#Supplier> (<http://www.purl.org/net/ontology/order.owl#Supplier>)
+
+SubClassOf(<http://www.purl.org/net/ontology/order.owl#Supplier> <http://www.purl.org/net/ontology/order.owl#Organization>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass5 (owl:auxiliarDataRangeClass5)
+
+SubClassOf(owl:auxiliarDataRangeClass5 owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Agent> (<http://xmlns.com/foaf/0.1/Agent>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Agent> owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Person> (<http://xmlns.com/foaf/0.1/Person>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Person> <http://www.purl.org/net/ontology/order.owl#Agent>)
+SubClassOf(<http://xmlns.com/foaf/0.1/Person> <http://xmlns.com/foaf/0.1/Agent>)
+
+
+)

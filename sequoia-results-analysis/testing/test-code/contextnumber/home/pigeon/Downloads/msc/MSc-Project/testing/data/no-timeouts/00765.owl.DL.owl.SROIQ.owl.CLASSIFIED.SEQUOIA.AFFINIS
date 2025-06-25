@@ -1,0 +1,78 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000078>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000102>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000225>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000409>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#DbXref>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Definition>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Subset>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Synonym>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#SynonymType>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (<http://purl.obolibrary.org/obo/IAO_0000027>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000027> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (<http://purl.obolibrary.org/obo/IAO_0000030>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000078> (<http://purl.obolibrary.org/obo/IAO_0000078>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000102> (<http://purl.obolibrary.org/obo/IAO_0000102>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000102> <http://purl.obolibrary.org/obo/IAO_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000225> (<http://purl.obolibrary.org/obo/IAO_0000225>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000225> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000409> (<http://purl.obolibrary.org/obo/IAO_0000409>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000409> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#DbXref> (<http://www.geneontology.org/formats/oboInOwl#DbXref>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Definition> (<http://www.geneontology.org/formats/oboInOwl#Definition>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Subset> (<http://www.geneontology.org/formats/oboInOwl#Subset>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Subset> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Synonym> (<http://www.geneontology.org/formats/oboInOwl#Synonym>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#SynonymType> (<http://www.geneontology.org/formats/oboInOwl#SynonymType>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#SynonymType> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> (<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant>)
+
+SubClassOf(<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

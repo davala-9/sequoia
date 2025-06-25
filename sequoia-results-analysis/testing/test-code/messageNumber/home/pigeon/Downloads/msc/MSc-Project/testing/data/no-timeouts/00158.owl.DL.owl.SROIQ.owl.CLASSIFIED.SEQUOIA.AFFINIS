@@ -1,0 +1,787 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Animal>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Crop>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Access>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Adult>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AerialPhotography>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Afforestation>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgeGroup>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgriculturalManagement>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgriculturalProduct>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Agriculture>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Analysis>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnatomicalParameters>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Anatomy>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalBehaviorScience>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalManagementSystem>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalProduction>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalWaste>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Anthropogenic>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Apiculture>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Aquaculture>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Bathimetry>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#BehavioralScience>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#BiochemicalRelease>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Biochemistry>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#BiologicalHazard>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Biology>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Birth>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Breeding>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Burning>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ByProductOfHumanActivity>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Census>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#CivilDisturbance>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Communications>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Conservation>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ConsumerBehavior>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Contamination>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Contours>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#CropProduct>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#CroppingSystem>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#CropsProduction>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#DairyProduct>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Death>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Desertification>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Economics>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#EducationalLevel>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Electricity>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Emission>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Engineering>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#EngineeringActivity>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#EnvironmentalAssessment>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Eutropication>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Expansion>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Experiment>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Fire>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#FishProduction>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#FoodScience>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ForestProduct>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#FruitProduct>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#GasFlaring>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Genetics>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#GeologicalHazard>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Geology>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Harvesting>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Hazard>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Hearing>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HorticulturalActivity>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HorticulturalProduct>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Human>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanCategory>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanHealth>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HydrologicalHazard>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Hydrology>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HypothesisTest>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Imaging>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#IndustrialEmission>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Industrialization>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Irrigation>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandCover>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandManagement>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandResource>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandTenure>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandUse>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandscapeEcology>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandscapeManagement>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Leak>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Limnology>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Lithology>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LivestockProduct>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Management>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ManagementSystem>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Manure>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Mapping>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Measurement>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Meteorology>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Monitoring>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#NaturalHazard>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#NutritionScience>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Observation>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Oceanography>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Oceanology>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Old>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Packaging>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Paleoclimatology>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Photography>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Physiology>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#PlantProduction>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#PopulationDynamics>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#PoultryProduct>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Preference>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Processing>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Product>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Production>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Profession>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Protection>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Psychology>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#RadiationExposure>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Reclamation>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Recreation>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Reforestation>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#RemoteSensing>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Research-Exploration>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Restoration>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Revegetation>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sampling>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Seismology>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sense>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sericulture>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ShellfishProduction>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Simulation>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SocialActivity>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SocialBehavior>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sociology>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SoilCultivation>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Spill>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Storage>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Tomography>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Toxicology>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Transportation>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Urbanization>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#VegetableProduct>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Vision>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#VitalActivity>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#VitalStatistics>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Waste>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#WaterManagement>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Work>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Young>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#CommunicationEquipment>))
+Declaration(Class(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Infrastructure>))
+############################
+#   Classes
+############################
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Animal> (<http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Animal>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Animal> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Crop> (<http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Crop>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/biosphere.owl#Crop> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Access> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Access>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Access> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Adult> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Adult>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Adult> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgeGroup>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AerialPhotography> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AerialPhotography>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AerialPhotography> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Photography>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Afforestation> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Afforestation>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Afforestation> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgeGroup> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgeGroup>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgeGroup> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanCategory>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgriculturalManagement> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgriculturalManagement>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgriculturalManagement> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Management>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgriculturalProduct> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgriculturalProduct>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgriculturalProduct> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Product>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Agriculture> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Agriculture>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Agriculture> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Production>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Analysis> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Analysis>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Analysis> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Research-Exploration>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnatomicalParameters> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnatomicalParameters>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnatomicalParameters> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanHealth>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Anatomy> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Anatomy>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Anatomy> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalBehaviorScience> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalBehaviorScience>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalBehaviorScience> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#BehavioralScience>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalManagementSystem> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalManagementSystem>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalManagementSystem> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ManagementSystem>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalProduction> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalProduction>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalProduction> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Agriculture>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalWaste> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalWaste>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalWaste> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Waste>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Anthropogenic> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Anthropogenic>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Anthropogenic> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Apiculture> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Apiculture>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Apiculture> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalProduction>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Aquaculture> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Aquaculture>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Aquaculture> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Agriculture>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Bathimetry> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Bathimetry>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Bathimetry> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Measurement>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#BehavioralScience> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#BehavioralScience>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#BehavioralScience> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#BiochemicalRelease> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#BiochemicalRelease>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#BiochemicalRelease> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Contamination>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Biochemistry> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Biochemistry>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Biochemistry> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#BiologicalHazard> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#BiologicalHazard>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#BiologicalHazard> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#NaturalHazard>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Biology> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Biology>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Biology> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Birth> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Birth>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Birth> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#VitalActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Breeding> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Breeding>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Breeding> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalProduction>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Burning> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Burning>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Burning> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ByProductOfHumanActivity> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ByProductOfHumanActivity>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ByProductOfHumanActivity> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Census> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Census>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Census> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sociology>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#CivilDisturbance> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#CivilDisturbance>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#CivilDisturbance> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SocialActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Communications> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Communications>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Communications> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Conservation> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Conservation>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Conservation> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ConsumerBehavior> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ConsumerBehavior>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ConsumerBehavior> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SocialBehavior>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Contamination> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Contamination>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Contamination> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ByProductOfHumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Contours> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Contours>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Contours> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Mapping>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#CropProduct> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#CropProduct>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#CropProduct> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgriculturalProduct>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#CroppingSystem> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#CroppingSystem>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#CroppingSystem> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ManagementSystem>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#CropsProduction> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#CropsProduction>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#CropsProduction> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#PlantProduction>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#DairyProduct> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#DairyProduct>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#DairyProduct> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgriculturalProduct>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Death> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Death>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Death> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#VitalActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Desertification> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Desertification>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Desertification> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ByProductOfHumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Economics> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Economics>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Economics> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#EducationalLevel> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#EducationalLevel>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#EducationalLevel> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanCategory>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Electricity> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Electricity>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Electricity> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Emission> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Emission>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Emission> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Engineering> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Engineering>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Engineering> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#EngineeringActivity> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#EngineeringActivity>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#EngineeringActivity> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Production>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#EnvironmentalAssessment> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#EnvironmentalAssessment>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#EnvironmentalAssessment> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Eutropication> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Eutropication>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Eutropication> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Contamination>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Expansion> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Expansion>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Expansion> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Experiment> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Experiment>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Experiment> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Research-Exploration>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Fire> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Fire>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Fire> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Hazard>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#FishProduction> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#FishProduction>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#FishProduction> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalProduction>)
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#FishProduction> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Aquaculture>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#FoodScience> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#FoodScience>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#FoodScience> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ForestProduct> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ForestProduct>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ForestProduct> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Product>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#FruitProduct> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#FruitProduct>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#FruitProduct> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HorticulturalProduct>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#GasFlaring> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#GasFlaring>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#GasFlaring> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ByProductOfHumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Genetics> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Genetics>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Genetics> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#GeologicalHazard> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#GeologicalHazard>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#GeologicalHazard> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#NaturalHazard>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Geology> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Geology>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Geology> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Harvesting> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Harvesting>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Harvesting> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#PlantProduction>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Hazard> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Hazard>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Hazard> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Hearing> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Hearing>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Hearing> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sense>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HorticulturalActivity> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HorticulturalActivity>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HorticulturalActivity> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Agriculture>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HorticulturalProduct> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HorticulturalProduct>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HorticulturalProduct> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgriculturalProduct>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Human> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Human>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Human> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanCategory> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanCategory>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanCategory> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanHealth> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanHealth>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanHealth> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HydrologicalHazard> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HydrologicalHazard>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HydrologicalHazard> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#NaturalHazard>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Hydrology> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Hydrology>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Hydrology> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HypothesisTest> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HypothesisTest>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HypothesisTest> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Research-Exploration>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Imaging> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Imaging>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Imaging> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Research-Exploration>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#IndustrialEmission> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#IndustrialEmission>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#IndustrialEmission> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Contamination>)
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#IndustrialEmission> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Emission>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Industrialization> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Industrialization>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Industrialization> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Irrigation> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Irrigation>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Irrigation> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity>)
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Irrigation> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SoilCultivation>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandCover> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandCover>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandCover> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandManagement>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandManagement> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandManagement>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandManagement> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Management>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandResource> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandResource>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandResource> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandManagement>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandTenure> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandTenure>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandTenure> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandManagement>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandUse> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandUse>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandUse> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandManagement>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandscapeEcology> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandscapeEcology>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandscapeEcology> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandscapeManagement> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandscapeManagement>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LandscapeManagement> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Management>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Leak> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Leak>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Leak> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Contamination>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Limnology> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Limnology>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Limnology> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Lithology> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Lithology>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Lithology> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LivestockProduct> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LivestockProduct>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#LivestockProduct> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgriculturalProduct>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Management> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Management>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Management> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ManagementSystem> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ManagementSystem>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ManagementSystem> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Manure> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Manure>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Manure> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgriculturalProduct>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Mapping> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Mapping>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Mapping> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Research-Exploration>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Measurement> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Measurement>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Measurement> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Research-Exploration>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Meteorology> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Meteorology>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Meteorology> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Monitoring> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Monitoring>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Monitoring> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Research-Exploration>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#NaturalHazard> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#NaturalHazard>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#NaturalHazard> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Hazard>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#NutritionScience> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#NutritionScience>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#NutritionScience> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Observation> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Observation>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Observation> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Research-Exploration>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Oceanography> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Oceanography>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Oceanography> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Oceanology> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Oceanology>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Oceanology> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Old> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Old>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Old> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgeGroup>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Packaging> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Packaging>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Packaging> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Production>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Paleoclimatology> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Paleoclimatology>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Paleoclimatology> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Photography> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Photography>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Photography> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Physiology> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Physiology>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Physiology> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#PlantProduction> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#PlantProduction>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#PlantProduction> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Agriculture>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#PopulationDynamics> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#PopulationDynamics>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#PopulationDynamics> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sociology>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#PoultryProduct> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#PoultryProduct>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#PoultryProduct> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgriculturalProduct>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Preference> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Preference>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Preference> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SocialBehavior>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Processing> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Processing>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Processing> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Production>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Product> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Product>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Product> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Production> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Production>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Production> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Profession> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Profession>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Profession> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanCategory>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Protection> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Protection>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Protection> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Psychology> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Psychology>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Psychology> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanHealth>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#RadiationExposure> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#RadiationExposure>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#RadiationExposure> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanHealth>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Reclamation> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Reclamation>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Reclamation> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Recreation> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Recreation>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Recreation> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SocialActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Reforestation> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Reforestation>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Reforestation> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#RemoteSensing> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#RemoteSensing>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#RemoteSensing> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Research-Exploration>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Research-Exploration> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Research-Exploration>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Research-Exploration> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Restoration> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Restoration>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Restoration> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Revegetation> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Revegetation>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Revegetation> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sampling> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sampling>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sampling> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Research-Exploration>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Seismology> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Seismology>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Seismology> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sense> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sense>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sense> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sericulture> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sericulture>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sericulture> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalProduction>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ShellfishProduction> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ShellfishProduction>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ShellfishProduction> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AnimalProduction>)
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ShellfishProduction> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Aquaculture>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Simulation> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Simulation>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Simulation> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Research-Exploration>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SocialActivity> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SocialActivity>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SocialActivity> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SocialBehavior> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SocialBehavior>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SocialBehavior> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sociology>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sociology> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sociology>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sociology> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#BehavioralScience>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SoilCultivation> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SoilCultivation>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#SoilCultivation> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Agriculture>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Spill> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Spill>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Spill> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Contamination>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Storage> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Storage>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Storage> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Production>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Tomography> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Tomography>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Tomography> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Research-Exploration>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Toxicology> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Toxicology>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Toxicology> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#KnowledgeDomain>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Transportation> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Transportation>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Transportation> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Urbanization> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Urbanization>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Urbanization> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Ecology-RelatedActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#VegetableProduct> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#VegetableProduct>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#VegetableProduct> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgriculturalProduct>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Vision> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Vision>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Vision> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sense>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#VitalActivity> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#VitalActivity>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#VitalActivity> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#VitalStatistics> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#VitalStatistics>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#VitalStatistics> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Sociology>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Waste> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Waste>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Waste> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#ByProductOfHumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#WaterManagement> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#WaterManagement>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#WaterManagement> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Management>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Work> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Work>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Work> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#HumanActivity>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Young> (<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Young>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/human_activities.owl#Young> <http://sweet.jpl.nasa.gov/ontology/human_activities.owl#AgeGroup>)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#CommunicationEquipment> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#CommunicationEquipment>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#CommunicationEquipment> owl:Thing)
+
+# Class: <http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Infrastructure> (<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Infrastructure>)
+
+SubClassOf(<http://sweet.jpl.nasa.gov/ontology/material_thing.owl#Infrastructure> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

@@ -1,0 +1,54 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Extern_Employee>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#MissionSpecialist>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Missionspecialist>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Nasa_Employee>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Nasa_MissionSpecialist>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#ShuttleCommander>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#ShuttlePilot>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Extern_Employee> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Extern_Employee>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Extern_Employee> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#MissionSpecialist> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#MissionSpecialist>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#MissionSpecialist> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Missionspecialist> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Missionspecialist>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Missionspecialist> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Nasa_Employee> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Nasa_Employee>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Nasa_Employee> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Nasa_MissionSpecialist> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Nasa_MissionSpecialist>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Nasa_MissionSpecialist> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Missionspecialist>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Nasa_MissionSpecialist> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#Nasa_Employee>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#ShuttleCommander> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#ShuttleCommander>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#ShuttleCommander> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#ShuttlePilot> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#ShuttlePilot>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00119.owl#ShuttlePilot> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

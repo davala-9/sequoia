@@ -1,0 +1,28 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://amk.ca/xml/review/1.0#Review>))
+Declaration(Class(rdfs:Resource))
+############################
+#   Classes
+############################
+
+# Class: <http://amk.ca/xml/review/1.0#Review> (<http://amk.ca/xml/review/1.0#Review>)
+
+SubClassOf(<http://amk.ca/xml/review/1.0#Review> rdfs:Resource)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

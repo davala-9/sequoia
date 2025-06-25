@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Specification-Title: zio
+Specification-Version: 2.1.1
+Specification-Vendor: dev.zio
+Implementation-Title: zio
+Implementation-Version: 2.1.1
+Implementation-Vendor: dev.zio
+Implementation-Vendor-Id: dev.zio
+Implementation-URL: https://zio.dev
+Automatic-Module-Name: dev.zio.zio
+

@@ -1,0 +1,38 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(rdf:Bag))
+Declaration(Class(<http://www.w3.org/2004/02/skos/mapping#AND>))
+Declaration(Class(<http://www.w3.org/2004/02/skos/mapping#NOT>))
+Declaration(Class(<http://www.w3.org/2004/02/skos/mapping#OR>))
+############################
+#   Classes
+############################
+
+# Class: rdf:Bag (rdf:Bag)
+
+SubClassOf(rdf:Bag owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: <http://www.w3.org/2004/02/skos/mapping#AND> (<http://www.w3.org/2004/02/skos/mapping#AND>)
+
+SubClassOf(<http://www.w3.org/2004/02/skos/mapping#AND> rdf:Bag)
+
+# Class: <http://www.w3.org/2004/02/skos/mapping#NOT> (<http://www.w3.org/2004/02/skos/mapping#NOT>)
+
+SubClassOf(<http://www.w3.org/2004/02/skos/mapping#NOT> rdf:Bag)
+
+# Class: <http://www.w3.org/2004/02/skos/mapping#OR> (<http://www.w3.org/2004/02/skos/mapping#OR>)
+
+SubClassOf(<http://www.w3.org/2004/02/skos/mapping#OR> rdf:Bag)
+
+
+)

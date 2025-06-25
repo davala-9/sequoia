@@ -1,0 +1,439 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g0>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g1>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g10>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g11>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g12>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g19>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g2>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g20>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g21>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g22>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g23>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g25>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g27>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g29>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g3>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g30>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g31>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g36>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g41>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g42>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g43>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g44>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g45>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g46>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g47>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g5>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g59>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g60>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g61>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g62>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g63>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g7>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g8>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g9>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#AbsoluteURI>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#AbsoluteURIref>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#Boolean>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#EncName>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#NCName>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#Name>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#NoValue>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#Prefix>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#String>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#VersionNum>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g39>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g40>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g41>))
+Declaration(Class(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g43>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#UniqueProperty>))
+Declaration(Class(rdfs:Bag))
+Declaration(Class(rdfs:Class))
+Declaration(Class(rdfs:Literal))
+Declaration(Class(<http://www.w3.org/2001/02pd/gv#EdgeProperty>))
+Declaration(Class(<http://www.w3.org/2001/03swell/finiteSet#Set>))
+Declaration(Class(<http://www.w3.org/2001/05id/infoset#Attribute>))
+Declaration(Class(<http://www.w3.org/2001/05id/infoset#Character>))
+Declaration(Class(<http://www.w3.org/2001/05id/infoset#Comment>))
+Declaration(Class(<http://www.w3.org/2001/05id/infoset#Document>))
+Declaration(Class(<http://www.w3.org/2001/05id/infoset#DocumentTypeDeclaration>))
+Declaration(Class(<http://www.w3.org/2001/05id/infoset#Element>))
+Declaration(Class(<http://www.w3.org/2001/05id/infoset#InformationItem>))
+Declaration(Class(<http://www.w3.org/2001/05id/infoset#Namespace>))
+Declaration(Class(<http://www.w3.org/2001/05id/infoset#NamespaceName>))
+Declaration(Class(<http://www.w3.org/2001/05id/infoset#Notation>))
+Declaration(Class(<http://www.w3.org/2001/05id/infoset#ProcessingInstruction>))
+Declaration(Class(<http://www.w3.org/2001/05id/infoset#Property>))
+Declaration(Class(<http://www.w3.org/2001/05id/infoset#UnparsedEntity>))
+Declaration(Class(<http://www.w3.org/2001/05id/infoset#Version>))
+Declaration(Class(<mid:abcXX#Part1>))
+Declaration(Class(<mid:abcXX#Part2>))
+Declaration(Class(<mid:abcXX#Part3>))
+Declaration(Class(<mid:abcXX#Parts>))
+Declaration(Class(<mid:abcXX#anItem>))
+############################
+#   Classes
+############################
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g0> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g0>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g0> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g1> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g1>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g1> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g10> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g10>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g10> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g11> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g11>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g11> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g12> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g12>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g12> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g19> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g19>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g19> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g2> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g2>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g2> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g20> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g20>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g20> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g21> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g21>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g21> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g22> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g22>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g22> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g23> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g23>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g23> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g25> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g25>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g25> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g27> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g27>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g27> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g29> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g29>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g29> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g3> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g3>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g3> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g30> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g30>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g30> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g31> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g31>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g31> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g36> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g36>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g36> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g41> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g41>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g41> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g42> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g42>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g42> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g43> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g43>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g43> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g44> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g44>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g44> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g45> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g45>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g45> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g46> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g46>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g46> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g47> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g47>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g47> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g5> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g5>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g5> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g59> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g59>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g59> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g60> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g60>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g60> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g61> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g61>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g61> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g62> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g62>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g62> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g63> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g63>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g63> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g7> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g7>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g7> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g8> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g8>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g8> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g9> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g9>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g9> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#AbsoluteURI> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#AbsoluteURI>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#AbsoluteURI> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#AbsoluteURIref>)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#AbsoluteURIref> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#AbsoluteURIref>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#AbsoluteURIref> rdfs:Literal)
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#AbsoluteURIref> <http://www.w3.org/2001/05id/infoset#NamespaceName>)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#Boolean> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#Boolean>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#Boolean> rdfs:Literal)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#EncName> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#EncName>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#EncName> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#Name>)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#NCName> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#NCName>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#NCName> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#Name>)
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#NCName> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#Prefix>)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#Name> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#Name>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#Name> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#String>)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#NoValue> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#NoValue>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#NoValue> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#Prefix>)
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#NoValue> <http://www.w3.org/2001/05id/infoset#NamespaceName>)
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#NoValue> <http://www.w3.org/2001/05id/infoset#Version>)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#Prefix> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#Prefix>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#Prefix> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#String> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#String>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#String> rdfs:Literal)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#VersionNum> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#VersionNum>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#VersionNum> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#String>)
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infosetUtil#VersionNum> <http://www.w3.org/2001/05id/infoset#Version>)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g39> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g39>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g39> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g40> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g40>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g40> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g41> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g41>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g41> owl:Thing)
+
+# Class: <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g43> (<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g43>)
+
+SubClassOf(<file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g43> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#UnambiguousProperty> (<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#UniqueProperty> (<http://www.daml.org/2001/03/daml+oil#UniqueProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UniqueProperty> owl:Thing)
+
+# Class: rdfs:Bag (rdfs:Bag)
+
+SubClassOf(rdfs:Bag owl:Thing)
+
+# Class: rdfs:Class (rdfs:Class)
+
+SubClassOf(rdfs:Class owl:Thing)
+
+# Class: rdfs:Literal (rdfs:Literal)
+
+SubClassOf(rdfs:Literal owl:Thing)
+
+# Class: <http://www.w3.org/2001/02pd/gv#EdgeProperty> (<http://www.w3.org/2001/02pd/gv#EdgeProperty>)
+
+SubClassOf(<http://www.w3.org/2001/02pd/gv#EdgeProperty> owl:Thing)
+
+# Class: <http://www.w3.org/2001/03swell/finiteSet#Set> (<http://www.w3.org/2001/03swell/finiteSet#Set>)
+
+SubClassOf(<http://www.w3.org/2001/03swell/finiteSet#Set> rdfs:Bag)
+
+# Class: <http://www.w3.org/2001/05id/infoset#Attribute> (<http://www.w3.org/2001/05id/infoset#Attribute>)
+
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Attribute> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g41>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Attribute> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g42>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Attribute> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g43>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Attribute> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g44>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Attribute> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g45>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Attribute> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g46>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Attribute> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g47>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Attribute> <http://www.w3.org/2001/05id/infoset#InformationItem>)
+
+# Class: <http://www.w3.org/2001/05id/infoset#Character> (<http://www.w3.org/2001/05id/infoset#Character>)
+
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Character> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g36>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Character> <http://www.w3.org/2001/05id/infoset#InformationItem>)
+
+# Class: <http://www.w3.org/2001/05id/infoset#Comment> (<http://www.w3.org/2001/05id/infoset#Comment>)
+
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Comment> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g12>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Comment> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g36>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Comment> <http://www.w3.org/2001/05id/infoset#InformationItem>)
+
+# Class: <http://www.w3.org/2001/05id/infoset#Document> (<http://www.w3.org/2001/05id/infoset#Document>)
+
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Document> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g1>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Document> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g10>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Document> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g11>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Document> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g2>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Document> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g3>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Document> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g31>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Document> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g5>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Document> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g63>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Document> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g7>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Document> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g8>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Document> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g9>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Document> <http://www.w3.org/2001/05id/infoset#InformationItem>)
+
+# Class: <http://www.w3.org/2001/05id/infoset#DocumentTypeDeclaration> (<http://www.w3.org/2001/05id/infoset#DocumentTypeDeclaration>)
+
+SubClassOf(<http://www.w3.org/2001/05id/infoset#DocumentTypeDeclaration> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g12>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#DocumentTypeDeclaration> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g63>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#DocumentTypeDeclaration> <http://www.w3.org/2001/05id/infoset#InformationItem>)
+
+# Class: <http://www.w3.org/2001/05id/infoset#Element> (<http://www.w3.org/2001/05id/infoset#Element>)
+
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Element> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g12>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Element> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g19>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Element> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g20>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Element> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g21>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Element> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g22>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Element> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g23>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Element> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g25>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Element> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g27>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Element> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g29>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Element> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g30>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Element> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g31>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Element> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g36>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Element> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g63>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Element> <http://www.w3.org/2001/05id/infoset#InformationItem>)
+
+# Class: <http://www.w3.org/2001/05id/infoset#InformationItem> (<http://www.w3.org/2001/05id/infoset#InformationItem>)
+
+SubClassOf(<http://www.w3.org/2001/05id/infoset#InformationItem> owl:Thing)
+
+# Class: <http://www.w3.org/2001/05id/infoset#Namespace> (<http://www.w3.org/2001/05id/infoset#Namespace>)
+
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Namespace> <http://www.w3.org/2001/05id/infoset#InformationItem>)
+
+# Class: <http://www.w3.org/2001/05id/infoset#NamespaceName> (<http://www.w3.org/2001/05id/infoset#NamespaceName>)
+
+SubClassOf(<http://www.w3.org/2001/05id/infoset#NamespaceName> owl:Thing)
+
+# Class: <http://www.w3.org/2001/05id/infoset#Notation> (<http://www.w3.org/2001/05id/infoset#Notation>)
+
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Notation> <http://www.w3.org/2001/05id/infoset#InformationItem>)
+
+# Class: <http://www.w3.org/2001/05id/infoset#ProcessingInstruction> (<http://www.w3.org/2001/05id/infoset#ProcessingInstruction>)
+
+SubClassOf(<http://www.w3.org/2001/05id/infoset#ProcessingInstruction> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g12>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#ProcessingInstruction> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g36>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#ProcessingInstruction> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g59>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#ProcessingInstruction> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g60>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#ProcessingInstruction> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g61>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#ProcessingInstruction> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/infoset-daml.n3#_g62>)
+SubClassOf(<http://www.w3.org/2001/05id/infoset#ProcessingInstruction> <http://www.w3.org/2001/05id/infoset#InformationItem>)
+
+# Class: <http://www.w3.org/2001/05id/infoset#Property> (<http://www.w3.org/2001/05id/infoset#Property>)
+
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Property> <http://www.daml.org/2001/03/daml+oil#UniqueProperty>)
+
+# Class: <http://www.w3.org/2001/05id/infoset#UnparsedEntity> (<http://www.w3.org/2001/05id/infoset#UnparsedEntity>)
+
+SubClassOf(<http://www.w3.org/2001/05id/infoset#UnparsedEntity> <http://www.w3.org/2001/05id/infoset#InformationItem>)
+
+# Class: <http://www.w3.org/2001/05id/infoset#Version> (<http://www.w3.org/2001/05id/infoset#Version>)
+
+SubClassOf(<http://www.w3.org/2001/05id/infoset#Version> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: <mid:abcXX#Part1> (<mid:abcXX#Part1>)
+
+SubClassOf(<mid:abcXX#Part1> <mid:abcXX#Parts>)
+
+# Class: <mid:abcXX#Part2> (<mid:abcXX#Part2>)
+
+SubClassOf(<mid:abcXX#Part2> <mid:abcXX#Parts>)
+
+# Class: <mid:abcXX#Part3> (<mid:abcXX#Part3>)
+
+SubClassOf(<mid:abcXX#Part3> <mid:abcXX#Parts>)
+
+# Class: <mid:abcXX#Parts> (<mid:abcXX#Parts>)
+
+SubClassOf(<mid:abcXX#Parts> owl:Thing)
+
+# Class: <mid:abcXX#anItem> (<mid:abcXX#anItem>)
+
+SubClassOf(<mid:abcXX#anItem> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g39>)
+SubClassOf(<mid:abcXX#anItem> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g40>)
+SubClassOf(<mid:abcXX#anItem> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g41>)
+SubClassOf(<mid:abcXX#anItem> <file:/home/connolly/w3ccvs/WWW/2000/10/swap/infoset/style-arcprop.n3#_g43>)
+SubClassOf(<mid:abcXX#anItem> <http://www.w3.org/2001/05id/infoset#InformationItem>)
+
+
+)

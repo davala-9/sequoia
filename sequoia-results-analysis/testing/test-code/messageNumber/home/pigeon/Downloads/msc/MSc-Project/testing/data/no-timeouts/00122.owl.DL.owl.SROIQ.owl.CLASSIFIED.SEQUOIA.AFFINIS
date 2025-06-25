@@ -1,0 +1,43 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.org/dc/dcmitype/Image>))
+Declaration(Class(<http://purl.org/dc/dcmitype/MovingImage>))
+Declaration(Class(<http://purl.org/dc/dcmitype/StillImage>))
+Declaration(Class(<http://purl.org/dc/terms/DCMIType>))
+Declaration(Class(<http://purl.org/dc/terms/TypeScheme>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/dc/dcmitype/Image> (<http://purl.org/dc/dcmitype/Image>)
+
+SubClassOf(<http://purl.org/dc/dcmitype/Image> owl:Thing)
+
+# Class: <http://purl.org/dc/dcmitype/MovingImage> (<http://purl.org/dc/dcmitype/MovingImage>)
+
+SubClassOf(<http://purl.org/dc/dcmitype/MovingImage> <http://purl.org/dc/dcmitype/Image>)
+
+# Class: <http://purl.org/dc/dcmitype/StillImage> (<http://purl.org/dc/dcmitype/StillImage>)
+
+SubClassOf(<http://purl.org/dc/dcmitype/StillImage> <http://purl.org/dc/dcmitype/Image>)
+
+# Class: <http://purl.org/dc/terms/DCMIType> (<http://purl.org/dc/terms/DCMIType>)
+
+SubClassOf(<http://purl.org/dc/terms/DCMIType> owl:Thing)
+
+# Class: <http://purl.org/dc/terms/TypeScheme> (<http://purl.org/dc/terms/TypeScheme>)
+
+SubClassOf(<http://purl.org/dc/terms/TypeScheme> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

@@ -1,0 +1,49 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://org.semanticweb.owlapi/error#Error1>))
+Declaration(Class(<http://www.daml.org/2002/04/classification/classification-ont#Caveat>))
+Declaration(Class(<http://www.daml.org/2002/04/classification/classification-ont#Level>))
+Declaration(Class(<http://www.daml.org/2002/04/classification/classification-ont#Marking>))
+Declaration(Class(rdf:Statement))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+############################
+#   Classes
+############################
+
+# Class: <http://org.semanticweb.owlapi/error#Error1> (<http://org.semanticweb.owlapi/error#Error1>)
+
+SubClassOf(<http://org.semanticweb.owlapi/error#Error1> owl:Thing)
+
+# Class: <http://www.daml.org/2002/04/classification/classification-ont#Caveat> (<http://www.daml.org/2002/04/classification/classification-ont#Caveat>)
+
+SubClassOf(<http://www.daml.org/2002/04/classification/classification-ont#Caveat> owl:Thing)
+
+# Class: <http://www.daml.org/2002/04/classification/classification-ont#Level> (<http://www.daml.org/2002/04/classification/classification-ont#Level>)
+
+SubClassOf(<http://www.daml.org/2002/04/classification/classification-ont#Level> <http://org.semanticweb.owlapi/error#Error1>)
+SubClassOf(<http://www.daml.org/2002/04/classification/classification-ont#Level> <http://www.daml.org/2002/04/classification/classification-ont#Marking>)
+
+# Class: <http://www.daml.org/2002/04/classification/classification-ont#Marking> (<http://www.daml.org/2002/04/classification/classification-ont#Marking>)
+
+SubClassOf(<http://www.daml.org/2002/04/classification/classification-ont#Marking> owl:Thing)
+
+# Class: rdf:Statement (rdf:Statement)
+
+SubClassOf(rdf:Statement owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+
+)

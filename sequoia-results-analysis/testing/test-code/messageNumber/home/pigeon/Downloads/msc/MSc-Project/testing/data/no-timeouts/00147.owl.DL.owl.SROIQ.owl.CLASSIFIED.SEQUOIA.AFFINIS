@@ -1,0 +1,68 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Government>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Human>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Number>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#PoliticalOrganization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#ReligiousOrganization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00147.owl#ForeignTerroristOrganization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00147.owl#TerroristOrganization>))
+############################
+#   Classes
+############################
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Government> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Government>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Government> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Human> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Human>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Human> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Number> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Number>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Number> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#PoliticalOrganization> (<http://reliant.teknowledge.com/DAML/SUMO.owl#PoliticalOrganization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#PoliticalOrganization> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#ReligiousOrganization> (<http://reliant.teknowledge.com/DAML/SUMO.owl#ReligiousOrganization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#ReligiousOrganization> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00147.owl#ForeignTerroristOrganization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00147.owl#ForeignTerroristOrganization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00147.owl#ForeignTerroristOrganization> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00147.owl#TerroristOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00147.owl#TerroristOrganization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00147.owl#TerroristOrganization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00147.owl#TerroristOrganization> <http://reliant.teknowledge.com/DAML/SUMO.owl#PoliticalOrganization>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

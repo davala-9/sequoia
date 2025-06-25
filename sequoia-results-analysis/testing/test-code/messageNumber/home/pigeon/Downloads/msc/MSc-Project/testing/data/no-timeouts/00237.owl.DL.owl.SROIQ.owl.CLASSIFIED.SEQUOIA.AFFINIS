@@ -1,0 +1,48 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.daml.org/2002/03/agents/agent-ont#AgentType>))
+Declaration(Class(<http://www.daml.org/2002/03/agents/agent-ont#DotNetPlugin>))
+Declaration(Class(<http://www.daml.org/2002/03/agents/agent-ont#GUI>))
+Declaration(Class(<http://www.daml.org/2002/03/agents/agent-ont#Parameters>))
+Declaration(Class(<http://www.daml.org/2003/04/agents/enpmap#ENPMapParameters>))
+Declaration(Class(xsd:timeDuration))
+############################
+#   Classes
+############################
+
+# Class: <http://www.daml.org/2002/03/agents/agent-ont#AgentType> (<http://www.daml.org/2002/03/agents/agent-ont#AgentType>)
+
+SubClassOf(<http://www.daml.org/2002/03/agents/agent-ont#AgentType> owl:Thing)
+
+# Class: <http://www.daml.org/2002/03/agents/agent-ont#DotNetPlugin> (<http://www.daml.org/2002/03/agents/agent-ont#DotNetPlugin>)
+
+SubClassOf(<http://www.daml.org/2002/03/agents/agent-ont#DotNetPlugin> owl:Thing)
+
+# Class: <http://www.daml.org/2002/03/agents/agent-ont#GUI> (<http://www.daml.org/2002/03/agents/agent-ont#GUI>)
+
+SubClassOf(<http://www.daml.org/2002/03/agents/agent-ont#GUI> owl:Thing)
+
+# Class: <http://www.daml.org/2002/03/agents/agent-ont#Parameters> (<http://www.daml.org/2002/03/agents/agent-ont#Parameters>)
+
+SubClassOf(<http://www.daml.org/2002/03/agents/agent-ont#Parameters> owl:Thing)
+
+# Class: <http://www.daml.org/2003/04/agents/enpmap#ENPMapParameters> (<http://www.daml.org/2003/04/agents/enpmap#ENPMapParameters>)
+
+SubClassOf(<http://www.daml.org/2003/04/agents/enpmap#ENPMapParameters> <http://www.daml.org/2002/03/agents/agent-ont#Parameters>)
+
+# Class: xsd:timeDuration (xsd:timeDuration)
+
+SubClassOf(xsd:timeDuration owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

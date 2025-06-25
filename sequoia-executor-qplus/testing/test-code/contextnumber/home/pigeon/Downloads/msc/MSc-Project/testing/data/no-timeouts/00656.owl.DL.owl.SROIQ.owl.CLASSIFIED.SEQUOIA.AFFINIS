@@ -1,0 +1,178 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000000>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000001>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000002>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000003>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000004>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000005>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000006>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000007>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000008>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000009>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000010>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000011>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000012>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000013>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000014>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000015>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000016>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000017>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000018>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000019>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000020>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000021>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000022>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000023>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000024>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000025>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000026>))
+Declaration(Class(<http://purl.org/obo/owl/TRANS#TRANS_0000027>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#DbXref>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Definition>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Synonym>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000000> (<http://purl.org/obo/owl/TRANS#TRANS_0000000>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000000> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000001> (<http://purl.org/obo/owl/TRANS#TRANS_0000001>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000001> <http://purl.org/obo/owl/TRANS#TRANS_0000000>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000002> (<http://purl.org/obo/owl/TRANS#TRANS_0000002>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000002> <http://purl.org/obo/owl/TRANS#TRANS_0000000>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000003> (<http://purl.org/obo/owl/TRANS#TRANS_0000003>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000003> <http://purl.org/obo/owl/TRANS#TRANS_0000005>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000004> (<http://purl.org/obo/owl/TRANS#TRANS_0000004>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000004> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000005> (<http://purl.org/obo/owl/TRANS#TRANS_0000005>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000005> <http://purl.org/obo/owl/TRANS#TRANS_0000002>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000006> (<http://purl.org/obo/owl/TRANS#TRANS_0000006>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000006> <http://purl.org/obo/owl/TRANS#TRANS_0000001>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000007> (<http://purl.org/obo/owl/TRANS#TRANS_0000007>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000007> <http://purl.org/obo/owl/TRANS#TRANS_0000001>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000008> (<http://purl.org/obo/owl/TRANS#TRANS_0000008>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000008> <http://purl.org/obo/owl/TRANS#TRANS_0000001>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000009> (<http://purl.org/obo/owl/TRANS#TRANS_0000009>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000009> <http://purl.org/obo/owl/TRANS#TRANS_0000002>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000010> (<http://purl.org/obo/owl/TRANS#TRANS_0000010>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000010> <http://purl.org/obo/owl/TRANS#TRANS_0000002>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000011> (<http://purl.org/obo/owl/TRANS#TRANS_0000011>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000011> <http://purl.org/obo/owl/TRANS#TRANS_0000010>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000012> (<http://purl.org/obo/owl/TRANS#TRANS_0000012>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000012> <http://purl.org/obo/owl/TRANS#TRANS_0000010>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000013> (<http://purl.org/obo/owl/TRANS#TRANS_0000013>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000013> <http://purl.org/obo/owl/TRANS#TRANS_0000010>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000014> (<http://purl.org/obo/owl/TRANS#TRANS_0000014>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000014> <http://purl.org/obo/owl/TRANS#TRANS_0000005>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000015> (<http://purl.org/obo/owl/TRANS#TRANS_0000015>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000015> <http://purl.org/obo/owl/TRANS#TRANS_0000005>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000016> (<http://purl.org/obo/owl/TRANS#TRANS_0000016>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000016> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000017> (<http://purl.org/obo/owl/TRANS#TRANS_0000017>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000017> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000018> (<http://purl.org/obo/owl/TRANS#TRANS_0000018>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000018> <http://purl.org/obo/owl/TRANS#TRANS_0000006>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000019> (<http://purl.org/obo/owl/TRANS#TRANS_0000019>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000019> <http://purl.org/obo/owl/TRANS#TRANS_0000005>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000020> (<http://purl.org/obo/owl/TRANS#TRANS_0000020>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000020> <http://purl.org/obo/owl/TRANS#TRANS_0000019>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000021> (<http://purl.org/obo/owl/TRANS#TRANS_0000021>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000021> <http://purl.org/obo/owl/TRANS#TRANS_0000020>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000022> (<http://purl.org/obo/owl/TRANS#TRANS_0000022>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000022> <http://purl.org/obo/owl/TRANS#TRANS_0000021>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000023> (<http://purl.org/obo/owl/TRANS#TRANS_0000023>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000023> <http://purl.org/obo/owl/TRANS#TRANS_0000020>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000024> (<http://purl.org/obo/owl/TRANS#TRANS_0000024>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000024> <http://purl.org/obo/owl/TRANS#TRANS_0000027>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000025> (<http://purl.org/obo/owl/TRANS#TRANS_0000025>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000025> <http://purl.org/obo/owl/TRANS#TRANS_0000015>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000026> (<http://purl.org/obo/owl/TRANS#TRANS_0000026>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000026> <http://purl.org/obo/owl/TRANS#TRANS_0000025>)
+
+# Class: <http://purl.org/obo/owl/TRANS#TRANS_0000027> (<http://purl.org/obo/owl/TRANS#TRANS_0000027>)
+
+SubClassOf(<http://purl.org/obo/owl/TRANS#TRANS_0000027> <http://purl.org/obo/owl/TRANS#TRANS_0000019>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#DbXref> (<http://www.geneontology.org/formats/oboInOwl#DbXref>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#DbXref> owl:Thing)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Definition> (<http://www.geneontology.org/formats/oboInOwl#Definition>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Definition> owl:Thing)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> (<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> owl:Thing)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Synonym> (<http://www.geneontology.org/formats/oboInOwl#Synonym>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Synonym> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

@@ -1,0 +1,933 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0007097>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0007349>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0007389>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0008150>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0008283>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0009555>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0009558>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0009562>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0009653>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0009860>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0009865>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0009887>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0009888>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0009900>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0009901>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0009908>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0009913>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0009933>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0009954>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0009960>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0009965>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010015>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010016>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010022>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010053>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010067>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010068>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010071>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010088>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010089>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010098>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010103>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010149>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010150>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010154>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010214>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010223>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010229>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010254>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010311>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010338>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010342>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010346>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010374>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010375>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010376>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010386>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010431>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010432>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010433>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010434>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010449>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010450>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010451>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010500>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010582>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010589>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0010618>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0021700>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0022022>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0022610>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0022621>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0022622>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0030154>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0032502>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0035266>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0035315>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0040007>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0046844>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048229>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048281>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048314>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048316>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048317>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048364>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048366>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048367>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048437>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048439>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048440>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048441>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048442>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048443>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048444>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048445>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048446>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048447>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048448>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048449>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048451>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048452>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048453>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048454>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048455>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048456>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048460>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048461>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048462>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048463>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048464>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048465>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048466>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048467>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048479>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048480>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048481>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048482>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048507>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048513>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048530>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048532>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048533>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048645>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048646>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048653>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048654>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048655>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048656>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048658>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048731>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048759>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048761>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048765>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048767>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048768>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048825>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048826>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048827>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048829>))
+Declaration(Class(<http://purl.org/obo/owl/GO#GO_0048868>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0000016>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0000029>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0000030>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0000229>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0000230>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0000256>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0002000>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0002003>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0005352>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0005417>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0005423>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0005702>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0006001>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0006074>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0006085>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0006204>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0006210>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0006343>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0006345>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009001>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009004>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009005>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009006>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009010>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009013>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009025>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009029>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009030>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009031>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009032>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009035>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009046>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009049>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009055>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009059>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009060>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009061>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009062>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009066>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009071>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009073>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009074>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009088>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0009089>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0020003>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0020025>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0020030>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0020091>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0020092>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0020102>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0020108>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0020121>))
+Declaration(Class(<http://purl.org/obo/owl/PO#PO_0020123>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/obo/owl/GO#GO_0007097> (<http://purl.org/obo/owl/GO#GO_0007097>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0007097> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0007349> (<http://purl.org/obo/owl/GO#GO_0007349>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0007349> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0007389> (<http://purl.org/obo/owl/GO#GO_0007389>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0007389> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0008150> (<http://purl.org/obo/owl/GO#GO_0008150>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0008150> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0008283> (<http://purl.org/obo/owl/GO#GO_0008283>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0008283> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0009555> (<http://purl.org/obo/owl/GO#GO_0009555>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0009555> <http://purl.org/obo/owl/GO#GO_0048646>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0009558> (<http://purl.org/obo/owl/GO#GO_0009558>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0009558> <http://purl.org/obo/owl/GO#GO_0007349>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0009562> (<http://purl.org/obo/owl/GO#GO_0009562>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0009562> <http://purl.org/obo/owl/GO#GO_0007097>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0009653> (<http://purl.org/obo/owl/GO#GO_0009653>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0009653> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0009860> (<http://purl.org/obo/owl/GO#GO_0009860>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0009860> <http://purl.org/obo/owl/GO#GO_0040007>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0009865> (<http://purl.org/obo/owl/GO#GO_0009865>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0009865> <http://purl.org/obo/owl/GO#GO_0022610>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0009887> (<http://purl.org/obo/owl/GO#GO_0009887>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0009887> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0009888> (<http://purl.org/obo/owl/GO#GO_0009888>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0009888> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0009900> (<http://purl.org/obo/owl/GO#GO_0009900>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0009900> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0009901> (<http://purl.org/obo/owl/GO#GO_0009901>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0009901> <http://purl.org/obo/owl/GO#GO_0009900>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0009908> (<http://purl.org/obo/owl/GO#GO_0009908>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0009908> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0009913> (<http://purl.org/obo/owl/GO#GO_0009913>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0009913> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0009933> (<http://purl.org/obo/owl/GO#GO_0009933>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0009933> <http://purl.org/obo/owl/GO#GO_0048532>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0009954> (<http://purl.org/obo/owl/GO#GO_0009954>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0009954> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0009960> (<http://purl.org/obo/owl/GO#GO_0009960>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0009960> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0009965> (<http://purl.org/obo/owl/GO#GO_0009965>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0009965> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010015> (<http://purl.org/obo/owl/GO#GO_0010015>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010015> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010016> (<http://purl.org/obo/owl/GO#GO_0010016>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010016> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010022> (<http://purl.org/obo/owl/GO#GO_0010022>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010022> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010053> (<http://purl.org/obo/owl/GO#GO_0010053>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010053> <http://purl.org/obo/owl/GO#GO_0009913>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010067> (<http://purl.org/obo/owl/GO#GO_0010067>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010067> <http://purl.org/obo/owl/GO#GO_0009888>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010068> (<http://purl.org/obo/owl/GO#GO_0010068>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010068> <http://purl.org/obo/owl/GO#GO_0009888>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010071> (<http://purl.org/obo/owl/GO#GO_0010071>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010071> <http://purl.org/obo/owl/GO#GO_0007389>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010088> (<http://purl.org/obo/owl/GO#GO_0010088>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010088> <http://purl.org/obo/owl/GO#GO_0009888>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010089> (<http://purl.org/obo/owl/GO#GO_0010089>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010089> <http://purl.org/obo/owl/GO#GO_0009888>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010098> (<http://purl.org/obo/owl/GO#GO_0010098>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010098> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010103> (<http://purl.org/obo/owl/GO#GO_0010103>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010103> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010149> (<http://purl.org/obo/owl/GO#GO_0010149>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010149> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010150> (<http://purl.org/obo/owl/GO#GO_0010150>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010150> <http://purl.org/obo/owl/GO#GO_0010149>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010154> (<http://purl.org/obo/owl/GO#GO_0010154>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010154> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010214> (<http://purl.org/obo/owl/GO#GO_0010214>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010214> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010223> (<http://purl.org/obo/owl/GO#GO_0010223>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010223> <http://purl.org/obo/owl/GO#GO_0048646>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010229> (<http://purl.org/obo/owl/GO#GO_0010229>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010229> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010254> (<http://purl.org/obo/owl/GO#GO_0010254>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010254> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010311> (<http://purl.org/obo/owl/GO#GO_0010311>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010311> <http://purl.org/obo/owl/GO#GO_0048646>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010338> (<http://purl.org/obo/owl/GO#GO_0010338>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010338> <http://purl.org/obo/owl/GO#GO_0048646>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010342> (<http://purl.org/obo/owl/GO#GO_0010342>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010342> <http://purl.org/obo/owl/GO#GO_0007349>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010346> (<http://purl.org/obo/owl/GO#GO_0010346>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010346> <http://purl.org/obo/owl/GO#GO_0048646>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010374> (<http://purl.org/obo/owl/GO#GO_0010374>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010374> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010375> (<http://purl.org/obo/owl/GO#GO_0010375>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010375> <http://purl.org/obo/owl/GO#GO_0007389>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010376> (<http://purl.org/obo/owl/GO#GO_0010376>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010376> <http://purl.org/obo/owl/GO#GO_0048646>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010386> (<http://purl.org/obo/owl/GO#GO_0010386>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010386> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010431> (<http://purl.org/obo/owl/GO#GO_0010431>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010431> <http://purl.org/obo/owl/GO#GO_0021700>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010432> (<http://purl.org/obo/owl/GO#GO_0010432>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010432> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010433> (<http://purl.org/obo/owl/GO#GO_0010433>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010433> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010434> (<http://purl.org/obo/owl/GO#GO_0010434>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010434> <http://purl.org/obo/owl/GO#GO_0048646>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010449> (<http://purl.org/obo/owl/GO#GO_0010449>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010449> <http://purl.org/obo/owl/GO#GO_0040007>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010450> (<http://purl.org/obo/owl/GO#GO_0010450>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010450> <http://purl.org/obo/owl/GO#GO_0040007>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010451> (<http://purl.org/obo/owl/GO#GO_0010451>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010451> <http://purl.org/obo/owl/GO#GO_0040007>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010500> (<http://purl.org/obo/owl/GO#GO_0010500>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010500> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010582> (<http://purl.org/obo/owl/GO#GO_0010582>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010582> <http://purl.org/obo/owl/GO#GO_0010022>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010589> (<http://purl.org/obo/owl/GO#GO_0010589>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010589> <http://purl.org/obo/owl/GO#GO_0009954>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0010618> (<http://purl.org/obo/owl/GO#GO_0010618>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0010618> <http://purl.org/obo/owl/GO#GO_0048646>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0021700> (<http://purl.org/obo/owl/GO#GO_0021700>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0021700> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0022022> (<http://purl.org/obo/owl/GO#GO_0022022>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0022022> <http://purl.org/obo/owl/GO#GO_0008283>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0022610> (<http://purl.org/obo/owl/GO#GO_0022610>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0022610> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0022621> (<http://purl.org/obo/owl/GO#GO_0022621>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0022621> <http://purl.org/obo/owl/GO#GO_0048731>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0022622> (<http://purl.org/obo/owl/GO#GO_0022622>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0022622> <http://purl.org/obo/owl/GO#GO_0048731>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0030154> (<http://purl.org/obo/owl/GO#GO_0030154>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0030154> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0032502> (<http://purl.org/obo/owl/GO#GO_0032502>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0032502> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0035266> (<http://purl.org/obo/owl/GO#GO_0035266>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0035266> <http://purl.org/obo/owl/GO#GO_0040007>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0035315> (<http://purl.org/obo/owl/GO#GO_0035315>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0035315> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0040007> (<http://purl.org/obo/owl/GO#GO_0040007>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0040007> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0046844> (<http://purl.org/obo/owl/GO#GO_0046844>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0046844> <http://purl.org/obo/owl/GO#GO_0048646>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048229> (<http://purl.org/obo/owl/GO#GO_0048229>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048229> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048281> (<http://purl.org/obo/owl/GO#GO_0048281>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048281> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048314> (<http://purl.org/obo/owl/GO#GO_0048314>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048314> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048316> (<http://purl.org/obo/owl/GO#GO_0048316>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048316> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048317> (<http://purl.org/obo/owl/GO#GO_0048317>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048317> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048364> (<http://purl.org/obo/owl/GO#GO_0048364>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048364> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048366> (<http://purl.org/obo/owl/GO#GO_0048366>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048366> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048367> (<http://purl.org/obo/owl/GO#GO_0048367>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048367> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048437> (<http://purl.org/obo/owl/GO#GO_0048437>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048437> <http://purl.org/obo/owl/GO#GO_0048513>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048439> (<http://purl.org/obo/owl/GO#GO_0048439>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048439> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048440> (<http://purl.org/obo/owl/GO#GO_0048440>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048440> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048441> (<http://purl.org/obo/owl/GO#GO_0048441>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048441> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048442> (<http://purl.org/obo/owl/GO#GO_0048442>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048442> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048443> (<http://purl.org/obo/owl/GO#GO_0048443>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048443> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048444> (<http://purl.org/obo/owl/GO#GO_0048444>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048444> <http://purl.org/obo/owl/GO#GO_0009887>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048445> (<http://purl.org/obo/owl/GO#GO_0048445>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048445> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048446> (<http://purl.org/obo/owl/GO#GO_0048446>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048446> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048447> (<http://purl.org/obo/owl/GO#GO_0048447>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048447> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048448> (<http://purl.org/obo/owl/GO#GO_0048448>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048448> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048449> (<http://purl.org/obo/owl/GO#GO_0048449>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048449> <http://purl.org/obo/owl/GO#GO_0048645>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048451> (<http://purl.org/obo/owl/GO#GO_0048451>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048451> <http://purl.org/obo/owl/GO#GO_0048646>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048452> (<http://purl.org/obo/owl/GO#GO_0048452>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048452> <http://purl.org/obo/owl/GO#GO_0048532>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048453> (<http://purl.org/obo/owl/GO#GO_0048453>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048453> <http://purl.org/obo/owl/GO#GO_0048646>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048454> (<http://purl.org/obo/owl/GO#GO_0048454>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048454> <http://purl.org/obo/owl/GO#GO_0048532>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048455> (<http://purl.org/obo/owl/GO#GO_0048455>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048455> <http://purl.org/obo/owl/GO#GO_0048646>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048456> (<http://purl.org/obo/owl/GO#GO_0048456>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048456> <http://purl.org/obo/owl/GO#GO_0048532>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048460> (<http://purl.org/obo/owl/GO#GO_0048460>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048460> <http://purl.org/obo/owl/GO#GO_0048646>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048461> (<http://purl.org/obo/owl/GO#GO_0048461>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048461> <http://purl.org/obo/owl/GO#GO_0048532>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048462> (<http://purl.org/obo/owl/GO#GO_0048462>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048462> <http://purl.org/obo/owl/GO#GO_0048646>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048463> (<http://purl.org/obo/owl/GO#GO_0048463>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048463> <http://purl.org/obo/owl/GO#GO_0048532>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048464> (<http://purl.org/obo/owl/GO#GO_0048464>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048464> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048465> (<http://purl.org/obo/owl/GO#GO_0048465>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048465> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048466> (<http://purl.org/obo/owl/GO#GO_0048466>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048466> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048467> (<http://purl.org/obo/owl/GO#GO_0048467>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048467> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048479> (<http://purl.org/obo/owl/GO#GO_0048479>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048479> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048480> (<http://purl.org/obo/owl/GO#GO_0048480>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048480> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048481> (<http://purl.org/obo/owl/GO#GO_0048481>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048481> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048482> (<http://purl.org/obo/owl/GO#GO_0048482>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048482> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048507> (<http://purl.org/obo/owl/GO#GO_0048507>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048507> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048513> (<http://purl.org/obo/owl/GO#GO_0048513>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048513> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048530> (<http://purl.org/obo/owl/GO#GO_0048530>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048530> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048532> (<http://purl.org/obo/owl/GO#GO_0048532>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048532> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048533> (<http://purl.org/obo/owl/GO#GO_0048533>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048533> <http://purl.org/obo/owl/GO#GO_0030154>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048645> (<http://purl.org/obo/owl/GO#GO_0048645>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048645> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048646> (<http://purl.org/obo/owl/GO#GO_0048646>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048646> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048653> (<http://purl.org/obo/owl/GO#GO_0048653>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048653> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048654> (<http://purl.org/obo/owl/GO#GO_0048654>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048654> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048655> (<http://purl.org/obo/owl/GO#GO_0048655>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048655> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048656> (<http://purl.org/obo/owl/GO#GO_0048656>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048656> <http://purl.org/obo/owl/GO#GO_0048646>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048658> (<http://purl.org/obo/owl/GO#GO_0048658>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048658> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048731> (<http://purl.org/obo/owl/GO#GO_0048731>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048731> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048759> (<http://purl.org/obo/owl/GO#GO_0048759>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048759> <http://purl.org/obo/owl/GO#GO_0030154>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048761> (<http://purl.org/obo/owl/GO#GO_0048761>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048761> <http://purl.org/obo/owl/GO#GO_0030154>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048765> (<http://purl.org/obo/owl/GO#GO_0048765>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048765> <http://purl.org/obo/owl/GO#GO_0035315>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048767> (<http://purl.org/obo/owl/GO#GO_0048767>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048767> <http://purl.org/obo/owl/GO#GO_0008150>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048768> (<http://purl.org/obo/owl/GO#GO_0048768>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048768> <http://purl.org/obo/owl/GO#GO_0040007>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048825> (<http://purl.org/obo/owl/GO#GO_0048825>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048825> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048826> (<http://purl.org/obo/owl/GO#GO_0048826>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048826> <http://purl.org/obo/owl/GO#GO_0009653>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048827> (<http://purl.org/obo/owl/GO#GO_0048827>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048827> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048829> (<http://purl.org/obo/owl/GO#GO_0048829>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048829> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/GO#GO_0048868> (<http://purl.org/obo/owl/GO#GO_0048868>)
+
+SubClassOf(<http://purl.org/obo/owl/GO#GO_0048868> <http://purl.org/obo/owl/GO#GO_0032502>)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0000016> (<http://purl.org/obo/owl/PO#PO_0000016>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0000016> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0000029> (<http://purl.org/obo/owl/PO#PO_0000029>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0000029> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0000030> (<http://purl.org/obo/owl/PO#PO_0000030>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0000030> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0000229> (<http://purl.org/obo/owl/PO#PO_0000229>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0000229> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0000230> (<http://purl.org/obo/owl/PO#PO_0000230>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0000230> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0000256> (<http://purl.org/obo/owl/PO#PO_0000256>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0000256> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0002000> (<http://purl.org/obo/owl/PO#PO_0002000>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0002000> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0002003> (<http://purl.org/obo/owl/PO#PO_0002003>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0002003> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0005352> (<http://purl.org/obo/owl/PO#PO_0005352>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0005352> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0005417> (<http://purl.org/obo/owl/PO#PO_0005417>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0005417> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0005423> (<http://purl.org/obo/owl/PO#PO_0005423>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0005423> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0005702> (<http://purl.org/obo/owl/PO#PO_0005702>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0005702> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0006001> (<http://purl.org/obo/owl/PO#PO_0006001>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0006001> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0006074> (<http://purl.org/obo/owl/PO#PO_0006074>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0006074> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0006085> (<http://purl.org/obo/owl/PO#PO_0006085>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0006085> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0006204> (<http://purl.org/obo/owl/PO#PO_0006204>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0006204> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0006210> (<http://purl.org/obo/owl/PO#PO_0006210>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0006210> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0006343> (<http://purl.org/obo/owl/PO#PO_0006343>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0006343> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0006345> (<http://purl.org/obo/owl/PO#PO_0006345>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0006345> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009001> (<http://purl.org/obo/owl/PO#PO_0009001>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009001> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009004> (<http://purl.org/obo/owl/PO#PO_0009004>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009004> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009005> (<http://purl.org/obo/owl/PO#PO_0009005>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009005> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009006> (<http://purl.org/obo/owl/PO#PO_0009006>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009006> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009010> (<http://purl.org/obo/owl/PO#PO_0009010>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009010> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009013> (<http://purl.org/obo/owl/PO#PO_0009013>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009013> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009025> (<http://purl.org/obo/owl/PO#PO_0009025>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009025> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009029> (<http://purl.org/obo/owl/PO#PO_0009029>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009029> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009030> (<http://purl.org/obo/owl/PO#PO_0009030>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009030> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009031> (<http://purl.org/obo/owl/PO#PO_0009031>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009031> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009032> (<http://purl.org/obo/owl/PO#PO_0009032>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009032> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009035> (<http://purl.org/obo/owl/PO#PO_0009035>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009035> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009046> (<http://purl.org/obo/owl/PO#PO_0009046>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009046> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009049> (<http://purl.org/obo/owl/PO#PO_0009049>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009049> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009055> (<http://purl.org/obo/owl/PO#PO_0009055>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009055> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009059> (<http://purl.org/obo/owl/PO#PO_0009059>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009059> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009060> (<http://purl.org/obo/owl/PO#PO_0009060>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009060> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009061> (<http://purl.org/obo/owl/PO#PO_0009061>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009061> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009062> (<http://purl.org/obo/owl/PO#PO_0009062>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009062> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009066> (<http://purl.org/obo/owl/PO#PO_0009066>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009066> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009071> (<http://purl.org/obo/owl/PO#PO_0009071>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009071> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009073> (<http://purl.org/obo/owl/PO#PO_0009073>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009073> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009074> (<http://purl.org/obo/owl/PO#PO_0009074>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009074> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009088> (<http://purl.org/obo/owl/PO#PO_0009088>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009088> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0009089> (<http://purl.org/obo/owl/PO#PO_0009089>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0009089> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0020003> (<http://purl.org/obo/owl/PO#PO_0020003>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0020003> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0020025> (<http://purl.org/obo/owl/PO#PO_0020025>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0020025> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0020030> (<http://purl.org/obo/owl/PO#PO_0020030>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0020030> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0020091> (<http://purl.org/obo/owl/PO#PO_0020091>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0020091> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0020092> (<http://purl.org/obo/owl/PO#PO_0020092>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0020092> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0020102> (<http://purl.org/obo/owl/PO#PO_0020102>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0020102> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0020108> (<http://purl.org/obo/owl/PO#PO_0020108>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0020108> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0020121> (<http://purl.org/obo/owl/PO#PO_0020121>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0020121> owl:Thing)
+
+# Class: <http://purl.org/obo/owl/PO#PO_0020123> (<http://purl.org/obo/owl/PO#PO_0020123>)
+
+SubClassOf(<http://purl.org/obo/owl/PO#PO_0020123> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

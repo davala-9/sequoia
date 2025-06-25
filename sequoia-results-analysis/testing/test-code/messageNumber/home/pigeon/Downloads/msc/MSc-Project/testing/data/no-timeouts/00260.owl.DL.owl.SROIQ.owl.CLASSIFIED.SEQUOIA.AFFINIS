@@ -1,0 +1,28 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.imsproject.org/rdf/imsmd_generalv1p2#AggregationLevel>))
+Declaration(Class(<http://www.imsproject.org/rdf/imsmd_generalv1p2#Structure>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.imsproject.org/rdf/imsmd_generalv1p2#AggregationLevel> (<http://www.imsproject.org/rdf/imsmd_generalv1p2#AggregationLevel>)
+
+SubClassOf(<http://www.imsproject.org/rdf/imsmd_generalv1p2#AggregationLevel> owl:Thing)
+
+# Class: <http://www.imsproject.org/rdf/imsmd_generalv1p2#Structure> (<http://www.imsproject.org/rdf/imsmd_generalv1p2#Structure>)
+
+SubClassOf(<http://www.imsproject.org/rdf/imsmd_generalv1p2#Structure> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

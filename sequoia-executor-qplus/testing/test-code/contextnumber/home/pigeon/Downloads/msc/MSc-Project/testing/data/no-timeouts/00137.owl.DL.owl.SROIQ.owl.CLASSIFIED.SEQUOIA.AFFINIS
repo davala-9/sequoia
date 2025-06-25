@@ -1,0 +1,780 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirStation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerCellMissionPlan>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMission>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMissionObjective>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMissionPlan>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMission>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMissionObjective>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMissionPlan>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirspaceControlMeasure>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirspaceControlMeasureRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#CommandAndControlProcess>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ComputerBasedInformationSystem>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ConstraintChecking>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ControlAgency>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#DirectAttackMission>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#DirectAttackMissionPlan>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ElectronicCombatMission>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ElectronicCombatMissionPlan>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#EscortMission>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#EscortMissionPlan>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ForceLevelOperationalMissionModel>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#IntelligenceAcquisition>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#MilitaryAircraft>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#MilitaryAirport>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ModernMilitaryMissile>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#NavyFlightOperationsMissionPlan>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#PrepositionedMaterielTask>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ReconnaissanceMissionPlan>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#StationMissionObjective>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#SupportingTask>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#TimingReferencePoint>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AtmosphericRegion>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Landing>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MilitaryUnit>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TakingOff>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wire>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Collection>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Communication>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#EngineeringComponent>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Managing>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#MilitaryProcess>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Object>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Plan>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#PositiveInteger>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Putting>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Region>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Requesting>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SetOrClass>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimePosition>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Transportation.owl#AirTrafficControlProcedure>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Transportation.owl#AirTransitway>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Transportation.owl#JetAirplane>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Transportation.owl#TransitwayState>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Transportation.owl#TransportationSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirCorridor>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirMovementReSupplyMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirMovementReSupplyMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirStationTankerMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirStationTankerMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirTankerCellAirspace>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirTankerCellMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirTankerCellMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneAlertMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneBattleDirection>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneEarlyWarning>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneElementsTheaterAirControlSystemMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneElementsTheaterAirControlSystemMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftCarrier>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftCatapult>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftLaunch>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftLaunchCycle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftOfTankerCell>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftRecovery>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftRecoveryCycle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftRepositioning>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftTripwire>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirdropMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirdropMissionObjective>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirdropMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#Airland>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AltitudeBlock>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ArmyTacticalMissileSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyMissionStationSequence>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerMissionObjective>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerOffload>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CarrierAircraft>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CompositeAirOperations>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CompositeAirOperationsMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CompositeAirOperationsRoute>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ComputedAirReleasePoint>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ControlAndReportingCenter>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ControlAndReportingElement>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DeckCycle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackGroundTargetMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackGroundTargetMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackShipTargetMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackShipTargetMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DropZone>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatCorridorOperationsMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatCorridorOperationsMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatStationMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatStationMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#FlightFollowing>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ForwardAirControl>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ForwardAirControllerAirborne>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundAlertMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundAlertMissionObjective>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundAlertMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundStationTankerMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundStationTankerMissionObjective>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundStationTankerMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundTheaterAirControlSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundTheaterAirControlSystemMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundTheaterAirControlSystemMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#IndividualLocationReconnaissanceRequestMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#IndividualLocationReconnaissanceRequestMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissileWeaponAttackMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissileWeaponAttackMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissionEscortMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissionEscortMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissionLegOfATOMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#NavyFlightOperations>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#NavyFlightOperationsMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#NavyFlightOperationsPeriod>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#PackageEscortMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#PackageEscortMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ReceiveAerialRefueling>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ReconnaissanceRequest>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#RepositioningMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#RouteValidation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationAirLocationMission>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationAirLocationMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationCollectionReconnaissanceMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#SurfaceToSurfaceMissileMissionPlan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#TomahawkLandAttackMissile>))
+############################
+#   Classes
+############################
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirStation> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirStation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirStation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerCellMissionPlan> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerCellMissionPlan>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerCellMissionPlan> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMission> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMission>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMission> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMissionObjective> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMissionObjective>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMissionObjective> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMissionPlan> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMissionPlan>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMissionPlan> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMission> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMission>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMission> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMissionObjective> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMissionObjective>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMissionObjective> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMissionPlan> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMissionPlan>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMissionPlan> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirspaceControlMeasure> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirspaceControlMeasure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirspaceControlMeasure> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirspaceControlMeasureRelation> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirspaceControlMeasureRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirspaceControlMeasureRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#CommandAndControlProcess> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#CommandAndControlProcess>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#CommandAndControlProcess> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ComputerBasedInformationSystem> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ComputerBasedInformationSystem>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ComputerBasedInformationSystem> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ConstraintChecking> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ConstraintChecking>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ConstraintChecking> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ControlAgency> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ControlAgency>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ControlAgency> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#DirectAttackMission> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#DirectAttackMission>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#DirectAttackMission> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#DirectAttackMissionPlan> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#DirectAttackMissionPlan>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#DirectAttackMissionPlan> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ElectronicCombatMission> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ElectronicCombatMission>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ElectronicCombatMission> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ElectronicCombatMissionPlan> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ElectronicCombatMissionPlan>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ElectronicCombatMissionPlan> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#EscortMission> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#EscortMission>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#EscortMission> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#EscortMissionPlan> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#EscortMissionPlan>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#EscortMissionPlan> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ForceLevelOperationalMissionModel> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ForceLevelOperationalMissionModel>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ForceLevelOperationalMissionModel> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#IntelligenceAcquisition> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#IntelligenceAcquisition>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#IntelligenceAcquisition> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#MilitaryAircraft> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#MilitaryAircraft>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#MilitaryAircraft> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#MilitaryAirport> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#MilitaryAirport>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#MilitaryAirport> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ModernMilitaryMissile> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ModernMilitaryMissile>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ModernMilitaryMissile> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#NavyFlightOperationsMissionPlan> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#NavyFlightOperationsMissionPlan>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#NavyFlightOperationsMissionPlan> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#PrepositionedMaterielTask> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#PrepositionedMaterielTask>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#PrepositionedMaterielTask> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ReconnaissanceMissionPlan> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ReconnaissanceMissionPlan>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ReconnaissanceMissionPlan> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#StationMissionObjective> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#StationMissionObjective>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#StationMissionObjective> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#SupportingTask> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#SupportingTask>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#SupportingTask> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#TimingReferencePoint> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#TimingReferencePoint>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#TimingReferencePoint> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirspaceControlMeasure>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AtmosphericRegion> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AtmosphericRegion>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AtmosphericRegion> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Landing> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Landing>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Landing> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MilitaryUnit> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MilitaryUnit>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MilitaryUnit> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TakingOff> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TakingOff>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TakingOff> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wire> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wire>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wire> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent> (<http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Collection> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Collection>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Collection> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Communication> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Communication>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Communication> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#EngineeringComponent> (<http://reliant.teknowledge.com/DAML/SUMO.owl#EngineeringComponent>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#EngineeringComponent> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Managing> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Managing>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Managing> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#MilitaryProcess> (<http://reliant.teknowledge.com/DAML/SUMO.owl#MilitaryProcess>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#MilitaryProcess> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Object> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Object> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Plan> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Plan>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Plan> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#PositiveInteger> (<http://reliant.teknowledge.com/DAML/SUMO.owl#PositiveInteger>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#PositiveInteger> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Putting> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Putting>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Putting> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Region> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Region>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Region> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Requesting> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Requesting>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Requesting> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SetOrClass> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SetOrClass>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SetOrClass> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TimePosition> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TimePosition>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimePosition> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Transportation.owl#AirTrafficControlProcedure> (<http://reliant.teknowledge.com/DAML/Transportation.owl#AirTrafficControlProcedure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Transportation.owl#AirTrafficControlProcedure> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Transportation.owl#AirTransitway> (<http://reliant.teknowledge.com/DAML/Transportation.owl#AirTransitway>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Transportation.owl#AirTransitway> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Transportation.owl#JetAirplane> (<http://reliant.teknowledge.com/DAML/Transportation.owl#JetAirplane>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Transportation.owl#JetAirplane> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Transportation.owl#TransitwayState> (<http://reliant.teknowledge.com/DAML/Transportation.owl#TransitwayState>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Transportation.owl#TransitwayState> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Transportation.owl#TransportationSystem> (<http://reliant.teknowledge.com/DAML/Transportation.owl#TransportationSystem>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Transportation.owl#TransportationSystem> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirCorridor> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirCorridor>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirCorridor> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirspaceControlMeasure>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirCorridor> <http://reliant.teknowledge.com/DAML/Transportation.owl#AirTransitway>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirCorridor> <http://reliant.teknowledge.com/DAML/Transportation.owl#TransportationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirMovementReSupplyMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirMovementReSupplyMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirMovementReSupplyMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirMovementReSupplyMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMission>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirMovementReSupplyMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirMovementReSupplyMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirMovementReSupplyMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirStationTankerMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirStationTankerMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirStationTankerMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMission>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirStationTankerMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirStationTankerMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirStationTankerMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirTankerCellAirspace> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirTankerCellAirspace>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirTankerCellAirspace> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirStation>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirTankerCellAirspace> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AltitudeBlock>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirTankerCellMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirTankerCellMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirTankerCellMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirTankerCellMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirTankerCellMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirTankerCellMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirTankerCellMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneAlertMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneAlertMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneAlertMissionPlan> <http://reliant.teknowledge.com/DAML/SUMO.owl#Plan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneBattleDirection> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneBattleDirection>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneBattleDirection> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ForwardAirControl>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneEarlyWarning> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneEarlyWarning>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneEarlyWarning> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#IntelligenceAcquisition>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneEarlyWarning> <http://reliant.teknowledge.com/DAML/SUMO.owl#Communication>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneEarlyWarning> <http://reliant.teknowledge.com/DAML/SUMO.owl#MilitaryProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneElementsTheaterAirControlSystemMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneElementsTheaterAirControlSystemMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneElementsTheaterAirControlSystemMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneElementsTheaterAirControlSystemMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#CommandAndControlProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneElementsTheaterAirControlSystemMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneElementsTheaterAirControlSystemMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirborneElementsTheaterAirControlSystemMissionPlan> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationAirLocationMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftCarrier> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftCarrier>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftCarrier> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftCatapult> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftCatapult>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftCatapult> <http://reliant.teknowledge.com/DAML/SUMO.owl#EngineeringComponent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftLaunch> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftLaunch>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftLaunch> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TakingOff>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftLaunchCycle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftLaunchCycle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftLaunchCycle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DeckCycle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftOfTankerCell> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftOfTankerCell>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftOfTankerCell> <http://reliant.teknowledge.com/DAML/SUMO.owl#Collection>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftRecovery> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftRecovery>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftRecovery> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Landing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftRecoveryCycle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftRecoveryCycle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftRecoveryCycle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DeckCycle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftRepositioning> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftRepositioning>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftRepositioning> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftTripwire> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftTripwire>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftTripwire> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wire>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AircraftTripwire> <http://reliant.teknowledge.com/DAML/SUMO.owl#EngineeringComponent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirdropMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirdropMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirdropMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirdropMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMission>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirdropMission> <http://reliant.teknowledge.com/DAML/SUMO.owl#Putting>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirdropMissionObjective> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirdropMissionObjective>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirdropMissionObjective> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMissionObjective>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirdropMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirdropMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AirdropMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#Airland> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#Airland>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#Airland> <http://reliant.teknowledge.com/DAML/SUMO.owl#Putting>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AltitudeBlock> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AltitudeBlock>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AltitudeBlock> <http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#AltitudeBlock> <http://reliant.teknowledge.com/DAML/Transportation.owl#AirTransitway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ArmyTacticalMissileSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ArmyTacticalMissileSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ArmyTacticalMissileSystem> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ModernMilitaryMissile>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyMissionStationSequence> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyMissionStationSequence>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyMissionStationSequence> <http://reliant.teknowledge.com/DAML/SUMO.owl#Plan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerMissionObjective> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerMissionObjective>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerMissionObjective> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMissionObjective>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirTankerMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerOffload> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerOffload>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#BuddyTankerOffload> <http://reliant.teknowledge.com/DAML/SUMO.owl#Plan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CarrierAircraft> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CarrierAircraft>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CarrierAircraft> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#MilitaryAircraft>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CarrierAircraft> <http://reliant.teknowledge.com/DAML/Transportation.owl#JetAirplane>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CompositeAirOperations> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CompositeAirOperations>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CompositeAirOperations> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CompositeAirOperations> <http://reliant.teknowledge.com/DAML/SUMO.owl#Managing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CompositeAirOperationsMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CompositeAirOperationsMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CompositeAirOperationsMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CompositeAirOperationsRoute> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CompositeAirOperationsRoute>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CompositeAirOperationsRoute> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirspaceControlMeasure>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#CompositeAirOperationsRoute> <http://reliant.teknowledge.com/DAML/Transportation.owl#AirTransitway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ComputedAirReleasePoint> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ComputedAirReleasePoint>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ComputedAirReleasePoint> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AtmosphericRegion>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ControlAndReportingCenter> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ControlAndReportingCenter>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ControlAndReportingCenter> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundTheaterAirControlSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ControlAndReportingElement> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ControlAndReportingElement>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ControlAndReportingElement> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundTheaterAirControlSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DeckCycle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DeckCycle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DeckCycle> <http://reliant.teknowledge.com/DAML/SUMO.owl#Managing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackGroundTargetMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackGroundTargetMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackGroundTargetMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#DirectAttackMission>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackGroundTargetMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackGroundTargetMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackGroundTargetMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#DirectAttackMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackShipTargetMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackShipTargetMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackShipTargetMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackShipTargetMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#DirectAttackMission>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackShipTargetMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackShipTargetMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackShipTargetMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DirectAttackShipTargetMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#DirectAttackMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DropZone> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DropZone>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DropZone> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirspaceControlMeasure>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#DropZone> <http://reliant.teknowledge.com/DAML/SUMO.owl#Region>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatCorridorOperationsMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatCorridorOperationsMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatCorridorOperationsMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatCorridorOperationsMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ElectronicCombatMission>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatCorridorOperationsMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatCorridorOperationsMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatCorridorOperationsMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ElectronicCombatMissionPlan>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatCorridorOperationsMissionPlan> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissionEscortMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatStationMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatStationMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatStationMission> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationAirLocationMission>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatStationMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatStationMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatStationMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ElectronicCombatMissionPlan>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ElectronicCombatStationMissionPlan> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationAirLocationMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#FlightFollowing> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#FlightFollowing>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#FlightFollowing> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#CommandAndControlProcess>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#FlightFollowing> <http://reliant.teknowledge.com/DAML/SUMO.owl#Communication>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ForwardAirControl> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ForwardAirControl>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ForwardAirControl> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#CommandAndControlProcess>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ForwardAirControl> <http://reliant.teknowledge.com/DAML/Transportation.owl#AirTrafficControlProcedure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ForwardAirControllerAirborne> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ForwardAirControllerAirborne>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ForwardAirControllerAirborne> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ControlAgency>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ForwardAirControllerAirborne> <http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundAlertMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundAlertMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundAlertMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundAlertMissionObjective> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundAlertMissionObjective>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundAlertMissionObjective> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#StationMissionObjective>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundAlertMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundAlertMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundAlertMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundAlertMissionPlan> <http://reliant.teknowledge.com/DAML/SUMO.owl#Plan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundStationTankerMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundStationTankerMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundStationTankerMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMission>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundStationTankerMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#PrepositionedMaterielTask>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundStationTankerMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#SupportingTask>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundStationTankerMissionObjective> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundStationTankerMissionObjective>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundStationTankerMissionObjective> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMissionObjective>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundStationTankerMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundStationTankerMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundStationTankerMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#AirliftMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundTheaterAirControlSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundTheaterAirControlSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundTheaterAirControlSystem> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ComputerBasedInformationSystem>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundTheaterAirControlSystem> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MilitaryUnit>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundTheaterAirControlSystemMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundTheaterAirControlSystemMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundTheaterAirControlSystemMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundTheaterAirControlSystemMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundTheaterAirControlSystemMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#GroundTheaterAirControlSystemMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#IndividualLocationReconnaissanceRequestMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#IndividualLocationReconnaissanceRequestMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#IndividualLocationReconnaissanceRequestMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#IndividualLocationReconnaissanceRequestMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#IndividualLocationReconnaissanceRequestMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#IndividualLocationReconnaissanceRequestMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissileWeaponAttackMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissileWeaponAttackMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissileWeaponAttackMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissileWeaponAttackMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissileWeaponAttackMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissileWeaponAttackMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissionEscortMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissionEscortMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissionEscortMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissionEscortMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#EscortMission>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissionEscortMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissionEscortMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissionEscortMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissionEscortMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#EscortMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissionLegOfATOMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissionLegOfATOMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#MissionLegOfATOMission> <http://reliant.teknowledge.com/DAML/SUMO.owl#Plan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#NavyFlightOperations> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#NavyFlightOperations>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#NavyFlightOperations> <http://reliant.teknowledge.com/DAML/SUMO.owl#Managing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#NavyFlightOperationsMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#NavyFlightOperationsMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#NavyFlightOperationsMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#NavyFlightOperationsPeriod> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#NavyFlightOperationsPeriod>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#NavyFlightOperationsPeriod> <http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#PackageEscortMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#PackageEscortMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#PackageEscortMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#PackageEscortMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#PackageEscortMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#PackageEscortMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ReceiveAerialRefueling> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ReceiveAerialRefueling>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ReceiveAerialRefueling> <http://reliant.teknowledge.com/DAML/SUMO.owl#Plan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ReconnaissanceRequest> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ReconnaissanceRequest>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#ReconnaissanceRequest> <http://reliant.teknowledge.com/DAML/SUMO.owl#Requesting>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#RepositioningMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#RepositioningMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#RepositioningMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#RouteValidation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#RouteValidation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#RouteValidation> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ConstraintChecking>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationAirLocationMission> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationAirLocationMission>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationAirLocationMission> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMission>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationAirLocationMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationAirLocationMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationAirLocationMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationCollectionReconnaissanceMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationCollectionReconnaissanceMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationCollectionReconnaissanceMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ReconnaissanceMissionPlan>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationCollectionReconnaissanceMissionPlan> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#StationAirLocationMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#SurfaceToSurfaceMissileMissionPlan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#SurfaceToSurfaceMissileMissionPlan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#SurfaceToSurfaceMissileMissionPlan> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMissionPlan>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#TomahawkLandAttackMissile> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#TomahawkLandAttackMissile>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00137.owl#TomahawkLandAttackMissile> <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ModernMilitaryMissile>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

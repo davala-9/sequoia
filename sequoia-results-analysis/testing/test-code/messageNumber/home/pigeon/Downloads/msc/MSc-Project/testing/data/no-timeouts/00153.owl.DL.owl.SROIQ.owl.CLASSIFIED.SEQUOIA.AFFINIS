@@ -1,0 +1,610 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<damls:Service>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Actor>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Agree>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#AingeruWebService>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Appointment>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#AppointmentAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothSensor>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothSensorInform>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothSensorQuery>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothSensorSubscription>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Cancel>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Care>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ConditionCheckerAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Control>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ControlAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ControlerAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Dump>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpAppointment>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpAppointmentInform>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpAppointmentQuery>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpLocation>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpLocationInform>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpLocationQuery>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicalAppointment>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicalAppointmentInform>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicalAppointmentQuery>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicine>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicineInform>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicineQuery>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpSensor>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpSensorInform>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpSensorQuery>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpVitalSign>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpVitalSignInform>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpVitalSignQuery>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Emergency>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#EmergencyAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#EmergencyNotice>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#External>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Failure>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#GeneralSensor>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#GeneralSensorInform>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#GeneralSensorQuery>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Health>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalInform>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalManagementAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalQuery>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalSubject>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HumanAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-done>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#InputOutput>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Location>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#LocationAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#LocationInform>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#LocationQuery>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MajordomoAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ManagementAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointment>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentInform>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentModify>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentQuery>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentsManagementAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Medicine>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineInfom>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineManagementAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineModify>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineQuery>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Message>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#PDAAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Query>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Query-ref>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Question>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#QuestionInform>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#QuestionQuery>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Read>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ReadInform>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ReadQuery>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Refuse>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Relative>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Sanitary>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Sensor>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#SensorAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#SoftwareAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Staff>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#StorageAgent>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subject>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subscribe>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Technical>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Time>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#TimeNotice>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#TimeSubscription>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Urgency>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#UrgencyNotice>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#User>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#UserResponsible>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#VitalSign>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#VitalSignInform>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#VitalSignQuery>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebAppointment>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebHealth>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebHealthAppointment>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebLocation>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebMedicine>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebSensor>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebUrgency>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Write>))
+Declaration(Class(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WriteQuery>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(<http://www.w3.org/TR/xmlschema-2/#anyURI>))
+############################
+#   Classes
+############################
+
+# Class: <damls:Service> (<damls:Service>)
+
+SubClassOf(<damls:Service> owl:Thing)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Actor> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Actor>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Actor> owl:Thing)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Agree> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Agree>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Agree> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Message>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#AingeruWebService> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#AingeruWebService>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#AingeruWebService> <damls:Service>)
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#AingeruWebService> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Actor>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Appointment> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Appointment>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Appointment> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subject>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#AppointmentAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#AppointmentAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#AppointmentAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#PDAAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#PDAAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothSensor> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothSensor>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothSensor> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Sensor>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothSensorInform> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothSensorInform>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothSensorInform> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothSensorQuery> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothSensorQuery>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothSensorQuery> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Query-ref>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothSensorSubscription> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothSensorSubscription>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#BluetoothSensorSubscription> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subscribe>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Cancel> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Cancel>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Cancel> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Message>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Care> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Care>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Care> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#AingeruWebService>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ConditionCheckerAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ConditionCheckerAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ConditionCheckerAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#PDAAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Control> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Control>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Control> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#AingeruWebService>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ControlAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ControlAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ControlAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ManagementAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ControlerAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ControlerAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ControlerAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#PDAAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Dump> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Dump>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Dump> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subject>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpAppointment> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpAppointment>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpAppointment> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Appointment>)
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpAppointment> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Dump>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpAppointmentInform> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpAppointmentInform>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpAppointmentInform> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpAppointmentQuery> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpAppointmentQuery>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpAppointmentQuery> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpLocation> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpLocation>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpLocation> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Dump>)
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpLocation> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Location>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpLocationInform> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpLocationInform>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpLocationInform> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpLocationQuery> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpLocationQuery>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpLocationQuery> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicalAppointment> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicalAppointment>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicalAppointment> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Dump>)
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicalAppointment> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointment>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicalAppointmentInform> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicalAppointmentInform>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicalAppointmentInform> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicalAppointmentQuery> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicalAppointmentQuery>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicalAppointmentQuery> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicine> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicine>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicine> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Dump>)
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicine> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Medicine>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicineInform> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicineInform>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicineInform> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicineQuery> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicineQuery>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpMedicineQuery> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpSensor> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpSensor>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpSensor> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Dump>)
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpSensor> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Sensor>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpSensorInform> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpSensorInform>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpSensorInform> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpSensorQuery> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpSensorQuery>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpSensorQuery> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpVitalSign> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpVitalSign>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpVitalSign> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Dump>)
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpVitalSign> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#VitalSign>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpVitalSignInform> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpVitalSignInform>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpVitalSignInform> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpVitalSignQuery> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpVitalSignQuery>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#DumpVitalSignQuery> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Emergency> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Emergency>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Emergency> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subject>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#EmergencyAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#EmergencyAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#EmergencyAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#PDAAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#EmergencyNotice> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#EmergencyNotice>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#EmergencyNotice> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#External> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#External>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#External> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#AingeruWebService>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Failure> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Failure>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Failure> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Message>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#GeneralSensor> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#GeneralSensor>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#GeneralSensor> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Sensor>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#GeneralSensorInform> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#GeneralSensorInform>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#GeneralSensorInform> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#GeneralSensorQuery> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#GeneralSensorQuery>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#GeneralSensorQuery> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Query-ref>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Health> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Health>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Health> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#AingeruWebService>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#PDAAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalInform> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalInform>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalInform> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalManagementAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalManagementAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalManagementAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ManagementAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalQuery> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalQuery>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalQuery> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalSubject> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalSubject>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HospitalSubject> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subject>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HumanAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HumanAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HumanAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Actor>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Message>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-done> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-done>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-done> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#InputOutput> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#InputOutput>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#InputOutput> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subject>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Location> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Location>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Location> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subject>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#LocationAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#LocationAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#LocationAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#PDAAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#LocationInform> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#LocationInform>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#LocationInform> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#LocationQuery> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#LocationQuery>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#LocationQuery> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Query-ref>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MajordomoAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MajordomoAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MajordomoAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#PDAAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ManagementAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ManagementAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ManagementAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#SoftwareAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointment> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointment>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointment> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Appointment>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#PDAAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentInform> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentInform>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentInform> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentModify> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentModify>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentModify> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentQuery> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentQuery>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentQuery> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Query-ref>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentsManagementAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentsManagementAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicalAppointmentsManagementAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ManagementAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Medicine> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Medicine>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Medicine> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subject>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#PDAAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineInfom> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineInfom>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineInfom> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineManagementAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineManagementAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineManagementAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ManagementAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineModify> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineModify>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineModify> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineQuery> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineQuery>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#MedicineQuery> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Query-ref>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Message> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Message>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Message> owl:Thing)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#PDAAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#PDAAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#PDAAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#SoftwareAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Query> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Query>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Query> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Message>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Query-ref> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Query-ref>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Query-ref> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Query>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Question> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Question>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Question> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#InputOutput>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#QuestionInform> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#QuestionInform>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#QuestionInform> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#QuestionQuery> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#QuestionQuery>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#QuestionQuery> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Read> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Read>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Read> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#InputOutput>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ReadInform> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ReadInform>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ReadInform> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ReadQuery> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ReadQuery>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ReadQuery> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Refuse> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Refuse>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Refuse> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Message>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Relative> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Relative>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Relative> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#UserResponsible>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Query>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Sanitary> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Sanitary>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Sanitary> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#UserResponsible>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Sensor> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Sensor>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Sensor> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subject>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#SensorAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#SensorAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#SensorAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#PDAAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#SoftwareAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#SoftwareAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#SoftwareAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Actor>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Staff> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Staff>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Staff> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#UserResponsible>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#StorageAgent> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#StorageAgent>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#StorageAgent> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#ManagementAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subject> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subject>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subject> owl:Thing)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subscribe> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subscribe>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subscribe> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Message>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Technical> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Technical>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Technical> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#AingeruWebService>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Time> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Time>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Time> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subject>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#TimeNotice> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#TimeNotice>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#TimeNotice> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#TimeSubscription> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#TimeSubscription>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#TimeSubscription> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subscribe>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Urgency> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Urgency>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Urgency> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subject>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#UrgencyNotice> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#UrgencyNotice>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#UrgencyNotice> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#User> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#User>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#User> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HumanAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#UserResponsible> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#UserResponsible>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#UserResponsible> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#HumanAgent>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#VitalSign> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#VitalSign>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#VitalSign> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Subject>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#VitalSignInform> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#VitalSignInform>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#VitalSignInform> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Inform-result>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#VitalSignQuery> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#VitalSignQuery>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#VitalSignQuery> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebAppointment> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebAppointment>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebAppointment> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Control>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebHealth> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebHealth>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebHealth> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Care>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebHealthAppointment> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebHealthAppointment>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebHealthAppointment> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Health>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebLocation> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebLocation>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebLocation> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Control>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebMedicine> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebMedicine>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebMedicine> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Control>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebSensor> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebSensor>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebSensor> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Control>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebUrgency> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebUrgency>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WebUrgency> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Health>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Write> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Write>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Write> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#InputOutput>)
+
+# Class: <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WriteQuery> (<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WriteQuery>)
+
+SubClassOf(<http://siul02.si.ehu.es/Aingeru/OperOnt.owl#WriteQuery> <http://siul02.si.ehu.es/Aingeru/OperOnt.owl#Request>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: <http://www.w3.org/TR/xmlschema-2/#anyURI> (<http://www.w3.org/TR/xmlschema-2/#anyURI>)
+
+SubClassOf(<http://www.w3.org/TR/xmlschema-2/#anyURI> owl:Thing)
+
+
+)

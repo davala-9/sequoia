@@ -1,0 +1,73 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/person#ChatID>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/person#ContactProfile>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/person#EmailAddress>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/person#Gender>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/person#Homepage>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/person#IMProvider>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/person#JADEAgentID>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/person#Person>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+############################
+#   Classes
+############################
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/person#ChatID> (<http://pervasive.semanticweb.org/ont/2004/01/person#ChatID>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/person#ChatID> owl:Thing)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/person#ContactProfile> (<http://pervasive.semanticweb.org/ont/2004/01/person#ContactProfile>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/person#ContactProfile> owl:Thing)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/person#EmailAddress> (<http://pervasive.semanticweb.org/ont/2004/01/person#EmailAddress>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/person#EmailAddress> owl:Thing)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/person#Gender> (<http://pervasive.semanticweb.org/ont/2004/01/person#Gender>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/person#Gender> owl:Thing)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/person#Homepage> (<http://pervasive.semanticweb.org/ont/2004/01/person#Homepage>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/person#Homepage> owl:Thing)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/person#IMProvider> (<http://pervasive.semanticweb.org/ont/2004/01/person#IMProvider>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/person#IMProvider> owl:Thing)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/person#JADEAgentID> (<http://pervasive.semanticweb.org/ont/2004/01/person#JADEAgentID>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/person#JADEAgentID> owl:Thing)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/person#Person> (<http://pervasive.semanticweb.org/ont/2004/01/person#Person>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/person#Person> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+
+)

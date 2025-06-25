@@ -1,0 +1,33 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.org/dc/terms/SubjectScheme>))
+Declaration(Class(<http://purl.org/gem/A2AStandard/CorrelationScheme>))
+Declaration(Class(<http://purl.org/gem/qualifiers/StandardsScheme>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/dc/terms/SubjectScheme> (<http://purl.org/dc/terms/SubjectScheme>)
+
+SubClassOf(<http://purl.org/dc/terms/SubjectScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/A2AStandard/CorrelationScheme> (<http://purl.org/gem/A2AStandard/CorrelationScheme>)
+
+SubClassOf(<http://purl.org/gem/A2AStandard/CorrelationScheme> owl:Thing)
+
+# Class: <http://purl.org/gem/qualifiers/StandardsScheme> (<http://purl.org/gem/qualifiers/StandardsScheme>)
+
+SubClassOf(<http://purl.org/gem/qualifiers/StandardsScheme> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

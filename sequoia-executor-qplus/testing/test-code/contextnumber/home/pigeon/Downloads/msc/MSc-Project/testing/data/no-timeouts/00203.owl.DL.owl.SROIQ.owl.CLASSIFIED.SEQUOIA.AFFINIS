@@ -1,0 +1,160 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#Briefing>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#Date>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#Deliverable>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#Demo>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#Milestone>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#Project>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#Report>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#Software>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#Task>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon0>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon10>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon12>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon14>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon15>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon17>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon18>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon19>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon2>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon20>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon21>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon23>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon25>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon4>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon6>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon7>))
+Declaration(Class(<http://www.daml.org/2001/02/projectplan/projectplan#_anon8>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#Briefing> (<http://www.daml.org/2001/02/projectplan/projectplan#Briefing>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Briefing> <http://www.daml.org/2001/02/projectplan/projectplan#Deliverable>)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#Date> (<http://www.daml.org/2001/02/projectplan/projectplan#Date>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Date> <http://www.daml.org/2001/02/projectplan/projectplan#_anon0>)
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Date> <http://www.daml.org/2001/02/projectplan/projectplan#_anon2>)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#Deliverable> (<http://www.daml.org/2001/02/projectplan/projectplan#Deliverable>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Deliverable> <http://www.daml.org/2001/02/projectplan/projectplan#_anon12>)
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Deliverable> <http://www.daml.org/2001/02/projectplan/projectplan#_anon14>)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#Demo> (<http://www.daml.org/2001/02/projectplan/projectplan#Demo>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Demo> <http://www.daml.org/2001/02/projectplan/projectplan#Deliverable>)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#Milestone> (<http://www.daml.org/2001/02/projectplan/projectplan#Milestone>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Milestone> <http://www.daml.org/2001/02/projectplan/projectplan#_anon15>)
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Milestone> <http://www.daml.org/2001/02/projectplan/projectplan#_anon17>)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#Project> (<http://www.daml.org/2001/02/projectplan/projectplan#Project>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Project> <http://www.daml.org/2001/02/projectplan/projectplan#_anon18>)
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Project> <http://www.daml.org/2001/02/projectplan/projectplan#_anon19>)
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Project> <http://www.daml.org/2001/02/projectplan/projectplan#_anon20>)
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Project> <http://www.daml.org/2001/02/projectplan/projectplan#_anon21>)
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Project> <http://www.daml.org/2001/02/projectplan/projectplan#_anon23>)
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Project> <http://www.daml.org/2001/02/projectplan/projectplan#_anon25>)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#Report> (<http://www.daml.org/2001/02/projectplan/projectplan#Report>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Report> <http://www.daml.org/2001/02/projectplan/projectplan#Deliverable>)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#Software> (<http://www.daml.org/2001/02/projectplan/projectplan#Software>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Software> <http://www.daml.org/2001/02/projectplan/projectplan#Deliverable>)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#Task> (<http://www.daml.org/2001/02/projectplan/projectplan#Task>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Task> <http://www.daml.org/2001/02/projectplan/projectplan#_anon10>)
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Task> <http://www.daml.org/2001/02/projectplan/projectplan#_anon4>)
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Task> <http://www.daml.org/2001/02/projectplan/projectplan#_anon6>)
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Task> <http://www.daml.org/2001/02/projectplan/projectplan#_anon7>)
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#Task> <http://www.daml.org/2001/02/projectplan/projectplan#_anon8>)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon0> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon0>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon0> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon10> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon10>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon10> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon12> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon12>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon12> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon14> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon14>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon14> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon15> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon15>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon15> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon17> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon17>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon17> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon18> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon18>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon18> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon19> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon19>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon19> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon2> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon2>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon2> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon20> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon20>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon20> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon21> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon21>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon21> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon23> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon23>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon23> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon25> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon25>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon25> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon4> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon4>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon4> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon6> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon6>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon6> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon7> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon7>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon7> owl:Thing)
+
+# Class: <http://www.daml.org/2001/02/projectplan/projectplan#_anon8> (<http://www.daml.org/2001/02/projectplan/projectplan#_anon8>)
+
+SubClassOf(<http://www.daml.org/2001/02/projectplan/projectplan#_anon8> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

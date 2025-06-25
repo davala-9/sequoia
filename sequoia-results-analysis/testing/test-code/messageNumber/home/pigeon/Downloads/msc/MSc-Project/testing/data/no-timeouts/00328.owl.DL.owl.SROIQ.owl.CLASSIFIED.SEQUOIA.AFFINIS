@@ -1,0 +1,58 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.org/dc/dcmitype/Image>))
+Declaration(Class(rdf:List))
+Declaration(Class(rdf:Resource))
+Declaration(Class(<http://www.w3.org/2004/02/skos/core#Collection>))
+Declaration(Class(<http://www.w3.org/2004/02/skos/core#Concept>))
+Declaration(Class(<http://www.w3.org/2004/02/skos/core#ConceptScheme>))
+Declaration(Class(<http://www.w3.org/2004/02/skos/core#OrderedCollection>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Document>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/dc/dcmitype/Image> (<http://purl.org/dc/dcmitype/Image>)
+
+SubClassOf(<http://purl.org/dc/dcmitype/Image> owl:Thing)
+
+# Class: rdf:List (rdf:List)
+
+SubClassOf(rdf:List owl:Thing)
+
+# Class: rdf:Resource (rdf:Resource)
+
+SubClassOf(rdf:Resource owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: <http://www.w3.org/2004/02/skos/core#Collection> (<http://www.w3.org/2004/02/skos/core#Collection>)
+
+SubClassOf(<http://www.w3.org/2004/02/skos/core#Collection> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/skos/core#Concept> (<http://www.w3.org/2004/02/skos/core#Concept>)
+
+SubClassOf(<http://www.w3.org/2004/02/skos/core#Concept> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/skos/core#ConceptScheme> (<http://www.w3.org/2004/02/skos/core#ConceptScheme>)
+
+SubClassOf(<http://www.w3.org/2004/02/skos/core#ConceptScheme> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/skos/core#OrderedCollection> (<http://www.w3.org/2004/02/skos/core#OrderedCollection>)
+
+SubClassOf(<http://www.w3.org/2004/02/skos/core#OrderedCollection> <http://www.w3.org/2004/02/skos/core#Collection>)
+
+# Class: <http://xmlns.com/foaf/0.1/Document> (<http://xmlns.com/foaf/0.1/Document>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Document> owl:Thing)
+
+
+)

@@ -1,0 +1,291 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Briefing>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/MetaInfo>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon0>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon1>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon10>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon11>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon12>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon13>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon14>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon15>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon16>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon17>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon18>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon19>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon2>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon20>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon21>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon22>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon3>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon4>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon5>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon6>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon7>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon8>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon9>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Class>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Datatype>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#DatatypeProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#List>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Nothing>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#ObjectProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Ontology>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Property>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Restriction>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#TransitiveProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#UniqueProperty>))
+Declaration(Class(rdf:Property))
+Declaration(Class(rdf:Seq))
+Declaration(Class(rdfs:Class))
+Declaration(Class(rdfs:Container))
+Declaration(Class(rdfs:ContainerMembershipProperty))
+Declaration(Class(rdfs:Datatype))
+Declaration(Class(rdfs:Literal))
+Declaration(Class(rdfs:Resource))
+Declaration(Class(<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>))
+Declaration(Class(owl:Class))
+Declaration(Class(owl:ObjectProperty))
+Declaration(Class(owl:Restriction))
+############################
+#   Classes
+############################
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Briefing> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Briefing>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Briefing> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon0>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/MetaInfo>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon1>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon10>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon11>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon12>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon13>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon14>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon15>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon16>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon17>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon18>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon19>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon2>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon20>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon21>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon22>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon3>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon4>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon5>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon6>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon7>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon8>)
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Builtin> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon9>)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/MetaInfo> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/MetaInfo>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/MetaInfo> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon0> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon0>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon0> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon1> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon1>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon1> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon10> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon10>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon10> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon11> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon11>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon11> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon12> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon12>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon12> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon13> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon13>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon13> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon14> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon14>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon14> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon15> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon15>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon15> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon16> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon16>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon16> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon17> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon17>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon17> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon18> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon18>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon18> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon19> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon19>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon19> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon2> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon2>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon2> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon20> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon20>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon20> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon21> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon21>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon21> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon22> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon22>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon22> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon3> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon3>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon3> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon4> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon4>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon4> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon5> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon5>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon5> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon6> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon6>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon6> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon7> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon7>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon7> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon8> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon8>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon8> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon9> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon9>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/_anon9> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Class> (<http://www.daml.org/2001/03/daml+oil#Class>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Class> rdfs:Class)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Datatype> (<http://www.daml.org/2001/03/daml+oil#Datatype>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Datatype> rdfs:Class)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#DatatypeProperty> (<http://www.daml.org/2001/03/daml+oil#DatatypeProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#DatatypeProperty> rdf:Property)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#List> (<http://www.daml.org/2001/03/daml+oil#List>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#List> rdf:Seq)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Nothing> (<http://www.daml.org/2001/03/daml+oil#Nothing>)
+
+EquivalentClasses(<http://www.daml.org/2001/03/daml+oil#Nothing> owl:Nothing)
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Nothing> owl:Nothing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#ObjectProperty> (<http://www.daml.org/2001/03/daml+oil#ObjectProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#ObjectProperty> rdf:Property)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Ontology> (<http://www.daml.org/2001/03/daml+oil#Ontology>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Ontology> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Property> (<http://www.daml.org/2001/03/daml+oil#Property>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Property> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Restriction> (<http://www.daml.org/2001/03/daml+oil#Restriction>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Restriction> owl:Class)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#TransitiveProperty> (<http://www.daml.org/2001/03/daml+oil#TransitiveProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#TransitiveProperty> owl:ObjectProperty)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#UnambiguousProperty> (<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty> owl:ObjectProperty)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#UniqueProperty> (<http://www.daml.org/2001/03/daml+oil#UniqueProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UniqueProperty> rdf:Property)
+
+# Class: rdf:Property (rdf:Property)
+
+SubClassOf(rdf:Property owl:Thing)
+
+# Class: rdf:Seq (rdf:Seq)
+
+SubClassOf(rdf:Seq owl:Thing)
+
+# Class: rdfs:Class (rdfs:Class)
+
+SubClassOf(rdfs:Class rdfs:Resource)
+
+# Class: rdfs:Container (rdfs:Container)
+
+SubClassOf(rdfs:Container rdfs:Resource)
+
+# Class: rdfs:ContainerMembershipProperty (rdfs:ContainerMembershipProperty)
+
+SubClassOf(rdfs:ContainerMembershipProperty rdf:Property)
+
+# Class: rdfs:Datatype (rdfs:Datatype)
+
+SubClassOf(rdfs:Datatype rdfs:Class)
+
+# Class: rdfs:Literal (rdfs:Literal)
+
+SubClassOf(rdfs:Literal rdfs:Resource)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger> (<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>)
+
+SubClassOf(<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger> owl:Thing)
+
+# Class: owl:Class (owl:Class)
+
+SubClassOf(owl:Class owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:ObjectProperty (owl:ObjectProperty)
+
+SubClassOf(owl:ObjectProperty owl:Thing)
+
+# Class: owl:Restriction (owl:Restriction)
+
+SubClassOf(owl:Restriction owl:Thing)
+
+
+)

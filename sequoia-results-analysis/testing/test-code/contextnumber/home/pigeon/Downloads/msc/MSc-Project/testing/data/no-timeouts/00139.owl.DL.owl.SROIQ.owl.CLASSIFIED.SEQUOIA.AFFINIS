@@ -1,0 +1,616 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ArtificialSatellite>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CommunicationDevice>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Copying>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectronicSignalling>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Radio>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadioBroadcasting>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadioStation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Restaurant>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Telephone>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Telephoning>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TelevisionStation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WireLine>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#CommercialAgent>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Communication>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Corporation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Device>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#EngineeringConnection>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Entity>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Group>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Language>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#LengthMeasure>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Motion>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeInteger>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Object>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Physical>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#RadiatingElectromagnetic>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SingleValuedRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymmetricRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeDependentQuantity>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TransitiveRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#AMRadioStation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#AMRadioSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#AfricaONE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Autodin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Cable>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CableTelevisionConnection>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CableTelevisionSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CellularTelephoneSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CitizensBandMobileRadio>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CitizensBandRadioMonitor>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CoaxialCable>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationCable>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationChannel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationFacility>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationLine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationOrganization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSatellite>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectricalCable>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectromagneticFrequency>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectronicCommunication>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectronicDevice>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#FMRadioStation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#FMRadioSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Facsimile>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#FiberOpticCable>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ISOInternetCountryCode>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#InternetCafe>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#InternetCommunication>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#InternetServiceProvider>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Landline>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MainTelephoneLine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Marecs>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Marisat>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MediaOrganization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MicrowaveRadiation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MicrowaveRadioRelay>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MicrowaveRadioRelayStation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MobileCellPhone>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#OrbitaTelevisionService>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#PublicTelephoneSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioCommunication>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioReceiver>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioTelephone>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioTelephoneCommunication>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioTelephoneCommunicationSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RepeaterDevice>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SatelliteCommunicationOrganization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SatelliteCommunicationSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SatelliteEarthStation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SatelliteLink>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ShortwaveRadioStation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ShortwaveRadioSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SubmarineCommunicationCable>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelefaxProcess>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelegraphSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneChannel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneCommunication>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneExchange>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneLine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneSatellite>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionChannel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionChannelOrganization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionNetwork>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionNetworkOrganization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionRepeaterStation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelexService>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TransAtlanticTelephoneCable>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TroposphericScatter>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TrunkNetwork>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TwoWayRadio>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#URL>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#WebSite>))
+############################
+#   Classes
+############################
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ArtificialSatellite> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ArtificialSatellite>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ArtificialSatellite> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CommunicationDevice> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CommunicationDevice>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CommunicationDevice> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Copying> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Copying>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Copying> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectronicSignalling> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectronicSignalling>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectronicSignalling> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Radio> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Radio>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Radio> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadioBroadcasting> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadioBroadcasting>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadioBroadcasting> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioCommunication>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadioStation> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadioStation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadioStation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Restaurant> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Restaurant>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Restaurant> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Telephone> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Telephone>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Telephone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CommunicationDevice>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Telephoning> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Telephoning>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Telephoning> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectronicSignalling>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TelevisionStation> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TelevisionStation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TelevisionStation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WireLine> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WireLine>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WireLine> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent> (<http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#CommercialAgent> (<http://reliant.teknowledge.com/DAML/SUMO.owl#CommercialAgent>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#CommercialAgent> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Communication> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Communication>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Communication> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject> (<http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Corporation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Corporation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Corporation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Device> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Device> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#EngineeringConnection> (<http://reliant.teknowledge.com/DAML/SUMO.owl#EngineeringConnection>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#EngineeringConnection> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Entity> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Entity>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Entity> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Group> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Group>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Group> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Language> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Language>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Language> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#LengthMeasure> (<http://reliant.teknowledge.com/DAML/SUMO.owl#LengthMeasure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#LengthMeasure> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Motion> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Motion>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Motion> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeInteger> (<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeInteger>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeInteger> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Object> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Object> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Physical> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Physical>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Physical> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#RadiatingElectromagnetic> (<http://reliant.teknowledge.com/DAML/SUMO.owl#RadiatingElectromagnetic>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#RadiatingElectromagnetic> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SingleValuedRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SingleValuedRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SingleValuedRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact> (<http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SymmetricRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SymmetricRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymmetricRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TimeDependentQuantity> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeDependentQuantity>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeDependentQuantity> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TransitiveRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TransitiveRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TransitiveRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction> (<http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#AMRadioStation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#AMRadioStation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#AMRadioStation> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadioStation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#AMRadioSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#AMRadioSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#AMRadioSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#AfricaONE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#AfricaONE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#AfricaONE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSystem>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#AfricaONE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#FiberOpticCable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Autodin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Autodin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Autodin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Cable> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Cable>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Cable> <http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CableTelevisionConnection> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CableTelevisionConnection>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CableTelevisionConnection> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CoaxialCable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CableTelevisionSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CableTelevisionSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CableTelevisionSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CellularTelephoneSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CellularTelephoneSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CellularTelephoneSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CitizensBandMobileRadio> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CitizensBandMobileRadio>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CitizensBandMobileRadio> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TwoWayRadio>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CitizensBandRadioMonitor> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CitizensBandRadioMonitor>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CitizensBandRadioMonitor> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioReceiver>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CoaxialCable> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CoaxialCable>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CoaxialCable> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationCable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationCable> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationCable>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationCable> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CommunicationDevice>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationCable> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Cable>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationCable> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationLine>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationChannel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationChannel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationChannel> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CommunicationDevice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationFacility> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationFacility>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationFacility> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CommunicationDevice>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationFacility> <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationLine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationLine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationLine> <http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationOrganization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationOrganization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationOrganization> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSatellite> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSatellite>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSatellite> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ArtificialSatellite>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSatellite> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CommunicationDevice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSystem> <http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectricalCable> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectricalCable>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectricalCable> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#WireLine>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectricalCable> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Cable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectromagneticFrequency> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectromagneticFrequency>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectromagneticFrequency> <http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectronicCommunication> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectronicCommunication>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectronicCommunication> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectronicSignalling>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectronicCommunication> <http://reliant.teknowledge.com/DAML/SUMO.owl#Communication>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectronicDevice> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectronicDevice>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectronicDevice> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#FMRadioStation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#FMRadioStation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#FMRadioStation> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadioStation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#FMRadioSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#FMRadioSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#FMRadioSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Facsimile> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Facsimile>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Facsimile> <http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#FiberOpticCable> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#FiberOpticCable>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#FiberOpticCable> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationCable>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ISOInternetCountryCode> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ISOInternetCountryCode>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ISOInternetCountryCode> <http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#InternetCafe> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#InternetCafe>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#InternetCafe> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Restaurant>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#InternetCafe> <http://reliant.teknowledge.com/DAML/SUMO.owl#CommercialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#InternetCommunication> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#InternetCommunication>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#InternetCommunication> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectronicCommunication>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#InternetServiceProvider> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#InternetServiceProvider>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#InternetServiceProvider> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Landline> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Landline>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Landline> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationLine>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MainTelephoneLine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MainTelephoneLine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MainTelephoneLine> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneLine>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Marecs> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Marecs>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Marecs> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSatellite>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Marisat> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Marisat>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#Marisat> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSatellite>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MediaOrganization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MediaOrganization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MediaOrganization> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MicrowaveRadiation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MicrowaveRadiation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MicrowaveRadiation> <http://reliant.teknowledge.com/DAML/SUMO.owl#RadiatingElectromagnetic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MicrowaveRadioRelay> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MicrowaveRadioRelay>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MicrowaveRadioRelay> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MicrowaveRadiation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MicrowaveRadioRelayStation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MicrowaveRadioRelayStation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MicrowaveRadioRelayStation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationFacility>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MobileCellPhone> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MobileCellPhone>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MobileCellPhone> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Telephone>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#OrbitaTelevisionService> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#OrbitaTelevisionService>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#OrbitaTelevisionService> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#PublicTelephoneSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#PublicTelephoneSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#PublicTelephoneSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioCommunication> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioCommunication>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioCommunication> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectronicCommunication>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioReceiver> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioReceiver>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioReceiver> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Radio>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioTelephone> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioTelephone>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioTelephone> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TwoWayRadio>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioTelephoneCommunication> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioTelephoneCommunication>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioTelephoneCommunication> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneCommunication>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioTelephoneCommunicationSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioTelephoneCommunicationSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioTelephoneCommunicationSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RepeaterDevice> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RepeaterDevice>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RepeaterDevice> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectronicDevice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SatelliteCommunicationOrganization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SatelliteCommunicationOrganization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SatelliteCommunicationOrganization> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SatelliteCommunicationSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SatelliteCommunicationSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SatelliteCommunicationSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SatelliteEarthStation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SatelliteEarthStation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SatelliteEarthStation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationFacility>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SatelliteLink> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SatelliteLink>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SatelliteLink> <http://reliant.teknowledge.com/DAML/SUMO.owl#Communication>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ShortwaveRadioStation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ShortwaveRadioStation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ShortwaveRadioStation> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadioStation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ShortwaveRadioSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ShortwaveRadioSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ShortwaveRadioSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#RadioSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SubmarineCommunicationCable> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SubmarineCommunicationCable>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SubmarineCommunicationCable> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelefaxProcess> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelefaxProcess>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelefaxProcess> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Copying>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelefaxProcess> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectronicCommunication>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelegraphSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelegraphSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelegraphSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneChannel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneChannel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneChannel> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationChannel>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneCommunication> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneCommunication>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneCommunication> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#ElectronicCommunication>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneExchange> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneExchange>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneExchange> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationFacility>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneLine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneLine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneLine> <http://reliant.teknowledge.com/DAML/SUMO.owl#EngineeringConnection>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneLine> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationLine>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneSatellite> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneSatellite>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneSatellite> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSatellite>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionChannel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionChannel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionChannel> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationChannel>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionChannelOrganization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionChannelOrganization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionChannelOrganization> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionNetwork> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionNetwork>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionNetwork> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionNetworkOrganization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionNetworkOrganization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionNetworkOrganization> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionRepeaterStation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionRepeaterStation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelevisionRepeaterStation> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TelevisionStation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelexService> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelexService>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelexService> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TransAtlanticTelephoneCable> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TransAtlanticTelephoneCable>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TransAtlanticTelephoneCable> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CoaxialCable>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TransAtlanticTelephoneCable> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#SubmarineCommunicationCable>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TransAtlanticTelephoneCable> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TelephoneLine>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TroposphericScatter> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TroposphericScatter>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TroposphericScatter> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#MicrowaveRadiation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TrunkNetwork> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TrunkNetwork>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TrunkNetwork> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#CommunicationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TwoWayRadio> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TwoWayRadio>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#TwoWayRadio> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Radio>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#URL> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#URL>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#URL> <http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#URL> <http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#WebSite> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#WebSite>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00139.owl#WebSite> <http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

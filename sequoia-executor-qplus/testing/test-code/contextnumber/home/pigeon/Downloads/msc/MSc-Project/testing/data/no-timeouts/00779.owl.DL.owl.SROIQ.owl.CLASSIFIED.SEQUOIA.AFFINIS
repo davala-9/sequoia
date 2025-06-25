@@ -1,0 +1,988 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://vicodi.org/ontology#Abbey>))
+Declaration(Class(<http://vicodi.org/ontology#Abstract-Notion>))
+Declaration(Class(<http://vicodi.org/ontology#Actor>))
+Declaration(Class(<http://vicodi.org/ontology#Animal>))
+Declaration(Class(<http://vicodi.org/ontology#Architect>))
+Declaration(Class(<http://vicodi.org/ontology#Armament>))
+Declaration(Class(<http://vicodi.org/ontology#Art-Form>))
+Declaration(Class(<http://vicodi.org/ontology#Artefact>))
+Declaration(Class(<http://vicodi.org/ontology#Artist>))
+Declaration(Class(<http://vicodi.org/ontology#Artistic-Movement>))
+Declaration(Class(<http://vicodi.org/ontology#Artistic-Style>))
+Declaration(Class(<http://vicodi.org/ontology#Astronaut>))
+Declaration(Class(<http://vicodi.org/ontology#Author>))
+Declaration(Class(<http://vicodi.org/ontology#Badge>))
+Declaration(Class(<http://vicodi.org/ontology#Battle>))
+Declaration(Class(<http://vicodi.org/ontology#Board>))
+Declaration(Class(<http://vicodi.org/ontology#Book>))
+Declaration(Class(<http://vicodi.org/ontology#Building>))
+Declaration(Class(<http://vicodi.org/ontology#Business-Leader>))
+Declaration(Class(<http://vicodi.org/ontology#Category>))
+Declaration(Class(<http://vicodi.org/ontology#Cathedral>))
+Declaration(Class(<http://vicodi.org/ontology#Church>))
+Declaration(Class(<http://vicodi.org/ontology#Church-Reformer>))
+Declaration(Class(<http://vicodi.org/ontology#City>))
+Declaration(Class(<http://vicodi.org/ontology#Cleric>))
+Declaration(Class(<http://vicodi.org/ontology#Clerical-Leader>))
+Declaration(Class(<http://vicodi.org/ontology#Clothing>))
+Declaration(Class(<http://vicodi.org/ontology#Commodity>))
+Declaration(Class(<http://vicodi.org/ontology#Composer>))
+Declaration(Class(<http://vicodi.org/ontology#Conceptual-Object>))
+Declaration(Class(<http://vicodi.org/ontology#Conductor>))
+Declaration(Class(<http://vicodi.org/ontology#Country>))
+Declaration(Class(<http://vicodi.org/ontology#Creator>))
+Declaration(Class(<http://vicodi.org/ontology#Crime>))
+Declaration(Class(<http://vicodi.org/ontology#Criminal>))
+Declaration(Class(<http://vicodi.org/ontology#Cultural-Agreement>))
+Declaration(Class(<http://vicodi.org/ontology#Cultural-Organisation>))
+Declaration(Class(<http://vicodi.org/ontology#Dancer>))
+Declaration(Class(<http://vicodi.org/ontology#Diplomat>))
+Declaration(Class(<http://vicodi.org/ontology#Disaster>))
+Declaration(Class(<http://vicodi.org/ontology#Discoverer>))
+Declaration(Class(<http://vicodi.org/ontology#Disease>))
+Declaration(Class(<http://vicodi.org/ontology#Dramaturge>))
+Declaration(Class(<http://vicodi.org/ontology#Dynasty>))
+Declaration(Class(<http://vicodi.org/ontology#Ecclesiarch>))
+Declaration(Class(<http://vicodi.org/ontology#Economic-Enterprise>))
+Declaration(Class(<http://vicodi.org/ontology#Economic-Organisation>))
+Declaration(Class(<http://vicodi.org/ontology#Economic-Process>))
+Declaration(Class(<http://vicodi.org/ontology#Economic-Symbol>))
+Declaration(Class(<http://vicodi.org/ontology#Economist>))
+Declaration(Class(<http://vicodi.org/ontology#Educational-Organisation>))
+Declaration(Class(<http://vicodi.org/ontology#Election>))
+Declaration(Class(<http://vicodi.org/ontology#Emperor>))
+Declaration(Class(<http://vicodi.org/ontology#Engineer>))
+Declaration(Class(<http://vicodi.org/ontology#Entertainer>))
+Declaration(Class(<http://vicodi.org/ontology#Environment>))
+Declaration(Class(<http://vicodi.org/ontology#Ethnic-Group>))
+Declaration(Class(<http://vicodi.org/ontology#Event>))
+Declaration(Class(<http://vicodi.org/ontology#Fictional-Event>))
+Declaration(Class(<http://vicodi.org/ontology#Fictional-Person>))
+Declaration(Class(<http://vicodi.org/ontology#Field-of-Knowledge>))
+Declaration(Class(<http://vicodi.org/ontology#Film-Maker>))
+Declaration(Class(<http://vicodi.org/ontology#Flavour>))
+Declaration(Class(<http://vicodi.org/ontology#Food>))
+Declaration(Class(<http://vicodi.org/ontology#Foreign-Minister>))
+Declaration(Class(<http://vicodi.org/ontology#Functionary>))
+Declaration(Class(<http://vicodi.org/ontology#FuzzyTemporalInterval>))
+Declaration(Class(<http://vicodi.org/ontology#Geographer>))
+Declaration(Class(<http://vicodi.org/ontology#Geographical-Discovery>))
+Declaration(Class(<http://vicodi.org/ontology#Geographical-Feature>))
+Declaration(Class(<http://vicodi.org/ontology#Geographical-Region>))
+Declaration(Class(<http://vicodi.org/ontology#Governmental-Organisation>))
+Declaration(Class(<http://vicodi.org/ontology#Head-of-Government>))
+Declaration(Class(<http://vicodi.org/ontology#Head-of-State>))
+Declaration(Class(<http://vicodi.org/ontology#Idea>))
+Declaration(Class(<http://vicodi.org/ontology#Ideology>))
+Declaration(Class(<http://vicodi.org/ontology#Illness>))
+Declaration(Class(<http://vicodi.org/ontology#Individual>))
+Declaration(Class(<http://vicodi.org/ontology#Intellectual-Construct>))
+Declaration(Class(<http://vicodi.org/ontology#Intellectual-Movement>))
+Declaration(Class(<http://vicodi.org/ontology#International-Alliance>))
+Declaration(Class(<http://vicodi.org/ontology#International-Organisation>))
+Declaration(Class(<http://vicodi.org/ontology#Intra-State-Group>))
+Declaration(Class(<http://vicodi.org/ontology#Inventor>))
+Declaration(Class(<http://vicodi.org/ontology#Journal>))
+Declaration(Class(<http://vicodi.org/ontology#Journalist>))
+Declaration(Class(<http://vicodi.org/ontology#Jurist>))
+Declaration(Class(<http://vicodi.org/ontology#King>))
+Declaration(Class(<http://vicodi.org/ontology#Landmark>))
+Declaration(Class(<http://vicodi.org/ontology#Language>))
+Declaration(Class(<http://vicodi.org/ontology#Leader>))
+Declaration(Class(<http://vicodi.org/ontology#League>))
+Declaration(Class(<http://vicodi.org/ontology#Legislation>))
+Declaration(Class(<http://vicodi.org/ontology#Life-Event>))
+Declaration(Class(<http://vicodi.org/ontology#Liturgical-Object>))
+Declaration(Class(<http://vicodi.org/ontology#Location>))
+Declaration(Class(<http://vicodi.org/ontology#Location-Part-Relation>))
+Declaration(Class(<http://vicodi.org/ontology#Magnate>))
+Declaration(Class(<http://vicodi.org/ontology#Management-Organisation>))
+Declaration(Class(<http://vicodi.org/ontology#Masonic-Lodge>))
+Declaration(Class(<http://vicodi.org/ontology#Measurable-Trend>))
+Declaration(Class(<http://vicodi.org/ontology#Meeting>))
+Declaration(Class(<http://vicodi.org/ontology#Military-Organisation>))
+Declaration(Class(<http://vicodi.org/ontology#Military-Person>))
+Declaration(Class(<http://vicodi.org/ontology#Military-Unit>))
+Declaration(Class(<http://vicodi.org/ontology#Minister>))
+Declaration(Class(<http://vicodi.org/ontology#Monastery>))
+Declaration(Class(<http://vicodi.org/ontology#Movement>))
+Declaration(Class(<http://vicodi.org/ontology#Musician>))
+Declaration(Class(<http://vicodi.org/ontology#National-Symbol>))
+Declaration(Class(<http://vicodi.org/ontology#Natural-Object>))
+Declaration(Class(<http://vicodi.org/ontology#Newspaper>))
+Declaration(Class(<http://vicodi.org/ontology#Non-Military-Conflict>))
+Declaration(Class(<http://vicodi.org/ontology#Object>))
+Declaration(Class(<http://vicodi.org/ontology#Organisation>))
+Declaration(Class(<http://vicodi.org/ontology#Other-Religious-Leader>))
+Declaration(Class(<http://vicodi.org/ontology#Other-Religious-Person>))
+Declaration(Class(<http://vicodi.org/ontology#Painter>))
+Declaration(Class(<http://vicodi.org/ontology#Painting>))
+Declaration(Class(<http://vicodi.org/ontology#Pamphlet>))
+Declaration(Class(<http://vicodi.org/ontology#Party>))
+Declaration(Class(<http://vicodi.org/ontology#Pastime>))
+Declaration(Class(<http://vicodi.org/ontology#Period>))
+Declaration(Class(<http://vicodi.org/ontology#Period-in-Office>))
+Declaration(Class(<http://vicodi.org/ontology#Person>))
+Declaration(Class(<http://vicodi.org/ontology#Person-Role>))
+Declaration(Class(<http://vicodi.org/ontology#Philanthropist>))
+Declaration(Class(<http://vicodi.org/ontology#Philosopher>))
+Declaration(Class(<http://vicodi.org/ontology#Physician>))
+Declaration(Class(<http://vicodi.org/ontology#Piece-of-Music>))
+Declaration(Class(<http://vicodi.org/ontology#Political-Organisation>))
+Declaration(Class(<http://vicodi.org/ontology#Political-Region>))
+Declaration(Class(<http://vicodi.org/ontology#Political-Symbol>))
+Declaration(Class(<http://vicodi.org/ontology#Politician>))
+Declaration(Class(<http://vicodi.org/ontology#Pollution>))
+Declaration(Class(<http://vicodi.org/ontology#Pope>))
+Declaration(Class(<http://vicodi.org/ontology#Population-Movement>))
+Declaration(Class(<http://vicodi.org/ontology#Prince>))
+Declaration(Class(<http://vicodi.org/ontology#Professor>))
+Declaration(Class(<http://vicodi.org/ontology#Psychologist>))
+Declaration(Class(<http://vicodi.org/ontology#Public-Oration>))
+Declaration(Class(<http://vicodi.org/ontology#Publisher>))
+Declaration(Class(<http://vicodi.org/ontology#Queen>))
+Declaration(Class(<http://vicodi.org/ontology#Relic>))
+Declaration(Class(<http://vicodi.org/ontology#Religious-Community>))
+Declaration(Class(<http://vicodi.org/ontology#Religious-Ideology>))
+Declaration(Class(<http://vicodi.org/ontology#Religious-Leader>))
+Declaration(Class(<http://vicodi.org/ontology#Religious-Movement>))
+Declaration(Class(<http://vicodi.org/ontology#Religious-Order>))
+Declaration(Class(<http://vicodi.org/ontology#Religious-Organisation>))
+Declaration(Class(<http://vicodi.org/ontology#Religious-Practice>))
+Declaration(Class(<http://vicodi.org/ontology#Religious-Symbol>))
+Declaration(Class(<http://vicodi.org/ontology#Representative-Institution>))
+Declaration(Class(<http://vicodi.org/ontology#Ritual>))
+Declaration(Class(<http://vicodi.org/ontology#Role>))
+Declaration(Class(<http://vicodi.org/ontology#Saint>))
+Declaration(Class(<http://vicodi.org/ontology#Scandal>))
+Declaration(Class(<http://vicodi.org/ontology#Scientific-Instrument>))
+Declaration(Class(<http://vicodi.org/ontology#Scientist>))
+Declaration(Class(<http://vicodi.org/ontology#Sculptor>))
+Declaration(Class(<http://vicodi.org/ontology#Sculpture>))
+Declaration(Class(<http://vicodi.org/ontology#Secular-Ideology>))
+Declaration(Class(<http://vicodi.org/ontology#Secular-Leader>))
+Declaration(Class(<http://vicodi.org/ontology#Secular-Movement>))
+Declaration(Class(<http://vicodi.org/ontology#Settlement>))
+Declaration(Class(<http://vicodi.org/ontology#Ship>))
+Declaration(Class(<http://vicodi.org/ontology#Social-Group>))
+Declaration(Class(<http://vicodi.org/ontology#Social-Stratum>))
+Declaration(Class(<http://vicodi.org/ontology#Sportsman>))
+Declaration(Class(<http://vicodi.org/ontology#Stereotype-Group>))
+Declaration(Class(<http://vicodi.org/ontology#Structure>))
+Declaration(Class(<http://vicodi.org/ontology#Sultan>))
+Declaration(Class(<http://vicodi.org/ontology#Symbol>))
+Declaration(Class(<http://vicodi.org/ontology#Technical-Scientific-Advance>))
+Declaration(Class(<http://vicodi.org/ontology#TemporalInterval>))
+Declaration(Class(<http://vicodi.org/ontology#Theologian>))
+Declaration(Class(<http://vicodi.org/ontology#Time>))
+Declaration(Class(<http://vicodi.org/ontology#Time-Dependent>))
+Declaration(Class(<http://vicodi.org/ontology#Time-Dependent-Relation>))
+Declaration(Class(<http://vicodi.org/ontology#Trade-Association>))
+Declaration(Class(<http://vicodi.org/ontology#Trades-Union>))
+Declaration(Class(<http://vicodi.org/ontology#Trades-Unionist>))
+Declaration(Class(<http://vicodi.org/ontology#Train>))
+Declaration(Class(<http://vicodi.org/ontology#Treaty>))
+Declaration(Class(<http://vicodi.org/ontology#Trial>))
+Declaration(Class(<http://vicodi.org/ontology#University>))
+Declaration(Class(<http://vicodi.org/ontology#Uprising>))
+Declaration(Class(<http://vicodi.org/ontology#Vehicle>))
+Declaration(Class(<http://vicodi.org/ontology#VicodiOI>))
+Declaration(Class(<http://vicodi.org/ontology#Village>))
+Declaration(Class(<http://vicodi.org/ontology#War>))
+Declaration(Class(<http://vicodi.org/ontology#Water>))
+Declaration(Class(<http://vicodi.org/ontology#Work-of-Art>))
+Declaration(Class(<http://vicodi.org/ontology#Writing>))
+############################
+#   Classes
+############################
+
+# Class: <http://vicodi.org/ontology#Abbey> (<http://vicodi.org/ontology#Abbey>)
+
+SubClassOf(<http://vicodi.org/ontology#Abbey> <http://vicodi.org/ontology#Building>)
+
+# Class: <http://vicodi.org/ontology#Abstract-Notion> (<http://vicodi.org/ontology#Abstract-Notion>)
+
+SubClassOf(<http://vicodi.org/ontology#Abstract-Notion> <http://vicodi.org/ontology#Flavour>)
+
+# Class: <http://vicodi.org/ontology#Actor> (<http://vicodi.org/ontology#Actor>)
+
+SubClassOf(<http://vicodi.org/ontology#Actor> <http://vicodi.org/ontology#Entertainer>)
+
+# Class: <http://vicodi.org/ontology#Animal> (<http://vicodi.org/ontology#Animal>)
+
+SubClassOf(<http://vicodi.org/ontology#Animal> <http://vicodi.org/ontology#Natural-Object>)
+
+# Class: <http://vicodi.org/ontology#Architect> (<http://vicodi.org/ontology#Architect>)
+
+SubClassOf(<http://vicodi.org/ontology#Architect> <http://vicodi.org/ontology#Creator>)
+
+# Class: <http://vicodi.org/ontology#Armament> (<http://vicodi.org/ontology#Armament>)
+
+SubClassOf(<http://vicodi.org/ontology#Armament> <http://vicodi.org/ontology#Artefact>)
+
+# Class: <http://vicodi.org/ontology#Art-Form> (<http://vicodi.org/ontology#Art-Form>)
+
+SubClassOf(<http://vicodi.org/ontology#Art-Form> <http://vicodi.org/ontology#Abstract-Notion>)
+
+# Class: <http://vicodi.org/ontology#Artefact> (<http://vicodi.org/ontology#Artefact>)
+
+SubClassOf(<http://vicodi.org/ontology#Artefact> <http://vicodi.org/ontology#Object>)
+
+# Class: <http://vicodi.org/ontology#Artist> (<http://vicodi.org/ontology#Artist>)
+
+SubClassOf(<http://vicodi.org/ontology#Artist> <http://vicodi.org/ontology#Creator>)
+
+# Class: <http://vicodi.org/ontology#Artistic-Movement> (<http://vicodi.org/ontology#Artistic-Movement>)
+
+SubClassOf(<http://vicodi.org/ontology#Artistic-Movement> <http://vicodi.org/ontology#Movement>)
+
+# Class: <http://vicodi.org/ontology#Artistic-Style> (<http://vicodi.org/ontology#Artistic-Style>)
+
+SubClassOf(<http://vicodi.org/ontology#Artistic-Style> <http://vicodi.org/ontology#Abstract-Notion>)
+
+# Class: <http://vicodi.org/ontology#Astronaut> (<http://vicodi.org/ontology#Astronaut>)
+
+SubClassOf(<http://vicodi.org/ontology#Astronaut> <http://vicodi.org/ontology#Discoverer>)
+
+# Class: <http://vicodi.org/ontology#Author> (<http://vicodi.org/ontology#Author>)
+
+SubClassOf(<http://vicodi.org/ontology#Author> <http://vicodi.org/ontology#Creator>)
+
+# Class: <http://vicodi.org/ontology#Badge> (<http://vicodi.org/ontology#Badge>)
+
+SubClassOf(<http://vicodi.org/ontology#Badge> <http://vicodi.org/ontology#Conceptual-Object>)
+
+# Class: <http://vicodi.org/ontology#Battle> (<http://vicodi.org/ontology#Battle>)
+
+SubClassOf(<http://vicodi.org/ontology#Battle> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Board> (<http://vicodi.org/ontology#Board>)
+
+SubClassOf(<http://vicodi.org/ontology#Board> <http://vicodi.org/ontology#Management-Organisation>)
+
+# Class: <http://vicodi.org/ontology#Book> (<http://vicodi.org/ontology#Book>)
+
+SubClassOf(<http://vicodi.org/ontology#Book> <http://vicodi.org/ontology#Writing>)
+
+# Class: <http://vicodi.org/ontology#Building> (<http://vicodi.org/ontology#Building>)
+
+SubClassOf(<http://vicodi.org/ontology#Building> <http://vicodi.org/ontology#Artefact>)
+
+# Class: <http://vicodi.org/ontology#Business-Leader> (<http://vicodi.org/ontology#Business-Leader>)
+
+SubClassOf(<http://vicodi.org/ontology#Business-Leader> <http://vicodi.org/ontology#Magnate>)
+
+# Class: <http://vicodi.org/ontology#Category> (<http://vicodi.org/ontology#Category>)
+
+SubClassOf(<http://vicodi.org/ontology#Category> <http://vicodi.org/ontology#VicodiOI>)
+
+# Class: <http://vicodi.org/ontology#Cathedral> (<http://vicodi.org/ontology#Cathedral>)
+
+SubClassOf(<http://vicodi.org/ontology#Cathedral> <http://vicodi.org/ontology#Building>)
+
+# Class: <http://vicodi.org/ontology#Church> (<http://vicodi.org/ontology#Church>)
+
+SubClassOf(<http://vicodi.org/ontology#Church> <http://vicodi.org/ontology#Building>)
+
+# Class: <http://vicodi.org/ontology#Church-Reformer> (<http://vicodi.org/ontology#Church-Reformer>)
+
+SubClassOf(<http://vicodi.org/ontology#Church-Reformer> <http://vicodi.org/ontology#Religious-Leader>)
+
+# Class: <http://vicodi.org/ontology#City> (<http://vicodi.org/ontology#City>)
+
+SubClassOf(<http://vicodi.org/ontology#City> <http://vicodi.org/ontology#Settlement>)
+
+# Class: <http://vicodi.org/ontology#Cleric> (<http://vicodi.org/ontology#Cleric>)
+
+SubClassOf(<http://vicodi.org/ontology#Cleric> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#Clerical-Leader> (<http://vicodi.org/ontology#Clerical-Leader>)
+
+SubClassOf(<http://vicodi.org/ontology#Clerical-Leader> <http://vicodi.org/ontology#Leader>)
+
+# Class: <http://vicodi.org/ontology#Clothing> (<http://vicodi.org/ontology#Clothing>)
+
+SubClassOf(<http://vicodi.org/ontology#Clothing> <http://vicodi.org/ontology#Artefact>)
+
+# Class: <http://vicodi.org/ontology#Commodity> (<http://vicodi.org/ontology#Commodity>)
+
+SubClassOf(<http://vicodi.org/ontology#Commodity> <http://vicodi.org/ontology#Natural-Object>)
+
+# Class: <http://vicodi.org/ontology#Composer> (<http://vicodi.org/ontology#Composer>)
+
+SubClassOf(<http://vicodi.org/ontology#Composer> <http://vicodi.org/ontology#Artist>)
+
+# Class: <http://vicodi.org/ontology#Conceptual-Object> (<http://vicodi.org/ontology#Conceptual-Object>)
+
+SubClassOf(<http://vicodi.org/ontology#Conceptual-Object> <http://vicodi.org/ontology#Object>)
+
+# Class: <http://vicodi.org/ontology#Conductor> (<http://vicodi.org/ontology#Conductor>)
+
+SubClassOf(<http://vicodi.org/ontology#Conductor> <http://vicodi.org/ontology#Entertainer>)
+
+# Class: <http://vicodi.org/ontology#Country> (<http://vicodi.org/ontology#Country>)
+
+SubClassOf(<http://vicodi.org/ontology#Country> <http://vicodi.org/ontology#Location>)
+
+# Class: <http://vicodi.org/ontology#Creator> (<http://vicodi.org/ontology#Creator>)
+
+SubClassOf(<http://vicodi.org/ontology#Creator> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#Crime> (<http://vicodi.org/ontology#Crime>)
+
+SubClassOf(<http://vicodi.org/ontology#Crime> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Criminal> (<http://vicodi.org/ontology#Criminal>)
+
+SubClassOf(<http://vicodi.org/ontology#Criminal> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#Cultural-Agreement> (<http://vicodi.org/ontology#Cultural-Agreement>)
+
+SubClassOf(<http://vicodi.org/ontology#Cultural-Agreement> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Cultural-Organisation> (<http://vicodi.org/ontology#Cultural-Organisation>)
+
+SubClassOf(<http://vicodi.org/ontology#Cultural-Organisation> <http://vicodi.org/ontology#Organisation>)
+
+# Class: <http://vicodi.org/ontology#Dancer> (<http://vicodi.org/ontology#Dancer>)
+
+SubClassOf(<http://vicodi.org/ontology#Dancer> <http://vicodi.org/ontology#Entertainer>)
+
+# Class: <http://vicodi.org/ontology#Diplomat> (<http://vicodi.org/ontology#Diplomat>)
+
+SubClassOf(<http://vicodi.org/ontology#Diplomat> <http://vicodi.org/ontology#Functionary>)
+
+# Class: <http://vicodi.org/ontology#Disaster> (<http://vicodi.org/ontology#Disaster>)
+
+SubClassOf(<http://vicodi.org/ontology#Disaster> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Discoverer> (<http://vicodi.org/ontology#Discoverer>)
+
+SubClassOf(<http://vicodi.org/ontology#Discoverer> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#Disease> (<http://vicodi.org/ontology#Disease>)
+
+SubClassOf(<http://vicodi.org/ontology#Disease> <http://vicodi.org/ontology#Natural-Object>)
+
+# Class: <http://vicodi.org/ontology#Dramaturge> (<http://vicodi.org/ontology#Dramaturge>)
+
+SubClassOf(<http://vicodi.org/ontology#Dramaturge> <http://vicodi.org/ontology#Creator>)
+
+# Class: <http://vicodi.org/ontology#Dynasty> (<http://vicodi.org/ontology#Dynasty>)
+
+SubClassOf(<http://vicodi.org/ontology#Dynasty> <http://vicodi.org/ontology#Social-Group>)
+
+# Class: <http://vicodi.org/ontology#Ecclesiarch> (<http://vicodi.org/ontology#Ecclesiarch>)
+
+SubClassOf(<http://vicodi.org/ontology#Ecclesiarch> <http://vicodi.org/ontology#Religious-Leader>)
+
+# Class: <http://vicodi.org/ontology#Economic-Enterprise> (<http://vicodi.org/ontology#Economic-Enterprise>)
+
+SubClassOf(<http://vicodi.org/ontology#Economic-Enterprise> <http://vicodi.org/ontology#Economic-Organisation>)
+
+# Class: <http://vicodi.org/ontology#Economic-Organisation> (<http://vicodi.org/ontology#Economic-Organisation>)
+
+SubClassOf(<http://vicodi.org/ontology#Economic-Organisation> <http://vicodi.org/ontology#Organisation>)
+
+# Class: <http://vicodi.org/ontology#Economic-Process> (<http://vicodi.org/ontology#Economic-Process>)
+
+SubClassOf(<http://vicodi.org/ontology#Economic-Process> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Economic-Symbol> (<http://vicodi.org/ontology#Economic-Symbol>)
+
+SubClassOf(<http://vicodi.org/ontology#Economic-Symbol> <http://vicodi.org/ontology#Symbol>)
+
+# Class: <http://vicodi.org/ontology#Economist> (<http://vicodi.org/ontology#Economist>)
+
+SubClassOf(<http://vicodi.org/ontology#Economist> <http://vicodi.org/ontology#Scientist>)
+
+# Class: <http://vicodi.org/ontology#Educational-Organisation> (<http://vicodi.org/ontology#Educational-Organisation>)
+
+SubClassOf(<http://vicodi.org/ontology#Educational-Organisation> <http://vicodi.org/ontology#Organisation>)
+
+# Class: <http://vicodi.org/ontology#Election> (<http://vicodi.org/ontology#Election>)
+
+SubClassOf(<http://vicodi.org/ontology#Election> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Emperor> (<http://vicodi.org/ontology#Emperor>)
+
+SubClassOf(<http://vicodi.org/ontology#Emperor> <http://vicodi.org/ontology#Head-of-State>)
+
+# Class: <http://vicodi.org/ontology#Engineer> (<http://vicodi.org/ontology#Engineer>)
+
+SubClassOf(<http://vicodi.org/ontology#Engineer> <http://vicodi.org/ontology#Creator>)
+
+# Class: <http://vicodi.org/ontology#Entertainer> (<http://vicodi.org/ontology#Entertainer>)
+
+SubClassOf(<http://vicodi.org/ontology#Entertainer> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#Environment> (<http://vicodi.org/ontology#Environment>)
+
+SubClassOf(<http://vicodi.org/ontology#Environment> <http://vicodi.org/ontology#Natural-Object>)
+
+# Class: <http://vicodi.org/ontology#Ethnic-Group> (<http://vicodi.org/ontology#Ethnic-Group>)
+
+SubClassOf(<http://vicodi.org/ontology#Ethnic-Group> <http://vicodi.org/ontology#Social-Group>)
+
+# Class: <http://vicodi.org/ontology#Event> (<http://vicodi.org/ontology#Event>)
+
+SubClassOf(<http://vicodi.org/ontology#Event> <http://vicodi.org/ontology#Flavour>)
+
+# Class: <http://vicodi.org/ontology#Fictional-Event> (<http://vicodi.org/ontology#Fictional-Event>)
+
+SubClassOf(<http://vicodi.org/ontology#Fictional-Event> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Fictional-Person> (<http://vicodi.org/ontology#Fictional-Person>)
+
+SubClassOf(<http://vicodi.org/ontology#Fictional-Person> <http://vicodi.org/ontology#Individual>)
+
+# Class: <http://vicodi.org/ontology#Field-of-Knowledge> (<http://vicodi.org/ontology#Field-of-Knowledge>)
+
+SubClassOf(<http://vicodi.org/ontology#Field-of-Knowledge> <http://vicodi.org/ontology#Intellectual-Construct>)
+
+# Class: <http://vicodi.org/ontology#Film-Maker> (<http://vicodi.org/ontology#Film-Maker>)
+
+SubClassOf(<http://vicodi.org/ontology#Film-Maker> <http://vicodi.org/ontology#Creator>)
+
+# Class: <http://vicodi.org/ontology#Flavour> (<http://vicodi.org/ontology#Flavour>)
+
+SubClassOf(<http://vicodi.org/ontology#Flavour> <http://vicodi.org/ontology#Time-Dependent>)
+
+# Class: <http://vicodi.org/ontology#Food> (<http://vicodi.org/ontology#Food>)
+
+SubClassOf(<http://vicodi.org/ontology#Food> <http://vicodi.org/ontology#Natural-Object>)
+
+# Class: <http://vicodi.org/ontology#Foreign-Minister> (<http://vicodi.org/ontology#Foreign-Minister>)
+
+SubClassOf(<http://vicodi.org/ontology#Foreign-Minister> <http://vicodi.org/ontology#Minister>)
+
+# Class: <http://vicodi.org/ontology#Functionary> (<http://vicodi.org/ontology#Functionary>)
+
+SubClassOf(<http://vicodi.org/ontology#Functionary> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#FuzzyTemporalInterval> (<http://vicodi.org/ontology#FuzzyTemporalInterval>)
+
+SubClassOf(<http://vicodi.org/ontology#FuzzyTemporalInterval> <http://vicodi.org/ontology#Time>)
+
+# Class: <http://vicodi.org/ontology#Geographer> (<http://vicodi.org/ontology#Geographer>)
+
+SubClassOf(<http://vicodi.org/ontology#Geographer> <http://vicodi.org/ontology#Scientist>)
+
+# Class: <http://vicodi.org/ontology#Geographical-Discovery> (<http://vicodi.org/ontology#Geographical-Discovery>)
+
+SubClassOf(<http://vicodi.org/ontology#Geographical-Discovery> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Geographical-Feature> (<http://vicodi.org/ontology#Geographical-Feature>)
+
+SubClassOf(<http://vicodi.org/ontology#Geographical-Feature> <http://vicodi.org/ontology#Location>)
+
+# Class: <http://vicodi.org/ontology#Geographical-Region> (<http://vicodi.org/ontology#Geographical-Region>)
+
+SubClassOf(<http://vicodi.org/ontology#Geographical-Region> <http://vicodi.org/ontology#Geographical-Feature>)
+
+# Class: <http://vicodi.org/ontology#Governmental-Organisation> (<http://vicodi.org/ontology#Governmental-Organisation>)
+
+SubClassOf(<http://vicodi.org/ontology#Governmental-Organisation> <http://vicodi.org/ontology#Political-Organisation>)
+
+# Class: <http://vicodi.org/ontology#Head-of-Government> (<http://vicodi.org/ontology#Head-of-Government>)
+
+SubClassOf(<http://vicodi.org/ontology#Head-of-Government> <http://vicodi.org/ontology#Secular-Leader>)
+
+# Class: <http://vicodi.org/ontology#Head-of-State> (<http://vicodi.org/ontology#Head-of-State>)
+
+SubClassOf(<http://vicodi.org/ontology#Head-of-State> <http://vicodi.org/ontology#Secular-Leader>)
+
+# Class: <http://vicodi.org/ontology#Idea> (<http://vicodi.org/ontology#Idea>)
+
+SubClassOf(<http://vicodi.org/ontology#Idea> <http://vicodi.org/ontology#Abstract-Notion>)
+
+# Class: <http://vicodi.org/ontology#Ideology> (<http://vicodi.org/ontology#Ideology>)
+
+SubClassOf(<http://vicodi.org/ontology#Ideology> <http://vicodi.org/ontology#Abstract-Notion>)
+
+# Class: <http://vicodi.org/ontology#Illness> (<http://vicodi.org/ontology#Illness>)
+
+SubClassOf(<http://vicodi.org/ontology#Illness> <http://vicodi.org/ontology#Life-Event>)
+
+# Class: <http://vicodi.org/ontology#Individual> (<http://vicodi.org/ontology#Individual>)
+
+SubClassOf(<http://vicodi.org/ontology#Individual> <http://vicodi.org/ontology#Flavour>)
+
+# Class: <http://vicodi.org/ontology#Intellectual-Construct> (<http://vicodi.org/ontology#Intellectual-Construct>)
+
+SubClassOf(<http://vicodi.org/ontology#Intellectual-Construct> <http://vicodi.org/ontology#Abstract-Notion>)
+
+# Class: <http://vicodi.org/ontology#Intellectual-Movement> (<http://vicodi.org/ontology#Intellectual-Movement>)
+
+SubClassOf(<http://vicodi.org/ontology#Intellectual-Movement> <http://vicodi.org/ontology#Movement>)
+
+# Class: <http://vicodi.org/ontology#International-Alliance> (<http://vicodi.org/ontology#International-Alliance>)
+
+SubClassOf(<http://vicodi.org/ontology#International-Alliance> <http://vicodi.org/ontology#Political-Organisation>)
+
+# Class: <http://vicodi.org/ontology#International-Organisation> (<http://vicodi.org/ontology#International-Organisation>)
+
+SubClassOf(<http://vicodi.org/ontology#International-Organisation> <http://vicodi.org/ontology#Organisation>)
+
+# Class: <http://vicodi.org/ontology#Intra-State-Group> (<http://vicodi.org/ontology#Intra-State-Group>)
+
+SubClassOf(<http://vicodi.org/ontology#Intra-State-Group> <http://vicodi.org/ontology#Location>)
+
+# Class: <http://vicodi.org/ontology#Inventor> (<http://vicodi.org/ontology#Inventor>)
+
+SubClassOf(<http://vicodi.org/ontology#Inventor> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#Journal> (<http://vicodi.org/ontology#Journal>)
+
+SubClassOf(<http://vicodi.org/ontology#Journal> <http://vicodi.org/ontology#Writing>)
+
+# Class: <http://vicodi.org/ontology#Journalist> (<http://vicodi.org/ontology#Journalist>)
+
+SubClassOf(<http://vicodi.org/ontology#Journalist> <http://vicodi.org/ontology#Creator>)
+
+# Class: <http://vicodi.org/ontology#Jurist> (<http://vicodi.org/ontology#Jurist>)
+
+SubClassOf(<http://vicodi.org/ontology#Jurist> <http://vicodi.org/ontology#Functionary>)
+
+# Class: <http://vicodi.org/ontology#King> (<http://vicodi.org/ontology#King>)
+
+SubClassOf(<http://vicodi.org/ontology#King> <http://vicodi.org/ontology#Head-of-State>)
+
+# Class: <http://vicodi.org/ontology#Landmark> (<http://vicodi.org/ontology#Landmark>)
+
+SubClassOf(<http://vicodi.org/ontology#Landmark> <http://vicodi.org/ontology#Geographical-Feature>)
+
+# Class: <http://vicodi.org/ontology#Language> (<http://vicodi.org/ontology#Language>)
+
+SubClassOf(<http://vicodi.org/ontology#Language> <http://vicodi.org/ontology#Abstract-Notion>)
+
+# Class: <http://vicodi.org/ontology#Leader> (<http://vicodi.org/ontology#Leader>)
+
+SubClassOf(<http://vicodi.org/ontology#Leader> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#League> (<http://vicodi.org/ontology#League>)
+
+SubClassOf(<http://vicodi.org/ontology#League> <http://vicodi.org/ontology#Political-Organisation>)
+
+# Class: <http://vicodi.org/ontology#Legislation> (<http://vicodi.org/ontology#Legislation>)
+
+SubClassOf(<http://vicodi.org/ontology#Legislation> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Life-Event> (<http://vicodi.org/ontology#Life-Event>)
+
+SubClassOf(<http://vicodi.org/ontology#Life-Event> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Liturgical-Object> (<http://vicodi.org/ontology#Liturgical-Object>)
+
+SubClassOf(<http://vicodi.org/ontology#Liturgical-Object> <http://vicodi.org/ontology#Artefact>)
+
+# Class: <http://vicodi.org/ontology#Location> (<http://vicodi.org/ontology#Location>)
+
+SubClassOf(<http://vicodi.org/ontology#Location> <http://vicodi.org/ontology#Flavour>)
+
+# Class: <http://vicodi.org/ontology#Location-Part-Relation> (<http://vicodi.org/ontology#Location-Part-Relation>)
+
+SubClassOf(<http://vicodi.org/ontology#Location-Part-Relation> <http://vicodi.org/ontology#Time-Dependent-Relation>)
+
+# Class: <http://vicodi.org/ontology#Magnate> (<http://vicodi.org/ontology#Magnate>)
+
+SubClassOf(<http://vicodi.org/ontology#Magnate> <http://vicodi.org/ontology#Secular-Leader>)
+
+# Class: <http://vicodi.org/ontology#Management-Organisation> (<http://vicodi.org/ontology#Management-Organisation>)
+
+SubClassOf(<http://vicodi.org/ontology#Management-Organisation> <http://vicodi.org/ontology#Organisation>)
+
+# Class: <http://vicodi.org/ontology#Masonic-Lodge> (<http://vicodi.org/ontology#Masonic-Lodge>)
+
+SubClassOf(<http://vicodi.org/ontology#Masonic-Lodge> <http://vicodi.org/ontology#Cultural-Organisation>)
+
+# Class: <http://vicodi.org/ontology#Measurable-Trend> (<http://vicodi.org/ontology#Measurable-Trend>)
+
+SubClassOf(<http://vicodi.org/ontology#Measurable-Trend> <http://vicodi.org/ontology#Abstract-Notion>)
+
+# Class: <http://vicodi.org/ontology#Meeting> (<http://vicodi.org/ontology#Meeting>)
+
+SubClassOf(<http://vicodi.org/ontology#Meeting> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Military-Organisation> (<http://vicodi.org/ontology#Military-Organisation>)
+
+SubClassOf(<http://vicodi.org/ontology#Military-Organisation> <http://vicodi.org/ontology#Organisation>)
+
+# Class: <http://vicodi.org/ontology#Military-Person> (<http://vicodi.org/ontology#Military-Person>)
+
+SubClassOf(<http://vicodi.org/ontology#Military-Person> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#Military-Unit> (<http://vicodi.org/ontology#Military-Unit>)
+
+SubClassOf(<http://vicodi.org/ontology#Military-Unit> <http://vicodi.org/ontology#Military-Organisation>)
+
+# Class: <http://vicodi.org/ontology#Minister> (<http://vicodi.org/ontology#Minister>)
+
+SubClassOf(<http://vicodi.org/ontology#Minister> <http://vicodi.org/ontology#Functionary>)
+
+# Class: <http://vicodi.org/ontology#Monastery> (<http://vicodi.org/ontology#Monastery>)
+
+SubClassOf(<http://vicodi.org/ontology#Monastery> <http://vicodi.org/ontology#Building>)
+
+# Class: <http://vicodi.org/ontology#Movement> (<http://vicodi.org/ontology#Movement>)
+
+SubClassOf(<http://vicodi.org/ontology#Movement> <http://vicodi.org/ontology#Social-Group>)
+
+# Class: <http://vicodi.org/ontology#Musician> (<http://vicodi.org/ontology#Musician>)
+
+SubClassOf(<http://vicodi.org/ontology#Musician> <http://vicodi.org/ontology#Entertainer>)
+
+# Class: <http://vicodi.org/ontology#National-Symbol> (<http://vicodi.org/ontology#National-Symbol>)
+
+SubClassOf(<http://vicodi.org/ontology#National-Symbol> <http://vicodi.org/ontology#Symbol>)
+
+# Class: <http://vicodi.org/ontology#Natural-Object> (<http://vicodi.org/ontology#Natural-Object>)
+
+SubClassOf(<http://vicodi.org/ontology#Natural-Object> <http://vicodi.org/ontology#Object>)
+
+# Class: <http://vicodi.org/ontology#Newspaper> (<http://vicodi.org/ontology#Newspaper>)
+
+SubClassOf(<http://vicodi.org/ontology#Newspaper> <http://vicodi.org/ontology#Writing>)
+
+# Class: <http://vicodi.org/ontology#Non-Military-Conflict> (<http://vicodi.org/ontology#Non-Military-Conflict>)
+
+SubClassOf(<http://vicodi.org/ontology#Non-Military-Conflict> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Object> (<http://vicodi.org/ontology#Object>)
+
+SubClassOf(<http://vicodi.org/ontology#Object> <http://vicodi.org/ontology#Flavour>)
+
+# Class: <http://vicodi.org/ontology#Organisation> (<http://vicodi.org/ontology#Organisation>)
+
+SubClassOf(<http://vicodi.org/ontology#Organisation> <http://vicodi.org/ontology#Flavour>)
+
+# Class: <http://vicodi.org/ontology#Other-Religious-Leader> (<http://vicodi.org/ontology#Other-Religious-Leader>)
+
+SubClassOf(<http://vicodi.org/ontology#Other-Religious-Leader> <http://vicodi.org/ontology#Religious-Leader>)
+
+# Class: <http://vicodi.org/ontology#Other-Religious-Person> (<http://vicodi.org/ontology#Other-Religious-Person>)
+
+SubClassOf(<http://vicodi.org/ontology#Other-Religious-Person> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#Painter> (<http://vicodi.org/ontology#Painter>)
+
+SubClassOf(<http://vicodi.org/ontology#Painter> <http://vicodi.org/ontology#Artist>)
+
+# Class: <http://vicodi.org/ontology#Painting> (<http://vicodi.org/ontology#Painting>)
+
+SubClassOf(<http://vicodi.org/ontology#Painting> <http://vicodi.org/ontology#Work-of-Art>)
+
+# Class: <http://vicodi.org/ontology#Pamphlet> (<http://vicodi.org/ontology#Pamphlet>)
+
+SubClassOf(<http://vicodi.org/ontology#Pamphlet> <http://vicodi.org/ontology#Writing>)
+
+# Class: <http://vicodi.org/ontology#Party> (<http://vicodi.org/ontology#Party>)
+
+SubClassOf(<http://vicodi.org/ontology#Party> <http://vicodi.org/ontology#Political-Organisation>)
+
+# Class: <http://vicodi.org/ontology#Pastime> (<http://vicodi.org/ontology#Pastime>)
+
+SubClassOf(<http://vicodi.org/ontology#Pastime> <http://vicodi.org/ontology#Conceptual-Object>)
+
+# Class: <http://vicodi.org/ontology#Period> (<http://vicodi.org/ontology#Period>)
+
+SubClassOf(<http://vicodi.org/ontology#Period> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Period-in-Office> (<http://vicodi.org/ontology#Period-in-Office>)
+
+SubClassOf(<http://vicodi.org/ontology#Period-in-Office> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Person> (<http://vicodi.org/ontology#Person>)
+
+SubClassOf(<http://vicodi.org/ontology#Person> <http://vicodi.org/ontology#Individual>)
+
+# Class: <http://vicodi.org/ontology#Person-Role> (<http://vicodi.org/ontology#Person-Role>)
+
+SubClassOf(<http://vicodi.org/ontology#Person-Role> <http://vicodi.org/ontology#Role>)
+
+# Class: <http://vicodi.org/ontology#Philanthropist> (<http://vicodi.org/ontology#Philanthropist>)
+
+SubClassOf(<http://vicodi.org/ontology#Philanthropist> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#Philosopher> (<http://vicodi.org/ontology#Philosopher>)
+
+SubClassOf(<http://vicodi.org/ontology#Philosopher> <http://vicodi.org/ontology#Scientist>)
+
+# Class: <http://vicodi.org/ontology#Physician> (<http://vicodi.org/ontology#Physician>)
+
+SubClassOf(<http://vicodi.org/ontology#Physician> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#Piece-of-Music> (<http://vicodi.org/ontology#Piece-of-Music>)
+
+SubClassOf(<http://vicodi.org/ontology#Piece-of-Music> <http://vicodi.org/ontology#Work-of-Art>)
+
+# Class: <http://vicodi.org/ontology#Political-Organisation> (<http://vicodi.org/ontology#Political-Organisation>)
+
+SubClassOf(<http://vicodi.org/ontology#Political-Organisation> <http://vicodi.org/ontology#Organisation>)
+
+# Class: <http://vicodi.org/ontology#Political-Region> (<http://vicodi.org/ontology#Political-Region>)
+
+SubClassOf(<http://vicodi.org/ontology#Political-Region> <http://vicodi.org/ontology#Location>)
+
+# Class: <http://vicodi.org/ontology#Political-Symbol> (<http://vicodi.org/ontology#Political-Symbol>)
+
+SubClassOf(<http://vicodi.org/ontology#Political-Symbol> <http://vicodi.org/ontology#Symbol>)
+
+# Class: <http://vicodi.org/ontology#Politician> (<http://vicodi.org/ontology#Politician>)
+
+SubClassOf(<http://vicodi.org/ontology#Politician> <http://vicodi.org/ontology#Functionary>)
+
+# Class: <http://vicodi.org/ontology#Pollution> (<http://vicodi.org/ontology#Pollution>)
+
+SubClassOf(<http://vicodi.org/ontology#Pollution> <http://vicodi.org/ontology#Artefact>)
+
+# Class: <http://vicodi.org/ontology#Pope> (<http://vicodi.org/ontology#Pope>)
+
+SubClassOf(<http://vicodi.org/ontology#Pope> <http://vicodi.org/ontology#Religious-Leader>)
+
+# Class: <http://vicodi.org/ontology#Population-Movement> (<http://vicodi.org/ontology#Population-Movement>)
+
+SubClassOf(<http://vicodi.org/ontology#Population-Movement> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Prince> (<http://vicodi.org/ontology#Prince>)
+
+SubClassOf(<http://vicodi.org/ontology#Prince> <http://vicodi.org/ontology#Head-of-State>)
+
+# Class: <http://vicodi.org/ontology#Professor> (<http://vicodi.org/ontology#Professor>)
+
+SubClassOf(<http://vicodi.org/ontology#Professor> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#Psychologist> (<http://vicodi.org/ontology#Psychologist>)
+
+SubClassOf(<http://vicodi.org/ontology#Psychologist> <http://vicodi.org/ontology#Scientist>)
+
+# Class: <http://vicodi.org/ontology#Public-Oration> (<http://vicodi.org/ontology#Public-Oration>)
+
+SubClassOf(<http://vicodi.org/ontology#Public-Oration> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Publisher> (<http://vicodi.org/ontology#Publisher>)
+
+SubClassOf(<http://vicodi.org/ontology#Publisher> <http://vicodi.org/ontology#Creator>)
+
+# Class: <http://vicodi.org/ontology#Queen> (<http://vicodi.org/ontology#Queen>)
+
+SubClassOf(<http://vicodi.org/ontology#Queen> <http://vicodi.org/ontology#Head-of-State>)
+
+# Class: <http://vicodi.org/ontology#Relic> (<http://vicodi.org/ontology#Relic>)
+
+SubClassOf(<http://vicodi.org/ontology#Relic> <http://vicodi.org/ontology#Artefact>)
+
+# Class: <http://vicodi.org/ontology#Religious-Community> (<http://vicodi.org/ontology#Religious-Community>)
+
+SubClassOf(<http://vicodi.org/ontology#Religious-Community> <http://vicodi.org/ontology#Religious-Organisation>)
+
+# Class: <http://vicodi.org/ontology#Religious-Ideology> (<http://vicodi.org/ontology#Religious-Ideology>)
+
+SubClassOf(<http://vicodi.org/ontology#Religious-Ideology> <http://vicodi.org/ontology#Ideology>)
+
+# Class: <http://vicodi.org/ontology#Religious-Leader> (<http://vicodi.org/ontology#Religious-Leader>)
+
+SubClassOf(<http://vicodi.org/ontology#Religious-Leader> <http://vicodi.org/ontology#Leader>)
+
+# Class: <http://vicodi.org/ontology#Religious-Movement> (<http://vicodi.org/ontology#Religious-Movement>)
+
+SubClassOf(<http://vicodi.org/ontology#Religious-Movement> <http://vicodi.org/ontology#Movement>)
+
+# Class: <http://vicodi.org/ontology#Religious-Order> (<http://vicodi.org/ontology#Religious-Order>)
+
+SubClassOf(<http://vicodi.org/ontology#Religious-Order> <http://vicodi.org/ontology#Religious-Organisation>)
+
+# Class: <http://vicodi.org/ontology#Religious-Organisation> (<http://vicodi.org/ontology#Religious-Organisation>)
+
+SubClassOf(<http://vicodi.org/ontology#Religious-Organisation> <http://vicodi.org/ontology#Cultural-Organisation>)
+
+# Class: <http://vicodi.org/ontology#Religious-Practice> (<http://vicodi.org/ontology#Religious-Practice>)
+
+SubClassOf(<http://vicodi.org/ontology#Religious-Practice> <http://vicodi.org/ontology#Conceptual-Object>)
+
+# Class: <http://vicodi.org/ontology#Religious-Symbol> (<http://vicodi.org/ontology#Religious-Symbol>)
+
+SubClassOf(<http://vicodi.org/ontology#Religious-Symbol> <http://vicodi.org/ontology#Symbol>)
+
+# Class: <http://vicodi.org/ontology#Representative-Institution> (<http://vicodi.org/ontology#Representative-Institution>)
+
+SubClassOf(<http://vicodi.org/ontology#Representative-Institution> <http://vicodi.org/ontology#Political-Organisation>)
+
+# Class: <http://vicodi.org/ontology#Ritual> (<http://vicodi.org/ontology#Ritual>)
+
+SubClassOf(<http://vicodi.org/ontology#Ritual> <http://vicodi.org/ontology#Conceptual-Object>)
+
+# Class: <http://vicodi.org/ontology#Role> (<http://vicodi.org/ontology#Role>)
+
+SubClassOf(<http://vicodi.org/ontology#Role> <http://vicodi.org/ontology#Time-Dependent>)
+
+# Class: <http://vicodi.org/ontology#Saint> (<http://vicodi.org/ontology#Saint>)
+
+SubClassOf(<http://vicodi.org/ontology#Saint> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#Scandal> (<http://vicodi.org/ontology#Scandal>)
+
+SubClassOf(<http://vicodi.org/ontology#Scandal> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Scientific-Instrument> (<http://vicodi.org/ontology#Scientific-Instrument>)
+
+SubClassOf(<http://vicodi.org/ontology#Scientific-Instrument> <http://vicodi.org/ontology#Artefact>)
+
+# Class: <http://vicodi.org/ontology#Scientist> (<http://vicodi.org/ontology#Scientist>)
+
+SubClassOf(<http://vicodi.org/ontology#Scientist> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#Sculptor> (<http://vicodi.org/ontology#Sculptor>)
+
+SubClassOf(<http://vicodi.org/ontology#Sculptor> <http://vicodi.org/ontology#Artist>)
+
+# Class: <http://vicodi.org/ontology#Sculpture> (<http://vicodi.org/ontology#Sculpture>)
+
+SubClassOf(<http://vicodi.org/ontology#Sculpture> <http://vicodi.org/ontology#Work-of-Art>)
+
+# Class: <http://vicodi.org/ontology#Secular-Ideology> (<http://vicodi.org/ontology#Secular-Ideology>)
+
+SubClassOf(<http://vicodi.org/ontology#Secular-Ideology> <http://vicodi.org/ontology#Ideology>)
+
+# Class: <http://vicodi.org/ontology#Secular-Leader> (<http://vicodi.org/ontology#Secular-Leader>)
+
+SubClassOf(<http://vicodi.org/ontology#Secular-Leader> <http://vicodi.org/ontology#Leader>)
+
+# Class: <http://vicodi.org/ontology#Secular-Movement> (<http://vicodi.org/ontology#Secular-Movement>)
+
+SubClassOf(<http://vicodi.org/ontology#Secular-Movement> <http://vicodi.org/ontology#Movement>)
+
+# Class: <http://vicodi.org/ontology#Settlement> (<http://vicodi.org/ontology#Settlement>)
+
+SubClassOf(<http://vicodi.org/ontology#Settlement> <http://vicodi.org/ontology#Location>)
+
+# Class: <http://vicodi.org/ontology#Ship> (<http://vicodi.org/ontology#Ship>)
+
+SubClassOf(<http://vicodi.org/ontology#Ship> <http://vicodi.org/ontology#Vehicle>)
+
+# Class: <http://vicodi.org/ontology#Social-Group> (<http://vicodi.org/ontology#Social-Group>)
+
+SubClassOf(<http://vicodi.org/ontology#Social-Group> <http://vicodi.org/ontology#Flavour>)
+
+# Class: <http://vicodi.org/ontology#Social-Stratum> (<http://vicodi.org/ontology#Social-Stratum>)
+
+SubClassOf(<http://vicodi.org/ontology#Social-Stratum> <http://vicodi.org/ontology#Social-Group>)
+
+# Class: <http://vicodi.org/ontology#Sportsman> (<http://vicodi.org/ontology#Sportsman>)
+
+SubClassOf(<http://vicodi.org/ontology#Sportsman> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#Stereotype-Group> (<http://vicodi.org/ontology#Stereotype-Group>)
+
+SubClassOf(<http://vicodi.org/ontology#Stereotype-Group> <http://vicodi.org/ontology#Social-Group>)
+
+# Class: <http://vicodi.org/ontology#Structure> (<http://vicodi.org/ontology#Structure>)
+
+SubClassOf(<http://vicodi.org/ontology#Structure> <http://vicodi.org/ontology#Artefact>)
+
+# Class: <http://vicodi.org/ontology#Sultan> (<http://vicodi.org/ontology#Sultan>)
+
+SubClassOf(<http://vicodi.org/ontology#Sultan> <http://vicodi.org/ontology#Head-of-State>)
+
+# Class: <http://vicodi.org/ontology#Symbol> (<http://vicodi.org/ontology#Symbol>)
+
+SubClassOf(<http://vicodi.org/ontology#Symbol> <http://vicodi.org/ontology#Role>)
+
+# Class: <http://vicodi.org/ontology#Technical-Scientific-Advance> (<http://vicodi.org/ontology#Technical-Scientific-Advance>)
+
+SubClassOf(<http://vicodi.org/ontology#Technical-Scientific-Advance> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#TemporalInterval> (<http://vicodi.org/ontology#TemporalInterval>)
+
+SubClassOf(<http://vicodi.org/ontology#TemporalInterval> <http://vicodi.org/ontology#Time>)
+
+# Class: <http://vicodi.org/ontology#Theologian> (<http://vicodi.org/ontology#Theologian>)
+
+SubClassOf(<http://vicodi.org/ontology#Theologian> <http://vicodi.org/ontology#Person-Role>)
+
+# Class: <http://vicodi.org/ontology#Time> (<http://vicodi.org/ontology#Time>)
+
+SubClassOf(<http://vicodi.org/ontology#Time> <http://vicodi.org/ontology#VicodiOI>)
+
+# Class: <http://vicodi.org/ontology#Time-Dependent> (<http://vicodi.org/ontology#Time-Dependent>)
+
+SubClassOf(<http://vicodi.org/ontology#Time-Dependent> <http://vicodi.org/ontology#VicodiOI>)
+
+# Class: <http://vicodi.org/ontology#Time-Dependent-Relation> (<http://vicodi.org/ontology#Time-Dependent-Relation>)
+
+SubClassOf(<http://vicodi.org/ontology#Time-Dependent-Relation> <http://vicodi.org/ontology#Time-Dependent>)
+
+# Class: <http://vicodi.org/ontology#Trade-Association> (<http://vicodi.org/ontology#Trade-Association>)
+
+SubClassOf(<http://vicodi.org/ontology#Trade-Association> <http://vicodi.org/ontology#Economic-Organisation>)
+
+# Class: <http://vicodi.org/ontology#Trades-Union> (<http://vicodi.org/ontology#Trades-Union>)
+
+SubClassOf(<http://vicodi.org/ontology#Trades-Union> <http://vicodi.org/ontology#Economic-Organisation>)
+
+# Class: <http://vicodi.org/ontology#Trades-Unionist> (<http://vicodi.org/ontology#Trades-Unionist>)
+
+SubClassOf(<http://vicodi.org/ontology#Trades-Unionist> <http://vicodi.org/ontology#Secular-Leader>)
+
+# Class: <http://vicodi.org/ontology#Train> (<http://vicodi.org/ontology#Train>)
+
+SubClassOf(<http://vicodi.org/ontology#Train> <http://vicodi.org/ontology#Vehicle>)
+
+# Class: <http://vicodi.org/ontology#Treaty> (<http://vicodi.org/ontology#Treaty>)
+
+SubClassOf(<http://vicodi.org/ontology#Treaty> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Trial> (<http://vicodi.org/ontology#Trial>)
+
+SubClassOf(<http://vicodi.org/ontology#Trial> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#University> (<http://vicodi.org/ontology#University>)
+
+SubClassOf(<http://vicodi.org/ontology#University> <http://vicodi.org/ontology#Educational-Organisation>)
+
+# Class: <http://vicodi.org/ontology#Uprising> (<http://vicodi.org/ontology#Uprising>)
+
+SubClassOf(<http://vicodi.org/ontology#Uprising> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Vehicle> (<http://vicodi.org/ontology#Vehicle>)
+
+SubClassOf(<http://vicodi.org/ontology#Vehicle> <http://vicodi.org/ontology#Artefact>)
+
+# Class: <http://vicodi.org/ontology#VicodiOI> (<http://vicodi.org/ontology#VicodiOI>)
+
+SubClassOf(<http://vicodi.org/ontology#VicodiOI> owl:Thing)
+
+# Class: <http://vicodi.org/ontology#Village> (<http://vicodi.org/ontology#Village>)
+
+SubClassOf(<http://vicodi.org/ontology#Village> <http://vicodi.org/ontology#Settlement>)
+
+# Class: <http://vicodi.org/ontology#War> (<http://vicodi.org/ontology#War>)
+
+SubClassOf(<http://vicodi.org/ontology#War> <http://vicodi.org/ontology#Event>)
+
+# Class: <http://vicodi.org/ontology#Water> (<http://vicodi.org/ontology#Water>)
+
+SubClassOf(<http://vicodi.org/ontology#Water> <http://vicodi.org/ontology#Geographical-Feature>)
+
+# Class: <http://vicodi.org/ontology#Work-of-Art> (<http://vicodi.org/ontology#Work-of-Art>)
+
+SubClassOf(<http://vicodi.org/ontology#Work-of-Art> <http://vicodi.org/ontology#Artefact>)
+
+# Class: <http://vicodi.org/ontology#Writing> (<http://vicodi.org/ontology#Writing>)
+
+SubClassOf(<http://vicodi.org/ontology#Writing> <http://vicodi.org/ontology#Artefact>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

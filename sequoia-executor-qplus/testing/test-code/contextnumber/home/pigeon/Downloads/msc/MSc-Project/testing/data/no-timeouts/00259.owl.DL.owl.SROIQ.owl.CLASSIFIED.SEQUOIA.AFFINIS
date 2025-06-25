@@ -1,0 +1,88 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#Context>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#Difficulty>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#IntendedEndUserRole>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#InteractivityLevel>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#InteractivityType>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#SemanticDensity>))
+Declaration(Class(<http://dublincore.org/2000/03/13/dcq#TypeScheme>))
+Declaration(Class(<http://www.imsproject.org/rdf/imsmd_educationalv1p2#Context>))
+Declaration(Class(<http://www.imsproject.org/rdf/imsmd_educationalv1p2#Difficulty>))
+Declaration(Class(<http://www.imsproject.org/rdf/imsmd_educationalv1p2#IntendedEndUserRole>))
+Declaration(Class(<http://www.imsproject.org/rdf/imsmd_educationalv1p2#InteractivitType>))
+Declaration(Class(<http://www.imsproject.org/rdf/imsmd_educationalv1p2#InteractivityLevel>))
+Declaration(Class(<http://www.imsproject.org/rdf/imsmd_educationalv1p2#LearningResourceType>))
+Declaration(Class(<http://www.imsproject.org/rdf/imsmd_educationalv1p2#SemanticDensity>))
+############################
+#   Classes
+############################
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#Context> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#Context>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#Context> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#Difficulty> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#Difficulty>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#Difficulty> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#IntendedEndUserRole> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#IntendedEndUserRole>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#IntendedEndUserRole> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#InteractivityLevel> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#InteractivityLevel>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#InteractivityLevel> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#InteractivityType> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#InteractivityType>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#InteractivityType> owl:Thing)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#SemanticDensity> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#SemanticDensity>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.imsglobal.org_rdf_imsmd_educationalv1p2%23.txt#SemanticDensity> owl:Thing)
+
+# Class: <http://dublincore.org/2000/03/13/dcq#TypeScheme> (<http://dublincore.org/2000/03/13/dcq#TypeScheme>)
+
+SubClassOf(<http://dublincore.org/2000/03/13/dcq#TypeScheme> owl:Thing)
+
+# Class: <http://www.imsproject.org/rdf/imsmd_educationalv1p2#Context> (<http://www.imsproject.org/rdf/imsmd_educationalv1p2#Context>)
+
+SubClassOf(<http://www.imsproject.org/rdf/imsmd_educationalv1p2#Context> owl:Thing)
+
+# Class: <http://www.imsproject.org/rdf/imsmd_educationalv1p2#Difficulty> (<http://www.imsproject.org/rdf/imsmd_educationalv1p2#Difficulty>)
+
+SubClassOf(<http://www.imsproject.org/rdf/imsmd_educationalv1p2#Difficulty> owl:Thing)
+
+# Class: <http://www.imsproject.org/rdf/imsmd_educationalv1p2#IntendedEndUserRole> (<http://www.imsproject.org/rdf/imsmd_educationalv1p2#IntendedEndUserRole>)
+
+SubClassOf(<http://www.imsproject.org/rdf/imsmd_educationalv1p2#IntendedEndUserRole> owl:Thing)
+
+# Class: <http://www.imsproject.org/rdf/imsmd_educationalv1p2#InteractivitType> (<http://www.imsproject.org/rdf/imsmd_educationalv1p2#InteractivitType>)
+
+SubClassOf(<http://www.imsproject.org/rdf/imsmd_educationalv1p2#InteractivitType> owl:Thing)
+
+# Class: <http://www.imsproject.org/rdf/imsmd_educationalv1p2#InteractivityLevel> (<http://www.imsproject.org/rdf/imsmd_educationalv1p2#InteractivityLevel>)
+
+SubClassOf(<http://www.imsproject.org/rdf/imsmd_educationalv1p2#InteractivityLevel> owl:Thing)
+
+# Class: <http://www.imsproject.org/rdf/imsmd_educationalv1p2#LearningResourceType> (<http://www.imsproject.org/rdf/imsmd_educationalv1p2#LearningResourceType>)
+
+SubClassOf(<http://www.imsproject.org/rdf/imsmd_educationalv1p2#LearningResourceType> owl:Thing)
+
+# Class: <http://www.imsproject.org/rdf/imsmd_educationalv1p2#SemanticDensity> (<http://www.imsproject.org/rdf/imsmd_educationalv1p2#SemanticDensity>)
+
+SubClassOf(<http://www.imsproject.org/rdf/imsmd_educationalv1p2#SemanticDensity> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

@@ -1,0 +1,274 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Binding>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperationFault>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperationMessage>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Definitions>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Documentation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Documented>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleAttributesDocumented>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Fault>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Import>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Message>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#NotificationOperation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#OneWayOperation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Param>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ParamFault>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Part>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Port>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#PortType>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#RequestResponseOperation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Service>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#SolicitResponseOperation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Types>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#WSDLDOC>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Class>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Datatype>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#DatatypeProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#List>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Nothing>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#ObjectProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Ontology>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Property>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Restriction>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#TransitiveProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#UniqueProperty>))
+Declaration(Class(rdf:Property))
+Declaration(Class(rdf:Seq))
+Declaration(Class(rdfs:Class))
+Declaration(Class(rdfs:Container))
+Declaration(Class(rdfs:ContainerMembershipProperty))
+Declaration(Class(rdfs:Datatype))
+Declaration(Class(rdfs:Literal))
+Declaration(Class(rdfs:Resource))
+Declaration(Class(<http://www.w3.org/2000/10/XMLSchema#NCName>))
+Declaration(Class(<http://www.w3.org/2000/10/XMLSchema#anyURI>))
+Declaration(Class(<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>))
+Declaration(Class(owl:Class))
+Declaration(Class(owl:ObjectProperty))
+Declaration(Class(owl:Restriction))
+############################
+#   Classes
+############################
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Binding> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Binding>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Binding> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperationFault> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperationFault>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperationFault> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperationMessage> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperationMessage>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#BindingOperationMessage> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Definitions> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Definitions>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Definitions> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Documentation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Documentation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Documentation> rdfs:Literal)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Documented> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Documented>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Documented> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleAttributesDocumented> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleAttributesDocumented>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleAttributesDocumented> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Documented>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Documented>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Fault> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Fault>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Fault> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ParamFault>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Import> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Import>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Import> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleAttributesDocumented>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Message> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Message>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Message> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#NotificationOperation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#NotificationOperation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#NotificationOperation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#OneWayOperation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#OneWayOperation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#OneWayOperation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Param> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Param>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Param> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ParamFault>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ParamFault> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ParamFault>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ParamFault> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleAttributesDocumented>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Part> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Part>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Part> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleAttributesDocumented>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Port> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Port>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Port> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Definitions>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#PortType> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#PortType>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#PortType> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleAttributesDocumented>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#RequestResponseOperation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#RequestResponseOperation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#RequestResponseOperation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Service> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Service>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Service> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#SolicitResponseOperation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#SolicitResponseOperation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#SolicitResponseOperation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Operation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Types> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Types>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#Types> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#ExtensibleDocumented>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#WSDLDOC> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#WSDLDOC>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00094.owl#WSDLDOC> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Class> (<http://www.daml.org/2001/03/daml+oil#Class>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Class> rdfs:Class)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Datatype> (<http://www.daml.org/2001/03/daml+oil#Datatype>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Datatype> rdfs:Class)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#DatatypeProperty> (<http://www.daml.org/2001/03/daml+oil#DatatypeProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#DatatypeProperty> rdf:Property)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#List> (<http://www.daml.org/2001/03/daml+oil#List>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#List> rdf:Seq)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Nothing> (<http://www.daml.org/2001/03/daml+oil#Nothing>)
+
+EquivalentClasses(<http://www.daml.org/2001/03/daml+oil#Nothing> owl:Nothing)
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Nothing> owl:Nothing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#ObjectProperty> (<http://www.daml.org/2001/03/daml+oil#ObjectProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#ObjectProperty> rdf:Property)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Ontology> (<http://www.daml.org/2001/03/daml+oil#Ontology>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Ontology> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Property> (<http://www.daml.org/2001/03/daml+oil#Property>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Property> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Restriction> (<http://www.daml.org/2001/03/daml+oil#Restriction>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Restriction> owl:Class)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#TransitiveProperty> (<http://www.daml.org/2001/03/daml+oil#TransitiveProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#TransitiveProperty> owl:ObjectProperty)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#UnambiguousProperty> (<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty> owl:ObjectProperty)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#UniqueProperty> (<http://www.daml.org/2001/03/daml+oil#UniqueProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UniqueProperty> rdf:Property)
+
+# Class: rdf:Property (rdf:Property)
+
+SubClassOf(rdf:Property owl:Thing)
+
+# Class: rdf:Seq (rdf:Seq)
+
+SubClassOf(rdf:Seq owl:Thing)
+
+# Class: rdfs:Class (rdfs:Class)
+
+SubClassOf(rdfs:Class rdfs:Resource)
+
+# Class: rdfs:Container (rdfs:Container)
+
+SubClassOf(rdfs:Container rdfs:Resource)
+
+# Class: rdfs:ContainerMembershipProperty (rdfs:ContainerMembershipProperty)
+
+SubClassOf(rdfs:ContainerMembershipProperty rdf:Property)
+
+# Class: rdfs:Datatype (rdfs:Datatype)
+
+SubClassOf(rdfs:Datatype rdfs:Class)
+
+# Class: rdfs:Literal (rdfs:Literal)
+
+SubClassOf(rdfs:Literal rdfs:Resource)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/XMLSchema#NCName> (<http://www.w3.org/2000/10/XMLSchema#NCName>)
+
+SubClassOf(<http://www.w3.org/2000/10/XMLSchema#NCName> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/XMLSchema#anyURI> (<http://www.w3.org/2000/10/XMLSchema#anyURI>)
+
+SubClassOf(<http://www.w3.org/2000/10/XMLSchema#anyURI> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger> (<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>)
+
+SubClassOf(<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger> owl:Thing)
+
+# Class: owl:Class (owl:Class)
+
+SubClassOf(owl:Class owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:ObjectProperty (owl:ObjectProperty)
+
+SubClassOf(owl:ObjectProperty owl:Thing)
+
+# Class: owl:Restriction (owl:Restriction)
+
+SubClassOf(owl:Restriction owl:Thing)
+
+
+)

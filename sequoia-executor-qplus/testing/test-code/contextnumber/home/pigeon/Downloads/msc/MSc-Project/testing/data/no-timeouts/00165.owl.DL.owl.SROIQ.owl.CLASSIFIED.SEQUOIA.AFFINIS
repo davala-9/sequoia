@@ -1,0 +1,150 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.org/dc/terms/Agent>))
+Declaration(Class(<http://usefulinc.com/ns/doap#ArchRepository>))
+Declaration(Class(<http://usefulinc.com/ns/doap#BKRepository>))
+Declaration(Class(<http://usefulinc.com/ns/doap#CVSRepository>))
+Declaration(Class(<http://usefulinc.com/ns/doap#Project>))
+Declaration(Class(<http://usefulinc.com/ns/doap#Repository>))
+Declaration(Class(<http://usefulinc.com/ns/doap#SVNRepository>))
+Declaration(Class(<http://usefulinc.com/ns/doap#Version>))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#Person>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>))
+Declaration(Class(<http://www.w3.org/2004/02/skos/core#Concept>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Agent>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Document>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Group>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Image>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/OnlineAccount>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/OnlineChatAccount>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/OnlineEcommerceAccount>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/OnlineGamingAccount>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Organization>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Person>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/PersonalProfileDocument>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Project>))
+Declaration(Class(<http://xmlns.com/wordnet/1.6/Project>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/dc/terms/Agent> (<http://purl.org/dc/terms/Agent>)
+
+EquivalentClasses(<http://purl.org/dc/terms/Agent> <http://xmlns.com/foaf/0.1/Agent>)
+SubClassOf(<http://purl.org/dc/terms/Agent> owl:Thing)
+
+# Class: <http://usefulinc.com/ns/doap#ArchRepository> (<http://usefulinc.com/ns/doap#ArchRepository>)
+
+SubClassOf(<http://usefulinc.com/ns/doap#ArchRepository> <http://usefulinc.com/ns/doap#Repository>)
+
+# Class: <http://usefulinc.com/ns/doap#BKRepository> (<http://usefulinc.com/ns/doap#BKRepository>)
+
+SubClassOf(<http://usefulinc.com/ns/doap#BKRepository> <http://usefulinc.com/ns/doap#Repository>)
+
+# Class: <http://usefulinc.com/ns/doap#CVSRepository> (<http://usefulinc.com/ns/doap#CVSRepository>)
+
+SubClassOf(<http://usefulinc.com/ns/doap#CVSRepository> <http://usefulinc.com/ns/doap#Repository>)
+
+# Class: <http://usefulinc.com/ns/doap#Project> (<http://usefulinc.com/ns/doap#Project>)
+
+SubClassOf(<http://usefulinc.com/ns/doap#Project> <http://xmlns.com/foaf/0.1/Project>)
+SubClassOf(<http://usefulinc.com/ns/doap#Project> <http://xmlns.com/wordnet/1.6/Project>)
+
+# Class: <http://usefulinc.com/ns/doap#Repository> (<http://usefulinc.com/ns/doap#Repository>)
+
+SubClassOf(<http://usefulinc.com/ns/doap#Repository> owl:Thing)
+
+# Class: <http://usefulinc.com/ns/doap#SVNRepository> (<http://usefulinc.com/ns/doap#SVNRepository>)
+
+SubClassOf(<http://usefulinc.com/ns/doap#SVNRepository> <http://usefulinc.com/ns/doap#Repository>)
+
+# Class: <http://usefulinc.com/ns/doap#Version> (<http://usefulinc.com/ns/doap#Version>)
+
+SubClassOf(<http://usefulinc.com/ns/doap#Version> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#Person> (<http://www.w3.org/2000/10/swap/pim/contact#Person>)
+
+SubClassOf(<http://www.w3.org/2000/10/swap/pim/contact#Person> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> (<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>)
+
+SubClassOf(<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> owl:Thing)
+
+# Class: <http://www.w3.org/2004/02/skos/core#Concept> (<http://www.w3.org/2004/02/skos/core#Concept>)
+
+SubClassOf(<http://www.w3.org/2004/02/skos/core#Concept> owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Agent> (<http://xmlns.com/foaf/0.1/Agent>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Agent> owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Document> (<http://xmlns.com/foaf/0.1/Document>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Document> owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Group> (<http://xmlns.com/foaf/0.1/Group>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Group> <http://purl.org/dc/terms/Agent>)
+SubClassOf(<http://xmlns.com/foaf/0.1/Group> <http://xmlns.com/foaf/0.1/Agent>)
+
+# Class: <http://xmlns.com/foaf/0.1/Image> (<http://xmlns.com/foaf/0.1/Image>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Image> <http://xmlns.com/foaf/0.1/Document>)
+
+# Class: <http://xmlns.com/foaf/0.1/OnlineAccount> (<http://xmlns.com/foaf/0.1/OnlineAccount>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/OnlineAccount> owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/OnlineChatAccount> (<http://xmlns.com/foaf/0.1/OnlineChatAccount>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/OnlineChatAccount> <http://xmlns.com/foaf/0.1/OnlineAccount>)
+
+# Class: <http://xmlns.com/foaf/0.1/OnlineEcommerceAccount> (<http://xmlns.com/foaf/0.1/OnlineEcommerceAccount>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/OnlineEcommerceAccount> <http://xmlns.com/foaf/0.1/OnlineAccount>)
+
+# Class: <http://xmlns.com/foaf/0.1/OnlineGamingAccount> (<http://xmlns.com/foaf/0.1/OnlineGamingAccount>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/OnlineGamingAccount> <http://xmlns.com/foaf/0.1/OnlineAccount>)
+
+# Class: <http://xmlns.com/foaf/0.1/Organization> (<http://xmlns.com/foaf/0.1/Organization>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Organization> <http://purl.org/dc/terms/Agent>)
+SubClassOf(<http://xmlns.com/foaf/0.1/Organization> <http://xmlns.com/foaf/0.1/Agent>)
+
+# Class: <http://xmlns.com/foaf/0.1/Person> (<http://xmlns.com/foaf/0.1/Person>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Person> <http://purl.org/dc/terms/Agent>)
+SubClassOf(<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/10/swap/pim/contact#Person>)
+SubClassOf(<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>)
+SubClassOf(<http://xmlns.com/foaf/0.1/Person> <http://xmlns.com/foaf/0.1/Agent>)
+
+# Class: <http://xmlns.com/foaf/0.1/PersonalProfileDocument> (<http://xmlns.com/foaf/0.1/PersonalProfileDocument>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/PersonalProfileDocument> <http://xmlns.com/foaf/0.1/Document>)
+
+# Class: <http://xmlns.com/foaf/0.1/Project> (<http://xmlns.com/foaf/0.1/Project>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Project> owl:Thing)
+
+# Class: <http://xmlns.com/wordnet/1.6/Project> (<http://xmlns.com/wordnet/1.6/Project>)
+
+SubClassOf(<http://xmlns.com/wordnet/1.6/Project> owl:Thing)
+
+
+)

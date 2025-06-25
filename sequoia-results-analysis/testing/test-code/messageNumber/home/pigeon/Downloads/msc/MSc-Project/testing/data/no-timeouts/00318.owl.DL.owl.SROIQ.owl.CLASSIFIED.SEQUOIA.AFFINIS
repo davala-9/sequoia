@@ -1,0 +1,158 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(rdfs:Resource))
+Declaration(Class(<http://www.w3.org/2000/10/swap/pim/contact#Person>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Alignment>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Circle>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Diamond>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#DisplayStyle>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Ellipse>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#LayoutForm>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Literal>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Octagon>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#PlainLiterals>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Polygon>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Property>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Rectangle>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Resource>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#RoundRectangle>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Selector>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#SortOption>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Statement>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#StyleSet>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#TriangleEast>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#TriangleNorth>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#TriangleSouth>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#TriangleWest>))
+Declaration(Class(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#VisibilityStyle>))
+Declaration(Class(xsd:string))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+############################
+#   Classes
+############################
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/swap/pim/contact#Person> (<http://www.w3.org/2000/10/swap/pim/contact#Person>)
+
+SubClassOf(<http://www.w3.org/2000/10/swap/pim/contact#Person> owl:Thing)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Alignment> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Alignment>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Alignment> owl:Thing)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Circle> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Circle>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Circle> <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Polygon>)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Diamond> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Diamond>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Diamond> <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Polygon>)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#DisplayStyle> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#DisplayStyle>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#DisplayStyle> owl:Thing)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Ellipse> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Ellipse>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Ellipse> <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Polygon>)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#LayoutForm> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#LayoutForm>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#LayoutForm> owl:Thing)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Literal> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Literal>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Literal> <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Selector>)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Octagon> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Octagon>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Octagon> <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Polygon>)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#PlainLiterals> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#PlainLiterals>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#PlainLiterals> rdfs:Resource)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Polygon> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Polygon>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Polygon> owl:Thing)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Property> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Property>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Property> <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Selector>)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Rectangle> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Rectangle>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Rectangle> <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Polygon>)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Resource> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Resource>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Resource> <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Selector>)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#RoundRectangle> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#RoundRectangle>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#RoundRectangle> <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Polygon>)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Selector> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Selector>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Selector> owl:Thing)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#SortOption> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#SortOption>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#SortOption> owl:Thing)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Statement> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Statement>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#Statement> owl:Thing)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#StyleSet> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#StyleSet>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#StyleSet> owl:Thing)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#TriangleEast> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#TriangleEast>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#TriangleEast> <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Polygon>)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#TriangleNorth> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#TriangleNorth>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#TriangleNorth> <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Polygon>)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#TriangleSouth> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#TriangleSouth>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#TriangleSouth> <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Polygon>)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#TriangleWest> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#TriangleWest>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#TriangleWest> <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Polygon>)
+
+# Class: <http://www.w3.org/2001/11/IsaViz/graphstylesheets#VisibilityStyle> (<http://www.w3.org/2001/11/IsaViz/graphstylesheets#VisibilityStyle>)
+
+SubClassOf(<http://www.w3.org/2001/11/IsaViz/graphstylesheets#VisibilityStyle> owl:Thing)
+
+# Class: xsd:string (xsd:string)
+
+SubClassOf(xsd:string <http://www.w3.org/2001/11/IsaViz/graphstylesheets#Polygon>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+
+)

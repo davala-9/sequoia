@@ -1,0 +1,38 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.org/net/ns/ex#Example>))
+Declaration(Class(<http://purl.org/net/ns/musicalbaton#MusicalBaton>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Document>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Person>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/net/ns/ex#Example> (<http://purl.org/net/ns/ex#Example>)
+
+SubClassOf(<http://purl.org/net/ns/ex#Example> owl:Thing)
+
+# Class: <http://purl.org/net/ns/musicalbaton#MusicalBaton> (<http://purl.org/net/ns/musicalbaton#MusicalBaton>)
+
+SubClassOf(<http://purl.org/net/ns/musicalbaton#MusicalBaton> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: <http://xmlns.com/foaf/0.1/Document> (<http://xmlns.com/foaf/0.1/Document>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Document> owl:Thing)
+
+# Class: <http://xmlns.com/foaf/0.1/Person> (<http://xmlns.com/foaf/0.1/Person>)
+
+SubClassOf(<http://xmlns.com/foaf/0.1/Person> owl:Thing)
+
+
+)

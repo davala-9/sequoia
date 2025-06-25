@@ -1,0 +1,976 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Bacterium>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BodySubstance>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#DiseaseOrSyndrome>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#FunctionQuantity>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Fungus>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Investigating>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Making>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Manufacture>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Microorganism>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organism>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Process>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Protein>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Putting>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#RealNumber>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#ViolentContest>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Virus>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Weapon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AbrinToxin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AerosolizedAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AerosolizedBacillusAnthracis>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Aflatoxin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Antibiotic>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AquiredImmunoDeficiencySyndrome>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Arsine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Atropine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BZGas>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacillusAnthracis>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacillusCereus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Bacitracin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialDisease>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Batrachotoxin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalAttack>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalWeapon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiologicalAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiologicalWeapon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BlisterAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BloodAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BordetellaPertussis>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BotulinumToxin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BrucellaBacterium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BurkholderiaMallei>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BurkholderiaPseudomallei>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CSGas>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChemicalAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChemicalWeapon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChlamydiaPsittaci>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChlorineGas>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Chloropicrin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChokingAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Ciprofloxacin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ClostridiumBotulinum>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ClostridiumPerfringens>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ClostridiumTetani>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CoccidiodesPosadasii>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CoccidioidesImmitis>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Conotoxin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CorynebacteriumDiphtheriae>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CoxiellaBurnetii>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CrimeanCongoHemorrhagicFeverVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CyanogenChloride>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DeliveringWeaponOfMassDestruction>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DengueFeverVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DeployingWeaponOfMassDestruction>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DevelopingWeaponOfMassDestruction>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Diacetoxyscirpenol>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Diphosgene>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DismantlingWeaponOfMassDestruction>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Doxycycline>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EasternEquineEncephalitisVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EbolaVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EpsilonToxin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EscherichiaColi0157H7>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FlexalVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FootAndMouthVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FrancisellaTularensis>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FungalAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GF>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GSeriesNerveAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GeneticallyEngineeredOrganism>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GiardiaLamblia>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GuanaritoVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HIVVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HemorrhagicFever>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HendraVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Hepatitis>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HepatitisAVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HepatitisBVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HepatitisCVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HepatitisVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HerpesBVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HydrogenCyanide>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#IncapacitatingAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#InfectiousDisease>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Influenza>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#JapaneseEncephalitisVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#JuninVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Keflex>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#KyasanurForestDiseaseVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LaCrosseVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LassaVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Legionella>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Lewisite>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LifeThreateningAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LifeThreateningDisease>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MachupoVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MalarialPlasmodium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MarburgVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Mixomatosis>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MonkeypoxVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MustardGas>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MycobacteriumTuberculosis>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Mycotoxin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NeisseriaGonorrhoeae>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NerveAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NipahVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NitrogenMustardGas>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NuclearWeapon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NuclearWeaponProductionFacility>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NuclearWeaponResearchFacility>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#OralAntibiotic>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Penicillin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Phosgene>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#PhosgeneOxime>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#PlasmodiumFalciparum>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#PyridostigmineBromide>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RadioactiveWeapon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RadiologicalWeapon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ResearchingWeaponOfMassDestruction>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RicinToxin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RickettsiaProwazekii>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RickettsiaRickettsii>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RickettsialAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RiftValleyFever>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Rotavirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SabiaVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SaintLouisEncephalitisVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SalmonellaPartyphi>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SalmonellaTyphi>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SalmonellaTyphimurium>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Sarin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Saxitoxin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SerratiaMarcenscens>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ShigaToxin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ShigellaDysenteriae>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Soman>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StaphylococcalEnterotoxinB>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StaphyylococcusAureus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StockpilingWeaponOfMassDestruction>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StreptococcusA>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SulphurMustardGas>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#T2Toxin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Tabun>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Tetrodotoxin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TickBorneEncephalitis>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TickBorneEncephalitisVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TopicalAntibiotic>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ToxicOrganism>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Toxin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TyphoidFever>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VSeriesNerveAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VX>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VaccinatableDisease>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VariolaMajor>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VariolaMinor>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VenezuelanEquineEncephalitis>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VenezuelanEquineEncephalitisVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VibrioCholera>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralDisease>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Vollum1B>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WMDWeaponsProductionFacility>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WMDWeaponsResearchFacility>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WeaponOfMassDestruction>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WestNileVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#YellowFeverVirus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#YersiniaPestis>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#YersiniaPseudotuberculosis>))
+############################
+#   Classes
+############################
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Bacterium> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Bacterium>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Bacterium> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BodySubstance> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BodySubstance>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BodySubstance> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance> (<http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#DiseaseOrSyndrome> (<http://reliant.teknowledge.com/DAML/SUMO.owl#DiseaseOrSyndrome>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#DiseaseOrSyndrome> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#FunctionQuantity> (<http://reliant.teknowledge.com/DAML/SUMO.owl#FunctionQuantity>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#FunctionQuantity> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Fungus> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Fungus>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Fungus> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess> (<http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Investigating> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Investigating>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Investigating> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Making> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Making>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Making> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Manufacture> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Manufacture>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Manufacture> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Microorganism> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Microorganism>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Microorganism> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Organism> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Organism>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organism> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Process> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Process>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Process> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Protein> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Protein>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Protein> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Putting> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Putting>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Putting> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#RealNumber> (<http://reliant.teknowledge.com/DAML/SUMO.owl#RealNumber>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#RealNumber> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact> (<http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#ViolentContest> (<http://reliant.teknowledge.com/DAML/SUMO.owl#ViolentContest>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#ViolentContest> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Virus> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Virus>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Virus> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Weapon> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Weapon>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Weapon> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AbrinToxin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AbrinToxin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AbrinToxin> <http://reliant.teknowledge.com/DAML/SUMO.owl#Protein>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AbrinToxin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Toxin>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AerosolizedAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AerosolizedAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AerosolizedAgent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AerosolizedBacillusAnthracis> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AerosolizedBacillusAnthracis>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AerosolizedBacillusAnthracis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AerosolizedAgent>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AerosolizedBacillusAnthracis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacillusAnthracis>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Aflatoxin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Aflatoxin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Aflatoxin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Mycotoxin>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Antibiotic> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Antibiotic>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Antibiotic> <http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AquiredImmunoDeficiencySyndrome> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AquiredImmunoDeficiencySyndrome>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AquiredImmunoDeficiencySyndrome> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralDisease>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Arsine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Arsine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Arsine> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BloodAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Atropine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Atropine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Atropine> <http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BZGas> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BZGas>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BZGas> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#IncapacitatingAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacillusAnthracis> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacillusAnthracis>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacillusAnthracis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacillusCereus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacillusCereus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacillusCereus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Bacitracin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Bacitracin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Bacitracin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TopicalAntibiotic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent> <http://reliant.teknowledge.com/DAML/SUMO.owl#Bacterium>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ToxicOrganism>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialDisease> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialDisease>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialDisease> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#InfectiousDisease>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Batrachotoxin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Batrachotoxin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Batrachotoxin> <http://reliant.teknowledge.com/DAML/SUMO.owl#BodySubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Batrachotoxin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Toxin>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalAgent> <http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalAttack> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalAttack>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalAttack> <http://reliant.teknowledge.com/DAML/SUMO.owl#ViolentContest>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalWeapon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalWeapon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalWeapon> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WeaponOfMassDestruction>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiologicalAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiologicalAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiologicalAgent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiologicalWeapon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiologicalWeapon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiologicalWeapon> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalWeapon>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BlisterAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BlisterAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BlisterAgent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChemicalAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BloodAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BloodAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BloodAgent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChemicalAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BordetellaPertussis> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BordetellaPertussis>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BordetellaPertussis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BotulinumToxin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BotulinumToxin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BotulinumToxin> <http://reliant.teknowledge.com/DAML/SUMO.owl#BodySubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BotulinumToxin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LifeThreateningAgent>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BotulinumToxin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Toxin>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BrucellaBacterium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BrucellaBacterium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BrucellaBacterium> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BurkholderiaMallei> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BurkholderiaMallei>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BurkholderiaMallei> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BurkholderiaPseudomallei> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BurkholderiaPseudomallei>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BurkholderiaPseudomallei> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CSGas> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CSGas>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CSGas> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#IncapacitatingAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChemicalAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChemicalAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChemicalAgent> <http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChemicalAgent> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChemicalAgent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChemicalWeapon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChemicalWeapon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChemicalWeapon> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalWeapon>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChlamydiaPsittaci> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChlamydiaPsittaci>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChlamydiaPsittaci> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChlorineGas> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChlorineGas>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChlorineGas> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChokingAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Chloropicrin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Chloropicrin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Chloropicrin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChokingAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChokingAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChokingAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChokingAgent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChemicalAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Ciprofloxacin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Ciprofloxacin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Ciprofloxacin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#OralAntibiotic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ClostridiumBotulinum> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ClostridiumBotulinum>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ClostridiumBotulinum> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ClostridiumPerfringens> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ClostridiumPerfringens>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ClostridiumPerfringens> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ClostridiumTetani> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ClostridiumTetani>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ClostridiumTetani> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CoccidiodesPosadasii> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CoccidiodesPosadasii>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CoccidiodesPosadasii> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FungalAgent>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CoccidiodesPosadasii> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LifeThreateningAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CoccidioidesImmitis> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CoccidioidesImmitis>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CoccidioidesImmitis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FungalAgent>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CoccidioidesImmitis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LifeThreateningAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Conotoxin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Conotoxin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Conotoxin> <http://reliant.teknowledge.com/DAML/SUMO.owl#BodySubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Conotoxin> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Conotoxin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Toxin>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CorynebacteriumDiphtheriae> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CorynebacteriumDiphtheriae>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CorynebacteriumDiphtheriae> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CoxiellaBurnetii> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CoxiellaBurnetii>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CoxiellaBurnetii> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RickettsialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CrimeanCongoHemorrhagicFeverVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CrimeanCongoHemorrhagicFeverVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CrimeanCongoHemorrhagicFeverVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CyanogenChloride> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CyanogenChloride>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#CyanogenChloride> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BloodAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DeliveringWeaponOfMassDestruction> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DeliveringWeaponOfMassDestruction>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DeliveringWeaponOfMassDestruction> <http://reliant.teknowledge.com/DAML/SUMO.owl#Making>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DengueFeverVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DengueFeverVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DengueFeverVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DeployingWeaponOfMassDestruction> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DeployingWeaponOfMassDestruction>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DeployingWeaponOfMassDestruction> <http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DeployingWeaponOfMassDestruction> <http://reliant.teknowledge.com/DAML/SUMO.owl#Putting>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DevelopingWeaponOfMassDestruction> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DevelopingWeaponOfMassDestruction>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DevelopingWeaponOfMassDestruction> <http://reliant.teknowledge.com/DAML/SUMO.owl#Making>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Diacetoxyscirpenol> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Diacetoxyscirpenol>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Diacetoxyscirpenol> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Mycotoxin>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Diphosgene> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Diphosgene>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Diphosgene> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChokingAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DismantlingWeaponOfMassDestruction> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DismantlingWeaponOfMassDestruction>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DismantlingWeaponOfMassDestruction> <http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Doxycycline> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Doxycycline>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Doxycycline> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#OralAntibiotic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EasternEquineEncephalitisVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EasternEquineEncephalitisVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EasternEquineEncephalitisVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EbolaVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EbolaVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EbolaVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EpsilonToxin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EpsilonToxin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EpsilonToxin> <http://reliant.teknowledge.com/DAML/SUMO.owl#BodySubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EpsilonToxin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Toxin>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EscherichiaColi0157H7> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EscherichiaColi0157H7>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#EscherichiaColi0157H7> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FlexalVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FlexalVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FlexalVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FootAndMouthVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FootAndMouthVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FootAndMouthVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FrancisellaTularensis> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FrancisellaTularensis>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FrancisellaTularensis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FungalAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FungalAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FungalAgent> <http://reliant.teknowledge.com/DAML/SUMO.owl#Fungus>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#FungalAgent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ToxicOrganism>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GF> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GF>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GF> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GSeriesNerveAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GSeriesNerveAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GSeriesNerveAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GSeriesNerveAgent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NerveAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GeneticallyEngineeredOrganism> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GeneticallyEngineeredOrganism>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GeneticallyEngineeredOrganism> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organism>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GiardiaLamblia> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GiardiaLamblia>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GiardiaLamblia> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GuanaritoVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GuanaritoVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GuanaritoVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HIVVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HIVVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HIVVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HemorrhagicFever> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HemorrhagicFever>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HemorrhagicFever> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralDisease>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HendraVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HendraVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HendraVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Hepatitis> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Hepatitis>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Hepatitis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralDisease>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HepatitisAVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HepatitisAVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HepatitisAVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HepatitisBVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HepatitisBVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HepatitisBVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HepatitisCVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HepatitisCVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HepatitisCVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HepatitisVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HepatitisVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HepatitisVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HerpesBVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HerpesBVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HerpesBVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HydrogenCyanide> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HydrogenCyanide>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#HydrogenCyanide> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BloodAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#IncapacitatingAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#IncapacitatingAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#IncapacitatingAgent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChemicalAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#InfectiousDisease> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#InfectiousDisease>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#InfectiousDisease> <http://reliant.teknowledge.com/DAML/SUMO.owl#DiseaseOrSyndrome>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Influenza> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Influenza>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Influenza> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VaccinatableDisease>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Influenza> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralDisease>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#JapaneseEncephalitisVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#JapaneseEncephalitisVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#JapaneseEncephalitisVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#JuninVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#JuninVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#JuninVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Keflex> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Keflex>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Keflex> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#OralAntibiotic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#KyasanurForestDiseaseVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#KyasanurForestDiseaseVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#KyasanurForestDiseaseVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TickBorneEncephalitisVirus>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LaCrosseVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LaCrosseVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LaCrosseVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LassaVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LassaVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LassaVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Legionella> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Legionella>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Legionella> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Lewisite> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Lewisite>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Lewisite> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BlisterAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LifeThreateningAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LifeThreateningAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LifeThreateningAgent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiochemicalAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LifeThreateningDisease> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LifeThreateningDisease>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LifeThreateningDisease> <http://reliant.teknowledge.com/DAML/SUMO.owl#DiseaseOrSyndrome>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MachupoVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MachupoVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MachupoVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MalarialPlasmodium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MalarialPlasmodium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MalarialPlasmodium> <http://reliant.teknowledge.com/DAML/SUMO.owl#Microorganism>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MalarialPlasmodium> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ToxicOrganism>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MarburgVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MarburgVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MarburgVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Mixomatosis> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Mixomatosis>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Mixomatosis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MonkeypoxVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MonkeypoxVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MonkeypoxVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MustardGas> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MustardGas>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MustardGas> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BlisterAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MycobacteriumTuberculosis> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MycobacteriumTuberculosis>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MycobacteriumTuberculosis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Mycotoxin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Mycotoxin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Mycotoxin> <http://reliant.teknowledge.com/DAML/SUMO.owl#BodySubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Mycotoxin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Toxin>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NeisseriaGonorrhoeae> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NeisseriaGonorrhoeae>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NeisseriaGonorrhoeae> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NerveAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NerveAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NerveAgent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChemicalAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NipahVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NipahVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NipahVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NitrogenMustardGas> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NitrogenMustardGas>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NitrogenMustardGas> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MustardGas>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NuclearWeapon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NuclearWeapon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NuclearWeapon> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RadioactiveWeapon>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NuclearWeaponProductionFacility> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NuclearWeaponProductionFacility>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NuclearWeaponProductionFacility> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WMDWeaponsProductionFacility>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NuclearWeaponResearchFacility> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NuclearWeaponResearchFacility>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NuclearWeaponResearchFacility> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WMDWeaponsResearchFacility>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#OralAntibiotic> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#OralAntibiotic>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#OralAntibiotic> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Antibiotic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Penicillin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Penicillin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Penicillin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#OralAntibiotic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Phosgene> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Phosgene>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Phosgene> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ChokingAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#PhosgeneOxime> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#PhosgeneOxime>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#PhosgeneOxime> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BlisterAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#PlasmodiumFalciparum> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#PlasmodiumFalciparum>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#PlasmodiumFalciparum> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MalarialPlasmodium>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#PyridostigmineBromide> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#PyridostigmineBromide>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#PyridostigmineBromide> <http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RadioactiveWeapon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RadioactiveWeapon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RadioactiveWeapon> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WeaponOfMassDestruction>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RadiologicalWeapon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RadiologicalWeapon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RadiologicalWeapon> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RadioactiveWeapon>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ResearchingWeaponOfMassDestruction> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ResearchingWeaponOfMassDestruction>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ResearchingWeaponOfMassDestruction> <http://reliant.teknowledge.com/DAML/SUMO.owl#Investigating>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RicinToxin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RicinToxin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RicinToxin> <http://reliant.teknowledge.com/DAML/SUMO.owl#Protein>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RicinToxin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Toxin>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RickettsiaProwazekii> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RickettsiaProwazekii>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RickettsiaProwazekii> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RickettsialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RickettsiaRickettsii> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RickettsiaRickettsii>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RickettsiaRickettsii> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RickettsialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RickettsialAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RickettsialAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RickettsialAgent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RiftValleyFever> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RiftValleyFever>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#RiftValleyFever> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralDisease>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Rotavirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Rotavirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Rotavirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SabiaVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SabiaVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SabiaVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SaintLouisEncephalitisVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SaintLouisEncephalitisVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SaintLouisEncephalitisVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SalmonellaPartyphi> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SalmonellaPartyphi>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SalmonellaPartyphi> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SalmonellaTyphi> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SalmonellaTyphi>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SalmonellaTyphi> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SalmonellaTyphimurium> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SalmonellaTyphimurium>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SalmonellaTyphimurium> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Sarin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Sarin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Sarin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GSeriesNerveAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Saxitoxin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Saxitoxin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Saxitoxin> <http://reliant.teknowledge.com/DAML/SUMO.owl#BodySubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Saxitoxin> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Saxitoxin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Toxin>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SerratiaMarcenscens> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SerratiaMarcenscens>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SerratiaMarcenscens> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SerratiaMarcenscens> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LifeThreateningAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ShigaToxin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ShigaToxin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ShigaToxin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Toxin>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ShigellaDysenteriae> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ShigellaDysenteriae>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ShigellaDysenteriae> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Soman> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Soman>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Soman> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GSeriesNerveAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StaphylococcalEnterotoxinB> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StaphylococcalEnterotoxinB>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StaphylococcalEnterotoxinB> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LifeThreateningAgent>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StaphylococcalEnterotoxinB> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Toxin>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StaphyylococcusAureus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StaphyylococcusAureus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StaphyylococcusAureus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StockpilingWeaponOfMassDestruction> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StockpilingWeaponOfMassDestruction>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StockpilingWeaponOfMassDestruction> <http://reliant.teknowledge.com/DAML/SUMO.owl#Manufacture>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StockpilingWeaponOfMassDestruction> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#DevelopingWeaponOfMassDestruction>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StreptococcusA> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StreptococcusA>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#StreptococcusA> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SulphurMustardGas> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SulphurMustardGas>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#SulphurMustardGas> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#MustardGas>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#T2Toxin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#T2Toxin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#T2Toxin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Mycotoxin>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Tabun> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Tabun>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Tabun> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#GSeriesNerveAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Tetrodotoxin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Tetrodotoxin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Tetrodotoxin> <http://reliant.teknowledge.com/DAML/SUMO.owl#BodySubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Tetrodotoxin> <http://reliant.teknowledge.com/DAML/SUMO.owl#CompoundSubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Tetrodotoxin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Toxin>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TickBorneEncephalitis> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TickBorneEncephalitis>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TickBorneEncephalitis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VaccinatableDisease>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TickBorneEncephalitis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralDisease>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TickBorneEncephalitisVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TickBorneEncephalitisVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TickBorneEncephalitisVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LifeThreateningAgent>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TickBorneEncephalitisVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TopicalAntibiotic> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TopicalAntibiotic>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TopicalAntibiotic> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Antibiotic>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ToxicOrganism> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ToxicOrganism>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ToxicOrganism> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organism>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ToxicOrganism> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiologicalAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Toxin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Toxin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Toxin> <http://reliant.teknowledge.com/DAML/SUMO.owl#BiologicallyActiveSubstance>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Toxin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BiologicalAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TyphoidFever> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TyphoidFever>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#TyphoidFever> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialDisease>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VSeriesNerveAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VSeriesNerveAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VSeriesNerveAgent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#NerveAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VX> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VX>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VX> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VSeriesNerveAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VaccinatableDisease> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VaccinatableDisease>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VaccinatableDisease> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#InfectiousDisease>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VariolaMajor> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VariolaMajor>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VariolaMajor> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VariolaMinor> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VariolaMinor>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VariolaMinor> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VenezuelanEquineEncephalitis> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VenezuelanEquineEncephalitis>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VenezuelanEquineEncephalitis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VaccinatableDisease>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VenezuelanEquineEncephalitis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralDisease>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VenezuelanEquineEncephalitisVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VenezuelanEquineEncephalitisVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VenezuelanEquineEncephalitisVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VibrioCholera> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VibrioCholera>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#VibrioCholera> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent> <http://reliant.teknowledge.com/DAML/SUMO.owl#Virus>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ToxicOrganism>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralDisease> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralDisease>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralDisease> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#InfectiousDisease>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Vollum1B> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Vollum1B>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#Vollum1B> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#AerosolizedBacillusAnthracis>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WMDWeaponsProductionFacility> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WMDWeaponsProductionFacility>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WMDWeaponsProductionFacility> <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WMDWeaponsResearchFacility> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WMDWeaponsResearchFacility>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WMDWeaponsResearchFacility> <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WeaponOfMassDestruction> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WeaponOfMassDestruction>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WeaponOfMassDestruction> <http://reliant.teknowledge.com/DAML/SUMO.owl#Weapon>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WestNileVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WestNileVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#WestNileVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#YellowFeverVirus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#YellowFeverVirus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#YellowFeverVirus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#ViralAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#YersiniaPestis> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#YersiniaPestis>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#YersiniaPestis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#YersiniaPestis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#LifeThreateningAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#YersiniaPseudotuberculosis> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#YersiniaPseudotuberculosis>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#YersiniaPseudotuberculosis> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00149.owl#BacterialAgent>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

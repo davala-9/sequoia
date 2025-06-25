@@ -1,0 +1,2323 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Communications.owl#ElectronicDevice>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Economy.owl#PetroleumProduct>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Geography.owl#Coal>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Geography.owl#Dam>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Government.owl#InternationalOrganization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Address>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Aircraft>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Airplane>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Airport>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AnimalPoweredDevice>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Arriving>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AtmosphericRegion>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Automobile>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Battery>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Bridge>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Canal>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CommonCarrier>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Container>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ContractCarrier>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Crane>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CubicFoot>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Cycle>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DeviceStateAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DieselEngine>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DieselFuel>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricMotor>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricalSignalling>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectronicSignalling>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Engine>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Expressway>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FossilFuel>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fuel>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Gasoline>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#GasolineEngine>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Helicopter>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#HoistingDevice>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#InternalCombustionEngine>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#InternationalLaw>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandVehicle>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LegalCharge>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#License>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LightFixture>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LiquefiedPetroleumGas>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MaterialHandlingEquipment>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MetricTon>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MilitaryWatercraft>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#OrganicCompound>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Pipeline>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#PortFacility>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Profession>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadarOrSonar>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RailroadCompany>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RailroadTrack>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Railway>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ramp>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RefrigeratedCompartment>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RoadJunction>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RoadVehicle>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Runway>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SelfPoweredDevice>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Signalling>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SteamEngine>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SurfacedRoadway>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TakingOff>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TerminalBuilding>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Trailer>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Train>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitTerminal>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitwayJunction>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransportationCompany>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Truck>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Tunnel>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UnsurfacedRoadway>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Urea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UserPoweredDevice>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Watercraft>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Waterway>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wheel>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Windmill>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Agent>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Attaching>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Attribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BodyMotion>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Building>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#CaseRole>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Certificate>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#City>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Collection>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#CommercialAgent>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#CommercialService>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Communication>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#DeonticAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Device>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Guiding>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Hole>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#IrreflexiveRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Keeping>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#LandTransitway>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#LengthMeasure>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Machine>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Making>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Managing>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#MassMeasure>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Motion>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeInteger>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Object>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Obligation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#OrganicObject>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#OrganizationalProcess>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Physical>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#PhysicalQuantity>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Position>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#PositionalAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Region>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#RegulatoryProcess>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Roadway>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SetOrClass>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SingleValuedRelation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Substance>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Text>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TextureAttribute>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Transitway>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Translocation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Transportation>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#TransportationDevice>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#Vehicle>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#VolumeMeasure>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AidToNavigation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirRoute>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlCenter>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlEnRouteCenter>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlProcedure>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlRadarRoom>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlTower>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTransitway>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirportByRunwaySurface>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirportClassification>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Ambulance>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Anchorage>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AnimalPoweredVehicle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Axle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Barge>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BargeCarrierShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Bicycle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BillOfLading>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Boxcar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BroadGaugeRailway>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BulkCargo>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Bulkhead>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Bus>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BusinessRailcar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CIAAirportLengthClassification>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CabCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CableShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Cabotage>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalLock>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalLockGate>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalStructure>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Canoe>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CarDistributionSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoContainer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoHandling>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoManifest>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Catamaran>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CementCarrierShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CertificateOfRegistry>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ChemicalAndPetroleumTankerShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ChemicalTankerShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ClassIIIRailroad>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ClassIIRailroad>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ClassIRailroad>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CoachRailcar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CombinationBulkAndOilCarrierShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CombinationCarrierShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CombinationOreAndOilCarrierShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialAirport>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialCarrier>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialShipping>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerAndRoRoCargoShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerHandlingEquipment>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerTerminal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Containerization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CraneShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CrewDormCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CrewList>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CruiseShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Cycle-TransportationDevice>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DangerousGoods>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeckCargo>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeckCargoShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeckCrane>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeepDraftPortCity>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeepDraftWaterArea>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeepwaterPort>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DepartmentOfTransportation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DiningCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DirectingTraffic>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DisplacementHullWatercraft>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Drawbridge>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Dredger>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DrillingShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DromedaryContainer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DryBulkCargo>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DryBulkCarrierShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DualGaugeRailway>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ElectrifiedRailway>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ElectrifiedRailwayCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EmergencyRoadVehicle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EmergencyVehicle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EtiologicAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass1>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass10>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass11>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass12>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass13>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass2>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass4>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass5>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass6>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass7>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass8>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass9>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FireBoat>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FireEngine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishCarrierShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishFactoryShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingBoat>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingTrawler>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingVessel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FiveWellStackCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FixedBridge>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FlagOfConvenienceRegister>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FlatRackContainer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Flatcar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FlightDeck>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FlightSchedule>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FreightCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Freighter>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FuelTank>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FullSizeVan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GalleryCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GeneralCargoShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GliderAirplane>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GondolaRailcar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GreatLakesShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HalfHeightContainer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HangarBay>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Harbor>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HeadEndCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Heliport>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HopperDredger>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanHabitationArtifact>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanHabitationSpace>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanPoweredDevice>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HydraCushionFreightCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#IceBreakerShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#IntermodalTransportation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#IntermodalTransportationSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#InternalShipRegister>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#InternationalAirport>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#JetAirplane>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#JetEngine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Kayak>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LightTruck>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Lighter>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LinerService>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LiquefiedGasAndChemicalTankerShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LiquefiedGasTankerShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LivestockCarrierShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LocalTransitSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Locomotive>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LocomotiveCoalCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LongTon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MajorAirCarrier>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MaritimeBlockade>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MerchantMarine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MerchantMarineShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MilitaryVan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Minivan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ModeOfTransit>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MotorHopper>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MotorScooter>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Motorboat>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Motorcycle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MotorizedRailwayCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MovingViolation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MultifunctionalLargeLoadCarrierShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MultipleTrackRailway>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NarrowGaugeRailway>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NationalShipRegister>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NaturalGasPipeline>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Navigation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NavigationBuoy>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NavigationLight>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OceanLiner>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreAnchorage>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreShipRegister>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreSupplyShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreSupportShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreWellProductionShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OneWayTransitway>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OpenTopRailcar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OreCarrierShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OutfitCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PalletizedCargoShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ParkingGarage>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PartialContainerShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerAndCargoShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerAndLandingCraft>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerRailwayCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Passport>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassportControl>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PavedRunway>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PersonalWatercraft>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PetroleumPipeline>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PetroleumProductPipeline>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PetroleumTankerShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Pier>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PlaningHullWatercraft>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PontoonBridge>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortCity>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortCrane>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortDetention>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortEmbargo>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortableBridge>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PrivateRailcar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PropellerAirplane>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PusherTug>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Radar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RadarFacility>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RadioNavigationBeacon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailCarrierControl>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailTransportationSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Railcar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailcarCarrierShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailroadBridge>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailwayJunction>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailwayTerminal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailwayVehicle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RefrigeratedCargoShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RegistryTon>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ResearchShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RiverPort>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RoadTransportationSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RocketEngine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollOnRollOffCargoShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollingStock>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RotaryDumpCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Sailboat>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ScaleTestCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SeaLane>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SeaPort>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Seavan>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfDischargingBulkCarrierShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredRoadVehicle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredVehicle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipAgent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipBerth>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipBerthing>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipCabin>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipCompartment>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipDeck>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipHatch>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipHold>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipHull>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipRegister>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Shipping>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShippingChannel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShippingLane>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShortSeaPassengerShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SingleTrafficLane>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SleeperRailcar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SludgeDisposalVessel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SpecializedTankerShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SpineCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SportUtilityVehicle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#StandardGaugeRailway>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Street>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Streetcar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TankCar>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrackGauge>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TractorTrailer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TradeEmbargo>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrafficControlProcess>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrafficLight>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrafficSignal>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Trail>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrainAssembly>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrainStation>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitRoute>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitShelter>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitStop>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitwayObstacle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitwayState>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationAuthority>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationControlDevice>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationSchedule>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Trip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TruckTractor>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TruckTrailer>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Tugboat>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TurbojetEngine>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TurbopropAirplane>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UnimodalTransportationSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UnpavedRunway>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UreaCarrierShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UserPoweredVehicle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleCarrierShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleClassForFHWA>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleCrew>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleRegistration>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleWheel>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WaterTransportationSystem>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WaterwayJunction>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WhalingShip>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WindPoweredDevice>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WoodChipsCarrierShip>))
+############################
+#   Classes
+############################
+
+# Class: <http://reliant.teknowledge.com/DAML/Communications.owl#ElectronicDevice> (<http://reliant.teknowledge.com/DAML/Communications.owl#ElectronicDevice>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Communications.owl#ElectronicDevice> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Economy.owl#PetroleumProduct> (<http://reliant.teknowledge.com/DAML/Economy.owl#PetroleumProduct>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Economy.owl#PetroleumProduct> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Geography.owl#Coal> (<http://reliant.teknowledge.com/DAML/Geography.owl#Coal>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Geography.owl#Coal> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FossilFuel>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Geography.owl#Dam> (<http://reliant.teknowledge.com/DAML/Geography.owl#Dam>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Geography.owl#Dam> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitwayObstacle>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Government.owl#InternationalOrganization> (<http://reliant.teknowledge.com/DAML/Government.owl#InternationalOrganization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Government.owl#InternationalOrganization> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Address> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Address>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Address> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Aircraft> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Aircraft>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Aircraft> <http://reliant.teknowledge.com/DAML/SUMO.owl#TransportationDevice>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Airplane> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Airplane>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Airplane> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Aircraft>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Airplane> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredVehicle>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Airport> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Airport>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Airport> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitTerminal>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Airport> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandTransitway>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Airport> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTransitway>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AnimalPoweredDevice> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AnimalPoweredDevice>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AnimalPoweredDevice> <http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Arriving> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Arriving>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Arriving> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AtmosphericRegion> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AtmosphericRegion>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AtmosphericRegion> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Automobile> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Automobile>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Automobile> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredRoadVehicle>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Battery> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Battery>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Battery> <http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Bridge> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Bridge>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Bridge> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandTransitway>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Bridge> <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Canal> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Canal>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Canal> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Waterway>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CommonCarrier> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CommonCarrier>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CommonCarrier> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialCarrier>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Container> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Container>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Container> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ContractCarrier> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ContractCarrier>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ContractCarrier> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialCarrier>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Crane> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Crane>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Crane> <http://reliant.teknowledge.com/DAML/SUMO.owl#TransportationDevice>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CubicFoot> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CubicFoot>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#CubicFoot> <http://reliant.teknowledge.com/DAML/SUMO.owl#VolumeMeasure>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Cycle> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Cycle>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Cycle> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DeviceStateAttribute> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DeviceStateAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DeviceStateAttribute> <http://reliant.teknowledge.com/DAML/SUMO.owl#Attribute>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DieselEngine> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DieselEngine>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DieselEngine> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#InternalCombustionEngine>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DieselFuel> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DieselFuel>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#DieselFuel> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FossilFuel>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricMotor> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricMotor>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricMotor> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricMotor> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Engine>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricalSignalling> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricalSignalling>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricalSignalling> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Signalling>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectronicSignalling> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectronicSignalling>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectronicSignalling> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricalSignalling>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Engine> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Engine>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Engine> <http://reliant.teknowledge.com/DAML/SUMO.owl#Machine>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Expressway> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Expressway>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Expressway> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SurfacedRoadway>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FossilFuel> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FossilFuel>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FossilFuel> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fuel>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FossilFuel> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#OrganicCompound>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fuel> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fuel>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Fuel> <http://reliant.teknowledge.com/DAML/SUMO.owl#Substance>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Gasoline> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Gasoline>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Gasoline> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#FossilFuel>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#GasolineEngine> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#GasolineEngine>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#GasolineEngine> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#InternalCombustionEngine>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Helicopter> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Helicopter>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Helicopter> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Aircraft>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Helicopter> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredVehicle>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#HoistingDevice> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#HoistingDevice>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#HoistingDevice> <http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#InternalCombustionEngine> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#InternalCombustionEngine>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#InternalCombustionEngine> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Engine>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#InternationalLaw> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#InternationalLaw>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#InternationalLaw> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandVehicle> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandVehicle>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandVehicle> <http://reliant.teknowledge.com/DAML/SUMO.owl#Vehicle>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LegalCharge> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LegalCharge>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LegalCharge> <http://reliant.teknowledge.com/DAML/SUMO.owl#RegulatoryProcess>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#License> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#License>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#License> <http://reliant.teknowledge.com/DAML/SUMO.owl#Certificate>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LightFixture> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LightFixture>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LightFixture> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LiquefiedPetroleumGas> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LiquefiedPetroleumGas>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LiquefiedPetroleumGas> <http://reliant.teknowledge.com/DAML/Economy.owl#PetroleumProduct>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MaterialHandlingEquipment> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MaterialHandlingEquipment>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MaterialHandlingEquipment> <http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MetricTon> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MetricTon>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MetricTon> <http://reliant.teknowledge.com/DAML/SUMO.owl#MassMeasure>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MilitaryWatercraft> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MilitaryWatercraft>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MilitaryWatercraft> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Watercraft>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#OrganicCompound> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#OrganicCompound>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#OrganicCompound> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Pipeline> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Pipeline>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Pipeline> <http://reliant.teknowledge.com/DAML/SUMO.owl#Transitway>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#PortFacility> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#PortFacility>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#PortFacility> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitTerminal>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Profession> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Profession>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Profession> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadarOrSonar> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadarOrSonar>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadarOrSonar> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RailroadCompany> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RailroadCompany>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RailroadCompany> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RailroadTrack> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RailroadTrack>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RailroadTrack> <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Railway> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Railway>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Railway> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandTransitway>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Railway> <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ramp> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ramp>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ramp> <http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RefrigeratedCompartment> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RefrigeratedCompartment>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RefrigeratedCompartment> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Container>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RoadJunction> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RoadJunction>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RoadJunction> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitwayJunction>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RoadJunction> <http://reliant.teknowledge.com/DAML/SUMO.owl#Roadway>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RoadVehicle> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RoadVehicle>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RoadVehicle> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandVehicle>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Runway> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Runway>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Runway> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandTransitway>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SelfPoweredDevice> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SelfPoweredDevice>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SelfPoweredDevice> <http://reliant.teknowledge.com/DAML/SUMO.owl#TransportationDevice>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DisplacementHullWatercraft>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Signalling> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Signalling>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Signalling> <http://reliant.teknowledge.com/DAML/SUMO.owl#Guiding>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SteamEngine> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SteamEngine>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SteamEngine> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Engine>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SurfacedRoadway> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SurfacedRoadway>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SurfacedRoadway> <http://reliant.teknowledge.com/DAML/SUMO.owl#Roadway>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TakingOff> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TakingOff>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TakingOff> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#IntermodalTransportation>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TerminalBuilding> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TerminalBuilding>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TerminalBuilding> <http://reliant.teknowledge.com/DAML/SUMO.owl#Building>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Trailer> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Trailer>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Trailer> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RoadVehicle>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Train> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Train>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Train> <http://reliant.teknowledge.com/DAML/SUMO.owl#Collection>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Train> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailwayVehicle>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Train> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredVehicle>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitTerminal> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitTerminal>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitTerminal> <http://reliant.teknowledge.com/DAML/SUMO.owl#Region>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitTerminal> <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitwayJunction> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitwayJunction>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitwayJunction> <http://reliant.teknowledge.com/DAML/SUMO.owl#Transitway>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransportationCompany> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransportationCompany>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransportationCompany> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Truck> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Truck>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Truck> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredRoadVehicle>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Tunnel> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Tunnel>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Tunnel> <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Tunnel> <http://reliant.teknowledge.com/DAML/SUMO.owl#Transitway>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UnsurfacedRoadway> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UnsurfacedRoadway>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UnsurfacedRoadway> <http://reliant.teknowledge.com/DAML/SUMO.owl#Roadway>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Urea> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Urea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Urea> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#OrganicCompound>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UserPoweredDevice> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UserPoweredDevice>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UserPoweredDevice> <http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Watercraft> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Watercraft>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Watercraft> <http://reliant.teknowledge.com/DAML/SUMO.owl#TransportationDevice>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Waterway> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Waterway>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Waterway> <http://reliant.teknowledge.com/DAML/SUMO.owl#Transitway>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Waterway> <http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea>)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wheel> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wheel>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wheel> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Windmill> (<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Windmill>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Windmill> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Engine>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Agent> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Agent>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Agent> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#AsymmetricRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Attaching> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Attaching>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Attaching> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Attribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Attribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Attribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BodyMotion> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BodyMotion>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BodyMotion> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Building> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Building>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Building> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#CaseRole> (<http://reliant.teknowledge.com/DAML/SUMO.owl#CaseRole>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#CaseRole> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Certificate> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Certificate>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Certificate> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#City> (<http://reliant.teknowledge.com/DAML/SUMO.owl#City>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#City> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent> (<http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Collection> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Collection>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Collection> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#CommercialAgent> (<http://reliant.teknowledge.com/DAML/SUMO.owl#CommercialAgent>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#CommercialAgent> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#CommercialService> (<http://reliant.teknowledge.com/DAML/SUMO.owl#CommercialService>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#CommercialService> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Communication> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Communication>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Communication> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject> (<http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#DeonticAttribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#DeonticAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#DeonticAttribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Device> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Device> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization> (<http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Guiding> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Guiding>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Guiding> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Hole> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Hole>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Hole> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess> (<http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#IrreflexiveRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#IrreflexiveRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#IrreflexiveRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Keeping> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Keeping>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Keeping> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#LandTransitway> (<http://reliant.teknowledge.com/DAML/SUMO.owl#LandTransitway>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#LandTransitway> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#LandTransitway> <http://reliant.teknowledge.com/DAML/SUMO.owl#Transitway>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#LengthMeasure> (<http://reliant.teknowledge.com/DAML/SUMO.owl#LengthMeasure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#LengthMeasure> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Machine> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Machine>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Machine> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Making> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Making>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Making> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Managing> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Managing>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Managing> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#MassMeasure> (<http://reliant.teknowledge.com/DAML/SUMO.owl#MassMeasure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#MassMeasure> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Motion> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Motion>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Motion> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeInteger> (<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeInteger>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#NonnegativeInteger> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Object> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Object> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Obligation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Obligation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Obligation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#OrganicObject> (<http://reliant.teknowledge.com/DAML/SUMO.owl#OrganicObject>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#OrganicObject> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Organization> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#OrganizationalProcess> (<http://reliant.teknowledge.com/DAML/SUMO.owl#OrganizationalProcess>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#OrganizationalProcess> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Physical> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Physical>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Physical> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#PhysicalQuantity> (<http://reliant.teknowledge.com/DAML/SUMO.owl#PhysicalQuantity>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#PhysicalQuantity> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Position> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Position>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Position> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#PositionalAttribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#PositionalAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#PositionalAttribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Region> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Region>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Region> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#RegulatoryProcess> (<http://reliant.teknowledge.com/DAML/SUMO.owl#RegulatoryProcess>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#RegulatoryProcess> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Roadway> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Roadway>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Roadway> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandTransitway>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SetOrClass> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SetOrClass>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SetOrClass> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SingleValuedRelation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SingleValuedRelation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SingleValuedRelation> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact> (<http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Substance> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Substance>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Substance> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Text> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Text>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Text> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TextureAttribute> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TextureAttribute>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TextureAttribute> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Transitway> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Transitway>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Transitway> <http://reliant.teknowledge.com/DAML/SUMO.owl#Region>)
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Transitway> <http://reliant.teknowledge.com/DAML/SUMO.owl#SelfConnectedObject>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Translocation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Translocation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Translocation> <http://reliant.teknowledge.com/DAML/SUMO.owl#Motion>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Transportation> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Transportation>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Transportation> <http://reliant.teknowledge.com/DAML/SUMO.owl#Translocation>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#TransportationDevice> (<http://reliant.teknowledge.com/DAML/SUMO.owl#TransportationDevice>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#TransportationDevice> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction> (<http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnaryFunction> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure> (<http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#UnitOfMeasure> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#Vehicle> (<http://reliant.teknowledge.com/DAML/SUMO.owl#Vehicle>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#Vehicle> <http://reliant.teknowledge.com/DAML/SUMO.owl#TransportationDevice>)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#VolumeMeasure> (<http://reliant.teknowledge.com/DAML/SUMO.owl#VolumeMeasure>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#VolumeMeasure> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea> (<http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AidToNavigation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AidToNavigation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AidToNavigation> <http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AidToNavigation> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationControlDevice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirRoute> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirRoute>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirRoute> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTransitway>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirRoute> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitRoute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlCenter> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlCenter>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlCenter> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlEnRouteCenter> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlEnRouteCenter>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlEnRouteCenter> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlCenter>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlProcedure> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlProcedure>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlProcedure> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrafficControlProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlRadarRoom> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlRadarRoom>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlRadarRoom> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlCenter>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlRadarRoom> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RadarFacility>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlTower> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlTower>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlTower> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTrafficControlCenter>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTransitway> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTransitway>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTransitway> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AtmosphericRegion>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTransitway> <http://reliant.teknowledge.com/DAML/SUMO.owl#Transitway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirportByRunwaySurface> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirportByRunwaySurface>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirportByRunwaySurface> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirportClassification>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirportClassification> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirportClassification>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirportClassification> <http://reliant.teknowledge.com/DAML/SUMO.owl#Attribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Ambulance> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Ambulance>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Ambulance> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EmergencyRoadVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Anchorage> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Anchorage>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Anchorage> <http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AnimalPoweredVehicle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AnimalPoweredVehicle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AnimalPoweredVehicle> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#AnimalPoweredDevice>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AnimalPoweredVehicle> <http://reliant.teknowledge.com/DAML/SUMO.owl#Vehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Axle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Axle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Axle> <http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Barge> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Barge>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Barge> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Watercraft>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BargeCarrierShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BargeCarrierShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BargeCarrierShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Freighter>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Bicycle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Bicycle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Bicycle> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Cycle>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Bicycle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Cycle-TransportationDevice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BillOfLading> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BillOfLading>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BillOfLading> <http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Boxcar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Boxcar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Boxcar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FreightCar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BroadGaugeRailway> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BroadGaugeRailway>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BroadGaugeRailway> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Railway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BulkCargo> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BulkCargo>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BulkCargo> <http://reliant.teknowledge.com/DAML/SUMO.owl#Substance>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Bulkhead> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Bulkhead>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Bulkhead> <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Bus> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Bus>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Bus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass4>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Bus> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredRoadVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BusinessRailcar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BusinessRailcar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BusinessRailcar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerRailwayCar>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BusinessRailcar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Railcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CIAAirportLengthClassification> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CIAAirportLengthClassification>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CIAAirportLengthClassification> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirportClassification>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CabCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CabCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CabCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerRailwayCar>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CabCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CableShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CableShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CableShip> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Cabotage> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Cabotage>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Cabotage> <http://reliant.teknowledge.com/DAML/SUMO.owl#Transportation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalLock> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalLock>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalLock> <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalLockGate> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalLockGate>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalLockGate> <http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalLockGate> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitwayObstacle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalStructure> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalStructure>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalStructure> <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CanalSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WaterTransportationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Canoe> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Canoe>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Canoe> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Watercraft>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Canoe> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanPoweredDevice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CarDistributionSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CarDistributionSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CarDistributionSystem> <http://reliant.teknowledge.com/DAML/SUMO.owl#Managing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoContainer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoContainer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoContainer> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Container>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoContainer> <http://reliant.teknowledge.com/DAML/SUMO.owl#TransportationDevice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoHandling> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoHandling>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoHandling> <http://reliant.teknowledge.com/DAML/SUMO.owl#Transportation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoManifest> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoManifest>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoManifest> <http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Catamaran> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Catamaran>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Catamaran> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PlaningHullWatercraft>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CementCarrierShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CementCarrierShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CementCarrierShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DryBulkCarrierShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CertificateOfRegistry> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CertificateOfRegistry>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CertificateOfRegistry> <http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ChemicalAndPetroleumTankerShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ChemicalAndPetroleumTankerShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ChemicalAndPetroleumTankerShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ChemicalTankerShip>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ChemicalAndPetroleumTankerShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PetroleumTankerShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ChemicalTankerShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ChemicalTankerShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ChemicalTankerShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ClassIIIRailroad> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ClassIIIRailroad>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ClassIIIRailroad> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RailroadCompany>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ClassIIRailroad> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ClassIIRailroad>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ClassIIRailroad> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RailroadCompany>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ClassIRailroad> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ClassIRailroad>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ClassIRailroad> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RailroadCompany>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CoachRailcar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CoachRailcar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CoachRailcar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerRailwayCar>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CoachRailcar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Railcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CombinationBulkAndOilCarrierShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CombinationBulkAndOilCarrierShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CombinationBulkAndOilCarrierShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CombinationCarrierShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CombinationCarrierShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CombinationCarrierShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CombinationCarrierShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CombinationOreAndOilCarrierShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CombinationOreAndOilCarrierShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CombinationOreAndOilCarrierShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CombinationCarrierShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialAirport> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialAirport>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialAirport> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Airport>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialAirport> <http://reliant.teknowledge.com/DAML/SUMO.owl#CommercialAgent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialCarrier> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialCarrier>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialCarrier> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransportationCompany>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialShipping> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialShipping>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialShipping> <http://reliant.teknowledge.com/DAML/SUMO.owl#CommercialService>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialShipping> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Shipping>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerAndRoRoCargoShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerAndRoRoCargoShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerAndRoRoCargoShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PartialContainerShip>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerAndRoRoCargoShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollOnRollOffCargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerHandlingEquipment> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerHandlingEquipment>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerHandlingEquipment> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#MaterialHandlingEquipment>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Freighter>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerTerminal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerTerminal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ContainerTerminal> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#PortFacility>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Containerization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Containerization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Containerization> <http://reliant.teknowledge.com/DAML/SUMO.owl#Transportation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CraneShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CraneShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CraneShip> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CrewDormCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CrewDormCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CrewDormCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerRailwayCar>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CrewDormCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Railcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CrewList> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CrewList>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CrewList> <http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CruiseShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CruiseShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CruiseShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Cycle-TransportationDevice> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Cycle-TransportationDevice>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Cycle-TransportationDevice> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandVehicle>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Cycle-TransportationDevice> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UserPoweredDevice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DangerousGoods> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DangerousGoods>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DangerousGoods> <http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeckCargo> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeckCargo>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeckCargo> <http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeckCargoShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeckCargoShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeckCargoShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GeneralCargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeckCrane> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeckCrane>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeckCrane> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Crane>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeepDraftPortCity> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeepDraftPortCity>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeepDraftPortCity> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortCity>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeepDraftWaterArea> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeepDraftWaterArea>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeepDraftWaterArea> <http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeepwaterPort> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeepwaterPort>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DeepwaterPort> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#PortFacility>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DepartmentOfTransportation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DepartmentOfTransportation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DepartmentOfTransportation> <http://reliant.teknowledge.com/DAML/SUMO.owl#GovernmentOrganization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DiningCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DiningCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DiningCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerRailwayCar>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DiningCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Railcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DirectingTraffic> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DirectingTraffic>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DirectingTraffic> <http://reliant.teknowledge.com/DAML/SUMO.owl#BodyMotion>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DirectingTraffic> <http://reliant.teknowledge.com/DAML/SUMO.owl#Communication>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DisplacementHullWatercraft> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DisplacementHullWatercraft>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DisplacementHullWatercraft> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Watercraft>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Drawbridge> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Drawbridge>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Drawbridge> <http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Drawbridge> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FixedBridge>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Dredger> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Dredger>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Dredger> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DrillingShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DrillingShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DrillingShip> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DromedaryContainer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DromedaryContainer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DromedaryContainer> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoContainer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DryBulkCargo> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DryBulkCargo>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DryBulkCargo> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#BulkCargo>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DryBulkCarrierShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DryBulkCarrierShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DryBulkCarrierShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DualGaugeRailway> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DualGaugeRailway>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DualGaugeRailway> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Railway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ElectrifiedRailway> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ElectrifiedRailway>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ElectrifiedRailway> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Railway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ElectrifiedRailwayCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ElectrifiedRailwayCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ElectrifiedRailwayCar> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ElectrifiedRailwayCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollingStock>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ElectrifiedRailwayCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EmergencyRoadVehicle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EmergencyRoadVehicle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EmergencyRoadVehicle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EmergencyVehicle>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EmergencyRoadVehicle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredRoadVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EmergencyVehicle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EmergencyVehicle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EmergencyVehicle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EtiologicAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EtiologicAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EtiologicAgent> <http://reliant.teknowledge.com/DAML/SUMO.owl#OrganicObject>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass1> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass1>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass1> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass10> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass10>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass10> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TractorTrailer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass11> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass11>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass11> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TractorTrailer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass12> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass12>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass12> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TractorTrailer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass13> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass13>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass13> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TractorTrailer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass2> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass2>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass2> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass4> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass4>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass4> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass5> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass5>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass5> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Truck>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass6> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass6>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass6> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Truck>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass7> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass7>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass7> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Truck>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass8> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass8>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass8> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TractorTrailer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass9> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass9>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass9> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TractorTrailer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FireBoat> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FireBoat>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FireBoat> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Watercraft>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FireBoat> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EmergencyVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FireEngine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FireEngine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FireEngine> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#EmergencyRoadVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishCarrierShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishCarrierShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishCarrierShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingVessel>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishFactoryShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishFactoryShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishFactoryShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingVessel>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingBoat> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingBoat>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingBoat> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingVessel>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingTrawler> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingTrawler>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingTrawler> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingVessel>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingVessel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingVessel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingVessel> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Watercraft>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FiveWellStackCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FiveWellStackCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FiveWellStackCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OpenTopRailcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FixedBridge> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FixedBridge>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FixedBridge> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Bridge>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FlagOfConvenienceRegister> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FlagOfConvenienceRegister>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FlagOfConvenienceRegister> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipRegister>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FlatRackContainer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FlatRackContainer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FlatRackContainer> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoContainer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Flatcar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Flatcar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Flatcar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OpenTopRailcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FlightDeck> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FlightDeck>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FlightDeck> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipDeck>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FlightSchedule> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FlightSchedule>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FlightSchedule> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationSchedule>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FreightCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FreightCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FreightCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Railcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Freighter> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Freighter>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Freighter> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FuelTank> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FuelTank>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FuelTank> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Container>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FullSizeVan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FullSizeVan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FullSizeVan> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Automobile>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GalleryCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GalleryCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GalleryCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerRailwayCar>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GalleryCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Railcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GeneralCargoShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GeneralCargoShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GeneralCargoShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GliderAirplane> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GliderAirplane>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GliderAirplane> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Aircraft>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GliderAirplane> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WindPoweredDevice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GondolaRailcar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GondolaRailcar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GondolaRailcar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OpenTopRailcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GreatLakesShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GreatLakesShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GreatLakesShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HalfHeightContainer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HalfHeightContainer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HalfHeightContainer> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoContainer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HangarBay> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HangarBay>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HangarBay> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipCompartment>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Harbor> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Harbor>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Harbor> <http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HeadEndCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HeadEndCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HeadEndCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Railcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Heliport> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Heliport>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Heliport> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitTerminal>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Heliport> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AirTransitway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HopperDredger> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HopperDredger>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HopperDredger> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Dredger>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanHabitationArtifact> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanHabitationArtifact>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanHabitationArtifact> <http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanHabitationArtifact> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanHabitationSpace>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanHabitationSpace> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanHabitationSpace>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanHabitationSpace> <http://reliant.teknowledge.com/DAML/SUMO.owl#Region>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanPoweredDevice> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanPoweredDevice>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanPoweredDevice> <http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HydraCushionFreightCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HydraCushionFreightCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HydraCushionFreightCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FreightCar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#IceBreakerShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#IceBreakerShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#IceBreakerShip> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#IntermodalTransportation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#IntermodalTransportation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#IntermodalTransportation> <http://reliant.teknowledge.com/DAML/SUMO.owl#Transportation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#IntermodalTransportationSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#IntermodalTransportationSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#IntermodalTransportationSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#InternalShipRegister> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#InternalShipRegister>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#InternalShipRegister> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipRegister>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#InternationalAirport> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#InternationalAirport>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#InternationalAirport> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CommercialAirport>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#JetAirplane> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#JetAirplane>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#JetAirplane> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Airplane>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#JetEngine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#JetEngine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#JetEngine> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#InternalCombustionEngine>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Kayak> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Kayak>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Kayak> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Watercraft>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Kayak> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanPoweredDevice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LightTruck> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LightTruck>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LightTruck> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Automobile>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LightTruck> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Truck>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Lighter> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Lighter>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Lighter> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Barge>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LinerService> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LinerService>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LinerService> <http://reliant.teknowledge.com/DAML/SUMO.owl#Transportation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LiquefiedGasAndChemicalTankerShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LiquefiedGasAndChemicalTankerShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LiquefiedGasAndChemicalTankerShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ChemicalTankerShip>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LiquefiedGasAndChemicalTankerShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LiquefiedGasTankerShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LiquefiedGasTankerShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LiquefiedGasTankerShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LiquefiedGasTankerShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LivestockCarrierShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LivestockCarrierShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LivestockCarrierShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LocalTransitSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LocalTransitSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LocalTransitSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Locomotive> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Locomotive>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Locomotive> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollingStock>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Locomotive> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LocomotiveCoalCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LocomotiveCoalCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LocomotiveCoalCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Railcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LongTon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LongTon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#LongTon> <http://reliant.teknowledge.com/DAML/SUMO.owl#MassMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MajorAirCarrier> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MajorAirCarrier>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MajorAirCarrier> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransportationCompany>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MaritimeBlockade> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MaritimeBlockade>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MaritimeBlockade> <http://reliant.teknowledge.com/DAML/SUMO.owl#IntentionalProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MerchantMarine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MerchantMarine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MerchantMarine> <http://reliant.teknowledge.com/DAML/SUMO.owl#Collection>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MerchantMarineShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MerchantMarineShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MerchantMarineShip> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MilitaryVan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MilitaryVan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MilitaryVan> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoContainer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Minivan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Minivan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Minivan> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Automobile>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ModeOfTransit> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ModeOfTransit>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ModeOfTransit> <http://reliant.teknowledge.com/DAML/SUMO.owl#SetOrClass>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MotorHopper> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MotorHopper>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MotorHopper> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MotorScooter> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MotorScooter>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MotorScooter> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredRoadVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Motorboat> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Motorboat>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Motorboat> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Watercraft>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Motorcycle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Motorcycle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Motorcycle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass1>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Motorcycle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredRoadVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MotorizedRailwayCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MotorizedRailwayCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MotorizedRailwayCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollingStock>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MotorizedRailwayCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MovingViolation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MovingViolation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MovingViolation> <http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MultifunctionalLargeLoadCarrierShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MultifunctionalLargeLoadCarrierShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MultifunctionalLargeLoadCarrierShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MultipleTrackRailway> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MultipleTrackRailway>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#MultipleTrackRailway> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Railway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NarrowGaugeRailway> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NarrowGaugeRailway>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NarrowGaugeRailway> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Railway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NationalShipRegister> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NationalShipRegister>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NationalShipRegister> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipRegister>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NaturalGasPipeline> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NaturalGasPipeline>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NaturalGasPipeline> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Pipeline>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Navigation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Navigation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Navigation> <http://reliant.teknowledge.com/DAML/SUMO.owl#Guiding>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NavigationBuoy> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NavigationBuoy>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NavigationBuoy> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AidToNavigation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NavigationLight> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NavigationLight>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NavigationLight> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NavigationLight> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LightFixture>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#NavigationLight> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AidToNavigation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OceanLiner> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OceanLiner>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OceanLiner> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OceanLiner> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreAnchorage> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreAnchorage>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreAnchorage> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Anchorage>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreShipRegister> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreShipRegister>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreShipRegister> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipRegister>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreSupplyShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreSupplyShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreSupplyShip> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreSupportShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreSupportShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreSupportShip> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreWellProductionShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreWellProductionShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OffshoreWellProductionShip> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OneWayTransitway> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OneWayTransitway>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OneWayTransitway> <http://reliant.teknowledge.com/DAML/SUMO.owl#Transitway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OpenTopRailcar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OpenTopRailcar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OpenTopRailcar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FreightCar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OreCarrierShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OreCarrierShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OreCarrierShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DryBulkCarrierShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OutfitCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OutfitCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OutfitCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerRailwayCar>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#OutfitCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Railcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PalletizedCargoShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PalletizedCargoShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PalletizedCargoShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GeneralCargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ParkingGarage> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ParkingGarage>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ParkingGarage> <http://reliant.teknowledge.com/DAML/SUMO.owl#Building>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PartialContainerShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PartialContainerShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PartialContainerShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Freighter>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerAndCargoShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerAndCargoShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerAndCargoShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerAndCargoShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerAndLandingCraft> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerAndLandingCraft>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerAndLandingCraft> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerAndCargoShip>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerAndLandingCraft> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollOnRollOffCargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerCar> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Automobile>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FHWAVehicleClass2>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerRailwayCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerRailwayCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerRailwayCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanHabitationArtifact>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerRailwayCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollingStock>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerShip> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Passport> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Passport>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Passport> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassportControl> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassportControl>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassportControl> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PavedRunway> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PavedRunway>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PavedRunway> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Runway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PersonalWatercraft> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PersonalWatercraft>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PersonalWatercraft> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Watercraft>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PersonalWatercraft> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PetroleumPipeline> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PetroleumPipeline>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PetroleumPipeline> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Pipeline>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PetroleumProductPipeline> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PetroleumProductPipeline>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PetroleumProductPipeline> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Pipeline>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PetroleumTankerShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PetroleumTankerShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PetroleumTankerShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Pier> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Pier>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Pier> <http://reliant.teknowledge.com/DAML/SUMO.owl#StationaryArtifact>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PlaningHullWatercraft> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PlaningHullWatercraft>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PlaningHullWatercraft> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Watercraft>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PontoonBridge> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PontoonBridge>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PontoonBridge> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortableBridge>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortCity> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortCity>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortCity> <http://reliant.teknowledge.com/DAML/SUMO.owl#City>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortCrane> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortCrane>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortCrane> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Crane>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortDetention> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortDetention>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortDetention> <http://reliant.teknowledge.com/DAML/SUMO.owl#Keeping>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortDetention> <http://reliant.teknowledge.com/DAML/SUMO.owl#RegulatoryProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortEmbargo> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortEmbargo>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortEmbargo> <http://reliant.teknowledge.com/DAML/SUMO.owl#OrganizationalProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortableBridge> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortableBridge>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortableBridge> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Bridge>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortableBridge> <http://reliant.teknowledge.com/DAML/SUMO.owl#Roadway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PrivateRailcar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PrivateRailcar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PrivateRailcar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Railcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PropellerAirplane> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PropellerAirplane>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PropellerAirplane> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Airplane>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PusherTug> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PusherTug>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PusherTug> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Tugboat>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Radar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Radar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Radar> <http://reliant.teknowledge.com/DAML/Communications.owl#ElectronicDevice>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Radar> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RadarOrSonar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RadarFacility> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RadarFacility>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RadarFacility> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RadioNavigationBeacon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RadioNavigationBeacon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RadioNavigationBeacon> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RadioNavigationBeacon> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#AidToNavigation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailCarrierControl> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailCarrierControl>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailCarrierControl> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricalSignalling>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailTransportationSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailTransportationSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailTransportationSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Railcar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Railcar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Railcar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollingStock>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailcarCarrierShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailcarCarrierShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailcarCarrierShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollOnRollOffCargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailroadBridge> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailroadBridge>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailroadBridge> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Railway>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailroadBridge> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FixedBridge>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailwayJunction> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailwayJunction>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailwayJunction> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Railway>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailwayJunction> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitwayJunction>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailwayTerminal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailwayTerminal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailwayTerminal> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitTerminal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailwayVehicle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailwayVehicle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailwayVehicle> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#LandVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RefrigeratedCargoShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RefrigeratedCargoShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RefrigeratedCargoShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Freighter>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RegistryTon> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RegistryTon>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RegistryTon> <http://reliant.teknowledge.com/DAML/SUMO.owl#MassMeasure>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ResearchShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ResearchShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ResearchShip> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RiverPort> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RiverPort>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RiverPort> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortCity>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RoadTransportationSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RoadTransportationSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RoadTransportationSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RocketEngine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RocketEngine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RocketEngine> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Engine>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollOnRollOffCargoShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollOnRollOffCargoShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollOnRollOffCargoShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Freighter>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollingStock> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollingStock>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollingStock> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RailwayVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RotaryDumpCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RotaryDumpCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RotaryDumpCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#GondolaRailcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Sailboat> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Sailboat>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Sailboat> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Watercraft>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Sailboat> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WindPoweredDevice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ScaleTestCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ScaleTestCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ScaleTestCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Railcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SeaLane> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SeaLane>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SeaLane> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Waterway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SeaPort> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SeaPort>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SeaPort> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PortCity>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Seavan> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Seavan>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Seavan> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoContainer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfDischargingBulkCarrierShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfDischargingBulkCarrierShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfDischargingBulkCarrierShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DryBulkCarrierShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredRoadVehicle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredRoadVehicle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredRoadVehicle> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#RoadVehicle>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredRoadVehicle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredVehicle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredVehicle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredVehicle> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#SelfPoweredDevice>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredVehicle> <http://reliant.teknowledge.com/DAML/SUMO.owl#Vehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipAgent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipAgent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipAgent> <http://reliant.teknowledge.com/DAML/SUMO.owl#Agent>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipBerth> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipBerth>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipBerth> <http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipBerthing> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipBerthing>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipBerthing> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Arriving>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipCabin> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipCabin>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipCabin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanHabitationArtifact>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipCabin> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipCompartment>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipCompartment> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipCompartment>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipCompartment> <http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipDeck> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipDeck>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipDeck> <http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipHatch> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipHatch>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipHatch> <http://reliant.teknowledge.com/DAML/SUMO.owl#Hole>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipHold> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipHold>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipHold> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipCompartment>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipHull> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipHull>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipHull> <http://reliant.teknowledge.com/DAML/SUMO.owl#Artifact>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipRegister> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipRegister>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShipRegister> <http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Shipping> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Shipping>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Shipping> <http://reliant.teknowledge.com/DAML/SUMO.owl#Transportation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShippingChannel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShippingChannel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShippingChannel> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Waterway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShippingLane> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShippingLane>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShippingLane> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Waterway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShortSeaPassengerShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShortSeaPassengerShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ShortSeaPassengerShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SingleTrafficLane> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SingleTrafficLane>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SingleTrafficLane> <http://reliant.teknowledge.com/DAML/SUMO.owl#Transitway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SleeperRailcar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SleeperRailcar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SleeperRailcar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#PassengerRailwayCar>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SleeperRailcar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Railcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SludgeDisposalVessel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SludgeDisposalVessel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SludgeDisposalVessel> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Ship>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SpecializedTankerShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SpecializedTankerShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SpecializedTankerShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#CargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SpineCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SpineCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SpineCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Flatcar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SportUtilityVehicle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SportUtilityVehicle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SportUtilityVehicle> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Automobile>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#StandardGaugeRailway> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#StandardGaugeRailway>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#StandardGaugeRailway> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Railway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Street> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Street>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Street> <http://reliant.teknowledge.com/DAML/SUMO.owl#Roadway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Streetcar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Streetcar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Streetcar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#ElectrifiedRailwayCar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TankCar> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TankCar>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TankCar> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Container>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TankCar> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FreightCar>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrackGauge> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrackGauge>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrackGauge> <http://reliant.teknowledge.com/DAML/SUMO.owl#InternalAttribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TractorTrailer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TractorTrailer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TractorTrailer> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredRoadVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TradeEmbargo> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TradeEmbargo>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TradeEmbargo> <http://reliant.teknowledge.com/DAML/SUMO.owl#OrganizationalProcess>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrafficControlProcess> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrafficControlProcess>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrafficControlProcess> <http://reliant.teknowledge.com/DAML/SUMO.owl#Guiding>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrafficLight> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrafficLight>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrafficLight> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#ElectricDevice>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrafficLight> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrafficSignal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrafficSignal> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrafficSignal>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrafficSignal> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationControlDevice>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Trail> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Trail>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Trail> <http://reliant.teknowledge.com/DAML/SUMO.owl#LandTransitway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrainAssembly> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrainAssembly>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrainAssembly> <http://reliant.teknowledge.com/DAML/SUMO.owl#Attaching>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrainAssembly> <http://reliant.teknowledge.com/DAML/SUMO.owl#Making>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrainStation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrainStation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrainStation> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TerminalBuilding>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TrainStation> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitTerminal>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitRoute> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitRoute>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitRoute> <http://reliant.teknowledge.com/DAML/SUMO.owl#Transitway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitShelter> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitShelter>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitShelter> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#HumanHabitationArtifact>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitStop> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitStop>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitStop> <http://reliant.teknowledge.com/DAML/SUMO.owl#Region>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitwayObstacle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitwayObstacle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitwayObstacle> <http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitwayState> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitwayState>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransitwayState> <http://reliant.teknowledge.com/DAML/SUMO.owl#RelationalAttribute>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationAuthority> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationAuthority>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationAuthority> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationControlDevice> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationControlDevice>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationControlDevice> <http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationSchedule> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationSchedule>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationSchedule> <http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationSystem> <http://reliant.teknowledge.com/DAML/SUMO.owl#Object>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Trip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Trip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Trip> <http://reliant.teknowledge.com/DAML/SUMO.owl#Translocation>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TruckTractor> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TruckTractor>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TruckTractor> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Truck>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TruckTrailer> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TruckTrailer>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TruckTrailer> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Trailer>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Tugboat> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Tugboat>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Tugboat> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DisplacementHullWatercraft>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#Tugboat> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#SelfPoweredVehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TurbojetEngine> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TurbojetEngine>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TurbojetEngine> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#InternalCombustionEngine>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TurbopropAirplane> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TurbopropAirplane>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TurbopropAirplane> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Airplane>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UnimodalTransportationSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UnimodalTransportationSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UnimodalTransportationSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UnpavedRunway> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UnpavedRunway>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UnpavedRunway> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Runway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UreaCarrierShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UreaCarrierShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UreaCarrierShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DryBulkCarrierShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UserPoweredVehicle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UserPoweredVehicle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UserPoweredVehicle> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#UserPoweredDevice>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#UserPoweredVehicle> <http://reliant.teknowledge.com/DAML/SUMO.owl#Vehicle>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleCarrierShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleCarrierShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleCarrierShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#RollOnRollOffCargoShip>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleClassForFHWA> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleClassForFHWA>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleClassForFHWA> <http://reliant.teknowledge.com/DAML/SUMO.owl#SetOrClass>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleCrew> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleCrew>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleCrew> <http://reliant.teknowledge.com/DAML/SUMO.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleRegistration> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleRegistration>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleRegistration> <http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleWheel> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleWheel>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleWheel> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Wheel>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#VehicleWheel> <http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WaterTransportationSystem> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WaterTransportationSystem>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WaterTransportationSystem> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#TransportationSystem>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WaterwayJunction> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WaterwayJunction>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WaterwayJunction> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#TransitwayJunction>)
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WaterwayJunction> <http://reliant.teknowledge.com/DAML/Mid-level-ontology.owl#Waterway>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WhalingShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WhalingShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WhalingShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#FishingVessel>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WindPoweredDevice> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WindPoweredDevice>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WindPoweredDevice> <http://reliant.teknowledge.com/DAML/SUMO.owl#Device>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WoodChipsCarrierShip> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WoodChipsCarrierShip>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#WoodChipsCarrierShip> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00148.owl#DryBulkCarrierShip>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

@@ -1,0 +1,58 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.dbs.cs.uni-duesseldorf.de_RDF_relational.owl%23.txt#Column>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.dbs.cs.uni-duesseldorf.de_RDF_relational.owl%23.txt#Database>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.dbs.cs.uni-duesseldorf.de_RDF_relational.owl%23.txt#PrimaryKey>))
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.dbs.cs.uni-duesseldorf.de_RDF_relational.owl%23.txt#Table>))
+Declaration(Class(rdf:Bag))
+Declaration(Class(rdf:Seq))
+Declaration(Class(rdfs:Resource))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+############################
+#   Classes
+############################
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.dbs.cs.uni-duesseldorf.de_RDF_relational.owl%23.txt#Column> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.dbs.cs.uni-duesseldorf.de_RDF_relational.owl%23.txt#Column>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.dbs.cs.uni-duesseldorf.de_RDF_relational.owl%23.txt#Column> rdfs:Resource)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.dbs.cs.uni-duesseldorf.de_RDF_relational.owl%23.txt#Database> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.dbs.cs.uni-duesseldorf.de_RDF_relational.owl%23.txt#Database>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.dbs.cs.uni-duesseldorf.de_RDF_relational.owl%23.txt#Database> rdf:Bag)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.dbs.cs.uni-duesseldorf.de_RDF_relational.owl%23.txt#PrimaryKey> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.dbs.cs.uni-duesseldorf.de_RDF_relational.owl%23.txt#PrimaryKey>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.dbs.cs.uni-duesseldorf.de_RDF_relational.owl%23.txt#PrimaryKey> rdf:Bag)
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.dbs.cs.uni-duesseldorf.de_RDF_relational.owl%23.txt#Table> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.dbs.cs.uni-duesseldorf.de_RDF_relational.owl%23.txt#Table>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/http___www.dbs.cs.uni-duesseldorf.de_RDF_relational.owl%23.txt#Table> rdf:Seq)
+
+# Class: rdf:Bag (rdf:Bag)
+
+SubClassOf(rdf:Bag owl:Thing)
+
+# Class: rdf:Seq (rdf:Seq)
+
+SubClassOf(rdf:Seq owl:Thing)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+
+)

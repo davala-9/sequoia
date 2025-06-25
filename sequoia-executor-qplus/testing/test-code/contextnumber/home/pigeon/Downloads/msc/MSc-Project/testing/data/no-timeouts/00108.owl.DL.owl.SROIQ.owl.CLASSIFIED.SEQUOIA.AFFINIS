@@ -1,0 +1,72 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/time#Event>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/time#Instant>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/time#InstantEvent>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/time#InstantThing>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/time#Interval>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/time#IntervalEvent>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/time#IntervalThing>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/time#TemporalEntity>))
+Declaration(Class(<http://pervasive.semanticweb.org/ont/2004/01/time#TemporalThing>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+############################
+#   Classes
+############################
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/time#Event> (<http://pervasive.semanticweb.org/ont/2004/01/time#Event>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/time#Event> <http://pervasive.semanticweb.org/ont/2004/01/time#TemporalThing>)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/time#Instant> (<http://pervasive.semanticweb.org/ont/2004/01/time#Instant>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/time#Instant> <http://pervasive.semanticweb.org/ont/2004/01/time#InstantThing>)
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/time#Instant> <http://pervasive.semanticweb.org/ont/2004/01/time#TemporalEntity>)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/time#InstantEvent> (<http://pervasive.semanticweb.org/ont/2004/01/time#InstantEvent>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/time#InstantEvent> <http://pervasive.semanticweb.org/ont/2004/01/time#Event>)
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/time#InstantEvent> <http://pervasive.semanticweb.org/ont/2004/01/time#InstantThing>)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/time#InstantThing> (<http://pervasive.semanticweb.org/ont/2004/01/time#InstantThing>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/time#InstantThing> <http://pervasive.semanticweb.org/ont/2004/01/time#TemporalThing>)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/time#Interval> (<http://pervasive.semanticweb.org/ont/2004/01/time#Interval>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/time#Interval> <http://pervasive.semanticweb.org/ont/2004/01/time#IntervalThing>)
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/time#Interval> <http://pervasive.semanticweb.org/ont/2004/01/time#TemporalEntity>)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/time#IntervalEvent> (<http://pervasive.semanticweb.org/ont/2004/01/time#IntervalEvent>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/time#IntervalEvent> <http://pervasive.semanticweb.org/ont/2004/01/time#Event>)
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/time#IntervalEvent> <http://pervasive.semanticweb.org/ont/2004/01/time#IntervalThing>)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/time#IntervalThing> (<http://pervasive.semanticweb.org/ont/2004/01/time#IntervalThing>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/time#IntervalThing> <http://pervasive.semanticweb.org/ont/2004/01/time#TemporalThing>)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/time#TemporalEntity> (<http://pervasive.semanticweb.org/ont/2004/01/time#TemporalEntity>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/time#TemporalEntity> <http://pervasive.semanticweb.org/ont/2004/01/time#TemporalThing>)
+
+# Class: <http://pervasive.semanticweb.org/ont/2004/01/time#TemporalThing> (<http://pervasive.semanticweb.org/ont/2004/01/time#TemporalThing>)
+
+SubClassOf(<http://pervasive.semanticweb.org/ont/2004/01/time#TemporalThing> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+
+)

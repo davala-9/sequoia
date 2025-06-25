@@ -1,0 +1,228 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMessageSet>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>))
+Declaration(Class(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AIRDROP60MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AIRMOVE38MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AMSNDAT27MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AMSNLOC35MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AOTRP72MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ARINFO29MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ASACDAT62MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ASACSDAT25MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ASPUTFOR48MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AmplificationMessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#CHAFF56MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ESCDATA54MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#GNDFRND58MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#GTGTLOC36MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ICAOBaseCodeField>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#IMDATLNK42MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#MSNACFT28MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#MTGTLOC19MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#MTGTLOC44MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#NAVFLTOP66MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ObjectiveBoundaryMessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#PGMINFO59MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#PRODUCT41MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#PTRCPLT40MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#RDZDATA55MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#RECCEDAT39MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#REFTSK45MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#REQNO20MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#RouteCommentField>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#SHIPTGT37MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#TRANSREQ61MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#5REFUEL46MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#6EWDAT52MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#6ROUTE53MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#7AOFDAT73MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#7CONTROL26MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#7CONTROL63MessageSet>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#8FACSCHD51MessageSet>))
+############################
+#   Classes
+############################
+
+# Class: <http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMessageSet> (<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMessageSet>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/ATO_Ontology.owl#ATOMessageSet> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> (<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#BinaryPredicate> owl:Thing)
+
+# Class: <http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString> (<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>)
+
+SubClassOf(<http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AIRDROP60MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AIRDROP60MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AIRDROP60MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AIRMOVE38MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AIRMOVE38MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AIRMOVE38MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ObjectiveBoundaryMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AMSNDAT27MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AMSNDAT27MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AMSNDAT27MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AMSNLOC35MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AMSNLOC35MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AMSNLOC35MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ObjectiveBoundaryMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AOTRP72MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AOTRP72MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AOTRP72MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ARINFO29MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ARINFO29MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ARINFO29MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ASACDAT62MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ASACDAT62MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ASACDAT62MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ASACSDAT25MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ASACSDAT25MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ASACSDAT25MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ASPUTFOR48MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ASPUTFOR48MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ASPUTFOR48MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet> <http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AmplificationMessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AmplificationMessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#AmplificationMessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#CHAFF56MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#CHAFF56MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#CHAFF56MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ESCDATA54MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ESCDATA54MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ESCDATA54MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#GNDFRND58MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#GNDFRND58MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#GNDFRND58MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#GTGTLOC36MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#GTGTLOC36MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#GTGTLOC36MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ObjectiveBoundaryMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ICAOBaseCodeField> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ICAOBaseCodeField>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ICAOBaseCodeField> <http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#IMDATLNK42MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#IMDATLNK42MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#IMDATLNK42MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#MSNACFT28MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#MSNACFT28MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#MSNACFT28MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#MTGTLOC19MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#MTGTLOC19MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#MTGTLOC19MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#MTGTLOC44MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#MTGTLOC44MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#MTGTLOC44MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#NAVFLTOP66MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#NAVFLTOP66MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#NAVFLTOP66MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ObjectiveBoundaryMessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ObjectiveBoundaryMessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ObjectiveBoundaryMessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#PGMINFO59MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#PGMINFO59MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#PGMINFO59MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#PRODUCT41MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#PRODUCT41MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#PRODUCT41MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#PTRCPLT40MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#PTRCPLT40MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#PTRCPLT40MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#RDZDATA55MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#RDZDATA55MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#RDZDATA55MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#RECCEDAT39MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#RECCEDAT39MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#RECCEDAT39MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ObjectiveBoundaryMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#REFTSK45MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#REFTSK45MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#REFTSK45MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#REQNO20MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#REQNO20MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#REQNO20MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#RouteCommentField> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#RouteCommentField>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#RouteCommentField> <http://reliant.teknowledge.com/DAML/SUMO.owl#SymbolicString>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#SHIPTGT37MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#SHIPTGT37MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#SHIPTGT37MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ObjectiveBoundaryMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#TRANSREQ61MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#TRANSREQ61MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#TRANSREQ61MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#5REFUEL46MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#5REFUEL46MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#5REFUEL46MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#6EWDAT52MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#6EWDAT52MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#6EWDAT52MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#6ROUTE53MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#6ROUTE53MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#6ROUTE53MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#7AOFDAT73MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#7AOFDAT73MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#7AOFDAT73MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#7CONTROL26MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#7CONTROL26MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#7CONTROL26MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#7CONTROL63MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#7CONTROL63MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#7CONTROL63MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#8FACSCHD51MessageSet> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#8FACSCHD51MessageSet>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#8FACSCHD51MessageSet> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00136.owl#ATOMessageSet>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

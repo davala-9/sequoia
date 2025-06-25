@@ -1,0 +1,113 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/project.owl#Project>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#ContextAwareComputing>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#DataMining>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#Highperformancecomputing>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#KnowledgeRepresentationandReasoning>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#Languagetechnology>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#Miscellaneous>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#MobileCommerce>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#MobileComputing>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#MultiAgentSystems>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#Networkingandsystems>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#Pervasivecomputing>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#RFID>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#Research>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#SecurityTrustandPrivacy>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#SemanticWeb>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#Webbasedinformationsystems>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#Webservices>))
+Declaration(Class(<http://ebiquity.umbc.edu/ontology/research.owl#ecommerce>))
+############################
+#   Classes
+############################
+
+# Class: <http://ebiquity.umbc.edu/ontology/project.owl#Project> (<http://ebiquity.umbc.edu/ontology/project.owl#Project>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/project.owl#Project> owl:Thing)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#ContextAwareComputing> (<http://ebiquity.umbc.edu/ontology/research.owl#ContextAwareComputing>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#ContextAwareComputing> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#DataMining> (<http://ebiquity.umbc.edu/ontology/research.owl#DataMining>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#DataMining> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#Highperformancecomputing> (<http://ebiquity.umbc.edu/ontology/research.owl#Highperformancecomputing>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#Highperformancecomputing> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#KnowledgeRepresentationandReasoning> (<http://ebiquity.umbc.edu/ontology/research.owl#KnowledgeRepresentationandReasoning>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#KnowledgeRepresentationandReasoning> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#Languagetechnology> (<http://ebiquity.umbc.edu/ontology/research.owl#Languagetechnology>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#Languagetechnology> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#Miscellaneous> (<http://ebiquity.umbc.edu/ontology/research.owl#Miscellaneous>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#Miscellaneous> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#MobileCommerce> (<http://ebiquity.umbc.edu/ontology/research.owl#MobileCommerce>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#MobileCommerce> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#MobileComputing> (<http://ebiquity.umbc.edu/ontology/research.owl#MobileComputing>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#MobileComputing> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#MultiAgentSystems> (<http://ebiquity.umbc.edu/ontology/research.owl#MultiAgentSystems>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#MultiAgentSystems> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#Networkingandsystems> (<http://ebiquity.umbc.edu/ontology/research.owl#Networkingandsystems>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#Networkingandsystems> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#Pervasivecomputing> (<http://ebiquity.umbc.edu/ontology/research.owl#Pervasivecomputing>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#Pervasivecomputing> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#RFID> (<http://ebiquity.umbc.edu/ontology/research.owl#RFID>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#RFID> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#Research> (<http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#Research> owl:Thing)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#SecurityTrustandPrivacy> (<http://ebiquity.umbc.edu/ontology/research.owl#SecurityTrustandPrivacy>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#SecurityTrustandPrivacy> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#SemanticWeb> (<http://ebiquity.umbc.edu/ontology/research.owl#SemanticWeb>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#SemanticWeb> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#Webbasedinformationsystems> (<http://ebiquity.umbc.edu/ontology/research.owl#Webbasedinformationsystems>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#Webbasedinformationsystems> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#Webservices> (<http://ebiquity.umbc.edu/ontology/research.owl#Webservices>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#Webservices> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: <http://ebiquity.umbc.edu/ontology/research.owl#ecommerce> (<http://ebiquity.umbc.edu/ontology/research.owl#ecommerce>)
+
+SubClassOf(<http://ebiquity.umbc.edu/ontology/research.owl#ecommerce> <http://ebiquity.umbc.edu/ontology/research.owl#Research>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

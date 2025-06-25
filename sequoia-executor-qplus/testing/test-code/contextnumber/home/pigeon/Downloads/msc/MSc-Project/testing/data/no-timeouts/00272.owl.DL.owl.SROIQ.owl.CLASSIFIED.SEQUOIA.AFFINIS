@@ -1,0 +1,174 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Thing>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Author>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Conference>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Date>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Document>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Publication>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Class>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Datatype>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#DatatypeProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#List>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Nothing>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#ObjectProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Ontology>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Property>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Restriction>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#TransitiveProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#UniqueProperty>))
+Declaration(Class(<http://www.isi.edu/webscripter/person.o.daml#Person>))
+Declaration(Class(rdf:Property))
+Declaration(Class(rdf:Seq))
+Declaration(Class(rdfs:Class))
+Declaration(Class(rdfs:Container))
+Declaration(Class(rdfs:ContainerMembershipProperty))
+Declaration(Class(rdfs:Datatype))
+Declaration(Class(rdfs:Literal))
+Declaration(Class(rdfs:Resource))
+Declaration(Class(<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>))
+Declaration(Class(owl:Class))
+Declaration(Class(owl:ObjectProperty))
+Declaration(Class(owl:Restriction))
+############################
+#   Classes
+############################
+
+# Class: <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Thing> (<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Thing>)
+
+SubClassOf(<file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Thing> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Author> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Author>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Author> <http://www.isi.edu/webscripter/person.o.daml#Person>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Conference> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Conference>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Conference> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Thing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Date> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Date>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Date> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Document> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Document>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Document> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Thing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Publication> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Publication>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00272.owl#Publication> <file:/Users/zwang/Documents/SVN/TestOntologies/public/GardinerCorpus/gardiner-all/Thing>)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Class> (<http://www.daml.org/2001/03/daml+oil#Class>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Class> rdfs:Class)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Datatype> (<http://www.daml.org/2001/03/daml+oil#Datatype>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Datatype> rdfs:Class)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#DatatypeProperty> (<http://www.daml.org/2001/03/daml+oil#DatatypeProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#DatatypeProperty> rdf:Property)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#List> (<http://www.daml.org/2001/03/daml+oil#List>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#List> rdf:Seq)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Nothing> (<http://www.daml.org/2001/03/daml+oil#Nothing>)
+
+EquivalentClasses(<http://www.daml.org/2001/03/daml+oil#Nothing> owl:Nothing)
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Nothing> owl:Nothing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#ObjectProperty> (<http://www.daml.org/2001/03/daml+oil#ObjectProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#ObjectProperty> rdf:Property)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Ontology> (<http://www.daml.org/2001/03/daml+oil#Ontology>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Ontology> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Property> (<http://www.daml.org/2001/03/daml+oil#Property>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Property> owl:Thing)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Restriction> (<http://www.daml.org/2001/03/daml+oil#Restriction>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Restriction> owl:Class)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#TransitiveProperty> (<http://www.daml.org/2001/03/daml+oil#TransitiveProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#TransitiveProperty> owl:ObjectProperty)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#UnambiguousProperty> (<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UnambiguousProperty> owl:ObjectProperty)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#UniqueProperty> (<http://www.daml.org/2001/03/daml+oil#UniqueProperty>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#UniqueProperty> rdf:Property)
+
+# Class: <http://www.isi.edu/webscripter/person.o.daml#Person> (<http://www.isi.edu/webscripter/person.o.daml#Person>)
+
+SubClassOf(<http://www.isi.edu/webscripter/person.o.daml#Person> owl:Thing)
+
+# Class: rdf:Property (rdf:Property)
+
+SubClassOf(rdf:Property owl:Thing)
+
+# Class: rdf:Seq (rdf:Seq)
+
+SubClassOf(rdf:Seq owl:Thing)
+
+# Class: rdfs:Class (rdfs:Class)
+
+SubClassOf(rdfs:Class rdfs:Resource)
+
+# Class: rdfs:Container (rdfs:Container)
+
+SubClassOf(rdfs:Container rdfs:Resource)
+
+# Class: rdfs:ContainerMembershipProperty (rdfs:ContainerMembershipProperty)
+
+SubClassOf(rdfs:ContainerMembershipProperty rdf:Property)
+
+# Class: rdfs:Datatype (rdfs:Datatype)
+
+SubClassOf(rdfs:Datatype rdfs:Class)
+
+# Class: rdfs:Literal (rdfs:Literal)
+
+SubClassOf(rdfs:Literal rdfs:Resource)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger> (<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger>)
+
+SubClassOf(<http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger> owl:Thing)
+
+# Class: owl:Class (owl:Class)
+
+SubClassOf(owl:Class owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:ObjectProperty (owl:ObjectProperty)
+
+SubClassOf(owl:ObjectProperty owl:Thing)
+
+# Class: owl:Restriction (owl:Restriction)
+
+SubClassOf(owl:Restriction owl:Thing)
+
+
+)

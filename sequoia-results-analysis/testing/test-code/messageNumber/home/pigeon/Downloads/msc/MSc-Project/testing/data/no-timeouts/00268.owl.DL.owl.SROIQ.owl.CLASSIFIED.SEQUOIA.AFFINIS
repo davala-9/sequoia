@@ -1,0 +1,43 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00268.owl#ScientificReview>))
+Declaration(Class(<http://www.daml.org/2001/03/daml+oil#Ontology>))
+Declaration(Class(<http://www.isi.edu/webscripter/communityreview/abstract-review-o#AbstractReview>))
+Declaration(Class(<http://www.w3.org/2000/10/XMLSchema#boolean>))
+Declaration(Class(<http://www.w3.org/2000/10/XMLSchema#string>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00268.owl#ScientificReview> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00268.owl#ScientificReview>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00268.owl#ScientificReview> <http://www.isi.edu/webscripter/communityreview/abstract-review-o#AbstractReview>)
+
+# Class: <http://www.daml.org/2001/03/daml+oil#Ontology> (<http://www.daml.org/2001/03/daml+oil#Ontology>)
+
+SubClassOf(<http://www.daml.org/2001/03/daml+oil#Ontology> owl:Thing)
+
+# Class: <http://www.isi.edu/webscripter/communityreview/abstract-review-o#AbstractReview> (<http://www.isi.edu/webscripter/communityreview/abstract-review-o#AbstractReview>)
+
+SubClassOf(<http://www.isi.edu/webscripter/communityreview/abstract-review-o#AbstractReview> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/XMLSchema#boolean> (<http://www.w3.org/2000/10/XMLSchema#boolean>)
+
+SubClassOf(<http://www.w3.org/2000/10/XMLSchema#boolean> owl:Thing)
+
+# Class: <http://www.w3.org/2000/10/XMLSchema#string> (<http://www.w3.org/2000/10/XMLSchema#string>)
+
+SubClassOf(<http://www.w3.org/2000/10/XMLSchema#string> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

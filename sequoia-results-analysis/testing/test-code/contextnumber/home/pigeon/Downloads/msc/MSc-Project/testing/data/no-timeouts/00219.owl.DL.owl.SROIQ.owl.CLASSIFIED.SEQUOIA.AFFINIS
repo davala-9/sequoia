@@ -1,0 +1,93 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.daml.org/2001/10/office/office#Bookshelf>))
+Declaration(Class(<http://www.daml.org/2001/10/office/office#Chair>))
+Declaration(Class(<http://www.daml.org/2001/10/office/office#Computer>))
+Declaration(Class(<http://www.daml.org/2001/10/office/office#Desk>))
+Declaration(Class(<http://www.daml.org/2001/10/office/office#DesktopComputer>))
+Declaration(Class(<http://www.daml.org/2001/10/office/office#Door>))
+Declaration(Class(<http://www.daml.org/2001/10/office/office#FileCabinet>))
+Declaration(Class(<http://www.daml.org/2001/10/office/office#LaptopComputer>))
+Declaration(Class(<http://www.daml.org/2001/10/office/office#Monitor>))
+Declaration(Class(<http://www.daml.org/2001/10/office/office#Office>))
+Declaration(Class(<http://www.daml.org/2001/10/office/office#OfficeAccess>))
+Declaration(Class(<http://www.daml.org/2001/10/office/office#Picture>))
+Declaration(Class(<http://www.daml.org/2001/10/office/office#Window>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+############################
+#   Classes
+############################
+
+# Class: <http://www.daml.org/2001/10/office/office#Bookshelf> (<http://www.daml.org/2001/10/office/office#Bookshelf>)
+
+SubClassOf(<http://www.daml.org/2001/10/office/office#Bookshelf> owl:Thing)
+
+# Class: <http://www.daml.org/2001/10/office/office#Chair> (<http://www.daml.org/2001/10/office/office#Chair>)
+
+SubClassOf(<http://www.daml.org/2001/10/office/office#Chair> owl:Thing)
+
+# Class: <http://www.daml.org/2001/10/office/office#Computer> (<http://www.daml.org/2001/10/office/office#Computer>)
+
+SubClassOf(<http://www.daml.org/2001/10/office/office#Computer> owl:Thing)
+
+# Class: <http://www.daml.org/2001/10/office/office#Desk> (<http://www.daml.org/2001/10/office/office#Desk>)
+
+SubClassOf(<http://www.daml.org/2001/10/office/office#Desk> owl:Thing)
+
+# Class: <http://www.daml.org/2001/10/office/office#DesktopComputer> (<http://www.daml.org/2001/10/office/office#DesktopComputer>)
+
+SubClassOf(<http://www.daml.org/2001/10/office/office#DesktopComputer> <http://www.daml.org/2001/10/office/office#Computer>)
+
+# Class: <http://www.daml.org/2001/10/office/office#Door> (<http://www.daml.org/2001/10/office/office#Door>)
+
+SubClassOf(<http://www.daml.org/2001/10/office/office#Door> <http://www.daml.org/2001/10/office/office#OfficeAccess>)
+
+# Class: <http://www.daml.org/2001/10/office/office#FileCabinet> (<http://www.daml.org/2001/10/office/office#FileCabinet>)
+
+SubClassOf(<http://www.daml.org/2001/10/office/office#FileCabinet> owl:Thing)
+
+# Class: <http://www.daml.org/2001/10/office/office#LaptopComputer> (<http://www.daml.org/2001/10/office/office#LaptopComputer>)
+
+SubClassOf(<http://www.daml.org/2001/10/office/office#LaptopComputer> <http://www.daml.org/2001/10/office/office#Computer>)
+
+# Class: <http://www.daml.org/2001/10/office/office#Monitor> (<http://www.daml.org/2001/10/office/office#Monitor>)
+
+SubClassOf(<http://www.daml.org/2001/10/office/office#Monitor> owl:Thing)
+
+# Class: <http://www.daml.org/2001/10/office/office#Office> (<http://www.daml.org/2001/10/office/office#Office>)
+
+SubClassOf(<http://www.daml.org/2001/10/office/office#Office> owl:Thing)
+
+# Class: <http://www.daml.org/2001/10/office/office#OfficeAccess> (<http://www.daml.org/2001/10/office/office#OfficeAccess>)
+
+SubClassOf(<http://www.daml.org/2001/10/office/office#OfficeAccess> owl:Thing)
+
+# Class: <http://www.daml.org/2001/10/office/office#Picture> (<http://www.daml.org/2001/10/office/office#Picture>)
+
+SubClassOf(<http://www.daml.org/2001/10/office/office#Picture> owl:Thing)
+
+# Class: <http://www.daml.org/2001/10/office/office#Window> (<http://www.daml.org/2001/10/office/office#Window>)
+
+SubClassOf(<http://www.daml.org/2001/10/office/office#Window> <http://www.daml.org/2001/10/office/office#OfficeAccess>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+
+)

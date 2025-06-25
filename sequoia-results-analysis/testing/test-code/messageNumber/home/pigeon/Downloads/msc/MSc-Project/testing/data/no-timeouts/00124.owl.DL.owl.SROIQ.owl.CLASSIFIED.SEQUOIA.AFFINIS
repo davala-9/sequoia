@@ -1,0 +1,68 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://purl.org/dc/terms/DateScheme>))
+Declaration(Class(<http://purl.org/dc/terms/FormatScheme>))
+Declaration(Class(<http://purl.org/dc/terms/IdentifierScheme>))
+Declaration(Class(<http://purl.org/dc/terms/LanguageScheme>))
+Declaration(Class(<http://purl.org/dc/terms/RelationScheme>))
+Declaration(Class(<http://purl.org/dc/terms/SourceScheme>))
+Declaration(Class(<http://purl.org/dc/terms/SpatialScheme>))
+Declaration(Class(<http://purl.org/dc/terms/SubjectScheme>))
+Declaration(Class(<http://purl.org/dc/terms/TemporalScheme>))
+Declaration(Class(<http://purl.org/dc/terms/TypeScheme>))
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/dc/terms/DateScheme> (<http://purl.org/dc/terms/DateScheme>)
+
+SubClassOf(<http://purl.org/dc/terms/DateScheme> owl:Thing)
+
+# Class: <http://purl.org/dc/terms/FormatScheme> (<http://purl.org/dc/terms/FormatScheme>)
+
+SubClassOf(<http://purl.org/dc/terms/FormatScheme> owl:Thing)
+
+# Class: <http://purl.org/dc/terms/IdentifierScheme> (<http://purl.org/dc/terms/IdentifierScheme>)
+
+SubClassOf(<http://purl.org/dc/terms/IdentifierScheme> owl:Thing)
+
+# Class: <http://purl.org/dc/terms/LanguageScheme> (<http://purl.org/dc/terms/LanguageScheme>)
+
+SubClassOf(<http://purl.org/dc/terms/LanguageScheme> owl:Thing)
+
+# Class: <http://purl.org/dc/terms/RelationScheme> (<http://purl.org/dc/terms/RelationScheme>)
+
+SubClassOf(<http://purl.org/dc/terms/RelationScheme> owl:Thing)
+
+# Class: <http://purl.org/dc/terms/SourceScheme> (<http://purl.org/dc/terms/SourceScheme>)
+
+SubClassOf(<http://purl.org/dc/terms/SourceScheme> owl:Thing)
+
+# Class: <http://purl.org/dc/terms/SpatialScheme> (<http://purl.org/dc/terms/SpatialScheme>)
+
+SubClassOf(<http://purl.org/dc/terms/SpatialScheme> owl:Thing)
+
+# Class: <http://purl.org/dc/terms/SubjectScheme> (<http://purl.org/dc/terms/SubjectScheme>)
+
+SubClassOf(<http://purl.org/dc/terms/SubjectScheme> owl:Thing)
+
+# Class: <http://purl.org/dc/terms/TemporalScheme> (<http://purl.org/dc/terms/TemporalScheme>)
+
+SubClassOf(<http://purl.org/dc/terms/TemporalScheme> owl:Thing)
+
+# Class: <http://purl.org/dc/terms/TypeScheme> (<http://purl.org/dc/terms/TypeScheme>)
+
+SubClassOf(<http://purl.org/dc/terms/TypeScheme> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

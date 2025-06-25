@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/home/pigeon/parallel-sequoia/sequoia/reasoner-kernel/src/main/scala/com/sequoiareasoner/kernel/context/ContextAwareForkJoinPool.scala:19:15: not found: type Executor[0m
+[0m[[0m[31merror[0m] [0m[0m    val pool: Executor = new Executors.newWorkStealingPool(12)[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pigeon/parallel-sequoia/sequoia/reasoner-kernel/src/main/scala/com/sequoiareasoner/kernel/context/ContextAwareForkJoinPool.scala:19:40: type newWorkStealingPool is not a member of object java.util.concurrent.Executors[0m
+[0m[[0m[31merror[0m] [0m[0m    val pool: Executor = new Executors.newWorkStealingPool(12)[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

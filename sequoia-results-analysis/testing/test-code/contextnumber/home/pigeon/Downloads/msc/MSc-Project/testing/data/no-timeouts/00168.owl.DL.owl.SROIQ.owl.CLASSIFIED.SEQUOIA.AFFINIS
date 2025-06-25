@@ -1,0 +1,135 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.aktors.org/ontology/support#Calendar-Date>))
+Declaration(Class(<http://www.aktors.org/ontology/support#Day>))
+Declaration(Class(<http://www.aktors.org/ontology/support#Duration>))
+Declaration(Class(<http://www.aktors.org/ontology/support#Intangible-Thing>))
+Declaration(Class(<http://www.aktors.org/ontology/support#Month>))
+Declaration(Class(<http://www.aktors.org/ontology/support#Physical-Quantity>))
+Declaration(Class(<http://www.aktors.org/ontology/support#Quantity>))
+Declaration(Class(<http://www.aktors.org/ontology/support#Tangible-Thing>))
+Declaration(Class(<http://www.aktors.org/ontology/support#Temporal-Thing>))
+Declaration(Class(<http://www.aktors.org/ontology/support#Thing>))
+Declaration(Class(<http://www.aktors.org/ontology/support#Time-Interval>))
+Declaration(Class(<http://www.aktors.org/ontology/support#Time-Measure>))
+Declaration(Class(<http://www.aktors.org/ontology/support#Time-Point>))
+Declaration(Class(<http://www.aktors.org/ontology/support#Time-Position>))
+Declaration(Class(<http://www.aktors.org/ontology/support#Unit-Of-Measure>))
+Declaration(Class(<http://www.aktors.org/ontology/support#Week>))
+Declaration(Class(<http://www.aktors.org/ontology/support#Year>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+Declaration(Class(owl:auxiliarDataRangeClass4))
+Declaration(Class(owl:auxiliarDataRangeClass5))
+Declaration(Class(owl:auxiliarDataRangeClass6))
+############################
+#   Classes
+############################
+
+# Class: <http://www.aktors.org/ontology/support#Calendar-Date> (<http://www.aktors.org/ontology/support#Calendar-Date>)
+
+SubClassOf(<http://www.aktors.org/ontology/support#Calendar-Date> <http://www.aktors.org/ontology/support#Time-Point>)
+
+# Class: <http://www.aktors.org/ontology/support#Day> (<http://www.aktors.org/ontology/support#Day>)
+
+SubClassOf(<http://www.aktors.org/ontology/support#Day> <http://www.aktors.org/ontology/support#Time-Interval>)
+
+# Class: <http://www.aktors.org/ontology/support#Duration> (<http://www.aktors.org/ontology/support#Duration>)
+
+SubClassOf(<http://www.aktors.org/ontology/support#Duration> <http://www.aktors.org/ontology/support#Physical-Quantity>)
+
+# Class: <http://www.aktors.org/ontology/support#Intangible-Thing> (<http://www.aktors.org/ontology/support#Intangible-Thing>)
+
+SubClassOf(<http://www.aktors.org/ontology/support#Intangible-Thing> <http://www.aktors.org/ontology/support#Thing>)
+SubClassOf(<http://www.aktors.org/ontology/support#Intangible-Thing> owl:Thing)
+
+# Class: <http://www.aktors.org/ontology/support#Month> (<http://www.aktors.org/ontology/support#Month>)
+
+SubClassOf(<http://www.aktors.org/ontology/support#Month> <http://www.aktors.org/ontology/support#Time-Interval>)
+
+# Class: <http://www.aktors.org/ontology/support#Physical-Quantity> (<http://www.aktors.org/ontology/support#Physical-Quantity>)
+
+SubClassOf(<http://www.aktors.org/ontology/support#Physical-Quantity> <http://www.aktors.org/ontology/support#Quantity>)
+
+# Class: <http://www.aktors.org/ontology/support#Quantity> (<http://www.aktors.org/ontology/support#Quantity>)
+
+SubClassOf(<http://www.aktors.org/ontology/support#Quantity> <http://www.aktors.org/ontology/support#Intangible-Thing>)
+
+# Class: <http://www.aktors.org/ontology/support#Tangible-Thing> (<http://www.aktors.org/ontology/support#Tangible-Thing>)
+
+SubClassOf(<http://www.aktors.org/ontology/support#Tangible-Thing> <http://www.aktors.org/ontology/support#Temporal-Thing>)
+
+# Class: <http://www.aktors.org/ontology/support#Temporal-Thing> (<http://www.aktors.org/ontology/support#Temporal-Thing>)
+
+SubClassOf(<http://www.aktors.org/ontology/support#Temporal-Thing> <http://www.aktors.org/ontology/support#Thing>)
+SubClassOf(<http://www.aktors.org/ontology/support#Temporal-Thing> owl:Thing)
+
+# Class: <http://www.aktors.org/ontology/support#Thing> (<http://www.aktors.org/ontology/support#Thing>)
+
+EquivalentClasses(<http://www.aktors.org/ontology/support#Thing> owl:Thing)
+
+# Class: <http://www.aktors.org/ontology/support#Time-Interval> (<http://www.aktors.org/ontology/support#Time-Interval>)
+
+SubClassOf(<http://www.aktors.org/ontology/support#Time-Interval> <http://www.aktors.org/ontology/support#Time-Position>)
+
+# Class: <http://www.aktors.org/ontology/support#Time-Measure> (<http://www.aktors.org/ontology/support#Time-Measure>)
+
+SubClassOf(<http://www.aktors.org/ontology/support#Time-Measure> <http://www.aktors.org/ontology/support#Unit-Of-Measure>)
+
+# Class: <http://www.aktors.org/ontology/support#Time-Point> (<http://www.aktors.org/ontology/support#Time-Point>)
+
+SubClassOf(<http://www.aktors.org/ontology/support#Time-Point> <http://www.aktors.org/ontology/support#Time-Position>)
+
+# Class: <http://www.aktors.org/ontology/support#Time-Position> (<http://www.aktors.org/ontology/support#Time-Position>)
+
+SubClassOf(<http://www.aktors.org/ontology/support#Time-Position> <http://www.aktors.org/ontology/support#Intangible-Thing>)
+
+# Class: <http://www.aktors.org/ontology/support#Unit-Of-Measure> (<http://www.aktors.org/ontology/support#Unit-Of-Measure>)
+
+SubClassOf(<http://www.aktors.org/ontology/support#Unit-Of-Measure> <http://www.aktors.org/ontology/support#Intangible-Thing>)
+
+# Class: <http://www.aktors.org/ontology/support#Week> (<http://www.aktors.org/ontology/support#Week>)
+
+SubClassOf(<http://www.aktors.org/ontology/support#Week> <http://www.aktors.org/ontology/support#Time-Interval>)
+
+# Class: <http://www.aktors.org/ontology/support#Year> (<http://www.aktors.org/ontology/support#Year>)
+
+SubClassOf(<http://www.aktors.org/ontology/support#Year> <http://www.aktors.org/ontology/support#Time-Interval>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 <http://www.aktors.org/ontology/support#Thing>)
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 <http://www.aktors.org/ontology/support#Thing>)
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass4 (owl:auxiliarDataRangeClass4)
+
+SubClassOf(owl:auxiliarDataRangeClass4 <http://www.aktors.org/ontology/support#Thing>)
+SubClassOf(owl:auxiliarDataRangeClass4 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass5 (owl:auxiliarDataRangeClass5)
+
+SubClassOf(owl:auxiliarDataRangeClass5 <http://www.aktors.org/ontology/support#Thing>)
+SubClassOf(owl:auxiliarDataRangeClass5 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass6 (owl:auxiliarDataRangeClass6)
+
+SubClassOf(owl:auxiliarDataRangeClass6 <http://www.aktors.org/ontology/support#Thing>)
+SubClassOf(owl:auxiliarDataRangeClass6 owl:Thing)
+
+
+)

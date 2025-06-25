@@ -1,0 +1,103 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Agency>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#City>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Company>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Contract>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Country>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Degree>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Employee>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Location>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Organization>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Person>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Program>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Role>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#School>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#State>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#WorkLocation>))
+Declaration(Class(xsd:year))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+############################
+#   Classes
+############################
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Agency> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Agency>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Agency> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#City> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#City>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#City> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Location>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Company> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Company>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Company> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Contract> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Contract>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Contract> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Country> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Country>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Country> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Location>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Degree> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Degree>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Degree> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Employee> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Employee>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Employee> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Location> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Location>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Location> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Organization> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Organization>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Organization> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Person> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Person>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Person> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Program> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Program>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Program> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Role> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Role>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Role> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#School> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#School>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#School> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Organization>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#State> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#State>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#State> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#Location>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#WorkLocation> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#WorkLocation>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00240.owl#WorkLocation> owl:Thing)
+
+# Class: xsd:year (xsd:year)
+
+SubClassOf(xsd:year owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+
+)

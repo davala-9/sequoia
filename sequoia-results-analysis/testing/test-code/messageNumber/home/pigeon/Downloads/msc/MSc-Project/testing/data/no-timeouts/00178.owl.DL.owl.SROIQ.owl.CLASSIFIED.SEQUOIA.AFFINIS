@@ -1,0 +1,163 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<daml:Literal>))
+Declaration(Class(<daml:Thing>))
+Declaration(Class(<http://daml.umbc.edu/acldaml#Ontology>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#Agent>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#Language>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#Thing>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#accept-proposol>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#agree>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#cancle>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#cfp>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#confirm>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#disconfirm>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#failure>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#inform>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#inform-if>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#inform-ref>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#not-understood>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#propogate>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#propose>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#proxy>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#query-if>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#query-ref>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#refuse>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#reject>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#request>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#request-when>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#request-whenever>))
+Declaration(Class(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#subscribe>))
+############################
+#   Classes
+############################
+
+# Class: <daml:Literal> (<daml:Literal>)
+
+SubClassOf(<daml:Literal> owl:Thing)
+
+# Class: <daml:Thing> (<daml:Thing>)
+
+SubClassOf(<daml:Thing> owl:Thing)
+
+# Class: <http://daml.umbc.edu/acldaml#Ontology> (<http://daml.umbc.edu/acldaml#Ontology>)
+
+SubClassOf(<http://daml.umbc.edu/acldaml#Ontology> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#Agent> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#Agent>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#Agent> <daml:Thing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#Thing>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#Language> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#Language>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#Language> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#Thing> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#Thing>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#Thing> owl:Thing)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#accept-proposol> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#accept-proposol>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#accept-proposol> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#agree> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#agree>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#agree> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#cancle> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#cancle>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#cancle> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#cfp> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#cfp>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#cfp> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#confirm> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#confirm>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#confirm> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#disconfirm> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#disconfirm>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#disconfirm> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#failure> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#failure>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#failure> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#inform> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#inform>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#inform> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#inform-if> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#inform-if>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#inform-if> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#inform-ref> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#inform-ref>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#inform-ref> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#not-understood> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#not-understood>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#not-understood> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#propogate> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#propogate>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#propogate> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#propose> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#propose>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#propose> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#proxy> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#proxy>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#proxy> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#query-if> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#query-if>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#query-if> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#query-ref> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#query-ref>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#query-ref> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#refuse> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#refuse>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#refuse> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#reject> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#reject>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#reject> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#request> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#request>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#request> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#request-when> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#request-when>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#request-when> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#request-whenever> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#request-whenever>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#request-whenever> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#subscribe> (<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#subscribe>)
+
+SubClassOf(<http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#subscribe> <http://www.cs.ox.ac.uk/isg/ontologies/UID/00178.owl#FIPA-ACL-MESSAGE>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+
+)

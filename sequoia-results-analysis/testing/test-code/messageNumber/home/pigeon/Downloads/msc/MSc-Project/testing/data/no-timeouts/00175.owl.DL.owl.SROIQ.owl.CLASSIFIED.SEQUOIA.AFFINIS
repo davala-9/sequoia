@@ -1,0 +1,509 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Abduction>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AcademicStaff>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Activity>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AdministrativeStaff>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AnomalyDetection>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AnomalyRepairAndKnowledgeRevision>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Article>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ArticleInBook>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AutomatedCodeGenerationFromSpecification>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AutomatedPSMGeneration>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Book>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#CaseBaseReasoning>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ComputerSupport>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Conference>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ConferencePaper>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#CooperativeKnowledgeAcquisition>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#DataMining>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Department>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#DevelopmentProject>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Editor>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ElicitationTool>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Employee>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Enterprise>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#EvaluationOfKA>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Event>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ExecutableSpecificationLanguages>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Formalisms>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Guideline>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ImplementationEnvironment>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Institute>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#InternetTool>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Journal>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#JournalArticle>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAMethodologies>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAMethodology>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAThroughMachineLearning>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KnowledgeBasedRefinement>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KnowledgeDiscoveryInDatasets>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KnowledgeElicitation>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KnowledgeManagement>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#LearningApprenticeSystems>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Lecturer>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Meeting>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Methodologies>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Methodology>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ModelingLanguage>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#NLParser>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Object>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#OnlinePublication>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Ontologies>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Ontology>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#OntologyLibrary>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Organization>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSM>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMLibrary>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMevaluation>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMlibraries>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMnotations>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMs>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PaperLibrary>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Person>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PhDStudent>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Product>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Project>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Publication>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ReinforcementLearning>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchGroup>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchProject>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchTopic>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Researcher>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Reuse>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Secretary>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SoftwareApplications>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SoftwareProject>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SoftwareReuse>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecialIssueEvent>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecialIssuePublication>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationLanguage>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationLanguages>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationMethodology>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationOfControlKnowledge>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Student>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SupportToolsForFormalMethods>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Sysiphus_III_Experiment>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#TechnicalReport>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#TechnicalStaff>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#TheoreticalFoundations>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#TransformationTool>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#University>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#V_And_V_Of_MAS>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Validation_And_Verification>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Validator>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Verifier>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#WebMediatedPSMSelection>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Workshop>))
+Declaration(Class(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#WorkshopPaper>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(owl:auxiliarDataRangeClass3))
+############################
+#   Classes
+############################
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Abduction> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Abduction>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Abduction> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAThroughMachineLearning>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AcademicStaff> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AcademicStaff>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AcademicStaff> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Employee>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Activity> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Activity>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Activity> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Event>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AdministrativeStaff> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AdministrativeStaff>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AdministrativeStaff> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Employee>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AnomalyDetection> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AnomalyDetection>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AnomalyDetection> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Validation_And_Verification>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AnomalyRepairAndKnowledgeRevision> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AnomalyRepairAndKnowledgeRevision>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AnomalyRepairAndKnowledgeRevision> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Validation_And_Verification>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Article> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Article>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Article> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Publication>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ArticleInBook> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ArticleInBook>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ArticleInBook> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Article>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AutomatedCodeGenerationFromSpecification> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AutomatedCodeGenerationFromSpecification>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AutomatedCodeGenerationFromSpecification> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationLanguages>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AutomatedPSMGeneration> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AutomatedPSMGeneration>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AutomatedPSMGeneration> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMs>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Book> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Book>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Book> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Publication>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#CaseBaseReasoning> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#CaseBaseReasoning>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#CaseBaseReasoning> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAThroughMachineLearning>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ComputerSupport> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ComputerSupport>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ComputerSupport> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Product>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Conference> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Conference>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Conference> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Event>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ConferencePaper> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ConferencePaper>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ConferencePaper> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Article>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#CooperativeKnowledgeAcquisition> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#CooperativeKnowledgeAcquisition>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#CooperativeKnowledgeAcquisition> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAThroughMachineLearning>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#DataMining> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#DataMining>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#DataMining> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAThroughMachineLearning>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Department> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Department>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Department> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Organization>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#DevelopmentProject> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#DevelopmentProject>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#DevelopmentProject> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Project>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Editor> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Editor>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Editor> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ComputerSupport>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ElicitationTool> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ElicitationTool>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ElicitationTool> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ComputerSupport>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Employee> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Employee>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Employee> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Person>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Enterprise> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Enterprise>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Enterprise> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Organization>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#EvaluationOfKA> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#EvaluationOfKA>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#EvaluationOfKA> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchTopic>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Event> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Event>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Event> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Object>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ExecutableSpecificationLanguages> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ExecutableSpecificationLanguages>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ExecutableSpecificationLanguages> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationLanguages>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Formalisms> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Formalisms>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Formalisms> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Validation_And_Verification>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Guideline> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Guideline>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Guideline> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAMethodology>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ImplementationEnvironment> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ImplementationEnvironment>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ImplementationEnvironment> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ComputerSupport>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Institute> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Institute>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Institute> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Organization>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#InternetTool> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#InternetTool>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#InternetTool> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ComputerSupport>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Journal> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Journal>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Journal> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Publication>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#JournalArticle> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#JournalArticle>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#JournalArticle> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Article>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAMethodologies> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAMethodologies>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAMethodologies> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchTopic>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAMethodology> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAMethodology>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAMethodology> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Product>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAThroughMachineLearning> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAThroughMachineLearning>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAThroughMachineLearning> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchTopic>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KnowledgeBasedRefinement> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KnowledgeBasedRefinement>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KnowledgeBasedRefinement> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAThroughMachineLearning>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KnowledgeDiscoveryInDatasets> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KnowledgeDiscoveryInDatasets>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KnowledgeDiscoveryInDatasets> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAThroughMachineLearning>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KnowledgeElicitation> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KnowledgeElicitation>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KnowledgeElicitation> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchTopic>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KnowledgeManagement> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KnowledgeManagement>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KnowledgeManagement> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchTopic>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#LearningApprenticeSystems> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#LearningApprenticeSystems>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#LearningApprenticeSystems> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAThroughMachineLearning>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Lecturer> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Lecturer>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Lecturer> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AcademicStaff>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Meeting> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Meeting>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Meeting> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Event>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Methodologies> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Methodologies>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Methodologies> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Ontologies>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Methodology> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Methodology>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Methodology> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Validation_And_Verification>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ModelingLanguage> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ModelingLanguage>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ModelingLanguage> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAMethodology>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#NLParser> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#NLParser>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#NLParser> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ComputerSupport>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Object> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Object>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Object> owl:Thing)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#OnlinePublication> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#OnlinePublication>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#OnlinePublication> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Publication>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Ontologies> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Ontologies>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Ontologies> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Reuse>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Ontology> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Ontology>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Ontology> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAMethodology>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#OntologyLibrary> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#OntologyLibrary>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#OntologyLibrary> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ComputerSupport>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Organization> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Organization>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Organization> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Object>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSM> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSM>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSM> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAMethodology>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMLibrary> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMLibrary>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMLibrary> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ComputerSupport>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMevaluation> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMevaluation>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMevaluation> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMs>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMlibraries> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMlibraries>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMlibraries> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMs>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMnotations> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMnotations>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMnotations> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMs>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMs> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMs>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMs> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Reuse>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PaperLibrary> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PaperLibrary>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PaperLibrary> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAMethodology>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Person> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Person>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Person> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Object>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PhDStudent> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PhDStudent>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PhDStudent> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Researcher>)
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PhDStudent> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Student>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Product> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Product>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Product> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Object>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Project> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Project>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Project> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Object>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Publication> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Publication>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Publication> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Object>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ReinforcementLearning> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ReinforcementLearning>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ReinforcementLearning> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAThroughMachineLearning>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchGroup> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchGroup>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchGroup> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Organization>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchProject> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchProject>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchProject> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Project>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchTopic> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchTopic>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchTopic> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Object>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Researcher> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Researcher>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Researcher> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AcademicStaff>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Reuse> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Reuse>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Reuse> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchTopic>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Secretary> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Secretary>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Secretary> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AdministrativeStaff>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SoftwareApplications> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SoftwareApplications>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SoftwareApplications> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Ontologies>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SoftwareProject> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SoftwareProject>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SoftwareProject> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#DevelopmentProject>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SoftwareReuse> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SoftwareReuse>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SoftwareReuse> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Reuse>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecialIssueEvent> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecialIssueEvent>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecialIssueEvent> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Event>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecialIssuePublication> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecialIssuePublication>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecialIssuePublication> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Journal>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationLanguage> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationLanguage>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationLanguage> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#KAMethodology>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationLanguages> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationLanguages>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationLanguages> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchTopic>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationMethodology> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationMethodology>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationMethodology> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationLanguages>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationOfControlKnowledge> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationOfControlKnowledge>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationOfControlKnowledge> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationLanguages>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Student> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Student>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Student> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Person>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SupportToolsForFormalMethods> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SupportToolsForFormalMethods>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SupportToolsForFormalMethods> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#SpecificationLanguages>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Sysiphus_III_Experiment> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Sysiphus_III_Experiment>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Sysiphus_III_Experiment> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMs>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#TechnicalReport> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#TechnicalReport>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#TechnicalReport> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Article>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#TechnicalStaff> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#TechnicalStaff>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#TechnicalStaff> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#AdministrativeStaff>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#TheoreticalFoundations> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#TheoreticalFoundations>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#TheoreticalFoundations> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Ontologies>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#TransformationTool> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#TransformationTool>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#TransformationTool> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ComputerSupport>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#University> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#University>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#University> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Organization>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#V_And_V_Of_MAS> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#V_And_V_Of_MAS>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#V_And_V_Of_MAS> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Validation_And_Verification>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Validation_And_Verification> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Validation_And_Verification>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Validation_And_Verification> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ResearchTopic>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Validator> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Validator>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Validator> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ComputerSupport>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Verifier> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Verifier>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Verifier> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#ComputerSupport>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#WebMediatedPSMSelection> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#WebMediatedPSMSelection>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#WebMediatedPSMSelection> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#PSMs>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Workshop> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Workshop>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Workshop> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Event>)
+
+# Class: <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#WorkshopPaper> (<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#WorkshopPaper>)
+
+SubClassOf(<file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#WorkshopPaper> <file:F:/Projects/OIL/DAMLOilEd/ontologies/ka.daml#Article>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: owl:auxiliarDataRangeClass3 (owl:auxiliarDataRangeClass3)
+
+SubClassOf(owl:auxiliarDataRangeClass3 owl:Thing)
+
+
+)

@@ -1,0 +1,2372 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(
+Declaration(Class(rdf:Property))
+Declaration(Class(rdf:Seq))
+Declaration(Class(rdfs:Class))
+Declaration(Class(rdfs:PolicyResource))
+Declaration(Class(rdfs:Resource))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Access>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#AccessClass>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#AccessClass-all>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#AccessClass-contact-and-other>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#AccessClass-ident-contact>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#AccessClass-none>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#AccessClass-nonident>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#AccessClass-other-ident>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.cert>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.cert.format>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.cert.key>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.online>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.online.email>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.online.uri>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.city>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.country>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.family>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.given>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.middle>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.nickname>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.prefix>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.suffix>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.organization>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.postalcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.stateprov>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.street>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.department>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Business.name>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-computer>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-content>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-demographic>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-financial>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-government>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-health>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-interactive>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-location>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-navigation>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-online>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-other>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-physical>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-political>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-preference>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-purchase>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-state>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#CategoryClass>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#CookieDescription>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#DataElement>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#DataElementComponent>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Disclosure>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#DisputeResolution>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#DisputeResolution-applicable-law>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#DisputeResolution-court>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#DisputeResolution-customer-service>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#DisputeResolution-independent-organization>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.fullip>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.hostname>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.partialhostname>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.partialip>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.other>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.other.bytes>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.other.httpmethod>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.other.statuscode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.fractionsecond>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.hms>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.hms.hour>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.hms.minute>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.hms.second>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.timezone>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.ymd>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.ymd.day>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.ymd.month>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.ymd.year>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri.authority>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri.querystring>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri.stem>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clientevents>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.cookies>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer.authority>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer.querystring>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer.stem>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.useragent>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.interactionrecord>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.miscdata>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.searchtext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Expiry>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#ExtMandatory>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#ExtOptional>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Hint>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Image>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#LegalEntity>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#NonIdentifiable>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#OptInstructions>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Policy>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#PolicyRef>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#PolicyRefResource>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#PolicyReferences>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#PolicyResource>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Purpose>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Purpose-admin>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Purpose-contact>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Purpose-contact-somehow>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Purpose-current>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Purpose-develop>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Purpose-historical>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Purpose-individual>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Purpose-individual-analysis>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Purpose-individual-decision>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Purpose-other>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Purpose-pseudo>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Purpose-pseudo-analysis>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Purpose-pseudo-decision>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Purpose-tailoring>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Purpose-telemarketing>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#PurposeClass>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Recipient>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Recipient-delivery>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Recipient-other>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Recipient-ours>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Recipient-public>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Recipient-same>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Recipient-unrelated>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#RecipientClass>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#RelativeClass>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Remedy>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Remedy-correct>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Remedy-law>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Remedy-money>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#RemedyClass>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Retention-business-practices>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Retention-indefinitely>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Retention-legal-requirement>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Retention-no-retention>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Retention-stated-purpose>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#RetentionPolicy>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#RetentionPolicyClass>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Statement>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#StructuredDataElementClass>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Test>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.fractionsecond>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.hms>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.hms.hour>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.hms.minute>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.hms.second>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.timezone>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.ymd>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.ymd.day>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.ymd.month>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.ymd.year>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.online>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.online.email>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.online.uri>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.city>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.country>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.family>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.given>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.middle>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.nickname>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.prefix>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.suffix>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.organization>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.postalcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.stateprov>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.street>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.cert>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.cert.format>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.cert.key>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.department>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.employer>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.gender>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.online>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.online.email>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.online.uri>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.city>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.country>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.family>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.given>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.middle>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.nickname>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.prefix>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.suffix>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.organization>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.postalcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.stateprov>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.street>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.jobtitle>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.login>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.login.id>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.login.password>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.family>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.given>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.middle>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.nickname>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.prefix>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.suffix>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElementClass>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.bdate>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.fractionsecond>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.hms>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.hms.hour>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.hms.minute>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.hms.second>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.timezone>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.ymd>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.ymd.day>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.ymd.month>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.ymd.year>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.online>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.online.email>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.online.uri>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.city>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.country>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.family>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.given>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.middle>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.nickname>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.prefix>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.suffix>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.organization>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.postalcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.stateprov>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.street>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.cert>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.cert.format>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.cert.key>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.department>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.employer>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.gender>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.online>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.online.email>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.online.uri>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.city>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.country>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.family>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.given>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.middle>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.nickname>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.prefix>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.suffix>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.organization>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.postalcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.stateprov>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.street>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.comment>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.ext>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.intcode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.loccode>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.number>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.jobtitle>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.login>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.login.id>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.login.password>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.name>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.name.family>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.name.given>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.name.middle>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.name.nickname>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.name.prefix>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#User.name.suffix>))
+Declaration(Class(<http://www.w3.org/2002/01/p3prdfv1#dataElementComponent>))
+Declaration(Class(owl:auxiliarDataRangeClass2))
+Declaration(Class(<rdfs:Class>))
+############################
+#   Classes
+############################
+
+# Class: rdf:Property (rdf:Property)
+
+SubClassOf(rdf:Property owl:Thing)
+
+# Class: rdf:Seq (rdf:Seq)
+
+SubClassOf(rdf:Seq owl:Thing)
+
+# Class: rdfs:Class (rdfs:Class)
+
+SubClassOf(rdfs:Class owl:Thing)
+
+# Class: rdfs:PolicyResource (rdfs:PolicyResource)
+
+SubClassOf(rdfs:PolicyResource owl:Thing)
+
+# Class: rdfs:Resource (rdfs:Resource)
+
+SubClassOf(rdfs:Resource owl:Thing)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Access> (<http://www.w3.org/2002/01/p3prdfv1#Access>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Access> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#AccessClass> (<http://www.w3.org/2002/01/p3prdfv1#AccessClass>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#AccessClass> rdfs:Class)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#AccessClass-all> (<http://www.w3.org/2002/01/p3prdfv1#AccessClass-all>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#AccessClass-all> <http://www.w3.org/2002/01/p3prdfv1#Access>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#AccessClass-contact-and-other> (<http://www.w3.org/2002/01/p3prdfv1#AccessClass-contact-and-other>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#AccessClass-contact-and-other> <http://www.w3.org/2002/01/p3prdfv1#AccessClass-all>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#AccessClass-ident-contact> (<http://www.w3.org/2002/01/p3prdfv1#AccessClass-ident-contact>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#AccessClass-ident-contact> <http://www.w3.org/2002/01/p3prdfv1#AccessClass-contact-and-other>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#AccessClass-none> (<http://www.w3.org/2002/01/p3prdfv1#AccessClass-none>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#AccessClass-none> <http://www.w3.org/2002/01/p3prdfv1#Access>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#AccessClass-nonident> (<http://www.w3.org/2002/01/p3prdfv1#AccessClass-nonident>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#AccessClass-nonident> <http://www.w3.org/2002/01/p3prdfv1#Access>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#AccessClass-other-ident> (<http://www.w3.org/2002/01/p3prdfv1#AccessClass-other-ident>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#AccessClass-other-ident> <http://www.w3.org/2002/01/p3prdfv1#AccessClass-contact-and-other>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business> (<http://www.w3.org/2002/01/p3prdfv1#Business>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business> <http://www.w3.org/2002/01/p3prdfv1#LegalEntity>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.cert> (<http://www.w3.org/2002/01/p3prdfv1#Business.cert>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.cert> <http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.cert> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.cert.format> (<http://www.w3.org/2002/01/p3prdfv1#Business.cert.format>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.cert.format> <http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.cert.format> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.cert.key> (<http://www.w3.org/2002/01/p3prdfv1#Business.cert.key>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.cert.key> <http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.cert.key> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.online> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.online>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.online> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.online> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.online.email> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.online.email>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.online.email> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.online.email> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.online.uri> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.online.uri>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.online.uri> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.online.uri> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.city> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.city>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.city> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.city> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.country> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.country>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.country> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.country> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.family> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.family>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.family> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.family> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.given> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.given>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.given> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.given> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.middle> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.middle>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.middle> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.middle> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.nickname> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.nickname>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.nickname> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.nickname> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.prefix> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.prefix>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.prefix> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.prefix> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.suffix> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.suffix>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.suffix> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.name.suffix> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.organization> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.organization>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.organization> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.organization> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.postalcode> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.postalcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.postalcode> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.postalcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.stateprov> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.stateprov>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.stateprov> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.stateprov> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.street> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.street>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.street> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.postal.street> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.comment> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.ext> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.intcode> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.loccode> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.number> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.fax.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.comment> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.ext> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.intcode> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.loccode> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.number> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.mobile.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.comment> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.ext> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.intcode> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.loccode> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.number> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.pager.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.comment> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.ext> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.intcode> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.loccode> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.number> (<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.contact-info.telecom.telephone.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.department> (<http://www.w3.org/2002/01/p3prdfv1#Business.department>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.department> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.department> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Business.name> (<http://www.w3.org/2002/01/p3prdfv1#Business.name>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.name> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Business.name> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category> (<http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-computer> (<http://www.w3.org/2002/01/p3prdfv1#Category-computer>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-computer> <http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-content> (<http://www.w3.org/2002/01/p3prdfv1#Category-content>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-content> <http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-demographic> (<http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-demographic> <http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-financial> (<http://www.w3.org/2002/01/p3prdfv1#Category-financial>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-financial> <http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-government> (<http://www.w3.org/2002/01/p3prdfv1#Category-government>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-government> <http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-health> (<http://www.w3.org/2002/01/p3prdfv1#Category-health>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-health> <http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-interactive> (<http://www.w3.org/2002/01/p3prdfv1#Category-interactive>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-interactive> <http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-location> (<http://www.w3.org/2002/01/p3prdfv1#Category-location>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-location> <http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-navigation> (<http://www.w3.org/2002/01/p3prdfv1#Category-navigation>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-navigation> <http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-online> (<http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-online> <http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-other> (<http://www.w3.org/2002/01/p3prdfv1#Category-other>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-other> <http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-physical> (<http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-physical> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-political> (<http://www.w3.org/2002/01/p3prdfv1#Category-political>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-political> <http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-preference> (<http://www.w3.org/2002/01/p3prdfv1#Category-preference>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-preference> <http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-purchase> (<http://www.w3.org/2002/01/p3prdfv1#Category-purchase>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-purchase> <http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-state> (<http://www.w3.org/2002/01/p3prdfv1#Category-state>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-state> <http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid> (<http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid> <http://www.w3.org/2002/01/p3prdfv1#Category>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#CategoryClass> (<http://www.w3.org/2002/01/p3prdfv1#CategoryClass>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#CategoryClass> rdfs:Class)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#CookieDescription> (<http://www.w3.org/2002/01/p3prdfv1#CookieDescription>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#CookieDescription> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#DataElement> (<http://www.w3.org/2002/01/p3prdfv1#DataElement>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#DataElement> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#DataElementComponent> (<http://www.w3.org/2002/01/p3prdfv1#DataElementComponent>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#DataElementComponent> rdf:Property)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Disclosure> (<http://www.w3.org/2002/01/p3prdfv1#Disclosure>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Disclosure> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#DisputeResolution> (<http://www.w3.org/2002/01/p3prdfv1#DisputeResolution>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#DisputeResolution> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#DisputeResolution-applicable-law> (<http://www.w3.org/2002/01/p3prdfv1#DisputeResolution-applicable-law>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#DisputeResolution-applicable-law> <http://www.w3.org/2002/01/p3prdfv1#DisputeResolution>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#DisputeResolution-court> (<http://www.w3.org/2002/01/p3prdfv1#DisputeResolution-court>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#DisputeResolution-court> <http://www.w3.org/2002/01/p3prdfv1#DisputeResolution>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#DisputeResolution-customer-service> (<http://www.w3.org/2002/01/p3prdfv1#DisputeResolution-customer-service>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#DisputeResolution-customer-service> <http://www.w3.org/2002/01/p3prdfv1#DisputeResolution>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#DisputeResolution-independent-organization> (<http://www.w3.org/2002/01/p3prdfv1#DisputeResolution-independent-organization>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#DisputeResolution-independent-organization> <http://www.w3.org/2002/01/p3prdfv1#DisputeResolution>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream> <http://www.w3.org/2002/01/p3prdfv1#Category-computer>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream> <http://www.w3.org/2002/01/p3prdfv1#Category-navigation>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip> <http://www.w3.org/2002/01/p3prdfv1#Category-navigation>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.fullip> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.fullip>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.fullip> <http://www.w3.org/2002/01/p3prdfv1#Category-computer>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.fullip> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.hostname> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.hostname>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.hostname> <http://www.w3.org/2002/01/p3prdfv1#Category-computer>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.hostname> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.partialhostname> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.partialhostname>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.partialhostname> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.partialhostname> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.partialip> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.partialip>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.partialip> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.clientip.partialip> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.other> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.other>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.other> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.other.bytes> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.other.bytes>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.other.bytes> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.other.httpmethod> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.other.httpmethod>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.other.httpmethod> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.other.statuscode> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.other.statuscode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.other.statuscode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp> <http://www.w3.org/2002/01/p3prdfv1#Category-navigation>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.fractionsecond> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.fractionsecond>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.fractionsecond> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.hms> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.hms>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.hms> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.hms.hour> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.hms.hour>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.hms.hour> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.hms.minute> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.hms.minute>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.hms.minute> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.hms.second> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.hms.second>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.hms.second> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.timezone> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.timezone>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.timezone> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.ymd> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.ymd>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.ymd> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.ymd.day> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.ymd.day>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.ymd.day> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.ymd.month> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.ymd.month>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.ymd.month> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.ymd.year> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.ymd.year>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.timestamp.ymd.year> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri> <http://www.w3.org/2002/01/p3prdfv1#Category-navigation>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri.authority> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri.authority>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri.authority> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri.querystring> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri.querystring>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri.querystring> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri.stem> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri.stem>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clickstream.uri.stem> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.clientevents> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clientevents>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clientevents> <http://www.w3.org/2002/01/p3prdfv1#Category-computer>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.clientevents> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.cookies> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.cookies>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.cookies> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.http> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http> <http://www.w3.org/2002/01/p3prdfv1#Category-computer>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http> <http://www.w3.org/2002/01/p3prdfv1#Category-navigation>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer> <http://www.w3.org/2002/01/p3prdfv1#Category-computer>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer> <http://www.w3.org/2002/01/p3prdfv1#Category-navigation>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer.authority> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer.authority>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer.authority> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer.querystring> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer.querystring>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer.querystring> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer.stem> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer.stem>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.referrer.stem> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.useragent> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.useragent>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.http.useragent> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.interactionrecord> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.interactionrecord>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.interactionrecord> <http://www.w3.org/2002/01/p3prdfv1#Category-interactive>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.interactionrecord> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.miscdata> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.miscdata>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.miscdata> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Dynamic.searchtext> (<http://www.w3.org/2002/01/p3prdfv1#Dynamic.searchtext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.searchtext> <http://www.w3.org/2002/01/p3prdfv1#Category-interactive>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Dynamic.searchtext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Expiry> (<http://www.w3.org/2002/01/p3prdfv1#Expiry>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Expiry> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#ExtMandatory> (<http://www.w3.org/2002/01/p3prdfv1#ExtMandatory>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#ExtMandatory> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#ExtOptional> (<http://www.w3.org/2002/01/p3prdfv1#ExtOptional>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#ExtOptional> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Hint> (<http://www.w3.org/2002/01/p3prdfv1#Hint>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Hint> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Image> (<http://www.w3.org/2002/01/p3prdfv1#Image>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Image> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#LegalEntity> (<http://www.w3.org/2002/01/p3prdfv1#LegalEntity>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#LegalEntity> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#NonIdentifiable> (<http://www.w3.org/2002/01/p3prdfv1#NonIdentifiable>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#NonIdentifiable> <http://www.w3.org/2002/01/p3prdfv1#Statement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#OptInstructions> (<http://www.w3.org/2002/01/p3prdfv1#OptInstructions>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#OptInstructions> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Policy> (<http://www.w3.org/2002/01/p3prdfv1#Policy>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Policy> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#PolicyRef> (<http://www.w3.org/2002/01/p3prdfv1#PolicyRef>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#PolicyRef> <http://www.w3.org/2002/01/p3prdfv1#PolicyRefResource>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#PolicyRefResource> (<http://www.w3.org/2002/01/p3prdfv1#PolicyRefResource>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#PolicyRefResource> rdfs:PolicyResource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#PolicyReferences> (<http://www.w3.org/2002/01/p3prdfv1#PolicyReferences>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#PolicyReferences> rdf:Seq)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#PolicyReferences> <http://www.w3.org/2002/01/p3prdfv1#PolicyRefResource>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#PolicyResource> (<http://www.w3.org/2002/01/p3prdfv1#PolicyResource>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#PolicyResource> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Purpose> (<http://www.w3.org/2002/01/p3prdfv1#Purpose>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Purpose> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Purpose-admin> (<http://www.w3.org/2002/01/p3prdfv1#Purpose-admin>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Purpose-admin> <http://www.w3.org/2002/01/p3prdfv1#Purpose>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Purpose-contact> (<http://www.w3.org/2002/01/p3prdfv1#Purpose-contact>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Purpose-contact> <http://www.w3.org/2002/01/p3prdfv1#Purpose-contact-somehow>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Purpose-contact-somehow> (<http://www.w3.org/2002/01/p3prdfv1#Purpose-contact-somehow>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Purpose-contact-somehow> <http://www.w3.org/2002/01/p3prdfv1#Purpose>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Purpose-current> (<http://www.w3.org/2002/01/p3prdfv1#Purpose-current>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Purpose-current> <http://www.w3.org/2002/01/p3prdfv1#Purpose>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Purpose-develop> (<http://www.w3.org/2002/01/p3prdfv1#Purpose-develop>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Purpose-develop> <http://www.w3.org/2002/01/p3prdfv1#Purpose>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Purpose-historical> (<http://www.w3.org/2002/01/p3prdfv1#Purpose-historical>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Purpose-historical> <http://www.w3.org/2002/01/p3prdfv1#Purpose>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Purpose-individual> (<http://www.w3.org/2002/01/p3prdfv1#Purpose-individual>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Purpose-individual> <http://www.w3.org/2002/01/p3prdfv1#Purpose>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Purpose-individual-analysis> (<http://www.w3.org/2002/01/p3prdfv1#Purpose-individual-analysis>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Purpose-individual-analysis> <http://www.w3.org/2002/01/p3prdfv1#Purpose-individual>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Purpose-individual-decision> (<http://www.w3.org/2002/01/p3prdfv1#Purpose-individual-decision>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Purpose-individual-decision> <http://www.w3.org/2002/01/p3prdfv1#Purpose-individual>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Purpose-other> (<http://www.w3.org/2002/01/p3prdfv1#Purpose-other>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Purpose-other> <http://www.w3.org/2002/01/p3prdfv1#Purpose-contact-somehow>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Purpose-pseudo> (<http://www.w3.org/2002/01/p3prdfv1#Purpose-pseudo>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Purpose-pseudo> <http://www.w3.org/2002/01/p3prdfv1#Purpose>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Purpose-pseudo-analysis> (<http://www.w3.org/2002/01/p3prdfv1#Purpose-pseudo-analysis>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Purpose-pseudo-analysis> <http://www.w3.org/2002/01/p3prdfv1#Purpose-pseudo>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Purpose-pseudo-decision> (<http://www.w3.org/2002/01/p3prdfv1#Purpose-pseudo-decision>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Purpose-pseudo-decision> <http://www.w3.org/2002/01/p3prdfv1#Purpose-pseudo>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Purpose-tailoring> (<http://www.w3.org/2002/01/p3prdfv1#Purpose-tailoring>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Purpose-tailoring> <http://www.w3.org/2002/01/p3prdfv1#Purpose>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Purpose-telemarketing> (<http://www.w3.org/2002/01/p3prdfv1#Purpose-telemarketing>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Purpose-telemarketing> <http://www.w3.org/2002/01/p3prdfv1#Purpose-contact-somehow>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#PurposeClass> (<http://www.w3.org/2002/01/p3prdfv1#PurposeClass>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#PurposeClass> rdfs:Class)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Recipient> (<http://www.w3.org/2002/01/p3prdfv1#Recipient>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Recipient> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Recipient-delivery> (<http://www.w3.org/2002/01/p3prdfv1#Recipient-delivery>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Recipient-delivery> <http://www.w3.org/2002/01/p3prdfv1#Recipient>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Recipient-other> (<http://www.w3.org/2002/01/p3prdfv1#Recipient-other>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Recipient-other> <http://www.w3.org/2002/01/p3prdfv1#Recipient>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Recipient-ours> (<http://www.w3.org/2002/01/p3prdfv1#Recipient-ours>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Recipient-ours> <http://www.w3.org/2002/01/p3prdfv1#Recipient>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Recipient-public> (<http://www.w3.org/2002/01/p3prdfv1#Recipient-public>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Recipient-public> <http://www.w3.org/2002/01/p3prdfv1#Recipient>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Recipient-same> (<http://www.w3.org/2002/01/p3prdfv1#Recipient-same>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Recipient-same> <http://www.w3.org/2002/01/p3prdfv1#Recipient>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Recipient-unrelated> (<http://www.w3.org/2002/01/p3prdfv1#Recipient-unrelated>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Recipient-unrelated> <http://www.w3.org/2002/01/p3prdfv1#Recipient>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#RecipientClass> (<http://www.w3.org/2002/01/p3prdfv1#RecipientClass>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#RecipientClass> <rdfs:Class>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#RelativeClass> (<http://www.w3.org/2002/01/p3prdfv1#RelativeClass>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#RelativeClass> rdfs:Class)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Remedy> (<http://www.w3.org/2002/01/p3prdfv1#Remedy>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Remedy> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Remedy-correct> (<http://www.w3.org/2002/01/p3prdfv1#Remedy-correct>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Remedy-correct> <http://www.w3.org/2002/01/p3prdfv1#Remedy>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Remedy-law> (<http://www.w3.org/2002/01/p3prdfv1#Remedy-law>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Remedy-law> <http://www.w3.org/2002/01/p3prdfv1#Remedy>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Remedy-money> (<http://www.w3.org/2002/01/p3prdfv1#Remedy-money>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Remedy-money> <http://www.w3.org/2002/01/p3prdfv1#Remedy>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#RemedyClass> (<http://www.w3.org/2002/01/p3prdfv1#RemedyClass>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#RemedyClass> rdfs:Class)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Retention-business-practices> (<http://www.w3.org/2002/01/p3prdfv1#Retention-business-practices>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Retention-business-practices> <http://www.w3.org/2002/01/p3prdfv1#RetentionPolicy>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Retention-indefinitely> (<http://www.w3.org/2002/01/p3prdfv1#Retention-indefinitely>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Retention-indefinitely> <http://www.w3.org/2002/01/p3prdfv1#RetentionPolicy>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Retention-legal-requirement> (<http://www.w3.org/2002/01/p3prdfv1#Retention-legal-requirement>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Retention-legal-requirement> <http://www.w3.org/2002/01/p3prdfv1#RetentionPolicy>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Retention-no-retention> (<http://www.w3.org/2002/01/p3prdfv1#Retention-no-retention>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Retention-no-retention> <http://www.w3.org/2002/01/p3prdfv1#RetentionPolicy>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Retention-stated-purpose> (<http://www.w3.org/2002/01/p3prdfv1#Retention-stated-purpose>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Retention-stated-purpose> <http://www.w3.org/2002/01/p3prdfv1#RetentionPolicy>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#RetentionPolicy> (<http://www.w3.org/2002/01/p3prdfv1#RetentionPolicy>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#RetentionPolicy> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#RetentionPolicyClass> (<http://www.w3.org/2002/01/p3prdfv1#RetentionPolicyClass>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#RetentionPolicyClass> rdfs:Class)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Statement> (<http://www.w3.org/2002/01/p3prdfv1#Statement>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Statement> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement> (<http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement> <http://www.w3.org/2002/01/p3prdfv1#DataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElementClass> (<http://www.w3.org/2002/01/p3prdfv1#StructuredDataElementClass>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#StructuredDataElementClass> rdfs:Class)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Test> (<http://www.w3.org/2002/01/p3prdfv1#Test>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Test> rdfs:Resource)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.fractionsecond> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.fractionsecond>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.fractionsecond> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.hms> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.hms>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.hms> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.hms.hour> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.hms.hour>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.hms.hour> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.hms.minute> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.hms.minute>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.hms.minute> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.hms.second> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.hms.second>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.hms.second> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.timezone> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.timezone>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.timezone> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.ymd> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.ymd>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.ymd> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.ymd.day> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.ymd.day>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.ymd.day> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.ymd.month> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.ymd.month>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.ymd.month> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.ymd.year> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.ymd.year>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.bdate.ymd.year> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.online> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.online>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.online> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.online> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.online.email> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.online.email>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.online.email> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.online.email> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.online.uri> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.online.uri>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.online.uri> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.online.uri> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.city> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.city>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.city> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.city> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.country> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.country>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.country> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.country> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.family> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.family>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.family> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.family> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.given> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.given>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.given> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.given> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.middle> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.middle>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.middle> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.middle> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.nickname> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.nickname>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.nickname> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.nickname> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.prefix> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.prefix>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.prefix> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.prefix> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.suffix> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.suffix>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.suffix> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.name.suffix> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.organization> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.organization>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.organization> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.organization> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.postalcode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.postalcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.postalcode> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.postalcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.stateprov> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.stateprov>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.stateprov> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.stateprov> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.street> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.street>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.street> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.postal.street> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.comment> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.ext> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.intcode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.loccode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.number> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.fax.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.comment> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.ext> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.intcode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.loccode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.number> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.mobile.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.comment> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.ext> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.intcode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.loccode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.number> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.pager.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.comment> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.ext> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.intcode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.loccode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.number> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.business-info.telecom.telephone.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.cert> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.cert>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.cert> <http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.cert> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.cert.format> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.cert.format>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.cert.format> <http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.cert.format> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.cert.key> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.cert.key>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.cert.key> <http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.cert.key> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.department> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.department>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.department> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.department> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.employer> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.employer>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.employer> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.employer> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.gender> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.gender>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.gender> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.gender> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.online> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.online>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.online> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.online> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.online.email> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.online.email>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.online.email> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.online.email> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.online.uri> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.online.uri>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.online.uri> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.online.uri> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.city> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.city>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.city> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.city> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.country> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.country>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.country> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.country> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.family> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.family>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.family> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.family> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.given> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.given>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.given> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.given> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.middle> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.middle>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.middle> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.middle> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.nickname> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.nickname>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.nickname> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.nickname> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.prefix> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.prefix>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.prefix> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.prefix> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.suffix> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.suffix>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.suffix> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.name.suffix> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.organization> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.organization>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.organization> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.organization> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.postalcode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.postalcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.postalcode> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.postalcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.stateprov> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.stateprov>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.stateprov> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.stateprov> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.street> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.street>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.street> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.postal.street> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.comment> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.ext> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.intcode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.loccode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.number> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.fax.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.comment> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.ext> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.intcode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.loccode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.number> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.mobile.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.comment> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.ext> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.intcode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.loccode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.number> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.pager.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.comment> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.ext> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.intcode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.loccode> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.number> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.home-info.telecom.telephone.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.jobtitle> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.jobtitle>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.jobtitle> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.jobtitle> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.login> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.login>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.login> <http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.login> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.login.id> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.login.id>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.login.id> <http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.login.id> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.login.password> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.login.password>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.login.password> <http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.login.password> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.family> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.family>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.family> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.family> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.given> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.given>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.given> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.given> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.middle> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.middle>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.middle> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.middle> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.nickname> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.nickname>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.nickname> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.nickname> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.prefix> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.prefix>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.prefix> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.prefix> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.suffix> (<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.suffix>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.suffix> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#Thirdparty.name.suffix> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement> (<http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement> <http://www.w3.org/2002/01/p3prdfv1#DataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElementClass> (<http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElementClass>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElementClass> rdfs:Class)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User> (<http://www.w3.org/2002/01/p3prdfv1#User>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.bdate> (<http://www.w3.org/2002/01/p3prdfv1#User.bdate>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.bdate> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.bdate> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.bdate.fractionsecond> (<http://www.w3.org/2002/01/p3prdfv1#User.bdate.fractionsecond>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.fractionsecond> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.bdate.hms> (<http://www.w3.org/2002/01/p3prdfv1#User.bdate.hms>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.hms> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.bdate.hms.hour> (<http://www.w3.org/2002/01/p3prdfv1#User.bdate.hms.hour>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.hms.hour> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.bdate.hms.minute> (<http://www.w3.org/2002/01/p3prdfv1#User.bdate.hms.minute>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.hms.minute> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.bdate.hms.second> (<http://www.w3.org/2002/01/p3prdfv1#User.bdate.hms.second>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.hms.second> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.bdate.timezone> (<http://www.w3.org/2002/01/p3prdfv1#User.bdate.timezone>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.timezone> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.bdate.ymd> (<http://www.w3.org/2002/01/p3prdfv1#User.bdate.ymd>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.ymd> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.bdate.ymd.day> (<http://www.w3.org/2002/01/p3prdfv1#User.bdate.ymd.day>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.ymd.day> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.bdate.ymd.month> (<http://www.w3.org/2002/01/p3prdfv1#User.bdate.ymd.month>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.ymd.month> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.bdate.ymd.year> (<http://www.w3.org/2002/01/p3prdfv1#User.bdate.ymd.year>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.bdate.ymd.year> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.online> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.online>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.online> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.online> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.online.email> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.online.email>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.online.email> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.online.email> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.online.uri> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.online.uri>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.online.uri> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.online.uri> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.city> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.city>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.city> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.city> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.country> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.country>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.country> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.country> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.family> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.family>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.family> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.family> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.given> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.given>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.given> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.given> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.middle> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.middle>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.middle> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.middle> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.nickname> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.nickname>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.nickname> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.nickname> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.prefix> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.prefix>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.prefix> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.prefix> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.suffix> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.suffix>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.suffix> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.name.suffix> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.organization> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.organization>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.organization> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.organization> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.postalcode> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.postalcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.postalcode> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.postalcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.stateprov> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.stateprov>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.stateprov> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.stateprov> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.street> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.street>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.street> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.postal.street> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.comment> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.ext> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.intcode> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.loccode> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.number> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.fax.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.comment> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.ext> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.intcode> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.loccode> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.number> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.mobile.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.comment> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.ext> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.intcode> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.loccode> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.number> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.pager.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.comment> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.ext> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.intcode> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.loccode> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.number> (<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.business-info.telecom.telephone.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.cert> (<http://www.w3.org/2002/01/p3prdfv1#User.cert>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.cert> <http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.cert> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.cert.format> (<http://www.w3.org/2002/01/p3prdfv1#User.cert.format>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.cert.format> <http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.cert.format> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.cert.key> (<http://www.w3.org/2002/01/p3prdfv1#User.cert.key>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.cert.key> <http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.cert.key> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.department> (<http://www.w3.org/2002/01/p3prdfv1#User.department>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.department> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.department> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.employer> (<http://www.w3.org/2002/01/p3prdfv1#User.employer>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.employer> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.employer> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.gender> (<http://www.w3.org/2002/01/p3prdfv1#User.gender>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.gender> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.gender> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.online> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.online>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.online> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.online> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.online.email> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.online.email>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.online.email> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.online.email> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.online.uri> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.online.uri>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.online.uri> <http://www.w3.org/2002/01/p3prdfv1#Category-online>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.online.uri> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.city> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.city>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.city> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.city> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.country> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.country>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.country> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.country> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.family> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.family>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.family> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.family> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.given> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.given>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.given> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.given> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.middle> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.middle>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.middle> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.middle> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.nickname> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.nickname>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.nickname> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.nickname> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.prefix> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.prefix>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.prefix> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.prefix> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.suffix> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.suffix>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.suffix> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.name.suffix> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.organization> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.organization>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.organization> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.organization> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.postalcode> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.postalcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.postalcode> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.postalcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.stateprov> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.stateprov>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.stateprov> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.stateprov> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.street> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.street>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.street> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.postal.street> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.comment> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.ext> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.intcode> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.loccode> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.number> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.fax.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.comment> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.ext> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.intcode> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.loccode> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.number> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.mobile.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.comment> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.ext> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.intcode> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.loccode> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.number> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.pager.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.comment> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.comment>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.comment> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.comment> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.ext> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.ext>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.ext> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.ext> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.intcode> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.intcode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.intcode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.intcode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.loccode> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.loccode>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.loccode> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.loccode> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.number> (<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.number>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.number> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.home-info.telecom.telephone.number> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.jobtitle> (<http://www.w3.org/2002/01/p3prdfv1#User.jobtitle>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.jobtitle> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.jobtitle> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.login> (<http://www.w3.org/2002/01/p3prdfv1#User.login>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.login> <http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.login> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.login.id> (<http://www.w3.org/2002/01/p3prdfv1#User.login.id>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.login.id> <http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.login.id> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.login.password> (<http://www.w3.org/2002/01/p3prdfv1#User.login.password>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.login.password> <http://www.w3.org/2002/01/p3prdfv1#Category-uniqueid>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.login.password> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.name> (<http://www.w3.org/2002/01/p3prdfv1#User.name>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.name> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.name> <http://www.w3.org/2002/01/p3prdfv1#StructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.name.family> (<http://www.w3.org/2002/01/p3prdfv1#User.name.family>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.name.family> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.name.family> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.name.given> (<http://www.w3.org/2002/01/p3prdfv1#User.name.given>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.name.given> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.name.given> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.name.middle> (<http://www.w3.org/2002/01/p3prdfv1#User.name.middle>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.name.middle> <http://www.w3.org/2002/01/p3prdfv1#Category-physical>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.name.middle> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.name.nickname> (<http://www.w3.org/2002/01/p3prdfv1#User.name.nickname>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.name.nickname> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.name.nickname> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.name.prefix> (<http://www.w3.org/2002/01/p3prdfv1#User.name.prefix>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.name.prefix> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.name.prefix> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#User.name.suffix> (<http://www.w3.org/2002/01/p3prdfv1#User.name.suffix>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.name.suffix> <http://www.w3.org/2002/01/p3prdfv1#Category-demographic>)
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#User.name.suffix> <http://www.w3.org/2002/01/p3prdfv1#UnstructuredDataElement>)
+
+# Class: <http://www.w3.org/2002/01/p3prdfv1#dataElementComponent> (<http://www.w3.org/2002/01/p3prdfv1#dataElementComponent>)
+
+SubClassOf(<http://www.w3.org/2002/01/p3prdfv1#dataElementComponent> owl:Thing)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:auxiliarDataRangeClass2 (owl:auxiliarDataRangeClass2)
+
+SubClassOf(owl:auxiliarDataRangeClass2 owl:Thing)
+
+# Class: <rdfs:Class> (<rdfs:Class>)
+
+SubClassOf(<rdfs:Class> owl:Thing)
+
+
+)
